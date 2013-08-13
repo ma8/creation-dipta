@@ -1,0 +1,679 @@
+﻿<html>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+	<head>
+			<link rel="stylesheet" type="text/css" media="screen" href="css/normalize.css">
+			<link rel="stylesheet" href="css/deputation.css">
+			<link rel="stylesheet" type="text/css" media="screen" href="css/doc.css">
+			<link rel="stylesheet" type="text/css" media="screen" href="css/print.css">
+			<link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+			
+			<!--<link rel="stylesheet" href="highlight/prism.css">-->
+			<script src="js/prism.js"></script>
+			<script src="js/holder.js"></script>				
+	<style>
+	 
+	</style>
+	</head>
+	
+<body>
+	
+<header>
+	<div class="container">
+		<img  style="width:40px;"src="images/escut-logo.png"/>
+		<h1>Deputation for Compass</h1>
+		<p>Front-end framework de la Diputació de Tarragona. Colors, typography, navigations, tables, buttons, links, labels, icons ...etc</p>
+		<a class="btn-down" href="">Download from Github</a>
+		
+		<ul>
+			<li><a href="http://www.dipta.cat/">Diputació de Tarragona</a></</li>
+			<li><a href="http://sass-lang.com/">Sass</a></</li>
+			<li><a href="http://compass-style.org/">Compass</a></li>
+			<li>Versió 1.0.0</li>
+		</ul>
+	</div>
+</header>
+<nav>
+	<ul>
+		<li><a href="#s1">Typography</a></li>
+		<li><a href="#s2">Images sources</a></li>
+		<li><a href="#s3">Navigation</a></li>
+		<li><a href="#s4">Forms</a></li>
+		<li><a href="#s5">Tables</a></li>
+		<li><a href="#s6">Buttons</a></li>	
+		<li><a href="#s7">Palette colors</a></li>
+		<li><a href="#s8">Exemples</a></li>
+	</ul>
+</nav>
+		
+		
+<section id="s1">
+	<h1 class="title-doc">Typography</h1>
+	
+	<h2 class="title-doc"> Headings específics + Box:705px</h2>
+	<article class="headings-especifics">
+
+	<h1>Heading H1 + Vestibulum venenatis sodales sodales. Ut vitae dui iaculis, volutpat tortor eget, condimentum diam.</h1>
+	<pre><code class="language-css">.name-selector { @extend %dipta-title-page; }</code></pre>
+	
+	<h2>Heading H2 + Vestibulum venenatis sodales sodales. Ut vitae dui iaculis, volutpat tortor eget, condimentum diam.</h2>	
+	<pre><code class="language-css">.name-selector { @extend %dipta-title-page; }</code></pre>
+	
+	<h3>Heading H3 + Vestibulum venenatis sodales sodales. Ut vitae dui iaculis, volutpat tortor eget, condimentum diam.</h3>
+	<pre><code class="language-css">.name-selector { @extend %dipta-title-page; } </code></pre>
+	
+	<h4>Heading H3 + Vestibulum venenatis sodales sodales. Ut vitae dui iaculis, volutpat tortor eget, condimentum diam.</h4>
+	<pre><code class="language-css">.name-selector { @extend %dipta-title-page; } </code></pre>
+	
+	<h5>Heading H3 + Vestibulum venenatis sodales sodales. Ut vitae dui iaculis, volutpat tortor eget, condimentum diam.</h5>
+	<pre><code class="language-css">.name-selector { @extend %dipta-title-page; } </code></pre>
+	</article>
+	
+	<h2 class="title-doc"> Headings generals + Box:705px</h2>
+	<article class="headings-generals">
+		 <h1>Heading H1 + Vestibulum venenatis sodales sodales. Ut vitae dui iaculis, volutpat tortor eget, condimentum diam.</h1>
+		 <h2>Heading H2 + Vestibulum venenatis sodales sodales. Ut vitae dui iaculis, volutpat tortor eget, condimentum diam.</h2>
+		 <h3>Heading H3 + Vestibulum venenatis sodales sodales. Ut vitae dui iaculis, volutpat tortor eget, condimentum diam.</h3>
+		 <h4>Heading H4 + Vestibulum venenatis sodales sodales. Ut vitae dui iaculis, volutpat tortor eget, condimentum diam.</h4>
+		 <h5>Heading H5 + Vestibulum venenatis sodales sodales. Ut vitae dui iaculis, volutpat tortor eget, condimentum diam.</h5>
+		 <h6>Heading H6 + Vestibulum venenatis sodales sodales. Ut vitae dui iaculis, volutpat tortor eget, condimentum diam.</h6>
+<pre><code class="language-css">/* Calculator Golden Ratio Golden Ratio http://www.pearsonified.com/typography */ 
+$base-s:1.5rem;/*15px*/
+$base-h:2.5rem;/*25px*/
+$h1-s:2  * $base-s;/*size*/
+$h1-h: 1.4 * $base-h;/*line-height*/
+...
+.name-selector{ @extend h1; }</code></pre>
+	</article>	
+	
+	<h2 class="title-doc"> Links </h2>
+	<article class="links">	
+		 <h1><a href="#">Heading H1 + Vestibulum venenatis sodales sodales. Ut vitae dui iaculis, volutpat tortor eget, </a></h1>
+		 <h2><a href="#">Heading H2 + Vestibulum venenatis sodales sodales. Ut vitae dui iaculis, volutpat tortor eget, </a></h2>
+		 <h3><a href="#">Heading H3 + Vestibulum venenatis sodales sodales. Ut vitae dui iaculis, volutpat tortor eget, </a></h3>
+		 <h4><a href="#">Heading H4 + Vestibulum venenatis sodales sodales. Ut vitae dui iaculis, volutpat tortor eget, </a></h4>
+		 <h5><a href="#">Heading H5 + Vestibulum venenatis sodales sodales. Ut vitae dui iaculis, volutpat tortor eget, </a></h5>
+		 <h6><a href="#">Heading H6 + Vestibulum venenatis sodales sodales. Ut vitae dui iaculis, volutpat tortor eget, </a></h6>
+	<pre><code class="language-css">a { color: #0083A9;text-decoration:none; }
+a:hover { text-decoration: underline; }  </code></pre>
+	</article>	
+		<h2 class="title-doc"> Medium Paragraph </h2>
+		<article class="paragraph">
+		<p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>
+		<p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>
+		<p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>
+		<p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>
+		<p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>
+		<p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>
+		</article>
+	
+	<article>	
+		<h2 class="title-ma">  Body, p</h2>
+		<p>
+		Nullam ultricies leo quis cursus laoreet. Nulla non lectus eu odio tempus volutpat. Cras sit amet interdum ipsum, vel hendrerit nunc.
+		Vestibulum luctus ultrices facilisis. Nam sollicitudin lacus convallis rhoncus vulputate. Praesent ultrices tellus sed libero vehicula
+		dignissim. Sed eleifend, justo nec semper gravida, justo ligula consequat orci, nec pretium ante arcu at massa. Quisque ac dolor 
+		adipiscing, sollicitudin lectus sed, auctor ligula. Nullam in velit at leo euismod volutpat et quis nisl. Mauris lacus ipsum, 
+		cursus ut porttitor et, elementum tempor quam. Vestibulum laoreet cursus enim ac dapibus. Donec dignissim vitae magna pharetra 
+		commodo. Aliquam erat volutpat. Nam at turpis eget purus sodales fringilla. In sed sodales lacus. 
+		</p>
+		<pre><code class="language-css">body{ font-family: 'Open Sans', sans-serif;/*Contingut*/
+font-size:1.5rem;/*15px*/
+line-height:2.5rem;/*25px*/		}
+p{ font-weight: 300; }</code></pre>
+	</article>
+	<h2 class="title-doc"> blockquote Box:705px</h2>
+	<article class="quote">
+		<p>ultricies leo quis cursus laoreet. Nulla non lectus eu odio tempus volutpat. Cras sit amet 
+		interdum ipsum, vel hendrerit nunc.Vestibulum luctus ultrices facilisis. Nam sollicitudin lacus 
+		convallis rhoncus vulputate. Praesent ultrices tellus sed libero vehicula dignissim.</p>
+		<blockquote>Vestibulum luctus ultrices facilisis.Nam sollicitudinlacusconvallis rhoncus vulputate. Praesent ultrices.Vestibulum luctus ultrices facilisis. Nam sollicitudin lacus 
+			convallis rhoncus vulputate. Praesent ultrices.</blockquote>
+		<pre><code class="language-css">.name-selector{ @extend %dipta-quote-h2;  }</code></pre>
+		
+		<p>ultricies leo quis cursus laoreet. Nulla non lectus eu odio tempus volutpat. Cras sit amet 
+		interdum ipsum, vel hendrerit nunc.Vestibulum luctus ultrices facilisis. Nam sollicitudin lacus 
+		convallis rhoncus vulputate. Praesent ultrices tellus sed libero vehicula dignissim.</p>
+		<blockquote>Vestibulum luctus ultrices facilisis.Nam sollicitudinlacusconvallis rhoncus vulputate. Praesent ultrices.Vestibulum luctus ultrices facilisis. Nam sollicitudin lacus 
+			convallis rhoncus vulputate. Praesent ultrices.</blockquote>
+		<pre><code class="language-css">.name-selector{ @extend %dipta-quote-h3;  }</code></pre>
+
+		<p>ultricies leo quis cursus laoreet. Nulla non lectus eu odio tempus volutpat. Cras sit amet 
+		interdum ipsum, vel hendrerit nunc.Vestibulum luctus ultrices facilisis. Nam sollicitudin lacus 
+		convallis rhoncus vulputate. Praesent ultrices tellus sed libero vehicula dignissim.</p>
+		<blockquote>Vestibulum luctus ultrices facilisis.Nam sollicitudinlacusconvallis rhoncus vulputate. Praesent ultrices.Vestibulum luctus ultrices facilisis. Nam sollicitudin lacus 
+			convallis rhoncus vulputate. Praesent ultrices.</blockquote>
+		<pre><code class="language-css">.name-selector{ @extend %dipta-quote-h4;  }</code></pre>
+		
+		<p>ultricies leo quis cursus laoreet. Nulla non lectus eu odio tempus volutpat. Cras sit amet 
+		interdum ipsum, vel hendrerit nunc.Vestibulum luctus ultrices facilisis. Nam sollicitudin lacus 
+		convallis rhoncus vulputate. Praesent ultrices tellus sed libero vehicula dignissim.</p>
+		<blockquote>Vestibulum luctus ultrices facilisis.Nam sollicitudinlacusconvallis rhoncus vulputate. Praesent ultrices.Vestibulum luctus ultrices facilisis. Nam sollicitudin lacus 
+			convallis rhoncus vulputate. Praesent ultrices.</blockquote>
+		<pre><code class="language-css">.name-selector{ @extend %dipta-quote-h5;  }</code></pre>
+		
+		<p>ultricies leo quis cursus laoreet. Nulla non lectus eu odio tempus volutpat. Cras sit amet 
+		interdum ipsum, vel hendrerit nunc.Vestibulum luctus ultrices facilisis. Nam sollicitudin lacus 
+		convallis rhoncus vulputate. Praesent ultrices tellus sed libero vehicula dignissim.</p>
+		<blockquote>Vestibulum luctus ultrices facilisis.Nam sollicitudinlacusconvallis rhoncus vulputate. Praesent ultrices.Vestibulum luctus ultrices facilisis. Nam sollicitudin lacus 
+			convallis rhoncus vulputate. Praesent ultrices.</blockquote>
+		<pre><code class="language-css">.name-selector{ @extend %dipta-quote-h2c; }</code></pre>
+		
+		<p>ultricies leo quis cursus laoreet. Nulla non lectus eu odio tempus volutpat. Cras sit amet 
+		interdum ipsum, vel hendrerit nunc.Vestibulum luctus ultrices facilisis. Nam sollicitudin lacus 
+		convallis rhoncus vulputate. Praesent ultrices tellus sed libero vehicula dignissim.</p>
+		<blockquote>Vestibulum luctus ultrices facilisis.Nam sollicitudinlacusconvallis rhoncus vulputate. Praesent ultrices.Vestibulum luctus ultrices facilisis. Nam sollicitudin lacus 
+			convallis rhoncus vulputate. Praesent ultrices.</blockquote>
+		<pre><code class="language-css">.name-selector{ @extend %dipta-quote-h3c; }</code></pre>
+		
+		<p>ultricies leo quis cursus laoreet. Nulla non lectus eu odio tempus volutpat. Cras sit amet 
+		interdum ipsum, vel hendrerit nunc.Vestibulum luctus ultrices facilisis. Nam sollicitudin lacus 
+		convallis rhoncus vulputate. Praesent ultrices tellus sed libero vehicula dignissim.</p>
+		<blockquote>Vestibulum luctus ultrices facilisis.Nam sollicitudinlacusconvallis rhoncus vulputate. Praesent ultrices.Vestibulum luctus ultrices facilisis. Nam sollicitudin lacus 
+			convallis rhoncus vulputate. Praesent ultrices.</blockquote>
+		<pre><code class="language-css">.name-selector{ @extend %dipta-quote-h4c; }</code></pre>
+		
+		<p>ultricies leo quis cursus laoreet. Nulla non lectus eu odio tempus volutpat. Cras sit amet 
+		interdum ipsum, vel hendrerit nunc.Vestibulum luctus ultrices facilisis. Nam sollicitudin lacus 
+		convallis rhoncus vulputate. Praesent ultrices tellus sed libero vehicula dignissim.</p>
+		<blockquote>Vestibulum luctus ultrices facilisis.Nam sollicitudinlacusconvallis rhoncus vulputate. Praesent ultrices.Vestibulum luctus ultrices facilisis. Nam sollicitudin lacus 
+			convallis rhoncus vulputate. Praesent ultrices.</blockquote>
+		<pre><code class="language-css">.name-selector{ @extend %dipta-quote-h5c; }</code></pre>
+		
+	</article>		
+
+<div>	
+</section>	
+
+<section id="s2">
+	
+		<h1 class="title-doc">Images sources</h1>
+
+		<h2 class="title-doc">Slider home BOX:940px</h2>
+		<article class="slider-home">
+			<img src="holder.js/940x320/#7AF08A:#464646">
+			<div class="dipta-slider-home">
+				<div class="info-banner">
+				<h2>Vestibulum luctus ultrices facilisis </h2>
+				<div class="text-banner">convallis rhoncus vulputate. Praesent ultrices.</div>
+				</div>
+				<a class="btn-slider-left" href="#">anterior</a>
+				<a class="btn-slider-rigth" href="#">següent</a>
+			</div>
+		</article>
+		
+		<h2 class="title-ma">Pàgina de navegació [ 1]</h2>
+		<article class="navigation-1">
+			<img src="holder.js/705x279/#7AF08A:#464646">
+			<h1>Vestibulum luctus ultrices facilisis</h1>
+			<p>Vestibulum luctus ultrices facilisis. Nam sollicitudin lacus 
+			convallis rhoncus vulputate. Praesent ultrices.Vestibulum luctus ultrices facilisis. Nam sollicitudin lacus 
+			convallis rhoncus vulputate. Praesent ultrices.</p>
+			<div  class="bloc">
+			<h2><a href="#">Sed gravida molestie magna vestibulum lacinia</a></h2>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sodales sagittis lectus quis hendrerit.
+				Nullam suscipit turpis luctus mauris congue pulvinar. Vestibulum gravida id tellus a lacinia. Etiam nec eros neque. 
+				Aenean velit nisi, rhoncus vel scelerisque nec, blandit at ipsum. </p>
+			</div>
+		<pre><code class="language-css"> h1{ @extend %dipta-title-img-a;} p{ @extend %dipta-quote-h4c;  border:0;}</code></pre>
+		</article>
+		
+		<article class="navigation-2">
+			<img src="holder.js/705x279/#7AF08A:#464646">
+			<h1>Vestibulum luctus ultrices facilisis</h1>
+			<p>Vestibulum luctus ultrices facilisis. Nam sollicitudin lacus 
+			convallis rhoncus vulputate. Praesent ultrices.Vestibulum luctus ultrices facilisis. Nam sollicitudin lacus 
+			convallis rhoncus vulputate. Praesent ultrices.</p>
+			<div  class="bloc">
+			<h3><a href="#">Sed gravida molestie magna vestibulum lacinia</a></h3>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sodales sagittis lectus quis hendrerit.
+				Nullam suscipit turpis luctus mauris congue pulvinar. Vestibulum gravida id tellus a lacinia. Etiam nec eros neque. 
+				Aenean velit nisi, rhoncus vel scelerisque nec, blandit at ipsum. </p>
+			</div>
+		<pre><code class="language-css"> h1{ @extend %dipta-title-img-b;} p{ @extend %dipta-quote-h3;  border:0;}</code></pre>
+		</article>
+		
+		<article class="navigation-3">
+			<img src="holder.js/705x279/#7AF08A:#464646">
+			<h1>Vestibulum luctus ultrices facilisis</h1>
+			<p>Vestibulum luctus ultrices facilisis. Nam sollicitudin lacus 
+			convallis rhoncus vulputate. Praesent ultrices.Vestibulum luctus ultrices facilisis. Nam sollicitudin lacus 
+			convallis rhoncus vulputate. Praesent ultrices.</p>
+			<div  class="bloc">
+			<h4><a href="#">Sed gravida molestie magna vestibulum lacinia</a></h4>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sodales sagittis lectus quis hendrerit.
+				Nullam suscipit turpis luctus mauris congue pulvinar. Vestibulum gravida id tellus a lacinia. Etiam nec eros neque. 
+				Aenean velit nisi, rhoncus vel scelerisque nec, blandit at ipsum. </p>
+			</div>
+		<pre><code class="language-css"> h1{ @extend %dipta-title-img-c;} p{ @extend %dipta-quote-h3c;  border:0;}</code></pre>
+		</article>
+		
+			
+		
+		<h2 class="title-doc">Pàgina bàsica (normal)</h2>
+		<article>
+			<img src="holder.js/677x479/#7AF08A:#464646">
+			<div style="width:667px;" class="dipta-caption">Convallis rhoncus vulputate. Praesent ultrices...</div>
+		</article>
+		<h2 class="title-doc">[Images sources] Pàgina bàsica (float)</h2>
+		<article>	
+			<div class="dipta-img-float">
+				<img src="holder.js/300x479/#fff:#464646">
+				<div class="dipta-caption">Convallis rhoncus vulputate. Praesent ultrices...</div>
+			</div>
+			<div class="dipta-body">
+			<p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>
+			</div>
+			</article>
+			
+		<h2 class="title-ma">[Images sources] Pàgina bàsica (galeria)</h2>
+		<article>
+		<div class="dipta-galeria">	
+			<img src="holder.js/100x75/#7AF08A:#464646">
+			<img src="holder.js/100x75/#7AF08A:#464646">
+			<img src="holder.js/100x75/#7AF08A:#464646">
+			<img src="holder.js/100x75/#7AF08A:#464646">
+			<img src="holder.js/100x75/#7AF08A:#464646">
+		</div>
+		</article>
+		<br/>
+		
+	<h2 class="title-doc"> Estil Bloc [Notícies]</h2>
+	<article id="dipta-noticia">
+	<div class="container">
+	<h2 class="dipta-title-logo"><a href="">Notícies</a></h2>
+		<div class="contingut">
+		
+		<div class="dipta-resum">	
+			<img src="holder.js/307x220/#7AF08A:#464646">
+			<div class="dipta-concatenats">
+				<div class="dipta-camp"> 21/08/2013</div>
+				<div class="dipta-camp"> Reus</div>
+			</div>
+			<h3><a href="">Etiam et auctor quam. Fusce mattis faucibus orci quis eleifend.</a></h3>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sodales sagittis lectus quis hendrerit.
+				Nullam suscipit turpis luctus mauris congue pulvinar. Vestibulum gravida id tellus a lacinia. Etiam nec eros neque. 
+				Aenean velit nisi, rhoncus vel scelerisque nec, blandit at ipsum. Aliquam eget mauris rutrums.</p>
+		</div>	
+			
+		<div class="dipta-resum">	
+			<div class="dipta-concatenats" >
+				<div class="dipta-camp">  21/08/2013</div>
+				<div class="dipta-camp">  Reus</div>
+				<div class="dipta-camp"> Premsa</div>
+			</div>
+			<h4><a href="">Etiam et auctor quam. Fusce mattis faucibus orci quis eleifend.</a></h4>
+			<img class="float"src="holder.js/100x70/#7AF08A:#464646">
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sodales sagittis lectus quis hendrerit.
+				Nullam suscipit turpis luctus mauris congue pulvinar. Vestibulum gravida id tellus a lacinia. Etiam nec eros neque. 
+				Aenean velit nisi, rhoncus vel scelerisque nec, blandit at ipsum. Aliquam eget mauris rutrums.</p>
+		</div>	
+		
+		<div class="dipta-resum">	
+			<div class="dipta-concatenats">
+				<div class="dipta-camp"> 21/08/2013</div>
+				<div class="dipta-camp">  Reus</div>
+			</div>
+			<h4><a href="">Etiam et auctor quam. Fusce mattis faucibus orci quis eleifend.</a></h4>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sodales sagittis lectus quis hendrerit.
+				Nullam suscipit turpis luctus mauris congue pulvinar. Vestibulum gravida id tellus a lacinia. Etiam nec eros neque. 
+				Aenean velit nisi, rhoncus vel scelerisque nec, blandit at ipsum. Aliquam eget mauris rutrums.</p>
+		</div>	
+	</div>
+	</div>
+	</article>
+	
+	<h2 class="title-doc"> Estil Bloc [Agenda]</h2>
+	<article id="dipta-agenda">
+	<div class="container">
+	<h2 class="dipta-title-logo"><a href="">Agenda</a></h2>
+	
+		<div class="contingut">
+		<div class="dipta-resum">	
+			<div class="dipta-concatenats">
+				<div class="dipta-camp"> 21/08/2013</div>
+				<div class="dipta-camp">  Reus</div>
+			</div>
+			<h4><a href="">Etiam et auctor quam. Fusce mattis faucibus orci quis eleifend.</a></h4>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sodales sagittis lectus quis hendrerit.
+				Nullam suscipit turpis luctus mauris congue pulvinar. Vestibulum gravida id tellus a lacinia. Etiam nec eros neque. 
+				Aenean velit nisi, rhoncus vel scelerisque nec, blandit at ipsum. Aliquam eget mauris rutrums.</p>
+
+		</div>	
+			
+		<div class="dipta-resum">	
+			<div class="dipta-concatenats">
+				<div class="dipta-camp">  21/08/2013</div>
+				<div class="dipta-camp">  Reus</div>
+				<div class="dipta-camp">  Premsa</div>
+			</div>
+			<h4><a href="">Etiam et auctor quam. Fusce mattis faucibus orci quis eleifend.</a></h4>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sodales sagittis lectus quis hendrerit.
+				Nullam suscipit turpis luctus mauris congue pulvinar. Vestibulum gravida id tellus a lacinia. Etiam nec eros neque. 
+				Aenean velit nisi, rhoncus vel scelerisque nec, blandit at ipsum. Aliquam eget mauris rutrums.</p>
+		</div>	
+		
+		<div class="dipta-resum">	
+			<div class="dipta-concatenats">
+				<div class="dipta-camp">  21/08/2013</div>
+				<div class="dipta-camp">  Reus</div>
+			</div>
+			<h4><a href="">Etiam et auctor quam. Fusce mattis faucibus orci quis eleifend.</a></h4>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sodales sagittis lectus quis hendrerit.
+				Nullam suscipit turpis luctus mauris congue pulvinar. Vestibulum gravida id tellus a lacinia. Etiam nec eros neque. 
+				Aenean velit nisi, rhoncus vel scelerisque nec, blandit at ipsum. Aliquam eget mauris rutrums.</p>
+		</div>	
+	
+		<div class="dipta-resum">	
+			<div class="dipta-concatenats">
+				<div class="dipta-camp"> 21/08/2013</div>
+				<div class="dipta-camp">  Reus</div>
+			</div>
+			<h4><a href="">Etiam et auctor quam. Fusce mattis faucibus orci quis eleifend.</a></h4>
+		</div>	
+		
+	
+		<div class="dipta-resum">	
+			<div class="dipta-concatenats">
+				<div class="dipta-camp">21/08/2013</div>
+				<div class="dipta-camp"> Reus</div>
+			</div>
+			<h4><a href="">Etiam et auctor quam. Fusce mattis faucibus orci quis eleifend.</a></h4>
+		</div>	
+		</div>
+	</div>
+	</article>
+</section>
+
+<section id="s3">
+		<h1 class="title-doc">Box Dipta</h1>
+		
+		<h2 class="title-doc"> Elements box</h2>
+		<article class="box-1">
+		 <div class="bloc">
+			<h2><a href="#">Sed gravida molestie magna vestibulum lacinia</a></h2>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sodales sagittis lectus quis hendrerit.
+				Nullam suscipit turpis luctus mauris congue pulvinar. Vestibulum gravida id tellus a lacinia. Etiam nec eros neque. 
+				Aenean velit nisi, rhoncus vel scelerisque nec, blandit at ipsum. </p>
+		 </div>
+		 <div  class="bloc1">
+			<h3><a href="#">Sed gravida molestie magna vestibulum lacinia</a></h3>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sodales sagittis lectus quis hendrerit.
+				Nullam suscipit turpis luctus mauris congue pulvinar. Vestibulum gravida id tellus a lacinia. Etiam nec eros neque. 
+				Aenean velit nisi, rhoncus vel scelerisque nec, blandit at ipsum. </p>
+		 </div>
+		  <div  class="bloc2">
+			<h4><a href="#">Sed gravida molestie magna vestibulum lacinia</a></h4>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sodales sagittis lectus quis hendrerit.
+				Nullam suscipit turpis luctus mauris congue pulvinar. Vestibulum gravida id tellus a lacinia. Etiam nec eros neque. 
+				Aenean velit nisi, rhoncus vel scelerisque nec, blandit at ipsum. </p>
+		 </div>
+		</article>
+		
+		<article class="box-2">
+		<div  class="bloc">
+			<h2><a href="#">Sed gravida molestie magna vestibulum lacinia</a></h2>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sodales sagittis lectus quis hendrerit.
+				Nullam suscipit turpis luctus mauris congue pulvinar. Vestibulum gravida id tellus a lacinia. Etiam nec eros neque. 
+				Aenean velit nisi, rhoncus vel scelerisque nec, blandit at ipsum. </p>
+		 </div>
+		 <div class="bloc1" >
+			<h3><a href="#">Sed gravida molestie magna vestibulum lacinia</a></h3>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sodales sagittis lectus quis hendrerit.
+				Nullam suscipit turpis luctus mauris congue pulvinar. Vestibulum gravida id tellus a lacinia. Etiam nec eros neque. 
+				Aenean velit nisi, rhoncus vel scelerisque nec, blandit at ipsum. </p>
+		 </div>
+		 <div class="bloc2" >
+			<h4><a href="#">Sed gravida molestie magna vestibulum lacinia</a></h4>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sodales sagittis lectus quis hendrerit.
+				Nullam suscipit turpis luctus mauris congue pulvinar. Vestibulum gravida id tellus a lacinia. Etiam nec eros neque. 
+				Aenean velit nisi, rhoncus vel scelerisque nec, blandit at ipsum. </p>
+		 </div>
+		 </article>
+		 
+		 <article class="box-3">
+		 <div  class="bloc">
+			<h3><a href="#">Sed gravida molestie magna vestibulum lacinia</a></h3>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sodales sagittis lectus quis hendrerit.
+				Nullam suscipit turpis luctus mauris congue pulvinar. Vestibulum gravida id tellus a lacinia. Etiam nec eros neque. 
+				Aenean velit nisi, rhoncus vel scelerisque nec, blandit at ipsum. </p>
+		 </div>
+		<div  class="bloc1">
+			<h4><a href="#">Sed gravida molestie magna vestibulum lacinia</a></h4>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sodales sagittis lectus quis hendrerit.
+				Nullam suscipit turpis luctus mauris congue pulvinar. Vestibulum gravida id tellus a lacinia. Etiam nec eros neque. 
+				Aenean velit nisi, rhoncus vel scelerisque nec, blandit at ipsum. </p>
+		 </div>
+		 <div  class="bloc2">
+			<h5><a href="#">Sed gravida molestie magna vestibulum lacinia</a></h5>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sodales sagittis lectus quis hendrerit.
+				Nullam suscipit turpis luctus mauris congue pulvinar. Vestibulum gravida id tellus a lacinia. Etiam nec eros neque. 
+				Aenean velit nisi, rhoncus vel scelerisque nec, blandit at ipsum. </p>
+		 </div>
+		</article>
+</section>
+
+<!-- Palette colors-->	
+<section id="s7">
+	<div class="container">
+		<h1 class="title-doc">Palette colors</h1>
+		<ul id="palette-colors">
+			<li><h5>Night Pencil</h5><i>#464646</i></li>
+			<li><h5>Summer morning</h5><i>#014B60</i></li>
+			<li><h5>yummi-turquoise</h5><i>#0083A9</i></li>
+			<li><h5>winter morning</h5><i>#EBEBEB</i></li>
+			<li><h5>J Peterman Shirt</h5><i>#F0F7F9</i></li>
+			
+		</ul>
+	</div>
+</section>
+	
+<!-- Exemples-->	 
+<section id="s8">
+
+	<h1 class="title-doc">Blocs</h1>
+	<article class="bloc1" style="width:350px;">
+	<h2>Últimes notícies</h2>
+	<div class="contingut">
+		<div class="dipta-resum">	
+			<img src="holder.js/307x220/#7AF08A:#464646">
+			<div class="dipta-concatenats">
+				<div class="dipta-camp"> 21/08/2013</div>
+				<div class="dipta-camp"> Reus</div>
+			</div>
+			<h3><a href="">Etiam et auctor quam. Fusce mattis faucibus orci quis eleifend.</a></h3>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sodales sagittis lectus quis hendrerit.
+				Nullam suscipit turpis luctus mauris congue pulvinar. Vestibulum gravida id tellus a lacinia. Etiam nec eros neque. 
+				Aenean velit nisi, rhoncus vel scelerisque nec, blandit at ipsum. Aliquam eget mauris rutrums.</p>
+		</div>	
+			
+		<div class="dipta-resum">	
+			<div class="dipta-concatenats" >
+				<div class="dipta-camp">  21/08/2013</div>
+				<div class="dipta-camp">  Reus</div>
+				<div class="dipta-camp"> Premsa</div>
+			</div>
+			<h4><a href="">Etiam et auctor quam. Fusce mattis faucibus orci quis eleifend.</a></h4>
+			<img class="float"src="holder.js/100x70/#7AF08A:#464646">
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sodales sagittis lectus quis hendrerit.
+				Nullam suscipit turpis luctus mauris congue pulvinar. Vestibulum gravida id tellus a lacinia. Etiam nec eros neque. 
+				Aenean velit nisi, rhoncus vel scelerisque nec, blandit at ipsum. Aliquam eget mauris rutrums.</p>
+		</div>	
+		
+		<div class="dipta-resum">	
+			<div class="dipta-concatenats">
+				<div class="dipta-camp"> 21/08/2013</div>
+				<div class="dipta-camp">  Reus</div>
+			</div>
+			<h4><a href="">Etiam et auctor quam. Fusce mattis faucibus orci quis eleifend.</a></h4>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sodales sagittis lectus quis hendrerit.
+				Nullam suscipit turpis luctus mauris congue pulvinar. Vestibulum gravida id tellus a lacinia. Etiam nec eros neque. 
+				Aenean velit nisi, rhoncus vel scelerisque nec, blandit at ipsum. Aliquam eget mauris rutrums.</p>
+		</div>
+		
+	</div>
+	</article>
+		<article class="bloc2" style="width:350px;">
+	<h2>Últimes notícies</h2>
+	<div class="contingut">
+		<div class="dipta-resum">	
+			<img src="holder.js/307x220/#7AF08A:#464646">
+			<div class="dipta-concatenats">
+				<div class="dipta-camp"> 21/08/2013</div>
+				<div class="dipta-camp"> Reus</div>
+			</div>
+			<h3><a href="">Etiam et auctor quam. Fusce mattis faucibus orci quis eleifend.</a></h3>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sodales sagittis lectus quis hendrerit.
+				Nullam suscipit turpis luctus mauris congue pulvinar. Vestibulum gravida id tellus a lacinia. Etiam nec eros neque. 
+				Aenean velit nisi, rhoncus vel scelerisque nec, blandit at ipsum. Aliquam eget mauris rutrums.</p>
+		</div>	
+			
+		<div class="dipta-resum">	
+			<div class="dipta-concatenats" >
+				<div class="dipta-camp">  21/08/2013</div>
+				<div class="dipta-camp">  Reus</div>
+				<div class="dipta-camp"> Premsa</div>
+			</div>
+			<h4><a href="">Etiam et auctor quam. Fusce mattis faucibus orci quis eleifend.</a></h4>
+			<img class="float"src="holder.js/100x70/#7AF08A:#464646">
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sodales sagittis lectus quis hendrerit.
+				Nullam suscipit turpis luctus mauris congue pulvinar. Vestibulum gravida id tellus a lacinia. Etiam nec eros neque. 
+				Aenean velit nisi, rhoncus vel scelerisque nec, blandit at ipsum. Aliquam eget mauris rutrums.</p>
+		</div>	
+		
+		<div class="dipta-resum">	
+			<div class="dipta-concatenats">
+				<div class="dipta-camp"> 21/08/2013</div>
+				<div class="dipta-camp">  Reus</div>
+			</div>
+			<h4><a href="">Etiam et auctor quam. Fusce mattis faucibus orci quis eleifend.</a></h4>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sodales sagittis lectus quis hendrerit.
+				Nullam suscipit turpis luctus mauris congue pulvinar. Vestibulum gravida id tellus a lacinia. Etiam nec eros neque. 
+				Aenean velit nisi, rhoncus vel scelerisque nec, blandit at ipsum. Aliquam eget mauris rutrums.</p>
+		</div>
+		
+	</div>
+	</article>
+	<article class="bloc3" style="width:350px;">
+	<h2> Propers actes</h2>
+		<div class="contingut">
+		<div class="dipta-resum">	
+			<div class="dipta-concatenats">
+				<div class="dipta-camp"> 21/08/2013</div>
+				<div class="dipta-camp">  Reus</div>
+			</div>
+			<h4><a href="">Etiam et auctor quam. Fusce mattis faucibus orci quis eleifend.</a></h4>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sodales sagittis lectus quis hendrerit.
+				Nullam suscipit turpis luctus mauris congue pulvinar. Vestibulum gravida id tellus a lacinia. Etiam nec eros neque. 
+				Aenean velit nisi, rhoncus vel scelerisque nec, blandit at ipsum. Aliquam eget mauris rutrums.</p>
+
+		</div>	
+			
+		<div class="dipta-resum">	
+			<div class="dipta-concatenats">
+				<div class="dipta-camp">  21/08/2013</div>
+				<div class="dipta-camp">  Reus</div>
+				<div class="dipta-camp">  Premsa</div>
+			</div>
+			<h4><a href="">Etiam et auctor quam. Fusce mattis faucibus orci quis eleifend.</a></h4>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sodales sagittis lectus quis hendrerit.
+				Nullam suscipit turpis luctus mauris congue pulvinar. Vestibulum gravida id tellus a lacinia. Etiam nec eros neque. 
+				Aenean velit nisi, rhoncus vel scelerisque nec, blandit at ipsum. Aliquam eget mauris rutrums.</p>
+		</div>	
+		
+		<div class="dipta-resum">	
+			<div class="dipta-concatenats">
+				<div class="dipta-camp">  21/08/2013</div>
+				<div class="dipta-camp">  Reus</div>
+			</div>
+			<h4><a href="">Etiam et auctor quam. Fusce mattis faucibus orci quis eleifend.</a></h4>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sodales sagittis lectus quis hendrerit.
+				Nullam suscipit turpis luctus mauris congue pulvinar. Vestibulum gravida id tellus a lacinia. Etiam nec eros neque. 
+				Aenean velit nisi, rhoncus vel scelerisque nec, blandit at ipsum. Aliquam eget mauris rutrums.</p>
+		</div>	
+	
+		<div class="dipta-resum">	
+			<div class="dipta-concatenats">
+				<div class="dipta-camp"> 21/08/2013</div>
+				<div class="dipta-camp">  Reus</div>
+			</div>
+			<h4><a href="">Etiam et auctor quam. Fusce mattis faucibus orci quis eleifend.</a></h4>
+		</div>	
+		
+	
+		<div class="dipta-resum">	
+			<div class="dipta-concatenats">
+				<div class="dipta-camp">21/08/2013</div>
+				<div class="dipta-camp"> Reus</div>
+			</div>
+			<h4><a href="">Etiam et auctor quam. Fusce mattis faucibus orci quis eleifend.</a></h4>
+		</div>	
+		</div>
+	</article>
+	
+		<article class="bloc4" style="width:350px;">
+	<h2> Propers actes</h2>
+		<div class="contingut">
+		<div class="dipta-resum">	
+			<div class="dipta-concatenats">
+				<div class="dipta-camp"> 21/08/2013</div>
+				<div class="dipta-camp">  Reus</div>
+			</div>
+			<h4><a href="">Etiam et auctor quam. Fusce mattis faucibus orci quis eleifend.</a></h4>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sodales sagittis lectus quis hendrerit.
+				Nullam suscipit turpis luctus mauris congue pulvinar. Vestibulum gravida id tellus a lacinia. Etiam nec eros neque. 
+				Aenean velit nisi, rhoncus vel scelerisque nec, blandit at ipsum. Aliquam eget mauris rutrums.</p>
+
+		</div>	
+			
+		<div class="dipta-resum">	
+			<div class="dipta-concatenats">
+				<div class="dipta-camp">  21/08/2013</div>
+				<div class="dipta-camp">  Reus</div>
+				<div class="dipta-camp">  Premsa</div>
+			</div>
+			<h4><a href="">Etiam et auctor quam. Fusce mattis faucibus orci quis eleifend.</a></h4>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sodales sagittis lectus quis hendrerit.
+				Nullam suscipit turpis luctus mauris congue pulvinar. Vestibulum gravida id tellus a lacinia. Etiam nec eros neque. 
+				Aenean velit nisi, rhoncus vel scelerisque nec, blandit at ipsum. Aliquam eget mauris rutrums.</p>
+		</div>	
+		
+		<div class="dipta-resum">	
+			<div class="dipta-concatenats">
+				<div class="dipta-camp">  21/08/2013</div>
+				<div class="dipta-camp">  Reus</div>
+			</div>
+			<h4><a href="">Etiam et auctor quam. Fusce mattis faucibus orci quis eleifend.</a></h4>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sodales sagittis lectus quis hendrerit.
+				Nullam suscipit turpis luctus mauris congue pulvinar. Vestibulum gravida id tellus a lacinia. Etiam nec eros neque. 
+				Aenean velit nisi, rhoncus vel scelerisque nec, blandit at ipsum. Aliquam eget mauris rutrums.</p>
+		</div>	
+	
+		<div class="dipta-resum">	
+			<div class="dipta-concatenats">
+				<div class="dipta-camp"> 21/08/2013</div>
+				<div class="dipta-camp">  Reus</div>
+			</div>
+			<h4><a href="">Etiam et auctor quam. Fusce mattis faucibus orci quis eleifend.</a></h4>
+		</div>	
+		
+	
+		<div class="dipta-resum">	
+			<div class="dipta-concatenats">
+				<div class="dipta-camp">21/08/2013</div>
+				<div class="dipta-camp"> Reus</div>
+			</div>
+			<h4><a href="">Etiam et auctor quam. Fusce mattis faucibus orci quis eleifend.</a></h4>
+		</div>	
+		</div>
+	</article>
+	
+	
+</section>	
+ 
+ 
+	<footer>
+		<h5>miguelangel@tinet.cat | maramos@dipta.cat</h5>
+	 </footer>
+</body>
+
+</html>

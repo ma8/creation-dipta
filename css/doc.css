@@ -1,0 +1,1177 @@
+@charset "CP850";
+@import url(http://fonts.googleapis.com/css?family=Droid+Sans:400,700);
+@import url(http://fonts.googleapis.com/css?family=Roboto+Condensed:400,300,700);
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,700,300,600,800);
+@import url(http://fonts.googleapis.com/css?family=Denk+One);
+@import url(http://fonts.googleapis.com/css?family=Julius+Sans+One);
+/*
+* Front-end  framework Creation for Compass
+* Import _creation.scss
+* Palette colors + typography (golden ratio) + Breakpoints
+*
+*/
+/**
+ * @file
+ * Creation for compass - Front-end framework de  la Diputaci¢ de Tarragona.
+ * @Miguel µngel Ramos.
+ */
+/**
+ * prism.js default theme for JavaScript, CSS and HTML
+ * Based on dabblet (http://dabblet.com)
+ * @author Lea Verou
+ */
+/* line 8, ../sass/_syntax.scss */
+code[class*="language-"],
+pre[class*="language-"] {
+  color: black;
+  text-shadow: 0 1px white;
+  font-family: Consolas, Monaco, "Andale Mono", monospace;
+  direction: ltr;
+  text-align: left;
+  white-space: pre;
+  word-spacing: normal;
+  -moz-tab-size: 4;
+  -o-tab-size: 4;
+  tab-size: 4;
+  -webkit-hyphens: none;
+  -moz-hyphens: none;
+  -ms-hyphens: none;
+  hyphens: none;
+}
+
+/* line 27, ../sass/_syntax.scss */
+::-moz-selection {
+  text-shadow: none;
+  background: #b3d4fc;
+}
+
+/* line 32, ../sass/_syntax.scss */
+::selection {
+  text-shadow: none;
+  background: #b3d4fc;
+}
+
+@media print {
+  /* line 39, ../sass/_syntax.scss */
+  code[class*="language-"],
+  pre[class*="language-"] {
+    text-shadow: none;
+  }
+}
+/* Code blocks */
+/* line 45, ../sass/_syntax.scss */
+pre[class*="language-"] {
+  padding: 1em;
+  margin: 0.5em 0;
+  overflow: auto;
+}
+
+/* line 52, ../sass/_syntax.scss */
+:not(pre) > code[class*="language-"],
+pre[class*="language-"] {
+  /* #FEFA83  #f5f2f0 #FFFBEA #FEFA83;*/
+  background: #FEFA83;
+  border: 1px solid #d2caa7;
+}
+
+/* Inline code */
+/* line 63, ../sass/_syntax.scss */
+:not(pre) > code[class*="language-"] {
+  padding: .1em;
+  border-radius: .3em;
+}
+
+/* line 71, ../sass/_syntax.scss */
+.token.comment,
+.token.prolog,
+.token.doctype,
+.token.cdata {
+  color: slategray;
+}
+
+/* line 75, ../sass/_syntax.scss */
+.token.punctuation {
+  color: #999;
+}
+
+/* line 79, ../sass/_syntax.scss */
+.namespace {
+  opacity: .7;
+}
+
+/* line 86, ../sass/_syntax.scss */
+.token.property,
+.token.tag,
+.token.boolean,
+.token.number {
+  color: #905;
+}
+
+/* line 92, ../sass/_syntax.scss */
+.token.selector,
+.token.attr-name,
+.token.string {
+  color: #690;
+}
+
+/* line 100, ../sass/_syntax.scss */
+.token.operator,
+.token.entity,
+.token.url,
+.language-css .token.string,
+.style .token.string {
+  color: #a67f59;
+  background: rgba(255, 255, 255, 0.5);
+}
+
+/* line 107, ../sass/_syntax.scss */
+.token.atrule,
+.token.attr-value,
+.token.keyword {
+  color: #07a;
+}
+
+/* line 113, ../sass/_syntax.scss */
+.token.regex,
+.token.important {
+  color: #e90;
+}
+
+/* line 117, ../sass/_syntax.scss */
+.token.important {
+  font-weight: bold;
+}
+
+/* line 121, ../sass/_syntax.scss */
+.token.entity {
+  cursor: help;
+}
+
+/* line 124, ../sass/_syntax.scss */
+pre[data-line] {
+  position: relative;
+  padding: 1em 0 1em 3em;
+}
+
+/* line 129, ../sass/_syntax.scss */
+.line-highlight {
+  position: absolute;
+  left: 0;
+  right: 0;
+  padding: inherit 0;
+  margin-top: 1em;
+  /* Same as .prism’s padding-top */
+  background: rgba(153, 122, 102, 0.08);
+  background: -moz-linear-gradient(left, rgba(153, 122, 102, 0.1) 70%, rgba(153, 122, 102, 0));
+  background: -webkit-linear-gradient(left, rgba(153, 122, 102, 0.1) 70%, rgba(153, 122, 102, 0));
+  background: -o-linear-gradient(left, rgba(153, 122, 102, 0.1) 70%, rgba(153, 122, 102, 0));
+  background: linear-gradient(left, rgba(153, 122, 102, 0.1) 70%, rgba(153, 122, 102, 0));
+  pointer-events: none;
+  line-height: inherit;
+  white-space: pre;
+}
+
+/* line 149, ../sass/_syntax.scss */
+.line-highlight:before,
+.line-highlight[data-end]:after {
+  content: attr(data-start);
+  position: absolute;
+  top: .4em;
+  left: .6em;
+  min-width: 1em;
+  padding: 0 0.5em;
+  background-color: rgba(153, 122, 102, 0.4);
+  color: #f5f2f0;
+  font: bold 65%/1.5 sans-serif;
+  text-align: center;
+  vertical-align: .3em;
+  border-radius: 999px;
+  text-shadow: none;
+  box-shadow: 0 1px white;
+}
+
+/* line 166, ../sass/_syntax.scss */
+.line-highlight[data-end]:after {
+  content: attr(data-end);
+  top: auto;
+  bottom: .4em;
+}
+
+/* line 171, ../sass/_syntax.scss */
+pre.line-numbers {
+  position: relative;
+  padding-left: 3.8em;
+  counter-reset: linenumber;
+}
+
+/* line 177, ../sass/_syntax.scss */
+pre.line-numbers > code {
+  position: relative;
+}
+
+/* line 181, ../sass/_syntax.scss */
+.line-numbers .line-numbers-rows {
+  position: absolute;
+  pointer-events: none;
+  top: 0;
+  font-size: 100%;
+  left: -3.8em;
+  width: 3em;
+  /* works for line-numbers below 1000 lines */
+  letter-spacing: -1px;
+  border-right: 1px solid #999999;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* line 198, ../sass/_syntax.scss */
+.line-numbers-rows > span {
+  pointer-events: none;
+  display: block;
+  counter-increment: linenumber;
+}
+
+/* line 204, ../sass/_syntax.scss */
+.line-numbers-rows > span:before {
+  content: counter(linenumber);
+  color: #999;
+  display: block;
+  padding-right: 0.8em;
+  text-align: right;
+}
+
+/**
+* 	Palette colors
+*	http://www.colourlovers.com/palette/2978475/Deputation
+*   Night Pencil + magic + yummi-turquoise + J Peterman Shirt + winter morning
+*	bc:#bcbcbc,Gamebookers Blue:#3299BB	 	
+*/
+/* Night Pencil */
+/* Magic */
+/* yummi-turquoise */
+/* J Peterman Shirt */
+/* winter morning */
+/**
+*	Typografia ú web-fonts
+* 	http://www.google.com/fonts
+*	Imports + Golden ratio + responsive typography
+*/
+/* Imports */
+/* Variables */
+/*Contingut*/
+/* */
+/* */
+/* Calculator Golden Ratio Golden Ratio http://www.pearsonified.com/typography/ */
+/*15px*/
+/*25px*/
+/*size*/
+/*line-height*/
+/*size*/
+/*line-height*/
+/*size*/
+/*line-height*/
+/*size*/
+/*line-height*/
+/*size*/
+/*line-height*/
+/*size*/
+/*line-height*/
+/*Breakpoints*/
+/* line 65, ../sass/_creation.scss */
+html {
+  font-size: 62.5%;
+  color: #464646;
+  /*Typography responsive for compass breakpoints*/
+}
+
+/* line 70, ../sass/_creation.scss */
+body {
+  /*$font1: 'Open Sans', sans-serif;*/
+  margin: 0;
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.5rem;
+  line-height: 2.5rem;
+}
+
+/*Syntax custom*/
+/* line 79, ../sass/_creation.scss */
+code {
+  font-size: 1.2rem;
+  font-family: Consolas,Monaco,"Andale Mono",monospace;
+}
+
+/* line 80, ../sass/_creation.scss */
+pre {
+  overflow-x: scroll !important;
+  overflow-y: scroll !important;
+  width: 650px;
+}
+
+/* Dipta Clear */
+/* line 83, ../sass/_creation.scss */
+.dipta-clear, .dipta-body:after, #s2 #dipta-noticia .contingut:after, #s2 #dipta-agenda .contingut:after, #s8 .bloc1 .contingut:after, #s8 .bloc2 .contingut:after, #s8 .bloc3 .contingut:after, #s8 .bloc4 .contingut:after {
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+  margin: 20px;
+}
+
+/* line 85, ../sass/_creation.scss */
+p, #s2 .slider-home .info-banner .text-banner {
+  font-weight: 300;
+}
+
+/* line 86, ../sass/_creation.scss */
+a {
+  color: #0083a9;
+  text-decoration: none;
+}
+
+/* line 87, ../sass/_creation.scss */
+a:hover {
+  text-decoration: underline;
+}
+
+/* line 89, ../sass/_creation.scss */
+h1 {
+  /*body*/
+  font-size: 3rem;
+  font-weight: 400;
+  line-height: 3.5rem;
+  letter-spacing: -0.2rem;
+}
+
+/* line 90, ../sass/_creation.scss */
+h2 {
+  font-size: 2.7rem;
+  font-weight: 400;
+  line-height: 3.25rem;
+  letter-spacing: -0.06rem;
+}
+
+/* line 91, ../sass/_creation.scss */
+h3, h2.title-doc {
+  font-size: 2.25rem;
+  font-weight: 400;
+  line-height: 2.75rem;
+  letter-spacing: -0.06rem;
+}
+
+/* line 92, ../sass/_creation.scss */
+h4 {
+  font-size: 1.5rem;
+  font-weight: 400;
+  line-height: 1.75rem;
+  letter-spacing: -0.06rem;
+}
+
+/* line 93, ../sass/_creation.scss */
+h5 {
+  font-size: 1.245rem;
+  font-weight: 400;
+  line-height: 1.5rem;
+  letter-spacing: -0.06rem;
+}
+
+/* line 94, ../sass/_creation.scss */
+h6, .dipta-caption {
+  font-size: 1.125rem;
+  font-weight: 400;
+  line-height: 1.375rem;
+  letter-spacing: -0.06rem;
+}
+
+/* Paragraph size h1,h2,h3,h4,h5.h6*/
+/* line 98, ../sass/_creation.scss */
+#s1 .paragraph p:nth-child(1), #s1 .paragraph #s2 .slider-home .info-banner .text-banner:nth-child(1), #s2 .slider-home .info-banner #s1 .paragraph .text-banner:nth-child(1) {
+  font-size: 3rem;
+  font-weight: 100;
+  line-height: 4.2rem;
+  letter-spacing: 0;
+}
+
+/* line 99, ../sass/_creation.scss */
+#s1 .quote blockquote:nth-child(2), #s1 .quote blockquote:nth-child(14), #s1 .paragraph p:nth-child(2), #s1 .paragraph #s2 .slider-home .info-banner .text-banner:nth-child(2), #s2 .slider-home .info-banner #s1 .paragraph .text-banner:nth-child(2) {
+  font-size: 2.7rem;
+  font-weight: 100;
+  line-height: 3.9rem;
+  letter-spacing: 0;
+}
+
+/* line 100, ../sass/_creation.scss */
+#s1 .quote blockquote:nth-child(5), #s1 .quote blockquote:nth-child(17), #s1 .paragraph p:nth-child(3), #s1 .paragraph #s2 .slider-home .info-banner .text-banner:nth-child(3), #s2 .slider-home .info-banner #s1 .paragraph .text-banner:nth-child(3) {
+  font-size: 2.25rem;
+  font-weight: 100;
+  line-height: 3.3rem;
+  letter-spacing: 0;
+}
+
+/* line 101, ../sass/_creation.scss */
+#s1 .quote blockquote:nth-child(8), #s1 .quote blockquote:nth-child(23), #s2 .navigation-2 p, #s2 .navigation-2 .slider-home .info-banner .text-banner, #s2 .slider-home .info-banner .navigation-2 .text-banner, #s1 .quote blockquote:nth-child(20), #s2 .navigation-1 p, #s2 .navigation-1 .slider-home .info-banner .text-banner, #s2 .slider-home .info-banner .navigation-1 .text-banner, #s2 .navigation-3 p, #s2 .navigation-3 .slider-home .info-banner .text-banner, #s2 .slider-home .info-banner .navigation-3 .text-banner, .dipta-resum p, .dipta-resum #s2 .slider-home .info-banner .text-banner, #s2 .slider-home .info-banner .dipta-resum .text-banner, #s1 .paragraph p:nth-child(4), #s1 .paragraph #s2 .slider-home .info-banner .text-banner:nth-child(4), #s2 .slider-home .info-banner #s1 .paragraph .text-banner:nth-child(4) {
+  font-size: 1.5rem;
+  font-weight: 100;
+  line-height: 2.1rem;
+  letter-spacing: 0;
+}
+
+/* line 102, ../sass/_creation.scss */
+#s1 .quote blockquote:nth-child(11), #s3 .box-1 .bloc p, #s3 .box-1 .bloc #s2 .slider-home .info-banner .text-banner, #s2 .slider-home .info-banner #s3 .box-1 .bloc .text-banner, #s2 .navigation-3 .bloc p, #s3 .box-1 .bloc1 p, #s2 .navigation-3 .bloc .slider-home .info-banner .text-banner, #s2 .slider-home .info-banner .navigation-3 .bloc .text-banner, #s3 .box-1 .bloc1 #s2 .slider-home .info-banner .text-banner, #s2 .slider-home .info-banner #s3 .box-1 .bloc1 .text-banner, #s3 .box-1 .bloc2 p, #s3 .box-1 .bloc2 #s2 .slider-home .info-banner .text-banner, #s2 .slider-home .info-banner #s3 .box-1 .bloc2 .text-banner, #s2 .navigation-2 .bloc p, #s3 .box-2 .bloc p, #s3 .box-3 .bloc p, #s2 .navigation-2 .bloc .slider-home .info-banner .text-banner, #s2 .slider-home .info-banner .navigation-2 .bloc .text-banner, #s3 .box-2 .bloc #s2 .slider-home .info-banner .text-banner, #s2 .slider-home .info-banner #s3 .box-2 .bloc .text-banner, #s3 .box-3 .bloc #s2 .slider-home .info-banner .text-banner, #s2 .slider-home .info-banner #s3 .box-3 .bloc .text-banner, #s8 .bloc1 p, #s8 .bloc2 p, #s8 .bloc3 p, #s8 .bloc4 p, #s8 .bloc1 #s2 .slider-home .info-banner .text-banner, #s2 .slider-home .info-banner #s8 .bloc1 .text-banner, #s8 .bloc2 #s2 .slider-home .info-banner .text-banner, #s2 .slider-home .info-banner #s8 .bloc2 .text-banner, #s8 .bloc3 #s2 .slider-home .info-banner .text-banner, #s2 .slider-home .info-banner #s8 .bloc3 .text-banner, #s8 .bloc4 #s2 .slider-home .info-banner .text-banner, #s2 .slider-home .info-banner #s8 .bloc4 .text-banner, #s2 .navigation-1 .bloc p, #s3 .box-2 .bloc1 p, #s3 .box-3 .bloc1 p, #s2 .navigation-1 .bloc .slider-home .info-banner .text-banner, #s2 .slider-home .info-banner .navigation-1 .bloc .text-banner, #s3 .box-2 .bloc1 #s2 .slider-home .info-banner .text-banner, #s2 .slider-home .info-banner #s3 .box-2 .bloc1 .text-banner, #s3 .box-3 .bloc1 #s2 .slider-home .info-banner .text-banner, #s2 .slider-home .info-banner #s3 .box-3 .bloc1 .text-banner, #s3 .box-2 .bloc2 p, #s3 .box-3 .bloc2 p, #s3 .box-2 .bloc2 #s2 .slider-home .info-banner .text-banner, #s2 .slider-home .info-banner #s3 .box-2 .bloc2 .text-banner, #s3 .box-3 .bloc2 #s2 .slider-home .info-banner .text-banner, #s2 .slider-home .info-banner #s3 .box-3 .bloc2 .text-banner, .dipta-concatenats, #s2 #dipta-noticia .contingut p, #s2 #dipta-agenda .contingut p, #s8 .bloc1 .contingut p, #s8 .bloc2 .contingut p, #s8 .bloc3 .contingut p, #s8 .bloc4 .contingut p, #s2 #dipta-noticia .contingut .slider-home .info-banner .text-banner, #s2 .slider-home .info-banner #dipta-noticia .contingut .text-banner, #s2 #dipta-agenda .contingut .slider-home .info-banner .text-banner, #s2 .slider-home .info-banner #dipta-agenda .contingut .text-banner, #s8 .bloc1 .contingut #s2 .slider-home .info-banner .text-banner, #s2 .slider-home .info-banner #s8 .bloc1 .contingut .text-banner, #s8 .bloc2 .contingut #s2 .slider-home .info-banner .text-banner, #s2 .slider-home .info-banner #s8 .bloc2 .contingut .text-banner, #s8 .bloc3 .contingut #s2 .slider-home .info-banner .text-banner, #s2 .slider-home .info-banner #s8 .bloc3 .contingut .text-banner, #s8 .bloc4 .contingut #s2 .slider-home .info-banner .text-banner, #s2 .slider-home .info-banner #s8 .bloc4 .contingut .text-banner, #s1 .paragraph p:nth-child(5), #s1 .paragraph #s2 .slider-home .info-banner .text-banner:nth-child(5), #s2 .slider-home .info-banner #s1 .paragraph .text-banner:nth-child(5) {
+  font-size: 1.245rem;
+  font-weight: 100;
+  line-height: 1.8rem;
+  letter-spacing: 0;
+}
+
+/* line 103, ../sass/_creation.scss */
+#s1 .paragraph p:nth-child(6), #s1 .paragraph #s2 .slider-home .info-banner .text-banner:nth-child(6), #s2 .slider-home .info-banner #s1 .paragraph .text-banner:nth-child(6) {
+  font-size: 1.125rem;
+  font-weight: 100;
+  line-height: 1.65rem;
+  letter-spacing: 0;
+}
+
+/* line 105, ../sass/_creation.scss */
+#s1 .headings-especifics h1, #s1 .headings-especifics h2, #s1 .headings-especifics h3, #s1 .headings-especifics h2.title-doc, #s1 .headings-especifics h4, #s1 .headings-especifics h5 {
+  font-weight: 300;
+}
+
+/*Blockquotes*/
+/* line 108, ../sass/_creation.scss */
+#s1 .quote blockquote:nth-child(2), #s1 .quote blockquote:nth-child(5), #s1 .quote blockquote:nth-child(8), #s1 .quote blockquote:nth-child(23), #s2 .navigation-2 p, #s2 .navigation-2 .slider-home .info-banner .text-banner, #s2 .slider-home .info-banner .navigation-2 .text-banner, #s1 .quote blockquote:nth-child(11), #s1 .quote blockquote:nth-child(14), #s1 .quote blockquote:nth-child(17), #s1 .quote blockquote:nth-child(20), #s2 .navigation-1 p, #s2 .navigation-1 .slider-home .info-banner .text-banner, #s2 .slider-home .info-banner .navigation-1 .text-banner, #s2 .navigation-3 p, #s2 .navigation-3 .slider-home .info-banner .text-banner, #s2 .slider-home .info-banner .navigation-3 .text-banner {
+  border-bottom: 1px solid #ebebeb;
+  border-top: 1px solid #ebebeb;
+}
+
+/* line 109, ../sass/_creation.scss */
+#s1 .quote blockquote:nth-child(14):before, #s1 .quote blockquote:nth-child(17):before, #s1 .quote blockquote:nth-child(20):before, #s2 .navigation-1 p:before, #s2 .navigation-1 .slider-home .info-banner .text-banner:before, #s2 .slider-home .info-banner .navigation-1 .text-banner:before, #s2 .navigation-3 p:before, #s2 .navigation-3 .slider-home .info-banner .text-banner:before, #s2 .slider-home .info-banner .navigation-3 .text-banner:before {
+  display: block;
+  content: "\201C";
+  font-family: Georgia, serif;
+  font-size: 9rem;
+  position: absolute;
+  color: #7a7a7a;
+  margin-left: -4%;
+  margin-top: 2%;
+}
+
+/* line 112, ../sass/_creation.scss */
+#s1 .quote blockquote:nth-child(2) {
+  font-weight: 100;
+  padding: 2.3%;
+}
+
+/* line 113, ../sass/_creation.scss */
+#s1 .quote blockquote:nth-child(5) {
+  font-weight: 100;
+  padding: 2.3%;
+}
+
+/* line 114, ../sass/_creation.scss */
+#s1 .quote blockquote:nth-child(8), #s1 .quote blockquote:nth-child(23), #s2 .navigation-2 p, #s2 .navigation-2 .slider-home .info-banner .text-banner, #s2 .slider-home .info-banner .navigation-2 .text-banner {
+  font-weight: 100;
+  padding: 2.3%;
+}
+
+/* line 115, ../sass/_creation.scss */
+#s1 .quote blockquote:nth-child(11) {
+  font-weight: 100;
+  padding: 2.3%;
+}
+
+/* line 118, ../sass/_creation.scss */
+#s1 .quote blockquote:nth-child(14) {
+  font-weight: 100;
+  margin-left: 5%;
+  padding: 2.3% 2.3% 2.3% 5.3%;
+}
+
+/* line 122, ../sass/_creation.scss */
+#s1 .quote blockquote:nth-child(17) {
+  font-weight: 100;
+  margin-left: 5%;
+  padding: 2.3% 2.3% 2.3% 5.3%;
+}
+
+/* line 126, ../sass/_creation.scss */
+#s1 .quote blockquote:nth-child(20), #s2 .navigation-1 p, #s2 .navigation-1 .slider-home .info-banner .text-banner, #s2 .slider-home .info-banner .navigation-1 .text-banner, #s2 .navigation-3 p, #s2 .navigation-3 .slider-home .info-banner .text-banner, #s2 .slider-home .info-banner .navigation-3 .text-banner {
+  font-weight: 100;
+  margin-left: 5%;
+  padding: 2.3% 2.3% 2.3% 5.3%;
+}
+
+/*Slider -home */
+/* line 135, ../sass/_creation.scss */
+#s2 .slider-home .info-banner {
+  padding: 20px;
+  margin-bottom: 0.5%;
+  background-color: rgba(240, 245, 249, 0.9);
+  width: 251px;
+  height: 141px;
+}
+/* line 139, ../sass/_creation.scss */
+#s2 .slider-home .info-banner h2 {
+  color: #0083a9;
+  margin-top: 0.5rem;
+  margin-bottom: 1rem;
+}
+/* line 140, ../sass/_creation.scss */
+#s2 .slider-home .info-banner .text-banner {
+  line-height: 1.75rem;
+  margin: 0;
+}
+
+/* line 143, ../sass/_creation.scss */
+.btn-slider-left {
+  display: inline-block;
+  height: 36px;
+  width: 144px;
+  background-image: url("../images/bg-slideshowarrowleft.png");
+  overflow-x: hidden;
+  overflow-y: hidden;
+  text-align: left;
+  text-indent: -119988px;
+}
+
+/* line 149, ../sass/_creation.scss */
+.btn-slider-left:hover {
+  background-image: url("../images/bg-slideshowarrowlefthover.png");
+}
+
+/* line 150, ../sass/_creation.scss */
+.btn-slider-rigth {
+  height: 36px;
+  width: 144px;
+  display: inline-block;
+  background-image: url("../images/bg-slideshowarrowright.png");
+  overflow-x: hidden;
+  overflow-y: hidden;
+  text-align: left;
+  text-indent: -119988px;
+}
+
+/* line 156, ../sass/_creation.scss */
+.btn-slider-rigth:hover {
+  background-image: url("../images/bg-slideshowarrowrighthover.png");
+}
+
+/*P…gines de navegaci¢*/
+/* line 160, ../sass/_creation.scss */
+#s2 .navigation-1 h1 {
+  width: 680px;
+  border-bottom: 1px solid #ebebeb;
+  /*position*/
+  padding: 10px;
+  position: absolute;
+  background-color: #fff;
+  margin: -55px 0 0 12px;
+}
+
+/* line 163, ../sass/_creation.scss */
+#s2 .navigation-2 h1 {
+  width: 680px;
+  color: #0083a9;
+  /*position*/
+  padding: 10px;
+  position: absolute;
+  background-color: #fff;
+  margin: -70px 0 0 12px;
+}
+
+/* line 166, ../sass/_creation.scss */
+#s2 .navigation-3 h1 {
+  width: 650px;
+  border-bottom: 1px solid #ebebeb;
+  /*position*/
+  padding: 10px;
+  position: absolute;
+  background-color: #fff;
+  margin: -55px 0 0 0;
+}
+
+/* line 195, ../sass/_creation.scss */
+.dipta-galeria {
+  background-color: #ccc;
+  width: 677px;
+  height: 112;
+}
+/* line 196, ../sass/_creation.scss */
+.dipta-galeria img {
+  margin: 1.7rem 1rem 0 2rem;
+}
+
+/* line 198, ../sass/_creation.scss */
+.dipta-img-normal {
+  outline: 1px solid #ebebeb;
+  margin: 2rem 0 2rem 0;
+}
+
+/* line 199, ../sass/_creation.scss */
+.dipta-img-float {
+  float: left;
+  margin: 0 2rem 2rem 0;
+  outline: 1px solid #ebebeb;
+}
+
+/* line 201, ../sass/_creation.scss */
+.dipta-caption {
+  background-color: #ebebeb;
+  padding: 5px;
+}
+
+/*	Dipta BOX	*/
+/* line 204, ../sass/_creation.scss */
+#s2 .navigation-2 .bloc h1, #s3 .box-2 .bloc h1, #s3 .box-3 .bloc h1, #s2 .navigation-2 .bloc h2, #s3 .box-2 .bloc h2, #s3 .box-3 .bloc h2, #s2 .navigation-2 .bloc h3, #s3 .box-2 .bloc h3, #s3 .box-3 .bloc h3, #s2 .navigation-2 .bloc h2.title-doc, #s3 .box-2 .bloc h2.title-doc, #s3 .box-3 .bloc h2.title-doc, #s2 .navigation-2 .bloc h4, #s3 .box-2 .bloc h4, #s3 .box-3 .bloc h4, #s2 .navigation-2 .bloc h5, #s3 .box-2 .bloc h5, #s3 .box-3 .bloc h5, #s2 .navigation-2 .bloc h6, #s3 .box-2 .bloc h6, #s3 .box-3 .bloc h6, #s2 .navigation-2 .bloc .dipta-caption, #s3 .box-2 .bloc .dipta-caption, #s3 .box-3 .bloc .dipta-caption, #s8 .bloc1 h2, #s8 .bloc2 h2, #s8 .bloc3 h2, #s8 .bloc4 h2, #s2 .navigation-1 .bloc h1, #s3 .box-2 .bloc1 h1, #s3 .box-3 .bloc1 h1, #s2 .navigation-1 .bloc h2, #s3 .box-2 .bloc1 h2, #s3 .box-3 .bloc1 h2, #s2 .navigation-1 .bloc h3, #s3 .box-2 .bloc1 h3, #s3 .box-3 .bloc1 h3, #s2 .navigation-1 .bloc h2.title-doc, #s3 .box-2 .bloc1 h2.title-doc, #s3 .box-3 .bloc1 h2.title-doc, #s2 .navigation-1 .bloc h4, #s3 .box-2 .bloc1 h4, #s3 .box-3 .bloc1 h4, #s2 .navigation-1 .bloc h5, #s3 .box-2 .bloc1 h5, #s3 .box-3 .bloc1 h5, #s2 .navigation-1 .bloc h6, #s3 .box-2 .bloc1 h6, #s3 .box-3 .bloc1 h6, #s2 .navigation-1 .bloc .dipta-caption, #s3 .box-2 .bloc1 .dipta-caption, #s3 .box-3 .bloc1 .dipta-caption, #s3 .box-2 .bloc2 h1, #s3 .box-3 .bloc2 h1, #s3 .box-2 .bloc2 h2, #s3 .box-3 .bloc2 h2, #s3 .box-2 .bloc2 h3, #s3 .box-3 .bloc2 h3, #s3 .box-2 .bloc2 h2.title-doc, #s3 .box-3 .bloc2 h2.title-doc, #s3 .box-2 .bloc2 h4, #s3 .box-3 .bloc2 h4, #s3 .box-2 .bloc2 h5, #s3 .box-3 .bloc2 h5, #s3 .box-2 .bloc2 h6, #s3 .box-3 .bloc2 h6, #s3 .box-2 .bloc2 .dipta-caption, #s3 .box-3 .bloc2 .dipta-caption, #s2 #dipta-noticia h2, #s2 #dipta-agenda h2 {
+  border-top: 0.4rem solid #0083a9;
+}
+
+/* line 205, ../sass/_creation.scss */
+#s3 .box-1 .bloc h1, #s3 .box-1 .bloc h2, #s3 .box-1 .bloc h3, #s3 .box-1 .bloc h2.title-doc, #s3 .box-1 .bloc h4, #s3 .box-1 .bloc h5, #s3 .box-1 .bloc h6, #s3 .box-1 .bloc .dipta-caption, #s2 .navigation-3 .bloc h1, #s3 .box-1 .bloc1 h1, #s2 .navigation-3 .bloc h2, #s3 .box-1 .bloc1 h2, #s2 .navigation-3 .bloc h3, #s3 .box-1 .bloc1 h3, #s2 .navigation-3 .bloc h2.title-doc, #s3 .box-1 .bloc1 h2.title-doc, #s2 .navigation-3 .bloc h4, #s3 .box-1 .bloc1 h4, #s2 .navigation-3 .bloc h5, #s3 .box-1 .bloc1 h5, #s2 .navigation-3 .bloc h6, #s3 .box-1 .bloc1 h6, #s2 .navigation-3 .bloc .dipta-caption, #s3 .box-1 .bloc1 .dipta-caption, #s3 .box-1 .bloc2 h1, #s3 .box-1 .bloc2 h2, #s3 .box-1 .bloc2 h3, #s3 .box-1 .bloc2 h2.title-doc, #s3 .box-1 .bloc2 h4, #s3 .box-1 .bloc2 h5, #s3 .box-1 .bloc2 h6, #s3 .box-1 .bloc2 .dipta-caption, #s2 .navigation-2 .bloc h1, #s3 .box-2 .bloc h1, #s3 .box-3 .bloc h1, #s2 .navigation-2 .bloc h2, #s3 .box-2 .bloc h2, #s3 .box-3 .bloc h2, #s2 .navigation-2 .bloc h3, #s3 .box-2 .bloc h3, #s3 .box-3 .bloc h3, #s2 .navigation-2 .bloc h2.title-doc, #s3 .box-2 .bloc h2.title-doc, #s3 .box-3 .bloc h2.title-doc, #s2 .navigation-2 .bloc h4, #s3 .box-2 .bloc h4, #s3 .box-3 .bloc h4, #s2 .navigation-2 .bloc h5, #s3 .box-2 .bloc h5, #s3 .box-3 .bloc h5, #s2 .navigation-2 .bloc h6, #s3 .box-2 .bloc h6, #s3 .box-3 .bloc h6, #s2 .navigation-2 .bloc .dipta-caption, #s3 .box-2 .bloc .dipta-caption, #s3 .box-3 .bloc .dipta-caption, #s8 .bloc1 h2, #s8 .bloc2 h2, #s8 .bloc3 h2, #s8 .bloc4 h2, #s2 .navigation-1 .bloc h1, #s3 .box-2 .bloc1 h1, #s3 .box-3 .bloc1 h1, #s2 .navigation-1 .bloc h2, #s3 .box-2 .bloc1 h2, #s3 .box-3 .bloc1 h2, #s2 .navigation-1 .bloc h3, #s3 .box-2 .bloc1 h3, #s3 .box-3 .bloc1 h3, #s2 .navigation-1 .bloc h2.title-doc, #s3 .box-2 .bloc1 h2.title-doc, #s3 .box-3 .bloc1 h2.title-doc, #s2 .navigation-1 .bloc h4, #s3 .box-2 .bloc1 h4, #s3 .box-3 .bloc1 h4, #s2 .navigation-1 .bloc h5, #s3 .box-2 .bloc1 h5, #s3 .box-3 .bloc1 h5, #s2 .navigation-1 .bloc h6, #s3 .box-2 .bloc1 h6, #s3 .box-3 .bloc1 h6, #s2 .navigation-1 .bloc .dipta-caption, #s3 .box-2 .bloc1 .dipta-caption, #s3 .box-3 .bloc1 .dipta-caption, #s3 .box-2 .bloc2 h1, #s3 .box-3 .bloc2 h1, #s3 .box-2 .bloc2 h2, #s3 .box-3 .bloc2 h2, #s3 .box-2 .bloc2 h3, #s3 .box-3 .bloc2 h3, #s3 .box-2 .bloc2 h2.title-doc, #s3 .box-3 .bloc2 h2.title-doc, #s3 .box-2 .bloc2 h4, #s3 .box-3 .bloc2 h4, #s3 .box-2 .bloc2 h5, #s3 .box-3 .bloc2 h5, #s3 .box-2 .bloc2 h6, #s3 .box-3 .bloc2 h6, #s3 .box-2 .bloc2 .dipta-caption, #s3 .box-3 .bloc2 .dipta-caption {
+  border-bottom: 0.4rem solid white;
+}
+
+/* line 206, ../sass/_creation.scss */
+#s2 #dipta-noticia h2, #s2 #dipta-agenda h2, #s8 .bloc1 h2, #s8 .bloc2 h2, #s8 .bloc3 h2, #s8 .bloc4 h2 {
+  border-bottom: 0.4rem solid #ebebeb;
+}
+
+/* line 208, ../sass/_creation.scss */
+#s3 .box-1 .bloc {
+  background-color: #f0f7f9;
+}
+/* line 209, ../sass/_creation.scss */
+#s3 .box-1 .bloc h1, #s3 .box-1 .bloc h2, #s3 .box-1 .bloc h3, #s3 .box-1 .bloc h2.title-doc, #s3 .box-1 .bloc h4, #s3 .box-1 .bloc h5, #s3 .box-1 .bloc h6, #s3 .box-1 .bloc .dipta-caption {
+  padding: 2rem;
+}
+/* line 210, ../sass/_creation.scss */
+#s3 .box-1 .bloc p, #s3 .box-1 .bloc #s2 .slider-home .info-banner .text-banner, #s2 .slider-home .info-banner #s3 .box-1 .bloc .text-banner {
+  padding: 0 2rem 2rem 2rem;
+  border: 0;
+}
+
+/* line 213, ../sass/_creation.scss */
+#s2 .navigation-3 .bloc, #s3 .box-1 .bloc1 {
+  background-color: #ebebeb;
+}
+/* line 215, ../sass/_creation.scss */
+#s2 .navigation-3 .bloc h1, #s3 .box-1 .bloc1 h1, #s2 .navigation-3 .bloc h2, #s3 .box-1 .bloc1 h2, #s2 .navigation-3 .bloc h3, #s3 .box-1 .bloc1 h3, #s2 .navigation-3 .bloc h2.title-doc, #s3 .box-1 .bloc1 h2.title-doc, #s2 .navigation-3 .bloc h4, #s3 .box-1 .bloc1 h4, #s2 .navigation-3 .bloc h5, #s3 .box-1 .bloc1 h5, #s2 .navigation-3 .bloc h6, #s3 .box-1 .bloc1 h6, #s2 .navigation-3 .bloc .dipta-caption, #s3 .box-1 .bloc1 .dipta-caption {
+  padding: 2rem;
+}
+/* line 216, ../sass/_creation.scss */
+#s2 .navigation-3 .bloc p, #s3 .box-1 .bloc1 p, #s2 .navigation-3 .bloc .slider-home .info-banner .text-banner, #s2 .slider-home .info-banner .navigation-3 .bloc .text-banner, #s3 .box-1 .bloc1 #s2 .slider-home .info-banner .text-banner, #s2 .slider-home .info-banner #s3 .box-1 .bloc1 .text-banner {
+  padding: 0 2rem 2rem 2rem;
+  border: 0;
+  color: #014b60;
+}
+
+/* line 219, ../sass/_creation.scss */
+#s3 .box-1 .bloc2 {
+  background-color: #ebebeb;
+}
+/* line 221, ../sass/_creation.scss */
+#s3 .box-1 .bloc2 h1, #s3 .box-1 .bloc2 h2, #s3 .box-1 .bloc2 h3, #s3 .box-1 .bloc2 h2.title-doc, #s3 .box-1 .bloc2 h4, #s3 .box-1 .bloc2 h5, #s3 .box-1 .bloc2 h6, #s3 .box-1 .bloc2 .dipta-caption {
+  padding: 2rem;
+  background-color: #f0f7f9;
+}
+/* line 222, ../sass/_creation.scss */
+#s3 .box-1 .bloc2 p, #s3 .box-1 .bloc2 #s2 .slider-home .info-banner .text-banner, #s2 .slider-home .info-banner #s3 .box-1 .bloc2 .text-banner {
+  padding: 0 2rem 2rem 2rem;
+  border: 0;
+  background-color: #ebebeb;
+}
+
+/* line 225, ../sass/_creation.scss */
+#s2 .navigation-2 .bloc, #s3 .box-2 .bloc, #s3 .box-3 .bloc {
+  background-color: #f0f7f9;
+}
+/* line 227, ../sass/_creation.scss */
+#s2 .navigation-2 .bloc h1, #s3 .box-2 .bloc h1, #s3 .box-3 .bloc h1, #s2 .navigation-2 .bloc h2, #s3 .box-2 .bloc h2, #s3 .box-3 .bloc h2, #s2 .navigation-2 .bloc h3, #s3 .box-2 .bloc h3, #s3 .box-3 .bloc h3, #s2 .navigation-2 .bloc h2.title-doc, #s3 .box-2 .bloc h2.title-doc, #s3 .box-3 .bloc h2.title-doc, #s2 .navigation-2 .bloc h4, #s3 .box-2 .bloc h4, #s3 .box-3 .bloc h4, #s2 .navigation-2 .bloc h5, #s3 .box-2 .bloc h5, #s3 .box-3 .bloc h5, #s2 .navigation-2 .bloc h6, #s3 .box-2 .bloc h6, #s3 .box-3 .bloc h6, #s2 .navigation-2 .bloc .dipta-caption, #s3 .box-2 .bloc .dipta-caption, #s3 .box-3 .bloc .dipta-caption {
+  padding: 2rem;
+}
+/* line 228, ../sass/_creation.scss */
+#s2 .navigation-2 .bloc p, #s3 .box-2 .bloc p, #s3 .box-3 .bloc p, #s2 .navigation-2 .bloc .slider-home .info-banner .text-banner, #s2 .slider-home .info-banner .navigation-2 .bloc .text-banner, #s3 .box-2 .bloc #s2 .slider-home .info-banner .text-banner, #s2 .slider-home .info-banner #s3 .box-2 .bloc .text-banner, #s3 .box-3 .bloc #s2 .slider-home .info-banner .text-banner, #s2 .slider-home .info-banner #s3 .box-3 .bloc .text-banner {
+  padding: 0 2rem 2rem 2rem;
+  border: 0;
+}
+
+/* line 231, ../sass/_creation.scss */
+#s8 .bloc1, #s8 .bloc2, #s8 .bloc3, #s8 .bloc4 {
+  background-color: #f0f7f9;
+}
+/* line 233, ../sass/_creation.scss */
+#s8 .bloc1 h2, #s8 .bloc2 h2, #s8 .bloc3 h2, #s8 .bloc4 h2 {
+  padding: 2rem;
+  color: #0083a9;
+}
+/* line 234, ../sass/_creation.scss */
+#s8 .bloc1 p, #s8 .bloc2 p, #s8 .bloc3 p, #s8 .bloc4 p, #s8 .bloc1 #s2 .slider-home .info-banner .text-banner, #s2 .slider-home .info-banner #s8 .bloc1 .text-banner, #s8 .bloc2 #s2 .slider-home .info-banner .text-banner, #s2 .slider-home .info-banner #s8 .bloc2 .text-banner, #s8 .bloc3 #s2 .slider-home .info-banner .text-banner, #s2 .slider-home .info-banner #s8 .bloc3 .text-banner, #s8 .bloc4 #s2 .slider-home .info-banner .text-banner, #s2 .slider-home .info-banner #s8 .bloc4 .text-banner {
+  padding: 0 2rem 2rem 2rem;
+  border: 0;
+}
+
+/* line 236, ../sass/_creation.scss */
+#s2 .navigation-1 .bloc, #s3 .box-2 .bloc1, #s3 .box-3 .bloc1 {
+  background-color: #ebebeb;
+}
+/* line 238, ../sass/_creation.scss */
+#s2 .navigation-1 .bloc h1, #s3 .box-2 .bloc1 h1, #s3 .box-3 .bloc1 h1, #s2 .navigation-1 .bloc h2, #s3 .box-2 .bloc1 h2, #s3 .box-3 .bloc1 h2, #s2 .navigation-1 .bloc h3, #s3 .box-2 .bloc1 h3, #s3 .box-3 .bloc1 h3, #s2 .navigation-1 .bloc h2.title-doc, #s3 .box-2 .bloc1 h2.title-doc, #s3 .box-3 .bloc1 h2.title-doc, #s2 .navigation-1 .bloc h4, #s3 .box-2 .bloc1 h4, #s3 .box-3 .bloc1 h4, #s2 .navigation-1 .bloc h5, #s3 .box-2 .bloc1 h5, #s3 .box-3 .bloc1 h5, #s2 .navigation-1 .bloc h6, #s3 .box-2 .bloc1 h6, #s3 .box-3 .bloc1 h6, #s2 .navigation-1 .bloc .dipta-caption, #s3 .box-2 .bloc1 .dipta-caption, #s3 .box-3 .bloc1 .dipta-caption {
+  padding: 2rem;
+}
+/* line 239, ../sass/_creation.scss */
+#s2 .navigation-1 .bloc p, #s3 .box-2 .bloc1 p, #s3 .box-3 .bloc1 p, #s2 .navigation-1 .bloc .slider-home .info-banner .text-banner, #s2 .slider-home .info-banner .navigation-1 .bloc .text-banner, #s3 .box-2 .bloc1 #s2 .slider-home .info-banner .text-banner, #s2 .slider-home .info-banner #s3 .box-2 .bloc1 .text-banner, #s3 .box-3 .bloc1 #s2 .slider-home .info-banner .text-banner, #s2 .slider-home .info-banner #s3 .box-3 .bloc1 .text-banner {
+  padding: 0 2rem 2rem 2rem;
+  border: 0;
+  color: #014b60;
+}
+
+/* line 242, ../sass/_creation.scss */
+#s3 .box-2 .bloc2, #s3 .box-3 .bloc2 {
+  background-color: #ebebeb;
+}
+/* line 244, ../sass/_creation.scss */
+#s3 .box-2 .bloc2 h1, #s3 .box-3 .bloc2 h1, #s3 .box-2 .bloc2 h2, #s3 .box-3 .bloc2 h2, #s3 .box-2 .bloc2 h3, #s3 .box-3 .bloc2 h3, #s3 .box-2 .bloc2 h2.title-doc, #s3 .box-3 .bloc2 h2.title-doc, #s3 .box-2 .bloc2 h4, #s3 .box-3 .bloc2 h4, #s3 .box-2 .bloc2 h5, #s3 .box-3 .bloc2 h5, #s3 .box-2 .bloc2 h6, #s3 .box-3 .bloc2 h6, #s3 .box-2 .bloc2 .dipta-caption, #s3 .box-3 .bloc2 .dipta-caption {
+  padding: 2rem;
+  background-color: #f0f7f9;
+}
+/* line 245, ../sass/_creation.scss */
+#s3 .box-2 .bloc2 p, #s3 .box-3 .bloc2 p, #s3 .box-2 .bloc2 #s2 .slider-home .info-banner .text-banner, #s2 .slider-home .info-banner #s3 .box-2 .bloc2 .text-banner, #s3 .box-3 .bloc2 #s2 .slider-home .info-banner .text-banner, #s2 .slider-home .info-banner #s3 .box-3 .bloc2 .text-banner {
+  padding: 0 2rem 2rem 2rem;
+  border: 0;
+  background-color: #ebebeb;
+}
+
+/* line 248, ../sass/_creation.scss */
+.dipta-concatenats {
+  /* separador "|"*/
+}
+/* line 249, ../sass/_creation.scss */
+.dipta-concatenats .dipta-camp {
+  display: inline-block;
+}
+/* line 249, ../sass/_creation.scss */
+.dipta-concatenats .dipta-camp span + span {
+  padding-left: 0.5rem;
+}
+/* line 254, ../sass/_creation.scss */
+.dipta-concatenats div + div:before {
+  content: "|";
+  font-size: 0.8rem;
+  position: relative;
+  top: -2px;
+  padding: 0.5rem;
+}
+
+/* line 258, ../sass/_creation.scss */
+#s2 #dipta-noticia h2, #s2 #dipta-agenda h2, #s8 .bloc1 h2, #s8 .bloc2 h2, #s8 .bloc3 h2, #s8 .bloc4 h2 {
+  padding: 2rem 0 2rem 5rem;
+  margin: 0;
+  background: url("../images/escut-dipta.png") no-repeat;
+  background-position: 2rem 2.1rem;
+  background-color: #fff;
+}
+
+/* line 268, ../sass/_creation.scss */
+.dipta-resum h1, .dipta-resum h2, .dipta-resum h3, .dipta-resum h2.title-doc, .dipta-resum h4, .dipta-resum h5 {
+  margin: 5px 0 5px 0;
+}
+/* line 269, ../sass/_creation.scss */
+.dipta-resum p, .dipta-resum #s2 .slider-home .info-banner .text-banner, #s2 .slider-home .info-banner .dipta-resum .text-banner {
+  margin: 5px 0 5px 0;
+}
+/* line 270, ../sass/_creation.scss */
+.dipta-resum .float {
+  float: left;
+  margin: 5px 5px 0 0;
+}
+/* line 271, ../sass/_creation.scss */
+.dipta-resum img {
+  margin-bottom: 5px;
+}
+
+/* line 274, ../sass/_creation.scss */
+#s2 #dipta-noticia .contingut, #s2 #dipta-agenda .contingut, #s8 .bloc1 .contingut, #s8 .bloc2 .contingut, #s8 .bloc3 .contingut, #s8 .bloc4 .contingut {
+  background-color: #fff;
+}
+/* line 276, ../sass/_creation.scss */
+#s2 #dipta-noticia .contingut h3, #s2 #dipta-agenda .contingut h3, #s8 .bloc1 .contingut h3, #s8 .bloc2 .contingut h3, #s8 .bloc3 .contingut h3, #s8 .bloc4 .contingut h3, #s2 #dipta-noticia .contingut h2.title-doc, #s2 #dipta-agenda .contingut h2.title-doc, #s8 .bloc1 .contingut h2.title-doc, #s8 .bloc2 .contingut h2.title-doc, #s8 .bloc3 .contingut h2.title-doc, #s8 .bloc4 .contingut h2.title-doc, #s2 #dipta-noticia .contingut h4, #s2 #dipta-agenda .contingut h4, #s8 .bloc1 .contingut h4, #s8 .bloc2 .contingut h4, #s8 .bloc3 .contingut h4, #s8 .bloc4 .contingut h4, #s2 #dipta-noticia .contingut h5, #s2 #dipta-agenda .contingut h5, #s8 .bloc1 .contingut h5, #s8 .bloc2 .contingut h5, #s8 .bloc3 .contingut h5, #s8 .bloc4 .contingut h5 {
+  font-weight: 600;
+}
+/* line 277, ../sass/_creation.scss */
+#s2 #dipta-noticia .contingut div.dipta-resum, #s2 #dipta-agenda .contingut div.dipta-resum, #s8 .bloc1 .contingut div.dipta-resum, #s8 .bloc2 .contingut div.dipta-resum, #s8 .bloc3 .contingut div.dipta-resum, #s8 .bloc4 .contingut div.dipta-resum {
+  padding: 2rem 2rem 2rem 2rem;
+}
+/* line 278, ../sass/_creation.scss */
+#s2 #dipta-noticia .contingut div.dipta-resum:first-child, #s2 #dipta-agenda .contingut div.dipta-resum:first-child, #s8 .bloc1 .contingut div.dipta-resum:first-child, #s8 .bloc2 .contingut div.dipta-resum:first-child, #s8 .bloc3 .contingut div.dipta-resum:first-child, #s8 .bloc4 .contingut div.dipta-resum:first-child {
+  border-bottom: 0.4rem solid #ebebeb;
+}
+/* line 279, ../sass/_creation.scss */
+#s2 #dipta-noticia .contingut div.dipta-resum + div.dipta-resum, #s2 #dipta-agenda .contingut div.dipta-resum + div.dipta-resum, #s8 .bloc1 .contingut div.dipta-resum + div.dipta-resum, #s8 .bloc2 .contingut div.dipta-resum + div.dipta-resum, #s8 .bloc3 .contingut div.dipta-resum + div.dipta-resum, #s8 .bloc4 .contingut div.dipta-resum + div.dipta-resum {
+  padding-right: 2rem;
+  border-bottom: 0.4rem solid #ebebeb;
+}
+/* line 281, ../sass/_creation.scss */
+#s2 #dipta-noticia .contingut div.dipta-resum:last-child, #s2 #dipta-agenda .contingut div.dipta-resum:last-child, #s8 .bloc1 .contingut div.dipta-resum:last-child, #s8 .bloc2 .contingut div.dipta-resum:last-child, #s8 .bloc3 .contingut div.dipta-resum:last-child, #s8 .bloc4 .contingut div.dipta-resum:last-child {
+  border-bottom: 0!important;
+}
+/* line 283, ../sass/_creation.scss */
+#s2 #dipta-noticia .contingut p, #s2 #dipta-agenda .contingut p, #s8 .bloc1 .contingut p, #s8 .bloc2 .contingut p, #s8 .bloc3 .contingut p, #s8 .bloc4 .contingut p, #s2 #dipta-noticia .contingut .slider-home .info-banner .text-banner, #s2 .slider-home .info-banner #dipta-noticia .contingut .text-banner, #s2 #dipta-agenda .contingut .slider-home .info-banner .text-banner, #s2 .slider-home .info-banner #dipta-agenda .contingut .text-banner, #s8 .bloc1 .contingut #s2 .slider-home .info-banner .text-banner, #s2 .slider-home .info-banner #s8 .bloc1 .contingut .text-banner, #s8 .bloc2 .contingut #s2 .slider-home .info-banner .text-banner, #s2 .slider-home .info-banner #s8 .bloc2 .contingut .text-banner, #s8 .bloc3 .contingut #s2 .slider-home .info-banner .text-banner, #s2 .slider-home .info-banner #s8 .bloc3 .contingut .text-banner, #s8 .bloc4 .contingut #s2 .slider-home .info-banner .text-banner, #s2 .slider-home .info-banner #s8 .bloc4 .contingut .text-banner {
+  padding: 0;
+}
+/* line 284, ../sass/_creation.scss */
+#s2 #dipta-noticia .contingut p:after, #s2 #dipta-agenda .contingut p:after, #s8 .bloc1 .contingut p:after, #s8 .bloc2 .contingut p:after, #s8 .bloc3 .contingut p:after, #s8 .bloc4 .contingut p:after, #s2 #dipta-noticia .contingut .slider-home .info-banner .text-banner:after, #s2 .slider-home .info-banner #dipta-noticia .contingut .text-banner:after, #s2 #dipta-agenda .contingut .slider-home .info-banner .text-banner:after, #s2 .slider-home .info-banner #dipta-agenda .contingut .text-banner:after, #s8 .bloc1 .contingut #s2 .slider-home .info-banner .text-banner:after, #s2 .slider-home .info-banner #s8 .bloc1 .contingut .text-banner:after, #s8 .bloc2 .contingut #s2 .slider-home .info-banner .text-banner:after, #s2 .slider-home .info-banner #s8 .bloc2 .contingut .text-banner:after, #s8 .bloc3 .contingut #s2 .slider-home .info-banner .text-banner:after, #s2 .slider-home .info-banner #s8 .bloc3 .contingut .text-banner:after, #s8 .bloc4 .contingut #s2 .slider-home .info-banner .text-banner:after, #s2 .slider-home .info-banner #s8 .bloc4 .contingut .text-banner:after {
+  content: " ...";
+  font-weight: 600;
+  color: #0083a9;
+  font-size: 3rem;
+}
+
+/* Palette colors*/
+/* Night Pencil */
+/* Magic */
+/* yummi-turquoise */
+/* J Peterman Shirt */
+/* winter morning */
+/*Containers*/
+/* line 22, ../sass/doc.scss */
+#s1, #s2, #s3, #s7, #s8 {
+  max-width: 940px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* line 23, ../sass/doc.scss */
+header .container, #s1 .headings-especifics, #s1 .headings-generals, #s1 .links, #s1 .paragraph, #s1 .quote, #s2 .navigation-1, #s2 .navigation-2, #s2 .navigation-3, #s2 #dipta-noticia .container, #s2 #dipta-agenda .container, #s3 .box-1, #s3 .box-2, #s3 .box-3 {
+  max-width: 705px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Header Doc*/
+/* line 27, ../sass/doc.scss */
+header {
+  background-color: #0083a9;
+  padding: 90px 0 10px 0;
+  text-align: center;
+  color: #fff;
+}
+/* line 31, ../sass/doc.scss */
+header p, header #s2 .slider-home .info-banner .text-banner, #s2 .slider-home .info-banner header .text-banner {
+  color: #f0f7f9;
+  line-height: 1.4;
+  font-size: 21px;
+  font-weight: normal;
+}
+/* line 32, ../sass/doc.scss */
+header h1 {
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-weight: 500;
+  font-size: 50px;
+  margin: 20px 0 3px 0;
+}
+/* line 34, ../sass/doc.scss */
+header .btn-down {
+  display: inline-block;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  -ms-border-radius: 6px;
+  -o-border-radius: 6px;
+  border-radius: 6px;
+  background-color: transparent;
+  border: 1px solid #f0f7f9;
+  color: #FFFFFF;
+  font-size: 17px;
+  font-weight: 500;
+  margin-bottom: 15px;
+  margin-top: 15px;
+  padding-bottom: 18px;
+  padding-left: 24px;
+  padding-right: 24px;
+  padding-top: 18px;
+  transition-delay: 0s;
+  transition-duration: 0.1s;
+  transition-property: all;
+  transition-timing-function: ease-in-out;
+}
+/* line 42, ../sass/doc.scss */
+header .btn-down:hover {
+  background-color: #fff;
+  color: #0083a9;
+  text-decoration: none;
+}
+/* line 43, ../sass/doc.scss */
+header ul {
+  font-size: 14px;
+  margin-top: 20px;
+  list-style: none;
+  padding: 25px;
+}
+/* line 48, ../sass/doc.scss */
+header ul li {
+  display: inline;
+}
+/* line 49, ../sass/doc.scss */
+header ul li a {
+  color: #f0f7f9;
+  font-weight: normal;
+}
+/* line 50, ../sass/doc.scss */
+header ul li a:hover {
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.55);
+  text-decoration: none;
+}
+/* line 52, ../sass/doc.scss */
+header ul li + li {
+  margin-left: 20px;
+}
+
+/* Navigation doc */
+/* line 57, ../sass/doc.scss */
+nav {
+  position: fixed;
+  top: 0;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  background-color: #F0F7F9;
+  z-index: 1000;
+}
+/* line 59, ../sass/doc.scss */
+nav ul {
+  list-style: none;
+  padding: 5px;
+  margin: 0;
+  text-align: center;
+  text-transform: uppercase;
+}
+/* line 61, ../sass/doc.scss */
+nav ul li {
+  display: inline;
+  font-size: 1.2rem;
+  padding: 10px;
+}
+
+/*Footter doc */
+/* line 66, ../sass/doc.scss */
+footer {
+  background-color: #014B60;
+  margin: 150px 0 0 0;
+  padding: 1px 0 1px 0;
+  color: #fff;
+  text-align: center;
+}
+/* line 66, ../sass/doc.scss */
+footer h5 {
+  margin: 0;
+}
+
+/*Title docs page*/
+/* line 70, ../sass/doc.scss */
+h1.title-doc {
+  padding-top: 80px;
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-weight: 500;
+  font-size: 5rem;
+}
+
+/* line 72, ../sass/doc.scss */
+h2.title-doc {
+  background-color: #014b60;
+  padding: 1%;
+  color: #f0f7f9;
+  font-weight: 500;
+}
+
+/* Palette colors*/
+/* line 75, ../sass/doc.scss */
+#palette-colors {
+  list-style: none;
+  padding: 0;
+  /* #464646 #EBEBEB #0083A9 #F0F7F9 #014B60*/
+}
+/* line 77, ../sass/doc.scss */
+#palette-colors li {
+  color: #ccc;
+  display: inline-block;
+  width: 180px;
+  height: 350px;
+  text-align: center;
+}
+/* line 78, ../sass/doc.scss */
+#palette-colors li i {
+  color: #ccc;
+  display: block;
+  position: relative;
+  font-weight: bold;
+  margin: 0;
+  font-size: 20px;
+}
+/* line 79, ../sass/doc.scss */
+#palette-colors li h5 {
+  padding-top: 30px;
+  margin-bottom: 3px;
+}
+/* line 81, ../sass/doc.scss */
+#palette-colors li:first-child {
+  background-color: #464646;
+}
+/* line 82, ../sass/doc.scss */
+#palette-colors li:nth-child(2) {
+  background-color: #014B60;
+}
+/* line 83, ../sass/doc.scss */
+#palette-colors li:nth-child(3) {
+  background-color: #0083A9;
+}
+/* line 84, ../sass/doc.scss */
+#palette-colors li:nth-child(4) {
+  background-color: #EBEBEB;
+}
+/* line 85, ../sass/doc.scss */
+#palette-colors li:last-child {
+  background-color: #F0F7F9;
+}
+
+/* line 95, ../sass/doc.scss */
+#s1 .links a {
+  font-weight: 600;
+}
+
+/* line 120, ../sass/doc.scss */
+#s2 .slider-home .dipta-slider-home {
+  position: absolute;
+  margin: -290px 0 0 30px;
+}
+/* line 124, ../sass/doc.scss */
+#s2 .navigation-1 p, #s2 .navigation-1 .slider-home .info-banner .text-banner, #s2 .slider-home .info-banner .navigation-1 .text-banner {
+  border: 0;
+}
+/* line 125, ../sass/doc.scss */
+#s2 .navigation-1 .bloc {
+  margin: 0 2rem 0 2rem;
+}
+/* line 125, ../sass/doc.scss */
+#s2 .navigation-1 .bloc p:before, #s2 .navigation-1 .bloc .slider-home .info-banner .text-banner:before, #s2 .slider-home .info-banner .navigation-1 .bloc .text-banner:before {
+  content: "";
+  padding: 0;
+  margin: 0;
+}
+/* line 125, ../sass/doc.scss */
+#s2 .navigation-1 .bloc p, #s2 .navigation-1 .bloc .slider-home .info-banner .text-banner, #s2 .slider-home .info-banner .navigation-1 .bloc .text-banner {
+  margin: 0;
+}
+/* line 127, ../sass/doc.scss */
+#s2 .navigation-2 p, #s2 .navigation-2 .slider-home .info-banner .text-banner, #s2 .slider-home .info-banner .navigation-2 .text-banner {
+  border: 0;
+}
+/* line 128, ../sass/doc.scss */
+#s2 .navigation-2 .bloc {
+  margin: 0 2rem 0 2rem;
+}
+/* line 128, ../sass/doc.scss */
+#s2 .navigation-2 .bloc p:before, #s2 .navigation-2 .bloc .slider-home .info-banner .text-banner:before, #s2 .slider-home .info-banner .navigation-2 .bloc .text-banner:before {
+  content: "";
+  padding: 0;
+  margin: 0;
+}
+/* line 130, ../sass/doc.scss */
+#s2 .navigation-3 p, #s2 .navigation-3 .slider-home .info-banner .text-banner, #s2 .slider-home .info-banner .navigation-3 .text-banner {
+  border: 0;
+}
+/* line 131, ../sass/doc.scss */
+#s2 .navigation-3 .bloc {
+  margin: 0 2rem 0 2rem;
+}
+/* line 131, ../sass/doc.scss */
+#s2 .navigation-3 .bloc p:before, #s2 .navigation-3 .bloc .slider-home .info-banner .text-banner:before, #s2 .slider-home .info-banner .navigation-3 .bloc .text-banner:before {
+  content: "";
+  padding: 0;
+  margin: 0;
+}
+/* line 131, ../sass/doc.scss */
+#s2 .navigation-3 .bloc p, #s2 .navigation-3 .bloc .slider-home .info-banner .text-banner, #s2 .slider-home .info-banner .navigation-3 .bloc .text-banner {
+  margin: 0;
+}
+/* line 134, ../sass/doc.scss */
+#s2 #dipta-noticia {
+  background-color: #ebebeb;
+  padding: 2rem;
+}
+/* line 138, ../sass/doc.scss */
+#s2 #dipta-noticia .contingut div.dipta-resum {
+  width: 44%;
+  float: left;
+  padding: 2rem 2rem 2rem 2rem;
+}
+/* line 139, ../sass/doc.scss */
+#s2 #dipta-noticia .contingut div.dipta-resum:first-child {
+  border-right: 0.4rem solid #ebebeb;
+  border-bottom: 0;
+}
+/* line 140, ../sass/doc.scss */
+#s2 #dipta-noticia .contingut div.dipta-resum + div.dipta-resum {
+  padding-right: 2rem;
+  border-bottom: 0.4rem solid #ebebeb;
+}
+/* line 141, ../sass/doc.scss */
+#s2 #dipta-noticia .contingut div.dipta-resum:last-child {
+  border-bottom: 0!important;
+}
+/* line 144, ../sass/doc.scss */
+#s2 #dipta-agenda {
+  background-color: #ebebeb;
+  padding: 2rem;
+}
+
+/* line 178, ../sass/doc.scss */
+#s8 .bloc1 {
+  display: inline-block;
+}
+/* line 181, ../sass/doc.scss */
+#s8 .bloc1 .contingut {
+  background-color: #fff;
+}
+/* line 184, ../sass/doc.scss */
+#s8 .bloc2 {
+  display: inline-block;
+}
+/* line 186, ../sass/doc.scss */
+#s8 .bloc2 h2 {
+  background-color: #f0f7f9;
+  border-bottom-color: #fff;
+}
+/* line 187, ../sass/doc.scss */
+#s8 .bloc2 .contingut {
+  background-color: #f0f7f9;
+}
+/* line 188, ../sass/doc.scss */
+#s8 .bloc2 .contingut div.dipta-resum {
+  border-bottom-color: white !important;
+}
+/* line 191, ../sass/doc.scss */
+#s8 .bloc3 {
+  display: inline-block;
+}
+/* line 194, ../sass/doc.scss */
+#s8 .bloc3 .contingut {
+  background-color: #fff;
+}
+/* line 197, ../sass/doc.scss */
+#s8 .bloc4 {
+  display: inline-block;
+}
+/* line 199, ../sass/doc.scss */
+#s8 .bloc4 h2 {
+  background-color: #f0f7f9;
+  border-bottom-color: #fff;
+}
+/* line 200, ../sass/doc.scss */
+#s8 .bloc4 .contingut {
+  background-color: #f0f7f9;
+}
+/* line 201, ../sass/doc.scss */
+#s8 .bloc4 .contingut div.dipta-resum {
+  border-bottom-color: white !important;
+}
