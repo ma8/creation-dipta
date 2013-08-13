@@ -3,8 +3,16 @@
 *
 *
 */
+@import 'susy';    
 
-// Visual Grid Variables
+/* Visual Grid Susy*/
+$total-columns  : 12;             // a 12-column grid
+$column-width   : 4em;            // each column is 4em wide
+$gutter-width   : 1em;            // 1em gutters between columns
+$grid-padding   : $gutter-width;  // grid-padding equal to gutters
+
+
+/* bariable nourbon neats
 $column:90px;
 $gutter: 20px; 
 $max-width: 850px; 
@@ -17,9 +25,13 @@ $visual-grid-color: pink;
 $visual-grid-index: back;
 $visual-grid-opacity: 0.1;
 
-
+*/
 // Grid Setup
 
-$mobile: new-breakpoint(max-width 480px 4); // Use a 4 column grid
-$tablet: new-breakpoint(min-width 481px max-width 989px 8); // Use an 8 column grid
-$desktop: new-breakpoint(min-width 1234px 12); // Use a 12 column grid
+$mobile: 480px ; // Use a 4 column grid
+$tablet: 481px  989px ; // Use an 8 column grid
+$desktop:  1234px  1400px; // Use a 12 column grid
+
+
+
+

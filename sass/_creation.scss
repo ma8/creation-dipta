@@ -6,6 +6,9 @@
 @import "compass/css3";
 @import "compass/utilities";
 @import "_syntax";
+@import "breakpoint"; 
+
+
 
 /**
 * 	Palette colors
@@ -55,16 +58,17 @@ $h5-h: 0.6 * $base-h;/*line-height*/
 $h6-s:0.75 * $base-s;/*size*/
 $h6-h: 0.55 * $base-h;/*line-height*/
 	
-/*Breakpoints*/
-$iphone:320px;
-$ipad:768px;	
-$desktop:960px;
-$desktop-huge:1280px;	
-$tv:1480px;
+ 
+$mobile: 480px ; // Use a 4 column grid
+$tablet: 481px  989px ; // Use an 8 column grid
+$desktop:  1234px  1400px; // Use a 12 column grid
 
 html {  
-	font-size: 62.5%;color:$gray;
+	 color:$gray;
 	/*Typography responsive for compass breakpoints*/
+	 	@include breakpoint($mobile){ font-size:75%;}
+	 	@include breakpoint($tablet){ font-size:62,5%;}
+	 	@include breakpoint($desktop){ font-size:85%;}
   }
 	
 body{

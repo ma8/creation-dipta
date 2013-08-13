@@ -1,4 +1,3 @@
-@charset "CP850";
 @import url(http://fonts.googleapis.com/css?family=Droid+Sans:400,700);
 @import url(http://fonts.googleapis.com/css?family=Roboto+Condensed:400,300,700);
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:400,700,300,600,800);
@@ -12,8 +11,8 @@
 */
 /**
  * @file
- * Creation for compass - Front-end framework de  la Diputaci¢ de Tarragona.
- * @Miguel µngel Ramos.
+ * Creation for compass - Front-end framework de  la Diputaci√≥ de Tarragona.
+ * @Miguel √Ångel Ramos.
  */
 /**
  * prism.js default theme for JavaScript, CSS and HTML
@@ -254,7 +253,7 @@ pre.line-numbers > code {
 /* J Peterman Shirt */
 /* winter morning */
 /**
-*	Typografia ˙ web-fonts
+*	Typografia ¬∑ web-fonts
 * 	http://www.google.com/fonts
 *	Imports + Golden ratio + responsive typography
 */
@@ -278,15 +277,31 @@ pre.line-numbers > code {
 /*line-height*/
 /*size*/
 /*line-height*/
-/*Breakpoints*/
-/* line 65, ../sass/_creation.scss */
+/* line 66, ../sass/_creation.scss */
 html {
-  font-size: 62.5%;
   color: #464646;
   /*Typography responsive for compass breakpoints*/
 }
+@media (min-width: 480px) {
+  /* line 66, ../sass/_creation.scss */
+  html {
+    font-size: 75%;
+  }
+}
+@media (min-width: 481px) and (max-width: 989px) {
+  /* line 66, ../sass/_creation.scss */
+  html {
+    font-size: 62,5%;
+  }
+}
+@media (min-width: 1234px) and (max-width: 1400px) {
+  /* line 66, ../sass/_creation.scss */
+  html {
+    font-size: 85%;
+  }
+}
 
-/* line 70, ../sass/_creation.scss */
+/* line 74, ../sass/_creation.scss */
 body {
   /*$font1: 'Open Sans', sans-serif;*/
   margin: 0;
@@ -296,13 +311,13 @@ body {
 }
 
 /*Syntax custom*/
-/* line 79, ../sass/_creation.scss */
+/* line 83, ../sass/_creation.scss */
 code {
   font-size: 1.2rem;
   font-family: Consolas,Monaco,"Andale Mono",monospace;
 }
 
-/* line 80, ../sass/_creation.scss */
+/* line 84, ../sass/_creation.scss */
 pre {
   overflow-x: scroll !important;
   overflow-y: scroll !important;
@@ -310,7 +325,7 @@ pre {
 }
 
 /* Dipta Clear */
-/* line 83, ../sass/_creation.scss */
+/* line 87, ../sass/_creation.scss */
 .dipta-clear, .dipta-body:after, #s2 #dipta-noticia .contingut:after, #s2 #dipta-agenda .contingut:after, #s8 .bloc1 .contingut:after, #s8 .bloc2 .contingut:after, #s8 .bloc3 .contingut:after, #s8 .bloc4 .contingut:after {
   content: ".";
   display: block;
@@ -320,23 +335,23 @@ pre {
   margin: 20px;
 }
 
-/* line 85, ../sass/_creation.scss */
+/* line 89, ../sass/_creation.scss */
 p, #s2 .slider-home .info-banner .text-banner {
   font-weight: 300;
 }
 
-/* line 86, ../sass/_creation.scss */
+/* line 90, ../sass/_creation.scss */
 a {
   color: #0083a9;
   text-decoration: none;
 }
 
-/* line 87, ../sass/_creation.scss */
+/* line 91, ../sass/_creation.scss */
 a:hover {
   text-decoration: underline;
 }
 
-/* line 89, ../sass/_creation.scss */
+/* line 93, ../sass/_creation.scss */
 h1 {
   /*body*/
   font-size: 3rem;
@@ -345,7 +360,7 @@ h1 {
   letter-spacing: -0.2rem;
 }
 
-/* line 90, ../sass/_creation.scss */
+/* line 94, ../sass/_creation.scss */
 h2 {
   font-size: 2.7rem;
   font-weight: 400;
@@ -353,7 +368,7 @@ h2 {
   letter-spacing: -0.06rem;
 }
 
-/* line 91, ../sass/_creation.scss */
+/* line 95, ../sass/_creation.scss */
 h3, h2.title-doc {
   font-size: 2.25rem;
   font-weight: 400;
@@ -361,7 +376,7 @@ h3, h2.title-doc {
   letter-spacing: -0.06rem;
 }
 
-/* line 92, ../sass/_creation.scss */
+/* line 96, ../sass/_creation.scss */
 h4 {
   font-size: 1.5rem;
   font-weight: 400;
@@ -369,7 +384,7 @@ h4 {
   letter-spacing: -0.06rem;
 }
 
-/* line 93, ../sass/_creation.scss */
+/* line 97, ../sass/_creation.scss */
 h5 {
   font-size: 1.245rem;
   font-weight: 400;
@@ -377,7 +392,7 @@ h5 {
   letter-spacing: -0.06rem;
 }
 
-/* line 94, ../sass/_creation.scss */
+/* line 98, ../sass/_creation.scss */
 h6, .dipta-caption {
   font-size: 1.125rem;
   font-weight: 400;
@@ -386,7 +401,7 @@ h6, .dipta-caption {
 }
 
 /* Paragraph size h1,h2,h3,h4,h5.h6*/
-/* line 98, ../sass/_creation.scss */
+/* line 102, ../sass/_creation.scss */
 #s1 .paragraph p:nth-child(1), #s1 .paragraph #s2 .slider-home .info-banner .text-banner:nth-child(1), #s2 .slider-home .info-banner #s1 .paragraph .text-banner:nth-child(1) {
   font-size: 3rem;
   font-weight: 100;
@@ -394,7 +409,7 @@ h6, .dipta-caption {
   letter-spacing: 0;
 }
 
-/* line 99, ../sass/_creation.scss */
+/* line 103, ../sass/_creation.scss */
 #s1 .quote blockquote:nth-child(2), #s1 .quote blockquote:nth-child(14), #s1 .paragraph p:nth-child(2), #s1 .paragraph #s2 .slider-home .info-banner .text-banner:nth-child(2), #s2 .slider-home .info-banner #s1 .paragraph .text-banner:nth-child(2) {
   font-size: 2.7rem;
   font-weight: 100;
@@ -402,7 +417,7 @@ h6, .dipta-caption {
   letter-spacing: 0;
 }
 
-/* line 100, ../sass/_creation.scss */
+/* line 104, ../sass/_creation.scss */
 #s1 .quote blockquote:nth-child(5), #s1 .quote blockquote:nth-child(17), #s1 .paragraph p:nth-child(3), #s1 .paragraph #s2 .slider-home .info-banner .text-banner:nth-child(3), #s2 .slider-home .info-banner #s1 .paragraph .text-banner:nth-child(3) {
   font-size: 2.25rem;
   font-weight: 100;
@@ -410,7 +425,7 @@ h6, .dipta-caption {
   letter-spacing: 0;
 }
 
-/* line 101, ../sass/_creation.scss */
+/* line 105, ../sass/_creation.scss */
 #s1 .quote blockquote:nth-child(8), #s1 .quote blockquote:nth-child(23), #s2 .navigation-2 p, #s2 .navigation-2 .slider-home .info-banner .text-banner, #s2 .slider-home .info-banner .navigation-2 .text-banner, #s1 .quote blockquote:nth-child(20), #s2 .navigation-1 p, #s2 .navigation-1 .slider-home .info-banner .text-banner, #s2 .slider-home .info-banner .navigation-1 .text-banner, #s2 .navigation-3 p, #s2 .navigation-3 .slider-home .info-banner .text-banner, #s2 .slider-home .info-banner .navigation-3 .text-banner, .dipta-resum p, .dipta-resum #s2 .slider-home .info-banner .text-banner, #s2 .slider-home .info-banner .dipta-resum .text-banner, #s1 .paragraph p:nth-child(4), #s1 .paragraph #s2 .slider-home .info-banner .text-banner:nth-child(4), #s2 .slider-home .info-banner #s1 .paragraph .text-banner:nth-child(4) {
   font-size: 1.5rem;
   font-weight: 100;
@@ -418,7 +433,7 @@ h6, .dipta-caption {
   letter-spacing: 0;
 }
 
-/* line 102, ../sass/_creation.scss */
+/* line 106, ../sass/_creation.scss */
 #s1 .quote blockquote:nth-child(11), #s3 .box-1 .bloc p, #s3 .box-1 .bloc #s2 .slider-home .info-banner .text-banner, #s2 .slider-home .info-banner #s3 .box-1 .bloc .text-banner, #s2 .navigation-3 .bloc p, #s3 .box-1 .bloc1 p, #s2 .navigation-3 .bloc .slider-home .info-banner .text-banner, #s2 .slider-home .info-banner .navigation-3 .bloc .text-banner, #s3 .box-1 .bloc1 #s2 .slider-home .info-banner .text-banner, #s2 .slider-home .info-banner #s3 .box-1 .bloc1 .text-banner, #s3 .box-1 .bloc2 p, #s3 .box-1 .bloc2 #s2 .slider-home .info-banner .text-banner, #s2 .slider-home .info-banner #s3 .box-1 .bloc2 .text-banner, #s2 .navigation-2 .bloc p, #s3 .box-2 .bloc p, #s3 .box-3 .bloc p, #s2 .navigation-2 .bloc .slider-home .info-banner .text-banner, #s2 .slider-home .info-banner .navigation-2 .bloc .text-banner, #s3 .box-2 .bloc #s2 .slider-home .info-banner .text-banner, #s2 .slider-home .info-banner #s3 .box-2 .bloc .text-banner, #s3 .box-3 .bloc #s2 .slider-home .info-banner .text-banner, #s2 .slider-home .info-banner #s3 .box-3 .bloc .text-banner, #s8 .bloc1 p, #s8 .bloc2 p, #s8 .bloc3 p, #s8 .bloc4 p, #s8 .bloc1 #s2 .slider-home .info-banner .text-banner, #s2 .slider-home .info-banner #s8 .bloc1 .text-banner, #s8 .bloc2 #s2 .slider-home .info-banner .text-banner, #s2 .slider-home .info-banner #s8 .bloc2 .text-banner, #s8 .bloc3 #s2 .slider-home .info-banner .text-banner, #s2 .slider-home .info-banner #s8 .bloc3 .text-banner, #s8 .bloc4 #s2 .slider-home .info-banner .text-banner, #s2 .slider-home .info-banner #s8 .bloc4 .text-banner, #s2 .navigation-1 .bloc p, #s3 .box-2 .bloc1 p, #s3 .box-3 .bloc1 p, #s2 .navigation-1 .bloc .slider-home .info-banner .text-banner, #s2 .slider-home .info-banner .navigation-1 .bloc .text-banner, #s3 .box-2 .bloc1 #s2 .slider-home .info-banner .text-banner, #s2 .slider-home .info-banner #s3 .box-2 .bloc1 .text-banner, #s3 .box-3 .bloc1 #s2 .slider-home .info-banner .text-banner, #s2 .slider-home .info-banner #s3 .box-3 .bloc1 .text-banner, #s3 .box-2 .bloc2 p, #s3 .box-3 .bloc2 p, #s3 .box-2 .bloc2 #s2 .slider-home .info-banner .text-banner, #s2 .slider-home .info-banner #s3 .box-2 .bloc2 .text-banner, #s3 .box-3 .bloc2 #s2 .slider-home .info-banner .text-banner, #s2 .slider-home .info-banner #s3 .box-3 .bloc2 .text-banner, .dipta-concatenats, #s2 #dipta-noticia .contingut p, #s2 #dipta-agenda .contingut p, #s8 .bloc1 .contingut p, #s8 .bloc2 .contingut p, #s8 .bloc3 .contingut p, #s8 .bloc4 .contingut p, #s2 #dipta-noticia .contingut .slider-home .info-banner .text-banner, #s2 .slider-home .info-banner #dipta-noticia .contingut .text-banner, #s2 #dipta-agenda .contingut .slider-home .info-banner .text-banner, #s2 .slider-home .info-banner #dipta-agenda .contingut .text-banner, #s8 .bloc1 .contingut #s2 .slider-home .info-banner .text-banner, #s2 .slider-home .info-banner #s8 .bloc1 .contingut .text-banner, #s8 .bloc2 .contingut #s2 .slider-home .info-banner .text-banner, #s2 .slider-home .info-banner #s8 .bloc2 .contingut .text-banner, #s8 .bloc3 .contingut #s2 .slider-home .info-banner .text-banner, #s2 .slider-home .info-banner #s8 .bloc3 .contingut .text-banner, #s8 .bloc4 .contingut #s2 .slider-home .info-banner .text-banner, #s2 .slider-home .info-banner #s8 .bloc4 .contingut .text-banner, #s1 .paragraph p:nth-child(5), #s1 .paragraph #s2 .slider-home .info-banner .text-banner:nth-child(5), #s2 .slider-home .info-banner #s1 .paragraph .text-banner:nth-child(5) {
   font-size: 1.245rem;
   font-weight: 100;
@@ -426,7 +441,7 @@ h6, .dipta-caption {
   letter-spacing: 0;
 }
 
-/* line 103, ../sass/_creation.scss */
+/* line 107, ../sass/_creation.scss */
 #s1 .paragraph p:nth-child(6), #s1 .paragraph #s2 .slider-home .info-banner .text-banner:nth-child(6), #s2 .slider-home .info-banner #s1 .paragraph .text-banner:nth-child(6) {
   font-size: 1.125rem;
   font-weight: 100;
@@ -434,19 +449,19 @@ h6, .dipta-caption {
   letter-spacing: 0;
 }
 
-/* line 105, ../sass/_creation.scss */
+/* line 109, ../sass/_creation.scss */
 #s1 .headings-especifics h1, #s1 .headings-especifics h2, #s1 .headings-especifics h3, #s1 .headings-especifics h2.title-doc, #s1 .headings-especifics h4, #s1 .headings-especifics h5 {
   font-weight: 300;
 }
 
 /*Blockquotes*/
-/* line 108, ../sass/_creation.scss */
+/* line 112, ../sass/_creation.scss */
 #s1 .quote blockquote:nth-child(2), #s1 .quote blockquote:nth-child(5), #s1 .quote blockquote:nth-child(8), #s1 .quote blockquote:nth-child(23), #s2 .navigation-2 p, #s2 .navigation-2 .slider-home .info-banner .text-banner, #s2 .slider-home .info-banner .navigation-2 .text-banner, #s1 .quote blockquote:nth-child(11), #s1 .quote blockquote:nth-child(14), #s1 .quote blockquote:nth-child(17), #s1 .quote blockquote:nth-child(20), #s2 .navigation-1 p, #s2 .navigation-1 .slider-home .info-banner .text-banner, #s2 .slider-home .info-banner .navigation-1 .text-banner, #s2 .navigation-3 p, #s2 .navigation-3 .slider-home .info-banner .text-banner, #s2 .slider-home .info-banner .navigation-3 .text-banner {
   border-bottom: 1px solid #ebebeb;
   border-top: 1px solid #ebebeb;
 }
 
-/* line 109, ../sass/_creation.scss */
+/* line 113, ../sass/_creation.scss */
 #s1 .quote blockquote:nth-child(14):before, #s1 .quote blockquote:nth-child(17):before, #s1 .quote blockquote:nth-child(20):before, #s2 .navigation-1 p:before, #s2 .navigation-1 .slider-home .info-banner .text-banner:before, #s2 .slider-home .info-banner .navigation-1 .text-banner:before, #s2 .navigation-3 p:before, #s2 .navigation-3 .slider-home .info-banner .text-banner:before, #s2 .slider-home .info-banner .navigation-3 .text-banner:before {
   display: block;
   content: "\201C";
@@ -458,45 +473,45 @@ h6, .dipta-caption {
   margin-top: 2%;
 }
 
-/* line 112, ../sass/_creation.scss */
+/* line 116, ../sass/_creation.scss */
 #s1 .quote blockquote:nth-child(2) {
   font-weight: 100;
   padding: 2.3%;
 }
 
-/* line 113, ../sass/_creation.scss */
+/* line 117, ../sass/_creation.scss */
 #s1 .quote blockquote:nth-child(5) {
   font-weight: 100;
   padding: 2.3%;
 }
 
-/* line 114, ../sass/_creation.scss */
+/* line 118, ../sass/_creation.scss */
 #s1 .quote blockquote:nth-child(8), #s1 .quote blockquote:nth-child(23), #s2 .navigation-2 p, #s2 .navigation-2 .slider-home .info-banner .text-banner, #s2 .slider-home .info-banner .navigation-2 .text-banner {
   font-weight: 100;
   padding: 2.3%;
 }
 
-/* line 115, ../sass/_creation.scss */
+/* line 119, ../sass/_creation.scss */
 #s1 .quote blockquote:nth-child(11) {
   font-weight: 100;
   padding: 2.3%;
 }
 
-/* line 118, ../sass/_creation.scss */
+/* line 122, ../sass/_creation.scss */
 #s1 .quote blockquote:nth-child(14) {
   font-weight: 100;
   margin-left: 5%;
   padding: 2.3% 2.3% 2.3% 5.3%;
 }
 
-/* line 122, ../sass/_creation.scss */
+/* line 126, ../sass/_creation.scss */
 #s1 .quote blockquote:nth-child(17) {
   font-weight: 100;
   margin-left: 5%;
   padding: 2.3% 2.3% 2.3% 5.3%;
 }
 
-/* line 126, ../sass/_creation.scss */
+/* line 130, ../sass/_creation.scss */
 #s1 .quote blockquote:nth-child(20), #s2 .navigation-1 p, #s2 .navigation-1 .slider-home .info-banner .text-banner, #s2 .slider-home .info-banner .navigation-1 .text-banner, #s2 .navigation-3 p, #s2 .navigation-3 .slider-home .info-banner .text-banner, #s2 .slider-home .info-banner .navigation-3 .text-banner {
   font-weight: 100;
   margin-left: 5%;
@@ -504,7 +519,7 @@ h6, .dipta-caption {
 }
 
 /*Slider -home */
-/* line 135, ../sass/_creation.scss */
+/* line 139, ../sass/_creation.scss */
 #s2 .slider-home .info-banner {
   padding: 20px;
   margin-bottom: 0.5%;
@@ -512,19 +527,19 @@ h6, .dipta-caption {
   width: 251px;
   height: 141px;
 }
-/* line 139, ../sass/_creation.scss */
+/* line 143, ../sass/_creation.scss */
 #s2 .slider-home .info-banner h2 {
   color: #0083a9;
   margin-top: 0.5rem;
   margin-bottom: 1rem;
 }
-/* line 140, ../sass/_creation.scss */
+/* line 144, ../sass/_creation.scss */
 #s2 .slider-home .info-banner .text-banner {
   line-height: 1.75rem;
   margin: 0;
 }
 
-/* line 143, ../sass/_creation.scss */
+/* line 147, ../sass/_creation.scss */
 .btn-slider-left {
   display: inline-block;
   height: 36px;
@@ -536,12 +551,12 @@ h6, .dipta-caption {
   text-indent: -119988px;
 }
 
-/* line 149, ../sass/_creation.scss */
+/* line 153, ../sass/_creation.scss */
 .btn-slider-left:hover {
   background-image: url("../images/bg-slideshowarrowlefthover.png");
 }
 
-/* line 150, ../sass/_creation.scss */
+/* line 154, ../sass/_creation.scss */
 .btn-slider-rigth {
   height: 36px;
   width: 144px;
@@ -553,13 +568,13 @@ h6, .dipta-caption {
   text-indent: -119988px;
 }
 
-/* line 156, ../sass/_creation.scss */
+/* line 160, ../sass/_creation.scss */
 .btn-slider-rigth:hover {
   background-image: url("../images/bg-slideshowarrowrighthover.png");
 }
 
-/*PÖgines de navegaci¢*/
-/* line 160, ../sass/_creation.scss */
+/*P√†gines de navegaci√≥*/
+/* line 164, ../sass/_creation.scss */
 #s2 .navigation-1 h1 {
   width: 680px;
   border-bottom: 1px solid #ebebeb;
@@ -570,7 +585,7 @@ h6, .dipta-caption {
   margin: -55px 0 0 12px;
 }
 
-/* line 163, ../sass/_creation.scss */
+/* line 167, ../sass/_creation.scss */
 #s2 .navigation-2 h1 {
   width: 680px;
   color: #0083a9;
@@ -581,7 +596,7 @@ h6, .dipta-caption {
   margin: -70px 0 0 12px;
 }
 
-/* line 166, ../sass/_creation.scss */
+/* line 170, ../sass/_creation.scss */
 #s2 .navigation-3 h1 {
   width: 650px;
   border-bottom: 1px solid #ebebeb;
@@ -592,170 +607,170 @@ h6, .dipta-caption {
   margin: -55px 0 0 0;
 }
 
-/* line 195, ../sass/_creation.scss */
+/* line 199, ../sass/_creation.scss */
 .dipta-galeria {
   background-color: #ccc;
   width: 677px;
   height: 112;
 }
-/* line 196, ../sass/_creation.scss */
+/* line 200, ../sass/_creation.scss */
 .dipta-galeria img {
   margin: 1.7rem 1rem 0 2rem;
 }
 
-/* line 198, ../sass/_creation.scss */
+/* line 202, ../sass/_creation.scss */
 .dipta-img-normal {
   outline: 1px solid #ebebeb;
   margin: 2rem 0 2rem 0;
 }
 
-/* line 199, ../sass/_creation.scss */
+/* line 203, ../sass/_creation.scss */
 .dipta-img-float {
   float: left;
   margin: 0 2rem 2rem 0;
   outline: 1px solid #ebebeb;
 }
 
-/* line 201, ../sass/_creation.scss */
+/* line 205, ../sass/_creation.scss */
 .dipta-caption {
   background-color: #ebebeb;
   padding: 5px;
 }
 
 /*	Dipta BOX	*/
-/* line 204, ../sass/_creation.scss */
+/* line 208, ../sass/_creation.scss */
 #s2 .navigation-2 .bloc h1, #s3 .box-2 .bloc h1, #s3 .box-3 .bloc h1, #s2 .navigation-2 .bloc h2, #s3 .box-2 .bloc h2, #s3 .box-3 .bloc h2, #s2 .navigation-2 .bloc h3, #s3 .box-2 .bloc h3, #s3 .box-3 .bloc h3, #s2 .navigation-2 .bloc h2.title-doc, #s3 .box-2 .bloc h2.title-doc, #s3 .box-3 .bloc h2.title-doc, #s2 .navigation-2 .bloc h4, #s3 .box-2 .bloc h4, #s3 .box-3 .bloc h4, #s2 .navigation-2 .bloc h5, #s3 .box-2 .bloc h5, #s3 .box-3 .bloc h5, #s2 .navigation-2 .bloc h6, #s3 .box-2 .bloc h6, #s3 .box-3 .bloc h6, #s2 .navigation-2 .bloc .dipta-caption, #s3 .box-2 .bloc .dipta-caption, #s3 .box-3 .bloc .dipta-caption, #s8 .bloc1 h2, #s8 .bloc2 h2, #s8 .bloc3 h2, #s8 .bloc4 h2, #s2 .navigation-1 .bloc h1, #s3 .box-2 .bloc1 h1, #s3 .box-3 .bloc1 h1, #s2 .navigation-1 .bloc h2, #s3 .box-2 .bloc1 h2, #s3 .box-3 .bloc1 h2, #s2 .navigation-1 .bloc h3, #s3 .box-2 .bloc1 h3, #s3 .box-3 .bloc1 h3, #s2 .navigation-1 .bloc h2.title-doc, #s3 .box-2 .bloc1 h2.title-doc, #s3 .box-3 .bloc1 h2.title-doc, #s2 .navigation-1 .bloc h4, #s3 .box-2 .bloc1 h4, #s3 .box-3 .bloc1 h4, #s2 .navigation-1 .bloc h5, #s3 .box-2 .bloc1 h5, #s3 .box-3 .bloc1 h5, #s2 .navigation-1 .bloc h6, #s3 .box-2 .bloc1 h6, #s3 .box-3 .bloc1 h6, #s2 .navigation-1 .bloc .dipta-caption, #s3 .box-2 .bloc1 .dipta-caption, #s3 .box-3 .bloc1 .dipta-caption, #s3 .box-2 .bloc2 h1, #s3 .box-3 .bloc2 h1, #s3 .box-2 .bloc2 h2, #s3 .box-3 .bloc2 h2, #s3 .box-2 .bloc2 h3, #s3 .box-3 .bloc2 h3, #s3 .box-2 .bloc2 h2.title-doc, #s3 .box-3 .bloc2 h2.title-doc, #s3 .box-2 .bloc2 h4, #s3 .box-3 .bloc2 h4, #s3 .box-2 .bloc2 h5, #s3 .box-3 .bloc2 h5, #s3 .box-2 .bloc2 h6, #s3 .box-3 .bloc2 h6, #s3 .box-2 .bloc2 .dipta-caption, #s3 .box-3 .bloc2 .dipta-caption, #s2 #dipta-noticia h2, #s2 #dipta-agenda h2 {
   border-top: 0.4rem solid #0083a9;
 }
 
-/* line 205, ../sass/_creation.scss */
+/* line 209, ../sass/_creation.scss */
 #s3 .box-1 .bloc h1, #s3 .box-1 .bloc h2, #s3 .box-1 .bloc h3, #s3 .box-1 .bloc h2.title-doc, #s3 .box-1 .bloc h4, #s3 .box-1 .bloc h5, #s3 .box-1 .bloc h6, #s3 .box-1 .bloc .dipta-caption, #s2 .navigation-3 .bloc h1, #s3 .box-1 .bloc1 h1, #s2 .navigation-3 .bloc h2, #s3 .box-1 .bloc1 h2, #s2 .navigation-3 .bloc h3, #s3 .box-1 .bloc1 h3, #s2 .navigation-3 .bloc h2.title-doc, #s3 .box-1 .bloc1 h2.title-doc, #s2 .navigation-3 .bloc h4, #s3 .box-1 .bloc1 h4, #s2 .navigation-3 .bloc h5, #s3 .box-1 .bloc1 h5, #s2 .navigation-3 .bloc h6, #s3 .box-1 .bloc1 h6, #s2 .navigation-3 .bloc .dipta-caption, #s3 .box-1 .bloc1 .dipta-caption, #s3 .box-1 .bloc2 h1, #s3 .box-1 .bloc2 h2, #s3 .box-1 .bloc2 h3, #s3 .box-1 .bloc2 h2.title-doc, #s3 .box-1 .bloc2 h4, #s3 .box-1 .bloc2 h5, #s3 .box-1 .bloc2 h6, #s3 .box-1 .bloc2 .dipta-caption, #s2 .navigation-2 .bloc h1, #s3 .box-2 .bloc h1, #s3 .box-3 .bloc h1, #s2 .navigation-2 .bloc h2, #s3 .box-2 .bloc h2, #s3 .box-3 .bloc h2, #s2 .navigation-2 .bloc h3, #s3 .box-2 .bloc h3, #s3 .box-3 .bloc h3, #s2 .navigation-2 .bloc h2.title-doc, #s3 .box-2 .bloc h2.title-doc, #s3 .box-3 .bloc h2.title-doc, #s2 .navigation-2 .bloc h4, #s3 .box-2 .bloc h4, #s3 .box-3 .bloc h4, #s2 .navigation-2 .bloc h5, #s3 .box-2 .bloc h5, #s3 .box-3 .bloc h5, #s2 .navigation-2 .bloc h6, #s3 .box-2 .bloc h6, #s3 .box-3 .bloc h6, #s2 .navigation-2 .bloc .dipta-caption, #s3 .box-2 .bloc .dipta-caption, #s3 .box-3 .bloc .dipta-caption, #s8 .bloc1 h2, #s8 .bloc2 h2, #s8 .bloc3 h2, #s8 .bloc4 h2, #s2 .navigation-1 .bloc h1, #s3 .box-2 .bloc1 h1, #s3 .box-3 .bloc1 h1, #s2 .navigation-1 .bloc h2, #s3 .box-2 .bloc1 h2, #s3 .box-3 .bloc1 h2, #s2 .navigation-1 .bloc h3, #s3 .box-2 .bloc1 h3, #s3 .box-3 .bloc1 h3, #s2 .navigation-1 .bloc h2.title-doc, #s3 .box-2 .bloc1 h2.title-doc, #s3 .box-3 .bloc1 h2.title-doc, #s2 .navigation-1 .bloc h4, #s3 .box-2 .bloc1 h4, #s3 .box-3 .bloc1 h4, #s2 .navigation-1 .bloc h5, #s3 .box-2 .bloc1 h5, #s3 .box-3 .bloc1 h5, #s2 .navigation-1 .bloc h6, #s3 .box-2 .bloc1 h6, #s3 .box-3 .bloc1 h6, #s2 .navigation-1 .bloc .dipta-caption, #s3 .box-2 .bloc1 .dipta-caption, #s3 .box-3 .bloc1 .dipta-caption, #s3 .box-2 .bloc2 h1, #s3 .box-3 .bloc2 h1, #s3 .box-2 .bloc2 h2, #s3 .box-3 .bloc2 h2, #s3 .box-2 .bloc2 h3, #s3 .box-3 .bloc2 h3, #s3 .box-2 .bloc2 h2.title-doc, #s3 .box-3 .bloc2 h2.title-doc, #s3 .box-2 .bloc2 h4, #s3 .box-3 .bloc2 h4, #s3 .box-2 .bloc2 h5, #s3 .box-3 .bloc2 h5, #s3 .box-2 .bloc2 h6, #s3 .box-3 .bloc2 h6, #s3 .box-2 .bloc2 .dipta-caption, #s3 .box-3 .bloc2 .dipta-caption {
   border-bottom: 0.4rem solid white;
 }
 
-/* line 206, ../sass/_creation.scss */
+/* line 210, ../sass/_creation.scss */
 #s2 #dipta-noticia h2, #s2 #dipta-agenda h2, #s8 .bloc1 h2, #s8 .bloc2 h2, #s8 .bloc3 h2, #s8 .bloc4 h2 {
   border-bottom: 0.4rem solid #ebebeb;
 }
 
-/* line 208, ../sass/_creation.scss */
+/* line 212, ../sass/_creation.scss */
 #s3 .box-1 .bloc {
   background-color: #f0f7f9;
 }
-/* line 209, ../sass/_creation.scss */
+/* line 213, ../sass/_creation.scss */
 #s3 .box-1 .bloc h1, #s3 .box-1 .bloc h2, #s3 .box-1 .bloc h3, #s3 .box-1 .bloc h2.title-doc, #s3 .box-1 .bloc h4, #s3 .box-1 .bloc h5, #s3 .box-1 .bloc h6, #s3 .box-1 .bloc .dipta-caption {
   padding: 2rem;
 }
-/* line 210, ../sass/_creation.scss */
+/* line 214, ../sass/_creation.scss */
 #s3 .box-1 .bloc p, #s3 .box-1 .bloc #s2 .slider-home .info-banner .text-banner, #s2 .slider-home .info-banner #s3 .box-1 .bloc .text-banner {
   padding: 0 2rem 2rem 2rem;
   border: 0;
 }
 
-/* line 213, ../sass/_creation.scss */
+/* line 217, ../sass/_creation.scss */
 #s2 .navigation-3 .bloc, #s3 .box-1 .bloc1 {
   background-color: #ebebeb;
 }
-/* line 215, ../sass/_creation.scss */
+/* line 219, ../sass/_creation.scss */
 #s2 .navigation-3 .bloc h1, #s3 .box-1 .bloc1 h1, #s2 .navigation-3 .bloc h2, #s3 .box-1 .bloc1 h2, #s2 .navigation-3 .bloc h3, #s3 .box-1 .bloc1 h3, #s2 .navigation-3 .bloc h2.title-doc, #s3 .box-1 .bloc1 h2.title-doc, #s2 .navigation-3 .bloc h4, #s3 .box-1 .bloc1 h4, #s2 .navigation-3 .bloc h5, #s3 .box-1 .bloc1 h5, #s2 .navigation-3 .bloc h6, #s3 .box-1 .bloc1 h6, #s2 .navigation-3 .bloc .dipta-caption, #s3 .box-1 .bloc1 .dipta-caption {
   padding: 2rem;
 }
-/* line 216, ../sass/_creation.scss */
+/* line 220, ../sass/_creation.scss */
 #s2 .navigation-3 .bloc p, #s3 .box-1 .bloc1 p, #s2 .navigation-3 .bloc .slider-home .info-banner .text-banner, #s2 .slider-home .info-banner .navigation-3 .bloc .text-banner, #s3 .box-1 .bloc1 #s2 .slider-home .info-banner .text-banner, #s2 .slider-home .info-banner #s3 .box-1 .bloc1 .text-banner {
   padding: 0 2rem 2rem 2rem;
   border: 0;
   color: #014b60;
 }
 
-/* line 219, ../sass/_creation.scss */
+/* line 223, ../sass/_creation.scss */
 #s3 .box-1 .bloc2 {
   background-color: #ebebeb;
 }
-/* line 221, ../sass/_creation.scss */
+/* line 225, ../sass/_creation.scss */
 #s3 .box-1 .bloc2 h1, #s3 .box-1 .bloc2 h2, #s3 .box-1 .bloc2 h3, #s3 .box-1 .bloc2 h2.title-doc, #s3 .box-1 .bloc2 h4, #s3 .box-1 .bloc2 h5, #s3 .box-1 .bloc2 h6, #s3 .box-1 .bloc2 .dipta-caption {
   padding: 2rem;
   background-color: #f0f7f9;
 }
-/* line 222, ../sass/_creation.scss */
+/* line 226, ../sass/_creation.scss */
 #s3 .box-1 .bloc2 p, #s3 .box-1 .bloc2 #s2 .slider-home .info-banner .text-banner, #s2 .slider-home .info-banner #s3 .box-1 .bloc2 .text-banner {
   padding: 0 2rem 2rem 2rem;
   border: 0;
   background-color: #ebebeb;
 }
 
-/* line 225, ../sass/_creation.scss */
+/* line 229, ../sass/_creation.scss */
 #s2 .navigation-2 .bloc, #s3 .box-2 .bloc, #s3 .box-3 .bloc {
   background-color: #f0f7f9;
 }
-/* line 227, ../sass/_creation.scss */
+/* line 231, ../sass/_creation.scss */
 #s2 .navigation-2 .bloc h1, #s3 .box-2 .bloc h1, #s3 .box-3 .bloc h1, #s2 .navigation-2 .bloc h2, #s3 .box-2 .bloc h2, #s3 .box-3 .bloc h2, #s2 .navigation-2 .bloc h3, #s3 .box-2 .bloc h3, #s3 .box-3 .bloc h3, #s2 .navigation-2 .bloc h2.title-doc, #s3 .box-2 .bloc h2.title-doc, #s3 .box-3 .bloc h2.title-doc, #s2 .navigation-2 .bloc h4, #s3 .box-2 .bloc h4, #s3 .box-3 .bloc h4, #s2 .navigation-2 .bloc h5, #s3 .box-2 .bloc h5, #s3 .box-3 .bloc h5, #s2 .navigation-2 .bloc h6, #s3 .box-2 .bloc h6, #s3 .box-3 .bloc h6, #s2 .navigation-2 .bloc .dipta-caption, #s3 .box-2 .bloc .dipta-caption, #s3 .box-3 .bloc .dipta-caption {
   padding: 2rem;
 }
-/* line 228, ../sass/_creation.scss */
+/* line 232, ../sass/_creation.scss */
 #s2 .navigation-2 .bloc p, #s3 .box-2 .bloc p, #s3 .box-3 .bloc p, #s2 .navigation-2 .bloc .slider-home .info-banner .text-banner, #s2 .slider-home .info-banner .navigation-2 .bloc .text-banner, #s3 .box-2 .bloc #s2 .slider-home .info-banner .text-banner, #s2 .slider-home .info-banner #s3 .box-2 .bloc .text-banner, #s3 .box-3 .bloc #s2 .slider-home .info-banner .text-banner, #s2 .slider-home .info-banner #s3 .box-3 .bloc .text-banner {
   padding: 0 2rem 2rem 2rem;
   border: 0;
 }
 
-/* line 231, ../sass/_creation.scss */
+/* line 235, ../sass/_creation.scss */
 #s8 .bloc1, #s8 .bloc2, #s8 .bloc3, #s8 .bloc4 {
   background-color: #f0f7f9;
 }
-/* line 233, ../sass/_creation.scss */
+/* line 237, ../sass/_creation.scss */
 #s8 .bloc1 h2, #s8 .bloc2 h2, #s8 .bloc3 h2, #s8 .bloc4 h2 {
   padding: 2rem;
   color: #0083a9;
 }
-/* line 234, ../sass/_creation.scss */
+/* line 238, ../sass/_creation.scss */
 #s8 .bloc1 p, #s8 .bloc2 p, #s8 .bloc3 p, #s8 .bloc4 p, #s8 .bloc1 #s2 .slider-home .info-banner .text-banner, #s2 .slider-home .info-banner #s8 .bloc1 .text-banner, #s8 .bloc2 #s2 .slider-home .info-banner .text-banner, #s2 .slider-home .info-banner #s8 .bloc2 .text-banner, #s8 .bloc3 #s2 .slider-home .info-banner .text-banner, #s2 .slider-home .info-banner #s8 .bloc3 .text-banner, #s8 .bloc4 #s2 .slider-home .info-banner .text-banner, #s2 .slider-home .info-banner #s8 .bloc4 .text-banner {
   padding: 0 2rem 2rem 2rem;
   border: 0;
 }
 
-/* line 236, ../sass/_creation.scss */
+/* line 240, ../sass/_creation.scss */
 #s2 .navigation-1 .bloc, #s3 .box-2 .bloc1, #s3 .box-3 .bloc1 {
   background-color: #ebebeb;
 }
-/* line 238, ../sass/_creation.scss */
+/* line 242, ../sass/_creation.scss */
 #s2 .navigation-1 .bloc h1, #s3 .box-2 .bloc1 h1, #s3 .box-3 .bloc1 h1, #s2 .navigation-1 .bloc h2, #s3 .box-2 .bloc1 h2, #s3 .box-3 .bloc1 h2, #s2 .navigation-1 .bloc h3, #s3 .box-2 .bloc1 h3, #s3 .box-3 .bloc1 h3, #s2 .navigation-1 .bloc h2.title-doc, #s3 .box-2 .bloc1 h2.title-doc, #s3 .box-3 .bloc1 h2.title-doc, #s2 .navigation-1 .bloc h4, #s3 .box-2 .bloc1 h4, #s3 .box-3 .bloc1 h4, #s2 .navigation-1 .bloc h5, #s3 .box-2 .bloc1 h5, #s3 .box-3 .bloc1 h5, #s2 .navigation-1 .bloc h6, #s3 .box-2 .bloc1 h6, #s3 .box-3 .bloc1 h6, #s2 .navigation-1 .bloc .dipta-caption, #s3 .box-2 .bloc1 .dipta-caption, #s3 .box-3 .bloc1 .dipta-caption {
   padding: 2rem;
 }
-/* line 239, ../sass/_creation.scss */
+/* line 243, ../sass/_creation.scss */
 #s2 .navigation-1 .bloc p, #s3 .box-2 .bloc1 p, #s3 .box-3 .bloc1 p, #s2 .navigation-1 .bloc .slider-home .info-banner .text-banner, #s2 .slider-home .info-banner .navigation-1 .bloc .text-banner, #s3 .box-2 .bloc1 #s2 .slider-home .info-banner .text-banner, #s2 .slider-home .info-banner #s3 .box-2 .bloc1 .text-banner, #s3 .box-3 .bloc1 #s2 .slider-home .info-banner .text-banner, #s2 .slider-home .info-banner #s3 .box-3 .bloc1 .text-banner {
   padding: 0 2rem 2rem 2rem;
   border: 0;
   color: #014b60;
 }
 
-/* line 242, ../sass/_creation.scss */
+/* line 246, ../sass/_creation.scss */
 #s3 .box-2 .bloc2, #s3 .box-3 .bloc2 {
   background-color: #ebebeb;
 }
-/* line 244, ../sass/_creation.scss */
+/* line 248, ../sass/_creation.scss */
 #s3 .box-2 .bloc2 h1, #s3 .box-3 .bloc2 h1, #s3 .box-2 .bloc2 h2, #s3 .box-3 .bloc2 h2, #s3 .box-2 .bloc2 h3, #s3 .box-3 .bloc2 h3, #s3 .box-2 .bloc2 h2.title-doc, #s3 .box-3 .bloc2 h2.title-doc, #s3 .box-2 .bloc2 h4, #s3 .box-3 .bloc2 h4, #s3 .box-2 .bloc2 h5, #s3 .box-3 .bloc2 h5, #s3 .box-2 .bloc2 h6, #s3 .box-3 .bloc2 h6, #s3 .box-2 .bloc2 .dipta-caption, #s3 .box-3 .bloc2 .dipta-caption {
   padding: 2rem;
   background-color: #f0f7f9;
 }
-/* line 245, ../sass/_creation.scss */
+/* line 249, ../sass/_creation.scss */
 #s3 .box-2 .bloc2 p, #s3 .box-3 .bloc2 p, #s3 .box-2 .bloc2 #s2 .slider-home .info-banner .text-banner, #s2 .slider-home .info-banner #s3 .box-2 .bloc2 .text-banner, #s3 .box-3 .bloc2 #s2 .slider-home .info-banner .text-banner, #s2 .slider-home .info-banner #s3 .box-3 .bloc2 .text-banner {
   padding: 0 2rem 2rem 2rem;
   border: 0;
   background-color: #ebebeb;
 }
 
-/* line 248, ../sass/_creation.scss */
+/* line 252, ../sass/_creation.scss */
 .dipta-concatenats {
   /* separador "|"*/
 }
-/* line 249, ../sass/_creation.scss */
+/* line 253, ../sass/_creation.scss */
 .dipta-concatenats .dipta-camp {
   display: inline-block;
 }
-/* line 249, ../sass/_creation.scss */
+/* line 253, ../sass/_creation.scss */
 .dipta-concatenats .dipta-camp span + span {
   padding-left: 0.5rem;
 }
-/* line 254, ../sass/_creation.scss */
+/* line 258, ../sass/_creation.scss */
 .dipta-concatenats div + div:before {
   content: "|";
   font-size: 0.8rem;
@@ -764,7 +779,7 @@ h6, .dipta-caption {
   padding: 0.5rem;
 }
 
-/* line 258, ../sass/_creation.scss */
+/* line 262, ../sass/_creation.scss */
 #s2 #dipta-noticia h2, #s2 #dipta-agenda h2, #s8 .bloc1 h2, #s8 .bloc2 h2, #s8 .bloc3 h2, #s8 .bloc4 h2 {
   padding: 2rem 0 2rem 5rem;
   margin: 0;
@@ -773,54 +788,54 @@ h6, .dipta-caption {
   background-color: #fff;
 }
 
-/* line 268, ../sass/_creation.scss */
+/* line 272, ../sass/_creation.scss */
 .dipta-resum h1, .dipta-resum h2, .dipta-resum h3, .dipta-resum h2.title-doc, .dipta-resum h4, .dipta-resum h5 {
   margin: 5px 0 5px 0;
 }
-/* line 269, ../sass/_creation.scss */
+/* line 273, ../sass/_creation.scss */
 .dipta-resum p, .dipta-resum #s2 .slider-home .info-banner .text-banner, #s2 .slider-home .info-banner .dipta-resum .text-banner {
   margin: 5px 0 5px 0;
 }
-/* line 270, ../sass/_creation.scss */
+/* line 274, ../sass/_creation.scss */
 .dipta-resum .float {
   float: left;
   margin: 5px 5px 0 0;
 }
-/* line 271, ../sass/_creation.scss */
+/* line 275, ../sass/_creation.scss */
 .dipta-resum img {
   margin-bottom: 5px;
 }
 
-/* line 274, ../sass/_creation.scss */
+/* line 278, ../sass/_creation.scss */
 #s2 #dipta-noticia .contingut, #s2 #dipta-agenda .contingut, #s8 .bloc1 .contingut, #s8 .bloc2 .contingut, #s8 .bloc3 .contingut, #s8 .bloc4 .contingut {
   background-color: #fff;
 }
-/* line 276, ../sass/_creation.scss */
+/* line 280, ../sass/_creation.scss */
 #s2 #dipta-noticia .contingut h3, #s2 #dipta-agenda .contingut h3, #s8 .bloc1 .contingut h3, #s8 .bloc2 .contingut h3, #s8 .bloc3 .contingut h3, #s8 .bloc4 .contingut h3, #s2 #dipta-noticia .contingut h2.title-doc, #s2 #dipta-agenda .contingut h2.title-doc, #s8 .bloc1 .contingut h2.title-doc, #s8 .bloc2 .contingut h2.title-doc, #s8 .bloc3 .contingut h2.title-doc, #s8 .bloc4 .contingut h2.title-doc, #s2 #dipta-noticia .contingut h4, #s2 #dipta-agenda .contingut h4, #s8 .bloc1 .contingut h4, #s8 .bloc2 .contingut h4, #s8 .bloc3 .contingut h4, #s8 .bloc4 .contingut h4, #s2 #dipta-noticia .contingut h5, #s2 #dipta-agenda .contingut h5, #s8 .bloc1 .contingut h5, #s8 .bloc2 .contingut h5, #s8 .bloc3 .contingut h5, #s8 .bloc4 .contingut h5 {
   font-weight: 600;
 }
-/* line 277, ../sass/_creation.scss */
+/* line 281, ../sass/_creation.scss */
 #s2 #dipta-noticia .contingut div.dipta-resum, #s2 #dipta-agenda .contingut div.dipta-resum, #s8 .bloc1 .contingut div.dipta-resum, #s8 .bloc2 .contingut div.dipta-resum, #s8 .bloc3 .contingut div.dipta-resum, #s8 .bloc4 .contingut div.dipta-resum {
   padding: 2rem 2rem 2rem 2rem;
 }
-/* line 278, ../sass/_creation.scss */
+/* line 282, ../sass/_creation.scss */
 #s2 #dipta-noticia .contingut div.dipta-resum:first-child, #s2 #dipta-agenda .contingut div.dipta-resum:first-child, #s8 .bloc1 .contingut div.dipta-resum:first-child, #s8 .bloc2 .contingut div.dipta-resum:first-child, #s8 .bloc3 .contingut div.dipta-resum:first-child, #s8 .bloc4 .contingut div.dipta-resum:first-child {
   border-bottom: 0.4rem solid #ebebeb;
 }
-/* line 279, ../sass/_creation.scss */
+/* line 283, ../sass/_creation.scss */
 #s2 #dipta-noticia .contingut div.dipta-resum + div.dipta-resum, #s2 #dipta-agenda .contingut div.dipta-resum + div.dipta-resum, #s8 .bloc1 .contingut div.dipta-resum + div.dipta-resum, #s8 .bloc2 .contingut div.dipta-resum + div.dipta-resum, #s8 .bloc3 .contingut div.dipta-resum + div.dipta-resum, #s8 .bloc4 .contingut div.dipta-resum + div.dipta-resum {
   padding-right: 2rem;
   border-bottom: 0.4rem solid #ebebeb;
 }
-/* line 281, ../sass/_creation.scss */
+/* line 285, ../sass/_creation.scss */
 #s2 #dipta-noticia .contingut div.dipta-resum:last-child, #s2 #dipta-agenda .contingut div.dipta-resum:last-child, #s8 .bloc1 .contingut div.dipta-resum:last-child, #s8 .bloc2 .contingut div.dipta-resum:last-child, #s8 .bloc3 .contingut div.dipta-resum:last-child, #s8 .bloc4 .contingut div.dipta-resum:last-child {
   border-bottom: 0!important;
 }
-/* line 283, ../sass/_creation.scss */
+/* line 287, ../sass/_creation.scss */
 #s2 #dipta-noticia .contingut p, #s2 #dipta-agenda .contingut p, #s8 .bloc1 .contingut p, #s8 .bloc2 .contingut p, #s8 .bloc3 .contingut p, #s8 .bloc4 .contingut p, #s2 #dipta-noticia .contingut .slider-home .info-banner .text-banner, #s2 .slider-home .info-banner #dipta-noticia .contingut .text-banner, #s2 #dipta-agenda .contingut .slider-home .info-banner .text-banner, #s2 .slider-home .info-banner #dipta-agenda .contingut .text-banner, #s8 .bloc1 .contingut #s2 .slider-home .info-banner .text-banner, #s2 .slider-home .info-banner #s8 .bloc1 .contingut .text-banner, #s8 .bloc2 .contingut #s2 .slider-home .info-banner .text-banner, #s2 .slider-home .info-banner #s8 .bloc2 .contingut .text-banner, #s8 .bloc3 .contingut #s2 .slider-home .info-banner .text-banner, #s2 .slider-home .info-banner #s8 .bloc3 .contingut .text-banner, #s8 .bloc4 .contingut #s2 .slider-home .info-banner .text-banner, #s2 .slider-home .info-banner #s8 .bloc4 .contingut .text-banner {
   padding: 0;
 }
-/* line 284, ../sass/_creation.scss */
+/* line 288, ../sass/_creation.scss */
 #s2 #dipta-noticia .contingut p:after, #s2 #dipta-agenda .contingut p:after, #s8 .bloc1 .contingut p:after, #s8 .bloc2 .contingut p:after, #s8 .bloc3 .contingut p:after, #s8 .bloc4 .contingut p:after, #s2 #dipta-noticia .contingut .slider-home .info-banner .text-banner:after, #s2 .slider-home .info-banner #dipta-noticia .contingut .text-banner:after, #s2 #dipta-agenda .contingut .slider-home .info-banner .text-banner:after, #s2 .slider-home .info-banner #dipta-agenda .contingut .text-banner:after, #s8 .bloc1 .contingut #s2 .slider-home .info-banner .text-banner:after, #s2 .slider-home .info-banner #s8 .bloc1 .contingut .text-banner:after, #s8 .bloc2 .contingut #s2 .slider-home .info-banner .text-banner:after, #s2 .slider-home .info-banner #s8 .bloc2 .contingut .text-banner:after, #s8 .bloc3 .contingut #s2 .slider-home .info-banner .text-banner:after, #s2 .slider-home .info-banner #s8 .bloc3 .contingut .text-banner:after, #s8 .bloc4 .contingut #s2 .slider-home .info-banner .text-banner:after, #s2 .slider-home .info-banner #s8 .bloc4 .contingut .text-banner:after {
   content: " ...";
   font-weight: 600;
@@ -1044,134 +1059,139 @@ h2.title-doc {
   position: absolute;
   margin: -290px 0 0 30px;
 }
-/* line 124, ../sass/doc.scss */
+/* line 122, ../sass/doc.scss */
+#s2 .slider-home img {
+  width: 100% !important;
+  height: auto;
+}
+/* line 125, ../sass/doc.scss */
 #s2 .navigation-1 p, #s2 .navigation-1 .slider-home .info-banner .text-banner, #s2 .slider-home .info-banner .navigation-1 .text-banner {
   border: 0;
 }
-/* line 125, ../sass/doc.scss */
+/* line 126, ../sass/doc.scss */
 #s2 .navigation-1 .bloc {
   margin: 0 2rem 0 2rem;
 }
-/* line 125, ../sass/doc.scss */
+/* line 126, ../sass/doc.scss */
 #s2 .navigation-1 .bloc p:before, #s2 .navigation-1 .bloc .slider-home .info-banner .text-banner:before, #s2 .slider-home .info-banner .navigation-1 .bloc .text-banner:before {
   content: "";
   padding: 0;
   margin: 0;
 }
-/* line 125, ../sass/doc.scss */
+/* line 126, ../sass/doc.scss */
 #s2 .navigation-1 .bloc p, #s2 .navigation-1 .bloc .slider-home .info-banner .text-banner, #s2 .slider-home .info-banner .navigation-1 .bloc .text-banner {
   margin: 0;
 }
-/* line 127, ../sass/doc.scss */
+/* line 128, ../sass/doc.scss */
 #s2 .navigation-2 p, #s2 .navigation-2 .slider-home .info-banner .text-banner, #s2 .slider-home .info-banner .navigation-2 .text-banner {
   border: 0;
 }
-/* line 128, ../sass/doc.scss */
+/* line 129, ../sass/doc.scss */
 #s2 .navigation-2 .bloc {
   margin: 0 2rem 0 2rem;
 }
-/* line 128, ../sass/doc.scss */
+/* line 129, ../sass/doc.scss */
 #s2 .navigation-2 .bloc p:before, #s2 .navigation-2 .bloc .slider-home .info-banner .text-banner:before, #s2 .slider-home .info-banner .navigation-2 .bloc .text-banner:before {
   content: "";
   padding: 0;
   margin: 0;
 }
-/* line 130, ../sass/doc.scss */
+/* line 131, ../sass/doc.scss */
 #s2 .navigation-3 p, #s2 .navigation-3 .slider-home .info-banner .text-banner, #s2 .slider-home .info-banner .navigation-3 .text-banner {
   border: 0;
 }
-/* line 131, ../sass/doc.scss */
+/* line 132, ../sass/doc.scss */
 #s2 .navigation-3 .bloc {
   margin: 0 2rem 0 2rem;
 }
-/* line 131, ../sass/doc.scss */
+/* line 132, ../sass/doc.scss */
 #s2 .navigation-3 .bloc p:before, #s2 .navigation-3 .bloc .slider-home .info-banner .text-banner:before, #s2 .slider-home .info-banner .navigation-3 .bloc .text-banner:before {
   content: "";
   padding: 0;
   margin: 0;
 }
-/* line 131, ../sass/doc.scss */
+/* line 132, ../sass/doc.scss */
 #s2 .navigation-3 .bloc p, #s2 .navigation-3 .bloc .slider-home .info-banner .text-banner, #s2 .slider-home .info-banner .navigation-3 .bloc .text-banner {
   margin: 0;
 }
-/* line 134, ../sass/doc.scss */
+/* line 135, ../sass/doc.scss */
 #s2 #dipta-noticia {
   background-color: #ebebeb;
   padding: 2rem;
 }
-/* line 138, ../sass/doc.scss */
+/* line 139, ../sass/doc.scss */
 #s2 #dipta-noticia .contingut div.dipta-resum {
   width: 44%;
   float: left;
   padding: 2rem 2rem 2rem 2rem;
 }
-/* line 139, ../sass/doc.scss */
+/* line 140, ../sass/doc.scss */
 #s2 #dipta-noticia .contingut div.dipta-resum:first-child {
   border-right: 0.4rem solid #ebebeb;
   border-bottom: 0;
 }
-/* line 140, ../sass/doc.scss */
+/* line 141, ../sass/doc.scss */
 #s2 #dipta-noticia .contingut div.dipta-resum + div.dipta-resum {
   padding-right: 2rem;
   border-bottom: 0.4rem solid #ebebeb;
 }
-/* line 141, ../sass/doc.scss */
+/* line 142, ../sass/doc.scss */
 #s2 #dipta-noticia .contingut div.dipta-resum:last-child {
   border-bottom: 0!important;
 }
-/* line 144, ../sass/doc.scss */
+/* line 145, ../sass/doc.scss */
 #s2 #dipta-agenda {
   background-color: #ebebeb;
   padding: 2rem;
 }
 
-/* line 178, ../sass/doc.scss */
+/* line 179, ../sass/doc.scss */
 #s8 .bloc1 {
   display: inline-block;
 }
-/* line 181, ../sass/doc.scss */
+/* line 182, ../sass/doc.scss */
 #s8 .bloc1 .contingut {
   background-color: #fff;
 }
-/* line 184, ../sass/doc.scss */
+/* line 185, ../sass/doc.scss */
 #s8 .bloc2 {
   display: inline-block;
 }
-/* line 186, ../sass/doc.scss */
+/* line 187, ../sass/doc.scss */
 #s8 .bloc2 h2 {
   background-color: #f0f7f9;
   border-bottom-color: #fff;
 }
-/* line 187, ../sass/doc.scss */
+/* line 188, ../sass/doc.scss */
 #s8 .bloc2 .contingut {
   background-color: #f0f7f9;
 }
-/* line 188, ../sass/doc.scss */
+/* line 189, ../sass/doc.scss */
 #s8 .bloc2 .contingut div.dipta-resum {
   border-bottom-color: white !important;
 }
-/* line 191, ../sass/doc.scss */
+/* line 192, ../sass/doc.scss */
 #s8 .bloc3 {
   display: inline-block;
 }
-/* line 194, ../sass/doc.scss */
+/* line 195, ../sass/doc.scss */
 #s8 .bloc3 .contingut {
   background-color: #fff;
 }
-/* line 197, ../sass/doc.scss */
+/* line 198, ../sass/doc.scss */
 #s8 .bloc4 {
   display: inline-block;
 }
-/* line 199, ../sass/doc.scss */
+/* line 200, ../sass/doc.scss */
 #s8 .bloc4 h2 {
   background-color: #f0f7f9;
   border-bottom-color: #fff;
 }
-/* line 200, ../sass/doc.scss */
+/* line 201, ../sass/doc.scss */
 #s8 .bloc4 .contingut {
   background-color: #f0f7f9;
 }
-/* line 201, ../sass/doc.scss */
+/* line 202, ../sass/doc.scss */
 #s8 .bloc4 .contingut div.dipta-resum {
   border-bottom-color: white !important;
 }

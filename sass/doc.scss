@@ -119,6 +119,7 @@ header{
  .slider-home{
 	.dipta-slider-home{ position:absolute;margin:-290px 0 0 30px;}
 	.info-banner{ @extend %dipta-resum-slider-home;}
+	img{width: 100% !important;height: auto;}
  }
  
 .navigation-1{ @extend %container705; h1{ @extend %dipta-title-img-a;} p{ @extend %dipta-quote-h4c;  border:0;} 
