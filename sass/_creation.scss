@@ -3,12 +3,9 @@
  * Creation for compass - Front-end framework de  la Diputació de Tarragona.
  * @Miguel Ángel Ramos.
  */
-@import "compass/css3";
+@import "compass/css3"; 
 @import "compass/utilities";
 @import "_syntax";
-@import "breakpoint"; 
-
-
 
 /**
 * 	Palette colors
@@ -58,25 +55,19 @@ $h5-h: 0.6 * $base-h;/*line-height*/
 $h6-s:0.75 * $base-s;/*size*/
 $h6-h: 0.55 * $base-h;/*line-height*/
 	
- 
-$mobile: 480px ; // Use a 4 column grid
-$tablet: 481px  989px ; // Use an 8 column grid
-$desktop:  1234px  1400px; // Use a 12 column grid
 
 html {  
-	 color:$gray;
+	color:$gray;
 	/*Typography responsive for compass breakpoints*/
-	 	@include breakpoint($mobile){ font-size:75%;}
-	 	@include breakpoint($tablet){ font-size:62,5%;}
-	 	@include breakpoint($desktop){ font-size:85%;}
+	/*responsive-creation.scss*/
   }
 	
 body{
 	/*$font1: 'Open Sans', sans-serif;*/
 	margin:0;
 	font-family:$font-a;
-	font-size: $base-s;
-	line-height:$base-h;
+	font-size:1.3rem;
+	line-height:2.3rem;
 }
 
 /*Syntax custom*/
@@ -111,7 +102,7 @@ h6{font-size: $h6-s;font-weight:400;line-height:$h6-h;letter-spacing: -0.06rem;}
 /*Blockquotes*/ 
 %border-quote{ border-bottom: 1px solid #EBEBEB;border-top: 1px solid #EBEBEB;}
 %caracter-quote{display: block;content: "\201C";font-family: Georgia, serif;
-	font-size: 9rem;position: absolute;color: #7a7a7a;margin-left:-4%;margin-top:2%;}
+	font-size: 9rem;position: absolute;color: #7a7a7a;margin-left:-3%;margin-top:2%;}
 	
 %dipta-quote-h2{ @extend %ph2; font-weight:100; @extend %border-quote; padding: 2.3%; }	
 %dipta-quote-h3{ @extend %ph3; font-weight:100; @extend %border-quote; padding: 2.3%; }

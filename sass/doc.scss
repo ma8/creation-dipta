@@ -5,7 +5,6 @@
 *
 */
 
-
 @import "compass/css3";
 @import "compass/utilities";
 @import "_creation";
@@ -87,6 +86,7 @@ header{
 		/* #464646 #EBEBEB #0083A9 #F0F7F9 #014B60*/
 	}
  
+/*typography*/ 
 #s1{
  @extend %container940;
  
@@ -112,8 +112,11 @@ header{
 	blockquote:nth-child(20){ @extend %dipta-quote-h4c;}
 	blockquote:nth-child(23){ @extend %dipta-quote-h4;}
  }
-}
  
+ .body{  @extend %container705;}
+}
+
+/*Images sources*/
 #s2{
  @extend %container940;
  .slider-home{
@@ -148,7 +151,7 @@ header{
 	.contingut{ @extend %dipta-box-home; }
 	}
 } 
-
+/*navigation*/
 #s3{
  @extend %container940;
  
@@ -171,10 +174,11 @@ header{
 }
 
 } 
+/*pallete colors*/
+#s5,#s7{ @extend %container940;}
 
-#s7{ @extend %container940;}
-
-#s8{ @extend %container940;
+/*bloc*/
+#s6{ @extend %container940;
 	
 	.bloc1{ display:inline-block;
 		@extend %dipta-bloc-blue-border;

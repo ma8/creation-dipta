@@ -2,7 +2,7 @@
 <meta http-equiv="content-type" content="text/html; charset=UTF-8">
 	<head>
 			<link rel="stylesheet" type="text/css" media="screen" href="css/normalize.css">
-			<link rel="stylesheet" href="css/deputation.css">
+			<link rel="stylesheet" type="text/css" media="screen" href="css/responsive-creation.css">
 			<link rel="stylesheet" type="text/css" media="screen" href="css/doc.css">
 			<link rel="stylesheet" type="text/css" media="screen" href="css/print.css">
 			<link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
@@ -20,9 +20,9 @@
 <header>
 	<div class="container">
 		<img  style="width:40px;"src="images/escut-logo.png"/>
-		<h1>Deputation for Compass</h1>
+		<h1>Creation dipta for Compass</h1>
 		<p>Front-end framework de la Diputació de Tarragona. Colors, typography, navigations, tables, buttons, links, labels, icons ...etc</p>
-		<a class="btn-down" href="">Download from Github</a>
+		<a class="btn-down" href="https://github.com/ma8/creation-compass/archive/master.zip">Download from Github</a>
 		
 		<ul>
 			<li><a href="http://www.dipta.cat/">Diputació de Tarragona</a></</li>
@@ -37,11 +37,11 @@
 		<li><a href="#s1">Typography</a></li>
 		<li><a href="#s2">Images sources</a></li>
 		<li><a href="#s3">Navigation</a></li>
-		<li><a href="#s4">Forms</a></li>
-		<li><a href="#s5">Tables</a></li>
-		<li><a href="#s6">Buttons</a></li>	
-		<li><a href="#s7">Palette colors</a></li>
-		<li><a href="#s8">Exemples</a></li>
+		<li><a href="#s4">Elements  </a></li>	
+		<li><a href="#s5">Palette colors</a></li>
+		<li><a href="#s6">Blocs</a></li>
+		<li><a href="#s7">Forms</a></li>
+		<li><a href="#s8">Responsive-Susy</a></li>
 	</ul>
 </nav>
 		
@@ -107,19 +107,19 @@ a:hover { text-decoration: underline; }  </code></pre>
 		</article>
 	
 	<article>	
-		<h2 class="title-ma">  Body, p</h2>
-		<p>
-		Nullam ultricies leo quis cursus laoreet. Nulla non lectus eu odio tempus volutpat. Cras sit amet interdum ipsum, vel hendrerit nunc.
-		Vestibulum luctus ultrices facilisis. Nam sollicitudin lacus convallis rhoncus vulputate. Praesent ultrices tellus sed libero vehicula
-		dignissim. Sed eleifend, justo nec semper gravida, justo ligula consequat orci, nec pretium ante arcu at massa. Quisque ac dolor 
-		adipiscing, sollicitudin lectus sed, auctor ligula. Nullam in velit at leo euismod volutpat et quis nisl. Mauris lacus ipsum, 
-		cursus ut porttitor et, elementum tempor quam. Vestibulum laoreet cursus enim ac dapibus. Donec dignissim vitae magna pharetra 
-		commodo. Aliquam erat volutpat. Nam at turpis eget purus sodales fringilla. In sed sodales lacus. 
-		</p>
+		<h2 class="title-doc">  Body, p</h2> 
+		<div class="body">
+			<p>Nullam ultricies leo quis cursus laoreet. Nulla non lectus eu odio tempus volutpat. Cras sit amet interdum ipsum, vel hendrerit nunc.
+			Vestibulum luctus ultrices facilisis. Nam sollicitudin lacus convallis rhoncus vulputate. Praesent ultrices tellus sed libero vehicula
+			dignissim. Sed eleifend, justo nec semper gravida, justo ligula consequat orci, nec pretium ante arcu at massa. Quisque ac dolor 
+			adipiscing, sollicitudin lectus sed, auctor ligula. Nullam in velit at leo euismod volutpat et quis nisl. Mauris lacus ipsum, 
+			cursus ut porttitor et, elementum tempor quam. Vestibulum laoreet cursus enim ac dapibus. Donec dignissim vitae magna pharetra 
+			commodo. Aliquam erat volutpat. Nam at turpis eget purus sodales fringilla. In sed sodales lacus. </p>
 		<pre><code class="language-css">body{ font-family: 'Open Sans', sans-serif;/*Contingut*/
 font-size:1.5rem;/*15px*/
 line-height:2.5rem;/*25px*/		}
 p{ font-weight: 300; }</code></pre>
+		</div>
 	</article>
 	<h2 class="title-doc"> blockquote Box:705px</h2>
 	<article class="quote">
@@ -208,12 +208,7 @@ p{ font-weight: 300; }</code></pre>
 			<p>Vestibulum luctus ultrices facilisis. Nam sollicitudin lacus 
 			convallis rhoncus vulputate. Praesent ultrices.Vestibulum luctus ultrices facilisis. Nam sollicitudin lacus 
 			convallis rhoncus vulputate. Praesent ultrices.</p>
-			<div  class="bloc">
-			<h2><a href="#">Sed gravida molestie magna vestibulum lacinia</a></h2>
-			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sodales sagittis lectus quis hendrerit.
-				Nullam suscipit turpis luctus mauris congue pulvinar. Vestibulum gravida id tellus a lacinia. Etiam nec eros neque. 
-				Aenean velit nisi, rhoncus vel scelerisque nec, blandit at ipsum. </p>
-			</div>
+			
 		<pre><code class="language-css"> h1{ @extend %dipta-title-img-a;} p{ @extend %dipta-quote-h4c;  border:0;}</code></pre>
 		</article>
 		
@@ -223,12 +218,6 @@ p{ font-weight: 300; }</code></pre>
 			<p>Vestibulum luctus ultrices facilisis. Nam sollicitudin lacus 
 			convallis rhoncus vulputate. Praesent ultrices.Vestibulum luctus ultrices facilisis. Nam sollicitudin lacus 
 			convallis rhoncus vulputate. Praesent ultrices.</p>
-			<div  class="bloc">
-			<h3><a href="#">Sed gravida molestie magna vestibulum lacinia</a></h3>
-			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sodales sagittis lectus quis hendrerit.
-				Nullam suscipit turpis luctus mauris congue pulvinar. Vestibulum gravida id tellus a lacinia. Etiam nec eros neque. 
-				Aenean velit nisi, rhoncus vel scelerisque nec, blandit at ipsum. </p>
-			</div>
 		<pre><code class="language-css"> h1{ @extend %dipta-title-img-b;} p{ @extend %dipta-quote-h3;  border:0;}</code></pre>
 		</article>
 		
@@ -238,12 +227,6 @@ p{ font-weight: 300; }</code></pre>
 			<p>Vestibulum luctus ultrices facilisis. Nam sollicitudin lacus 
 			convallis rhoncus vulputate. Praesent ultrices.Vestibulum luctus ultrices facilisis. Nam sollicitudin lacus 
 			convallis rhoncus vulputate. Praesent ultrices.</p>
-			<div  class="bloc">
-			<h4><a href="#">Sed gravida molestie magna vestibulum lacinia</a></h4>
-			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sodales sagittis lectus quis hendrerit.
-				Nullam suscipit turpis luctus mauris congue pulvinar. Vestibulum gravida id tellus a lacinia. Etiam nec eros neque. 
-				Aenean velit nisi, rhoncus vel scelerisque nec, blandit at ipsum. </p>
-			</div>
 		<pre><code class="language-css"> h1{ @extend %dipta-title-img-c;} p{ @extend %dipta-quote-h3c;  border:0;}</code></pre>
 		</article>
 		
@@ -453,7 +436,7 @@ p{ font-weight: 300; }</code></pre>
 </section>
 
 <!-- Palette colors-->	
-<section id="s7">
+<section id="s5">
 	<div class="container">
 		<h1 class="title-doc">Palette colors</h1>
 		<ul id="palette-colors">
@@ -468,7 +451,7 @@ p{ font-weight: 300; }</code></pre>
 </section>
 	
 <!-- Exemples-->	 
-<section id="s8">
+<section id="s6">
 
 	<h1 class="title-doc">Blocs</h1>
 	<article class="bloc1" style="width:350px;">
@@ -666,9 +649,27 @@ p{ font-weight: 300; }</code></pre>
 		</div>	
 		</div>
 	</article>
-	
-	
 </section>	
+ 
+ <section id="s7">
+ <h1 class="title-doc"> Forms</h1>
+	<article>
+	...
+	<article>
+ </section>
+ 
+  <section id="s8">
+ <h1 class="title-doc"> Responsive-Susy</h1>
+	<div class="header"><p>header</p></div>
+	<div class="sidebar-1"><p>sidebar-1</p></div>
+	<div class="sidebar-2"><p>sidebar-2</p></div>
+	<div class="content"><p>Content</p></div>
+	<div class="footer"><p>Footer</p>
+		<div class="footer-1"><p>(1)</p></div>
+		<div class="footer-2"><p>(2)</p></div>
+		<div class="footer-3"><p>(2)</p></div>
+	</div>
+ </section>
  
  
 	<footer>
