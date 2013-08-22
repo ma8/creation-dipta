@@ -1,0 +1,32 @@
+
+@import "_responsive-creation";
+
+
+/* Exemple zen-susy.html */
+
+.region-header{@include container;@include susy-grid-background;}
+
+.header-content {@include container;@include susy-grid-background;}
+
+.navigation-wrapper{@include container;@include susy-grid-background;}
+
+#content{@include container;@include susy-grid-background;}
+
+.region-banners{@include container;@include susy-grid-background;
+	
+	#block-tagclouds-1{
+		@include span-columns(5 omega,5 ); 
+		@include at-breakpoint($tablet) { @include span-columns(6 omega,12 ); }
+		@include at-breakpoint($desktop) { @include span-columns(8 omega,16 );  }
+		
+	}
+	
+	#block-tagclouds-4{
+		@include span-columns(5 omega,5 ); 
+		@include at-breakpoint($tablet) { @include span-columns(6 omega,12 ); }
+		@include at-breakpoint($desktop) { @include span-columns(8 omega,16 );  }
+		
+	}	
+}
+
+.region-footer {@include container;@include susy-grid-background;}

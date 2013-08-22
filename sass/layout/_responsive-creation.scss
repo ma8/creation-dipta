@@ -1,0 +1,86 @@
+/*
+*
+*	Susy - Creation base
+*
+*/
+
+@import "susy";  
+@import "../creation/_creation"; 
+ 
+
+/* Visual Grid Susy*/
+$total-columns: 12;             // a 12-column grid
+$column-width: 5.3em;            // each column is 4em wide
+$gutter-width: 1em;            // 1em gutters between columns
+$grid-padding: $gutter-width;  // grid-padding equal to gutters
+
+$grid-background-column-color:lighten($blue, 60%);
+$grid-background-gutter-color:lighten($blue, 50%);
+
+$mobile:  5 30em;
+$tablet: 30em 12  59em;
+$desktop: 59.18em  16;
+
+
+html{
+	/*Typography responsive for compass breakpoints*/
+	 @include at-breakpoint($mobile) { font-size:62.5%; }
+	 @include at-breakpoint($tablet) { font-size:62.5%; }
+	 @include at-breakpoint($desktop) { font-size:62.5%; }
+}
+
+
+#s8{
+/*Container*/
+@include container;
+/*mobile first*/
+	.header{  background-color:$blue;
+		/*omega = eliminar gutter-width*/
+		@include span-columns(5 omega,5 ); 
+		@include at-breakpoint($tablet) { @include span-columns(12 omega,12 ); }
+		@include at-breakpoint($desktop) { @include span-columns(16 omega,16 );  }
+		}
+	.sidebar-1{ background-color:$eb;
+		@include span-columns(5,5); 
+	 	@include at-breakpoint($tablet) { @include span-columns(3,12 ); }
+		@include at-breakpoint($desktop) { @include span-columns(4,16 );  }
+		}
+	.sidebar-2 {background-color:$eb;
+		@include span-columns(5,5);
+		@include at-breakpoint($tablet) { @include span-columns(9 omega,12 ); }
+		@include at-breakpoint($desktop) { @include span-columns(4 omega ,16 );  }
+		}
+	.content{ background-color:$blue-1;
+		/*omega = eliminar gutter-width*/
+		@include span-columns(5,5);
+		@include at-breakpoint($tablet) { @include span-columns(12  ,12 ); }
+		@include at-breakpoint($desktop) { @include span-columns(8 ,16 );  }
+		}
+	.footer{  background-color:$blue1;
+		/*omega = eliminar gutter-width*/
+		@include suffix(1,5); 
+		@include prefix(1,5); 
+		@include span-columns(3,5);
+		@include at-breakpoint($tablet) { @include suffix(1,12); @include prefix(1,12);@include span-columns(10,12); }
+		@include at-breakpoint($desktop) { @include suffix(1,16); @include prefix(1,16);@include span-columns(14,16 );  }
+			 .footer-1{background-color:$eb;
+				@include span-columns(5,5);
+				@include at-breakpoint($tablet) { @include span-columns(3 ,12 ); }
+				@include at-breakpoint($desktop) { @include span-columns(4 ,16 );  }
+				}
+			 .footer-3{background-color:$eb;
+				@include span-columns(5,5);
+				@include at-breakpoint($tablet) { @include span-columns(3 omega ,12 ); }
+				@include at-breakpoint($desktop) { @include span-columns(4 omega ,16 );  }
+				}
+			 .footer-2{background-color:$eb;
+				@include span-columns(5,5);
+				@include at-breakpoint($tablet) { @include span-columns(6 ,12 ); }
+				@include at-breakpoint($desktop) { @include span-columns(8 ,16 );  }
+				}
+		/*responsive footer*/
+		 
+		}
+		
+
+}

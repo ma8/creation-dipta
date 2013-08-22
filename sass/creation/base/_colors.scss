@@ -16,6 +16,8 @@ $blue-1:#F0F7F9;/* J Peterman Shirt */
 $eb:#EBEBEB;/* winter morning */
 
 /* Tonalitats */
-$blue2:darken($blue, 3);
-$blu2-2:lighten($blue, 3);
+$blue-d1:darken($blue, 10%);
+$blue-d2:darken($blue, 20%);
+$blue-l1:lighten($blue, 10%);
+$blue-l2:lighten($blue, 20%);
 
