@@ -7,7 +7,7 @@
 
 @import "compass/css3";
 @import "compass/utilities";
-@import "_creation";
+@import "creation/_creation.scss";
 
 /* Palette colors*/
 $gray:#464646; /* Night Pencil */
@@ -125,6 +125,11 @@ header{
 	img{width: 100% !important;height: auto;}
  }
  
+.dipta-img-float{@extend %dipta-img-float;}
+.dipta-caption{@extend %dipta-caption; }
+.dipta-body{ @extend %dipta-body; }
+.dipta-concatenats{ @extend %dipta-concatenats;}
+
 .navigation-1{ @extend %container705; h1{ @extend %dipta-title-img-a;} p{ @extend %dipta-quote-h4c;  border:0;} 
 	.bloc{ @extend %dipta-box-eb-border; margin:0 2rem 0 2rem; p:before{content:"";padding:0;margin:0;} p{margin:0;}}
 }
@@ -175,7 +180,7 @@ header{
 
 } 
 /*pallete colors*/
-#s5,#s7{ @extend %container940;}
+#s5,#s7,#s4{ @extend %container940;}
 
 /*bloc*/
 #s6{ @extend %container940;

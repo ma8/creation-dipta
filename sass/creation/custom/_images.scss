@@ -1,0 +1,50 @@
+/*
+*	Images - Creation
+* 
+*/
+
+
+/* Titles Images */
+%dipta-title-img-a{width:90%;  border-bottom:1px solid $eb;
+/*position*/padding:10px;position:relative;  background-color:#fff; margin:-55px 0 0 12px; }
+	
+%dipta-title-img-b{  color:$blue;
+/*position*/padding:10px; position:relative; background-color:#fff; margin:-70px 0 0 12px; }
+	
+%dipta-title-img-c{width:90%; 
+/*position*/padding:10px; position:relative; background-color:#fff; margin:-55px 0 0  0; }
+
+
+%dipta-img-normal { outline:1px solid $eb;margin:2rem 0 2rem 0;}	 
+%dipta-img-float { float:left;margin:0 2rem 2rem 0; outline:1px solid $eb;}
+%dipta-body:after{ @extend .dipta-clear;}
+%dipta-caption{ background-color:$eb; padding:5px; @extend h6;}	 
+
+	
+ /*Slider -home */
+%dipta-resum-slider-home{
+  padding:20px;margin-bottom:0.5%;
+  background-color: rgba(240, 245, 249, 0.9);
+  width: 251px;height: 141px;
+  h2{color:$blue;margin-top:0.5rem;margin-bottom:1rem;}
+  .text-banner{@extend p;line-height:0.7*$base-h;margin:0;}
+}
+
+.btn-slider-left{
+	display: inline-block;height: 36px;width: 144px;
+	background-image: url("../images/bg-slideshowarrowleft.png");
+    overflow-x: hidden;overflow-y: hidden;
+    text-align: left;text-indent: -119988px;
+	}
+.btn-slider-left:hover{	background-image: url("../images/bg-slideshowarrowlefthover.png");}
+.btn-slider-rigth{
+	height: 36px;width: 144px;display: inline-block;
+	background-image: url("../images/bg-slideshowarrowright.png");
+    overflow-x: hidden;overflow-y: hidden;
+    text-align: left;text-indent: -119988px;
+	}
+.btn-slider-rigth:hover{	background-image: url("../images/bg-slideshowarrowrighthover.png");}
+
+.dipta-galeria{background-color:#ccc;width:677px;height:112; 
+	img{margin:1.7rem 1rem 0 2rem;} }
+
