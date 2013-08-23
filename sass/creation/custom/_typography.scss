@@ -1,6 +1,6 @@
 
 /**
-*	Typografia  web-fonts
+*	Typografia · web-fonts
 * 	http://www.google.com/fonts
 *	Imports + Golden ratio + responsive typography
 * 	$font-a;contingut + $font-b;Headings + $font-c; especial
@@ -37,7 +37,7 @@ h6{font-size: $h6-s;font-weight:400;line-height:$h6-h;letter-spacing: -0.06rem;}
 %dipta-title-page{font-weight:300;}
 %dipta-title-escut{
 	padding:2rem 0 2rem 5rem;margin:0;
-	background: url('../images/escut-dipta.png') no-repeat;
+	background: url('../../images/escut-dipta.png') no-repeat;
 	background-position:2rem 2.1rem;
 	background-color:#fff;
 	@extend %border-top-blue;

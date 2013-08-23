@@ -2,18 +2,51 @@
 @import "_responsive-creation";
 
 
-/* Exemple zen-susy.html */
+/* Fila header top*/
+.region-header{@include container; //@include susy-grid-background;
+}
 
-.region-header{@include container;@include susy-grid-background;}
+/* Fila header*/
+.header-content {@include container; //@include susy-grid-background;
+padding-top: 1px;
+}
 
-.header-content {@include container;@include susy-grid-background;}
+/* Fila navigation=> #main-menu, .region-navigation */
+.navigation-wrapper{@include container; //@include susy-grid-background;
+	#main-menu { 	@include span-columns(9); }
+	.region-navigation { @include span-columns(3 omega); margin-top:10px;}
+}
 
-.navigation-wrapper{@include container;@include susy-grid-background;}
+/* Fila Breadcrumb */
+.breadcrumb ol{@include container; //@include susy-grid-background;
+}
 
-#content{@include container;@include susy-grid-background;}
+/* Fila contingut
+*		-.region-highlighted
+*		-#content
+*		-.sidebars
+*/
 
-.region-banners{@include container;@include susy-grid-background;
+.main-content {@include container; @include susy-grid-background;}
+
+	/*If sidebart-frist*/
+	.sidebar-first {
+		#content { @include span-columns(9 omega); }
+		.region-sidebar-first {@include span-columns(3); 
+			#block-menu-block-1{padding:0 10px;}
+		}
+	}
 	
+	/*If sidebart-frist*/	
+	.sidebar-second {
+		#content {@include span-columns(9); }
+		.region-sidebar-second { @include span-columns(3 omega); }
+	}
+
+
+/* Fila banners baix*/
+.region-banners{@include container; //@include susy-grid-background;
+	padding-top:5px;
 	#block-tagclouds-1{
 		@include span-columns(5 omega,5 ); 
 		@include at-breakpoint($tablet) { @include span-columns(6 omega,12 ); }
@@ -21,12 +54,17 @@
 		
 	}
 	
-	#block-tagclouds-4{
-		@include span-columns(5 omega,5 ); 
-		@include at-breakpoint($tablet) { @include span-columns(6 omega,12 ); }
-		@include at-breakpoint($desktop) { @include span-columns(8 omega,16 );  }
-		
-	}	
+	
 }
 
-.region-footer {@include container;@include susy-grid-background;}
+/* Fila corporate*/
+.region-corporate{ @include container; //@include susy-grid-background;
+}
+
+/* Fila footer*/
+.footer-wrapper { @include container; //@include susy-grid-background;
+}
+
+/*Fila Bottom footer */
+.region-bottom { @include container; //@include susy-grid-background;
+}
