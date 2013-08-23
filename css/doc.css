@@ -431,7 +431,7 @@ h6, #s2 .dipta-caption {
 #s2 #dipta-noticia h2, #s2 #dipta-agenda h2, #s6 .bloc1 h2, #s6 .bloc2 h2, #s6 .bloc3 h2, #s6 .bloc4 h2 {
   padding: 2rem 0 2rem 5rem;
   margin: 0;
-  background: url("../images/escut-dipta.png") no-repeat;
+  background: url("../../images/escut-dipta.png") no-repeat;
   background-position: 2rem 2.1rem;
   background-color: #fff;
 }
@@ -744,21 +744,21 @@ h6, #s2 .dipta-caption {
   margin: -55px 0 0  0;
 }
 
-/* line 19, ../sass/creation/custom/_images.scss */
+/* line 21, ../sass/creation/custom/_images.scss */
 #s2 .dipta-img-float {
   float: left;
   margin: 0 2rem 2rem 0;
   outline: 1px solid #ebebeb;
 }
 
-/* line 21, ../sass/creation/custom/_images.scss */
+/* line 23, ../sass/creation/custom/_images.scss */
 #s2 .dipta-caption {
   background-color: #ebebeb;
   padding: 5px;
 }
 
 /*Slider -home */
-/* line 25, ../sass/creation/custom/_images.scss */
+/* line 27, ../sass/creation/custom/_images.scss */
 #s2 .slider-home .info-banner {
   padding: 20px;
   margin-bottom: 0.5%;
@@ -766,19 +766,19 @@ h6, #s2 .dipta-caption {
   width: 251px;
   height: 141px;
 }
-/* line 29, ../sass/creation/custom/_images.scss */
+/* line 31, ../sass/creation/custom/_images.scss */
 #s2 .slider-home .info-banner h2 {
   color: #0083a9;
   margin-top: 0.5rem;
   margin-bottom: 1rem;
 }
-/* line 30, ../sass/creation/custom/_images.scss */
+/* line 32, ../sass/creation/custom/_images.scss */
 #s2 .slider-home .info-banner .text-banner {
   line-height: 1.75rem;
   margin: 0;
 }
 
-/* line 33, ../sass/creation/custom/_images.scss */
+/* line 35, ../sass/creation/custom/_images.scss */
 .btn-slider-left {
   display: inline-block;
   height: 36px;
@@ -790,12 +790,12 @@ h6, #s2 .dipta-caption {
   text-indent: -119988px;
 }
 
-/* line 39, ../sass/creation/custom/_images.scss */
+/* line 41, ../sass/creation/custom/_images.scss */
 .btn-slider-left:hover {
   background-image: url("../images/bg-slideshowarrowlefthover.png");
 }
 
-/* line 40, ../sass/creation/custom/_images.scss */
+/* line 42, ../sass/creation/custom/_images.scss */
 .btn-slider-rigth {
   height: 36px;
   width: 144px;
@@ -807,18 +807,18 @@ h6, #s2 .dipta-caption {
   text-indent: -119988px;
 }
 
-/* line 46, ../sass/creation/custom/_images.scss */
+/* line 48, ../sass/creation/custom/_images.scss */
 .btn-slider-rigth:hover {
   background-image: url("../images/bg-slideshowarrowrighthover.png");
 }
 
-/* line 48, ../sass/creation/custom/_images.scss */
+/* line 50, ../sass/creation/custom/_images.scss */
 .dipta-galeria {
   background-color: #ccc;
   width: 677px;
   height: 112;
 }
-/* line 49, ../sass/creation/custom/_images.scss */
+/* line 51, ../sass/creation/custom/_images.scss */
 .dipta-galeria img {
   margin: 1.7rem 1rem 0 2rem;
 }
@@ -833,7 +833,7 @@ h6, #s2 .dipta-caption {
 *	Menus + breadcrums + box navigations
 *
 */
-/* line 26, ../sass/creation/_creation.scss */
+/* line 25, ../sass/creation/_creation.scss */
 html {
   color: #464646;
   font-size: 62.5%;
@@ -841,7 +841,7 @@ html {
   /*responsive-creation.scss*/
 }
 
-/* line 32, ../sass/creation/_creation.scss */
+/* line 31, ../sass/creation/_creation.scss */
 body {
   /*$font1: 'Open Sans', sans-serif;*/
   margin: 0;
@@ -872,28 +872,28 @@ header .container, #s1 .headings-especifics, #s1 .headings-generals, #s1 .links,
 }
 
 /* Header Doc*/
-/* line 26, ../sass/doc.scss */
+/* line 28, ../sass/doc.scss */
 header {
   background-color: #0083a9;
   padding: 90px 0 10px 0;
   text-align: center;
   color: #fff;
 }
-/* line 30, ../sass/doc.scss */
+/* line 32, ../sass/doc.scss */
 header p, header #s2 .slider-home .info-banner .text-banner, #s2 .slider-home .info-banner header .text-banner {
   color: #f0f7f9;
   line-height: 1.4;
   font-size: 21px;
   font-weight: normal;
 }
-/* line 31, ../sass/doc.scss */
+/* line 33, ../sass/doc.scss */
 header h1 {
   font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
   font-weight: 500;
   font-size: 50px;
   margin: 20px 0 3px 0;
 }
-/* line 33, ../sass/doc.scss */
+/* line 35, ../sass/doc.scss */
 header .btn-down {
   display: inline-block;
   -webkit-border-radius: 6px;
@@ -917,40 +917,40 @@ header .btn-down {
   transition-property: all;
   transition-timing-function: ease-in-out;
 }
-/* line 41, ../sass/doc.scss */
+/* line 43, ../sass/doc.scss */
 header .btn-down:hover {
   background-color: #fff;
   color: #0083a9;
   text-decoration: none;
 }
-/* line 42, ../sass/doc.scss */
+/* line 44, ../sass/doc.scss */
 header ul {
   font-size: 14px;
   margin-top: 20px;
   list-style: none;
   padding: 25px;
 }
-/* line 47, ../sass/doc.scss */
+/* line 49, ../sass/doc.scss */
 header ul li {
   display: inline;
 }
-/* line 48, ../sass/doc.scss */
+/* line 50, ../sass/doc.scss */
 header ul li a {
   color: #f0f7f9;
   font-weight: normal;
 }
-/* line 49, ../sass/doc.scss */
+/* line 51, ../sass/doc.scss */
 header ul li a:hover {
   text-shadow: 0 0 10px rgba(255, 255, 255, 0.55);
   text-decoration: none;
 }
-/* line 51, ../sass/doc.scss */
+/* line 53, ../sass/doc.scss */
 header ul li + li {
   margin-left: 20px;
 }
 
 /* Navigation doc */
-/* line 56, ../sass/doc.scss */
+/* line 58, ../sass/doc.scss */
 nav {
   position: fixed;
   top: 0;
@@ -960,7 +960,7 @@ nav {
   background-color: #F0F7F9;
   z-index: 1000;
 }
-/* line 58, ../sass/doc.scss */
+/* line 60, ../sass/doc.scss */
 nav ul {
   list-style: none;
   padding: 5px;
@@ -968,7 +968,7 @@ nav ul {
   text-align: center;
   text-transform: uppercase;
 }
-/* line 60, ../sass/doc.scss */
+/* line 62, ../sass/doc.scss */
 nav ul li {
   display: inline;
   font-size: 1.2rem;
@@ -976,7 +976,7 @@ nav ul li {
 }
 
 /*Footter doc */
-/* line 65, ../sass/doc.scss */
+/* line 67, ../sass/doc.scss */
 footer {
   background-color: #014B60;
   margin: 150px 0 0 0;
@@ -984,13 +984,13 @@ footer {
   color: #fff;
   text-align: center;
 }
-/* line 65, ../sass/doc.scss */
+/* line 67, ../sass/doc.scss */
 footer h5 {
   margin: 0;
 }
 
 /*Title docs page*/
-/* line 69, ../sass/doc.scss */
+/* line 71, ../sass/doc.scss */
 h1.title-doc {
   padding-top: 80px;
   font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
@@ -998,7 +998,7 @@ h1.title-doc {
   font-size: 5rem;
 }
 
-/* line 71, ../sass/doc.scss */
+/* line 73, ../sass/doc.scss */
 h2.title-doc {
   background-color: #014b60;
   padding: 1%;
@@ -1007,13 +1007,13 @@ h2.title-doc {
 }
 
 /* Palette colors*/
-/* line 74, ../sass/doc.scss */
+/* line 76, ../sass/doc.scss */
 #palette-colors {
   list-style: none;
   padding: 0;
   /* #464646 #EBEBEB #0083A9 #F0F7F9 #014B60*/
 }
-/* line 76, ../sass/doc.scss */
+/* line 78, ../sass/doc.scss */
 #palette-colors li {
   color: #ccc;
   display: inline-block;
@@ -1021,7 +1021,7 @@ h2.title-doc {
   height: 350px;
   text-align: center;
 }
-/* line 77, ../sass/doc.scss */
+/* line 79, ../sass/doc.scss */
 #palette-colors li i {
   color: #ccc;
   display: block;
@@ -1030,125 +1030,125 @@ h2.title-doc {
   margin: 0;
   font-size: 20px;
 }
-/* line 78, ../sass/doc.scss */
+/* line 80, ../sass/doc.scss */
 #palette-colors li h5 {
   padding-top: 30px;
   margin-bottom: 3px;
 }
-/* line 80, ../sass/doc.scss */
+/* line 82, ../sass/doc.scss */
 #palette-colors li:first-child {
   background-color: #464646;
 }
-/* line 81, ../sass/doc.scss */
+/* line 83, ../sass/doc.scss */
 #palette-colors li:nth-child(2) {
   background-color: #014B60;
 }
-/* line 82, ../sass/doc.scss */
+/* line 84, ../sass/doc.scss */
 #palette-colors li:nth-child(3) {
   background-color: #0083A9;
 }
-/* line 83, ../sass/doc.scss */
+/* line 85, ../sass/doc.scss */
 #palette-colors li:nth-child(4) {
   background-color: #EBEBEB;
 }
-/* line 84, ../sass/doc.scss */
+/* line 86, ../sass/doc.scss */
 #palette-colors li:last-child {
   background-color: #F0F7F9;
 }
 
 /*typography*/
-/* line 95, ../sass/doc.scss */
+/* line 97, ../sass/doc.scss */
 #s1 .links a {
   font-weight: 600;
 }
 
 /*Images sources*/
-/* line 123, ../sass/doc.scss */
+/* line 125, ../sass/doc.scss */
 #s2 .slider-home .dipta-slider-home {
   position: absolute;
   margin: -290px 0 0 30px;
 }
-/* line 125, ../sass/doc.scss */
+/* line 127, ../sass/doc.scss */
 #s2 .slider-home img {
   width: 100% !important;
   height: auto;
 }
-/* line 133, ../sass/doc.scss */
+/* line 135, ../sass/doc.scss */
 #s2 .navigation-1 p, #s2 .navigation-1 .slider-home .info-banner .text-banner, #s2 .slider-home .info-banner .navigation-1 .text-banner {
   border: 0;
 }
-/* line 134, ../sass/doc.scss */
+/* line 136, ../sass/doc.scss */
 #s2 .navigation-1 .bloc {
   margin: 0 2rem 0 2rem;
 }
-/* line 134, ../sass/doc.scss */
+/* line 136, ../sass/doc.scss */
 #s2 .navigation-1 .bloc p:before, #s2 .navigation-1 .bloc .slider-home .info-banner .text-banner:before, #s2 .slider-home .info-banner .navigation-1 .bloc .text-banner:before {
   content: "";
   padding: 0;
   margin: 0;
 }
-/* line 134, ../sass/doc.scss */
+/* line 136, ../sass/doc.scss */
 #s2 .navigation-1 .bloc p, #s2 .navigation-1 .bloc .slider-home .info-banner .text-banner, #s2 .slider-home .info-banner .navigation-1 .bloc .text-banner {
   margin: 0;
 }
-/* line 136, ../sass/doc.scss */
+/* line 138, ../sass/doc.scss */
 #s2 .navigation-2 p, #s2 .navigation-2 .slider-home .info-banner .text-banner, #s2 .slider-home .info-banner .navigation-2 .text-banner {
   border: 0;
 }
-/* line 137, ../sass/doc.scss */
+/* line 139, ../sass/doc.scss */
 #s2 .navigation-2 .bloc {
   margin: 0 2rem 0 2rem;
 }
-/* line 137, ../sass/doc.scss */
+/* line 139, ../sass/doc.scss */
 #s2 .navigation-2 .bloc p:before, #s2 .navigation-2 .bloc .slider-home .info-banner .text-banner:before, #s2 .slider-home .info-banner .navigation-2 .bloc .text-banner:before {
   content: "";
   padding: 0;
   margin: 0;
 }
-/* line 139, ../sass/doc.scss */
+/* line 141, ../sass/doc.scss */
 #s2 .navigation-3 p, #s2 .navigation-3 .slider-home .info-banner .text-banner, #s2 .slider-home .info-banner .navigation-3 .text-banner {
   border: 0;
 }
-/* line 140, ../sass/doc.scss */
+/* line 142, ../sass/doc.scss */
 #s2 .navigation-3 .bloc {
   margin: 0 2rem 0 2rem;
 }
-/* line 140, ../sass/doc.scss */
+/* line 142, ../sass/doc.scss */
 #s2 .navigation-3 .bloc p:before, #s2 .navigation-3 .bloc .slider-home .info-banner .text-banner:before, #s2 .slider-home .info-banner .navigation-3 .bloc .text-banner:before {
   content: "";
   padding: 0;
   margin: 0;
 }
-/* line 140, ../sass/doc.scss */
+/* line 142, ../sass/doc.scss */
 #s2 .navigation-3 .bloc p, #s2 .navigation-3 .bloc .slider-home .info-banner .text-banner, #s2 .slider-home .info-banner .navigation-3 .bloc .text-banner {
   margin: 0;
 }
-/* line 143, ../sass/doc.scss */
+/* line 145, ../sass/doc.scss */
 #s2 #dipta-noticia {
   background-color: #ebebeb;
   padding: 2rem;
 }
-/* line 147, ../sass/doc.scss */
+/* line 149, ../sass/doc.scss */
 #s2 #dipta-noticia .contingut div.dipta-resum {
   width: 44%;
   float: left;
   padding: 2rem 2rem 2rem 2rem;
 }
-/* line 148, ../sass/doc.scss */
+/* line 150, ../sass/doc.scss */
 #s2 #dipta-noticia .contingut div.dipta-resum:first-child {
   border-right: 0.4rem solid #ebebeb;
   border-bottom: 0;
 }
-/* line 149, ../sass/doc.scss */
+/* line 151, ../sass/doc.scss */
 #s2 #dipta-noticia .contingut div.dipta-resum + div.dipta-resum {
   padding-right: 2rem;
   border-bottom: 0.4rem solid #ebebeb;
 }
-/* line 150, ../sass/doc.scss */
+/* line 152, ../sass/doc.scss */
 #s2 #dipta-noticia .contingut div.dipta-resum:last-child {
   border-bottom: 0 !important;
 }
-/* line 153, ../sass/doc.scss */
+/* line 155, ../sass/doc.scss */
 #s2 #dipta-agenda {
   background-color: #ebebeb;
   padding: 2rem;
@@ -1157,53 +1157,53 @@ h2.title-doc {
 /*navigation*/
 /*pallete colors*/
 /*bloc*/
-/* line 188, ../sass/doc.scss */
+/* line 190, ../sass/doc.scss */
 #s6 .bloc1 {
   display: inline-block;
 }
-/* line 191, ../sass/doc.scss */
+/* line 193, ../sass/doc.scss */
 #s6 .bloc1 .contingut {
   background-color: #fff;
 }
-/* line 194, ../sass/doc.scss */
+/* line 196, ../sass/doc.scss */
 #s6 .bloc2 {
   display: inline-block;
 }
-/* line 196, ../sass/doc.scss */
+/* line 198, ../sass/doc.scss */
 #s6 .bloc2 h2 {
   background-color: #f0f7f9;
   border-bottom-color: #fff;
 }
-/* line 197, ../sass/doc.scss */
+/* line 199, ../sass/doc.scss */
 #s6 .bloc2 .contingut {
   background-color: #f0f7f9;
 }
-/* line 198, ../sass/doc.scss */
+/* line 200, ../sass/doc.scss */
 #s6 .bloc2 .contingut div.dipta-resum {
   border-bottom-color: #fff !IMPORTANT;
 }
-/* line 201, ../sass/doc.scss */
+/* line 203, ../sass/doc.scss */
 #s6 .bloc3 {
   display: inline-block;
 }
-/* line 204, ../sass/doc.scss */
+/* line 206, ../sass/doc.scss */
 #s6 .bloc3 .contingut {
   background-color: #fff;
 }
-/* line 207, ../sass/doc.scss */
+/* line 209, ../sass/doc.scss */
 #s6 .bloc4 {
   display: inline-block;
 }
-/* line 209, ../sass/doc.scss */
+/* line 211, ../sass/doc.scss */
 #s6 .bloc4 h2 {
   background-color: #f0f7f9;
   border-bottom-color: #fff;
 }
-/* line 210, ../sass/doc.scss */
+/* line 212, ../sass/doc.scss */
 #s6 .bloc4 .contingut {
   background-color: #f0f7f9;
 }
-/* line 211, ../sass/doc.scss */
+/* line 213, ../sass/doc.scss */
 #s6 .bloc4 .contingut div.dipta-resum {
   border-bottom-color: #fff !IMPORTANT;
 }

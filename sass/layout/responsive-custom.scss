@@ -1,14 +1,23 @@
 
 @import "_responsive-creation";
 
+.contextual-links-wrapper,.element-invisible{ display:none; }
+
 
 /* Fila header top*/
 .region-header{@include container; //@include susy-grid-background;
 }
 
 /* Fila header*/
-.header-content {@include container; //@include susy-grid-background;
+.header-content {@include container; @include susy-grid-background;
 padding-top: 1px;
+
+ #logo{	 
+ 		
+ 		 @include at-breakpoint($mobile) { @include span-columns(5 omega,5 );  img{width:200px !important;}}
+		 @include at-breakpoint($tablet) { @include span-columns(12 omega,12 ); }
+		 @include at-breakpoint($desktop) { @include span-columns(16 omega,16 );  }
+ 	}
 }
 
 /* Fila navigation=> #main-menu, .region-navigation */

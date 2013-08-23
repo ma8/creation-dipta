@@ -17,8 +17,8 @@ $grid-padding: $gutter-width;  // grid-padding equal to gutters
 $grid-background-column-color:lighten($blue, 60%);
 $grid-background-gutter-color:lighten($blue, 50%);
 
-$mobile: 5 48rem;
-$tablet: 48.1rem 12  78rem;
+$mobile: 5 32rem;
+$tablet: 32.1rem 12  78rem;
 $desktop: 130rem 16;
 
 
@@ -37,6 +37,7 @@ html{
 	.header{  background-color:$blue;
 		/*omega = eliminar gutter-width*/
 		@include span-columns(5 omega,5 ); 
+		@include at-breakpoint($tablet) { @include span-columns(12 omega,12 ); }
 		@include at-breakpoint($tablet) { @include span-columns(12 omega,12 ); }
 		@include at-breakpoint($desktop) { @include span-columns(16 omega,16 );  }
 		}

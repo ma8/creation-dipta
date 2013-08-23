@@ -1,4 +1,4 @@
-@charset "CP850";
+@charset "UTF-8";
 @import url(http://fonts.googleapis.com/css?family=Droid+Sans:400,700);
 @import url(http://fonts.googleapis.com/css?family=Roboto+Condensed:400,300,700);
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:400,700,300,600,800);
@@ -11,8 +11,8 @@
 */
 /**
  * @file
- * Creation for compass - Front-end framework de  la Diputaci¢ de Tarragona.
- * @Miguel µngel Ramos.
+ * Creation for compass - Front-end framework de  la DiputaciÃ³ de Tarragona.
+ * @Miguel Ãngel Ramos.
  *
  */
 /* Compass*/
@@ -27,7 +27,7 @@ code[class*="language-"],
 pre[class*="language-"] {
   color: black;
   text-shadow: 0 1px white;
-  font-family: Consolas, Monaco, "Andale Mono", monospace;
+  font-family: Consolas, Monaco, 'Andale Mono', monospace;
   direction: ltr;
   text-align: left;
   white-space: pre;
@@ -64,7 +64,7 @@ pre[class*="language-"] {
 /* line 45, ../../sass/creation/base/_syntax.scss */
 pre[class*="language-"] {
   padding: 1em;
-  margin: 0.5em 0;
+  margin: .5em 0;
   overflow: auto;
 }
 
@@ -73,7 +73,7 @@ pre[class*="language-"] {
 pre[class*="language-"] {
   /* #FEFA83  #f5f2f0 #FFFBEA #FEFA83;*/
   background: #FEFA83;
-  border: 1px solid #d2caa7;
+  border: 1px solid #D2CAA7;
 }
 
 /* Inline code */
@@ -181,7 +181,7 @@ pre[data-line] {
   top: .4em;
   left: .6em;
   min-width: 1em;
-  padding: 0 0.5em;
+  padding: 0 .5em;
   background-color: rgba(153, 122, 102, 0.4);
   color: #f5f2f0;
   font: bold 65%/1.5 sans-serif;
@@ -221,7 +221,7 @@ pre.line-numbers > code {
   width: 3em;
   /* works for line-numbers below 1000 lines */
   letter-spacing: -1px;
-  border-right: 1px solid #999999;
+  border-right: 1px solid #999;
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -433,7 +433,7 @@ h6 {
 */
 /* Titles Images */
 /*Slider -home */
-/* line 33, ../../sass/creation/custom/_images.scss */
+/* line 35, ../../sass/creation/custom/_images.scss */
 .btn-slider-left {
   display: inline-block;
   height: 36px;
@@ -445,12 +445,12 @@ h6 {
   text-indent: -119988px;
 }
 
-/* line 39, ../../sass/creation/custom/_images.scss */
+/* line 41, ../../sass/creation/custom/_images.scss */
 .btn-slider-left:hover {
   background-image: url("../images/bg-slideshowarrowlefthover.png");
 }
 
-/* line 40, ../../sass/creation/custom/_images.scss */
+/* line 42, ../../sass/creation/custom/_images.scss */
 .btn-slider-rigth {
   height: 36px;
   width: 144px;
@@ -462,18 +462,18 @@ h6 {
   text-indent: -119988px;
 }
 
-/* line 46, ../../sass/creation/custom/_images.scss */
+/* line 48, ../../sass/creation/custom/_images.scss */
 .btn-slider-rigth:hover {
   background-image: url("../images/bg-slideshowarrowrighthover.png");
 }
 
-/* line 48, ../../sass/creation/custom/_images.scss */
+/* line 50, ../../sass/creation/custom/_images.scss */
 .dipta-galeria {
   background-color: #ccc;
   width: 677px;
   height: 112;
 }
-/* line 49, ../../sass/creation/custom/_images.scss */
+/* line 51, ../../sass/creation/custom/_images.scss */
 .dipta-galeria img {
   margin: 1.7rem 1rem 0 2rem;
 }
@@ -488,7 +488,7 @@ h6 {
 *	Menus + breadcrums + box navigations
 *
 */
-/* line 26, ../../sass/creation/_creation.scss */
+/* line 25, ../../sass/creation/_creation.scss */
 html {
   color: #464646;
   font-size: 62.5%;
@@ -496,7 +496,7 @@ html {
   /*responsive-creation.scss*/
 }
 
-/* line 32, ../../sass/creation/_creation.scss */
+/* line 31, ../../sass/creation/_creation.scss */
 body {
   /*$font1: 'Open Sans', sans-serif;*/
   margin: 0;
@@ -505,24 +505,24 @@ body {
   line-height: 2.3rem;
 }
 
-/* Visual Grid Susy*/
+/* Visual Grid Susy for REM 1rem=>10px*/
 /* line 25, ../../sass/layout/_responsive-creation.scss */
 html {
   /*Typography responsive for compass breakpoints*/
 }
-@media (max-width: 30em) {
+@media (max-width: 32em) {
   /* line 25, ../../sass/layout/_responsive-creation.scss */
   html {
     font-size: 62.5%;
   }
 }
-@media (min-width: 30em) and (max-width: 59em) {
+@media (min-width: 32.1em) and (max-width: 78em) {
   /* line 25, ../../sass/layout/_responsive-creation.scss */
   html {
     font-size: 62.5%;
   }
 }
-@media (min-width: 59.18em) {
+@media (min-width: 130em) {
   /* line 25, ../../sass/layout/_responsive-creation.scss */
   html {
     font-size: 62.5%;
@@ -533,15 +533,18 @@ html {
 #s8 {
   /*Container*/
   *zoom: 1;
-  max-width: 74.6em;
-  _width: 74.6em;
-  padding-left: 1em;
-  padding-right: 1em;
+  max-width: 1504px;
+  max-width: 94rem;
+  _width: 1504px;
+  padding-left: 32px;
+  padding-left: 2rem;
+  padding-right: 32px;
+  padding-right: 2rem;
   margin-left: auto;
   margin-right: auto;
   /*mobile first*/
 }
-/* line 38, ../../../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
+/* line 38, ../../../../../../../Users/miguelangel/.rvm/gems/ruby-2.0.0-p247/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
 #s8:after {
   content: "";
   display: table;
@@ -554,10 +557,10 @@ html {
   width: 100%;
   float: right;
   margin-right: 0;
-  *margin-left: -1em;
+  *margin-left: -2rem;
   display: inline;
 }
-@media (min-width: 30em) and (max-width: 59em) {
+@media (min-width: 32.1em) and (max-width: 78em) {
   /* line 37, ../../sass/layout/_responsive-creation.scss */
   #s8 .header {
     width: 100%;
@@ -565,7 +568,7 @@ html {
     margin-right: 0;
   }
 }
-@media (min-width: 59.18em) {
+@media (min-width: 32.1em) and (max-width: 78em) {
   /* line 37, ../../sass/layout/_responsive-creation.scss */
   #s8 .header {
     width: 100%;
@@ -573,230 +576,236 @@ html {
     margin-right: 0;
   }
 }
-/* line 43, ../../sass/layout/_responsive-creation.scss */
+@media (min-width: 130em) {
+  /* line 37, ../../sass/layout/_responsive-creation.scss */
+  #s8 .header {
+    width: 100%;
+    float: right;
+    margin-right: 0;
+  }
+}
+/* line 44, ../../sass/layout/_responsive-creation.scss */
 #s8 .sidebar-1 {
   background-color: #ebebeb;
   width: 100%;
   float: left;
-  margin-right: 3.27869%;
+  margin-right: 5.26316%;
   display: inline;
 }
-@media (min-width: 30em) and (max-width: 59em) {
-  /* line 43, ../../sass/layout/_responsive-creation.scss */
+@media (min-width: 32.1em) and (max-width: 78em) {
+  /* line 44, ../../sass/layout/_responsive-creation.scss */
   #s8 .sidebar-1 {
-    width: 23.99464%;
+    width: 23.40426%;
     float: left;
-    margin-right: 1.34048%;
+    margin-right: 2.12766%;
   }
 }
-@media (min-width: 59.18em) {
-  /* line 43, ../../sass/layout/_responsive-creation.scss */
+@media (min-width: 130em) {
+  /* line 44, ../../sass/layout/_responsive-creation.scss */
   #s8 .sidebar-1 {
-    width: 24.2485%;
+    width: 23.80952%;
     float: left;
-    margin-right: 1.002%;
+    margin-right: 1.5873%;
   }
 }
-/* line 48, ../../sass/layout/_responsive-creation.scss */
+/* line 49, ../../sass/layout/_responsive-creation.scss */
 #s8 .sidebar-2 {
   background-color: #ebebeb;
   width: 100%;
   float: left;
-  margin-right: 3.27869%;
+  margin-right: 5.26316%;
   display: inline;
 }
-@media (min-width: 30em) and (max-width: 59em) {
-  /* line 48, ../../sass/layout/_responsive-creation.scss */
+@media (min-width: 32.1em) and (max-width: 78em) {
+  /* line 49, ../../sass/layout/_responsive-creation.scss */
   #s8 .sidebar-2 {
-    width: 74.66488%;
+    width: 74.46809%;
     float: right;
     margin-right: 0;
   }
 }
-@media (min-width: 59.18em) {
-  /* line 48, ../../sass/layout/_responsive-creation.scss */
+@media (min-width: 130em) {
+  /* line 49, ../../sass/layout/_responsive-creation.scss */
   #s8 .sidebar-2 {
-    width: 24.2485%;
+    width: 23.80952%;
     float: right;
     margin-right: 0;
   }
 }
-/* line 53, ../../sass/layout/_responsive-creation.scss */
+/* line 54, ../../sass/layout/_responsive-creation.scss */
 #s8 .content {
   background-color: #f0f7f9;
   /*omega = eliminar gutter-width*/
   width: 100%;
   float: left;
-  margin-right: 3.27869%;
+  margin-right: 5.26316%;
   display: inline;
 }
-@media (min-width: 30em) and (max-width: 59em) {
-  /* line 53, ../../sass/layout/_responsive-creation.scss */
+@media (min-width: 32.1em) and (max-width: 78em) {
+  /* line 54, ../../sass/layout/_responsive-creation.scss */
   #s8 .content {
     width: 100%;
     float: left;
-    margin-right: 1.34048%;
+    margin-right: 2.12766%;
   }
 }
-@media (min-width: 59.18em) {
-  /* line 53, ../../sass/layout/_responsive-creation.scss */
+@media (min-width: 130em) {
+  /* line 54, ../../sass/layout/_responsive-creation.scss */
   #s8 .content {
-    width: 49.499%;
+    width: 49.20635%;
     float: left;
-    margin-right: 1.002%;
+    margin-right: 1.5873%;
   }
 }
-/* line 59, ../../sass/layout/_responsive-creation.scss */
+/* line 60, ../../sass/layout/_responsive-creation.scss */
 #s8 .footer {
   background-color: #014b60;
   /*omega = eliminar gutter-width*/
-  padding-right: 20.65574%;
-  padding-left: 20.65574%;
-  width: 58.68852%;
+  padding-right: 21.05263%;
+  padding-left: 21.05263%;
+  width: 57.89474%;
   float: left;
-  margin-right: 3.27869%;
+  margin-right: 5.26316%;
   display: inline;
   /*responsive footer*/
 }
-@media (min-width: 30em) and (max-width: 59em) {
-  /* line 59, ../../sass/layout/_responsive-creation.scss */
+@media (min-width: 32.1em) and (max-width: 78em) {
+  /* line 60, ../../sass/layout/_responsive-creation.scss */
   #s8 .footer {
-    padding-right: 8.44504%;
-    padding-left: 8.44504%;
-    width: 83.10992%;
+    padding-right: 8.51064%;
+    padding-left: 8.51064%;
+    width: 82.97872%;
     float: left;
-    margin-right: 1.34048%;
+    margin-right: 2.12766%;
   }
 }
-@media (min-width: 59.18em) {
-  /* line 59, ../../sass/layout/_responsive-creation.scss */
+@media (min-width: 130em) {
+  /* line 60, ../../sass/layout/_responsive-creation.scss */
   #s8 .footer {
-    padding-right: 6.31263%;
-    padding-left: 6.31263%;
-    width: 87.37475%;
+    padding-right: 6.34921%;
+    padding-left: 6.34921%;
+    width: 87.30159%;
     float: left;
-    margin-right: 1.002%;
+    margin-right: 1.5873%;
   }
 }
-/* line 66, ../../sass/layout/_responsive-creation.scss */
+/* line 67, ../../sass/layout/_responsive-creation.scss */
 #s8 .footer .footer-1 {
   background-color: #ebebeb;
   width: 100%;
   float: left;
-  margin-right: 3.27869%;
+  margin-right: 5.26316%;
   display: inline;
 }
-@media (min-width: 30em) and (max-width: 59em) {
-  /* line 66, ../../sass/layout/_responsive-creation.scss */
+@media (min-width: 32.1em) and (max-width: 78em) {
+  /* line 67, ../../sass/layout/_responsive-creation.scss */
   #s8 .footer .footer-1 {
-    width: 23.99464%;
+    width: 23.40426%;
     float: left;
-    margin-right: 1.34048%;
+    margin-right: 2.12766%;
   }
 }
-@media (min-width: 59.18em) {
-  /* line 66, ../../sass/layout/_responsive-creation.scss */
+@media (min-width: 130em) {
+  /* line 67, ../../sass/layout/_responsive-creation.scss */
   #s8 .footer .footer-1 {
-    width: 24.2485%;
+    width: 23.80952%;
     float: left;
-    margin-right: 1.002%;
+    margin-right: 1.5873%;
   }
 }
-/* line 71, ../../sass/layout/_responsive-creation.scss */
+/* line 72, ../../sass/layout/_responsive-creation.scss */
 #s8 .footer .footer-3 {
   background-color: #ebebeb;
   width: 100%;
   float: left;
-  margin-right: 3.27869%;
+  margin-right: 5.26316%;
   display: inline;
 }
-@media (min-width: 30em) and (max-width: 59em) {
-  /* line 71, ../../sass/layout/_responsive-creation.scss */
+@media (min-width: 32.1em) and (max-width: 78em) {
+  /* line 72, ../../sass/layout/_responsive-creation.scss */
   #s8 .footer .footer-3 {
-    width: 23.99464%;
+    width: 23.40426%;
     float: right;
     margin-right: 0;
   }
 }
-@media (min-width: 59.18em) {
-  /* line 71, ../../sass/layout/_responsive-creation.scss */
+@media (min-width: 130em) {
+  /* line 72, ../../sass/layout/_responsive-creation.scss */
   #s8 .footer .footer-3 {
-    width: 24.2485%;
+    width: 23.80952%;
     float: right;
     margin-right: 0;
   }
 }
-/* line 76, ../../sass/layout/_responsive-creation.scss */
+/* line 77, ../../sass/layout/_responsive-creation.scss */
 #s8 .footer .footer-2 {
   background-color: #ebebeb;
   width: 100%;
   float: left;
-  margin-right: 3.27869%;
+  margin-right: 5.26316%;
   display: inline;
 }
-@media (min-width: 30em) and (max-width: 59em) {
-  /* line 76, ../../sass/layout/_responsive-creation.scss */
+@media (min-width: 32.1em) and (max-width: 78em) {
+  /* line 77, ../../sass/layout/_responsive-creation.scss */
   #s8 .footer .footer-2 {
-    width: 49.32976%;
+    width: 48.93617%;
     float: left;
-    margin-right: 1.34048%;
+    margin-right: 2.12766%;
   }
 }
-@media (min-width: 59.18em) {
-  /* line 76, ../../sass/layout/_responsive-creation.scss */
+@media (min-width: 130em) {
+  /* line 77, ../../sass/layout/_responsive-creation.scss */
   #s8 .footer .footer-2 {
-    width: 49.499%;
+    width: 49.20635%;
     float: left;
-    margin-right: 1.002%;
+    margin-right: 1.5873%;
   }
 }
 
-/* Exemple zen-susy.html */
-/* line 7, ../../sass/layout/responsive-custom.scss */
+/* line 4, ../../sass/layout/responsive-custom.scss */
+.contextual-links-wrapper, .element-invisible {
+  display: none;
+}
+
+/* Fila header top*/
+/* line 8, ../../sass/layout/responsive-custom.scss */
 .region-header {
   *zoom: 1;
-  max-width: 74.6em;
-  _width: 74.6em;
-  padding-left: 1em;
-  padding-right: 1em;
+  max-width: 1504px;
+  max-width: 94rem;
+  _width: 1504px;
+  padding-left: 32px;
+  padding-left: 2rem;
+  padding-right: 32px;
+  padding-right: 2rem;
   margin-left: auto;
   margin-right: auto;
-  background-image: -webkit-gradient(linear, 0% 50%, 100% 50%, color-stop(0%, #a9ecff), color-stop(0%, #dcf7ff), color-stop(7.10456%, #dcf7ff), color-stop(7.10456%, #a9ecff), color-stop(8.44504%, #a9ecff), color-stop(8.44504%, #dcf7ff), color-stop(15.5496%, #dcf7ff), color-stop(15.5496%, #a9ecff), color-stop(16.89008%, #a9ecff), color-stop(16.89008%, #dcf7ff), color-stop(23.99464%, #dcf7ff), color-stop(23.99464%, #a9ecff), color-stop(25.33512%, #a9ecff), color-stop(25.33512%, #dcf7ff), color-stop(32.43968%, #dcf7ff), color-stop(32.43968%, #a9ecff), color-stop(33.78016%, #a9ecff), color-stop(33.78016%, #dcf7ff), color-stop(40.88472%, #dcf7ff), color-stop(40.88472%, #a9ecff), color-stop(42.2252%, #a9ecff), color-stop(42.2252%, #dcf7ff), color-stop(49.32976%, #dcf7ff), color-stop(49.32976%, #a9ecff), color-stop(50.67024%, #a9ecff), color-stop(50.67024%, #dcf7ff), color-stop(57.7748%, #dcf7ff), color-stop(57.7748%, #a9ecff), color-stop(59.11528%, #a9ecff), color-stop(59.11528%, #dcf7ff), color-stop(66.21984%, #dcf7ff), color-stop(66.21984%, #a9ecff), color-stop(67.56032%, #a9ecff), color-stop(67.56032%, #dcf7ff), color-stop(74.66488%, #dcf7ff), color-stop(74.66488%, #a9ecff), color-stop(76.00536%, #a9ecff), color-stop(76.00536%, #dcf7ff), color-stop(83.10992%, #dcf7ff), color-stop(83.10992%, #a9ecff), color-stop(84.4504%, #a9ecff), color-stop(84.4504%, #dcf7ff), color-stop(91.55496%, #dcf7ff), color-stop(91.55496%, #a9ecff), color-stop(92.89544%, #a9ecff), color-stop(92.89544%, #dcf7ff), color-stop(100.0%, #dcf7ff), color-stop(100.0%, #a9ecff), color-stop(100%, #a9ecff));
-  background-image: -webkit-linear-gradient(left, #a9ecff 0%, #dcf7ff 0%, #dcf7ff 7.10456%, #a9ecff 7.10456%, #a9ecff 8.44504%, #dcf7ff 8.44504%, #dcf7ff 15.5496%, #a9ecff 15.5496%, #a9ecff 16.89008%, #dcf7ff 16.89008%, #dcf7ff 23.99464%, #a9ecff 23.99464%, #a9ecff 25.33512%, #dcf7ff 25.33512%, #dcf7ff 32.43968%, #a9ecff 32.43968%, #a9ecff 33.78016%, #dcf7ff 33.78016%, #dcf7ff 40.88472%, #a9ecff 40.88472%, #a9ecff 42.2252%, #dcf7ff 42.2252%, #dcf7ff 49.32976%, #a9ecff 49.32976%, #a9ecff 50.67024%, #dcf7ff 50.67024%, #dcf7ff 57.7748%, #a9ecff 57.7748%, #a9ecff 59.11528%, #dcf7ff 59.11528%, #dcf7ff 66.21984%, #a9ecff 66.21984%, #a9ecff 67.56032%, #dcf7ff 67.56032%, #dcf7ff 74.66488%, #a9ecff 74.66488%, #a9ecff 76.00536%, #dcf7ff 76.00536%, #dcf7ff 83.10992%, #a9ecff 83.10992%, #a9ecff 84.4504%, #dcf7ff 84.4504%, #dcf7ff 91.55496%, #a9ecff 91.55496%, #a9ecff 92.89544%, #dcf7ff 92.89544%, #dcf7ff 100.0%, #a9ecff 100.0%, #a9ecff 100%);
-  background-image: -moz-linear-gradient(left, #a9ecff 0%, #dcf7ff 0%, #dcf7ff 7.10456%, #a9ecff 7.10456%, #a9ecff 8.44504%, #dcf7ff 8.44504%, #dcf7ff 15.5496%, #a9ecff 15.5496%, #a9ecff 16.89008%, #dcf7ff 16.89008%, #dcf7ff 23.99464%, #a9ecff 23.99464%, #a9ecff 25.33512%, #dcf7ff 25.33512%, #dcf7ff 32.43968%, #a9ecff 32.43968%, #a9ecff 33.78016%, #dcf7ff 33.78016%, #dcf7ff 40.88472%, #a9ecff 40.88472%, #a9ecff 42.2252%, #dcf7ff 42.2252%, #dcf7ff 49.32976%, #a9ecff 49.32976%, #a9ecff 50.67024%, #dcf7ff 50.67024%, #dcf7ff 57.7748%, #a9ecff 57.7748%, #a9ecff 59.11528%, #dcf7ff 59.11528%, #dcf7ff 66.21984%, #a9ecff 66.21984%, #a9ecff 67.56032%, #dcf7ff 67.56032%, #dcf7ff 74.66488%, #a9ecff 74.66488%, #a9ecff 76.00536%, #dcf7ff 76.00536%, #dcf7ff 83.10992%, #a9ecff 83.10992%, #a9ecff 84.4504%, #dcf7ff 84.4504%, #dcf7ff 91.55496%, #a9ecff 91.55496%, #a9ecff 92.89544%, #dcf7ff 92.89544%, #dcf7ff 100.0%, #a9ecff 100.0%, #a9ecff 100%);
-  background-image: -o-linear-gradient(left, #a9ecff 0%, #dcf7ff 0%, #dcf7ff 7.10456%, #a9ecff 7.10456%, #a9ecff 8.44504%, #dcf7ff 8.44504%, #dcf7ff 15.5496%, #a9ecff 15.5496%, #a9ecff 16.89008%, #dcf7ff 16.89008%, #dcf7ff 23.99464%, #a9ecff 23.99464%, #a9ecff 25.33512%, #dcf7ff 25.33512%, #dcf7ff 32.43968%, #a9ecff 32.43968%, #a9ecff 33.78016%, #dcf7ff 33.78016%, #dcf7ff 40.88472%, #a9ecff 40.88472%, #a9ecff 42.2252%, #dcf7ff 42.2252%, #dcf7ff 49.32976%, #a9ecff 49.32976%, #a9ecff 50.67024%, #dcf7ff 50.67024%, #dcf7ff 57.7748%, #a9ecff 57.7748%, #a9ecff 59.11528%, #dcf7ff 59.11528%, #dcf7ff 66.21984%, #a9ecff 66.21984%, #a9ecff 67.56032%, #dcf7ff 67.56032%, #dcf7ff 74.66488%, #a9ecff 74.66488%, #a9ecff 76.00536%, #dcf7ff 76.00536%, #dcf7ff 83.10992%, #a9ecff 83.10992%, #a9ecff 84.4504%, #dcf7ff 84.4504%, #dcf7ff 91.55496%, #a9ecff 91.55496%, #a9ecff 92.89544%, #dcf7ff 92.89544%, #dcf7ff 100.0%, #a9ecff 100.0%, #a9ecff 100%);
-  background-image: linear-gradient(left, #a9ecff 0%, #dcf7ff 0%, #dcf7ff 7.10456%, #a9ecff 7.10456%, #a9ecff 8.44504%, #dcf7ff 8.44504%, #dcf7ff 15.5496%, #a9ecff 15.5496%, #a9ecff 16.89008%, #dcf7ff 16.89008%, #dcf7ff 23.99464%, #a9ecff 23.99464%, #a9ecff 25.33512%, #dcf7ff 25.33512%, #dcf7ff 32.43968%, #a9ecff 32.43968%, #a9ecff 33.78016%, #dcf7ff 33.78016%, #dcf7ff 40.88472%, #a9ecff 40.88472%, #a9ecff 42.2252%, #dcf7ff 42.2252%, #dcf7ff 49.32976%, #a9ecff 49.32976%, #a9ecff 50.67024%, #dcf7ff 50.67024%, #dcf7ff 57.7748%, #a9ecff 57.7748%, #a9ecff 59.11528%, #dcf7ff 59.11528%, #dcf7ff 66.21984%, #a9ecff 66.21984%, #a9ecff 67.56032%, #dcf7ff 67.56032%, #dcf7ff 74.66488%, #a9ecff 74.66488%, #a9ecff 76.00536%, #dcf7ff 76.00536%, #dcf7ff 83.10992%, #a9ecff 83.10992%, #a9ecff 84.4504%, #dcf7ff 84.4504%, #dcf7ff 91.55496%, #a9ecff 91.55496%, #a9ecff 92.89544%, #dcf7ff 92.89544%, #dcf7ff 100.0%, #a9ecff 100.0%, #a9ecff 100%);
-  background-position: left top;
-  -webkit-background-origin: content;
-  -moz-background-origin: content;
-  -ms-background-origin: content-box;
-  -o-background-origin: content-box;
-  background-origin: content-box;
-  -webkit-background-clip: content-box;
-  -moz-background-clip: content-box;
-  background-clip: content-box;
 }
-/* line 38, ../../../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
+/* line 38, ../../../../../../../Users/miguelangel/.rvm/gems/ruby-2.0.0-p247/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
 .region-header:after {
   content: "";
   display: table;
   clear: both;
 }
 
-/* line 9, ../../sass/layout/responsive-custom.scss */
+/* Fila header*/
+/* line 12, ../../sass/layout/responsive-custom.scss */
 .header-content {
   *zoom: 1;
-  max-width: 74.6em;
-  _width: 74.6em;
-  padding-left: 1em;
-  padding-right: 1em;
+  max-width: 1504px;
+  max-width: 94rem;
+  _width: 1504px;
+  padding-left: 32px;
+  padding-left: 2rem;
+  padding-right: 32px;
+  padding-right: 2rem;
   margin-left: auto;
   margin-right: auto;
-  background-image: -webkit-gradient(linear, 0% 50%, 100% 50%, color-stop(0%, #a9ecff), color-stop(0%, #dcf7ff), color-stop(7.10456%, #dcf7ff), color-stop(7.10456%, #a9ecff), color-stop(8.44504%, #a9ecff), color-stop(8.44504%, #dcf7ff), color-stop(15.5496%, #dcf7ff), color-stop(15.5496%, #a9ecff), color-stop(16.89008%, #a9ecff), color-stop(16.89008%, #dcf7ff), color-stop(23.99464%, #dcf7ff), color-stop(23.99464%, #a9ecff), color-stop(25.33512%, #a9ecff), color-stop(25.33512%, #dcf7ff), color-stop(32.43968%, #dcf7ff), color-stop(32.43968%, #a9ecff), color-stop(33.78016%, #a9ecff), color-stop(33.78016%, #dcf7ff), color-stop(40.88472%, #dcf7ff), color-stop(40.88472%, #a9ecff), color-stop(42.2252%, #a9ecff), color-stop(42.2252%, #dcf7ff), color-stop(49.32976%, #dcf7ff), color-stop(49.32976%, #a9ecff), color-stop(50.67024%, #a9ecff), color-stop(50.67024%, #dcf7ff), color-stop(57.7748%, #dcf7ff), color-stop(57.7748%, #a9ecff), color-stop(59.11528%, #a9ecff), color-stop(59.11528%, #dcf7ff), color-stop(66.21984%, #dcf7ff), color-stop(66.21984%, #a9ecff), color-stop(67.56032%, #a9ecff), color-stop(67.56032%, #dcf7ff), color-stop(74.66488%, #dcf7ff), color-stop(74.66488%, #a9ecff), color-stop(76.00536%, #a9ecff), color-stop(76.00536%, #dcf7ff), color-stop(83.10992%, #dcf7ff), color-stop(83.10992%, #a9ecff), color-stop(84.4504%, #a9ecff), color-stop(84.4504%, #dcf7ff), color-stop(91.55496%, #dcf7ff), color-stop(91.55496%, #a9ecff), color-stop(92.89544%, #a9ecff), color-stop(92.89544%, #dcf7ff), color-stop(100.0%, #dcf7ff), color-stop(100.0%, #a9ecff), color-stop(100%, #a9ecff));
-  background-image: -webkit-linear-gradient(left, #a9ecff 0%, #dcf7ff 0%, #dcf7ff 7.10456%, #a9ecff 7.10456%, #a9ecff 8.44504%, #dcf7ff 8.44504%, #dcf7ff 15.5496%, #a9ecff 15.5496%, #a9ecff 16.89008%, #dcf7ff 16.89008%, #dcf7ff 23.99464%, #a9ecff 23.99464%, #a9ecff 25.33512%, #dcf7ff 25.33512%, #dcf7ff 32.43968%, #a9ecff 32.43968%, #a9ecff 33.78016%, #dcf7ff 33.78016%, #dcf7ff 40.88472%, #a9ecff 40.88472%, #a9ecff 42.2252%, #dcf7ff 42.2252%, #dcf7ff 49.32976%, #a9ecff 49.32976%, #a9ecff 50.67024%, #dcf7ff 50.67024%, #dcf7ff 57.7748%, #a9ecff 57.7748%, #a9ecff 59.11528%, #dcf7ff 59.11528%, #dcf7ff 66.21984%, #a9ecff 66.21984%, #a9ecff 67.56032%, #dcf7ff 67.56032%, #dcf7ff 74.66488%, #a9ecff 74.66488%, #a9ecff 76.00536%, #dcf7ff 76.00536%, #dcf7ff 83.10992%, #a9ecff 83.10992%, #a9ecff 84.4504%, #dcf7ff 84.4504%, #dcf7ff 91.55496%, #a9ecff 91.55496%, #a9ecff 92.89544%, #dcf7ff 92.89544%, #dcf7ff 100.0%, #a9ecff 100.0%, #a9ecff 100%);
-  background-image: -moz-linear-gradient(left, #a9ecff 0%, #dcf7ff 0%, #dcf7ff 7.10456%, #a9ecff 7.10456%, #a9ecff 8.44504%, #dcf7ff 8.44504%, #dcf7ff 15.5496%, #a9ecff 15.5496%, #a9ecff 16.89008%, #dcf7ff 16.89008%, #dcf7ff 23.99464%, #a9ecff 23.99464%, #a9ecff 25.33512%, #dcf7ff 25.33512%, #dcf7ff 32.43968%, #a9ecff 32.43968%, #a9ecff 33.78016%, #dcf7ff 33.78016%, #dcf7ff 40.88472%, #a9ecff 40.88472%, #a9ecff 42.2252%, #dcf7ff 42.2252%, #dcf7ff 49.32976%, #a9ecff 49.32976%, #a9ecff 50.67024%, #dcf7ff 50.67024%, #dcf7ff 57.7748%, #a9ecff 57.7748%, #a9ecff 59.11528%, #dcf7ff 59.11528%, #dcf7ff 66.21984%, #a9ecff 66.21984%, #a9ecff 67.56032%, #dcf7ff 67.56032%, #dcf7ff 74.66488%, #a9ecff 74.66488%, #a9ecff 76.00536%, #dcf7ff 76.00536%, #dcf7ff 83.10992%, #a9ecff 83.10992%, #a9ecff 84.4504%, #dcf7ff 84.4504%, #dcf7ff 91.55496%, #a9ecff 91.55496%, #a9ecff 92.89544%, #dcf7ff 92.89544%, #dcf7ff 100.0%, #a9ecff 100.0%, #a9ecff 100%);
-  background-image: -o-linear-gradient(left, #a9ecff 0%, #dcf7ff 0%, #dcf7ff 7.10456%, #a9ecff 7.10456%, #a9ecff 8.44504%, #dcf7ff 8.44504%, #dcf7ff 15.5496%, #a9ecff 15.5496%, #a9ecff 16.89008%, #dcf7ff 16.89008%, #dcf7ff 23.99464%, #a9ecff 23.99464%, #a9ecff 25.33512%, #dcf7ff 25.33512%, #dcf7ff 32.43968%, #a9ecff 32.43968%, #a9ecff 33.78016%, #dcf7ff 33.78016%, #dcf7ff 40.88472%, #a9ecff 40.88472%, #a9ecff 42.2252%, #dcf7ff 42.2252%, #dcf7ff 49.32976%, #a9ecff 49.32976%, #a9ecff 50.67024%, #dcf7ff 50.67024%, #dcf7ff 57.7748%, #a9ecff 57.7748%, #a9ecff 59.11528%, #dcf7ff 59.11528%, #dcf7ff 66.21984%, #a9ecff 66.21984%, #a9ecff 67.56032%, #dcf7ff 67.56032%, #dcf7ff 74.66488%, #a9ecff 74.66488%, #a9ecff 76.00536%, #dcf7ff 76.00536%, #dcf7ff 83.10992%, #a9ecff 83.10992%, #a9ecff 84.4504%, #dcf7ff 84.4504%, #dcf7ff 91.55496%, #a9ecff 91.55496%, #a9ecff 92.89544%, #dcf7ff 92.89544%, #dcf7ff 100.0%, #a9ecff 100.0%, #a9ecff 100%);
-  background-image: linear-gradient(left, #a9ecff 0%, #dcf7ff 0%, #dcf7ff 7.10456%, #a9ecff 7.10456%, #a9ecff 8.44504%, #dcf7ff 8.44504%, #dcf7ff 15.5496%, #a9ecff 15.5496%, #a9ecff 16.89008%, #dcf7ff 16.89008%, #dcf7ff 23.99464%, #a9ecff 23.99464%, #a9ecff 25.33512%, #dcf7ff 25.33512%, #dcf7ff 32.43968%, #a9ecff 32.43968%, #a9ecff 33.78016%, #dcf7ff 33.78016%, #dcf7ff 40.88472%, #a9ecff 40.88472%, #a9ecff 42.2252%, #dcf7ff 42.2252%, #dcf7ff 49.32976%, #a9ecff 49.32976%, #a9ecff 50.67024%, #dcf7ff 50.67024%, #dcf7ff 57.7748%, #a9ecff 57.7748%, #a9ecff 59.11528%, #dcf7ff 59.11528%, #dcf7ff 66.21984%, #a9ecff 66.21984%, #a9ecff 67.56032%, #dcf7ff 67.56032%, #dcf7ff 74.66488%, #a9ecff 74.66488%, #a9ecff 76.00536%, #dcf7ff 76.00536%, #dcf7ff 83.10992%, #a9ecff 83.10992%, #a9ecff 84.4504%, #dcf7ff 84.4504%, #dcf7ff 91.55496%, #a9ecff 91.55496%, #a9ecff 92.89544%, #dcf7ff 92.89544%, #dcf7ff 100.0%, #a9ecff 100.0%, #a9ecff 100%);
+  background-image: -webkit-gradient(linear, 0% 50%, 100% 50%, color-stop(0%, #a9ecff), color-stop(0%, #dcf7ff), color-stop(6.38298%, #dcf7ff), color-stop(6.38298%, #a9ecff), color-stop(8.51064%, #a9ecff), color-stop(8.51064%, #dcf7ff), color-stop(14.89362%, #dcf7ff), color-stop(14.89362%, #a9ecff), color-stop(17.02128%, #a9ecff), color-stop(17.02128%, #dcf7ff), color-stop(23.40426%, #dcf7ff), color-stop(23.40426%, #a9ecff), color-stop(25.53191%, #a9ecff), color-stop(25.53191%, #dcf7ff), color-stop(31.91489%, #dcf7ff), color-stop(31.91489%, #a9ecff), color-stop(34.04255%, #a9ecff), color-stop(34.04255%, #dcf7ff), color-stop(40.42553%, #dcf7ff), color-stop(40.42553%, #a9ecff), color-stop(42.55319%, #a9ecff), color-stop(42.55319%, #dcf7ff), color-stop(48.93617%, #dcf7ff), color-stop(48.93617%, #a9ecff), color-stop(51.06383%, #a9ecff), color-stop(51.06383%, #dcf7ff), color-stop(57.44681%, #dcf7ff), color-stop(57.44681%, #a9ecff), color-stop(59.57447%, #a9ecff), color-stop(59.57447%, #dcf7ff), color-stop(65.95745%, #dcf7ff), color-stop(65.95745%, #a9ecff), color-stop(68.08511%, #a9ecff), color-stop(68.08511%, #dcf7ff), color-stop(74.46809%, #dcf7ff), color-stop(74.46809%, #a9ecff), color-stop(76.59574%, #a9ecff), color-stop(76.59574%, #dcf7ff), color-stop(82.97872%, #dcf7ff), color-stop(82.97872%, #a9ecff), color-stop(85.10638%, #a9ecff), color-stop(85.10638%, #dcf7ff), color-stop(91.48936%, #dcf7ff), color-stop(91.48936%, #a9ecff), color-stop(93.61702%, #a9ecff), color-stop(93.61702%, #dcf7ff), color-stop(100%, #dcf7ff), color-stop(100%, #a9ecff), color-stop(100%, #a9ecff));
+  background-image: -webkit-linear-gradient(left, #a9ecff 0%, #dcf7ff 0%, #dcf7ff 6.38298%, #a9ecff 6.38298%, #a9ecff 8.51064%, #dcf7ff 8.51064%, #dcf7ff 14.89362%, #a9ecff 14.89362%, #a9ecff 17.02128%, #dcf7ff 17.02128%, #dcf7ff 23.40426%, #a9ecff 23.40426%, #a9ecff 25.53191%, #dcf7ff 25.53191%, #dcf7ff 31.91489%, #a9ecff 31.91489%, #a9ecff 34.04255%, #dcf7ff 34.04255%, #dcf7ff 40.42553%, #a9ecff 40.42553%, #a9ecff 42.55319%, #dcf7ff 42.55319%, #dcf7ff 48.93617%, #a9ecff 48.93617%, #a9ecff 51.06383%, #dcf7ff 51.06383%, #dcf7ff 57.44681%, #a9ecff 57.44681%, #a9ecff 59.57447%, #dcf7ff 59.57447%, #dcf7ff 65.95745%, #a9ecff 65.95745%, #a9ecff 68.08511%, #dcf7ff 68.08511%, #dcf7ff 74.46809%, #a9ecff 74.46809%, #a9ecff 76.59574%, #dcf7ff 76.59574%, #dcf7ff 82.97872%, #a9ecff 82.97872%, #a9ecff 85.10638%, #dcf7ff 85.10638%, #dcf7ff 91.48936%, #a9ecff 91.48936%, #a9ecff 93.61702%, #dcf7ff 93.61702%, #dcf7ff 100%, #a9ecff 100%, #a9ecff 100%);
+  background-image: -moz-linear-gradient(left, #a9ecff 0%, #dcf7ff 0%, #dcf7ff 6.38298%, #a9ecff 6.38298%, #a9ecff 8.51064%, #dcf7ff 8.51064%, #dcf7ff 14.89362%, #a9ecff 14.89362%, #a9ecff 17.02128%, #dcf7ff 17.02128%, #dcf7ff 23.40426%, #a9ecff 23.40426%, #a9ecff 25.53191%, #dcf7ff 25.53191%, #dcf7ff 31.91489%, #a9ecff 31.91489%, #a9ecff 34.04255%, #dcf7ff 34.04255%, #dcf7ff 40.42553%, #a9ecff 40.42553%, #a9ecff 42.55319%, #dcf7ff 42.55319%, #dcf7ff 48.93617%, #a9ecff 48.93617%, #a9ecff 51.06383%, #dcf7ff 51.06383%, #dcf7ff 57.44681%, #a9ecff 57.44681%, #a9ecff 59.57447%, #dcf7ff 59.57447%, #dcf7ff 65.95745%, #a9ecff 65.95745%, #a9ecff 68.08511%, #dcf7ff 68.08511%, #dcf7ff 74.46809%, #a9ecff 74.46809%, #a9ecff 76.59574%, #dcf7ff 76.59574%, #dcf7ff 82.97872%, #a9ecff 82.97872%, #a9ecff 85.10638%, #dcf7ff 85.10638%, #dcf7ff 91.48936%, #a9ecff 91.48936%, #a9ecff 93.61702%, #dcf7ff 93.61702%, #dcf7ff 100%, #a9ecff 100%, #a9ecff 100%);
+  background-image: -o-linear-gradient(left, #a9ecff 0%, #dcf7ff 0%, #dcf7ff 6.38298%, #a9ecff 6.38298%, #a9ecff 8.51064%, #dcf7ff 8.51064%, #dcf7ff 14.89362%, #a9ecff 14.89362%, #a9ecff 17.02128%, #dcf7ff 17.02128%, #dcf7ff 23.40426%, #a9ecff 23.40426%, #a9ecff 25.53191%, #dcf7ff 25.53191%, #dcf7ff 31.91489%, #a9ecff 31.91489%, #a9ecff 34.04255%, #dcf7ff 34.04255%, #dcf7ff 40.42553%, #a9ecff 40.42553%, #a9ecff 42.55319%, #dcf7ff 42.55319%, #dcf7ff 48.93617%, #a9ecff 48.93617%, #a9ecff 51.06383%, #dcf7ff 51.06383%, #dcf7ff 57.44681%, #a9ecff 57.44681%, #a9ecff 59.57447%, #dcf7ff 59.57447%, #dcf7ff 65.95745%, #a9ecff 65.95745%, #a9ecff 68.08511%, #dcf7ff 68.08511%, #dcf7ff 74.46809%, #a9ecff 74.46809%, #a9ecff 76.59574%, #dcf7ff 76.59574%, #dcf7ff 82.97872%, #a9ecff 82.97872%, #a9ecff 85.10638%, #dcf7ff 85.10638%, #dcf7ff 91.48936%, #a9ecff 91.48936%, #a9ecff 93.61702%, #dcf7ff 93.61702%, #dcf7ff 100%, #a9ecff 100%, #a9ecff 100%);
+  background-image: linear-gradient(left, #a9ecff 0%, #dcf7ff 0%, #dcf7ff 6.38298%, #a9ecff 6.38298%, #a9ecff 8.51064%, #dcf7ff 8.51064%, #dcf7ff 14.89362%, #a9ecff 14.89362%, #a9ecff 17.02128%, #dcf7ff 17.02128%, #dcf7ff 23.40426%, #a9ecff 23.40426%, #a9ecff 25.53191%, #dcf7ff 25.53191%, #dcf7ff 31.91489%, #a9ecff 31.91489%, #a9ecff 34.04255%, #dcf7ff 34.04255%, #dcf7ff 40.42553%, #a9ecff 40.42553%, #a9ecff 42.55319%, #dcf7ff 42.55319%, #dcf7ff 48.93617%, #a9ecff 48.93617%, #a9ecff 51.06383%, #dcf7ff 51.06383%, #dcf7ff 57.44681%, #a9ecff 57.44681%, #a9ecff 59.57447%, #dcf7ff 59.57447%, #dcf7ff 65.95745%, #a9ecff 65.95745%, #a9ecff 68.08511%, #dcf7ff 68.08511%, #dcf7ff 74.46809%, #a9ecff 74.46809%, #a9ecff 76.59574%, #dcf7ff 76.59574%, #dcf7ff 82.97872%, #a9ecff 82.97872%, #a9ecff 85.10638%, #dcf7ff 85.10638%, #dcf7ff 91.48936%, #a9ecff 91.48936%, #a9ecff 93.61702%, #dcf7ff 93.61702%, #dcf7ff 100%, #a9ecff 100%, #a9ecff 100%);
   background-position: left top;
   -webkit-background-origin: content;
   -moz-background-origin: content;
@@ -806,90 +815,123 @@ html {
   -webkit-background-clip: content-box;
   -moz-background-clip: content-box;
   background-clip: content-box;
+  padding-top: 1px;
 }
-/* line 38, ../../../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
+/* line 38, ../../../../../../../Users/miguelangel/.rvm/gems/ruby-2.0.0-p247/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
 .header-content:after {
   content: "";
   display: table;
   clear: both;
 }
+@media (max-width: 32em) {
+  /* line 15, ../../sass/layout/responsive-custom.scss */
+  .header-content #logo {
+    width: 100%;
+    float: right;
+    margin-right: 0;
+  }
+  /* line 17, ../../sass/layout/responsive-custom.scss */
+  .header-content #logo img {
+    width: 200px !important;
+  }
+}
+@media (min-width: 32.1em) and (max-width: 78em) {
+  /* line 15, ../../sass/layout/responsive-custom.scss */
+  .header-content #logo {
+    width: 100%;
+    float: right;
+    margin-right: 0;
+  }
+}
+@media (min-width: 130em) {
+  /* line 15, ../../sass/layout/responsive-custom.scss */
+  .header-content #logo {
+    width: 100%;
+    float: right;
+    margin-right: 0;
+  }
+}
 
-/* line 11, ../../sass/layout/responsive-custom.scss */
+/* Fila navigation=> #main-menu, .region-navigation */
+/* line 24, ../../sass/layout/responsive-custom.scss */
 .navigation-wrapper {
   *zoom: 1;
-  max-width: 74.6em;
-  _width: 74.6em;
-  padding-left: 1em;
-  padding-right: 1em;
+  max-width: 1504px;
+  max-width: 94rem;
+  _width: 1504px;
+  padding-left: 32px;
+  padding-left: 2rem;
+  padding-right: 32px;
+  padding-right: 2rem;
   margin-left: auto;
   margin-right: auto;
-  background-image: -webkit-gradient(linear, 0% 50%, 100% 50%, color-stop(0%, #a9ecff), color-stop(0%, #dcf7ff), color-stop(7.10456%, #dcf7ff), color-stop(7.10456%, #a9ecff), color-stop(8.44504%, #a9ecff), color-stop(8.44504%, #dcf7ff), color-stop(15.5496%, #dcf7ff), color-stop(15.5496%, #a9ecff), color-stop(16.89008%, #a9ecff), color-stop(16.89008%, #dcf7ff), color-stop(23.99464%, #dcf7ff), color-stop(23.99464%, #a9ecff), color-stop(25.33512%, #a9ecff), color-stop(25.33512%, #dcf7ff), color-stop(32.43968%, #dcf7ff), color-stop(32.43968%, #a9ecff), color-stop(33.78016%, #a9ecff), color-stop(33.78016%, #dcf7ff), color-stop(40.88472%, #dcf7ff), color-stop(40.88472%, #a9ecff), color-stop(42.2252%, #a9ecff), color-stop(42.2252%, #dcf7ff), color-stop(49.32976%, #dcf7ff), color-stop(49.32976%, #a9ecff), color-stop(50.67024%, #a9ecff), color-stop(50.67024%, #dcf7ff), color-stop(57.7748%, #dcf7ff), color-stop(57.7748%, #a9ecff), color-stop(59.11528%, #a9ecff), color-stop(59.11528%, #dcf7ff), color-stop(66.21984%, #dcf7ff), color-stop(66.21984%, #a9ecff), color-stop(67.56032%, #a9ecff), color-stop(67.56032%, #dcf7ff), color-stop(74.66488%, #dcf7ff), color-stop(74.66488%, #a9ecff), color-stop(76.00536%, #a9ecff), color-stop(76.00536%, #dcf7ff), color-stop(83.10992%, #dcf7ff), color-stop(83.10992%, #a9ecff), color-stop(84.4504%, #a9ecff), color-stop(84.4504%, #dcf7ff), color-stop(91.55496%, #dcf7ff), color-stop(91.55496%, #a9ecff), color-stop(92.89544%, #a9ecff), color-stop(92.89544%, #dcf7ff), color-stop(100.0%, #dcf7ff), color-stop(100.0%, #a9ecff), color-stop(100%, #a9ecff));
-  background-image: -webkit-linear-gradient(left, #a9ecff 0%, #dcf7ff 0%, #dcf7ff 7.10456%, #a9ecff 7.10456%, #a9ecff 8.44504%, #dcf7ff 8.44504%, #dcf7ff 15.5496%, #a9ecff 15.5496%, #a9ecff 16.89008%, #dcf7ff 16.89008%, #dcf7ff 23.99464%, #a9ecff 23.99464%, #a9ecff 25.33512%, #dcf7ff 25.33512%, #dcf7ff 32.43968%, #a9ecff 32.43968%, #a9ecff 33.78016%, #dcf7ff 33.78016%, #dcf7ff 40.88472%, #a9ecff 40.88472%, #a9ecff 42.2252%, #dcf7ff 42.2252%, #dcf7ff 49.32976%, #a9ecff 49.32976%, #a9ecff 50.67024%, #dcf7ff 50.67024%, #dcf7ff 57.7748%, #a9ecff 57.7748%, #a9ecff 59.11528%, #dcf7ff 59.11528%, #dcf7ff 66.21984%, #a9ecff 66.21984%, #a9ecff 67.56032%, #dcf7ff 67.56032%, #dcf7ff 74.66488%, #a9ecff 74.66488%, #a9ecff 76.00536%, #dcf7ff 76.00536%, #dcf7ff 83.10992%, #a9ecff 83.10992%, #a9ecff 84.4504%, #dcf7ff 84.4504%, #dcf7ff 91.55496%, #a9ecff 91.55496%, #a9ecff 92.89544%, #dcf7ff 92.89544%, #dcf7ff 100.0%, #a9ecff 100.0%, #a9ecff 100%);
-  background-image: -moz-linear-gradient(left, #a9ecff 0%, #dcf7ff 0%, #dcf7ff 7.10456%, #a9ecff 7.10456%, #a9ecff 8.44504%, #dcf7ff 8.44504%, #dcf7ff 15.5496%, #a9ecff 15.5496%, #a9ecff 16.89008%, #dcf7ff 16.89008%, #dcf7ff 23.99464%, #a9ecff 23.99464%, #a9ecff 25.33512%, #dcf7ff 25.33512%, #dcf7ff 32.43968%, #a9ecff 32.43968%, #a9ecff 33.78016%, #dcf7ff 33.78016%, #dcf7ff 40.88472%, #a9ecff 40.88472%, #a9ecff 42.2252%, #dcf7ff 42.2252%, #dcf7ff 49.32976%, #a9ecff 49.32976%, #a9ecff 50.67024%, #dcf7ff 50.67024%, #dcf7ff 57.7748%, #a9ecff 57.7748%, #a9ecff 59.11528%, #dcf7ff 59.11528%, #dcf7ff 66.21984%, #a9ecff 66.21984%, #a9ecff 67.56032%, #dcf7ff 67.56032%, #dcf7ff 74.66488%, #a9ecff 74.66488%, #a9ecff 76.00536%, #dcf7ff 76.00536%, #dcf7ff 83.10992%, #a9ecff 83.10992%, #a9ecff 84.4504%, #dcf7ff 84.4504%, #dcf7ff 91.55496%, #a9ecff 91.55496%, #a9ecff 92.89544%, #dcf7ff 92.89544%, #dcf7ff 100.0%, #a9ecff 100.0%, #a9ecff 100%);
-  background-image: -o-linear-gradient(left, #a9ecff 0%, #dcf7ff 0%, #dcf7ff 7.10456%, #a9ecff 7.10456%, #a9ecff 8.44504%, #dcf7ff 8.44504%, #dcf7ff 15.5496%, #a9ecff 15.5496%, #a9ecff 16.89008%, #dcf7ff 16.89008%, #dcf7ff 23.99464%, #a9ecff 23.99464%, #a9ecff 25.33512%, #dcf7ff 25.33512%, #dcf7ff 32.43968%, #a9ecff 32.43968%, #a9ecff 33.78016%, #dcf7ff 33.78016%, #dcf7ff 40.88472%, #a9ecff 40.88472%, #a9ecff 42.2252%, #dcf7ff 42.2252%, #dcf7ff 49.32976%, #a9ecff 49.32976%, #a9ecff 50.67024%, #dcf7ff 50.67024%, #dcf7ff 57.7748%, #a9ecff 57.7748%, #a9ecff 59.11528%, #dcf7ff 59.11528%, #dcf7ff 66.21984%, #a9ecff 66.21984%, #a9ecff 67.56032%, #dcf7ff 67.56032%, #dcf7ff 74.66488%, #a9ecff 74.66488%, #a9ecff 76.00536%, #dcf7ff 76.00536%, #dcf7ff 83.10992%, #a9ecff 83.10992%, #a9ecff 84.4504%, #dcf7ff 84.4504%, #dcf7ff 91.55496%, #a9ecff 91.55496%, #a9ecff 92.89544%, #dcf7ff 92.89544%, #dcf7ff 100.0%, #a9ecff 100.0%, #a9ecff 100%);
-  background-image: linear-gradient(left, #a9ecff 0%, #dcf7ff 0%, #dcf7ff 7.10456%, #a9ecff 7.10456%, #a9ecff 8.44504%, #dcf7ff 8.44504%, #dcf7ff 15.5496%, #a9ecff 15.5496%, #a9ecff 16.89008%, #dcf7ff 16.89008%, #dcf7ff 23.99464%, #a9ecff 23.99464%, #a9ecff 25.33512%, #dcf7ff 25.33512%, #dcf7ff 32.43968%, #a9ecff 32.43968%, #a9ecff 33.78016%, #dcf7ff 33.78016%, #dcf7ff 40.88472%, #a9ecff 40.88472%, #a9ecff 42.2252%, #dcf7ff 42.2252%, #dcf7ff 49.32976%, #a9ecff 49.32976%, #a9ecff 50.67024%, #dcf7ff 50.67024%, #dcf7ff 57.7748%, #a9ecff 57.7748%, #a9ecff 59.11528%, #dcf7ff 59.11528%, #dcf7ff 66.21984%, #a9ecff 66.21984%, #a9ecff 67.56032%, #dcf7ff 67.56032%, #dcf7ff 74.66488%, #a9ecff 74.66488%, #a9ecff 76.00536%, #dcf7ff 76.00536%, #dcf7ff 83.10992%, #a9ecff 83.10992%, #a9ecff 84.4504%, #dcf7ff 84.4504%, #dcf7ff 91.55496%, #a9ecff 91.55496%, #a9ecff 92.89544%, #dcf7ff 92.89544%, #dcf7ff 100.0%, #a9ecff 100.0%, #a9ecff 100%);
-  background-position: left top;
-  -webkit-background-origin: content;
-  -moz-background-origin: content;
-  -ms-background-origin: content-box;
-  -o-background-origin: content-box;
-  background-origin: content-box;
-  -webkit-background-clip: content-box;
-  -moz-background-clip: content-box;
-  background-clip: content-box;
 }
-/* line 38, ../../../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
+/* line 38, ../../../../../../../Users/miguelangel/.rvm/gems/ruby-2.0.0-p247/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
 .navigation-wrapper:after {
   content: "";
   display: table;
   clear: both;
 }
+/* line 25, ../../sass/layout/responsive-custom.scss */
+.navigation-wrapper #main-menu {
+  width: 74.46809%;
+  float: left;
+  margin-right: 2.12766%;
+  display: inline;
+}
+/* line 26, ../../sass/layout/responsive-custom.scss */
+.navigation-wrapper .region-navigation {
+  width: 23.40426%;
+  float: right;
+  margin-right: 0;
+  *margin-left: -2rem;
+  display: inline;
+  margin-top: 10px;
+}
 
-/* line 13, ../../sass/layout/responsive-custom.scss */
-#main {
+/* Fila Breadcrumb */
+/* line 30, ../../sass/layout/responsive-custom.scss */
+.breadcrumb ol {
   *zoom: 1;
-  max-width: 74.6em;
-  _width: 74.6em;
-  padding-left: 1em;
-  padding-right: 1em;
+  max-width: 1504px;
+  max-width: 94rem;
+  _width: 1504px;
+  padding-left: 32px;
+  padding-left: 2rem;
+  padding-right: 32px;
+  padding-right: 2rem;
   margin-left: auto;
   margin-right: auto;
-  background-image: -webkit-gradient(linear, 0% 50%, 100% 50%, color-stop(0%, #a9ecff), color-stop(0%, #dcf7ff), color-stop(7.10456%, #dcf7ff), color-stop(7.10456%, #a9ecff), color-stop(8.44504%, #a9ecff), color-stop(8.44504%, #dcf7ff), color-stop(15.5496%, #dcf7ff), color-stop(15.5496%, #a9ecff), color-stop(16.89008%, #a9ecff), color-stop(16.89008%, #dcf7ff), color-stop(23.99464%, #dcf7ff), color-stop(23.99464%, #a9ecff), color-stop(25.33512%, #a9ecff), color-stop(25.33512%, #dcf7ff), color-stop(32.43968%, #dcf7ff), color-stop(32.43968%, #a9ecff), color-stop(33.78016%, #a9ecff), color-stop(33.78016%, #dcf7ff), color-stop(40.88472%, #dcf7ff), color-stop(40.88472%, #a9ecff), color-stop(42.2252%, #a9ecff), color-stop(42.2252%, #dcf7ff), color-stop(49.32976%, #dcf7ff), color-stop(49.32976%, #a9ecff), color-stop(50.67024%, #a9ecff), color-stop(50.67024%, #dcf7ff), color-stop(57.7748%, #dcf7ff), color-stop(57.7748%, #a9ecff), color-stop(59.11528%, #a9ecff), color-stop(59.11528%, #dcf7ff), color-stop(66.21984%, #dcf7ff), color-stop(66.21984%, #a9ecff), color-stop(67.56032%, #a9ecff), color-stop(67.56032%, #dcf7ff), color-stop(74.66488%, #dcf7ff), color-stop(74.66488%, #a9ecff), color-stop(76.00536%, #a9ecff), color-stop(76.00536%, #dcf7ff), color-stop(83.10992%, #dcf7ff), color-stop(83.10992%, #a9ecff), color-stop(84.4504%, #a9ecff), color-stop(84.4504%, #dcf7ff), color-stop(91.55496%, #dcf7ff), color-stop(91.55496%, #a9ecff), color-stop(92.89544%, #a9ecff), color-stop(92.89544%, #dcf7ff), color-stop(100.0%, #dcf7ff), color-stop(100.0%, #a9ecff), color-stop(100%, #a9ecff));
-  background-image: -webkit-linear-gradient(left, #a9ecff 0%, #dcf7ff 0%, #dcf7ff 7.10456%, #a9ecff 7.10456%, #a9ecff 8.44504%, #dcf7ff 8.44504%, #dcf7ff 15.5496%, #a9ecff 15.5496%, #a9ecff 16.89008%, #dcf7ff 16.89008%, #dcf7ff 23.99464%, #a9ecff 23.99464%, #a9ecff 25.33512%, #dcf7ff 25.33512%, #dcf7ff 32.43968%, #a9ecff 32.43968%, #a9ecff 33.78016%, #dcf7ff 33.78016%, #dcf7ff 40.88472%, #a9ecff 40.88472%, #a9ecff 42.2252%, #dcf7ff 42.2252%, #dcf7ff 49.32976%, #a9ecff 49.32976%, #a9ecff 50.67024%, #dcf7ff 50.67024%, #dcf7ff 57.7748%, #a9ecff 57.7748%, #a9ecff 59.11528%, #dcf7ff 59.11528%, #dcf7ff 66.21984%, #a9ecff 66.21984%, #a9ecff 67.56032%, #dcf7ff 67.56032%, #dcf7ff 74.66488%, #a9ecff 74.66488%, #a9ecff 76.00536%, #dcf7ff 76.00536%, #dcf7ff 83.10992%, #a9ecff 83.10992%, #a9ecff 84.4504%, #dcf7ff 84.4504%, #dcf7ff 91.55496%, #a9ecff 91.55496%, #a9ecff 92.89544%, #dcf7ff 92.89544%, #dcf7ff 100.0%, #a9ecff 100.0%, #a9ecff 100%);
-  background-image: -moz-linear-gradient(left, #a9ecff 0%, #dcf7ff 0%, #dcf7ff 7.10456%, #a9ecff 7.10456%, #a9ecff 8.44504%, #dcf7ff 8.44504%, #dcf7ff 15.5496%, #a9ecff 15.5496%, #a9ecff 16.89008%, #dcf7ff 16.89008%, #dcf7ff 23.99464%, #a9ecff 23.99464%, #a9ecff 25.33512%, #dcf7ff 25.33512%, #dcf7ff 32.43968%, #a9ecff 32.43968%, #a9ecff 33.78016%, #dcf7ff 33.78016%, #dcf7ff 40.88472%, #a9ecff 40.88472%, #a9ecff 42.2252%, #dcf7ff 42.2252%, #dcf7ff 49.32976%, #a9ecff 49.32976%, #a9ecff 50.67024%, #dcf7ff 50.67024%, #dcf7ff 57.7748%, #a9ecff 57.7748%, #a9ecff 59.11528%, #dcf7ff 59.11528%, #dcf7ff 66.21984%, #a9ecff 66.21984%, #a9ecff 67.56032%, #dcf7ff 67.56032%, #dcf7ff 74.66488%, #a9ecff 74.66488%, #a9ecff 76.00536%, #dcf7ff 76.00536%, #dcf7ff 83.10992%, #a9ecff 83.10992%, #a9ecff 84.4504%, #dcf7ff 84.4504%, #dcf7ff 91.55496%, #a9ecff 91.55496%, #a9ecff 92.89544%, #dcf7ff 92.89544%, #dcf7ff 100.0%, #a9ecff 100.0%, #a9ecff 100%);
-  background-image: -o-linear-gradient(left, #a9ecff 0%, #dcf7ff 0%, #dcf7ff 7.10456%, #a9ecff 7.10456%, #a9ecff 8.44504%, #dcf7ff 8.44504%, #dcf7ff 15.5496%, #a9ecff 15.5496%, #a9ecff 16.89008%, #dcf7ff 16.89008%, #dcf7ff 23.99464%, #a9ecff 23.99464%, #a9ecff 25.33512%, #dcf7ff 25.33512%, #dcf7ff 32.43968%, #a9ecff 32.43968%, #a9ecff 33.78016%, #dcf7ff 33.78016%, #dcf7ff 40.88472%, #a9ecff 40.88472%, #a9ecff 42.2252%, #dcf7ff 42.2252%, #dcf7ff 49.32976%, #a9ecff 49.32976%, #a9ecff 50.67024%, #dcf7ff 50.67024%, #dcf7ff 57.7748%, #a9ecff 57.7748%, #a9ecff 59.11528%, #dcf7ff 59.11528%, #dcf7ff 66.21984%, #a9ecff 66.21984%, #a9ecff 67.56032%, #dcf7ff 67.56032%, #dcf7ff 74.66488%, #a9ecff 74.66488%, #a9ecff 76.00536%, #dcf7ff 76.00536%, #dcf7ff 83.10992%, #a9ecff 83.10992%, #a9ecff 84.4504%, #dcf7ff 84.4504%, #dcf7ff 91.55496%, #a9ecff 91.55496%, #a9ecff 92.89544%, #dcf7ff 92.89544%, #dcf7ff 100.0%, #a9ecff 100.0%, #a9ecff 100%);
-  background-image: linear-gradient(left, #a9ecff 0%, #dcf7ff 0%, #dcf7ff 7.10456%, #a9ecff 7.10456%, #a9ecff 8.44504%, #dcf7ff 8.44504%, #dcf7ff 15.5496%, #a9ecff 15.5496%, #a9ecff 16.89008%, #dcf7ff 16.89008%, #dcf7ff 23.99464%, #a9ecff 23.99464%, #a9ecff 25.33512%, #dcf7ff 25.33512%, #dcf7ff 32.43968%, #a9ecff 32.43968%, #a9ecff 33.78016%, #dcf7ff 33.78016%, #dcf7ff 40.88472%, #a9ecff 40.88472%, #a9ecff 42.2252%, #dcf7ff 42.2252%, #dcf7ff 49.32976%, #a9ecff 49.32976%, #a9ecff 50.67024%, #dcf7ff 50.67024%, #dcf7ff 57.7748%, #a9ecff 57.7748%, #a9ecff 59.11528%, #dcf7ff 59.11528%, #dcf7ff 66.21984%, #a9ecff 66.21984%, #a9ecff 67.56032%, #dcf7ff 67.56032%, #dcf7ff 74.66488%, #a9ecff 74.66488%, #a9ecff 76.00536%, #dcf7ff 76.00536%, #dcf7ff 83.10992%, #a9ecff 83.10992%, #a9ecff 84.4504%, #dcf7ff 84.4504%, #dcf7ff 91.55496%, #a9ecff 91.55496%, #a9ecff 92.89544%, #dcf7ff 92.89544%, #dcf7ff 100.0%, #a9ecff 100.0%, #a9ecff 100%);
-  background-position: left top;
-  -webkit-background-origin: content;
-  -moz-background-origin: content;
-  -ms-background-origin: content-box;
-  -o-background-origin: content-box;
-  background-origin: content-box;
-  -webkit-background-clip: content-box;
-  -moz-background-clip: content-box;
-  background-clip: content-box;
 }
-/* line 38, ../../../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
-#main:after {
+/* line 38, ../../../../../../../Users/miguelangel/.rvm/gems/ruby-2.0.0-p247/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
+.breadcrumb ol:after {
   content: "";
   display: table;
   clear: both;
 }
 
-/* line 15, ../../sass/layout/responsive-custom.scss */
-.region-banners {
+/* Fila contingut
+*		-.region-highlighted
+*		-#content
+*		-.sidebars
+*/
+/* line 39, ../../sass/layout/responsive-custom.scss */
+.main-content {
   *zoom: 1;
-  max-width: 74.6em;
-  _width: 74.6em;
-  padding-left: 1em;
-  padding-right: 1em;
+  max-width: 1504px;
+  max-width: 94rem;
+  _width: 1504px;
+  padding-left: 32px;
+  padding-left: 2rem;
+  padding-right: 32px;
+  padding-right: 2rem;
   margin-left: auto;
   margin-right: auto;
-  background-image: -webkit-gradient(linear, 0% 50%, 100% 50%, color-stop(0%, #a9ecff), color-stop(0%, #dcf7ff), color-stop(7.10456%, #dcf7ff), color-stop(7.10456%, #a9ecff), color-stop(8.44504%, #a9ecff), color-stop(8.44504%, #dcf7ff), color-stop(15.5496%, #dcf7ff), color-stop(15.5496%, #a9ecff), color-stop(16.89008%, #a9ecff), color-stop(16.89008%, #dcf7ff), color-stop(23.99464%, #dcf7ff), color-stop(23.99464%, #a9ecff), color-stop(25.33512%, #a9ecff), color-stop(25.33512%, #dcf7ff), color-stop(32.43968%, #dcf7ff), color-stop(32.43968%, #a9ecff), color-stop(33.78016%, #a9ecff), color-stop(33.78016%, #dcf7ff), color-stop(40.88472%, #dcf7ff), color-stop(40.88472%, #a9ecff), color-stop(42.2252%, #a9ecff), color-stop(42.2252%, #dcf7ff), color-stop(49.32976%, #dcf7ff), color-stop(49.32976%, #a9ecff), color-stop(50.67024%, #a9ecff), color-stop(50.67024%, #dcf7ff), color-stop(57.7748%, #dcf7ff), color-stop(57.7748%, #a9ecff), color-stop(59.11528%, #a9ecff), color-stop(59.11528%, #dcf7ff), color-stop(66.21984%, #dcf7ff), color-stop(66.21984%, #a9ecff), color-stop(67.56032%, #a9ecff), color-stop(67.56032%, #dcf7ff), color-stop(74.66488%, #dcf7ff), color-stop(74.66488%, #a9ecff), color-stop(76.00536%, #a9ecff), color-stop(76.00536%, #dcf7ff), color-stop(83.10992%, #dcf7ff), color-stop(83.10992%, #a9ecff), color-stop(84.4504%, #a9ecff), color-stop(84.4504%, #dcf7ff), color-stop(91.55496%, #dcf7ff), color-stop(91.55496%, #a9ecff), color-stop(92.89544%, #a9ecff), color-stop(92.89544%, #dcf7ff), color-stop(100.0%, #dcf7ff), color-stop(100.0%, #a9ecff), color-stop(100%, #a9ecff));
-  background-image: -webkit-linear-gradient(left, #a9ecff 0%, #dcf7ff 0%, #dcf7ff 7.10456%, #a9ecff 7.10456%, #a9ecff 8.44504%, #dcf7ff 8.44504%, #dcf7ff 15.5496%, #a9ecff 15.5496%, #a9ecff 16.89008%, #dcf7ff 16.89008%, #dcf7ff 23.99464%, #a9ecff 23.99464%, #a9ecff 25.33512%, #dcf7ff 25.33512%, #dcf7ff 32.43968%, #a9ecff 32.43968%, #a9ecff 33.78016%, #dcf7ff 33.78016%, #dcf7ff 40.88472%, #a9ecff 40.88472%, #a9ecff 42.2252%, #dcf7ff 42.2252%, #dcf7ff 49.32976%, #a9ecff 49.32976%, #a9ecff 50.67024%, #dcf7ff 50.67024%, #dcf7ff 57.7748%, #a9ecff 57.7748%, #a9ecff 59.11528%, #dcf7ff 59.11528%, #dcf7ff 66.21984%, #a9ecff 66.21984%, #a9ecff 67.56032%, #dcf7ff 67.56032%, #dcf7ff 74.66488%, #a9ecff 74.66488%, #a9ecff 76.00536%, #dcf7ff 76.00536%, #dcf7ff 83.10992%, #a9ecff 83.10992%, #a9ecff 84.4504%, #dcf7ff 84.4504%, #dcf7ff 91.55496%, #a9ecff 91.55496%, #a9ecff 92.89544%, #dcf7ff 92.89544%, #dcf7ff 100.0%, #a9ecff 100.0%, #a9ecff 100%);
-  background-image: -moz-linear-gradient(left, #a9ecff 0%, #dcf7ff 0%, #dcf7ff 7.10456%, #a9ecff 7.10456%, #a9ecff 8.44504%, #dcf7ff 8.44504%, #dcf7ff 15.5496%, #a9ecff 15.5496%, #a9ecff 16.89008%, #dcf7ff 16.89008%, #dcf7ff 23.99464%, #a9ecff 23.99464%, #a9ecff 25.33512%, #dcf7ff 25.33512%, #dcf7ff 32.43968%, #a9ecff 32.43968%, #a9ecff 33.78016%, #dcf7ff 33.78016%, #dcf7ff 40.88472%, #a9ecff 40.88472%, #a9ecff 42.2252%, #dcf7ff 42.2252%, #dcf7ff 49.32976%, #a9ecff 49.32976%, #a9ecff 50.67024%, #dcf7ff 50.67024%, #dcf7ff 57.7748%, #a9ecff 57.7748%, #a9ecff 59.11528%, #dcf7ff 59.11528%, #dcf7ff 66.21984%, #a9ecff 66.21984%, #a9ecff 67.56032%, #dcf7ff 67.56032%, #dcf7ff 74.66488%, #a9ecff 74.66488%, #a9ecff 76.00536%, #dcf7ff 76.00536%, #dcf7ff 83.10992%, #a9ecff 83.10992%, #a9ecff 84.4504%, #dcf7ff 84.4504%, #dcf7ff 91.55496%, #a9ecff 91.55496%, #a9ecff 92.89544%, #dcf7ff 92.89544%, #dcf7ff 100.0%, #a9ecff 100.0%, #a9ecff 100%);
-  background-image: -o-linear-gradient(left, #a9ecff 0%, #dcf7ff 0%, #dcf7ff 7.10456%, #a9ecff 7.10456%, #a9ecff 8.44504%, #dcf7ff 8.44504%, #dcf7ff 15.5496%, #a9ecff 15.5496%, #a9ecff 16.89008%, #dcf7ff 16.89008%, #dcf7ff 23.99464%, #a9ecff 23.99464%, #a9ecff 25.33512%, #dcf7ff 25.33512%, #dcf7ff 32.43968%, #a9ecff 32.43968%, #a9ecff 33.78016%, #dcf7ff 33.78016%, #dcf7ff 40.88472%, #a9ecff 40.88472%, #a9ecff 42.2252%, #dcf7ff 42.2252%, #dcf7ff 49.32976%, #a9ecff 49.32976%, #a9ecff 50.67024%, #dcf7ff 50.67024%, #dcf7ff 57.7748%, #a9ecff 57.7748%, #a9ecff 59.11528%, #dcf7ff 59.11528%, #dcf7ff 66.21984%, #a9ecff 66.21984%, #a9ecff 67.56032%, #dcf7ff 67.56032%, #dcf7ff 74.66488%, #a9ecff 74.66488%, #a9ecff 76.00536%, #dcf7ff 76.00536%, #dcf7ff 83.10992%, #a9ecff 83.10992%, #a9ecff 84.4504%, #dcf7ff 84.4504%, #dcf7ff 91.55496%, #a9ecff 91.55496%, #a9ecff 92.89544%, #dcf7ff 92.89544%, #dcf7ff 100.0%, #a9ecff 100.0%, #a9ecff 100%);
-  background-image: linear-gradient(left, #a9ecff 0%, #dcf7ff 0%, #dcf7ff 7.10456%, #a9ecff 7.10456%, #a9ecff 8.44504%, #dcf7ff 8.44504%, #dcf7ff 15.5496%, #a9ecff 15.5496%, #a9ecff 16.89008%, #dcf7ff 16.89008%, #dcf7ff 23.99464%, #a9ecff 23.99464%, #a9ecff 25.33512%, #dcf7ff 25.33512%, #dcf7ff 32.43968%, #a9ecff 32.43968%, #a9ecff 33.78016%, #dcf7ff 33.78016%, #dcf7ff 40.88472%, #a9ecff 40.88472%, #a9ecff 42.2252%, #dcf7ff 42.2252%, #dcf7ff 49.32976%, #a9ecff 49.32976%, #a9ecff 50.67024%, #dcf7ff 50.67024%, #dcf7ff 57.7748%, #a9ecff 57.7748%, #a9ecff 59.11528%, #dcf7ff 59.11528%, #dcf7ff 66.21984%, #a9ecff 66.21984%, #a9ecff 67.56032%, #dcf7ff 67.56032%, #dcf7ff 74.66488%, #a9ecff 74.66488%, #a9ecff 76.00536%, #dcf7ff 76.00536%, #dcf7ff 83.10992%, #a9ecff 83.10992%, #a9ecff 84.4504%, #dcf7ff 84.4504%, #dcf7ff 91.55496%, #a9ecff 91.55496%, #a9ecff 92.89544%, #dcf7ff 92.89544%, #dcf7ff 100.0%, #a9ecff 100.0%, #a9ecff 100%);
+  background-image: -webkit-gradient(linear, 0% 50%, 100% 50%, color-stop(0%, #a9ecff), color-stop(0%, #dcf7ff), color-stop(6.38298%, #dcf7ff), color-stop(6.38298%, #a9ecff), color-stop(8.51064%, #a9ecff), color-stop(8.51064%, #dcf7ff), color-stop(14.89362%, #dcf7ff), color-stop(14.89362%, #a9ecff), color-stop(17.02128%, #a9ecff), color-stop(17.02128%, #dcf7ff), color-stop(23.40426%, #dcf7ff), color-stop(23.40426%, #a9ecff), color-stop(25.53191%, #a9ecff), color-stop(25.53191%, #dcf7ff), color-stop(31.91489%, #dcf7ff), color-stop(31.91489%, #a9ecff), color-stop(34.04255%, #a9ecff), color-stop(34.04255%, #dcf7ff), color-stop(40.42553%, #dcf7ff), color-stop(40.42553%, #a9ecff), color-stop(42.55319%, #a9ecff), color-stop(42.55319%, #dcf7ff), color-stop(48.93617%, #dcf7ff), color-stop(48.93617%, #a9ecff), color-stop(51.06383%, #a9ecff), color-stop(51.06383%, #dcf7ff), color-stop(57.44681%, #dcf7ff), color-stop(57.44681%, #a9ecff), color-stop(59.57447%, #a9ecff), color-stop(59.57447%, #dcf7ff), color-stop(65.95745%, #dcf7ff), color-stop(65.95745%, #a9ecff), color-stop(68.08511%, #a9ecff), color-stop(68.08511%, #dcf7ff), color-stop(74.46809%, #dcf7ff), color-stop(74.46809%, #a9ecff), color-stop(76.59574%, #a9ecff), color-stop(76.59574%, #dcf7ff), color-stop(82.97872%, #dcf7ff), color-stop(82.97872%, #a9ecff), color-stop(85.10638%, #a9ecff), color-stop(85.10638%, #dcf7ff), color-stop(91.48936%, #dcf7ff), color-stop(91.48936%, #a9ecff), color-stop(93.61702%, #a9ecff), color-stop(93.61702%, #dcf7ff), color-stop(100%, #dcf7ff), color-stop(100%, #a9ecff), color-stop(100%, #a9ecff));
+  background-image: -webkit-linear-gradient(left, #a9ecff 0%, #dcf7ff 0%, #dcf7ff 6.38298%, #a9ecff 6.38298%, #a9ecff 8.51064%, #dcf7ff 8.51064%, #dcf7ff 14.89362%, #a9ecff 14.89362%, #a9ecff 17.02128%, #dcf7ff 17.02128%, #dcf7ff 23.40426%, #a9ecff 23.40426%, #a9ecff 25.53191%, #dcf7ff 25.53191%, #dcf7ff 31.91489%, #a9ecff 31.91489%, #a9ecff 34.04255%, #dcf7ff 34.04255%, #dcf7ff 40.42553%, #a9ecff 40.42553%, #a9ecff 42.55319%, #dcf7ff 42.55319%, #dcf7ff 48.93617%, #a9ecff 48.93617%, #a9ecff 51.06383%, #dcf7ff 51.06383%, #dcf7ff 57.44681%, #a9ecff 57.44681%, #a9ecff 59.57447%, #dcf7ff 59.57447%, #dcf7ff 65.95745%, #a9ecff 65.95745%, #a9ecff 68.08511%, #dcf7ff 68.08511%, #dcf7ff 74.46809%, #a9ecff 74.46809%, #a9ecff 76.59574%, #dcf7ff 76.59574%, #dcf7ff 82.97872%, #a9ecff 82.97872%, #a9ecff 85.10638%, #dcf7ff 85.10638%, #dcf7ff 91.48936%, #a9ecff 91.48936%, #a9ecff 93.61702%, #dcf7ff 93.61702%, #dcf7ff 100%, #a9ecff 100%, #a9ecff 100%);
+  background-image: -moz-linear-gradient(left, #a9ecff 0%, #dcf7ff 0%, #dcf7ff 6.38298%, #a9ecff 6.38298%, #a9ecff 8.51064%, #dcf7ff 8.51064%, #dcf7ff 14.89362%, #a9ecff 14.89362%, #a9ecff 17.02128%, #dcf7ff 17.02128%, #dcf7ff 23.40426%, #a9ecff 23.40426%, #a9ecff 25.53191%, #dcf7ff 25.53191%, #dcf7ff 31.91489%, #a9ecff 31.91489%, #a9ecff 34.04255%, #dcf7ff 34.04255%, #dcf7ff 40.42553%, #a9ecff 40.42553%, #a9ecff 42.55319%, #dcf7ff 42.55319%, #dcf7ff 48.93617%, #a9ecff 48.93617%, #a9ecff 51.06383%, #dcf7ff 51.06383%, #dcf7ff 57.44681%, #a9ecff 57.44681%, #a9ecff 59.57447%, #dcf7ff 59.57447%, #dcf7ff 65.95745%, #a9ecff 65.95745%, #a9ecff 68.08511%, #dcf7ff 68.08511%, #dcf7ff 74.46809%, #a9ecff 74.46809%, #a9ecff 76.59574%, #dcf7ff 76.59574%, #dcf7ff 82.97872%, #a9ecff 82.97872%, #a9ecff 85.10638%, #dcf7ff 85.10638%, #dcf7ff 91.48936%, #a9ecff 91.48936%, #a9ecff 93.61702%, #dcf7ff 93.61702%, #dcf7ff 100%, #a9ecff 100%, #a9ecff 100%);
+  background-image: -o-linear-gradient(left, #a9ecff 0%, #dcf7ff 0%, #dcf7ff 6.38298%, #a9ecff 6.38298%, #a9ecff 8.51064%, #dcf7ff 8.51064%, #dcf7ff 14.89362%, #a9ecff 14.89362%, #a9ecff 17.02128%, #dcf7ff 17.02128%, #dcf7ff 23.40426%, #a9ecff 23.40426%, #a9ecff 25.53191%, #dcf7ff 25.53191%, #dcf7ff 31.91489%, #a9ecff 31.91489%, #a9ecff 34.04255%, #dcf7ff 34.04255%, #dcf7ff 40.42553%, #a9ecff 40.42553%, #a9ecff 42.55319%, #dcf7ff 42.55319%, #dcf7ff 48.93617%, #a9ecff 48.93617%, #a9ecff 51.06383%, #dcf7ff 51.06383%, #dcf7ff 57.44681%, #a9ecff 57.44681%, #a9ecff 59.57447%, #dcf7ff 59.57447%, #dcf7ff 65.95745%, #a9ecff 65.95745%, #a9ecff 68.08511%, #dcf7ff 68.08511%, #dcf7ff 74.46809%, #a9ecff 74.46809%, #a9ecff 76.59574%, #dcf7ff 76.59574%, #dcf7ff 82.97872%, #a9ecff 82.97872%, #a9ecff 85.10638%, #dcf7ff 85.10638%, #dcf7ff 91.48936%, #a9ecff 91.48936%, #a9ecff 93.61702%, #dcf7ff 93.61702%, #dcf7ff 100%, #a9ecff 100%, #a9ecff 100%);
+  background-image: linear-gradient(left, #a9ecff 0%, #dcf7ff 0%, #dcf7ff 6.38298%, #a9ecff 6.38298%, #a9ecff 8.51064%, #dcf7ff 8.51064%, #dcf7ff 14.89362%, #a9ecff 14.89362%, #a9ecff 17.02128%, #dcf7ff 17.02128%, #dcf7ff 23.40426%, #a9ecff 23.40426%, #a9ecff 25.53191%, #dcf7ff 25.53191%, #dcf7ff 31.91489%, #a9ecff 31.91489%, #a9ecff 34.04255%, #dcf7ff 34.04255%, #dcf7ff 40.42553%, #a9ecff 40.42553%, #a9ecff 42.55319%, #dcf7ff 42.55319%, #dcf7ff 48.93617%, #a9ecff 48.93617%, #a9ecff 51.06383%, #dcf7ff 51.06383%, #dcf7ff 57.44681%, #a9ecff 57.44681%, #a9ecff 59.57447%, #dcf7ff 59.57447%, #dcf7ff 65.95745%, #a9ecff 65.95745%, #a9ecff 68.08511%, #dcf7ff 68.08511%, #dcf7ff 74.46809%, #a9ecff 74.46809%, #a9ecff 76.59574%, #dcf7ff 76.59574%, #dcf7ff 82.97872%, #a9ecff 82.97872%, #a9ecff 85.10638%, #dcf7ff 85.10638%, #dcf7ff 91.48936%, #a9ecff 91.48936%, #a9ecff 93.61702%, #dcf7ff 93.61702%, #dcf7ff 100%, #a9ecff 100%, #a9ecff 100%);
   background-position: left top;
   -webkit-background-origin: content;
   -moz-background-origin: content;
@@ -900,87 +942,155 @@ html {
   -moz-background-clip: content-box;
   background-clip: content-box;
 }
-/* line 38, ../../../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
+/* line 38, ../../../../../../../Users/miguelangel/.rvm/gems/ruby-2.0.0-p247/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
+.main-content:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/*If sidebart-frist*/
+/* line 43, ../../sass/layout/responsive-custom.scss */
+.sidebar-first #content {
+  width: 74.46809%;
+  float: right;
+  margin-right: 0;
+  *margin-left: -2rem;
+  display: inline;
+}
+/* line 44, ../../sass/layout/responsive-custom.scss */
+.sidebar-first .region-sidebar-first {
+  width: 23.40426%;
+  float: left;
+  margin-right: 2.12766%;
+  display: inline;
+}
+/* line 45, ../../sass/layout/responsive-custom.scss */
+.sidebar-first .region-sidebar-first #block-menu-block-1 {
+  padding: 0 10px;
+}
+
+/*If sidebart-frist*/
+/* line 51, ../../sass/layout/responsive-custom.scss */
+.sidebar-second #content {
+  width: 74.46809%;
+  float: left;
+  margin-right: 2.12766%;
+  display: inline;
+}
+/* line 52, ../../sass/layout/responsive-custom.scss */
+.sidebar-second .region-sidebar-second {
+  width: 23.40426%;
+  float: right;
+  margin-right: 0;
+  *margin-left: -2rem;
+  display: inline;
+}
+
+/* Fila banners baix*/
+/* line 57, ../../sass/layout/responsive-custom.scss */
+.region-banners {
+  *zoom: 1;
+  max-width: 1504px;
+  max-width: 94rem;
+  _width: 1504px;
+  padding-left: 32px;
+  padding-left: 2rem;
+  padding-right: 32px;
+  padding-right: 2rem;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 5px;
+}
+/* line 38, ../../../../../../../Users/miguelangel/.rvm/gems/ruby-2.0.0-p247/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
 .region-banners:after {
   content: "";
   display: table;
   clear: both;
 }
-/* line 17, ../../sass/layout/responsive-custom.scss */
+/* line 59, ../../sass/layout/responsive-custom.scss */
 .region-banners #block-tagclouds-1 {
   width: 100%;
   float: right;
   margin-right: 0;
-  *margin-left: -1em;
+  *margin-left: -2rem;
   display: inline;
 }
-@media (min-width: 30em) and (max-width: 59em) {
-  /* line 17, ../../sass/layout/responsive-custom.scss */
+@media (min-width: 32.1em) and (max-width: 78em) {
+  /* line 59, ../../sass/layout/responsive-custom.scss */
   .region-banners #block-tagclouds-1 {
-    width: 49.32976%;
+    width: 48.93617%;
     float: right;
     margin-right: 0;
   }
 }
-@media (min-width: 59.18em) {
-  /* line 17, ../../sass/layout/responsive-custom.scss */
+@media (min-width: 130em) {
+  /* line 59, ../../sass/layout/responsive-custom.scss */
   .region-banners #block-tagclouds-1 {
-    width: 49.499%;
-    float: right;
-    margin-right: 0;
-  }
-}
-/* line 24, ../../sass/layout/responsive-custom.scss */
-.region-banners #block-tagclouds-4 {
-  width: 100%;
-  float: right;
-  margin-right: 0;
-  *margin-left: -1em;
-  display: inline;
-}
-@media (min-width: 30em) and (max-width: 59em) {
-  /* line 24, ../../sass/layout/responsive-custom.scss */
-  .region-banners #block-tagclouds-4 {
-    width: 49.32976%;
-    float: right;
-    margin-right: 0;
-  }
-}
-@media (min-width: 59.18em) {
-  /* line 24, ../../sass/layout/responsive-custom.scss */
-  .region-banners #block-tagclouds-4 {
-    width: 49.499%;
+    width: 49.20635%;
     float: right;
     margin-right: 0;
   }
 }
 
-/* line 32, ../../sass/layout/responsive-custom.scss */
-.region-footer {
+/* Fila corporate*/
+/* line 70, ../../sass/layout/responsive-custom.scss */
+.region-corporate {
   *zoom: 1;
-  max-width: 74.6em;
-  _width: 74.6em;
-  padding-left: 1em;
-  padding-right: 1em;
+  max-width: 1504px;
+  max-width: 94rem;
+  _width: 1504px;
+  padding-left: 32px;
+  padding-left: 2rem;
+  padding-right: 32px;
+  padding-right: 2rem;
   margin-left: auto;
   margin-right: auto;
-  background-image: -webkit-gradient(linear, 0% 50%, 100% 50%, color-stop(0%, #a9ecff), color-stop(0%, #dcf7ff), color-stop(7.10456%, #dcf7ff), color-stop(7.10456%, #a9ecff), color-stop(8.44504%, #a9ecff), color-stop(8.44504%, #dcf7ff), color-stop(15.5496%, #dcf7ff), color-stop(15.5496%, #a9ecff), color-stop(16.89008%, #a9ecff), color-stop(16.89008%, #dcf7ff), color-stop(23.99464%, #dcf7ff), color-stop(23.99464%, #a9ecff), color-stop(25.33512%, #a9ecff), color-stop(25.33512%, #dcf7ff), color-stop(32.43968%, #dcf7ff), color-stop(32.43968%, #a9ecff), color-stop(33.78016%, #a9ecff), color-stop(33.78016%, #dcf7ff), color-stop(40.88472%, #dcf7ff), color-stop(40.88472%, #a9ecff), color-stop(42.2252%, #a9ecff), color-stop(42.2252%, #dcf7ff), color-stop(49.32976%, #dcf7ff), color-stop(49.32976%, #a9ecff), color-stop(50.67024%, #a9ecff), color-stop(50.67024%, #dcf7ff), color-stop(57.7748%, #dcf7ff), color-stop(57.7748%, #a9ecff), color-stop(59.11528%, #a9ecff), color-stop(59.11528%, #dcf7ff), color-stop(66.21984%, #dcf7ff), color-stop(66.21984%, #a9ecff), color-stop(67.56032%, #a9ecff), color-stop(67.56032%, #dcf7ff), color-stop(74.66488%, #dcf7ff), color-stop(74.66488%, #a9ecff), color-stop(76.00536%, #a9ecff), color-stop(76.00536%, #dcf7ff), color-stop(83.10992%, #dcf7ff), color-stop(83.10992%, #a9ecff), color-stop(84.4504%, #a9ecff), color-stop(84.4504%, #dcf7ff), color-stop(91.55496%, #dcf7ff), color-stop(91.55496%, #a9ecff), color-stop(92.89544%, #a9ecff), color-stop(92.89544%, #dcf7ff), color-stop(100.0%, #dcf7ff), color-stop(100.0%, #a9ecff), color-stop(100%, #a9ecff));
-  background-image: -webkit-linear-gradient(left, #a9ecff 0%, #dcf7ff 0%, #dcf7ff 7.10456%, #a9ecff 7.10456%, #a9ecff 8.44504%, #dcf7ff 8.44504%, #dcf7ff 15.5496%, #a9ecff 15.5496%, #a9ecff 16.89008%, #dcf7ff 16.89008%, #dcf7ff 23.99464%, #a9ecff 23.99464%, #a9ecff 25.33512%, #dcf7ff 25.33512%, #dcf7ff 32.43968%, #a9ecff 32.43968%, #a9ecff 33.78016%, #dcf7ff 33.78016%, #dcf7ff 40.88472%, #a9ecff 40.88472%, #a9ecff 42.2252%, #dcf7ff 42.2252%, #dcf7ff 49.32976%, #a9ecff 49.32976%, #a9ecff 50.67024%, #dcf7ff 50.67024%, #dcf7ff 57.7748%, #a9ecff 57.7748%, #a9ecff 59.11528%, #dcf7ff 59.11528%, #dcf7ff 66.21984%, #a9ecff 66.21984%, #a9ecff 67.56032%, #dcf7ff 67.56032%, #dcf7ff 74.66488%, #a9ecff 74.66488%, #a9ecff 76.00536%, #dcf7ff 76.00536%, #dcf7ff 83.10992%, #a9ecff 83.10992%, #a9ecff 84.4504%, #dcf7ff 84.4504%, #dcf7ff 91.55496%, #a9ecff 91.55496%, #a9ecff 92.89544%, #dcf7ff 92.89544%, #dcf7ff 100.0%, #a9ecff 100.0%, #a9ecff 100%);
-  background-image: -moz-linear-gradient(left, #a9ecff 0%, #dcf7ff 0%, #dcf7ff 7.10456%, #a9ecff 7.10456%, #a9ecff 8.44504%, #dcf7ff 8.44504%, #dcf7ff 15.5496%, #a9ecff 15.5496%, #a9ecff 16.89008%, #dcf7ff 16.89008%, #dcf7ff 23.99464%, #a9ecff 23.99464%, #a9ecff 25.33512%, #dcf7ff 25.33512%, #dcf7ff 32.43968%, #a9ecff 32.43968%, #a9ecff 33.78016%, #dcf7ff 33.78016%, #dcf7ff 40.88472%, #a9ecff 40.88472%, #a9ecff 42.2252%, #dcf7ff 42.2252%, #dcf7ff 49.32976%, #a9ecff 49.32976%, #a9ecff 50.67024%, #dcf7ff 50.67024%, #dcf7ff 57.7748%, #a9ecff 57.7748%, #a9ecff 59.11528%, #dcf7ff 59.11528%, #dcf7ff 66.21984%, #a9ecff 66.21984%, #a9ecff 67.56032%, #dcf7ff 67.56032%, #dcf7ff 74.66488%, #a9ecff 74.66488%, #a9ecff 76.00536%, #dcf7ff 76.00536%, #dcf7ff 83.10992%, #a9ecff 83.10992%, #a9ecff 84.4504%, #dcf7ff 84.4504%, #dcf7ff 91.55496%, #a9ecff 91.55496%, #a9ecff 92.89544%, #dcf7ff 92.89544%, #dcf7ff 100.0%, #a9ecff 100.0%, #a9ecff 100%);
-  background-image: -o-linear-gradient(left, #a9ecff 0%, #dcf7ff 0%, #dcf7ff 7.10456%, #a9ecff 7.10456%, #a9ecff 8.44504%, #dcf7ff 8.44504%, #dcf7ff 15.5496%, #a9ecff 15.5496%, #a9ecff 16.89008%, #dcf7ff 16.89008%, #dcf7ff 23.99464%, #a9ecff 23.99464%, #a9ecff 25.33512%, #dcf7ff 25.33512%, #dcf7ff 32.43968%, #a9ecff 32.43968%, #a9ecff 33.78016%, #dcf7ff 33.78016%, #dcf7ff 40.88472%, #a9ecff 40.88472%, #a9ecff 42.2252%, #dcf7ff 42.2252%, #dcf7ff 49.32976%, #a9ecff 49.32976%, #a9ecff 50.67024%, #dcf7ff 50.67024%, #dcf7ff 57.7748%, #a9ecff 57.7748%, #a9ecff 59.11528%, #dcf7ff 59.11528%, #dcf7ff 66.21984%, #a9ecff 66.21984%, #a9ecff 67.56032%, #dcf7ff 67.56032%, #dcf7ff 74.66488%, #a9ecff 74.66488%, #a9ecff 76.00536%, #dcf7ff 76.00536%, #dcf7ff 83.10992%, #a9ecff 83.10992%, #a9ecff 84.4504%, #dcf7ff 84.4504%, #dcf7ff 91.55496%, #a9ecff 91.55496%, #a9ecff 92.89544%, #dcf7ff 92.89544%, #dcf7ff 100.0%, #a9ecff 100.0%, #a9ecff 100%);
-  background-image: linear-gradient(left, #a9ecff 0%, #dcf7ff 0%, #dcf7ff 7.10456%, #a9ecff 7.10456%, #a9ecff 8.44504%, #dcf7ff 8.44504%, #dcf7ff 15.5496%, #a9ecff 15.5496%, #a9ecff 16.89008%, #dcf7ff 16.89008%, #dcf7ff 23.99464%, #a9ecff 23.99464%, #a9ecff 25.33512%, #dcf7ff 25.33512%, #dcf7ff 32.43968%, #a9ecff 32.43968%, #a9ecff 33.78016%, #dcf7ff 33.78016%, #dcf7ff 40.88472%, #a9ecff 40.88472%, #a9ecff 42.2252%, #dcf7ff 42.2252%, #dcf7ff 49.32976%, #a9ecff 49.32976%, #a9ecff 50.67024%, #dcf7ff 50.67024%, #dcf7ff 57.7748%, #a9ecff 57.7748%, #a9ecff 59.11528%, #dcf7ff 59.11528%, #dcf7ff 66.21984%, #a9ecff 66.21984%, #a9ecff 67.56032%, #dcf7ff 67.56032%, #dcf7ff 74.66488%, #a9ecff 74.66488%, #a9ecff 76.00536%, #dcf7ff 76.00536%, #dcf7ff 83.10992%, #a9ecff 83.10992%, #a9ecff 84.4504%, #dcf7ff 84.4504%, #dcf7ff 91.55496%, #a9ecff 91.55496%, #a9ecff 92.89544%, #dcf7ff 92.89544%, #dcf7ff 100.0%, #a9ecff 100.0%, #a9ecff 100%);
-  background-position: left top;
-  -webkit-background-origin: content;
-  -moz-background-origin: content;
-  -ms-background-origin: content-box;
-  -o-background-origin: content-box;
-  background-origin: content-box;
-  -webkit-background-clip: content-box;
-  -moz-background-clip: content-box;
-  background-clip: content-box;
 }
-/* line 38, ../../../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
-.region-footer:after {
+/* line 38, ../../../../../../../Users/miguelangel/.rvm/gems/ruby-2.0.0-p247/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
+.region-corporate:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Fila footer*/
+/* line 74, ../../sass/layout/responsive-custom.scss */
+.footer-wrapper {
+  *zoom: 1;
+  max-width: 1504px;
+  max-width: 94rem;
+  _width: 1504px;
+  padding-left: 32px;
+  padding-left: 2rem;
+  padding-right: 32px;
+  padding-right: 2rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* line 38, ../../../../../../../Users/miguelangel/.rvm/gems/ruby-2.0.0-p247/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
+.footer-wrapper:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/*Fila Bottom footer */
+/* line 78, ../../sass/layout/responsive-custom.scss */
+.region-bottom {
+  *zoom: 1;
+  max-width: 1504px;
+  max-width: 94rem;
+  _width: 1504px;
+  padding-left: 32px;
+  padding-left: 2rem;
+  padding-right: 32px;
+  padding-right: 2rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* line 38, ../../../../../../../Users/miguelangel/.rvm/gems/ruby-2.0.0-p247/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
+.region-bottom:after {
   content: "";
   display: table;
   clear: both;
