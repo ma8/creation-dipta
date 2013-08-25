@@ -4,20 +4,46 @@
 .contextual-links-wrapper,.element-invisible{ display:none; }
 
 
+$iphone4: 4 320px; 
+$iphone4-landscape:321px 5 480px;
+$iphone5-landscape:481px 6 568px;
+$kindle:569px 8 767px;
+$ipad:768px 10;
+$ipad-landscape:1024px 12;
+
+
+/*fluid images*/
+#logo img{ width: 100% !important; height: auto !important;}
+.region-highlighted img { width: 100% !important;// height: auto !important;
+}
+
+
+
 /* Fila header top*/
 .region-header{@include container; //@include susy-grid-background;
 }
 
 /* Fila header*/
-.header-content {@include container; @include susy-grid-background;
-padding-top: 1px;
-
- #logo{	 
- 		
- 		 @include at-breakpoint($mobile) { @include span-columns(5 omega,5 );  img{width:200px !important;}}
-		 @include at-breakpoint($tablet) { @include span-columns(12 omega,12 ); }
-		 @include at-breakpoint($desktop) { @include span-columns(16 omega,16 );  }
- 	}
+.header-content {
+		@include container; @include susy-grid-background;
+		
+		@include at-breakpoint($iphone4) { @include set-container-width; @include susy-grid-background; }
+		@include at-breakpoint($iphone4-landscape) { @include set-container-width; @include susy-grid-background; }
+		@include at-breakpoint($iphone5-landscape) { @include set-container-width; @include susy-grid-background; }
+		@include at-breakpoint($kindle) { @include set-container-width; @include susy-grid-background; }
+		@include at-breakpoint($ipad) { @include set-container-width; @include susy-grid-background; }
+		@include at-breakpoint($ipad-landscape) { @include set-container-width; @include susy-grid-background; }
+		
+	padding-top: 1px;
+	#logo{
+ 		 @include at-breakpoint($iphone4) { @include span-columns(3,4); }	
+ 		 @include at-breakpoint($iphone4-landscape) { @include span-columns(4 ,5); }
+ 		 @include at-breakpoint($iphone5-landscape) { @include span-columns(4 ,6); }
+		 @include at-breakpoint($kindle) { @include span-columns(3 ,8 ); }
+		 @include at-breakpoint($ipad) { @include span-columns(3 ,10 ); }
+		 @include at-breakpoint($ipad-landscape) {  @include span-columns(4 ,12 );  }
+		
+		 }
 }
 
 /* Fila navigation=> #main-menu, .region-navigation */
@@ -58,8 +84,8 @@ padding-top: 1px;
 	padding-top:5px;
 	#block-tagclouds-1{
 		@include span-columns(5 omega,5 ); 
-		@include at-breakpoint($tablet) { @include span-columns(6 omega,12 ); }
-		@include at-breakpoint($desktop) { @include span-columns(8 omega,16 );  }
+		@include at-breakpoint($ipad) { @include span-columns(6 omega,12 ); }
+		@include at-breakpoint($ipad-landscape) { @include span-columns(8 omega,16 );  }
 		
 	}
 	
