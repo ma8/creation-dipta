@@ -1,17 +1,17 @@
 ﻿/**
  * @file
  * Creation for compass - Front-end framework de  la Diputació de Tarragona.
- * @Miguel Ángel Ramos.
+ * @Miguel Ángel Ramos. 
  *
  */
- 
+  
  
  /* Compass*/
 @import "compass/css3"; 
 @import "compass/utilities";
 /* Creation base */
 @import "base/_syntax";
-@import "base/_colors";
+@import "base/_colors"; 
 @import "base/_font";
 /* Creation custom*/
 @import "custom/_typography";
@@ -20,10 +20,11 @@
 @import "custom/_navigations";
 @import "custom/_tables";
 @import "custom/_forms";
+/*Creation layouts*/
+@import "layouts/_responsive-creation";	
 
-	
 html {  
-	color:$gray;font-size:62.5%; 
+	color:$base01;font-size:62.5%; 
 	/*Typography responsive for compass breakpoints*/
 	/*responsive-creation.scss*/
   }

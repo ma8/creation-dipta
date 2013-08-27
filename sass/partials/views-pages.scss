@@ -1,0 +1,141 @@
+ 
+/***** VIEWS PAGES ******************************************************************************
+* [Home - Noticies] + [HOME - Agenda]
+*
+*/
+
+@import "../creation/_creation"; 
+  
+//[Home - Noticies]
+.view-display-id-page_1{
+	.view-header{ padding:0; h2{@extend %dipta-title-escut;color:$base03;}}
+	.view-content{  @extend %dipta-box-home; div.dipta-resum{ /*float:left; width:44.0%;*/}
+		div.dipta-resum:first-child{ padding-right:1.8rem;border-right:0.4rem solid $base05;border-bottom:0;}
+		div.dipta-resum + div.dipta-resum{ border-bottom:0.4rem solid $base05;border-left:0;}
+		div.dipta-resum:last-child{border-bottom:0!important;}
+	}
+	.more-link{position: absolute; right: 10px;top: 30px; @extend h5;}	
+}
+
+//[HOME - Agenda]
+#block-views-actes-agenda-block-2{ margin-top:2rem;padding:0; h2{@extend %dipta-title-escut;color:$base03;}}
+.view-display-id-block_2{
+		.view-content{  @extend %dipta-box-home; 
+				div.dipta-resum{  .float{ padding-right:2rem;}  a:after{ @extend .dipta-clear;} }
+				div.dipta-resum:first-child{ border-bottom:0.4rem solid $base05;border-right:0;}
+				div.dipta-resum + div.dipta-resum{ border-bottom:0.4rem solid $base05;border-left:0;}
+				}
+		.more-link{position: absolute; right: 10px;top: 30px; @extend h5;}	
+}
+
+//[ Pàgines ] [ agenda,agenda-presidencia,noticies,noticies-presidencia]
+.view-display-id-page,#block-views-actes-agenda-block-3 /*actes permanents*/ {
+	margin:0 2% 0 2%;
+	.view-content{  @extend %dipta-box-home; }
+	.dipta-resum{background-color:$base05;border-bottom:0.4rem solid #fff !important; width:43%;}
+	.dipta-resum:nth-child(even){float:right;clear:right;}
+	.dipta-resum:nth-child(odd){float:left;clear:left;}
+	/*title actes permamnents*/
+	h2{ @extend %dipta-title-escut; @extend h3; border-bottom-color:#fff !important; background-color:$base05; color:$base03; margin-top:50px;}
+ }
+
+//[Pàgina -Area i unitats] 
+.dipta-entorn-web-arees{
+	.contacta{ @extend %dipta-box-eb-border; margin:0 2%;}
+	.area{ .node-dipta-area{
+			.dipta-camp{margin-left:20px;display:inline-block;padding:0.5%;padding-left:2%;font-size:11px;} }
+		}
+	.unitats{ @extend %dipta-box-eb; margin:0 2%;
+		.node-dipta-area{ 
+			h2,h3{ @extend h4; padding-top:0.5rem !important;padding-bottom:0.5rem !important; margin-top:5px; a{color: #014B60;}}
+			.dipta-camp{display:inline-block;padding:0; font-size:11px;margin-left:20px; }
+			border-bottom:0.4rem solid #fff;
+		}
+	
+	}
+}
+ 
+
+//[Pages][ La nostra organització ]
+.view-display-id-block_1/*actes permanents*/ {
+	margin:0 2% 0 2%;
+	.dipta-resum-arees{ 
+			@extend %dipta-box-eb-border; padding-bottom:20px;
+			h2 { @extend h3;}
+			ul { padding-left:30px;
+			li{@extend %ph5; padding:0 2%; color:$base02;} }
+			.group-basic-etitext{ margin:0 2%;
+				.dipta-camp{ display:inline-block;margin-right:2%; @extend %ph5; }
+				.dipta-camp:first-child{ font-weight:600; }
+			}
+			.dipta-responsable { 
+				margin:0 2%;
+				.dipta-camp{ display:inline-block;margin-right:2%; @extend %ph5; 
+					h2{ @extend %ph5; border:0; font-weight:600;padding:0;margin:0;} }
+				.dipta-camp:first-child{ font-weight:600;}
+			}
+			
+	}
+	
+ }
+ 
+//[Pages Edificis -singulars]
+
+
+
+/*
+ * Views' admin tabs
+ *
+ * The views admin tabs use the same classes as the secondary tabs. We prevent
+ * some of our tab styling from bleeding into (and breaking) the Views admin
+ * pages. If your sub-theme isn't used for admin pages, you can remove this
+ * entire section.
+ */
+.views-displays .secondary {
+  li {
+    float: none;
+    margin: 0 6px 0;
+  }
+
+  a:link,
+  a:visited {
+    @include single-text-shadow(none);
+    padding: 2px 7px 3px;
+  }
+
+  .open > a {
+    @include border-radius(7px 7px 0 0);
+    &:hover {
+      color: #333;
+    }
+  }
+
+  .action-list li {
+    margin: 0;
+    &:first-child {
+      @include border-radius(0 7px 0 0);
+    }
+    &:last-child {
+      @include border-radius(0 0 7px 7px);
+    }
+  }
+}
+
+
+.view-display-id-page_1 {
+  .view-header {
+   /* border-bottom: 2px solid #ebebeb;*/
+    padding-top: 12px 0;
+    position: relative;
+  }
+  .view-content {
+    overflow: hidden;
+    .views-row {
+      clear: right;
+      float: right;
+    }
+    .views-row-first {
+      float: left;
+    }
+  }
+}

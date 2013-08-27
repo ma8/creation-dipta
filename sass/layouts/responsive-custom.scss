@@ -1,0 +1,376 @@
+/*
+*
+*	Dipta - Creation Custom
+*   http://www.responsinator.com
+*	http://sass-lang.com/docs/yardoc/Sass/Script/Functions.html
+*/
+
+@import "../creation/_creation"; 
+
+.contextual-links-wrapper,.element-invisible{ display:none; }
+
+
+/*Fluid images*/
+#logo img{ width: 100% !important; height: auto !important;}
+
+
+/*****************************************************************************************************[ Fila 01 ]
+*	Fila  01: header top	
+*/
+.region-header{
+	@include container;	@include dipta-container-width; 
+	/*Elements*/
+	#block-menu-menu-men-top {
+		 font-size:$h5-s;  
+		 @include at-breakpoint($iphone4) { font-size:$h6-s;}	
+ 		 @include at-breakpoint($iphone4-landscape) { font-size:$h6-s; }
+ 		 @include at-breakpoint($iphone5-landscape) { }
+		 @include at-breakpoint($kindle) {  }
+		 @include at-breakpoint($ipad) {  }
+		 @include at-breakpoint($ipad-landscape) {   }
+	}
+}
+.region-header:hover{ @include dipta-grid-show;}
+/***** 01 Header-top */
+
+
+/*****************************************************************************************************[ Fila 02 ]
+*	Fila  02:  header-content	
+*/
+.header-content { //@include dipta-grid-color-change;
+	@include container; @include dipta-container-width; padding-top: 1px; 
+	/*Elements*/
+	#logo{  margin-top: 2rem;
+ 		 @include at-breakpoint($iphone4) { @include span-columns(3); }	
+ 		 @include at-breakpoint($iphone4-landscape) { @include span-columns(3); }
+ 		 @include at-breakpoint($iphone5-landscape) { @include span-columns(3); }
+		 @include at-breakpoint($kindle) { @include span-columns(3); }
+		 @include at-breakpoint($ipad) { @include span-columns(3); }
+		 @include at-breakpoint($ipad-landscape) {  @include span-columns(3);  }
+		
+		 }
+}
+
+.header-content:hover{ /* @include dipta-grid-show;*/}
+/***** 02 Header-content */
+
+/*****************************************************************************************************[ Fila 03 ]
+*	Fila  03:  Navigation	
+*/
+
+	@mixin main-menu-iphone{/* Estil del menu*/
+		ul li{ 
+		float:left;display:block;width:48%;line-height:2.5rem;
+		padding:0 !important;
+			a{ display:block;width:99%;text-align:center; margin-bottom:0.5rem;
+			background-color:$base02; padding:0.3rem; color:#fff;}
+			a:hover{ background-color:lighten($base02,10%);}
+		}
+		li:nth-child(1){margin-right:10px;}
+		li:nth-child(2){}
+		li:nth-child(3){margin-right:10px;}
+		li:nth-child(4){}
+		li:nth-child(5){width:99%; a{width:100%;}}
+	}
+	
+.navigation-wrapper{ //@include dipta-grid-color-change;
+	@include container; @include dipta-container-width;
+	#main-menu { 
+		 @include at-breakpoint($iphone4) { @include span-columns(4); ul li{font-size: $h5-s;} @include main-menu-iphone; }	
+ 		 @include at-breakpoint($iphone4-landscape) { @include span-columns(5); ul li{font-size: $h5-s;} @include main-menu-iphone;}
+ 		 @include at-breakpoint($iphone5-landscape) { @include span-columns(6); ul li{font-size: $h4-s;} @include main-menu-iphone; li:nth-child(5){width:98%; a{width:99%;}} }
+		 @include at-breakpoint($kindle) { @include span-columns(6); ul li{font-size: $h5-s; float: left;} @include main-menu-iphone;  }
+		 @include at-breakpoint($ipad) { @include span-columns(9); ul li{font-size: $h4-s+0.2rem; float: left; } }
+		 @include at-breakpoint($ipad-landscape) {  @include span-columns(9); ul li{font-size: $h3-s - 0.3rem; float: left;font-weight:normal;} } 
+		}
+	.region-navigation { 
+		 #navigation ul li{font-size: $h2-s;}
+		 margin-top:10px;
+		 @include at-breakpoint($iphone4) { @include span-columns(4); margin-bottom:1rem; margin-top:0.3rem;}	
+ 		 @include at-breakpoint($iphone4-landscape) { @include span-columns(5); margin-bottom:1rem; margin-top:0.3rem;}
+ 		 @include at-breakpoint($iphone5-landscape) { @include span-columns(4); @include prefix(1);margin-bottom:1rem; margin-top:0.2rem;}
+		 @include at-breakpoint($kindle) { @include span-columns(2 omega);@include span-columns(4); @include prefix(0); }
+		 @include at-breakpoint($ipad) { @include span-columns(2 omega);  }
+		 @include at-breakpoint($ipad-landscape) {  @include span-columns(3 omega);  }
+		}	
+}
+.navigation-wrapper:hover{ /*@include dipta-grid-show;*/}
+/***** 03 Navigation */
+
+/*****************************************************************************************************[ Fila 04 ]
+*	Fila  04:  Breadcrumb	
+*/
+.breadcrumb ol{ 
+	@include container; @include dipta-container-width;
+}
+/***** 04 Breadcrumb */
+
+
+/*****************************************************************************************************[ Fila 05 ]
+*	Fila 05:  Contingut
+*	region-highlighted + sidebar-first + sidebar-second + #content
+*/
+
+.main-content { //@include dipta-grid-color-change; 
+@include container; @include dipta-container-width;}
+	
+.region-highlighted{@include span-columns(12);
+
+	@include at-breakpoint($iphone4) { @include span-columns(4 omega);
+			#block-views-banners-home-block { h2{font-size:$h3-s;}
+				.info-banner {  width: 223px;}
+				.views-slideshow-controls-bottom a{  width:130px;}
+				#views_slideshow_controls_text_next_banners_home-block{margin-right:5px;}
+			}
+	}	
+	 @include at-breakpoint($iphone4-landscape) { @include span-columns(5 omega);
+			#block-views-banners-home-block { h2{font-size:$h3-s;}
+				.info-banner {  width: 223px;}
+				.views-slideshow-controls-bottom a{  width:130px;}
+			}
+	}	
+	
+	clear:both;
+}
+
+/*If sidebart-frist*/
+	.sidebar-first {
+		/*All*/
+		@include at-breakpoint($iphone4) { 
+		}//	
+		@include at-breakpoint($iphone4-landscape) {
+		}//
+		@include at-breakpoint($iphone5-landscape) { 
+		}//
+		@include at-breakpoint($kindle) {
+		}//
+		@include at-breakpoint($ipad) {  
+			#content { @include span-columns(8 omega); }
+			.region-sidebar-first {@include span-columns(3); 
+			#block-menu-block-1{padding:0 10px;} }
+		}//
+		@include at-breakpoint($ipad-landscape) { 
+			#content { @include span-columns(9 omega); }
+			.region-sidebar-first {@include span-columns(3); 
+			#block-menu-block-1{padding:0 10px;} }
+		}//
+		
+		
+	}
+	
+/*If sidebars-frist*/	
+	.sidebar-second {
+	
+	/*All*/
+		@include at-breakpoint($iphone4) { 
+			.view-display-id-page_1{
+				h2{font-size:$h3-s; line-height:$h3-h;}
+				.view-content{  
+					div.dipta-resum{ h3{font-size:$h4-s; line-height:$h4-h;} h4{} }/*float:left; width:44.0%;*/}
+					div.dipta-resum:first-child{ padding-right:1.8rem;border-right:0.4rem solid $base05; border-bottom:0;}
+					div.dipta-resum + div.dipta-resum{ border-bottom:0.4rem solid $base05;border-left:0;}
+					div.dipta-resum:last-child{border-bottom:0!important;} 
+					
+				}
+		
+		}//	
+		@include at-breakpoint($iphone4-landscape) {
+		}//
+		@include at-breakpoint($iphone5-landscape) { 
+		}//
+		@include at-breakpoint($kindle) {
+		}//
+		@include at-breakpoint($ipad) {  
+			#content {@include span-columns(8); }
+			.region-sidebar-second { @include span-columns(3 omega); }
+		}//
+		@include at-breakpoint($ipad-landscape) { 
+			#content {@include span-columns(9); }
+			.region-sidebar-second { @include span-columns(3 omega); }
+		}//
+	}
+/* if two-sidebars */
+.two-sidebars {
+
+	.region-sidebar-first { @include span-columns(3); }
+	.region-sidebar-second { @include span-columns(3 omega);}
+	 #content { @include span-columns(6);}
+
+}	
+	
+/***** 05 Contingut*/
+
+/*****************************************************************************************************[ Fila 06]
+*	Fila 06: Banners Baix
+*/
+.region-banners{@include container; //@include susy-grid-background;
+	padding-top:5px;
+	#block-tagclouds-1{
+		@include span-columns(5 omega,5 ); 
+		@include at-breakpoint($ipad) { @include span-columns(6 omega,12 ); }
+		@include at-breakpoint($ipad-landscape) { @include span-columns(8 omega,16 );  }
+	}
+}
+/***** 06 Banners Baix */
+
+
+/*****************************************************************************************************[ Fila 07]
+*	Fila 07:  Coorporate
+*/
+
+
+ 
+.region-corporate{ // @include dipta-grid-color-change;
+	@include container; @include dipta-container-width;
+	
+	@mixin dipta-corporate-iphone{ 
+		.jcarousel-skin-default {
+			.jcarousel-next { 
+			background-color:$base01; background-position:center center;position: absolute; right: -2rem; margin-top:-1rem;}
+			.jcarousel-prev  {
+			background-color:$base01; background-position:center center; position: absolute; left: -2rem; margin-top:-1rem;}
+		}
+	}
+		
+	 /*All*/
+		@include at-breakpoint($iphone4) { @include dipta-corporate-iphone; 
+		
+		}//	
+		@include at-breakpoint($iphone4-landscape) { @include dipta-corporate-iphone; 
+		}//
+		@include at-breakpoint($iphone5-landscape) {  @include dipta-corporate-iphone; 
+		}//
+		@include at-breakpoint($kindle) {  @include dipta-corporate-iphone; 
+		}//
+		@include at-breakpoint($ipad) { @include dipta-corporate-iphone; 
+		}//		
+		@include at-breakpoint($ipad-landscape) {  
+		}//
+}
+.region-corporate :hover{ /* @include dipta-grid-show;*/}
+/***** 07  Coorporate */
+
+
+/*****************************************************************************************************[ Fila 08]
+*	Fila 08:  Footer
+*    region-footer-first + region-footer-second + region-footer-third
+*/
+.footer-wrapper {// @include dipta-grid-color-change;
+	@include container; @include dipta-container-width;
+	
+		@mixin dipta-logo-footer{
+			#block-block-6{ /*first*/
+				margin:0; p{ color:#BBDEE8;padding-bottom:2rem; margin:0;
+				text-align:left; font-size:$h6-s; line-height:$h6-h;  }
+				img{text-align:center;display:block;}
+				span{ margin-left: 50px;}
+			}
+		}	
+		@mixin dipta-mapa-web-border{
+			#block-menu-block-4{ /*second*/margin:0; overflow: hidden;
+				border:0.1rem solid #BBDEE8;
+				ul {padding:0; li{ a{color:#BBDEE8;} text-align:left; font-size:$h6-s; line-height:$h5-h;  } }
+				ul.menu:first-child > li > a { font-weight: bold; font-size:$h6-s; color:#fff; }
+				ul.menu:first-child > li {  padding:1rem 2rem;margin:0;min-height:0px!important;}
+			}
+		}
+		@mixin dipta-mapa-web{
+			#block-menu-block-4{ /*second*/margin:0; overflow: hidden;
+				border-left:0.1rem solid #BBDEE8;border-right:0.1rem solid #BBDEE8;
+				ul {padding:0; li{ a{color:#BBDEE8;} text-align:left; font-size:$h6-s; line-height:$h5-h;  } }
+				ul.menu:first-child > li > a { font-weight: bold; font-size:$h6-s; color:#fff; }
+				ul.menu:first-child > li {  padding:1rem 2rem;margin:0;min-height:0px!important;  }
+				ul.menu:first-child > li+li { border-left:0.1rem solid #BBDEE8;}
+			}
+		}
+	/*All*/		
+		@include at-breakpoint($iphone4) {
+			.region-footer-first{ @include span-columns(4); @include dipta-logo-footer;} 
+			.region-footer-second { @include span-columns(4); @include dipta-mapa-web-border;} 
+			.region-footer-third { @include span-columns(4);}
+		
+		}//	
+		@include at-breakpoint($iphone4-landscape) {
+			.region-footer-first{ @include span-columns(5); @include dipta-logo-footer;} 
+			.region-footer-second { @include span-columns(5); @include dipta-mapa-web-border;} 
+			.region-footer-third { @include span-columns(5);}
+		}//
+		@include at-breakpoint($iphone5-landscape) { 
+			.region-footer-first{ @include span-columns(7); @include dipta-logo-footer;} 
+			.region-footer-second { @include span-columns(7); @include dipta-mapa-web-border;} 
+			.region-footer-third { @include span-columns(7);}
+		}//
+		@include at-breakpoint($kindle) {
+			.region-footer-first{ @include span-columns(8); @include dipta-logo-footer;} 
+			.region-footer-second { @include span-columns(8 omega); @include dipta-mapa-web;
+				ul.menu:first-child > li {@include span-columns(2);  }
+			} 
+			.region-footer-third { @include span-columns(8);}
+		
+		}//
+		@include at-breakpoint($ipad) {  
+			.region-footer-first{ @include span-columns(3); @include dipta-logo-footer;} 
+			.region-footer-second { @include span-columns(8 omega); @include dipta-mapa-web;
+				ul.menu:first-child > li { @include span-columns(3); }
+			} 
+			.region-footer-third { @include span-columns(11);}
+		}//
+		@include at-breakpoint($ipad-landscape) { 
+			.region-footer-first{ @include span-columns(3); @include dipta-logo-footer;} 
+			.region-footer-second { @include span-columns(9 omega); @include dipta-mapa-web; 
+				ul.menu:first-child > li {@include span-columns(3);  }
+			} 
+			.region-footer-third { @include span-columns(12);}
+		}//
+}
+.footer-wrapper :hover{ /*@include dipta-grid-show;*/}
+/***** 08 Footer */
+
+
+/*****************************************************************************************************[ Fila 09]
+*	Fila 09: Bottom Footer
+*/
+.region-bottom { //@include dipta-grid-color-change;
+	@include container; @include dipta-container-width;
+		
+		@mixin dipta-bloc-informacio{
+			margin:0; p{ color:#BBDEE8;margin: 0.7rem 0;
+			text-align:left; font-size:$h6-s; line-height:$h6-h; }
+		}
+		
+	/*All*/	
+	#block-block-5{ @include  dipta-bloc-informacio; } 
+	
+		@include at-breakpoint($iphone4) { 	
+		}//	
+		@include at-breakpoint($iphone4-landscape) {
+		}//
+		@include at-breakpoint($iphone5-landscape) { 
+		}//
+		@include at-breakpoint($kindle) {
+		}//
+		@include at-breakpoint($ipad) {  
+		}//
+		@include at-breakpoint($ipad-landscape) { 
+		}//
+}
+.region-bottom :hover{ /*@include dipta-grid-show;*/}
+/***** 09  Bottom Footer */
+
+
+/* Susy breaks 
+
+	@include at-breakpoint($iphone4) { 
+	}//	
+ 	@include at-breakpoint($iphone4-landscape) {
+	}//
+ 	@include at-breakpoint($iphone5-landscape) { 
+	}//
+	@include at-breakpoint($kindle) {
+	}//
+	@include at-breakpoint($ipad) {  
+	}//
+	@include at-breakpoint($ipad-landscape) { 
+	}//
+	
+*/

@@ -9,15 +9,24 @@
 *	http://sass-lang.com/docs/yardoc/Sass/Script/Functions.html	
 */
 
-$gray:#464646; /* Night Pencil */
-$blue1:#014B60;/* Magic */
-$blue:#0083A9;/* yummi-turquoise */
-$blue-1:#F0F7F9;/* J Peterman Shirt */
-$eb:#EBEBEB;/* winter morning */
+/*
+lighten($color, $amount)
+darken($color, $amount)
+saturate($color, $amount)
+desaturate($color, $amount)
+grayscale($color)
+invert($color)
+*/
+
+$base01:#464646;	 /*gray*/ /* Night Pencil */
+$base02:#014B60;	/*blue1*/ /* Magic */
+$base03:#0083A9;	/*blue*/ /* yummi-turquoise */
+$base04:#F0F7F9;	/*blue-1*/ /* J Peterman Shirt */
+$base05:#EBEBEB;	/*eb*/ /* winter morning */
 
 /* Tonalitats */
-$blue-d1:darken($blue, 10%);
-$blue-d2:darken($blue, 20%);
-$blue-l1:lighten($blue, 10%);
-$blue-l2:lighten($blue, 20%);
+$base03d1:darken($base03, 10%);
+$base03d2:darken($base03, 20%);
+$base03l1:lighten($base03, 10%);
+$base03l2:lighten($base03, 20%);
 

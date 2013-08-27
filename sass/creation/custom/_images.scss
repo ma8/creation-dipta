@@ -5,22 +5,22 @@
 
 
 /* Titles Images */
-%dipta-title-img-a{width:90%;  border-bottom:1px solid $eb;
+%dipta-title-img-a{width:90%;  border-bottom:1px solid $base05;
 /*position*/padding:10px;position:relative;  background-color:#fff; margin:-55px 0 0 12px; }
 	
-%dipta-title-img-b{  color:$blue;
+%dipta-title-img-b{  color:$base03;
 /*position*/padding:10px; position:relative; background-color:#fff; margin:-70px 0 0 12px; }
 	
 %dipta-title-img-c{width:90%; 
 /*position*/padding:10px; position:relative; background-color:#fff; margin:-55px 0 0  0; }
 
-%dipta-title-img-d{ width:93.9%;color:$blue-d1;
-/*position*/padding:10px; position:relative; background-color:$blue-1; margin:-70px 0 0 12px; }
+%dipta-title-img-d{ width:94.9%;color:$base03d1;
+/*position*/padding:10px; position:relative; background-color:$base04; margin:-70px 0 0 12px; }
 
-%dipta-img-normal { outline:1px solid $eb;margin:2rem 0 2rem 0;}	 
-%dipta-img-float { float:left;margin:0 2rem 2rem 0; outline:1px solid $eb;}
+%dipta-img-normal { outline:1px solid $base05;margin:2rem 0 2rem 0;}	 
+%dipta-img-float { float:left;margin:0 2rem 2rem 0; outline:1px solid $base05;}
 %dipta-body:after{ @extend .dipta-clear;}
-%dipta-caption{ background-color:$eb; padding:5px; @extend h6;}	 
+%dipta-caption{ background-color:$base05; padding:5px; @extend h6;}	 
 
 	
  /*Slider -home */
@@ -28,7 +28,7 @@
   padding:20px;margin-bottom:0.5%;
   background-color: rgba(240, 245, 249, 0.9);
   width: 251px;height: 141px;
-  h2{color:$blue;margin-top:0.5rem;margin-bottom:1rem;}
+  h2{color:$base03;margin-top:0.5rem;margin-bottom:1rem;}
   .text-banner{@extend p;line-height:0.7*$base-h;margin:0;}
 }
 
