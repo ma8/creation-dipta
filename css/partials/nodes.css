@@ -1,4 +1,4 @@
-@charset "CP850";
+@charset "UTF-8";
 @import url(http://fonts.googleapis.com/css?family=Droid+Sans:400,700);
 @import url(http://fonts.googleapis.com/css?family=Roboto+Condensed:400,300,700);
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:400,700,300,600,800);
@@ -6,8 +6,8 @@
 @import url(http://fonts.googleapis.com/css?family=Julius+Sans+One);
 /**
  * @file
- * Creation for compass - Front-end framework de  la Diputaci¢ de Tarragona.
- * @Miguel µngel Ramos. 
+ * Creation for compass - Front-end framework de  la DiputaciÃ³ de Tarragona.
+ * @Miguel Ãngel Ramos. 
  *
  */
 /* Compass*/
@@ -22,7 +22,7 @@ code[class*="language-"],
 pre[class*="language-"] {
   color: black;
   text-shadow: 0 1px white;
-  font-family: Consolas, Monaco, "Andale Mono", monospace;
+  font-family: Consolas, Monaco, 'Andale Mono', monospace;
   direction: ltr;
   text-align: left;
   white-space: pre;
@@ -59,7 +59,7 @@ pre[class*="language-"] {
 /* line 45, ../../sass/creation/base/_syntax.scss */
 pre[class*="language-"] {
   padding: 1em;
-  margin: 0.5em 0;
+  margin: .5em 0;
   overflow: auto;
 }
 
@@ -68,7 +68,7 @@ pre[class*="language-"] {
 pre[class*="language-"] {
   /* #FEFA83  #f5f2f0 #FFFBEA #FEFA83;*/
   background: #FEFA83;
-  border: 1px solid #d2caa7;
+  border: 1px solid #D2CAA7;
 }
 
 /* Inline code */
@@ -176,7 +176,7 @@ pre[data-line] {
   top: .4em;
   left: .6em;
   min-width: 1em;
-  padding: 0 0.5em;
+  padding: 0 .5em;
   background-color: rgba(153, 122, 102, 0.4);
   color: #f5f2f0;
   font: bold 65%/1.5 sans-serif;
@@ -216,7 +216,7 @@ pre.line-numbers > code {
   width: 3em;
   /* works for line-numbers below 1000 lines */
   letter-spacing: -1px;
-  border-right: 1px solid #999999;
+  border-right: 1px solid #999;
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -300,38 +300,24 @@ invert($color)
 *	Imports + Golden ratio + responsive typography
 * 	$font-a;contingut + $font-b;Headings + $font-c; especial
 */
-/*Syntax custom*/
-/* line 12, ../../sass/creation/custom/_typography.scss */
-code {
-  font-size: 1.2rem;
-  font-family: Consolas,Monaco,"Andale Mono",monospace;
-}
-
-/* line 13, ../../sass/creation/custom/_typography.scss */
-pre {
-  overflow-x: scroll !important;
-  overflow-y: scroll !important;
-  width: 650px;
-}
-
-/* line 16, ../../sass/creation/custom/_typography.scss */
+/* line 14, ../../sass/creation/custom/_typography.scss */
 p {
   font-weight: 300;
 }
 
-/* line 17, ../../sass/creation/custom/_typography.scss */
+/* line 15, ../../sass/creation/custom/_typography.scss */
 a {
   color: #0083a9;
   text-decoration: none;
 }
 
-/* line 18, ../../sass/creation/custom/_typography.scss */
+/* line 16, ../../sass/creation/custom/_typography.scss */
 a:hover {
   text-decoration: underline;
 }
 
 /* Headings*/
-/* line 21, ../../sass/creation/custom/_typography.scss */
+/* line 19, ../../sass/creation/custom/_typography.scss */
 h1 {
   /*body*/
   font-size: 3rem;
@@ -340,7 +326,7 @@ h1 {
   letter-spacing: -0.2rem;
 }
 
-/* line 22, ../../sass/creation/custom/_typography.scss */
+/* line 20, ../../sass/creation/custom/_typography.scss */
 h2 {
   font-size: 2.7rem;
   font-weight: 400;
@@ -348,7 +334,7 @@ h2 {
   letter-spacing: -0.06rem;
 }
 
-/* line 23, ../../sass/creation/custom/_typography.scss */
+/* line 21, ../../sass/creation/custom/_typography.scss */
 h3 {
   font-size: 2.25rem;
   font-weight: 400;
@@ -356,7 +342,7 @@ h3 {
   letter-spacing: -0.06rem;
 }
 
-/* line 24, ../../sass/creation/custom/_typography.scss */
+/* line 22, ../../sass/creation/custom/_typography.scss */
 h4, #content .field-group-format h2 {
   font-size: 1.5rem;
   font-weight: 400;
@@ -364,7 +350,7 @@ h4, #content .field-group-format h2 {
   letter-spacing: -0.06rem;
 }
 
-/* line 25, ../../sass/creation/custom/_typography.scss */
+/* line 23, ../../sass/creation/custom/_typography.scss */
 h5, #content .dipta-camp div.label-inline {
   font-size: 1.245rem;
   font-weight: 400;
@@ -372,7 +358,7 @@ h5, #content .dipta-camp div.label-inline {
   letter-spacing: -0.06rem;
 }
 
-/* line 26, ../../sass/creation/custom/_typography.scss */
+/* line 24, ../../sass/creation/custom/_typography.scss */
 h6 {
   font-size: 1.125rem;
   font-weight: 400;
@@ -381,7 +367,7 @@ h6 {
 }
 
 /* Paragraph size h1,h2,h3,h4,h5.h6*/
-/* line 34, ../../sass/creation/custom/_typography.scss */
+/* line 32, ../../sass/creation/custom/_typography.scss */
 .dipta-resum p {
   font-size: 1.245rem;
   font-weight: 100;
@@ -413,7 +399,7 @@ h6 {
 
 /* line 14, ../../sass/creation/custom/_elements.scss */
 .seccions-destacades h2 {
-  border-bottom: 0.4rem solid white;
+  border-bottom: 0.4rem solid #fff;
 }
 
 /* Element dipta-resum */
@@ -522,7 +508,7 @@ desaturate($verd, 10%);
 grayscale($verd);
 invert($verd);
 */
-/* line 39, ../../sass/creation/layouts/_responsive-creation.scss */
+/* line 38, ../../sass/creation/layouts/_responsive-creation.scss */
 html {
   /*Typography responsive for compass breakpoints*/
   font-size: 62.5%;
@@ -531,239 +517,6 @@ html {
    @include at-breakpoint($ipad) { font-size:62.5%; }
    @include at-breakpoint($ipad-landscape) { font-size:62.5%; }
    */
-}
-
-/* line 81, ../../sass/creation/layouts/_responsive-creation.scss */
-#s8 {
-  /*Container*/
-  *zoom: 1;
-  max-width: 1504px;
-  max-width: 94rem;
-  _width: 1504px;
-  padding-left: 32px;
-  padding-left: 2rem;
-  padding-right: 32px;
-  padding-right: 2rem;
-  margin-left: auto;
-  margin-right: auto;
-  /*mobile first*/
-}
-/* line 38, ../../../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
-#s8:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-/* line 85, ../../sass/creation/layouts/_responsive-creation.scss */
-#s8 .header {
-  background-color: #0083a9;
-  /*omega = eliminar gutter-width*/
-  width: 100%;
-  float: right;
-  margin-right: 0;
-  *margin-left: -2rem;
-  display: inline;
-}
-@media (min-width: 940px) {
-  /* line 85, ../../sass/creation/layouts/_responsive-creation.scss */
-  #s8 .header {
-    width: 100%;
-    float: right;
-    margin-right: 0;
-  }
-}
-@media (min-width: 768px) and (max-width: 939px) {
-  /* line 85, ../../sass/creation/layouts/_responsive-creation.scss */
-  #s8 .header {
-    width: 100%;
-    float: right;
-    margin-right: 0;
-  }
-}
-@media (min-width: 940px) {
-  /* line 85, ../../sass/creation/layouts/_responsive-creation.scss */
-  #s8 .header {
-    width: 100%;
-    float: right;
-    margin-right: 0;
-  }
-}
-/* line 92, ../../sass/creation/layouts/_responsive-creation.scss */
-#s8 .sidebar-1 {
-  background-color: #ebebeb;
-  width: 100%;
-  float: left;
-  margin-right: 5.26316%;
-  display: inline;
-}
-@media (min-width: 768px) and (max-width: 939px) {
-  /* line 92, ../../sass/creation/layouts/_responsive-creation.scss */
-  #s8 .sidebar-1 {
-    width: 23.40426%;
-    float: left;
-    margin-right: 2.12766%;
-  }
-}
-@media (min-width: 940px) {
-  /* line 92, ../../sass/creation/layouts/_responsive-creation.scss */
-  #s8 .sidebar-1 {
-    width: 23.80952%;
-    float: left;
-    margin-right: 1.5873%;
-  }
-}
-/* line 97, ../../sass/creation/layouts/_responsive-creation.scss */
-#s8 .sidebar-2 {
-  background-color: #ebebeb;
-  width: 100%;
-  float: left;
-  margin-right: 5.26316%;
-  display: inline;
-}
-@media (min-width: 768px) and (max-width: 939px) {
-  /* line 97, ../../sass/creation/layouts/_responsive-creation.scss */
-  #s8 .sidebar-2 {
-    width: 74.46809%;
-    float: right;
-    margin-right: 0;
-  }
-}
-@media (min-width: 940px) {
-  /* line 97, ../../sass/creation/layouts/_responsive-creation.scss */
-  #s8 .sidebar-2 {
-    width: 23.80952%;
-    float: right;
-    margin-right: 0;
-  }
-}
-/* line 102, ../../sass/creation/layouts/_responsive-creation.scss */
-#s8 .content {
-  background-color: #014b60;
-  /*omega = eliminar gutter-width*/
-  width: 100%;
-  float: left;
-  margin-right: 5.26316%;
-  display: inline;
-}
-@media (min-width: 768px) and (max-width: 939px) {
-  /* line 102, ../../sass/creation/layouts/_responsive-creation.scss */
-  #s8 .content {
-    width: 100%;
-    float: left;
-    margin-right: 2.12766%;
-  }
-}
-@media (min-width: 940px) {
-  /* line 102, ../../sass/creation/layouts/_responsive-creation.scss */
-  #s8 .content {
-    width: 49.20635%;
-    float: left;
-    margin-right: 1.5873%;
-  }
-}
-/* line 108, ../../sass/creation/layouts/_responsive-creation.scss */
-#s8 .footer {
-  background-color: #014b60;
-  /*omega = eliminar gutter-width*/
-  padding-right: 21.05263%;
-  padding-left: 21.05263%;
-  width: 57.89474%;
-  float: left;
-  margin-right: 5.26316%;
-  display: inline;
-  /*responsive footer*/
-}
-@media (min-width: 768px) and (max-width: 939px) {
-  /* line 108, ../../sass/creation/layouts/_responsive-creation.scss */
-  #s8 .footer {
-    padding-right: 8.51064%;
-    padding-left: 8.51064%;
-    width: 82.97872%;
-    float: left;
-    margin-right: 2.12766%;
-  }
-}
-@media (min-width: 940px) {
-  /* line 108, ../../sass/creation/layouts/_responsive-creation.scss */
-  #s8 .footer {
-    padding-right: 6.34921%;
-    padding-left: 6.34921%;
-    width: 87.30159%;
-    float: left;
-    margin-right: 1.5873%;
-  }
-}
-/* line 115, ../../sass/creation/layouts/_responsive-creation.scss */
-#s8 .footer .footer-1 {
-  background-color: #ebebeb;
-  width: 100%;
-  float: left;
-  margin-right: 5.26316%;
-  display: inline;
-}
-@media (min-width: 768px) and (max-width: 939px) {
-  /* line 115, ../../sass/creation/layouts/_responsive-creation.scss */
-  #s8 .footer .footer-1 {
-    width: 23.40426%;
-    float: left;
-    margin-right: 2.12766%;
-  }
-}
-@media (min-width: 940px) {
-  /* line 115, ../../sass/creation/layouts/_responsive-creation.scss */
-  #s8 .footer .footer-1 {
-    width: 23.80952%;
-    float: left;
-    margin-right: 1.5873%;
-  }
-}
-/* line 120, ../../sass/creation/layouts/_responsive-creation.scss */
-#s8 .footer .footer-3 {
-  background-color: #ebebeb;
-  width: 100%;
-  float: left;
-  margin-right: 5.26316%;
-  display: inline;
-}
-@media (min-width: 768px) and (max-width: 939px) {
-  /* line 120, ../../sass/creation/layouts/_responsive-creation.scss */
-  #s8 .footer .footer-3 {
-    width: 23.40426%;
-    float: right;
-    margin-right: 0;
-  }
-}
-@media (min-width: 940px) {
-  /* line 120, ../../sass/creation/layouts/_responsive-creation.scss */
-  #s8 .footer .footer-3 {
-    width: 23.80952%;
-    float: right;
-    margin-right: 0;
-  }
-}
-/* line 125, ../../sass/creation/layouts/_responsive-creation.scss */
-#s8 .footer .footer-2 {
-  background-color: #ebebeb;
-  width: 100%;
-  float: left;
-  margin-right: 5.26316%;
-  display: inline;
-}
-@media (min-width: 768px) and (max-width: 939px) {
-  /* line 125, ../../sass/creation/layouts/_responsive-creation.scss */
-  #s8 .footer .footer-2 {
-    width: 48.93617%;
-    float: left;
-    margin-right: 2.12766%;
-  }
-}
-@media (min-width: 940px) {
-  /* line 125, ../../sass/creation/layouts/_responsive-creation.scss */
-  #s8 .footer .footer-2 {
-    width: 49.20635%;
-    float: left;
-    margin-right: 1.5873%;
-  }
 }
 
 /* line 26, ../../sass/creation/_creation.scss */
@@ -783,10 +536,23 @@ body {
   line-height: 2.3rem;
 }
 
+/*Syntax custom*/
+/* line 42, ../../sass/creation/_creation.scss */
+code {
+  font-size: 1.2rem;
+  font-family: Consolas,Monaco,"Andale Mono",monospace;
+}
+
+/* line 43, ../../sass/creation/_creation.scss */
+pre {
+  overflow-x: scroll !important;
+  overflow-y: scroll !important;
+}
+
 /* line 6, ../../sass/partials/nodes.scss */
 #content {
   /*Imatge amb caption ->field-slideshow */
-  /*Title secció:Agrupació de camps*/
+  /*Title seccio:Agrupacio de camps*/
   /*dipta fields*/
   /*imprimir - enviar- pdf*/
   /*Imatges-> pagina basica - noticia - agenda etc*/
@@ -854,17 +620,17 @@ body {
 }
 /* line 26, ../../sass/partials/nodes.scss */
 #content .dipta-camp .dipta-postal .state, #content .dipta-camp .dipta-postal .street-block, #content .dipta-camp .dipta-postal .locality-block, #content .dipta-camp .dipta-postal .name-block {
-  display: block!important;
+  display: block !important;
   line-height: 13px;
 }
 /* line 27, ../../sass/partials/nodes.scss */
 #content .dipta-camp .dipta-postal .addressfield-container-inline:before {
-  content: none!important;
+  content: none !important;
   display: block !important;
 }
 /* line 28, ../../sass/partials/nodes.scss */
 #content .dipta-camp .dipta-postal .addressfield-container-inline span {
-  padding-left: 0!important;
+  padding-left: 0 !important;
 }
 /* line 29, ../../sass/partials/nodes.scss */
 #content .dipta-camp .dipta-postal .country {
@@ -959,7 +725,7 @@ body {
 }
 /* line 59, ../../sass/partials/nodes.scss */
 #content .dipta-float .field-slideshow-wrapper {
-  width: 300px!important;
+  width: 300px !important;
 }
 /* line 61, ../../sass/partials/nodes.scss */
 #content .dipta-float .field-slideshow-wrapper .field-slideshow-pager {
@@ -1002,7 +768,7 @@ body {
 }
 /* line 75, ../../sass/partials/nodes.scss */
 #content .dipta-mapa .openlayers-map-map_adreca_municipi, #content .dipta-mapa .openlayers-container-map-map_adreca_consell {
-  border: 0px solid #cccccc;
+  border: 0px solid #ccc;
 }
 
 /* line 83, ../../sass/partials/nodes.scss */
@@ -1089,7 +855,7 @@ body {
 /* line 117, ../../sass/partials/nodes.scss */
 .grid-obra {
   width: 45%;
-  border-bottom: 1px solid #ebebeb;
+  border-bottom: 1px solid #EBEBEB;
   padding: 2%;
 }
 /* line 117, ../../sass/partials/nodes.scss */
@@ -1099,7 +865,7 @@ body {
 
 /* line 118, ../../sass/partials/nodes.scss */
 .grid-obra-licitacio {
-  border-bottom: 1px solid #ebebeb;
+  border-bottom: 1px solid #EBEBEB;
   padding: 2% 1% 2% 1%;
 }
 /* line 118, ../../sass/partials/nodes.scss */
@@ -1114,23 +880,23 @@ body {
 
 /* line 121, ../../sass/partials/nodes.scss */
 .view-display-id-block_1 .concatenats, .view-display-id-block_3 .concatenats {
-  padding: 0!important;
+  padding: 0 !important;
 }
 /* line 121, ../../sass/partials/nodes.scss */
 .view-display-id-block_1 .concatenats span, .view-display-id-block_3 .concatenats span {
   padding: 0;
-  border-left: 0px solid white;
+  border-left: 0px solid #fff;
 }
 /* line 122, ../../sass/partials/nodes.scss */
 .view-display-id-block_1 .municipi, .view-display-id-block_3 .municipi {
   margin-left: 5px;
   padding-left: 5px !important;
-  border-left: 1px solid #cccccc !important;
+  border-left: 1px solid #ccc !important;
 }
 
 /* line 126, ../../sass/partials/nodes.scss */
 .view-imatge-corporativa {
-  margin: 0!important;
+  margin: 0 !important;
   padding: 2%;
   border: none !important;
 }
@@ -1159,10 +925,10 @@ body {
 /* line 132, ../../sass/partials/nodes.scss */
 .title-camp, .view-diputats-d-un-partit h3 {
   font-weight: 700 !important;
-  border-bottom: 1px solid #ebebeb;
-  font-family: 'Roboto Condensed'!important;
+  border-bottom: 1px solid #EBEBEB;
+  font-family: "Roboto Condensed" !important;
   padding: 5px 0 5px 0;
-  margin-right: 2%!important;
+  margin-right: 2% !important;
 }
 
 /* line 135, ../../sass/partials/nodes.scss */

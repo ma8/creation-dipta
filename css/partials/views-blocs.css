@@ -1,4 +1,4 @@
-@charset "CP850";
+@charset "UTF-8";
 @import url(http://fonts.googleapis.com/css?family=Droid+Sans:400,700);
 @import url(http://fonts.googleapis.com/css?family=Roboto+Condensed:400,300,700);
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:400,700,300,600,800);
@@ -10,8 +10,8 @@
 */
 /**
  * @file
- * Creation for compass - Front-end framework de  la Diputaci¢ de Tarragona.
- * @Miguel µngel Ramos. 
+ * Creation for compass - Front-end framework de  la DiputaciÃ³ de Tarragona.
+ * @Miguel Ãngel Ramos. 
  *
  */
 /* Compass*/
@@ -26,7 +26,7 @@ code[class*="language-"],
 pre[class*="language-"] {
   color: black;
   text-shadow: 0 1px white;
-  font-family: Consolas, Monaco, "Andale Mono", monospace;
+  font-family: Consolas, Monaco, 'Andale Mono', monospace;
   direction: ltr;
   text-align: left;
   white-space: pre;
@@ -63,7 +63,7 @@ pre[class*="language-"] {
 /* line 45, ../../sass/creation/base/_syntax.scss */
 pre[class*="language-"] {
   padding: 1em;
-  margin: 0.5em 0;
+  margin: .5em 0;
   overflow: auto;
 }
 
@@ -72,7 +72,7 @@ pre[class*="language-"] {
 pre[class*="language-"] {
   /* #FEFA83  #f5f2f0 #FFFBEA #FEFA83;*/
   background: #FEFA83;
-  border: 1px solid #d2caa7;
+  border: 1px solid #D2CAA7;
 }
 
 /* Inline code */
@@ -180,7 +180,7 @@ pre[data-line] {
   top: .4em;
   left: .6em;
   min-width: 1em;
-  padding: 0 0.5em;
+  padding: 0 .5em;
   background-color: rgba(153, 122, 102, 0.4);
   color: #f5f2f0;
   font: bold 65%/1.5 sans-serif;
@@ -220,7 +220,7 @@ pre.line-numbers > code {
   width: 3em;
   /* works for line-numbers below 1000 lines */
   letter-spacing: -1px;
-  border-right: 1px solid #999999;
+  border-right: 1px solid #999;
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -304,38 +304,24 @@ invert($color)
 *	Imports + Golden ratio + responsive typography
 * 	$font-a;contingut + $font-b;Headings + $font-c; especial
 */
-/*Syntax custom*/
-/* line 12, ../../sass/creation/custom/_typography.scss */
-code {
-  font-size: 1.2rem;
-  font-family: Consolas,Monaco,"Andale Mono",monospace;
-}
-
-/* line 13, ../../sass/creation/custom/_typography.scss */
-pre {
-  overflow-x: scroll !important;
-  overflow-y: scroll !important;
-  width: 650px;
-}
-
-/* line 16, ../../sass/creation/custom/_typography.scss */
+/* line 14, ../../sass/creation/custom/_typography.scss */
 p {
   font-weight: 300;
 }
 
-/* line 17, ../../sass/creation/custom/_typography.scss */
+/* line 15, ../../sass/creation/custom/_typography.scss */
 a {
   color: #0083a9;
   text-decoration: none;
 }
 
-/* line 18, ../../sass/creation/custom/_typography.scss */
+/* line 16, ../../sass/creation/custom/_typography.scss */
 a:hover {
   text-decoration: underline;
 }
 
 /* Headings*/
-/* line 21, ../../sass/creation/custom/_typography.scss */
+/* line 19, ../../sass/creation/custom/_typography.scss */
 h1 {
   /*body*/
   font-size: 3rem;
@@ -344,7 +330,7 @@ h1 {
   letter-spacing: -0.2rem;
 }
 
-/* line 22, ../../sass/creation/custom/_typography.scss */
+/* line 20, ../../sass/creation/custom/_typography.scss */
 h2 {
   font-size: 2.7rem;
   font-weight: 400;
@@ -352,7 +338,7 @@ h2 {
   letter-spacing: -0.06rem;
 }
 
-/* line 23, ../../sass/creation/custom/_typography.scss */
+/* line 21, ../../sass/creation/custom/_typography.scss */
 h3, #block-views-noticies-presidencia-block-2 h2,
 #block-views-not-cies-block-3 h2,
 #block-views-actes-agenda-block-6 h2,
@@ -363,7 +349,7 @@ h3, #block-views-noticies-presidencia-block-2 h2,
   letter-spacing: -0.06rem;
 }
 
-/* line 24, ../../sass/creation/custom/_typography.scss */
+/* line 22, ../../sass/creation/custom/_typography.scss */
 h4, #block-views-municipis-block-1 h2 {
   font-size: 1.5rem;
   font-weight: 400;
@@ -371,18 +357,18 @@ h4, #block-views-municipis-block-1 h2 {
   letter-spacing: -0.06rem;
 }
 
-/* line 25, ../../sass/creation/custom/_typography.scss */
+/* line 23, ../../sass/creation/custom/_typography.scss */
 h5, #block-views-noticies-presidencia-block-2 .view-footer,
 #block-views-not-cies-block-3 .view-footer,
 #block-views-actes-agenda-block-6 .view-footer,
-#block-views-agenda-presidencia-block-1 .view-footer, #block-views-not-cies-block-6 .view-footer, #block-views-actes-agenda-block-7 .view-footer, #block-views-publicacio-revistadipu-block-2 {
+#block-views-agenda-presidencia-block-1 .view-footer, #block-views-not-cies-block-6 .view-footer, #block-views-actes-agenda-block-7 .view-footer {
   font-size: 1.245rem;
   font-weight: 400;
   line-height: 1.5rem;
   letter-spacing: -0.06rem;
 }
 
-/* line 26, ../../sass/creation/custom/_typography.scss */
+/* line 24, ../../sass/creation/custom/_typography.scss */
 h6 {
   font-size: 1.125rem;
   font-weight: 400;
@@ -391,15 +377,7 @@ h6 {
 }
 
 /* Paragraph size h1,h2,h3,h4,h5.h6*/
-/* line 33, ../../sass/creation/custom/_typography.scss */
-#block-views-publicacio-revistadipu-block-2 h2 {
-  font-size: 1.5rem;
-  font-weight: 100;
-  line-height: 2.1rem;
-  letter-spacing: 0;
-}
-
-/* line 34, ../../sass/creation/custom/_typography.scss */
+/* line 32, ../../sass/creation/custom/_typography.scss */
 #block-views-municipis-comarca-block p, #block-views-area-unitats-block p, .dipta-resum p {
   font-size: 1.245rem;
   font-weight: 100;
@@ -407,7 +385,7 @@ h6 {
   letter-spacing: 0;
 }
 
-/* line 38, ../../sass/creation/custom/_typography.scss */
+/* line 36, ../../sass/creation/custom/_typography.scss */
 #block-views-noticies-presidencia-block-2 h2,
 #block-views-not-cies-block-3 h2,
 #block-views-actes-agenda-block-6 h2,
@@ -443,19 +421,7 @@ h6 {
 #block-views-noticies-presidencia-block-2 h2,
 #block-views-not-cies-block-3 h2,
 #block-views-actes-agenda-block-6 h2,
-#block-views-agenda-presidencia-block-1 h2, #block-views-not-cies-block-6 h2, #block-views-actes-agenda-block-7 h2, #block-views-municipis-comarca-block h1, #block-views-area-unitats-block h1, #block-views-municipis-comarca-block h2, #block-views-area-unitats-block h2, #block-views-municipis-comarca-block h3, #block-views-area-unitats-block h3, #block-views-municipis-comarca-block #block-views-noticies-presidencia-block-2 h2, #block-views-noticies-presidencia-block-2 #block-views-municipis-comarca-block h2, #block-views-area-unitats-block #block-views-noticies-presidencia-block-2 h2, #block-views-noticies-presidencia-block-2 #block-views-area-unitats-block h2,
-#block-views-municipis-comarca-block #block-views-not-cies-block-3 h2,
-#block-views-not-cies-block-3 #block-views-municipis-comarca-block h2,
-#block-views-area-unitats-block #block-views-not-cies-block-3 h2,
-#block-views-not-cies-block-3 #block-views-area-unitats-block h2,
-#block-views-municipis-comarca-block #block-views-actes-agenda-block-6 h2,
-#block-views-actes-agenda-block-6 #block-views-municipis-comarca-block h2,
-#block-views-area-unitats-block #block-views-actes-agenda-block-6 h2,
-#block-views-actes-agenda-block-6 #block-views-area-unitats-block h2,
-#block-views-municipis-comarca-block #block-views-agenda-presidencia-block-1 h2,
-#block-views-agenda-presidencia-block-1 #block-views-municipis-comarca-block h2,
-#block-views-area-unitats-block #block-views-agenda-presidencia-block-1 h2,
-#block-views-agenda-presidencia-block-1 #block-views-area-unitats-block h2, #block-views-area-unitats-block #block-views-municipis-comarca-block h2, #block-views-municipis-comarca-block #block-views-area-unitats-block h2, #block-views-municipis-comarca-block #block-views-not-cies-block-6 h2, #block-views-not-cies-block-6 #block-views-municipis-comarca-block h2, #block-views-area-unitats-block #block-views-not-cies-block-6 h2, #block-views-not-cies-block-6 #block-views-area-unitats-block h2, #block-views-municipis-comarca-block #block-views-actes-agenda-block-7 h2, #block-views-actes-agenda-block-7 #block-views-municipis-comarca-block h2, #block-views-area-unitats-block #block-views-actes-agenda-block-7 h2, #block-views-actes-agenda-block-7 #block-views-area-unitats-block h2, #block-views-municipis-comarca-block h4, #block-views-area-unitats-block h4, #block-views-municipis-comarca-block #block-views-municipis-block-1 h2, #block-views-municipis-block-1 #block-views-municipis-comarca-block h2, #block-views-area-unitats-block #block-views-municipis-block-1 h2, #block-views-municipis-block-1 #block-views-area-unitats-block h2, #block-views-municipis-comarca-block h5, #block-views-area-unitats-block h5, #block-views-municipis-comarca-block #block-views-noticies-presidencia-block-2 .view-footer, #block-views-noticies-presidencia-block-2 #block-views-municipis-comarca-block .view-footer, #block-views-area-unitats-block #block-views-noticies-presidencia-block-2 .view-footer, #block-views-noticies-presidencia-block-2 #block-views-area-unitats-block .view-footer,
+#block-views-agenda-presidencia-block-1 h2, #block-views-not-cies-block-6 h2, #block-views-actes-agenda-block-7 h2, #block-views-municipis-comarca-block h1, #block-views-area-unitats-block h1, #block-views-municipis-comarca-block h2, #block-views-area-unitats-block h2, #block-views-municipis-comarca-block h3, #block-views-area-unitats-block h3, #block-views-municipis-comarca-block h4, #block-views-area-unitats-block h4, #block-views-municipis-comarca-block #block-views-municipis-block-1 h2, #block-views-municipis-block-1 #block-views-municipis-comarca-block h2, #block-views-area-unitats-block #block-views-municipis-block-1 h2, #block-views-municipis-block-1 #block-views-area-unitats-block h2, #block-views-municipis-comarca-block h5, #block-views-area-unitats-block h5, #block-views-municipis-comarca-block #block-views-noticies-presidencia-block-2 .view-footer, #block-views-noticies-presidencia-block-2 #block-views-municipis-comarca-block .view-footer, #block-views-area-unitats-block #block-views-noticies-presidencia-block-2 .view-footer, #block-views-noticies-presidencia-block-2 #block-views-area-unitats-block .view-footer,
 #block-views-municipis-comarca-block #block-views-not-cies-block-3 .view-footer,
 #block-views-not-cies-block-3 #block-views-municipis-comarca-block .view-footer,
 #block-views-area-unitats-block #block-views-not-cies-block-3 .view-footer,
@@ -467,24 +433,12 @@ h6 {
 #block-views-municipis-comarca-block #block-views-agenda-presidencia-block-1 .view-footer,
 #block-views-agenda-presidencia-block-1 #block-views-municipis-comarca-block .view-footer,
 #block-views-area-unitats-block #block-views-agenda-presidencia-block-1 .view-footer,
-#block-views-agenda-presidencia-block-1 #block-views-area-unitats-block .view-footer, #block-views-municipis-comarca-block #block-views-not-cies-block-6 .view-footer, #block-views-not-cies-block-6 #block-views-municipis-comarca-block .view-footer, #block-views-area-unitats-block #block-views-not-cies-block-6 .view-footer, #block-views-not-cies-block-6 #block-views-area-unitats-block .view-footer, #block-views-municipis-comarca-block #block-views-actes-agenda-block-7 .view-footer, #block-views-actes-agenda-block-7 #block-views-municipis-comarca-block .view-footer, #block-views-area-unitats-block #block-views-actes-agenda-block-7 .view-footer, #block-views-actes-agenda-block-7 #block-views-area-unitats-block .view-footer, #block-views-municipis-comarca-block #block-views-publicacio-revistadipu-block-2, #block-views-area-unitats-block #block-views-publicacio-revistadipu-block-2, #block-views-municipis-comarca-block h6, #block-views-area-unitats-block h6 {
+#block-views-agenda-presidencia-block-1 #block-views-area-unitats-block .view-footer, #block-views-municipis-comarca-block #block-views-not-cies-block-6 .view-footer, #block-views-not-cies-block-6 #block-views-municipis-comarca-block .view-footer, #block-views-area-unitats-block #block-views-not-cies-block-6 .view-footer, #block-views-not-cies-block-6 #block-views-area-unitats-block .view-footer, #block-views-municipis-comarca-block #block-views-actes-agenda-block-7 .view-footer, #block-views-actes-agenda-block-7 #block-views-municipis-comarca-block .view-footer, #block-views-area-unitats-block #block-views-actes-agenda-block-7 .view-footer, #block-views-actes-agenda-block-7 #block-views-area-unitats-block .view-footer, #block-views-municipis-comarca-block h6, #block-views-area-unitats-block h6 {
   border-top: 0.4rem solid #0083a9;
 }
 
 /* line 14, ../../sass/creation/custom/_elements.scss */
-#block-views-municipis-comarca-block h1, #block-views-area-unitats-block h1, #block-views-municipis-comarca-block h2, #block-views-area-unitats-block h2, #block-views-municipis-comarca-block h3, #block-views-area-unitats-block h3, #block-views-municipis-comarca-block #block-views-noticies-presidencia-block-2 h2, #block-views-noticies-presidencia-block-2 #block-views-municipis-comarca-block h2, #block-views-area-unitats-block #block-views-noticies-presidencia-block-2 h2, #block-views-noticies-presidencia-block-2 #block-views-area-unitats-block h2,
-#block-views-municipis-comarca-block #block-views-not-cies-block-3 h2,
-#block-views-not-cies-block-3 #block-views-municipis-comarca-block h2,
-#block-views-area-unitats-block #block-views-not-cies-block-3 h2,
-#block-views-not-cies-block-3 #block-views-area-unitats-block h2,
-#block-views-municipis-comarca-block #block-views-actes-agenda-block-6 h2,
-#block-views-actes-agenda-block-6 #block-views-municipis-comarca-block h2,
-#block-views-area-unitats-block #block-views-actes-agenda-block-6 h2,
-#block-views-actes-agenda-block-6 #block-views-area-unitats-block h2,
-#block-views-municipis-comarca-block #block-views-agenda-presidencia-block-1 h2,
-#block-views-agenda-presidencia-block-1 #block-views-municipis-comarca-block h2,
-#block-views-area-unitats-block #block-views-agenda-presidencia-block-1 h2,
-#block-views-agenda-presidencia-block-1 #block-views-area-unitats-block h2, #block-views-area-unitats-block #block-views-municipis-comarca-block h2, #block-views-municipis-comarca-block #block-views-area-unitats-block h2, #block-views-municipis-comarca-block #block-views-not-cies-block-6 h2, #block-views-not-cies-block-6 #block-views-municipis-comarca-block h2, #block-views-area-unitats-block #block-views-not-cies-block-6 h2, #block-views-not-cies-block-6 #block-views-area-unitats-block h2, #block-views-municipis-comarca-block #block-views-actes-agenda-block-7 h2, #block-views-actes-agenda-block-7 #block-views-municipis-comarca-block h2, #block-views-area-unitats-block #block-views-actes-agenda-block-7 h2, #block-views-actes-agenda-block-7 #block-views-area-unitats-block h2, #block-views-municipis-comarca-block h4, #block-views-area-unitats-block h4, #block-views-municipis-comarca-block #block-views-municipis-block-1 h2, #block-views-municipis-block-1 #block-views-municipis-comarca-block h2, #block-views-area-unitats-block #block-views-municipis-block-1 h2, #block-views-municipis-block-1 #block-views-area-unitats-block h2, #block-views-municipis-comarca-block h5, #block-views-area-unitats-block h5, #block-views-municipis-comarca-block #block-views-noticies-presidencia-block-2 .view-footer, #block-views-noticies-presidencia-block-2 #block-views-municipis-comarca-block .view-footer, #block-views-area-unitats-block #block-views-noticies-presidencia-block-2 .view-footer, #block-views-noticies-presidencia-block-2 #block-views-area-unitats-block .view-footer,
+#block-views-municipis-comarca-block h1, #block-views-area-unitats-block h1, #block-views-municipis-comarca-block h2, #block-views-area-unitats-block h2, #block-views-municipis-comarca-block h3, #block-views-area-unitats-block h3, #block-views-municipis-comarca-block h4, #block-views-area-unitats-block h4, #block-views-municipis-comarca-block #block-views-municipis-block-1 h2, #block-views-municipis-block-1 #block-views-municipis-comarca-block h2, #block-views-area-unitats-block #block-views-municipis-block-1 h2, #block-views-municipis-block-1 #block-views-area-unitats-block h2, #block-views-municipis-comarca-block h5, #block-views-area-unitats-block h5, #block-views-municipis-comarca-block #block-views-noticies-presidencia-block-2 .view-footer, #block-views-noticies-presidencia-block-2 #block-views-municipis-comarca-block .view-footer, #block-views-area-unitats-block #block-views-noticies-presidencia-block-2 .view-footer, #block-views-noticies-presidencia-block-2 #block-views-area-unitats-block .view-footer,
 #block-views-municipis-comarca-block #block-views-not-cies-block-3 .view-footer,
 #block-views-not-cies-block-3 #block-views-municipis-comarca-block .view-footer,
 #block-views-area-unitats-block #block-views-not-cies-block-3 .view-footer,
@@ -496,8 +450,8 @@ h6 {
 #block-views-municipis-comarca-block #block-views-agenda-presidencia-block-1 .view-footer,
 #block-views-agenda-presidencia-block-1 #block-views-municipis-comarca-block .view-footer,
 #block-views-area-unitats-block #block-views-agenda-presidencia-block-1 .view-footer,
-#block-views-agenda-presidencia-block-1 #block-views-area-unitats-block .view-footer, #block-views-municipis-comarca-block #block-views-not-cies-block-6 .view-footer, #block-views-not-cies-block-6 #block-views-municipis-comarca-block .view-footer, #block-views-area-unitats-block #block-views-not-cies-block-6 .view-footer, #block-views-not-cies-block-6 #block-views-area-unitats-block .view-footer, #block-views-municipis-comarca-block #block-views-actes-agenda-block-7 .view-footer, #block-views-actes-agenda-block-7 #block-views-municipis-comarca-block .view-footer, #block-views-area-unitats-block #block-views-actes-agenda-block-7 .view-footer, #block-views-actes-agenda-block-7 #block-views-area-unitats-block .view-footer, #block-views-municipis-comarca-block #block-views-publicacio-revistadipu-block-2, #block-views-area-unitats-block #block-views-publicacio-revistadipu-block-2, #block-views-municipis-comarca-block h6, #block-views-area-unitats-block h6 {
-  border-bottom: 0.4rem solid white;
+#block-views-agenda-presidencia-block-1 #block-views-area-unitats-block .view-footer, #block-views-municipis-comarca-block #block-views-not-cies-block-6 .view-footer, #block-views-not-cies-block-6 #block-views-municipis-comarca-block .view-footer, #block-views-area-unitats-block #block-views-not-cies-block-6 .view-footer, #block-views-not-cies-block-6 #block-views-area-unitats-block .view-footer, #block-views-municipis-comarca-block #block-views-actes-agenda-block-7 .view-footer, #block-views-actes-agenda-block-7 #block-views-municipis-comarca-block .view-footer, #block-views-area-unitats-block #block-views-actes-agenda-block-7 .view-footer, #block-views-actes-agenda-block-7 #block-views-area-unitats-block .view-footer, #block-views-municipis-comarca-block h6, #block-views-area-unitats-block h6 {
+  border-bottom: 0.4rem solid #fff;
 }
 
 /* line 15, ../../sass/creation/custom/_elements.scss */
@@ -513,19 +467,7 @@ h6 {
   background-color: #ebebeb;
 }
 /* line 47, ../../sass/creation/custom/_elements.scss */
-#block-views-municipis-comarca-block h1, #block-views-area-unitats-block h1, #block-views-municipis-comarca-block h2, #block-views-area-unitats-block h2, #block-views-municipis-comarca-block h3, #block-views-area-unitats-block h3, #block-views-municipis-comarca-block #block-views-noticies-presidencia-block-2 h2, #block-views-noticies-presidencia-block-2 #block-views-municipis-comarca-block h2, #block-views-area-unitats-block #block-views-noticies-presidencia-block-2 h2, #block-views-noticies-presidencia-block-2 #block-views-area-unitats-block h2,
-#block-views-municipis-comarca-block #block-views-not-cies-block-3 h2,
-#block-views-not-cies-block-3 #block-views-municipis-comarca-block h2,
-#block-views-area-unitats-block #block-views-not-cies-block-3 h2,
-#block-views-not-cies-block-3 #block-views-area-unitats-block h2,
-#block-views-municipis-comarca-block #block-views-actes-agenda-block-6 h2,
-#block-views-actes-agenda-block-6 #block-views-municipis-comarca-block h2,
-#block-views-area-unitats-block #block-views-actes-agenda-block-6 h2,
-#block-views-actes-agenda-block-6 #block-views-area-unitats-block h2,
-#block-views-municipis-comarca-block #block-views-agenda-presidencia-block-1 h2,
-#block-views-agenda-presidencia-block-1 #block-views-municipis-comarca-block h2,
-#block-views-area-unitats-block #block-views-agenda-presidencia-block-1 h2,
-#block-views-agenda-presidencia-block-1 #block-views-area-unitats-block h2, #block-views-municipis-comarca-block h2, #block-views-area-unitats-block #block-views-municipis-comarca-block h2, #block-views-municipis-comarca-block #block-views-area-unitats-block h2, #block-views-municipis-comarca-block #block-views-area-unitats-block h2, #block-views-area-unitats-block #block-views-municipis-comarca-block h2, #block-views-area-unitats-block h2, #block-views-municipis-comarca-block #block-views-not-cies-block-6 h2, #block-views-not-cies-block-6 #block-views-municipis-comarca-block h2, #block-views-area-unitats-block #block-views-not-cies-block-6 h2, #block-views-not-cies-block-6 #block-views-area-unitats-block h2, #block-views-municipis-comarca-block #block-views-actes-agenda-block-7 h2, #block-views-actes-agenda-block-7 #block-views-municipis-comarca-block h2, #block-views-area-unitats-block #block-views-actes-agenda-block-7 h2, #block-views-actes-agenda-block-7 #block-views-area-unitats-block h2, #block-views-municipis-comarca-block h4, #block-views-area-unitats-block h4, #block-views-municipis-comarca-block #block-views-municipis-block-1 h2, #block-views-municipis-block-1 #block-views-municipis-comarca-block h2, #block-views-area-unitats-block #block-views-municipis-block-1 h2, #block-views-municipis-block-1 #block-views-area-unitats-block h2, #block-views-municipis-comarca-block h5, #block-views-area-unitats-block h5, #block-views-municipis-comarca-block #block-views-noticies-presidencia-block-2 .view-footer, #block-views-noticies-presidencia-block-2 #block-views-municipis-comarca-block .view-footer, #block-views-area-unitats-block #block-views-noticies-presidencia-block-2 .view-footer, #block-views-noticies-presidencia-block-2 #block-views-area-unitats-block .view-footer,
+#block-views-municipis-comarca-block h1, #block-views-area-unitats-block h1, #block-views-municipis-comarca-block h2, #block-views-area-unitats-block h2, #block-views-municipis-comarca-block h3, #block-views-area-unitats-block h3, #block-views-municipis-comarca-block h2, #block-views-area-unitats-block h2, #block-views-municipis-comarca-block h4, #block-views-area-unitats-block h4, #block-views-municipis-comarca-block #block-views-municipis-block-1 h2, #block-views-municipis-block-1 #block-views-municipis-comarca-block h2, #block-views-area-unitats-block #block-views-municipis-block-1 h2, #block-views-municipis-block-1 #block-views-area-unitats-block h2, #block-views-municipis-comarca-block h5, #block-views-area-unitats-block h5, #block-views-municipis-comarca-block #block-views-noticies-presidencia-block-2 .view-footer, #block-views-noticies-presidencia-block-2 #block-views-municipis-comarca-block .view-footer, #block-views-area-unitats-block #block-views-noticies-presidencia-block-2 .view-footer, #block-views-noticies-presidencia-block-2 #block-views-area-unitats-block .view-footer,
 #block-views-municipis-comarca-block #block-views-not-cies-block-3 .view-footer,
 #block-views-not-cies-block-3 #block-views-municipis-comarca-block .view-footer,
 #block-views-area-unitats-block #block-views-not-cies-block-3 .view-footer,
@@ -537,7 +479,7 @@ h6 {
 #block-views-municipis-comarca-block #block-views-agenda-presidencia-block-1 .view-footer,
 #block-views-agenda-presidencia-block-1 #block-views-municipis-comarca-block .view-footer,
 #block-views-area-unitats-block #block-views-agenda-presidencia-block-1 .view-footer,
-#block-views-agenda-presidencia-block-1 #block-views-area-unitats-block .view-footer, #block-views-municipis-comarca-block #block-views-not-cies-block-6 .view-footer, #block-views-not-cies-block-6 #block-views-municipis-comarca-block .view-footer, #block-views-area-unitats-block #block-views-not-cies-block-6 .view-footer, #block-views-not-cies-block-6 #block-views-area-unitats-block .view-footer, #block-views-municipis-comarca-block #block-views-actes-agenda-block-7 .view-footer, #block-views-actes-agenda-block-7 #block-views-municipis-comarca-block .view-footer, #block-views-area-unitats-block #block-views-actes-agenda-block-7 .view-footer, #block-views-actes-agenda-block-7 #block-views-area-unitats-block .view-footer, #block-views-municipis-comarca-block #block-views-publicacio-revistadipu-block-2, #block-views-area-unitats-block #block-views-publicacio-revistadipu-block-2, #block-views-municipis-comarca-block h6, #block-views-area-unitats-block h6 {
+#block-views-agenda-presidencia-block-1 #block-views-area-unitats-block .view-footer, #block-views-municipis-comarca-block #block-views-not-cies-block-6 .view-footer, #block-views-not-cies-block-6 #block-views-municipis-comarca-block .view-footer, #block-views-area-unitats-block #block-views-not-cies-block-6 .view-footer, #block-views-not-cies-block-6 #block-views-area-unitats-block .view-footer, #block-views-municipis-comarca-block #block-views-actes-agenda-block-7 .view-footer, #block-views-actes-agenda-block-7 #block-views-municipis-comarca-block .view-footer, #block-views-area-unitats-block #block-views-actes-agenda-block-7 .view-footer, #block-views-actes-agenda-block-7 #block-views-area-unitats-block .view-footer, #block-views-municipis-comarca-block h6, #block-views-area-unitats-block h6 {
   padding: 2rem;
 }
 /* line 48, ../../sass/creation/custom/_elements.scss */
@@ -561,7 +503,7 @@ h6 {
 .dipta-resum #block-views-actes-agenda-block-6 .view-footer,
 #block-views-actes-agenda-block-6 .dipta-resum .view-footer,
 .dipta-resum #block-views-agenda-presidencia-block-1 .view-footer,
-#block-views-agenda-presidencia-block-1 .dipta-resum .view-footer, .dipta-resum #block-views-not-cies-block-6 .view-footer, #block-views-not-cies-block-6 .dipta-resum .view-footer, .dipta-resum #block-views-actes-agenda-block-7 .view-footer, #block-views-actes-agenda-block-7 .dipta-resum .view-footer, .dipta-resum #block-views-publicacio-revistadipu-block-2 {
+#block-views-agenda-presidencia-block-1 .dipta-resum .view-footer, .dipta-resum #block-views-not-cies-block-6 .view-footer, #block-views-not-cies-block-6 .dipta-resum .view-footer, .dipta-resum #block-views-actes-agenda-block-7 .view-footer, #block-views-actes-agenda-block-7 .dipta-resum .view-footer {
   margin: 5px 0 5px 0;
   font-weight: 600;
 }
@@ -621,7 +563,7 @@ h6 {
 #block-views-not-cies-block-3 .view-content div.dipta-resum:last-child,
 #block-views-actes-agenda-block-6 .view-content div.dipta-resum:last-child,
 #block-views-agenda-presidencia-block-1 .view-content div.dipta-resum:last-child, #block-views-not-cies-block-6 .view-content div.dipta-resum:last-child, #block-views-actes-agenda-block-7 .view-content div.dipta-resum:last-child {
-  border-bottom: 0!important;
+  border-bottom: 0 !important;
 }
 
 /* Element Conacatenats*/
@@ -702,7 +644,7 @@ desaturate($verd, 10%);
 grayscale($verd);
 invert($verd);
 */
-/* line 39, ../../sass/creation/layouts/_responsive-creation.scss */
+/* line 38, ../../sass/creation/layouts/_responsive-creation.scss */
 html {
   /*Typography responsive for compass breakpoints*/
   font-size: 62.5%;
@@ -711,239 +653,6 @@ html {
    @include at-breakpoint($ipad) { font-size:62.5%; }
    @include at-breakpoint($ipad-landscape) { font-size:62.5%; }
    */
-}
-
-/* line 81, ../../sass/creation/layouts/_responsive-creation.scss */
-#s8 {
-  /*Container*/
-  *zoom: 1;
-  max-width: 1504px;
-  max-width: 94rem;
-  _width: 1504px;
-  padding-left: 32px;
-  padding-left: 2rem;
-  padding-right: 32px;
-  padding-right: 2rem;
-  margin-left: auto;
-  margin-right: auto;
-  /*mobile first*/
-}
-/* line 38, ../../../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
-#s8:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-/* line 85, ../../sass/creation/layouts/_responsive-creation.scss */
-#s8 .header {
-  background-color: #0083a9;
-  /*omega = eliminar gutter-width*/
-  width: 100%;
-  float: right;
-  margin-right: 0;
-  *margin-left: -2rem;
-  display: inline;
-}
-@media (min-width: 940px) {
-  /* line 85, ../../sass/creation/layouts/_responsive-creation.scss */
-  #s8 .header {
-    width: 100%;
-    float: right;
-    margin-right: 0;
-  }
-}
-@media (min-width: 768px) and (max-width: 939px) {
-  /* line 85, ../../sass/creation/layouts/_responsive-creation.scss */
-  #s8 .header {
-    width: 100%;
-    float: right;
-    margin-right: 0;
-  }
-}
-@media (min-width: 940px) {
-  /* line 85, ../../sass/creation/layouts/_responsive-creation.scss */
-  #s8 .header {
-    width: 100%;
-    float: right;
-    margin-right: 0;
-  }
-}
-/* line 92, ../../sass/creation/layouts/_responsive-creation.scss */
-#s8 .sidebar-1 {
-  background-color: #ebebeb;
-  width: 100%;
-  float: left;
-  margin-right: 5.26316%;
-  display: inline;
-}
-@media (min-width: 768px) and (max-width: 939px) {
-  /* line 92, ../../sass/creation/layouts/_responsive-creation.scss */
-  #s8 .sidebar-1 {
-    width: 23.40426%;
-    float: left;
-    margin-right: 2.12766%;
-  }
-}
-@media (min-width: 940px) {
-  /* line 92, ../../sass/creation/layouts/_responsive-creation.scss */
-  #s8 .sidebar-1 {
-    width: 23.80952%;
-    float: left;
-    margin-right: 1.5873%;
-  }
-}
-/* line 97, ../../sass/creation/layouts/_responsive-creation.scss */
-#s8 .sidebar-2 {
-  background-color: #ebebeb;
-  width: 100%;
-  float: left;
-  margin-right: 5.26316%;
-  display: inline;
-}
-@media (min-width: 768px) and (max-width: 939px) {
-  /* line 97, ../../sass/creation/layouts/_responsive-creation.scss */
-  #s8 .sidebar-2 {
-    width: 74.46809%;
-    float: right;
-    margin-right: 0;
-  }
-}
-@media (min-width: 940px) {
-  /* line 97, ../../sass/creation/layouts/_responsive-creation.scss */
-  #s8 .sidebar-2 {
-    width: 23.80952%;
-    float: right;
-    margin-right: 0;
-  }
-}
-/* line 102, ../../sass/creation/layouts/_responsive-creation.scss */
-#s8 .content {
-  background-color: #014b60;
-  /*omega = eliminar gutter-width*/
-  width: 100%;
-  float: left;
-  margin-right: 5.26316%;
-  display: inline;
-}
-@media (min-width: 768px) and (max-width: 939px) {
-  /* line 102, ../../sass/creation/layouts/_responsive-creation.scss */
-  #s8 .content {
-    width: 100%;
-    float: left;
-    margin-right: 2.12766%;
-  }
-}
-@media (min-width: 940px) {
-  /* line 102, ../../sass/creation/layouts/_responsive-creation.scss */
-  #s8 .content {
-    width: 49.20635%;
-    float: left;
-    margin-right: 1.5873%;
-  }
-}
-/* line 108, ../../sass/creation/layouts/_responsive-creation.scss */
-#s8 .footer {
-  background-color: #014b60;
-  /*omega = eliminar gutter-width*/
-  padding-right: 21.05263%;
-  padding-left: 21.05263%;
-  width: 57.89474%;
-  float: left;
-  margin-right: 5.26316%;
-  display: inline;
-  /*responsive footer*/
-}
-@media (min-width: 768px) and (max-width: 939px) {
-  /* line 108, ../../sass/creation/layouts/_responsive-creation.scss */
-  #s8 .footer {
-    padding-right: 8.51064%;
-    padding-left: 8.51064%;
-    width: 82.97872%;
-    float: left;
-    margin-right: 2.12766%;
-  }
-}
-@media (min-width: 940px) {
-  /* line 108, ../../sass/creation/layouts/_responsive-creation.scss */
-  #s8 .footer {
-    padding-right: 6.34921%;
-    padding-left: 6.34921%;
-    width: 87.30159%;
-    float: left;
-    margin-right: 1.5873%;
-  }
-}
-/* line 115, ../../sass/creation/layouts/_responsive-creation.scss */
-#s8 .footer .footer-1 {
-  background-color: #ebebeb;
-  width: 100%;
-  float: left;
-  margin-right: 5.26316%;
-  display: inline;
-}
-@media (min-width: 768px) and (max-width: 939px) {
-  /* line 115, ../../sass/creation/layouts/_responsive-creation.scss */
-  #s8 .footer .footer-1 {
-    width: 23.40426%;
-    float: left;
-    margin-right: 2.12766%;
-  }
-}
-@media (min-width: 940px) {
-  /* line 115, ../../sass/creation/layouts/_responsive-creation.scss */
-  #s8 .footer .footer-1 {
-    width: 23.80952%;
-    float: left;
-    margin-right: 1.5873%;
-  }
-}
-/* line 120, ../../sass/creation/layouts/_responsive-creation.scss */
-#s8 .footer .footer-3 {
-  background-color: #ebebeb;
-  width: 100%;
-  float: left;
-  margin-right: 5.26316%;
-  display: inline;
-}
-@media (min-width: 768px) and (max-width: 939px) {
-  /* line 120, ../../sass/creation/layouts/_responsive-creation.scss */
-  #s8 .footer .footer-3 {
-    width: 23.40426%;
-    float: right;
-    margin-right: 0;
-  }
-}
-@media (min-width: 940px) {
-  /* line 120, ../../sass/creation/layouts/_responsive-creation.scss */
-  #s8 .footer .footer-3 {
-    width: 23.80952%;
-    float: right;
-    margin-right: 0;
-  }
-}
-/* line 125, ../../sass/creation/layouts/_responsive-creation.scss */
-#s8 .footer .footer-2 {
-  background-color: #ebebeb;
-  width: 100%;
-  float: left;
-  margin-right: 5.26316%;
-  display: inline;
-}
-@media (min-width: 768px) and (max-width: 939px) {
-  /* line 125, ../../sass/creation/layouts/_responsive-creation.scss */
-  #s8 .footer .footer-2 {
-    width: 48.93617%;
-    float: left;
-    margin-right: 2.12766%;
-  }
-}
-@media (min-width: 940px) {
-  /* line 125, ../../sass/creation/layouts/_responsive-creation.scss */
-  #s8 .footer .footer-2 {
-    width: 49.20635%;
-    float: left;
-    margin-right: 1.5873%;
-  }
 }
 
 /* line 26, ../../sass/creation/_creation.scss */
@@ -961,6 +670,19 @@ body {
   font-family: "Open Sans", sans-serif;
   font-size: 1.3rem;
   line-height: 2.3rem;
+}
+
+/*Syntax custom*/
+/* line 42, ../../sass/creation/_creation.scss */
+code {
+  font-size: 1.2rem;
+  font-family: Consolas,Monaco,"Andale Mono",monospace;
+}
+
+/* line 43, ../../sass/creation/_creation.scss */
+pre {
+  overflow-x: scroll !important;
+  overflow-y: scroll !important;
 }
 
 /* line 15, ../../sass/partials/views-blocs.scss */
@@ -981,7 +703,7 @@ body {
 #block-views-not-cies-block-3 h2,
 #block-views-actes-agenda-block-6 h2,
 #block-views-agenda-presidencia-block-1 h2 {
-  border-bottom-color: white !important;
+  border-bottom-color: #fff !important;
   background-color: #ebebeb;
   color: #0083a9;
 }
@@ -1025,7 +747,7 @@ body {
 }
 /* line 50, ../../sass/partials/views-blocs.scss */
 #block-views-not-cies-block-6 h2, #block-views-actes-agenda-block-7 h2 {
-  border-bottom-color: white !important;
+  border-bottom-color: #fff !important;
   background-color: #ebebeb;
   color: #0083a9;
 }
@@ -1042,7 +764,8 @@ body {
 
 /* line 58, ../../sass/partials/views-blocs.scss */
 #block-views-publicacio-revistadipu-block-2 {
-  width: 220px;
+  font-size: 1.245rem;
+  line-height: 1.5rem;
   background-color: #47A2BD;
 }
 /* line 61, ../../sass/partials/views-blocs.scss */
@@ -1050,14 +773,16 @@ body {
   margin: 0;
   color: #fff;
   background-color: #0083A9;
-  padding: 7%;
-  border-top: 4px solid #47a2bd;
+  padding: 2rem 4rem 2rem 2rem;
+  border-top: 4px solid #47A2BD;
+  font-size: 1.5rem;
+  line-height: 1.75rem;
   font-weight: 600;
 }
 /* line 62, ../../sass/partials/views-blocs.scss */
 #block-views-publicacio-revistadipu-block-2 .publicacio {
-  padding: 20px;
-  border-bottom: 1px solid #79b8cb;
+  padding: 2rem 4rem 2rem 2rem;
+  border-bottom: 1px solid #79B8CB;
   color: #fff;
   background-color: #47A2BD;
 }
@@ -1074,11 +799,13 @@ body {
 }
 /* line 73, ../../sass/partials/views-blocs.scss */
 #block-views-banners-home-block .view-content > ul > li,
-#block-views-banners-home-block .views-row,
+#block-views-banners-home-block .views-row, #block-views-banners-home-block .dipta-banner,
 #block-views-banners-home-block-1 .view-content > ul > li,
 #block-views-banners-home-block-1 .views-row,
+#block-views-banners-home-block-1 .dipta-banner,
 #block-views-banners-home-block-3 .view-content > ul > li,
-#block-views-banners-home-block-3 .views-row {
+#block-views-banners-home-block-3 .views-row,
+#block-views-banners-home-block-3 .dipta-banner {
   position: relative;
 }
 /* line 76, ../../sass/partials/views-blocs.scss */
@@ -1161,11 +888,11 @@ body {
 
 /* Banners laterals */
 /* line 137, ../../sass/partials/views-blocs.scss */
-#block-views-banners-home-block-1 .views-row,
-#block-views-banners-home-block-3 .views-row {
-  margin-bottom: 20px;
+#block-views-banners-home-block-1 .dipta-banner,
+#block-views-banners-home-block-3 .dipta-banner {
+  margin-bottom: 2rem;
 }
-/* line 140, ../../sass/partials/views-blocs.scss */
+/* line 139, ../../sass/partials/views-blocs.scss */
 #block-views-banners-home-block-1 .info-banner,
 #block-views-banners-home-block-3 .info-banner {
   left: 10px;
@@ -1176,96 +903,142 @@ body {
   background-repeat: no-repeat;
   background-position: left bottom;
 }
-/* line 148, ../../sass/partials/views-blocs.scss */
+/* line 147, ../../sass/partials/views-blocs.scss */
 #block-views-banners-home-block-1 .info-banner .text-banner,
 #block-views-banners-home-block-3 .info-banner .text-banner {
   font-size: 1.125rem;
+  line-height: 1.375rem;
   color: #464646;
 }
-/* line 153, ../../sass/partials/views-blocs.scss */
-#block-views-banners-home-block-1 h2,
-#block-views-banners-home-block-3 h2 {
-  font-size: 2.7rem;
+/* line 152, ../../sass/partials/views-blocs.scss */
+#block-views-banners-home-block-1 h3, #block-views-banners-home-block-1 #block-views-noticies-presidencia-block-2 h2, #block-views-noticies-presidencia-block-2 #block-views-banners-home-block-1 h2,
+#block-views-banners-home-block-1 #block-views-not-cies-block-3 h2,
+#block-views-not-cies-block-3 #block-views-banners-home-block-1 h2,
+#block-views-banners-home-block-1 #block-views-actes-agenda-block-6 h2,
+#block-views-actes-agenda-block-6 #block-views-banners-home-block-1 h2,
+#block-views-banners-home-block-1 #block-views-agenda-presidencia-block-1 h2,
+#block-views-agenda-presidencia-block-1 #block-views-banners-home-block-1 h2, #block-views-banners-home-block-1 #block-views-municipis-comarca-block h2, #block-views-municipis-comarca-block #block-views-banners-home-block-1 h2, #block-views-banners-home-block-1 #block-views-area-unitats-block h2, #block-views-area-unitats-block #block-views-banners-home-block-1 h2, #block-views-banners-home-block-1 #block-views-not-cies-block-6 h2, #block-views-not-cies-block-6 #block-views-banners-home-block-1 h2, #block-views-banners-home-block-1 #block-views-actes-agenda-block-7 h2, #block-views-actes-agenda-block-7 #block-views-banners-home-block-1 h2,
+#block-views-banners-home-block-3 h3,
+#block-views-banners-home-block-3 #block-views-noticies-presidencia-block-2 h2,
+#block-views-noticies-presidencia-block-2 #block-views-banners-home-block-3 h2,
+#block-views-banners-home-block-3 #block-views-not-cies-block-3 h2,
+#block-views-not-cies-block-3 #block-views-banners-home-block-3 h2,
+#block-views-banners-home-block-3 #block-views-actes-agenda-block-6 h2,
+#block-views-actes-agenda-block-6 #block-views-banners-home-block-3 h2,
+#block-views-banners-home-block-3 #block-views-agenda-presidencia-block-1 h2,
+#block-views-agenda-presidencia-block-1 #block-views-banners-home-block-3 h2,
+#block-views-banners-home-block-3 #block-views-municipis-comarca-block h2,
+#block-views-municipis-comarca-block #block-views-banners-home-block-3 h2,
+#block-views-banners-home-block-3 #block-views-area-unitats-block h2,
+#block-views-area-unitats-block #block-views-banners-home-block-3 h2,
+#block-views-banners-home-block-3 #block-views-not-cies-block-6 h2,
+#block-views-not-cies-block-6 #block-views-banners-home-block-3 h2,
+#block-views-banners-home-block-3 #block-views-actes-agenda-block-7 h2,
+#block-views-actes-agenda-block-7 #block-views-banners-home-block-3 h2 {
+  font-size: 1.5rem;
+  line-height: 1.75rem;
   margin: 0;
 }
-/* line 156, ../../sass/partials/views-blocs.scss */
-#block-views-banners-home-block-1 h2 a,
-#block-views-banners-home-block-3 h2 a {
+/* line 155, ../../sass/partials/views-blocs.scss */
+#block-views-banners-home-block-1 h3 a, #block-views-banners-home-block-1 #block-views-noticies-presidencia-block-2 h2 a, #block-views-noticies-presidencia-block-2 #block-views-banners-home-block-1 h2 a,
+#block-views-banners-home-block-1 #block-views-not-cies-block-3 h2 a,
+#block-views-not-cies-block-3 #block-views-banners-home-block-1 h2 a,
+#block-views-banners-home-block-1 #block-views-actes-agenda-block-6 h2 a,
+#block-views-actes-agenda-block-6 #block-views-banners-home-block-1 h2 a,
+#block-views-banners-home-block-1 #block-views-agenda-presidencia-block-1 h2 a,
+#block-views-agenda-presidencia-block-1 #block-views-banners-home-block-1 h2 a, #block-views-banners-home-block-1 #block-views-municipis-comarca-block h2 a, #block-views-municipis-comarca-block #block-views-banners-home-block-1 h2 a, #block-views-banners-home-block-1 #block-views-area-unitats-block h2 a, #block-views-area-unitats-block #block-views-banners-home-block-1 h2 a, #block-views-banners-home-block-1 #block-views-not-cies-block-6 h2 a, #block-views-not-cies-block-6 #block-views-banners-home-block-1 h2 a, #block-views-banners-home-block-1 #block-views-actes-agenda-block-7 h2 a, #block-views-actes-agenda-block-7 #block-views-banners-home-block-1 h2 a,
+#block-views-banners-home-block-3 h3 a,
+#block-views-banners-home-block-3 #block-views-noticies-presidencia-block-2 h2 a,
+#block-views-noticies-presidencia-block-2 #block-views-banners-home-block-3 h2 a,
+#block-views-banners-home-block-3 #block-views-not-cies-block-3 h2 a,
+#block-views-not-cies-block-3 #block-views-banners-home-block-3 h2 a,
+#block-views-banners-home-block-3 #block-views-actes-agenda-block-6 h2 a,
+#block-views-actes-agenda-block-6 #block-views-banners-home-block-3 h2 a,
+#block-views-banners-home-block-3 #block-views-agenda-presidencia-block-1 h2 a,
+#block-views-agenda-presidencia-block-1 #block-views-banners-home-block-3 h2 a,
+#block-views-banners-home-block-3 #block-views-municipis-comarca-block h2 a,
+#block-views-municipis-comarca-block #block-views-banners-home-block-3 h2 a,
+#block-views-banners-home-block-3 #block-views-area-unitats-block h2 a,
+#block-views-area-unitats-block #block-views-banners-home-block-3 h2 a,
+#block-views-banners-home-block-3 #block-views-not-cies-block-6 h2 a,
+#block-views-not-cies-block-6 #block-views-banners-home-block-3 h2 a,
+#block-views-banners-home-block-3 #block-views-actes-agenda-block-7 h2 a,
+#block-views-actes-agenda-block-7 #block-views-banners-home-block-3 h2 a {
   text-decoration: none;
 }
-/* line 160, ../../sass/partials/views-blocs.scss */
+/* line 159, ../../sass/partials/views-blocs.scss */
 #block-views-banners-home-block-1 .views-field-field-dipta-banner-link,
 #block-views-banners-home-block-3 .views-field-field-dipta-banner-link {
   font-size: 1.245rem;
   margin-top: 0.6em;
 }
-/* line 164, ../../sass/partials/views-blocs.scss */
+/* line 163, ../../sass/partials/views-blocs.scss */
 #block-views-banners-home-block-1 img,
 #block-views-banners-home-block-3 img {
   display: block;
 }
 
 /* Banners inferiors */
-/* line 169, ../../sass/partials/views-blocs.scss */
+/* line 168, ../../sass/partials/views-blocs.scss */
 #block-views-banners-home-block-3 {
   margin-bottom: 0;
-  margin-left: 20px;
+  margin-left: 2rem;
 }
-/* line 172, ../../sass/partials/views-blocs.scss */
+/* line 171, ../../sass/partials/views-blocs.scss */
 #block-views-banners-home-block-3 .view-content {
   margin-top: 20px;
 }
-/* line 174, ../../sass/partials/views-blocs.scss */
+/* line 173, ../../sass/partials/views-blocs.scss */
 #block-views-banners-home-block-3 .view-content ul {
   margin: 0;
   overflow: hidden;
   padding: 0;
 }
-/* line 179, ../../sass/partials/views-blocs.scss */
+/* line 178, ../../sass/partials/views-blocs.scss */
 #block-views-banners-home-block-3 .view-content li {
   list-style: none;
   margin: 0 20px 20px 0;
 }
 
 @media all and (min-width: 480px) and (max-width: 959px) {
-  /* line 190, ../../sass/partials/views-blocs.scss */
+  /* line 189, ../../sass/partials/views-blocs.scss */
   #block-views-banners-home-block-3 .view-content li {
     float: left;
   }
-  /* line 192, ../../sass/partials/views-blocs.scss */
+  /* line 191, ../../sass/partials/views-blocs.scss */
   #block-views-banners-home-block-3 .view-content li:nth-child(3n) {
     margin-right: 0;
   }
-  /* line 195, ../../sass/partials/views-blocs.scss */
+  /* line 194, ../../sass/partials/views-blocs.scss */
   #block-views-banners-home-block-3 .view-content li:nth-child(3n+1) {
     clear: left;
   }
 }
 @media all and (min-width: 960px) {
-  /* line 205, ../../sass/partials/views-blocs.scss */
+  /* line 204, ../../sass/partials/views-blocs.scss */
   #block-views-banners-home-block-3 {
     margin-left: 0;
   }
-  /* line 208, ../../sass/partials/views-blocs.scss */
+  /* line 207, ../../sass/partials/views-blocs.scss */
   #block-views-banners-home-block-3 .view-content li {
     float: left;
   }
-  /* line 210, ../../sass/partials/views-blocs.scss */
+  /* line 209, ../../sass/partials/views-blocs.scss */
   #block-views-banners-home-block-3 .view-content li:nth-child(4n) {
     margin-right: 0;
   }
-  /* line 213, ../../sass/partials/views-blocs.scss */
+  /* line 212, ../../sass/partials/views-blocs.scss */
   #block-views-banners-home-block-3 .view-content li:nth-child(4n+1) {
     clear: left;
   }
 }
-/* line 222, ../../sass/partials/views-blocs.scss */
+/* line 221, ../../sass/partials/views-blocs.scss */
 #block-menu-block-5 {
-  background: none repeat scroll 0 0 white;
-  border-top: 4px solid #0083a9;
+  background: none repeat scroll 0 0 #FFFFFF;
+  border-top: 4px solid #0083A9;
   margin-top: 10px;
 }
-/* line 226, ../../sass/partials/views-blocs.scss */
+/* line 225, ../../sass/partials/views-blocs.scss */
 #block-menu-block-5 h2 {
   background: url("../../images/escut-dipta.png") no-repeat scroll left center transparent;
   color: #0083A9;
@@ -1273,39 +1046,39 @@ body {
   line-height: 1.63636em;
   margin: 0;
   background-position: 20px center;
-  border-bottom: 2px solid #ebebeb;
+  border-bottom: 2px solid #EBEBEB;
   padding: 12px 20px 12px 50px;
 }
-/* line 237, ../../sass/partials/views-blocs.scss */
+/* line 236, ../../sass/partials/views-blocs.scss */
 #block-menu-block-5 li {
   width: 30%;
   display: inline-block;
   list-style: none;
-  background-color: #FFF!important;
-  border-top: none!important;
+  background-color: white !important;
+  border-top: none !important;
   margin-bottom: 20px;
   font-weight: bold;
   float: none;
 }
-/* line 246, ../../sass/partials/views-blocs.scss */
+/* line 245, ../../sass/partials/views-blocs.scss */
 #block-menu-block-5 li:before {
   content: "\00BB \0020";
   color: #0083A9;
 }
-/* line 250, ../../sass/partials/views-blocs.scss */
+/* line 249, ../../sass/partials/views-blocs.scss */
 #block-menu-block-5 li .menu {
   float: none;
   width: 600px;
   background-color: pink;
 }
-/* line 254, ../../sass/partials/views-blocs.scss */
+/* line 253, ../../sass/partials/views-blocs.scss */
 #block-menu-block-5 li .menu li {
   width: 30%;
   font-weight: normal;
   display: inline-block;
   list-style: none;
 }
-/* line 259, ../../sass/partials/views-blocs.scss */
+/* line 258, ../../sass/partials/views-blocs.scss */
 #block-menu-block-5 li .menu li:before {
   content: "\00BB \0020";
   float: left;

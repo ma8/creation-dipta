@@ -8,6 +8,9 @@
 @import "../creation/_creation"; 
 @import "_responsive-custom"; 
 
+.contextual-links{display:none;}
+.element-invisible{display:none;}
+
 /*Fluid images*/
 #logo img{ width: 100% !important; height: auto !important;}
 

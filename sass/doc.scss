@@ -16,18 +16,40 @@ $blue:#0083A9;/* yummi-turquoise */
 $blue2:#F0F7F9;/* J Peterman Shirt */ 
 $eb:#EBEBEB;/* winter morning */
 
+$verd:#3DE0A1;
+$grid-background-column-color:lighten($verd, 35%); 
+$grid-background-gutter-color:#fff;
 
 /*Containers*/ 
-%container940{ max-width: 940px; margin-left: auto; margin-right: auto;}
-%container705{ max-width: 705px; margin-left: auto; margin-right: auto;}
-%container235{ max-width: 235px; margin-left: auto; margin-right: auto;}
+%container940{ /*max-width: 940px; margin-left: auto; margin-right: auto;*/}
+%container705{ /*max-width: 705px; margin-left: auto; margin-right: auto;*/}
+%container235{ /*max-width: 235px; margin-left: auto; margin-right: auto;*/}
 
+@mixin dipta-container-show{
+	@include at-breakpoint($iphone4) { @include set-container-width;  @include susy-grid-background; }
+	@include at-breakpoint($iphone4-landscape) { @include set-container-width; @include susy-grid-background;  }
+	@include at-breakpoint($iphone5-landscape) { @include set-container-width; @include susy-grid-background;  }
+	@include at-breakpoint($kindle) { @include set-container-width;  @include susy-grid-background; }
+	@include at-breakpoint($ipad) { @include set-container-width;  @include susy-grid-background; }
+	@include at-breakpoint($ipad-landscape) { @include set-container-width; @include susy-grid-background;  }
+}
+@mixin dipta-container-width{
+	@include at-breakpoint($iphone4) { @include set-container-width; }
+	@include at-breakpoint($iphone4-landscape) { @include set-container-width; }
+	@include at-breakpoint($iphone5-landscape) { @include set-container-width; }
+	@include at-breakpoint($kindle) { @include set-container-width; }
+	@include at-breakpoint($ipad) { @include set-container-width; }
+	@include at-breakpoint($ipad-landscape) { @include set-container-width; }
+}
 
+body{
+	
+}
 
 /* Header Doc*/
 header{ 
 	background-color:$blue;
-	.container{@extend %container705;}
+	.container{ @include container; @include dipta-container-width; }
 	padding:90px 0 10px 0;;text-align:center;color:#fff;
 	p{color:$blue2; line-height: 1.4;font-size:21px;font-weight: normal;}	
 	h1{font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
@@ -89,8 +111,7 @@ header{
 	}
  
 /*typography*/ 
-#s1{
- @extend %container940;
+#s1{ @include container; @include dipta-container-show;
  
  .headings-especifics{ @extend %container705;  h1,h2,h3,h4,h5{ @extend %dipta-title-page;} }
  .headings-generals{ @extend %container705;}
@@ -119,12 +140,11 @@ header{
 }
 
 /*Images sources*/
-#s2{
- @extend %container940;
- .slider-home{
+#s2{ @include container; @include dipta-container-show;
+ .slider-home{ overflow-x:hidden;
 	.dipta-slider-home{ position:absolute;margin:-290px 0 0 30px;}
 	.info-banner{ @extend %dipta-resum-slider-home;}
-	img{width: 100% !important;height: auto;}
+	img{height: auto;}
  }
  
 .dipta-img-float{@extend %dipta-img-float;}
@@ -132,13 +152,19 @@ header{
 .dipta-body{ @extend %dipta-body; }
 .dipta-concatenats{ @extend %dipta-concatenats;}
 
-.navigation-1{ @extend %container705; h1{ @extend %dipta-title-img-a;} p{ @extend %dipta-quote-h4c;  border:0;} 
+.navigation-1{ @include span-columns(9);
+	 img{ max-width: 100% !important;}
+	 h1{ @extend %dipta-title-img-a;} p{ @extend %dipta-quote-h4c;  border:0;} 
 	.bloc{ @extend %dipta-box-eb-border; margin:0 2rem 0 2rem; p:before{content:"";padding:0;margin:0;} p{margin:0;}}
 }
-.navigation-2{ @extend %container705; h1{ @extend %dipta-title-img-b;} p{ @extend %dipta-quote-h4; border:0;} 
+.navigation-2{ @include span-columns(9);
+	 img{ max-width: 100% !important;}
+	 h1{ @extend %dipta-title-img-b;} p{ @extend %dipta-quote-h4; border:0;} 
 	.bloc{@extend %dipta-box-blue-border; margin:0 2rem 0 2rem; p:before{content:"";padding:0;margin:0;}}
 }
-.navigation-3{ @extend %container705; h1{ @extend %dipta-title-img-c;} p{ @extend %dipta-quote-h4c;  border:0; } 
+.navigation-3{ @include span-columns(9);
+	  img{ max-width: 100% !important;}
+	 h1{ @extend %dipta-title-img-c;} p{ @extend %dipta-quote-h4c;  border:0; } 
 	.bloc{ @extend %dipta-box-eb; margin:0 2rem 0 2rem; p:before{content:"";padding:0;margin:0;}p{margin:0;}}
  }
 
@@ -159,8 +185,7 @@ header{
 	}
 } 
 /*navigation*/
-#s3{
- @extend %container940;
+#s3{ @include container; @include dipta-container-show;
  
 .box-1{ @extend %container705; 
 
@@ -182,10 +207,10 @@ header{
 
 } 
 /*pallete colors*/
-#s5,#s7,#s4{ @extend %container940;}
+#s5,#s7,#s4{ @include container; @include dipta-container-show;}
 
 /*bloc*/
-#s6{ @extend %container940;
+#s6{ @include container; @include dipta-container-show;
 	
 	.bloc1{ display:inline-block;
 		@extend %dipta-bloc-blue-border;

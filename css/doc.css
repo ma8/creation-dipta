@@ -1,4 +1,4 @@
-@charset "CP850";
+@charset "UTF-8";
 @import url(http://fonts.googleapis.com/css?family=Droid+Sans:400,700);
 @import url(http://fonts.googleapis.com/css?family=Roboto+Condensed:400,300,700);
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:400,700,300,600,800);
@@ -12,8 +12,8 @@
 */
 /**
  * @file
- * Creation for compass - Front-end framework de  la Diputaci¢ de Tarragona.
- * @Miguel µngel Ramos. 
+ * Creation for compass - Front-end framework de  la DiputaciÃ³ de Tarragona.
+ * @Miguel Ãngel Ramos. 
  *
  */
 /* Compass*/
@@ -28,7 +28,7 @@ code[class*="language-"],
 pre[class*="language-"] {
   color: black;
   text-shadow: 0 1px white;
-  font-family: Consolas, Monaco, "Andale Mono", monospace;
+  font-family: Consolas, Monaco, 'Andale Mono', monospace;
   direction: ltr;
   text-align: left;
   white-space: pre;
@@ -65,7 +65,7 @@ pre[class*="language-"] {
 /* line 45, ../sass/creation/base/_syntax.scss */
 pre[class*="language-"] {
   padding: 1em;
-  margin: 0.5em 0;
+  margin: .5em 0;
   overflow: auto;
 }
 
@@ -74,7 +74,7 @@ pre[class*="language-"] {
 pre[class*="language-"] {
   /* #FEFA83  #f5f2f0 #FFFBEA #FEFA83;*/
   background: #FEFA83;
-  border: 1px solid #d2caa7;
+  border: 1px solid #D2CAA7;
 }
 
 /* Inline code */
@@ -182,7 +182,7 @@ pre[data-line] {
   top: .4em;
   left: .6em;
   min-width: 1em;
-  padding: 0 0.5em;
+  padding: 0 .5em;
   background-color: rgba(153, 122, 102, 0.4);
   color: #f5f2f0;
   font: bold 65%/1.5 sans-serif;
@@ -222,7 +222,7 @@ pre.line-numbers > code {
   width: 3em;
   /* works for line-numbers below 1000 lines */
   letter-spacing: -1px;
-  border-right: 1px solid #999999;
+  border-right: 1px solid #999;
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -306,38 +306,24 @@ invert($color)
 *	Imports + Golden ratio + responsive typography
 * 	$font-a;contingut + $font-b;Headings + $font-c; especial
 */
-/*Syntax custom*/
-/* line 12, ../sass/creation/custom/_typography.scss */
-code {
-  font-size: 1.2rem;
-  font-family: Consolas,Monaco,"Andale Mono",monospace;
-}
-
-/* line 13, ../sass/creation/custom/_typography.scss */
-pre {
-  overflow-x: scroll !important;
-  overflow-y: scroll !important;
-  width: 650px;
-}
-
-/* line 16, ../sass/creation/custom/_typography.scss */
+/* line 14, ../sass/creation/custom/_typography.scss */
 p, #s2 .slider-home .info-banner .text-banner {
   font-weight: 300;
 }
 
-/* line 17, ../sass/creation/custom/_typography.scss */
+/* line 15, ../sass/creation/custom/_typography.scss */
 a {
   color: #0083a9;
   text-decoration: none;
 }
 
-/* line 18, ../sass/creation/custom/_typography.scss */
+/* line 16, ../sass/creation/custom/_typography.scss */
 a:hover {
   text-decoration: underline;
 }
 
 /* Headings*/
-/* line 21, ../sass/creation/custom/_typography.scss */
+/* line 19, ../sass/creation/custom/_typography.scss */
 h1 {
   /*body*/
   font-size: 3rem;
@@ -346,7 +332,7 @@ h1 {
   letter-spacing: -0.2rem;
 }
 
-/* line 22, ../sass/creation/custom/_typography.scss */
+/* line 20, ../sass/creation/custom/_typography.scss */
 h2 {
   font-size: 2.7rem;
   font-weight: 400;
@@ -354,7 +340,7 @@ h2 {
   letter-spacing: -0.06rem;
 }
 
-/* line 23, ../sass/creation/custom/_typography.scss */
+/* line 21, ../sass/creation/custom/_typography.scss */
 h3, h2.title-doc {
   font-size: 2.25rem;
   font-weight: 400;
@@ -362,7 +348,7 @@ h3, h2.title-doc {
   letter-spacing: -0.06rem;
 }
 
-/* line 24, ../sass/creation/custom/_typography.scss */
+/* line 22, ../sass/creation/custom/_typography.scss */
 h4 {
   font-size: 1.5rem;
   font-weight: 400;
@@ -370,7 +356,7 @@ h4 {
   letter-spacing: -0.06rem;
 }
 
-/* line 25, ../sass/creation/custom/_typography.scss */
+/* line 23, ../sass/creation/custom/_typography.scss */
 h5 {
   font-size: 1.245rem;
   font-weight: 400;
@@ -378,7 +364,7 @@ h5 {
   letter-spacing: -0.06rem;
 }
 
-/* line 26, ../sass/creation/custom/_typography.scss */
+/* line 24, ../sass/creation/custom/_typography.scss */
 h6, #s2 .dipta-caption {
   font-size: 1.125rem;
   font-weight: 400;
@@ -387,7 +373,7 @@ h6, #s2 .dipta-caption {
 }
 
 /* Paragraph size h1,h2,h3,h4,h5.h6*/
-/* line 30, ../sass/creation/custom/_typography.scss */
+/* line 28, ../sass/creation/custom/_typography.scss */
 #s1 .paragraph p:nth-child(1), #s1 .paragraph #s2 .slider-home .info-banner .text-banner:nth-child(1), #s2 .slider-home .info-banner #s1 .paragraph .text-banner:nth-child(1) {
   font-size: 3rem;
   font-weight: 100;
@@ -395,7 +381,7 @@ h6, #s2 .dipta-caption {
   letter-spacing: 0;
 }
 
-/* line 31, ../sass/creation/custom/_typography.scss */
+/* line 29, ../sass/creation/custom/_typography.scss */
 #s1 .quote blockquote:nth-child(2), #s1 .quote blockquote:nth-child(14), #s1 .paragraph p:nth-child(2), #s1 .paragraph #s2 .slider-home .info-banner .text-banner:nth-child(2), #s2 .slider-home .info-banner #s1 .paragraph .text-banner:nth-child(2) {
   font-size: 2.7rem;
   font-weight: 100;
@@ -403,7 +389,7 @@ h6, #s2 .dipta-caption {
   letter-spacing: 0;
 }
 
-/* line 32, ../sass/creation/custom/_typography.scss */
+/* line 30, ../sass/creation/custom/_typography.scss */
 #s1 .quote blockquote:nth-child(5), #s1 .quote blockquote:nth-child(17), #s1 .paragraph p:nth-child(3), #s1 .paragraph #s2 .slider-home .info-banner .text-banner:nth-child(3), #s2 .slider-home .info-banner #s1 .paragraph .text-banner:nth-child(3) {
   font-size: 2.25rem;
   font-weight: 100;
@@ -411,7 +397,7 @@ h6, #s2 .dipta-caption {
   letter-spacing: 0;
 }
 
-/* line 33, ../sass/creation/custom/_typography.scss */
+/* line 31, ../sass/creation/custom/_typography.scss */
 #s1 .quote blockquote:nth-child(8), #s1 .quote blockquote:nth-child(23), #s2 .navigation-2 p, #s2 .navigation-2 .slider-home .info-banner .text-banner, #s2 .slider-home .info-banner .navigation-2 .text-banner, #s1 .quote blockquote:nth-child(20), #s2 .navigation-1 p, #s2 .navigation-1 .slider-home .info-banner .text-banner, #s2 .slider-home .info-banner .navigation-1 .text-banner, #s2 .navigation-3 p, #s2 .navigation-3 .slider-home .info-banner .text-banner, #s2 .slider-home .info-banner .navigation-3 .text-banner, #s1 .paragraph p:nth-child(4), #s1 .paragraph #s2 .slider-home .info-banner .text-banner:nth-child(4), #s2 .slider-home .info-banner #s1 .paragraph .text-banner:nth-child(4) {
   font-size: 1.5rem;
   font-weight: 100;
@@ -419,7 +405,7 @@ h6, #s2 .dipta-caption {
   letter-spacing: 0;
 }
 
-/* line 34, ../sass/creation/custom/_typography.scss */
+/* line 32, ../sass/creation/custom/_typography.scss */
 #s1 .quote blockquote:nth-child(11), #s3 .box-1 .bloc p, #s3 .box-1 .bloc #s2 .slider-home .info-banner .text-banner, #s2 .slider-home .info-banner #s3 .box-1 .bloc .text-banner, #s2 .navigation-3 .bloc p, #s3 .box-1 .bloc1 p, #s2 .navigation-3 .bloc .slider-home .info-banner .text-banner, #s2 .slider-home .info-banner .navigation-3 .bloc .text-banner, #s3 .box-1 .bloc1 #s2 .slider-home .info-banner .text-banner, #s2 .slider-home .info-banner #s3 .box-1 .bloc1 .text-banner, #s3 .box-1 .bloc2 p, #s3 .box-1 .bloc2 #s2 .slider-home .info-banner .text-banner, #s2 .slider-home .info-banner #s3 .box-1 .bloc2 .text-banner, #s2 .navigation-2 .bloc p, #s3 .box-2 .bloc p, #s3 .box-3 .bloc p, #s2 .navigation-2 .bloc .slider-home .info-banner .text-banner, #s2 .slider-home .info-banner .navigation-2 .bloc .text-banner, #s3 .box-2 .bloc #s2 .slider-home .info-banner .text-banner, #s2 .slider-home .info-banner #s3 .box-2 .bloc .text-banner, #s3 .box-3 .bloc #s2 .slider-home .info-banner .text-banner, #s2 .slider-home .info-banner #s3 .box-3 .bloc .text-banner, #s6 .bloc1 p, #s6 .bloc2 p, #s6 .bloc3 p, #s6 .bloc4 p, #s6 .bloc1 #s2 .slider-home .info-banner .text-banner, #s2 .slider-home .info-banner #s6 .bloc1 .text-banner, #s6 .bloc2 #s2 .slider-home .info-banner .text-banner, #s2 .slider-home .info-banner #s6 .bloc2 .text-banner, #s6 .bloc3 #s2 .slider-home .info-banner .text-banner, #s2 .slider-home .info-banner #s6 .bloc3 .text-banner, #s6 .bloc4 #s2 .slider-home .info-banner .text-banner, #s2 .slider-home .info-banner #s6 .bloc4 .text-banner, #s2 .navigation-1 .bloc p, #s3 .box-2 .bloc1 p, #s3 .box-3 .bloc1 p, #s2 .navigation-1 .bloc .slider-home .info-banner .text-banner, #s2 .slider-home .info-banner .navigation-1 .bloc .text-banner, #s3 .box-2 .bloc1 #s2 .slider-home .info-banner .text-banner, #s2 .slider-home .info-banner #s3 .box-2 .bloc1 .text-banner, #s3 .box-3 .bloc1 #s2 .slider-home .info-banner .text-banner, #s2 .slider-home .info-banner #s3 .box-3 .bloc1 .text-banner, #s3 .box-2 .bloc2 p, #s3 .box-3 .bloc2 p, #s3 .box-2 .bloc2 #s2 .slider-home .info-banner .text-banner, #s2 .slider-home .info-banner #s3 .box-2 .bloc2 .text-banner, #s3 .box-3 .bloc2 #s2 .slider-home .info-banner .text-banner, #s2 .slider-home .info-banner #s3 .box-3 .bloc2 .text-banner, .dipta-resum p, .dipta-resum #s2 .slider-home .info-banner .text-banner, #s2 .slider-home .info-banner .dipta-resum .text-banner, #s2 .dipta-concatenats, #s1 .paragraph p:nth-child(5), #s1 .paragraph #s2 .slider-home .info-banner .text-banner:nth-child(5), #s2 .slider-home .info-banner #s1 .paragraph .text-banner:nth-child(5) {
   font-size: 1.245rem;
   font-weight: 100;
@@ -427,7 +413,7 @@ h6, #s2 .dipta-caption {
   letter-spacing: 0;
 }
 
-/* line 35, ../sass/creation/custom/_typography.scss */
+/* line 33, ../sass/creation/custom/_typography.scss */
 #s1 .paragraph p:nth-child(6), #s1 .paragraph #s2 .slider-home .info-banner .text-banner:nth-child(6), #s2 .slider-home .info-banner #s1 .paragraph .text-banner:nth-child(6) {
   font-size: 1.125rem;
   font-weight: 100;
@@ -435,12 +421,12 @@ h6, #s2 .dipta-caption {
   letter-spacing: 0;
 }
 
-/* line 37, ../sass/creation/custom/_typography.scss */
-#s1 .headings-especifics h1, #s1 .headings-especifics h2, #s1 .headings-especifics h3, #s1 .headings-especifics h2.title-doc, #s1 .headings-especifics h4, #s1 .headings-especifics h5 {
+/* line 35, ../sass/creation/custom/_typography.scss */
+#s1 .headings-especifics h1, #s1 .headings-especifics h2, #s1 .headings-especifics h3, #s1 .headings-especifics h4, #s1 .headings-especifics h5 {
   font-weight: 300;
 }
 
-/* line 38, ../sass/creation/custom/_typography.scss */
+/* line 36, ../sass/creation/custom/_typography.scss */
 #s2 #dipta-noticia h2, #s2 #dipta-agenda h2, #s6 .bloc1 h2, #s6 .bloc2 h2, #s6 .bloc3 h2, #s6 .bloc4 h2 {
   padding: 2rem 0 2rem 5rem;
   margin: 0;
@@ -450,13 +436,13 @@ h6, #s2 .dipta-caption {
 }
 
 /* Blockquotes*/
-/* line 48, ../sass/creation/custom/_typography.scss */
+/* line 46, ../sass/creation/custom/_typography.scss */
 #s1 .quote blockquote:nth-child(2), #s1 .quote blockquote:nth-child(5), #s1 .quote blockquote:nth-child(8), #s1 .quote blockquote:nth-child(23), #s2 .navigation-2 p, #s2 .navigation-2 .slider-home .info-banner .text-banner, #s2 .slider-home .info-banner .navigation-2 .text-banner, #s1 .quote blockquote:nth-child(11), #s1 .quote blockquote:nth-child(14), #s1 .quote blockquote:nth-child(17), #s1 .quote blockquote:nth-child(20), #s2 .navigation-1 p, #s2 .navigation-1 .slider-home .info-banner .text-banner, #s2 .slider-home .info-banner .navigation-1 .text-banner, #s2 .navigation-3 p, #s2 .navigation-3 .slider-home .info-banner .text-banner, #s2 .slider-home .info-banner .navigation-3 .text-banner {
-  border-bottom: 1px solid #ebebeb;
-  border-top: 1px solid #ebebeb;
+  border-bottom: 1px solid #EBEBEB;
+  border-top: 1px solid #EBEBEB;
 }
 
-/* line 49, ../sass/creation/custom/_typography.scss */
+/* line 47, ../sass/creation/custom/_typography.scss */
 #s1 .quote blockquote:nth-child(14):before, #s1 .quote blockquote:nth-child(17):before, #s1 .quote blockquote:nth-child(20):before, #s2 .navigation-1 p:before, #s2 .navigation-1 .slider-home .info-banner .text-banner:before, #s2 .slider-home .info-banner .navigation-1 .text-banner:before, #s2 .navigation-3 p:before, #s2 .navigation-3 .slider-home .info-banner .text-banner:before, #s2 .slider-home .info-banner .navigation-3 .text-banner:before {
   display: block;
   content: "\201C";
@@ -468,45 +454,45 @@ h6, #s2 .dipta-caption {
   margin-top: 25px;
 }
 
-/* line 52, ../sass/creation/custom/_typography.scss */
+/* line 50, ../sass/creation/custom/_typography.scss */
 #s1 .quote blockquote:nth-child(2) {
   font-weight: 100;
   padding: 2.3%;
 }
 
-/* line 53, ../sass/creation/custom/_typography.scss */
+/* line 51, ../sass/creation/custom/_typography.scss */
 #s1 .quote blockquote:nth-child(5) {
   font-weight: 100;
   padding: 2.3%;
 }
 
-/* line 54, ../sass/creation/custom/_typography.scss */
+/* line 52, ../sass/creation/custom/_typography.scss */
 #s1 .quote blockquote:nth-child(8), #s1 .quote blockquote:nth-child(23), #s2 .navigation-2 p, #s2 .navigation-2 .slider-home .info-banner .text-banner, #s2 .slider-home .info-banner .navigation-2 .text-banner {
   font-weight: 100;
   padding: 2.3%;
 }
 
-/* line 55, ../sass/creation/custom/_typography.scss */
+/* line 53, ../sass/creation/custom/_typography.scss */
 #s1 .quote blockquote:nth-child(11) {
   font-weight: 100;
   padding: 2.3%;
 }
 
-/* line 58, ../sass/creation/custom/_typography.scss */
+/* line 56, ../sass/creation/custom/_typography.scss */
 #s1 .quote blockquote:nth-child(14) {
   font-weight: 100;
   margin-left: 5%;
   padding: 2.3% 2.3% 2.3% 5.3%;
 }
 
-/* line 62, ../sass/creation/custom/_typography.scss */
+/* line 60, ../sass/creation/custom/_typography.scss */
 #s1 .quote blockquote:nth-child(17) {
   font-weight: 100;
   margin-left: 5%;
   padding: 2.3% 2.3% 2.3% 5.3%;
 }
 
-/* line 66, ../sass/creation/custom/_typography.scss */
+/* line 64, ../sass/creation/custom/_typography.scss */
 #s1 .quote blockquote:nth-child(20), #s2 .navigation-1 p, #s2 .navigation-1 .slider-home .info-banner .text-banner, #s2 .slider-home .info-banner .navigation-1 .text-banner, #s2 .navigation-3 p, #s2 .navigation-3 .slider-home .info-banner .text-banner, #s2 .slider-home .info-banner .navigation-3 .text-banner {
   font-weight: 100;
   margin-left: 5%;
@@ -536,7 +522,7 @@ h6, #s2 .dipta-caption {
 
 /* line 14, ../sass/creation/custom/_elements.scss */
 #s3 .box-1 .bloc h1, #s3 .box-1 .bloc h2, #s3 .box-1 .bloc h3, #s3 .box-1 .bloc h2.title-doc, #s3 .box-1 .bloc h4, #s3 .box-1 .bloc h5, #s3 .box-1 .bloc h6, #s3 .box-1 .bloc #s2 .dipta-caption, #s2 #s3 .box-1 .bloc .dipta-caption, #s2 .navigation-3 .bloc h1, #s3 .box-1 .bloc1 h1, #s2 .navigation-3 .bloc h2, #s3 .box-1 .bloc1 h2, #s2 .navigation-3 .bloc h3, #s3 .box-1 .bloc1 h3, #s2 .navigation-3 .bloc h2.title-doc, #s3 .box-1 .bloc1 h2.title-doc, #s2 .navigation-3 .bloc h4, #s3 .box-1 .bloc1 h4, #s2 .navigation-3 .bloc h5, #s3 .box-1 .bloc1 h5, #s2 .navigation-3 .bloc h6, #s3 .box-1 .bloc1 h6, #s2 .navigation-3 .bloc .dipta-caption, #s3 .box-1 .bloc1 #s2 .dipta-caption, #s2 #s3 .box-1 .bloc1 .dipta-caption, #s3 .box-1 .bloc2 h1, #s3 .box-1 .bloc2 h2, #s3 .box-1 .bloc2 h3, #s3 .box-1 .bloc2 h2.title-doc, #s3 .box-1 .bloc2 h4, #s3 .box-1 .bloc2 h5, #s3 .box-1 .bloc2 h6, #s3 .box-1 .bloc2 #s2 .dipta-caption, #s2 #s3 .box-1 .bloc2 .dipta-caption, #s2 .navigation-2 .bloc h1, #s3 .box-2 .bloc h1, #s3 .box-3 .bloc h1, #s2 .navigation-2 .bloc h2, #s3 .box-2 .bloc h2, #s3 .box-3 .bloc h2, #s2 .navigation-2 .bloc h3, #s3 .box-2 .bloc h3, #s3 .box-3 .bloc h3, #s2 .navigation-2 .bloc h2.title-doc, #s3 .box-2 .bloc h2.title-doc, #s3 .box-3 .bloc h2.title-doc, #s2 .navigation-2 .bloc h4, #s3 .box-2 .bloc h4, #s3 .box-3 .bloc h4, #s2 .navigation-2 .bloc h5, #s3 .box-2 .bloc h5, #s3 .box-3 .bloc h5, #s2 .navigation-2 .bloc h6, #s3 .box-2 .bloc h6, #s3 .box-3 .bloc h6, #s2 .navigation-2 .bloc .dipta-caption, #s3 .box-2 .bloc #s2 .dipta-caption, #s2 #s3 .box-2 .bloc .dipta-caption, #s3 .box-3 .bloc #s2 .dipta-caption, #s2 #s3 .box-3 .bloc .dipta-caption, #s6 .bloc1 h2, #s6 .bloc2 h2, #s6 .bloc3 h2, #s6 .bloc4 h2, #s2 .navigation-1 .bloc h1, #s3 .box-2 .bloc1 h1, #s3 .box-3 .bloc1 h1, #s2 .navigation-1 .bloc h2, #s3 .box-2 .bloc1 h2, #s3 .box-3 .bloc1 h2, #s2 .navigation-1 .bloc h3, #s3 .box-2 .bloc1 h3, #s3 .box-3 .bloc1 h3, #s2 .navigation-1 .bloc h2.title-doc, #s3 .box-2 .bloc1 h2.title-doc, #s3 .box-3 .bloc1 h2.title-doc, #s2 .navigation-1 .bloc h4, #s3 .box-2 .bloc1 h4, #s3 .box-3 .bloc1 h4, #s2 .navigation-1 .bloc h5, #s3 .box-2 .bloc1 h5, #s3 .box-3 .bloc1 h5, #s2 .navigation-1 .bloc h6, #s3 .box-2 .bloc1 h6, #s3 .box-3 .bloc1 h6, #s2 .navigation-1 .bloc .dipta-caption, #s3 .box-2 .bloc1 #s2 .dipta-caption, #s2 #s3 .box-2 .bloc1 .dipta-caption, #s3 .box-3 .bloc1 #s2 .dipta-caption, #s2 #s3 .box-3 .bloc1 .dipta-caption, #s3 .box-2 .bloc2 h1, #s3 .box-3 .bloc2 h1, #s3 .box-2 .bloc2 h2, #s3 .box-3 .bloc2 h2, #s3 .box-2 .bloc2 h3, #s3 .box-3 .bloc2 h3, #s3 .box-2 .bloc2 h2.title-doc, #s3 .box-3 .bloc2 h2.title-doc, #s3 .box-2 .bloc2 h4, #s3 .box-3 .bloc2 h4, #s3 .box-2 .bloc2 h5, #s3 .box-3 .bloc2 h5, #s3 .box-2 .bloc2 h6, #s3 .box-3 .bloc2 h6, #s3 .box-2 .bloc2 #s2 .dipta-caption, #s2 #s3 .box-2 .bloc2 .dipta-caption, #s3 .box-3 .bloc2 #s2 .dipta-caption, #s2 #s3 .box-3 .bloc2 .dipta-caption {
-  border-bottom: 0.4rem solid white;
+  border-bottom: 0.4rem solid #fff;
 }
 
 /* line 15, ../sass/creation/custom/_elements.scss */
@@ -696,7 +682,7 @@ h6, #s2 .dipta-caption {
 }
 /* line 79, ../sass/creation/custom/_elements.scss */
 #s2 #dipta-noticia .contingut div.dipta-resum:last-child, #s2 #dipta-agenda .contingut div.dipta-resum:last-child, #s6 .bloc1 .contingut div.dipta-resum:last-child, #s6 .bloc2 .contingut div.dipta-resum:last-child, #s6 .bloc3 .contingut div.dipta-resum:last-child, #s6 .bloc4 .contingut div.dipta-resum:last-child {
-  border-bottom: 0!important;
+  border-bottom: 0 !important;
 }
 
 /* Element Conacatenats*/
@@ -754,7 +740,7 @@ h6, #s2 .dipta-caption {
   padding: 10px;
   position: relative;
   background-color: #fff;
-  margin: -55px 0 0 0;
+  margin: -55px 0 0  0;
 }
 
 /* line 21, ../sass/creation/custom/_images.scss */
@@ -862,7 +848,7 @@ desaturate($verd, 10%);
 grayscale($verd);
 invert($verd);
 */
-/* line 39, ../sass/creation/layouts/_responsive-creation.scss */
+/* line 38, ../sass/creation/layouts/_responsive-creation.scss */
 html {
   /*Typography responsive for compass breakpoints*/
   font-size: 62.5%;
@@ -871,239 +857,6 @@ html {
    @include at-breakpoint($ipad) { font-size:62.5%; }
    @include at-breakpoint($ipad-landscape) { font-size:62.5%; }
    */
-}
-
-/* line 81, ../sass/creation/layouts/_responsive-creation.scss */
-#s8 {
-  /*Container*/
-  *zoom: 1;
-  max-width: 1504px;
-  max-width: 94rem;
-  _width: 1504px;
-  padding-left: 32px;
-  padding-left: 2rem;
-  padding-right: 32px;
-  padding-right: 2rem;
-  margin-left: auto;
-  margin-right: auto;
-  /*mobile first*/
-}
-/* line 38, ../../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
-#s8:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-/* line 85, ../sass/creation/layouts/_responsive-creation.scss */
-#s8 .header {
-  background-color: #0083a9;
-  /*omega = eliminar gutter-width*/
-  width: 100%;
-  float: right;
-  margin-right: 0;
-  *margin-left: -2rem;
-  display: inline;
-}
-@media (min-width: 940px) {
-  /* line 85, ../sass/creation/layouts/_responsive-creation.scss */
-  #s8 .header {
-    width: 100%;
-    float: right;
-    margin-right: 0;
-  }
-}
-@media (min-width: 768px) and (max-width: 939px) {
-  /* line 85, ../sass/creation/layouts/_responsive-creation.scss */
-  #s8 .header {
-    width: 100%;
-    float: right;
-    margin-right: 0;
-  }
-}
-@media (min-width: 940px) {
-  /* line 85, ../sass/creation/layouts/_responsive-creation.scss */
-  #s8 .header {
-    width: 100%;
-    float: right;
-    margin-right: 0;
-  }
-}
-/* line 92, ../sass/creation/layouts/_responsive-creation.scss */
-#s8 .sidebar-1 {
-  background-color: #ebebeb;
-  width: 100%;
-  float: left;
-  margin-right: 5.26316%;
-  display: inline;
-}
-@media (min-width: 768px) and (max-width: 939px) {
-  /* line 92, ../sass/creation/layouts/_responsive-creation.scss */
-  #s8 .sidebar-1 {
-    width: 23.40426%;
-    float: left;
-    margin-right: 2.12766%;
-  }
-}
-@media (min-width: 940px) {
-  /* line 92, ../sass/creation/layouts/_responsive-creation.scss */
-  #s8 .sidebar-1 {
-    width: 23.80952%;
-    float: left;
-    margin-right: 1.5873%;
-  }
-}
-/* line 97, ../sass/creation/layouts/_responsive-creation.scss */
-#s8 .sidebar-2 {
-  background-color: #ebebeb;
-  width: 100%;
-  float: left;
-  margin-right: 5.26316%;
-  display: inline;
-}
-@media (min-width: 768px) and (max-width: 939px) {
-  /* line 97, ../sass/creation/layouts/_responsive-creation.scss */
-  #s8 .sidebar-2 {
-    width: 74.46809%;
-    float: right;
-    margin-right: 0;
-  }
-}
-@media (min-width: 940px) {
-  /* line 97, ../sass/creation/layouts/_responsive-creation.scss */
-  #s8 .sidebar-2 {
-    width: 23.80952%;
-    float: right;
-    margin-right: 0;
-  }
-}
-/* line 102, ../sass/creation/layouts/_responsive-creation.scss */
-#s8 .content {
-  background-color: #014b60;
-  /*omega = eliminar gutter-width*/
-  width: 100%;
-  float: left;
-  margin-right: 5.26316%;
-  display: inline;
-}
-@media (min-width: 768px) and (max-width: 939px) {
-  /* line 102, ../sass/creation/layouts/_responsive-creation.scss */
-  #s8 .content {
-    width: 100%;
-    float: left;
-    margin-right: 2.12766%;
-  }
-}
-@media (min-width: 940px) {
-  /* line 102, ../sass/creation/layouts/_responsive-creation.scss */
-  #s8 .content {
-    width: 49.20635%;
-    float: left;
-    margin-right: 1.5873%;
-  }
-}
-/* line 108, ../sass/creation/layouts/_responsive-creation.scss */
-#s8 .footer {
-  background-color: #014b60;
-  /*omega = eliminar gutter-width*/
-  padding-right: 21.05263%;
-  padding-left: 21.05263%;
-  width: 57.89474%;
-  float: left;
-  margin-right: 5.26316%;
-  display: inline;
-  /*responsive footer*/
-}
-@media (min-width: 768px) and (max-width: 939px) {
-  /* line 108, ../sass/creation/layouts/_responsive-creation.scss */
-  #s8 .footer {
-    padding-right: 8.51064%;
-    padding-left: 8.51064%;
-    width: 82.97872%;
-    float: left;
-    margin-right: 2.12766%;
-  }
-}
-@media (min-width: 940px) {
-  /* line 108, ../sass/creation/layouts/_responsive-creation.scss */
-  #s8 .footer {
-    padding-right: 6.34921%;
-    padding-left: 6.34921%;
-    width: 87.30159%;
-    float: left;
-    margin-right: 1.5873%;
-  }
-}
-/* line 115, ../sass/creation/layouts/_responsive-creation.scss */
-#s8 .footer .footer-1 {
-  background-color: #ebebeb;
-  width: 100%;
-  float: left;
-  margin-right: 5.26316%;
-  display: inline;
-}
-@media (min-width: 768px) and (max-width: 939px) {
-  /* line 115, ../sass/creation/layouts/_responsive-creation.scss */
-  #s8 .footer .footer-1 {
-    width: 23.40426%;
-    float: left;
-    margin-right: 2.12766%;
-  }
-}
-@media (min-width: 940px) {
-  /* line 115, ../sass/creation/layouts/_responsive-creation.scss */
-  #s8 .footer .footer-1 {
-    width: 23.80952%;
-    float: left;
-    margin-right: 1.5873%;
-  }
-}
-/* line 120, ../sass/creation/layouts/_responsive-creation.scss */
-#s8 .footer .footer-3 {
-  background-color: #ebebeb;
-  width: 100%;
-  float: left;
-  margin-right: 5.26316%;
-  display: inline;
-}
-@media (min-width: 768px) and (max-width: 939px) {
-  /* line 120, ../sass/creation/layouts/_responsive-creation.scss */
-  #s8 .footer .footer-3 {
-    width: 23.40426%;
-    float: right;
-    margin-right: 0;
-  }
-}
-@media (min-width: 940px) {
-  /* line 120, ../sass/creation/layouts/_responsive-creation.scss */
-  #s8 .footer .footer-3 {
-    width: 23.80952%;
-    float: right;
-    margin-right: 0;
-  }
-}
-/* line 125, ../sass/creation/layouts/_responsive-creation.scss */
-#s8 .footer .footer-2 {
-  background-color: #ebebeb;
-  width: 100%;
-  float: left;
-  margin-right: 5.26316%;
-  display: inline;
-}
-@media (min-width: 768px) and (max-width: 939px) {
-  /* line 125, ../sass/creation/layouts/_responsive-creation.scss */
-  #s8 .footer .footer-2 {
-    width: 48.93617%;
-    float: left;
-    margin-right: 2.12766%;
-  }
-}
-@media (min-width: 940px) {
-  /* line 125, ../sass/creation/layouts/_responsive-creation.scss */
-  #s8 .footer .footer-2 {
-    width: 49.20635%;
-    float: left;
-    margin-right: 1.5873%;
-  }
 }
 
 /* line 26, ../sass/creation/_creation.scss */
@@ -1123,6 +876,19 @@ body {
   line-height: 2.3rem;
 }
 
+/*Syntax custom*/
+/* line 42, ../sass/creation/_creation.scss */
+code {
+  font-size: 1.2rem;
+  font-family: Consolas,Monaco,"Andale Mono",monospace;
+}
+
+/* line 43, ../sass/creation/_creation.scss */
+pre {
+  overflow-x: scroll !important;
+  overflow-y: scroll !important;
+}
+
 /* Palette colors*/
 /* Night Pencil */
 /* Magic */
@@ -1130,43 +896,95 @@ body {
 /* J Peterman Shirt */
 /* winter morning */
 /*Containers*/
-/* line 21, ../sass/doc.scss */
-#s1, #s2, #s3, #s5, #s7, #s4, #s6 {
-  max-width: 940px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-/* line 22, ../sass/doc.scss */
-header .container, #s1 .headings-especifics, #s1 .headings-generals, #s1 .links, #s1 .paragraph, #s1 .quote, #s1 .body, #s2 .navigation-1, #s2 .navigation-2, #s2 .navigation-3, #s2 #dipta-noticia .container, #s2 #dipta-agenda .container, #s3 .box-1, #s3 .box-2, #s3 .box-3 {
-  max-width: 705px;
-  margin-left: auto;
-  margin-right: auto;
+/* line 25, ../sass/doc.scss */
+#s1 .headings-especifics, #s1 .headings-generals, #s1 .links, #s1 .paragraph, #s1 .quote, #s1 .body, #s2 #dipta-noticia .container, #s2 #dipta-agenda .container, #s3 .box-1, #s3 .box-2, #s3 .box-3 {
+  /*max-width: 705px; margin-left: auto; margin-right: auto;*/
 }
 
 /* Header Doc*/
-/* line 28, ../sass/doc.scss */
+/* line 50, ../sass/doc.scss */
 header {
   background-color: #0083a9;
   padding: 90px 0 10px 0;
   text-align: center;
   color: #fff;
 }
-/* line 32, ../sass/doc.scss */
+/* line 52, ../sass/doc.scss */
+header .container {
+  *zoom: 1;
+  max-width: 1504px;
+  max-width: 94rem;
+  _width: 1504px;
+  padding-left: 32px;
+  padding-left: 2rem;
+  padding-right: 32px;
+  padding-right: 2rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* line 38, ../../../../../../Users/miguelangel/.rvm/gems/ruby-2.0.0-p247/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
+header .container:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+@media (max-width: 320px) {
+  /* line 52, ../sass/doc.scss */
+  header .container {
+    max-width: 480px;
+    max-width: 30rem;
+  }
+}
+@media (min-width: 321px) and (max-width: 480px) {
+  /* line 52, ../sass/doc.scss */
+  header .container {
+    max-width: 608px;
+    max-width: 38rem;
+  }
+}
+@media (min-width: 481px) and (max-width: 568px) {
+  /* line 52, ../sass/doc.scss */
+  header .container {
+    max-width: 736px;
+    max-width: 46rem;
+  }
+}
+@media (min-width: 569px) and (max-width: 767px) {
+  /* line 52, ../sass/doc.scss */
+  header .container {
+    max-width: 992px;
+    max-width: 62rem;
+  }
+}
+@media (min-width: 768px) and (max-width: 939px) {
+  /* line 52, ../sass/doc.scss */
+  header .container {
+    max-width: 1376px;
+    max-width: 86rem;
+  }
+}
+@media (min-width: 940px) {
+  /* line 52, ../sass/doc.scss */
+  header .container {
+    max-width: 1504px;
+    max-width: 94rem;
+  }
+}
+/* line 54, ../sass/doc.scss */
 header p, header #s2 .slider-home .info-banner .text-banner, #s2 .slider-home .info-banner header .text-banner {
   color: #f0f7f9;
   line-height: 1.4;
   font-size: 21px;
   font-weight: normal;
 }
-/* line 33, ../sass/doc.scss */
+/* line 55, ../sass/doc.scss */
 header h1 {
   font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
   font-weight: 500;
   font-size: 50px;
   margin: 20px 0 3px 0;
 }
-/* line 35, ../sass/doc.scss */
+/* line 57, ../sass/doc.scss */
 header .btn-down {
   display: inline-block;
   -webkit-border-radius: 6px;
@@ -1175,7 +993,7 @@ header .btn-down {
   -o-border-radius: 6px;
   border-radius: 6px;
   background-color: transparent;
-  border: 1px solid #f0f7f9;
+  border: 1px solid #F0F7F9;
   color: #FFFFFF;
   font-size: 17px;
   font-weight: 500;
@@ -1190,40 +1008,40 @@ header .btn-down {
   transition-property: all;
   transition-timing-function: ease-in-out;
 }
-/* line 43, ../sass/doc.scss */
+/* line 65, ../sass/doc.scss */
 header .btn-down:hover {
   background-color: #fff;
   color: #0083a9;
   text-decoration: none;
 }
-/* line 44, ../sass/doc.scss */
+/* line 66, ../sass/doc.scss */
 header ul {
   font-size: 14px;
   margin-top: 20px;
   list-style: none;
   padding: 25px;
 }
-/* line 49, ../sass/doc.scss */
+/* line 71, ../sass/doc.scss */
 header ul li {
   display: inline;
 }
-/* line 50, ../sass/doc.scss */
+/* line 72, ../sass/doc.scss */
 header ul li a {
   color: #f0f7f9;
   font-weight: normal;
 }
-/* line 51, ../sass/doc.scss */
+/* line 73, ../sass/doc.scss */
 header ul li a:hover {
   text-shadow: 0 0 10px rgba(255, 255, 255, 0.55);
   text-decoration: none;
 }
-/* line 53, ../sass/doc.scss */
+/* line 75, ../sass/doc.scss */
 header ul li + li {
   margin-left: 20px;
 }
 
 /* Navigation doc */
-/* line 58, ../sass/doc.scss */
+/* line 80, ../sass/doc.scss */
 nav {
   position: fixed;
   top: 0;
@@ -1233,7 +1051,7 @@ nav {
   background-color: #F0F7F9;
   z-index: 1000;
 }
-/* line 60, ../sass/doc.scss */
+/* line 82, ../sass/doc.scss */
 nav ul {
   list-style: none;
   padding: 5px;
@@ -1241,7 +1059,7 @@ nav ul {
   text-align: center;
   text-transform: uppercase;
 }
-/* line 62, ../sass/doc.scss */
+/* line 84, ../sass/doc.scss */
 nav ul li {
   display: inline;
   font-size: 1.2rem;
@@ -1249,7 +1067,7 @@ nav ul li {
 }
 
 /*Footter doc */
-/* line 67, ../sass/doc.scss */
+/* line 89, ../sass/doc.scss */
 footer {
   background-color: #014B60;
   margin: 150px 0 0 0;
@@ -1257,13 +1075,13 @@ footer {
   color: #fff;
   text-align: center;
 }
-/* line 67, ../sass/doc.scss */
+/* line 89, ../sass/doc.scss */
 footer h5 {
   margin: 0;
 }
 
 /*Title docs page*/
-/* line 71, ../sass/doc.scss */
+/* line 93, ../sass/doc.scss */
 h1.title-doc {
   padding-top: 80px;
   font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
@@ -1271,7 +1089,7 @@ h1.title-doc {
   font-size: 5rem;
 }
 
-/* line 73, ../sass/doc.scss */
+/* line 95, ../sass/doc.scss */
 h2.title-doc {
   background-color: #014b60;
   padding: 1%;
@@ -1280,13 +1098,13 @@ h2.title-doc {
 }
 
 /* Palette colors*/
-/* line 76, ../sass/doc.scss */
+/* line 98, ../sass/doc.scss */
 #palette-colors {
   list-style: none;
   padding: 0;
   /* #464646 #EBEBEB #0083A9 #F0F7F9 #014B60*/
 }
-/* line 78, ../sass/doc.scss */
+/* line 100, ../sass/doc.scss */
 #palette-colors li {
   color: #ccc;
   display: inline-block;
@@ -1294,7 +1112,7 @@ h2.title-doc {
   height: 350px;
   text-align: center;
 }
-/* line 79, ../sass/doc.scss */
+/* line 101, ../sass/doc.scss */
 #palette-colors li i {
   color: #ccc;
   display: block;
@@ -1303,180 +1121,943 @@ h2.title-doc {
   margin: 0;
   font-size: 20px;
 }
-/* line 80, ../sass/doc.scss */
+/* line 102, ../sass/doc.scss */
 #palette-colors li h5 {
   padding-top: 30px;
   margin-bottom: 3px;
 }
-/* line 82, ../sass/doc.scss */
+/* line 104, ../sass/doc.scss */
 #palette-colors li:first-child {
   background-color: #464646;
 }
-/* line 83, ../sass/doc.scss */
+/* line 105, ../sass/doc.scss */
 #palette-colors li:nth-child(2) {
   background-color: #014B60;
 }
-/* line 84, ../sass/doc.scss */
+/* line 106, ../sass/doc.scss */
 #palette-colors li:nth-child(3) {
   background-color: #0083A9;
 }
-/* line 85, ../sass/doc.scss */
+/* line 107, ../sass/doc.scss */
 #palette-colors li:nth-child(4) {
   background-color: #EBEBEB;
 }
-/* line 86, ../sass/doc.scss */
+/* line 108, ../sass/doc.scss */
 #palette-colors li:last-child {
   background-color: #F0F7F9;
 }
 
 /*typography*/
-/* line 97, ../sass/doc.scss */
+/* line 114, ../sass/doc.scss */
+#s1 {
+  *zoom: 1;
+  max-width: 1504px;
+  max-width: 94rem;
+  _width: 1504px;
+  padding-left: 32px;
+  padding-left: 2rem;
+  padding-right: 32px;
+  padding-right: 2rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* line 38, ../../../../../../Users/miguelangel/.rvm/gems/ruby-2.0.0-p247/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
+#s1:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+@media (max-width: 320px) {
+  /* line 114, ../sass/doc.scss */
+  #s1 {
+    max-width: 480px;
+    max-width: 30rem;
+    background-image: -webkit-gradient(linear, 0% 50%, 100% 50%, color-stop(0%, #ffffff), color-stop(0%, #d7f9ec), color-stop(20%, #d7f9ec), color-stop(20%, #ffffff), color-stop(26.66667%, #ffffff), color-stop(26.66667%, #d7f9ec), color-stop(46.66667%, #d7f9ec), color-stop(46.66667%, #ffffff), color-stop(53.33333%, #ffffff), color-stop(53.33333%, #d7f9ec), color-stop(73.33333%, #d7f9ec), color-stop(73.33333%, #ffffff), color-stop(80.0%, #ffffff), color-stop(80%, #d7f9ec), color-stop(100%, #d7f9ec), color-stop(100%, #ffffff), color-stop(100%, #ffffff));
+    background-image: -webkit-linear-gradient(left, #ffffff 0%, #d7f9ec 0%, #d7f9ec 20%, #ffffff 20%, #ffffff 26.66667%, #d7f9ec 26.66667%, #d7f9ec 46.66667%, #ffffff 46.66667%, #ffffff 53.33333%, #d7f9ec 53.33333%, #d7f9ec 73.33333%, #ffffff 73.33333%, #ffffff 80.0%, #d7f9ec 80%, #d7f9ec 100%, #ffffff 100%, #ffffff 100%);
+    background-image: -moz-linear-gradient(left, #ffffff 0%, #d7f9ec 0%, #d7f9ec 20%, #ffffff 20%, #ffffff 26.66667%, #d7f9ec 26.66667%, #d7f9ec 46.66667%, #ffffff 46.66667%, #ffffff 53.33333%, #d7f9ec 53.33333%, #d7f9ec 73.33333%, #ffffff 73.33333%, #ffffff 80.0%, #d7f9ec 80%, #d7f9ec 100%, #ffffff 100%, #ffffff 100%);
+    background-image: -o-linear-gradient(left, #ffffff 0%, #d7f9ec 0%, #d7f9ec 20%, #ffffff 20%, #ffffff 26.66667%, #d7f9ec 26.66667%, #d7f9ec 46.66667%, #ffffff 46.66667%, #ffffff 53.33333%, #d7f9ec 53.33333%, #d7f9ec 73.33333%, #ffffff 73.33333%, #ffffff 80.0%, #d7f9ec 80%, #d7f9ec 100%, #ffffff 100%, #ffffff 100%);
+    background-image: linear-gradient(left, #ffffff 0%, #d7f9ec 0%, #d7f9ec 20%, #ffffff 20%, #ffffff 26.66667%, #d7f9ec 26.66667%, #d7f9ec 46.66667%, #ffffff 46.66667%, #ffffff 53.33333%, #d7f9ec 53.33333%, #d7f9ec 73.33333%, #ffffff 73.33333%, #ffffff 80.0%, #d7f9ec 80%, #d7f9ec 100%, #ffffff 100%, #ffffff 100%);
+    background-position: left top;
+    -webkit-background-origin: content;
+    -moz-background-origin: content;
+    -ms-background-origin: content-box;
+    -o-background-origin: content-box;
+    background-origin: content-box;
+    -webkit-background-clip: content-box;
+    -moz-background-clip: content-box;
+    background-clip: content-box;
+  }
+}
+@media (min-width: 321px) and (max-width: 480px) {
+  /* line 114, ../sass/doc.scss */
+  #s1 {
+    max-width: 608px;
+    max-width: 38rem;
+    background-image: -webkit-gradient(linear, 0% 50%, 100% 50%, color-stop(0%, #ffffff), color-stop(0%, #d7f9ec), color-stop(15.78947%, #d7f9ec), color-stop(15.78947%, #ffffff), color-stop(21.05263%, #ffffff), color-stop(21.05263%, #d7f9ec), color-stop(36.84211%, #d7f9ec), color-stop(36.84211%, #ffffff), color-stop(42.10526%, #ffffff), color-stop(42.10526%, #d7f9ec), color-stop(57.89474%, #d7f9ec), color-stop(57.89474%, #ffffff), color-stop(63.15789%, #ffffff), color-stop(63.15789%, #d7f9ec), color-stop(78.94737%, #d7f9ec), color-stop(78.94737%, #ffffff), color-stop(84.21053%, #ffffff), color-stop(84.21053%, #d7f9ec), color-stop(100.0%, #d7f9ec), color-stop(100.0%, #ffffff), color-stop(100%, #ffffff));
+    background-image: -webkit-linear-gradient(left, #ffffff 0%, #d7f9ec 0%, #d7f9ec 15.78947%, #ffffff 15.78947%, #ffffff 21.05263%, #d7f9ec 21.05263%, #d7f9ec 36.84211%, #ffffff 36.84211%, #ffffff 42.10526%, #d7f9ec 42.10526%, #d7f9ec 57.89474%, #ffffff 57.89474%, #ffffff 63.15789%, #d7f9ec 63.15789%, #d7f9ec 78.94737%, #ffffff 78.94737%, #ffffff 84.21053%, #d7f9ec 84.21053%, #d7f9ec 100.0%, #ffffff 100.0%, #ffffff 100%);
+    background-image: -moz-linear-gradient(left, #ffffff 0%, #d7f9ec 0%, #d7f9ec 15.78947%, #ffffff 15.78947%, #ffffff 21.05263%, #d7f9ec 21.05263%, #d7f9ec 36.84211%, #ffffff 36.84211%, #ffffff 42.10526%, #d7f9ec 42.10526%, #d7f9ec 57.89474%, #ffffff 57.89474%, #ffffff 63.15789%, #d7f9ec 63.15789%, #d7f9ec 78.94737%, #ffffff 78.94737%, #ffffff 84.21053%, #d7f9ec 84.21053%, #d7f9ec 100.0%, #ffffff 100.0%, #ffffff 100%);
+    background-image: -o-linear-gradient(left, #ffffff 0%, #d7f9ec 0%, #d7f9ec 15.78947%, #ffffff 15.78947%, #ffffff 21.05263%, #d7f9ec 21.05263%, #d7f9ec 36.84211%, #ffffff 36.84211%, #ffffff 42.10526%, #d7f9ec 42.10526%, #d7f9ec 57.89474%, #ffffff 57.89474%, #ffffff 63.15789%, #d7f9ec 63.15789%, #d7f9ec 78.94737%, #ffffff 78.94737%, #ffffff 84.21053%, #d7f9ec 84.21053%, #d7f9ec 100.0%, #ffffff 100.0%, #ffffff 100%);
+    background-image: linear-gradient(left, #ffffff 0%, #d7f9ec 0%, #d7f9ec 15.78947%, #ffffff 15.78947%, #ffffff 21.05263%, #d7f9ec 21.05263%, #d7f9ec 36.84211%, #ffffff 36.84211%, #ffffff 42.10526%, #d7f9ec 42.10526%, #d7f9ec 57.89474%, #ffffff 57.89474%, #ffffff 63.15789%, #d7f9ec 63.15789%, #d7f9ec 78.94737%, #ffffff 78.94737%, #ffffff 84.21053%, #d7f9ec 84.21053%, #d7f9ec 100.0%, #ffffff 100.0%, #ffffff 100%);
+    background-position: left top;
+    -webkit-background-origin: content;
+    -moz-background-origin: content;
+    -ms-background-origin: content-box;
+    -o-background-origin: content-box;
+    background-origin: content-box;
+    -webkit-background-clip: content-box;
+    -moz-background-clip: content-box;
+    background-clip: content-box;
+  }
+}
+@media (min-width: 481px) and (max-width: 568px) {
+  /* line 114, ../sass/doc.scss */
+  #s1 {
+    max-width: 736px;
+    max-width: 46rem;
+    background-image: -webkit-gradient(linear, 0% 50%, 100% 50%, color-stop(0%, #ffffff), color-stop(0%, #d7f9ec), color-stop(13.04348%, #d7f9ec), color-stop(13.04348%, #ffffff), color-stop(17.3913%, #ffffff), color-stop(17.3913%, #d7f9ec), color-stop(30.43478%, #d7f9ec), color-stop(30.43478%, #ffffff), color-stop(34.78261%, #ffffff), color-stop(34.78261%, #d7f9ec), color-stop(47.82609%, #d7f9ec), color-stop(47.82609%, #ffffff), color-stop(52.17391%, #ffffff), color-stop(52.17391%, #d7f9ec), color-stop(65.21739%, #d7f9ec), color-stop(65.21739%, #ffffff), color-stop(69.56522%, #ffffff), color-stop(69.56522%, #d7f9ec), color-stop(82.6087%, #d7f9ec), color-stop(82.6087%, #ffffff), color-stop(86.95652%, #ffffff), color-stop(86.95652%, #d7f9ec), color-stop(100%, #d7f9ec), color-stop(100%, #ffffff), color-stop(100%, #ffffff));
+    background-image: -webkit-linear-gradient(left, #ffffff 0%, #d7f9ec 0%, #d7f9ec 13.04348%, #ffffff 13.04348%, #ffffff 17.3913%, #d7f9ec 17.3913%, #d7f9ec 30.43478%, #ffffff 30.43478%, #ffffff 34.78261%, #d7f9ec 34.78261%, #d7f9ec 47.82609%, #ffffff 47.82609%, #ffffff 52.17391%, #d7f9ec 52.17391%, #d7f9ec 65.21739%, #ffffff 65.21739%, #ffffff 69.56522%, #d7f9ec 69.56522%, #d7f9ec 82.6087%, #ffffff 82.6087%, #ffffff 86.95652%, #d7f9ec 86.95652%, #d7f9ec 100%, #ffffff 100%, #ffffff 100%);
+    background-image: -moz-linear-gradient(left, #ffffff 0%, #d7f9ec 0%, #d7f9ec 13.04348%, #ffffff 13.04348%, #ffffff 17.3913%, #d7f9ec 17.3913%, #d7f9ec 30.43478%, #ffffff 30.43478%, #ffffff 34.78261%, #d7f9ec 34.78261%, #d7f9ec 47.82609%, #ffffff 47.82609%, #ffffff 52.17391%, #d7f9ec 52.17391%, #d7f9ec 65.21739%, #ffffff 65.21739%, #ffffff 69.56522%, #d7f9ec 69.56522%, #d7f9ec 82.6087%, #ffffff 82.6087%, #ffffff 86.95652%, #d7f9ec 86.95652%, #d7f9ec 100%, #ffffff 100%, #ffffff 100%);
+    background-image: -o-linear-gradient(left, #ffffff 0%, #d7f9ec 0%, #d7f9ec 13.04348%, #ffffff 13.04348%, #ffffff 17.3913%, #d7f9ec 17.3913%, #d7f9ec 30.43478%, #ffffff 30.43478%, #ffffff 34.78261%, #d7f9ec 34.78261%, #d7f9ec 47.82609%, #ffffff 47.82609%, #ffffff 52.17391%, #d7f9ec 52.17391%, #d7f9ec 65.21739%, #ffffff 65.21739%, #ffffff 69.56522%, #d7f9ec 69.56522%, #d7f9ec 82.6087%, #ffffff 82.6087%, #ffffff 86.95652%, #d7f9ec 86.95652%, #d7f9ec 100%, #ffffff 100%, #ffffff 100%);
+    background-image: linear-gradient(left, #ffffff 0%, #d7f9ec 0%, #d7f9ec 13.04348%, #ffffff 13.04348%, #ffffff 17.3913%, #d7f9ec 17.3913%, #d7f9ec 30.43478%, #ffffff 30.43478%, #ffffff 34.78261%, #d7f9ec 34.78261%, #d7f9ec 47.82609%, #ffffff 47.82609%, #ffffff 52.17391%, #d7f9ec 52.17391%, #d7f9ec 65.21739%, #ffffff 65.21739%, #ffffff 69.56522%, #d7f9ec 69.56522%, #d7f9ec 82.6087%, #ffffff 82.6087%, #ffffff 86.95652%, #d7f9ec 86.95652%, #d7f9ec 100%, #ffffff 100%, #ffffff 100%);
+    background-position: left top;
+    -webkit-background-origin: content;
+    -moz-background-origin: content;
+    -ms-background-origin: content-box;
+    -o-background-origin: content-box;
+    background-origin: content-box;
+    -webkit-background-clip: content-box;
+    -moz-background-clip: content-box;
+    background-clip: content-box;
+  }
+}
+@media (min-width: 569px) and (max-width: 767px) {
+  /* line 114, ../sass/doc.scss */
+  #s1 {
+    max-width: 992px;
+    max-width: 62rem;
+    background-image: -webkit-gradient(linear, 0% 50%, 100% 50%, color-stop(0%, #ffffff), color-stop(0%, #d7f9ec), color-stop(9.67742%, #d7f9ec), color-stop(9.67742%, #ffffff), color-stop(12.90323%, #ffffff), color-stop(12.90323%, #d7f9ec), color-stop(22.58065%, #d7f9ec), color-stop(22.58065%, #ffffff), color-stop(25.80645%, #ffffff), color-stop(25.80645%, #d7f9ec), color-stop(35.48387%, #d7f9ec), color-stop(35.48387%, #ffffff), color-stop(38.70968%, #ffffff), color-stop(38.70968%, #d7f9ec), color-stop(48.3871%, #d7f9ec), color-stop(48.3871%, #ffffff), color-stop(51.6129%, #ffffff), color-stop(51.6129%, #d7f9ec), color-stop(61.29032%, #d7f9ec), color-stop(61.29032%, #ffffff), color-stop(64.51613%, #ffffff), color-stop(64.51613%, #d7f9ec), color-stop(74.19355%, #d7f9ec), color-stop(74.19355%, #ffffff), color-stop(77.41935%, #ffffff), color-stop(77.41935%, #d7f9ec), color-stop(87.09677%, #d7f9ec), color-stop(87.09677%, #ffffff), color-stop(90.32258%, #ffffff), color-stop(90.32258%, #d7f9ec), color-stop(100.0%, #d7f9ec), color-stop(100.0%, #ffffff), color-stop(100%, #ffffff));
+    background-image: -webkit-linear-gradient(left, #ffffff 0%, #d7f9ec 0%, #d7f9ec 9.67742%, #ffffff 9.67742%, #ffffff 12.90323%, #d7f9ec 12.90323%, #d7f9ec 22.58065%, #ffffff 22.58065%, #ffffff 25.80645%, #d7f9ec 25.80645%, #d7f9ec 35.48387%, #ffffff 35.48387%, #ffffff 38.70968%, #d7f9ec 38.70968%, #d7f9ec 48.3871%, #ffffff 48.3871%, #ffffff 51.6129%, #d7f9ec 51.6129%, #d7f9ec 61.29032%, #ffffff 61.29032%, #ffffff 64.51613%, #d7f9ec 64.51613%, #d7f9ec 74.19355%, #ffffff 74.19355%, #ffffff 77.41935%, #d7f9ec 77.41935%, #d7f9ec 87.09677%, #ffffff 87.09677%, #ffffff 90.32258%, #d7f9ec 90.32258%, #d7f9ec 100.0%, #ffffff 100.0%, #ffffff 100%);
+    background-image: -moz-linear-gradient(left, #ffffff 0%, #d7f9ec 0%, #d7f9ec 9.67742%, #ffffff 9.67742%, #ffffff 12.90323%, #d7f9ec 12.90323%, #d7f9ec 22.58065%, #ffffff 22.58065%, #ffffff 25.80645%, #d7f9ec 25.80645%, #d7f9ec 35.48387%, #ffffff 35.48387%, #ffffff 38.70968%, #d7f9ec 38.70968%, #d7f9ec 48.3871%, #ffffff 48.3871%, #ffffff 51.6129%, #d7f9ec 51.6129%, #d7f9ec 61.29032%, #ffffff 61.29032%, #ffffff 64.51613%, #d7f9ec 64.51613%, #d7f9ec 74.19355%, #ffffff 74.19355%, #ffffff 77.41935%, #d7f9ec 77.41935%, #d7f9ec 87.09677%, #ffffff 87.09677%, #ffffff 90.32258%, #d7f9ec 90.32258%, #d7f9ec 100.0%, #ffffff 100.0%, #ffffff 100%);
+    background-image: -o-linear-gradient(left, #ffffff 0%, #d7f9ec 0%, #d7f9ec 9.67742%, #ffffff 9.67742%, #ffffff 12.90323%, #d7f9ec 12.90323%, #d7f9ec 22.58065%, #ffffff 22.58065%, #ffffff 25.80645%, #d7f9ec 25.80645%, #d7f9ec 35.48387%, #ffffff 35.48387%, #ffffff 38.70968%, #d7f9ec 38.70968%, #d7f9ec 48.3871%, #ffffff 48.3871%, #ffffff 51.6129%, #d7f9ec 51.6129%, #d7f9ec 61.29032%, #ffffff 61.29032%, #ffffff 64.51613%, #d7f9ec 64.51613%, #d7f9ec 74.19355%, #ffffff 74.19355%, #ffffff 77.41935%, #d7f9ec 77.41935%, #d7f9ec 87.09677%, #ffffff 87.09677%, #ffffff 90.32258%, #d7f9ec 90.32258%, #d7f9ec 100.0%, #ffffff 100.0%, #ffffff 100%);
+    background-image: linear-gradient(left, #ffffff 0%, #d7f9ec 0%, #d7f9ec 9.67742%, #ffffff 9.67742%, #ffffff 12.90323%, #d7f9ec 12.90323%, #d7f9ec 22.58065%, #ffffff 22.58065%, #ffffff 25.80645%, #d7f9ec 25.80645%, #d7f9ec 35.48387%, #ffffff 35.48387%, #ffffff 38.70968%, #d7f9ec 38.70968%, #d7f9ec 48.3871%, #ffffff 48.3871%, #ffffff 51.6129%, #d7f9ec 51.6129%, #d7f9ec 61.29032%, #ffffff 61.29032%, #ffffff 64.51613%, #d7f9ec 64.51613%, #d7f9ec 74.19355%, #ffffff 74.19355%, #ffffff 77.41935%, #d7f9ec 77.41935%, #d7f9ec 87.09677%, #ffffff 87.09677%, #ffffff 90.32258%, #d7f9ec 90.32258%, #d7f9ec 100.0%, #ffffff 100.0%, #ffffff 100%);
+    background-position: left top;
+    -webkit-background-origin: content;
+    -moz-background-origin: content;
+    -ms-background-origin: content-box;
+    -o-background-origin: content-box;
+    background-origin: content-box;
+    -webkit-background-clip: content-box;
+    -moz-background-clip: content-box;
+    background-clip: content-box;
+  }
+}
+@media (min-width: 768px) and (max-width: 939px) {
+  /* line 114, ../sass/doc.scss */
+  #s1 {
+    max-width: 1376px;
+    max-width: 86rem;
+    background-image: -webkit-gradient(linear, 0% 50%, 100% 50%, color-stop(0%, #ffffff), color-stop(0%, #d7f9ec), color-stop(6.97674%, #d7f9ec), color-stop(6.97674%, #ffffff), color-stop(9.30233%, #ffffff), color-stop(9.30233%, #d7f9ec), color-stop(16.27907%, #d7f9ec), color-stop(16.27907%, #ffffff), color-stop(18.60465%, #ffffff), color-stop(18.60465%, #d7f9ec), color-stop(25.5814%, #d7f9ec), color-stop(25.5814%, #ffffff), color-stop(27.90698%, #ffffff), color-stop(27.90698%, #d7f9ec), color-stop(34.88372%, #d7f9ec), color-stop(34.88372%, #ffffff), color-stop(37.2093%, #ffffff), color-stop(37.2093%, #d7f9ec), color-stop(44.18605%, #d7f9ec), color-stop(44.18605%, #ffffff), color-stop(46.51163%, #ffffff), color-stop(46.51163%, #d7f9ec), color-stop(53.48837%, #d7f9ec), color-stop(53.48837%, #ffffff), color-stop(55.81395%, #ffffff), color-stop(55.81395%, #d7f9ec), color-stop(62.7907%, #d7f9ec), color-stop(62.7907%, #ffffff), color-stop(65.11628%, #ffffff), color-stop(65.11628%, #d7f9ec), color-stop(72.09302%, #d7f9ec), color-stop(72.09302%, #ffffff), color-stop(74.4186%, #ffffff), color-stop(74.4186%, #d7f9ec), color-stop(81.39535%, #d7f9ec), color-stop(81.39535%, #ffffff), color-stop(83.72093%, #ffffff), color-stop(83.72093%, #d7f9ec), color-stop(90.69767%, #d7f9ec), color-stop(90.69767%, #ffffff), color-stop(93.02326%, #ffffff), color-stop(93.02326%, #d7f9ec), color-stop(100.0%, #d7f9ec), color-stop(100.0%, #ffffff), color-stop(100%, #ffffff));
+    background-image: -webkit-linear-gradient(left, #ffffff 0%, #d7f9ec 0%, #d7f9ec 6.97674%, #ffffff 6.97674%, #ffffff 9.30233%, #d7f9ec 9.30233%, #d7f9ec 16.27907%, #ffffff 16.27907%, #ffffff 18.60465%, #d7f9ec 18.60465%, #d7f9ec 25.5814%, #ffffff 25.5814%, #ffffff 27.90698%, #d7f9ec 27.90698%, #d7f9ec 34.88372%, #ffffff 34.88372%, #ffffff 37.2093%, #d7f9ec 37.2093%, #d7f9ec 44.18605%, #ffffff 44.18605%, #ffffff 46.51163%, #d7f9ec 46.51163%, #d7f9ec 53.48837%, #ffffff 53.48837%, #ffffff 55.81395%, #d7f9ec 55.81395%, #d7f9ec 62.7907%, #ffffff 62.7907%, #ffffff 65.11628%, #d7f9ec 65.11628%, #d7f9ec 72.09302%, #ffffff 72.09302%, #ffffff 74.4186%, #d7f9ec 74.4186%, #d7f9ec 81.39535%, #ffffff 81.39535%, #ffffff 83.72093%, #d7f9ec 83.72093%, #d7f9ec 90.69767%, #ffffff 90.69767%, #ffffff 93.02326%, #d7f9ec 93.02326%, #d7f9ec 100.0%, #ffffff 100.0%, #ffffff 100%);
+    background-image: -moz-linear-gradient(left, #ffffff 0%, #d7f9ec 0%, #d7f9ec 6.97674%, #ffffff 6.97674%, #ffffff 9.30233%, #d7f9ec 9.30233%, #d7f9ec 16.27907%, #ffffff 16.27907%, #ffffff 18.60465%, #d7f9ec 18.60465%, #d7f9ec 25.5814%, #ffffff 25.5814%, #ffffff 27.90698%, #d7f9ec 27.90698%, #d7f9ec 34.88372%, #ffffff 34.88372%, #ffffff 37.2093%, #d7f9ec 37.2093%, #d7f9ec 44.18605%, #ffffff 44.18605%, #ffffff 46.51163%, #d7f9ec 46.51163%, #d7f9ec 53.48837%, #ffffff 53.48837%, #ffffff 55.81395%, #d7f9ec 55.81395%, #d7f9ec 62.7907%, #ffffff 62.7907%, #ffffff 65.11628%, #d7f9ec 65.11628%, #d7f9ec 72.09302%, #ffffff 72.09302%, #ffffff 74.4186%, #d7f9ec 74.4186%, #d7f9ec 81.39535%, #ffffff 81.39535%, #ffffff 83.72093%, #d7f9ec 83.72093%, #d7f9ec 90.69767%, #ffffff 90.69767%, #ffffff 93.02326%, #d7f9ec 93.02326%, #d7f9ec 100.0%, #ffffff 100.0%, #ffffff 100%);
+    background-image: -o-linear-gradient(left, #ffffff 0%, #d7f9ec 0%, #d7f9ec 6.97674%, #ffffff 6.97674%, #ffffff 9.30233%, #d7f9ec 9.30233%, #d7f9ec 16.27907%, #ffffff 16.27907%, #ffffff 18.60465%, #d7f9ec 18.60465%, #d7f9ec 25.5814%, #ffffff 25.5814%, #ffffff 27.90698%, #d7f9ec 27.90698%, #d7f9ec 34.88372%, #ffffff 34.88372%, #ffffff 37.2093%, #d7f9ec 37.2093%, #d7f9ec 44.18605%, #ffffff 44.18605%, #ffffff 46.51163%, #d7f9ec 46.51163%, #d7f9ec 53.48837%, #ffffff 53.48837%, #ffffff 55.81395%, #d7f9ec 55.81395%, #d7f9ec 62.7907%, #ffffff 62.7907%, #ffffff 65.11628%, #d7f9ec 65.11628%, #d7f9ec 72.09302%, #ffffff 72.09302%, #ffffff 74.4186%, #d7f9ec 74.4186%, #d7f9ec 81.39535%, #ffffff 81.39535%, #ffffff 83.72093%, #d7f9ec 83.72093%, #d7f9ec 90.69767%, #ffffff 90.69767%, #ffffff 93.02326%, #d7f9ec 93.02326%, #d7f9ec 100.0%, #ffffff 100.0%, #ffffff 100%);
+    background-image: linear-gradient(left, #ffffff 0%, #d7f9ec 0%, #d7f9ec 6.97674%, #ffffff 6.97674%, #ffffff 9.30233%, #d7f9ec 9.30233%, #d7f9ec 16.27907%, #ffffff 16.27907%, #ffffff 18.60465%, #d7f9ec 18.60465%, #d7f9ec 25.5814%, #ffffff 25.5814%, #ffffff 27.90698%, #d7f9ec 27.90698%, #d7f9ec 34.88372%, #ffffff 34.88372%, #ffffff 37.2093%, #d7f9ec 37.2093%, #d7f9ec 44.18605%, #ffffff 44.18605%, #ffffff 46.51163%, #d7f9ec 46.51163%, #d7f9ec 53.48837%, #ffffff 53.48837%, #ffffff 55.81395%, #d7f9ec 55.81395%, #d7f9ec 62.7907%, #ffffff 62.7907%, #ffffff 65.11628%, #d7f9ec 65.11628%, #d7f9ec 72.09302%, #ffffff 72.09302%, #ffffff 74.4186%, #d7f9ec 74.4186%, #d7f9ec 81.39535%, #ffffff 81.39535%, #ffffff 83.72093%, #d7f9ec 83.72093%, #d7f9ec 90.69767%, #ffffff 90.69767%, #ffffff 93.02326%, #d7f9ec 93.02326%, #d7f9ec 100.0%, #ffffff 100.0%, #ffffff 100%);
+    background-position: left top;
+    -webkit-background-origin: content;
+    -moz-background-origin: content;
+    -ms-background-origin: content-box;
+    -o-background-origin: content-box;
+    background-origin: content-box;
+    -webkit-background-clip: content-box;
+    -moz-background-clip: content-box;
+    background-clip: content-box;
+  }
+}
+@media (min-width: 940px) {
+  /* line 114, ../sass/doc.scss */
+  #s1 {
+    max-width: 1504px;
+    max-width: 94rem;
+    background-image: -webkit-gradient(linear, 0% 50%, 100% 50%, color-stop(0%, #ffffff), color-stop(0%, #d7f9ec), color-stop(6.38298%, #d7f9ec), color-stop(6.38298%, #ffffff), color-stop(8.51064%, #ffffff), color-stop(8.51064%, #d7f9ec), color-stop(14.89362%, #d7f9ec), color-stop(14.89362%, #ffffff), color-stop(17.02128%, #ffffff), color-stop(17.02128%, #d7f9ec), color-stop(23.40426%, #d7f9ec), color-stop(23.40426%, #ffffff), color-stop(25.53191%, #ffffff), color-stop(25.53191%, #d7f9ec), color-stop(31.91489%, #d7f9ec), color-stop(31.91489%, #ffffff), color-stop(34.04255%, #ffffff), color-stop(34.04255%, #d7f9ec), color-stop(40.42553%, #d7f9ec), color-stop(40.42553%, #ffffff), color-stop(42.55319%, #ffffff), color-stop(42.55319%, #d7f9ec), color-stop(48.93617%, #d7f9ec), color-stop(48.93617%, #ffffff), color-stop(51.06383%, #ffffff), color-stop(51.06383%, #d7f9ec), color-stop(57.44681%, #d7f9ec), color-stop(57.44681%, #ffffff), color-stop(59.57447%, #ffffff), color-stop(59.57447%, #d7f9ec), color-stop(65.95745%, #d7f9ec), color-stop(65.95745%, #ffffff), color-stop(68.08511%, #ffffff), color-stop(68.08511%, #d7f9ec), color-stop(74.46809%, #d7f9ec), color-stop(74.46809%, #ffffff), color-stop(76.59574%, #ffffff), color-stop(76.59574%, #d7f9ec), color-stop(82.97872%, #d7f9ec), color-stop(82.97872%, #ffffff), color-stop(85.10638%, #ffffff), color-stop(85.10638%, #d7f9ec), color-stop(91.48936%, #d7f9ec), color-stop(91.48936%, #ffffff), color-stop(93.61702%, #ffffff), color-stop(93.61702%, #d7f9ec), color-stop(100%, #d7f9ec), color-stop(100%, #ffffff), color-stop(100%, #ffffff));
+    background-image: -webkit-linear-gradient(left, #ffffff 0%, #d7f9ec 0%, #d7f9ec 6.38298%, #ffffff 6.38298%, #ffffff 8.51064%, #d7f9ec 8.51064%, #d7f9ec 14.89362%, #ffffff 14.89362%, #ffffff 17.02128%, #d7f9ec 17.02128%, #d7f9ec 23.40426%, #ffffff 23.40426%, #ffffff 25.53191%, #d7f9ec 25.53191%, #d7f9ec 31.91489%, #ffffff 31.91489%, #ffffff 34.04255%, #d7f9ec 34.04255%, #d7f9ec 40.42553%, #ffffff 40.42553%, #ffffff 42.55319%, #d7f9ec 42.55319%, #d7f9ec 48.93617%, #ffffff 48.93617%, #ffffff 51.06383%, #d7f9ec 51.06383%, #d7f9ec 57.44681%, #ffffff 57.44681%, #ffffff 59.57447%, #d7f9ec 59.57447%, #d7f9ec 65.95745%, #ffffff 65.95745%, #ffffff 68.08511%, #d7f9ec 68.08511%, #d7f9ec 74.46809%, #ffffff 74.46809%, #ffffff 76.59574%, #d7f9ec 76.59574%, #d7f9ec 82.97872%, #ffffff 82.97872%, #ffffff 85.10638%, #d7f9ec 85.10638%, #d7f9ec 91.48936%, #ffffff 91.48936%, #ffffff 93.61702%, #d7f9ec 93.61702%, #d7f9ec 100%, #ffffff 100%, #ffffff 100%);
+    background-image: -moz-linear-gradient(left, #ffffff 0%, #d7f9ec 0%, #d7f9ec 6.38298%, #ffffff 6.38298%, #ffffff 8.51064%, #d7f9ec 8.51064%, #d7f9ec 14.89362%, #ffffff 14.89362%, #ffffff 17.02128%, #d7f9ec 17.02128%, #d7f9ec 23.40426%, #ffffff 23.40426%, #ffffff 25.53191%, #d7f9ec 25.53191%, #d7f9ec 31.91489%, #ffffff 31.91489%, #ffffff 34.04255%, #d7f9ec 34.04255%, #d7f9ec 40.42553%, #ffffff 40.42553%, #ffffff 42.55319%, #d7f9ec 42.55319%, #d7f9ec 48.93617%, #ffffff 48.93617%, #ffffff 51.06383%, #d7f9ec 51.06383%, #d7f9ec 57.44681%, #ffffff 57.44681%, #ffffff 59.57447%, #d7f9ec 59.57447%, #d7f9ec 65.95745%, #ffffff 65.95745%, #ffffff 68.08511%, #d7f9ec 68.08511%, #d7f9ec 74.46809%, #ffffff 74.46809%, #ffffff 76.59574%, #d7f9ec 76.59574%, #d7f9ec 82.97872%, #ffffff 82.97872%, #ffffff 85.10638%, #d7f9ec 85.10638%, #d7f9ec 91.48936%, #ffffff 91.48936%, #ffffff 93.61702%, #d7f9ec 93.61702%, #d7f9ec 100%, #ffffff 100%, #ffffff 100%);
+    background-image: -o-linear-gradient(left, #ffffff 0%, #d7f9ec 0%, #d7f9ec 6.38298%, #ffffff 6.38298%, #ffffff 8.51064%, #d7f9ec 8.51064%, #d7f9ec 14.89362%, #ffffff 14.89362%, #ffffff 17.02128%, #d7f9ec 17.02128%, #d7f9ec 23.40426%, #ffffff 23.40426%, #ffffff 25.53191%, #d7f9ec 25.53191%, #d7f9ec 31.91489%, #ffffff 31.91489%, #ffffff 34.04255%, #d7f9ec 34.04255%, #d7f9ec 40.42553%, #ffffff 40.42553%, #ffffff 42.55319%, #d7f9ec 42.55319%, #d7f9ec 48.93617%, #ffffff 48.93617%, #ffffff 51.06383%, #d7f9ec 51.06383%, #d7f9ec 57.44681%, #ffffff 57.44681%, #ffffff 59.57447%, #d7f9ec 59.57447%, #d7f9ec 65.95745%, #ffffff 65.95745%, #ffffff 68.08511%, #d7f9ec 68.08511%, #d7f9ec 74.46809%, #ffffff 74.46809%, #ffffff 76.59574%, #d7f9ec 76.59574%, #d7f9ec 82.97872%, #ffffff 82.97872%, #ffffff 85.10638%, #d7f9ec 85.10638%, #d7f9ec 91.48936%, #ffffff 91.48936%, #ffffff 93.61702%, #d7f9ec 93.61702%, #d7f9ec 100%, #ffffff 100%, #ffffff 100%);
+    background-image: linear-gradient(left, #ffffff 0%, #d7f9ec 0%, #d7f9ec 6.38298%, #ffffff 6.38298%, #ffffff 8.51064%, #d7f9ec 8.51064%, #d7f9ec 14.89362%, #ffffff 14.89362%, #ffffff 17.02128%, #d7f9ec 17.02128%, #d7f9ec 23.40426%, #ffffff 23.40426%, #ffffff 25.53191%, #d7f9ec 25.53191%, #d7f9ec 31.91489%, #ffffff 31.91489%, #ffffff 34.04255%, #d7f9ec 34.04255%, #d7f9ec 40.42553%, #ffffff 40.42553%, #ffffff 42.55319%, #d7f9ec 42.55319%, #d7f9ec 48.93617%, #ffffff 48.93617%, #ffffff 51.06383%, #d7f9ec 51.06383%, #d7f9ec 57.44681%, #ffffff 57.44681%, #ffffff 59.57447%, #d7f9ec 59.57447%, #d7f9ec 65.95745%, #ffffff 65.95745%, #ffffff 68.08511%, #d7f9ec 68.08511%, #d7f9ec 74.46809%, #ffffff 74.46809%, #ffffff 76.59574%, #d7f9ec 76.59574%, #d7f9ec 82.97872%, #ffffff 82.97872%, #ffffff 85.10638%, #d7f9ec 85.10638%, #d7f9ec 91.48936%, #ffffff 91.48936%, #ffffff 93.61702%, #d7f9ec 93.61702%, #d7f9ec 100%, #ffffff 100%, #ffffff 100%);
+    background-position: left top;
+    -webkit-background-origin: content;
+    -moz-background-origin: content;
+    -ms-background-origin: content-box;
+    -o-background-origin: content-box;
+    background-origin: content-box;
+    -webkit-background-clip: content-box;
+    -moz-background-clip: content-box;
+    background-clip: content-box;
+  }
+}
+/* line 118, ../sass/doc.scss */
 #s1 .links a {
   font-weight: 600;
 }
 
 /*Images sources*/
-/* line 125, ../sass/doc.scss */
+/* line 143, ../sass/doc.scss */
+#s2 {
+  *zoom: 1;
+  max-width: 1504px;
+  max-width: 94rem;
+  _width: 1504px;
+  padding-left: 32px;
+  padding-left: 2rem;
+  padding-right: 32px;
+  padding-right: 2rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* line 38, ../../../../../../Users/miguelangel/.rvm/gems/ruby-2.0.0-p247/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
+#s2:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+@media (max-width: 320px) {
+  /* line 143, ../sass/doc.scss */
+  #s2 {
+    max-width: 480px;
+    max-width: 30rem;
+    background-image: -webkit-gradient(linear, 0% 50%, 100% 50%, color-stop(0%, #ffffff), color-stop(0%, #d7f9ec), color-stop(20%, #d7f9ec), color-stop(20%, #ffffff), color-stop(26.66667%, #ffffff), color-stop(26.66667%, #d7f9ec), color-stop(46.66667%, #d7f9ec), color-stop(46.66667%, #ffffff), color-stop(53.33333%, #ffffff), color-stop(53.33333%, #d7f9ec), color-stop(73.33333%, #d7f9ec), color-stop(73.33333%, #ffffff), color-stop(80.0%, #ffffff), color-stop(80%, #d7f9ec), color-stop(100%, #d7f9ec), color-stop(100%, #ffffff), color-stop(100%, #ffffff));
+    background-image: -webkit-linear-gradient(left, #ffffff 0%, #d7f9ec 0%, #d7f9ec 20%, #ffffff 20%, #ffffff 26.66667%, #d7f9ec 26.66667%, #d7f9ec 46.66667%, #ffffff 46.66667%, #ffffff 53.33333%, #d7f9ec 53.33333%, #d7f9ec 73.33333%, #ffffff 73.33333%, #ffffff 80.0%, #d7f9ec 80%, #d7f9ec 100%, #ffffff 100%, #ffffff 100%);
+    background-image: -moz-linear-gradient(left, #ffffff 0%, #d7f9ec 0%, #d7f9ec 20%, #ffffff 20%, #ffffff 26.66667%, #d7f9ec 26.66667%, #d7f9ec 46.66667%, #ffffff 46.66667%, #ffffff 53.33333%, #d7f9ec 53.33333%, #d7f9ec 73.33333%, #ffffff 73.33333%, #ffffff 80.0%, #d7f9ec 80%, #d7f9ec 100%, #ffffff 100%, #ffffff 100%);
+    background-image: -o-linear-gradient(left, #ffffff 0%, #d7f9ec 0%, #d7f9ec 20%, #ffffff 20%, #ffffff 26.66667%, #d7f9ec 26.66667%, #d7f9ec 46.66667%, #ffffff 46.66667%, #ffffff 53.33333%, #d7f9ec 53.33333%, #d7f9ec 73.33333%, #ffffff 73.33333%, #ffffff 80.0%, #d7f9ec 80%, #d7f9ec 100%, #ffffff 100%, #ffffff 100%);
+    background-image: linear-gradient(left, #ffffff 0%, #d7f9ec 0%, #d7f9ec 20%, #ffffff 20%, #ffffff 26.66667%, #d7f9ec 26.66667%, #d7f9ec 46.66667%, #ffffff 46.66667%, #ffffff 53.33333%, #d7f9ec 53.33333%, #d7f9ec 73.33333%, #ffffff 73.33333%, #ffffff 80.0%, #d7f9ec 80%, #d7f9ec 100%, #ffffff 100%, #ffffff 100%);
+    background-position: left top;
+    -webkit-background-origin: content;
+    -moz-background-origin: content;
+    -ms-background-origin: content-box;
+    -o-background-origin: content-box;
+    background-origin: content-box;
+    -webkit-background-clip: content-box;
+    -moz-background-clip: content-box;
+    background-clip: content-box;
+  }
+}
+@media (min-width: 321px) and (max-width: 480px) {
+  /* line 143, ../sass/doc.scss */
+  #s2 {
+    max-width: 608px;
+    max-width: 38rem;
+    background-image: -webkit-gradient(linear, 0% 50%, 100% 50%, color-stop(0%, #ffffff), color-stop(0%, #d7f9ec), color-stop(15.78947%, #d7f9ec), color-stop(15.78947%, #ffffff), color-stop(21.05263%, #ffffff), color-stop(21.05263%, #d7f9ec), color-stop(36.84211%, #d7f9ec), color-stop(36.84211%, #ffffff), color-stop(42.10526%, #ffffff), color-stop(42.10526%, #d7f9ec), color-stop(57.89474%, #d7f9ec), color-stop(57.89474%, #ffffff), color-stop(63.15789%, #ffffff), color-stop(63.15789%, #d7f9ec), color-stop(78.94737%, #d7f9ec), color-stop(78.94737%, #ffffff), color-stop(84.21053%, #ffffff), color-stop(84.21053%, #d7f9ec), color-stop(100.0%, #d7f9ec), color-stop(100.0%, #ffffff), color-stop(100%, #ffffff));
+    background-image: -webkit-linear-gradient(left, #ffffff 0%, #d7f9ec 0%, #d7f9ec 15.78947%, #ffffff 15.78947%, #ffffff 21.05263%, #d7f9ec 21.05263%, #d7f9ec 36.84211%, #ffffff 36.84211%, #ffffff 42.10526%, #d7f9ec 42.10526%, #d7f9ec 57.89474%, #ffffff 57.89474%, #ffffff 63.15789%, #d7f9ec 63.15789%, #d7f9ec 78.94737%, #ffffff 78.94737%, #ffffff 84.21053%, #d7f9ec 84.21053%, #d7f9ec 100.0%, #ffffff 100.0%, #ffffff 100%);
+    background-image: -moz-linear-gradient(left, #ffffff 0%, #d7f9ec 0%, #d7f9ec 15.78947%, #ffffff 15.78947%, #ffffff 21.05263%, #d7f9ec 21.05263%, #d7f9ec 36.84211%, #ffffff 36.84211%, #ffffff 42.10526%, #d7f9ec 42.10526%, #d7f9ec 57.89474%, #ffffff 57.89474%, #ffffff 63.15789%, #d7f9ec 63.15789%, #d7f9ec 78.94737%, #ffffff 78.94737%, #ffffff 84.21053%, #d7f9ec 84.21053%, #d7f9ec 100.0%, #ffffff 100.0%, #ffffff 100%);
+    background-image: -o-linear-gradient(left, #ffffff 0%, #d7f9ec 0%, #d7f9ec 15.78947%, #ffffff 15.78947%, #ffffff 21.05263%, #d7f9ec 21.05263%, #d7f9ec 36.84211%, #ffffff 36.84211%, #ffffff 42.10526%, #d7f9ec 42.10526%, #d7f9ec 57.89474%, #ffffff 57.89474%, #ffffff 63.15789%, #d7f9ec 63.15789%, #d7f9ec 78.94737%, #ffffff 78.94737%, #ffffff 84.21053%, #d7f9ec 84.21053%, #d7f9ec 100.0%, #ffffff 100.0%, #ffffff 100%);
+    background-image: linear-gradient(left, #ffffff 0%, #d7f9ec 0%, #d7f9ec 15.78947%, #ffffff 15.78947%, #ffffff 21.05263%, #d7f9ec 21.05263%, #d7f9ec 36.84211%, #ffffff 36.84211%, #ffffff 42.10526%, #d7f9ec 42.10526%, #d7f9ec 57.89474%, #ffffff 57.89474%, #ffffff 63.15789%, #d7f9ec 63.15789%, #d7f9ec 78.94737%, #ffffff 78.94737%, #ffffff 84.21053%, #d7f9ec 84.21053%, #d7f9ec 100.0%, #ffffff 100.0%, #ffffff 100%);
+    background-position: left top;
+    -webkit-background-origin: content;
+    -moz-background-origin: content;
+    -ms-background-origin: content-box;
+    -o-background-origin: content-box;
+    background-origin: content-box;
+    -webkit-background-clip: content-box;
+    -moz-background-clip: content-box;
+    background-clip: content-box;
+  }
+}
+@media (min-width: 481px) and (max-width: 568px) {
+  /* line 143, ../sass/doc.scss */
+  #s2 {
+    max-width: 736px;
+    max-width: 46rem;
+    background-image: -webkit-gradient(linear, 0% 50%, 100% 50%, color-stop(0%, #ffffff), color-stop(0%, #d7f9ec), color-stop(13.04348%, #d7f9ec), color-stop(13.04348%, #ffffff), color-stop(17.3913%, #ffffff), color-stop(17.3913%, #d7f9ec), color-stop(30.43478%, #d7f9ec), color-stop(30.43478%, #ffffff), color-stop(34.78261%, #ffffff), color-stop(34.78261%, #d7f9ec), color-stop(47.82609%, #d7f9ec), color-stop(47.82609%, #ffffff), color-stop(52.17391%, #ffffff), color-stop(52.17391%, #d7f9ec), color-stop(65.21739%, #d7f9ec), color-stop(65.21739%, #ffffff), color-stop(69.56522%, #ffffff), color-stop(69.56522%, #d7f9ec), color-stop(82.6087%, #d7f9ec), color-stop(82.6087%, #ffffff), color-stop(86.95652%, #ffffff), color-stop(86.95652%, #d7f9ec), color-stop(100%, #d7f9ec), color-stop(100%, #ffffff), color-stop(100%, #ffffff));
+    background-image: -webkit-linear-gradient(left, #ffffff 0%, #d7f9ec 0%, #d7f9ec 13.04348%, #ffffff 13.04348%, #ffffff 17.3913%, #d7f9ec 17.3913%, #d7f9ec 30.43478%, #ffffff 30.43478%, #ffffff 34.78261%, #d7f9ec 34.78261%, #d7f9ec 47.82609%, #ffffff 47.82609%, #ffffff 52.17391%, #d7f9ec 52.17391%, #d7f9ec 65.21739%, #ffffff 65.21739%, #ffffff 69.56522%, #d7f9ec 69.56522%, #d7f9ec 82.6087%, #ffffff 82.6087%, #ffffff 86.95652%, #d7f9ec 86.95652%, #d7f9ec 100%, #ffffff 100%, #ffffff 100%);
+    background-image: -moz-linear-gradient(left, #ffffff 0%, #d7f9ec 0%, #d7f9ec 13.04348%, #ffffff 13.04348%, #ffffff 17.3913%, #d7f9ec 17.3913%, #d7f9ec 30.43478%, #ffffff 30.43478%, #ffffff 34.78261%, #d7f9ec 34.78261%, #d7f9ec 47.82609%, #ffffff 47.82609%, #ffffff 52.17391%, #d7f9ec 52.17391%, #d7f9ec 65.21739%, #ffffff 65.21739%, #ffffff 69.56522%, #d7f9ec 69.56522%, #d7f9ec 82.6087%, #ffffff 82.6087%, #ffffff 86.95652%, #d7f9ec 86.95652%, #d7f9ec 100%, #ffffff 100%, #ffffff 100%);
+    background-image: -o-linear-gradient(left, #ffffff 0%, #d7f9ec 0%, #d7f9ec 13.04348%, #ffffff 13.04348%, #ffffff 17.3913%, #d7f9ec 17.3913%, #d7f9ec 30.43478%, #ffffff 30.43478%, #ffffff 34.78261%, #d7f9ec 34.78261%, #d7f9ec 47.82609%, #ffffff 47.82609%, #ffffff 52.17391%, #d7f9ec 52.17391%, #d7f9ec 65.21739%, #ffffff 65.21739%, #ffffff 69.56522%, #d7f9ec 69.56522%, #d7f9ec 82.6087%, #ffffff 82.6087%, #ffffff 86.95652%, #d7f9ec 86.95652%, #d7f9ec 100%, #ffffff 100%, #ffffff 100%);
+    background-image: linear-gradient(left, #ffffff 0%, #d7f9ec 0%, #d7f9ec 13.04348%, #ffffff 13.04348%, #ffffff 17.3913%, #d7f9ec 17.3913%, #d7f9ec 30.43478%, #ffffff 30.43478%, #ffffff 34.78261%, #d7f9ec 34.78261%, #d7f9ec 47.82609%, #ffffff 47.82609%, #ffffff 52.17391%, #d7f9ec 52.17391%, #d7f9ec 65.21739%, #ffffff 65.21739%, #ffffff 69.56522%, #d7f9ec 69.56522%, #d7f9ec 82.6087%, #ffffff 82.6087%, #ffffff 86.95652%, #d7f9ec 86.95652%, #d7f9ec 100%, #ffffff 100%, #ffffff 100%);
+    background-position: left top;
+    -webkit-background-origin: content;
+    -moz-background-origin: content;
+    -ms-background-origin: content-box;
+    -o-background-origin: content-box;
+    background-origin: content-box;
+    -webkit-background-clip: content-box;
+    -moz-background-clip: content-box;
+    background-clip: content-box;
+  }
+}
+@media (min-width: 569px) and (max-width: 767px) {
+  /* line 143, ../sass/doc.scss */
+  #s2 {
+    max-width: 992px;
+    max-width: 62rem;
+    background-image: -webkit-gradient(linear, 0% 50%, 100% 50%, color-stop(0%, #ffffff), color-stop(0%, #d7f9ec), color-stop(9.67742%, #d7f9ec), color-stop(9.67742%, #ffffff), color-stop(12.90323%, #ffffff), color-stop(12.90323%, #d7f9ec), color-stop(22.58065%, #d7f9ec), color-stop(22.58065%, #ffffff), color-stop(25.80645%, #ffffff), color-stop(25.80645%, #d7f9ec), color-stop(35.48387%, #d7f9ec), color-stop(35.48387%, #ffffff), color-stop(38.70968%, #ffffff), color-stop(38.70968%, #d7f9ec), color-stop(48.3871%, #d7f9ec), color-stop(48.3871%, #ffffff), color-stop(51.6129%, #ffffff), color-stop(51.6129%, #d7f9ec), color-stop(61.29032%, #d7f9ec), color-stop(61.29032%, #ffffff), color-stop(64.51613%, #ffffff), color-stop(64.51613%, #d7f9ec), color-stop(74.19355%, #d7f9ec), color-stop(74.19355%, #ffffff), color-stop(77.41935%, #ffffff), color-stop(77.41935%, #d7f9ec), color-stop(87.09677%, #d7f9ec), color-stop(87.09677%, #ffffff), color-stop(90.32258%, #ffffff), color-stop(90.32258%, #d7f9ec), color-stop(100.0%, #d7f9ec), color-stop(100.0%, #ffffff), color-stop(100%, #ffffff));
+    background-image: -webkit-linear-gradient(left, #ffffff 0%, #d7f9ec 0%, #d7f9ec 9.67742%, #ffffff 9.67742%, #ffffff 12.90323%, #d7f9ec 12.90323%, #d7f9ec 22.58065%, #ffffff 22.58065%, #ffffff 25.80645%, #d7f9ec 25.80645%, #d7f9ec 35.48387%, #ffffff 35.48387%, #ffffff 38.70968%, #d7f9ec 38.70968%, #d7f9ec 48.3871%, #ffffff 48.3871%, #ffffff 51.6129%, #d7f9ec 51.6129%, #d7f9ec 61.29032%, #ffffff 61.29032%, #ffffff 64.51613%, #d7f9ec 64.51613%, #d7f9ec 74.19355%, #ffffff 74.19355%, #ffffff 77.41935%, #d7f9ec 77.41935%, #d7f9ec 87.09677%, #ffffff 87.09677%, #ffffff 90.32258%, #d7f9ec 90.32258%, #d7f9ec 100.0%, #ffffff 100.0%, #ffffff 100%);
+    background-image: -moz-linear-gradient(left, #ffffff 0%, #d7f9ec 0%, #d7f9ec 9.67742%, #ffffff 9.67742%, #ffffff 12.90323%, #d7f9ec 12.90323%, #d7f9ec 22.58065%, #ffffff 22.58065%, #ffffff 25.80645%, #d7f9ec 25.80645%, #d7f9ec 35.48387%, #ffffff 35.48387%, #ffffff 38.70968%, #d7f9ec 38.70968%, #d7f9ec 48.3871%, #ffffff 48.3871%, #ffffff 51.6129%, #d7f9ec 51.6129%, #d7f9ec 61.29032%, #ffffff 61.29032%, #ffffff 64.51613%, #d7f9ec 64.51613%, #d7f9ec 74.19355%, #ffffff 74.19355%, #ffffff 77.41935%, #d7f9ec 77.41935%, #d7f9ec 87.09677%, #ffffff 87.09677%, #ffffff 90.32258%, #d7f9ec 90.32258%, #d7f9ec 100.0%, #ffffff 100.0%, #ffffff 100%);
+    background-image: -o-linear-gradient(left, #ffffff 0%, #d7f9ec 0%, #d7f9ec 9.67742%, #ffffff 9.67742%, #ffffff 12.90323%, #d7f9ec 12.90323%, #d7f9ec 22.58065%, #ffffff 22.58065%, #ffffff 25.80645%, #d7f9ec 25.80645%, #d7f9ec 35.48387%, #ffffff 35.48387%, #ffffff 38.70968%, #d7f9ec 38.70968%, #d7f9ec 48.3871%, #ffffff 48.3871%, #ffffff 51.6129%, #d7f9ec 51.6129%, #d7f9ec 61.29032%, #ffffff 61.29032%, #ffffff 64.51613%, #d7f9ec 64.51613%, #d7f9ec 74.19355%, #ffffff 74.19355%, #ffffff 77.41935%, #d7f9ec 77.41935%, #d7f9ec 87.09677%, #ffffff 87.09677%, #ffffff 90.32258%, #d7f9ec 90.32258%, #d7f9ec 100.0%, #ffffff 100.0%, #ffffff 100%);
+    background-image: linear-gradient(left, #ffffff 0%, #d7f9ec 0%, #d7f9ec 9.67742%, #ffffff 9.67742%, #ffffff 12.90323%, #d7f9ec 12.90323%, #d7f9ec 22.58065%, #ffffff 22.58065%, #ffffff 25.80645%, #d7f9ec 25.80645%, #d7f9ec 35.48387%, #ffffff 35.48387%, #ffffff 38.70968%, #d7f9ec 38.70968%, #d7f9ec 48.3871%, #ffffff 48.3871%, #ffffff 51.6129%, #d7f9ec 51.6129%, #d7f9ec 61.29032%, #ffffff 61.29032%, #ffffff 64.51613%, #d7f9ec 64.51613%, #d7f9ec 74.19355%, #ffffff 74.19355%, #ffffff 77.41935%, #d7f9ec 77.41935%, #d7f9ec 87.09677%, #ffffff 87.09677%, #ffffff 90.32258%, #d7f9ec 90.32258%, #d7f9ec 100.0%, #ffffff 100.0%, #ffffff 100%);
+    background-position: left top;
+    -webkit-background-origin: content;
+    -moz-background-origin: content;
+    -ms-background-origin: content-box;
+    -o-background-origin: content-box;
+    background-origin: content-box;
+    -webkit-background-clip: content-box;
+    -moz-background-clip: content-box;
+    background-clip: content-box;
+  }
+}
+@media (min-width: 768px) and (max-width: 939px) {
+  /* line 143, ../sass/doc.scss */
+  #s2 {
+    max-width: 1376px;
+    max-width: 86rem;
+    background-image: -webkit-gradient(linear, 0% 50%, 100% 50%, color-stop(0%, #ffffff), color-stop(0%, #d7f9ec), color-stop(6.97674%, #d7f9ec), color-stop(6.97674%, #ffffff), color-stop(9.30233%, #ffffff), color-stop(9.30233%, #d7f9ec), color-stop(16.27907%, #d7f9ec), color-stop(16.27907%, #ffffff), color-stop(18.60465%, #ffffff), color-stop(18.60465%, #d7f9ec), color-stop(25.5814%, #d7f9ec), color-stop(25.5814%, #ffffff), color-stop(27.90698%, #ffffff), color-stop(27.90698%, #d7f9ec), color-stop(34.88372%, #d7f9ec), color-stop(34.88372%, #ffffff), color-stop(37.2093%, #ffffff), color-stop(37.2093%, #d7f9ec), color-stop(44.18605%, #d7f9ec), color-stop(44.18605%, #ffffff), color-stop(46.51163%, #ffffff), color-stop(46.51163%, #d7f9ec), color-stop(53.48837%, #d7f9ec), color-stop(53.48837%, #ffffff), color-stop(55.81395%, #ffffff), color-stop(55.81395%, #d7f9ec), color-stop(62.7907%, #d7f9ec), color-stop(62.7907%, #ffffff), color-stop(65.11628%, #ffffff), color-stop(65.11628%, #d7f9ec), color-stop(72.09302%, #d7f9ec), color-stop(72.09302%, #ffffff), color-stop(74.4186%, #ffffff), color-stop(74.4186%, #d7f9ec), color-stop(81.39535%, #d7f9ec), color-stop(81.39535%, #ffffff), color-stop(83.72093%, #ffffff), color-stop(83.72093%, #d7f9ec), color-stop(90.69767%, #d7f9ec), color-stop(90.69767%, #ffffff), color-stop(93.02326%, #ffffff), color-stop(93.02326%, #d7f9ec), color-stop(100.0%, #d7f9ec), color-stop(100.0%, #ffffff), color-stop(100%, #ffffff));
+    background-image: -webkit-linear-gradient(left, #ffffff 0%, #d7f9ec 0%, #d7f9ec 6.97674%, #ffffff 6.97674%, #ffffff 9.30233%, #d7f9ec 9.30233%, #d7f9ec 16.27907%, #ffffff 16.27907%, #ffffff 18.60465%, #d7f9ec 18.60465%, #d7f9ec 25.5814%, #ffffff 25.5814%, #ffffff 27.90698%, #d7f9ec 27.90698%, #d7f9ec 34.88372%, #ffffff 34.88372%, #ffffff 37.2093%, #d7f9ec 37.2093%, #d7f9ec 44.18605%, #ffffff 44.18605%, #ffffff 46.51163%, #d7f9ec 46.51163%, #d7f9ec 53.48837%, #ffffff 53.48837%, #ffffff 55.81395%, #d7f9ec 55.81395%, #d7f9ec 62.7907%, #ffffff 62.7907%, #ffffff 65.11628%, #d7f9ec 65.11628%, #d7f9ec 72.09302%, #ffffff 72.09302%, #ffffff 74.4186%, #d7f9ec 74.4186%, #d7f9ec 81.39535%, #ffffff 81.39535%, #ffffff 83.72093%, #d7f9ec 83.72093%, #d7f9ec 90.69767%, #ffffff 90.69767%, #ffffff 93.02326%, #d7f9ec 93.02326%, #d7f9ec 100.0%, #ffffff 100.0%, #ffffff 100%);
+    background-image: -moz-linear-gradient(left, #ffffff 0%, #d7f9ec 0%, #d7f9ec 6.97674%, #ffffff 6.97674%, #ffffff 9.30233%, #d7f9ec 9.30233%, #d7f9ec 16.27907%, #ffffff 16.27907%, #ffffff 18.60465%, #d7f9ec 18.60465%, #d7f9ec 25.5814%, #ffffff 25.5814%, #ffffff 27.90698%, #d7f9ec 27.90698%, #d7f9ec 34.88372%, #ffffff 34.88372%, #ffffff 37.2093%, #d7f9ec 37.2093%, #d7f9ec 44.18605%, #ffffff 44.18605%, #ffffff 46.51163%, #d7f9ec 46.51163%, #d7f9ec 53.48837%, #ffffff 53.48837%, #ffffff 55.81395%, #d7f9ec 55.81395%, #d7f9ec 62.7907%, #ffffff 62.7907%, #ffffff 65.11628%, #d7f9ec 65.11628%, #d7f9ec 72.09302%, #ffffff 72.09302%, #ffffff 74.4186%, #d7f9ec 74.4186%, #d7f9ec 81.39535%, #ffffff 81.39535%, #ffffff 83.72093%, #d7f9ec 83.72093%, #d7f9ec 90.69767%, #ffffff 90.69767%, #ffffff 93.02326%, #d7f9ec 93.02326%, #d7f9ec 100.0%, #ffffff 100.0%, #ffffff 100%);
+    background-image: -o-linear-gradient(left, #ffffff 0%, #d7f9ec 0%, #d7f9ec 6.97674%, #ffffff 6.97674%, #ffffff 9.30233%, #d7f9ec 9.30233%, #d7f9ec 16.27907%, #ffffff 16.27907%, #ffffff 18.60465%, #d7f9ec 18.60465%, #d7f9ec 25.5814%, #ffffff 25.5814%, #ffffff 27.90698%, #d7f9ec 27.90698%, #d7f9ec 34.88372%, #ffffff 34.88372%, #ffffff 37.2093%, #d7f9ec 37.2093%, #d7f9ec 44.18605%, #ffffff 44.18605%, #ffffff 46.51163%, #d7f9ec 46.51163%, #d7f9ec 53.48837%, #ffffff 53.48837%, #ffffff 55.81395%, #d7f9ec 55.81395%, #d7f9ec 62.7907%, #ffffff 62.7907%, #ffffff 65.11628%, #d7f9ec 65.11628%, #d7f9ec 72.09302%, #ffffff 72.09302%, #ffffff 74.4186%, #d7f9ec 74.4186%, #d7f9ec 81.39535%, #ffffff 81.39535%, #ffffff 83.72093%, #d7f9ec 83.72093%, #d7f9ec 90.69767%, #ffffff 90.69767%, #ffffff 93.02326%, #d7f9ec 93.02326%, #d7f9ec 100.0%, #ffffff 100.0%, #ffffff 100%);
+    background-image: linear-gradient(left, #ffffff 0%, #d7f9ec 0%, #d7f9ec 6.97674%, #ffffff 6.97674%, #ffffff 9.30233%, #d7f9ec 9.30233%, #d7f9ec 16.27907%, #ffffff 16.27907%, #ffffff 18.60465%, #d7f9ec 18.60465%, #d7f9ec 25.5814%, #ffffff 25.5814%, #ffffff 27.90698%, #d7f9ec 27.90698%, #d7f9ec 34.88372%, #ffffff 34.88372%, #ffffff 37.2093%, #d7f9ec 37.2093%, #d7f9ec 44.18605%, #ffffff 44.18605%, #ffffff 46.51163%, #d7f9ec 46.51163%, #d7f9ec 53.48837%, #ffffff 53.48837%, #ffffff 55.81395%, #d7f9ec 55.81395%, #d7f9ec 62.7907%, #ffffff 62.7907%, #ffffff 65.11628%, #d7f9ec 65.11628%, #d7f9ec 72.09302%, #ffffff 72.09302%, #ffffff 74.4186%, #d7f9ec 74.4186%, #d7f9ec 81.39535%, #ffffff 81.39535%, #ffffff 83.72093%, #d7f9ec 83.72093%, #d7f9ec 90.69767%, #ffffff 90.69767%, #ffffff 93.02326%, #d7f9ec 93.02326%, #d7f9ec 100.0%, #ffffff 100.0%, #ffffff 100%);
+    background-position: left top;
+    -webkit-background-origin: content;
+    -moz-background-origin: content;
+    -ms-background-origin: content-box;
+    -o-background-origin: content-box;
+    background-origin: content-box;
+    -webkit-background-clip: content-box;
+    -moz-background-clip: content-box;
+    background-clip: content-box;
+  }
+}
+@media (min-width: 940px) {
+  /* line 143, ../sass/doc.scss */
+  #s2 {
+    max-width: 1504px;
+    max-width: 94rem;
+    background-image: -webkit-gradient(linear, 0% 50%, 100% 50%, color-stop(0%, #ffffff), color-stop(0%, #d7f9ec), color-stop(6.38298%, #d7f9ec), color-stop(6.38298%, #ffffff), color-stop(8.51064%, #ffffff), color-stop(8.51064%, #d7f9ec), color-stop(14.89362%, #d7f9ec), color-stop(14.89362%, #ffffff), color-stop(17.02128%, #ffffff), color-stop(17.02128%, #d7f9ec), color-stop(23.40426%, #d7f9ec), color-stop(23.40426%, #ffffff), color-stop(25.53191%, #ffffff), color-stop(25.53191%, #d7f9ec), color-stop(31.91489%, #d7f9ec), color-stop(31.91489%, #ffffff), color-stop(34.04255%, #ffffff), color-stop(34.04255%, #d7f9ec), color-stop(40.42553%, #d7f9ec), color-stop(40.42553%, #ffffff), color-stop(42.55319%, #ffffff), color-stop(42.55319%, #d7f9ec), color-stop(48.93617%, #d7f9ec), color-stop(48.93617%, #ffffff), color-stop(51.06383%, #ffffff), color-stop(51.06383%, #d7f9ec), color-stop(57.44681%, #d7f9ec), color-stop(57.44681%, #ffffff), color-stop(59.57447%, #ffffff), color-stop(59.57447%, #d7f9ec), color-stop(65.95745%, #d7f9ec), color-stop(65.95745%, #ffffff), color-stop(68.08511%, #ffffff), color-stop(68.08511%, #d7f9ec), color-stop(74.46809%, #d7f9ec), color-stop(74.46809%, #ffffff), color-stop(76.59574%, #ffffff), color-stop(76.59574%, #d7f9ec), color-stop(82.97872%, #d7f9ec), color-stop(82.97872%, #ffffff), color-stop(85.10638%, #ffffff), color-stop(85.10638%, #d7f9ec), color-stop(91.48936%, #d7f9ec), color-stop(91.48936%, #ffffff), color-stop(93.61702%, #ffffff), color-stop(93.61702%, #d7f9ec), color-stop(100%, #d7f9ec), color-stop(100%, #ffffff), color-stop(100%, #ffffff));
+    background-image: -webkit-linear-gradient(left, #ffffff 0%, #d7f9ec 0%, #d7f9ec 6.38298%, #ffffff 6.38298%, #ffffff 8.51064%, #d7f9ec 8.51064%, #d7f9ec 14.89362%, #ffffff 14.89362%, #ffffff 17.02128%, #d7f9ec 17.02128%, #d7f9ec 23.40426%, #ffffff 23.40426%, #ffffff 25.53191%, #d7f9ec 25.53191%, #d7f9ec 31.91489%, #ffffff 31.91489%, #ffffff 34.04255%, #d7f9ec 34.04255%, #d7f9ec 40.42553%, #ffffff 40.42553%, #ffffff 42.55319%, #d7f9ec 42.55319%, #d7f9ec 48.93617%, #ffffff 48.93617%, #ffffff 51.06383%, #d7f9ec 51.06383%, #d7f9ec 57.44681%, #ffffff 57.44681%, #ffffff 59.57447%, #d7f9ec 59.57447%, #d7f9ec 65.95745%, #ffffff 65.95745%, #ffffff 68.08511%, #d7f9ec 68.08511%, #d7f9ec 74.46809%, #ffffff 74.46809%, #ffffff 76.59574%, #d7f9ec 76.59574%, #d7f9ec 82.97872%, #ffffff 82.97872%, #ffffff 85.10638%, #d7f9ec 85.10638%, #d7f9ec 91.48936%, #ffffff 91.48936%, #ffffff 93.61702%, #d7f9ec 93.61702%, #d7f9ec 100%, #ffffff 100%, #ffffff 100%);
+    background-image: -moz-linear-gradient(left, #ffffff 0%, #d7f9ec 0%, #d7f9ec 6.38298%, #ffffff 6.38298%, #ffffff 8.51064%, #d7f9ec 8.51064%, #d7f9ec 14.89362%, #ffffff 14.89362%, #ffffff 17.02128%, #d7f9ec 17.02128%, #d7f9ec 23.40426%, #ffffff 23.40426%, #ffffff 25.53191%, #d7f9ec 25.53191%, #d7f9ec 31.91489%, #ffffff 31.91489%, #ffffff 34.04255%, #d7f9ec 34.04255%, #d7f9ec 40.42553%, #ffffff 40.42553%, #ffffff 42.55319%, #d7f9ec 42.55319%, #d7f9ec 48.93617%, #ffffff 48.93617%, #ffffff 51.06383%, #d7f9ec 51.06383%, #d7f9ec 57.44681%, #ffffff 57.44681%, #ffffff 59.57447%, #d7f9ec 59.57447%, #d7f9ec 65.95745%, #ffffff 65.95745%, #ffffff 68.08511%, #d7f9ec 68.08511%, #d7f9ec 74.46809%, #ffffff 74.46809%, #ffffff 76.59574%, #d7f9ec 76.59574%, #d7f9ec 82.97872%, #ffffff 82.97872%, #ffffff 85.10638%, #d7f9ec 85.10638%, #d7f9ec 91.48936%, #ffffff 91.48936%, #ffffff 93.61702%, #d7f9ec 93.61702%, #d7f9ec 100%, #ffffff 100%, #ffffff 100%);
+    background-image: -o-linear-gradient(left, #ffffff 0%, #d7f9ec 0%, #d7f9ec 6.38298%, #ffffff 6.38298%, #ffffff 8.51064%, #d7f9ec 8.51064%, #d7f9ec 14.89362%, #ffffff 14.89362%, #ffffff 17.02128%, #d7f9ec 17.02128%, #d7f9ec 23.40426%, #ffffff 23.40426%, #ffffff 25.53191%, #d7f9ec 25.53191%, #d7f9ec 31.91489%, #ffffff 31.91489%, #ffffff 34.04255%, #d7f9ec 34.04255%, #d7f9ec 40.42553%, #ffffff 40.42553%, #ffffff 42.55319%, #d7f9ec 42.55319%, #d7f9ec 48.93617%, #ffffff 48.93617%, #ffffff 51.06383%, #d7f9ec 51.06383%, #d7f9ec 57.44681%, #ffffff 57.44681%, #ffffff 59.57447%, #d7f9ec 59.57447%, #d7f9ec 65.95745%, #ffffff 65.95745%, #ffffff 68.08511%, #d7f9ec 68.08511%, #d7f9ec 74.46809%, #ffffff 74.46809%, #ffffff 76.59574%, #d7f9ec 76.59574%, #d7f9ec 82.97872%, #ffffff 82.97872%, #ffffff 85.10638%, #d7f9ec 85.10638%, #d7f9ec 91.48936%, #ffffff 91.48936%, #ffffff 93.61702%, #d7f9ec 93.61702%, #d7f9ec 100%, #ffffff 100%, #ffffff 100%);
+    background-image: linear-gradient(left, #ffffff 0%, #d7f9ec 0%, #d7f9ec 6.38298%, #ffffff 6.38298%, #ffffff 8.51064%, #d7f9ec 8.51064%, #d7f9ec 14.89362%, #ffffff 14.89362%, #ffffff 17.02128%, #d7f9ec 17.02128%, #d7f9ec 23.40426%, #ffffff 23.40426%, #ffffff 25.53191%, #d7f9ec 25.53191%, #d7f9ec 31.91489%, #ffffff 31.91489%, #ffffff 34.04255%, #d7f9ec 34.04255%, #d7f9ec 40.42553%, #ffffff 40.42553%, #ffffff 42.55319%, #d7f9ec 42.55319%, #d7f9ec 48.93617%, #ffffff 48.93617%, #ffffff 51.06383%, #d7f9ec 51.06383%, #d7f9ec 57.44681%, #ffffff 57.44681%, #ffffff 59.57447%, #d7f9ec 59.57447%, #d7f9ec 65.95745%, #ffffff 65.95745%, #ffffff 68.08511%, #d7f9ec 68.08511%, #d7f9ec 74.46809%, #ffffff 74.46809%, #ffffff 76.59574%, #d7f9ec 76.59574%, #d7f9ec 82.97872%, #ffffff 82.97872%, #ffffff 85.10638%, #d7f9ec 85.10638%, #d7f9ec 91.48936%, #ffffff 91.48936%, #ffffff 93.61702%, #d7f9ec 93.61702%, #d7f9ec 100%, #ffffff 100%, #ffffff 100%);
+    background-position: left top;
+    -webkit-background-origin: content;
+    -moz-background-origin: content;
+    -ms-background-origin: content-box;
+    -o-background-origin: content-box;
+    background-origin: content-box;
+    -webkit-background-clip: content-box;
+    -moz-background-clip: content-box;
+    background-clip: content-box;
+  }
+}
+/* line 144, ../sass/doc.scss */
+#s2 .slider-home {
+  overflow-x: hidden;
+}
+/* line 145, ../sass/doc.scss */
 #s2 .slider-home .dipta-slider-home {
   position: absolute;
   margin: -290px 0 0 30px;
 }
-/* line 127, ../sass/doc.scss */
+/* line 147, ../sass/doc.scss */
 #s2 .slider-home img {
-  width: 100% !important;
   height: auto;
 }
-/* line 135, ../sass/doc.scss */
+/* line 155, ../sass/doc.scss */
+#s2 .navigation-1 {
+  width: 74.46809%;
+  float: left;
+  margin-right: 2.12766%;
+  display: inline;
+}
+/* line 156, ../sass/doc.scss */
+#s2 .navigation-1 img {
+  max-width: 100% !important;
+}
+/* line 157, ../sass/doc.scss */
 #s2 .navigation-1 p, #s2 .navigation-1 .slider-home .info-banner .text-banner, #s2 .slider-home .info-banner .navigation-1 .text-banner {
   border: 0;
 }
-/* line 136, ../sass/doc.scss */
+/* line 158, ../sass/doc.scss */
 #s2 .navigation-1 .bloc {
   margin: 0 2rem 0 2rem;
 }
-/* line 136, ../sass/doc.scss */
+/* line 158, ../sass/doc.scss */
 #s2 .navigation-1 .bloc p:before, #s2 .navigation-1 .bloc .slider-home .info-banner .text-banner:before, #s2 .slider-home .info-banner .navigation-1 .bloc .text-banner:before {
   content: "";
   padding: 0;
   margin: 0;
 }
-/* line 136, ../sass/doc.scss */
+/* line 158, ../sass/doc.scss */
 #s2 .navigation-1 .bloc p, #s2 .navigation-1 .bloc .slider-home .info-banner .text-banner, #s2 .slider-home .info-banner .navigation-1 .bloc .text-banner {
   margin: 0;
 }
-/* line 138, ../sass/doc.scss */
+/* line 160, ../sass/doc.scss */
+#s2 .navigation-2 {
+  width: 74.46809%;
+  float: left;
+  margin-right: 2.12766%;
+  display: inline;
+}
+/* line 161, ../sass/doc.scss */
+#s2 .navigation-2 img {
+  max-width: 100% !important;
+}
+/* line 162, ../sass/doc.scss */
 #s2 .navigation-2 p, #s2 .navigation-2 .slider-home .info-banner .text-banner, #s2 .slider-home .info-banner .navigation-2 .text-banner {
   border: 0;
 }
-/* line 139, ../sass/doc.scss */
+/* line 163, ../sass/doc.scss */
 #s2 .navigation-2 .bloc {
   margin: 0 2rem 0 2rem;
 }
-/* line 139, ../sass/doc.scss */
+/* line 163, ../sass/doc.scss */
 #s2 .navigation-2 .bloc p:before, #s2 .navigation-2 .bloc .slider-home .info-banner .text-banner:before, #s2 .slider-home .info-banner .navigation-2 .bloc .text-banner:before {
   content: "";
   padding: 0;
   margin: 0;
 }
-/* line 141, ../sass/doc.scss */
+/* line 165, ../sass/doc.scss */
+#s2 .navigation-3 {
+  width: 74.46809%;
+  float: left;
+  margin-right: 2.12766%;
+  display: inline;
+}
+/* line 166, ../sass/doc.scss */
+#s2 .navigation-3 img {
+  max-width: 100% !important;
+}
+/* line 167, ../sass/doc.scss */
 #s2 .navigation-3 p, #s2 .navigation-3 .slider-home .info-banner .text-banner, #s2 .slider-home .info-banner .navigation-3 .text-banner {
   border: 0;
 }
-/* line 142, ../sass/doc.scss */
+/* line 168, ../sass/doc.scss */
 #s2 .navigation-3 .bloc {
   margin: 0 2rem 0 2rem;
 }
-/* line 142, ../sass/doc.scss */
+/* line 168, ../sass/doc.scss */
 #s2 .navigation-3 .bloc p:before, #s2 .navigation-3 .bloc .slider-home .info-banner .text-banner:before, #s2 .slider-home .info-banner .navigation-3 .bloc .text-banner:before {
   content: "";
   padding: 0;
   margin: 0;
 }
-/* line 142, ../sass/doc.scss */
+/* line 168, ../sass/doc.scss */
 #s2 .navigation-3 .bloc p, #s2 .navigation-3 .bloc .slider-home .info-banner .text-banner, #s2 .slider-home .info-banner .navigation-3 .bloc .text-banner {
   margin: 0;
 }
-/* line 145, ../sass/doc.scss */
+/* line 171, ../sass/doc.scss */
 #s2 #dipta-noticia {
   background-color: #ebebeb;
   padding: 2rem;
 }
-/* line 149, ../sass/doc.scss */
+/* line 175, ../sass/doc.scss */
 #s2 #dipta-noticia .contingut div.dipta-resum {
   width: 44%;
   float: left;
   padding: 2rem 2rem 2rem 2rem;
 }
-/* line 150, ../sass/doc.scss */
+/* line 176, ../sass/doc.scss */
 #s2 #dipta-noticia .contingut div.dipta-resum:first-child {
   border-right: 0.4rem solid #ebebeb;
   border-bottom: 0;
 }
-/* line 151, ../sass/doc.scss */
+/* line 177, ../sass/doc.scss */
 #s2 #dipta-noticia .contingut div.dipta-resum + div.dipta-resum {
   padding-right: 2rem;
   border-bottom: 0.4rem solid #ebebeb;
 }
-/* line 152, ../sass/doc.scss */
+/* line 178, ../sass/doc.scss */
 #s2 #dipta-noticia .contingut div.dipta-resum:last-child {
-  border-bottom: 0!important;
+  border-bottom: 0 !important;
 }
-/* line 155, ../sass/doc.scss */
+/* line 181, ../sass/doc.scss */
 #s2 #dipta-agenda {
   background-color: #ebebeb;
   padding: 2rem;
 }
 
 /*navigation*/
+/* line 188, ../sass/doc.scss */
+#s3 {
+  *zoom: 1;
+  max-width: 1504px;
+  max-width: 94rem;
+  _width: 1504px;
+  padding-left: 32px;
+  padding-left: 2rem;
+  padding-right: 32px;
+  padding-right: 2rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* line 38, ../../../../../../Users/miguelangel/.rvm/gems/ruby-2.0.0-p247/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
+#s3:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+@media (max-width: 320px) {
+  /* line 188, ../sass/doc.scss */
+  #s3 {
+    max-width: 480px;
+    max-width: 30rem;
+    background-image: -webkit-gradient(linear, 0% 50%, 100% 50%, color-stop(0%, #ffffff), color-stop(0%, #d7f9ec), color-stop(20%, #d7f9ec), color-stop(20%, #ffffff), color-stop(26.66667%, #ffffff), color-stop(26.66667%, #d7f9ec), color-stop(46.66667%, #d7f9ec), color-stop(46.66667%, #ffffff), color-stop(53.33333%, #ffffff), color-stop(53.33333%, #d7f9ec), color-stop(73.33333%, #d7f9ec), color-stop(73.33333%, #ffffff), color-stop(80.0%, #ffffff), color-stop(80%, #d7f9ec), color-stop(100%, #d7f9ec), color-stop(100%, #ffffff), color-stop(100%, #ffffff));
+    background-image: -webkit-linear-gradient(left, #ffffff 0%, #d7f9ec 0%, #d7f9ec 20%, #ffffff 20%, #ffffff 26.66667%, #d7f9ec 26.66667%, #d7f9ec 46.66667%, #ffffff 46.66667%, #ffffff 53.33333%, #d7f9ec 53.33333%, #d7f9ec 73.33333%, #ffffff 73.33333%, #ffffff 80.0%, #d7f9ec 80%, #d7f9ec 100%, #ffffff 100%, #ffffff 100%);
+    background-image: -moz-linear-gradient(left, #ffffff 0%, #d7f9ec 0%, #d7f9ec 20%, #ffffff 20%, #ffffff 26.66667%, #d7f9ec 26.66667%, #d7f9ec 46.66667%, #ffffff 46.66667%, #ffffff 53.33333%, #d7f9ec 53.33333%, #d7f9ec 73.33333%, #ffffff 73.33333%, #ffffff 80.0%, #d7f9ec 80%, #d7f9ec 100%, #ffffff 100%, #ffffff 100%);
+    background-image: -o-linear-gradient(left, #ffffff 0%, #d7f9ec 0%, #d7f9ec 20%, #ffffff 20%, #ffffff 26.66667%, #d7f9ec 26.66667%, #d7f9ec 46.66667%, #ffffff 46.66667%, #ffffff 53.33333%, #d7f9ec 53.33333%, #d7f9ec 73.33333%, #ffffff 73.33333%, #ffffff 80.0%, #d7f9ec 80%, #d7f9ec 100%, #ffffff 100%, #ffffff 100%);
+    background-image: linear-gradient(left, #ffffff 0%, #d7f9ec 0%, #d7f9ec 20%, #ffffff 20%, #ffffff 26.66667%, #d7f9ec 26.66667%, #d7f9ec 46.66667%, #ffffff 46.66667%, #ffffff 53.33333%, #d7f9ec 53.33333%, #d7f9ec 73.33333%, #ffffff 73.33333%, #ffffff 80.0%, #d7f9ec 80%, #d7f9ec 100%, #ffffff 100%, #ffffff 100%);
+    background-position: left top;
+    -webkit-background-origin: content;
+    -moz-background-origin: content;
+    -ms-background-origin: content-box;
+    -o-background-origin: content-box;
+    background-origin: content-box;
+    -webkit-background-clip: content-box;
+    -moz-background-clip: content-box;
+    background-clip: content-box;
+  }
+}
+@media (min-width: 321px) and (max-width: 480px) {
+  /* line 188, ../sass/doc.scss */
+  #s3 {
+    max-width: 608px;
+    max-width: 38rem;
+    background-image: -webkit-gradient(linear, 0% 50%, 100% 50%, color-stop(0%, #ffffff), color-stop(0%, #d7f9ec), color-stop(15.78947%, #d7f9ec), color-stop(15.78947%, #ffffff), color-stop(21.05263%, #ffffff), color-stop(21.05263%, #d7f9ec), color-stop(36.84211%, #d7f9ec), color-stop(36.84211%, #ffffff), color-stop(42.10526%, #ffffff), color-stop(42.10526%, #d7f9ec), color-stop(57.89474%, #d7f9ec), color-stop(57.89474%, #ffffff), color-stop(63.15789%, #ffffff), color-stop(63.15789%, #d7f9ec), color-stop(78.94737%, #d7f9ec), color-stop(78.94737%, #ffffff), color-stop(84.21053%, #ffffff), color-stop(84.21053%, #d7f9ec), color-stop(100.0%, #d7f9ec), color-stop(100.0%, #ffffff), color-stop(100%, #ffffff));
+    background-image: -webkit-linear-gradient(left, #ffffff 0%, #d7f9ec 0%, #d7f9ec 15.78947%, #ffffff 15.78947%, #ffffff 21.05263%, #d7f9ec 21.05263%, #d7f9ec 36.84211%, #ffffff 36.84211%, #ffffff 42.10526%, #d7f9ec 42.10526%, #d7f9ec 57.89474%, #ffffff 57.89474%, #ffffff 63.15789%, #d7f9ec 63.15789%, #d7f9ec 78.94737%, #ffffff 78.94737%, #ffffff 84.21053%, #d7f9ec 84.21053%, #d7f9ec 100.0%, #ffffff 100.0%, #ffffff 100%);
+    background-image: -moz-linear-gradient(left, #ffffff 0%, #d7f9ec 0%, #d7f9ec 15.78947%, #ffffff 15.78947%, #ffffff 21.05263%, #d7f9ec 21.05263%, #d7f9ec 36.84211%, #ffffff 36.84211%, #ffffff 42.10526%, #d7f9ec 42.10526%, #d7f9ec 57.89474%, #ffffff 57.89474%, #ffffff 63.15789%, #d7f9ec 63.15789%, #d7f9ec 78.94737%, #ffffff 78.94737%, #ffffff 84.21053%, #d7f9ec 84.21053%, #d7f9ec 100.0%, #ffffff 100.0%, #ffffff 100%);
+    background-image: -o-linear-gradient(left, #ffffff 0%, #d7f9ec 0%, #d7f9ec 15.78947%, #ffffff 15.78947%, #ffffff 21.05263%, #d7f9ec 21.05263%, #d7f9ec 36.84211%, #ffffff 36.84211%, #ffffff 42.10526%, #d7f9ec 42.10526%, #d7f9ec 57.89474%, #ffffff 57.89474%, #ffffff 63.15789%, #d7f9ec 63.15789%, #d7f9ec 78.94737%, #ffffff 78.94737%, #ffffff 84.21053%, #d7f9ec 84.21053%, #d7f9ec 100.0%, #ffffff 100.0%, #ffffff 100%);
+    background-image: linear-gradient(left, #ffffff 0%, #d7f9ec 0%, #d7f9ec 15.78947%, #ffffff 15.78947%, #ffffff 21.05263%, #d7f9ec 21.05263%, #d7f9ec 36.84211%, #ffffff 36.84211%, #ffffff 42.10526%, #d7f9ec 42.10526%, #d7f9ec 57.89474%, #ffffff 57.89474%, #ffffff 63.15789%, #d7f9ec 63.15789%, #d7f9ec 78.94737%, #ffffff 78.94737%, #ffffff 84.21053%, #d7f9ec 84.21053%, #d7f9ec 100.0%, #ffffff 100.0%, #ffffff 100%);
+    background-position: left top;
+    -webkit-background-origin: content;
+    -moz-background-origin: content;
+    -ms-background-origin: content-box;
+    -o-background-origin: content-box;
+    background-origin: content-box;
+    -webkit-background-clip: content-box;
+    -moz-background-clip: content-box;
+    background-clip: content-box;
+  }
+}
+@media (min-width: 481px) and (max-width: 568px) {
+  /* line 188, ../sass/doc.scss */
+  #s3 {
+    max-width: 736px;
+    max-width: 46rem;
+    background-image: -webkit-gradient(linear, 0% 50%, 100% 50%, color-stop(0%, #ffffff), color-stop(0%, #d7f9ec), color-stop(13.04348%, #d7f9ec), color-stop(13.04348%, #ffffff), color-stop(17.3913%, #ffffff), color-stop(17.3913%, #d7f9ec), color-stop(30.43478%, #d7f9ec), color-stop(30.43478%, #ffffff), color-stop(34.78261%, #ffffff), color-stop(34.78261%, #d7f9ec), color-stop(47.82609%, #d7f9ec), color-stop(47.82609%, #ffffff), color-stop(52.17391%, #ffffff), color-stop(52.17391%, #d7f9ec), color-stop(65.21739%, #d7f9ec), color-stop(65.21739%, #ffffff), color-stop(69.56522%, #ffffff), color-stop(69.56522%, #d7f9ec), color-stop(82.6087%, #d7f9ec), color-stop(82.6087%, #ffffff), color-stop(86.95652%, #ffffff), color-stop(86.95652%, #d7f9ec), color-stop(100%, #d7f9ec), color-stop(100%, #ffffff), color-stop(100%, #ffffff));
+    background-image: -webkit-linear-gradient(left, #ffffff 0%, #d7f9ec 0%, #d7f9ec 13.04348%, #ffffff 13.04348%, #ffffff 17.3913%, #d7f9ec 17.3913%, #d7f9ec 30.43478%, #ffffff 30.43478%, #ffffff 34.78261%, #d7f9ec 34.78261%, #d7f9ec 47.82609%, #ffffff 47.82609%, #ffffff 52.17391%, #d7f9ec 52.17391%, #d7f9ec 65.21739%, #ffffff 65.21739%, #ffffff 69.56522%, #d7f9ec 69.56522%, #d7f9ec 82.6087%, #ffffff 82.6087%, #ffffff 86.95652%, #d7f9ec 86.95652%, #d7f9ec 100%, #ffffff 100%, #ffffff 100%);
+    background-image: -moz-linear-gradient(left, #ffffff 0%, #d7f9ec 0%, #d7f9ec 13.04348%, #ffffff 13.04348%, #ffffff 17.3913%, #d7f9ec 17.3913%, #d7f9ec 30.43478%, #ffffff 30.43478%, #ffffff 34.78261%, #d7f9ec 34.78261%, #d7f9ec 47.82609%, #ffffff 47.82609%, #ffffff 52.17391%, #d7f9ec 52.17391%, #d7f9ec 65.21739%, #ffffff 65.21739%, #ffffff 69.56522%, #d7f9ec 69.56522%, #d7f9ec 82.6087%, #ffffff 82.6087%, #ffffff 86.95652%, #d7f9ec 86.95652%, #d7f9ec 100%, #ffffff 100%, #ffffff 100%);
+    background-image: -o-linear-gradient(left, #ffffff 0%, #d7f9ec 0%, #d7f9ec 13.04348%, #ffffff 13.04348%, #ffffff 17.3913%, #d7f9ec 17.3913%, #d7f9ec 30.43478%, #ffffff 30.43478%, #ffffff 34.78261%, #d7f9ec 34.78261%, #d7f9ec 47.82609%, #ffffff 47.82609%, #ffffff 52.17391%, #d7f9ec 52.17391%, #d7f9ec 65.21739%, #ffffff 65.21739%, #ffffff 69.56522%, #d7f9ec 69.56522%, #d7f9ec 82.6087%, #ffffff 82.6087%, #ffffff 86.95652%, #d7f9ec 86.95652%, #d7f9ec 100%, #ffffff 100%, #ffffff 100%);
+    background-image: linear-gradient(left, #ffffff 0%, #d7f9ec 0%, #d7f9ec 13.04348%, #ffffff 13.04348%, #ffffff 17.3913%, #d7f9ec 17.3913%, #d7f9ec 30.43478%, #ffffff 30.43478%, #ffffff 34.78261%, #d7f9ec 34.78261%, #d7f9ec 47.82609%, #ffffff 47.82609%, #ffffff 52.17391%, #d7f9ec 52.17391%, #d7f9ec 65.21739%, #ffffff 65.21739%, #ffffff 69.56522%, #d7f9ec 69.56522%, #d7f9ec 82.6087%, #ffffff 82.6087%, #ffffff 86.95652%, #d7f9ec 86.95652%, #d7f9ec 100%, #ffffff 100%, #ffffff 100%);
+    background-position: left top;
+    -webkit-background-origin: content;
+    -moz-background-origin: content;
+    -ms-background-origin: content-box;
+    -o-background-origin: content-box;
+    background-origin: content-box;
+    -webkit-background-clip: content-box;
+    -moz-background-clip: content-box;
+    background-clip: content-box;
+  }
+}
+@media (min-width: 569px) and (max-width: 767px) {
+  /* line 188, ../sass/doc.scss */
+  #s3 {
+    max-width: 992px;
+    max-width: 62rem;
+    background-image: -webkit-gradient(linear, 0% 50%, 100% 50%, color-stop(0%, #ffffff), color-stop(0%, #d7f9ec), color-stop(9.67742%, #d7f9ec), color-stop(9.67742%, #ffffff), color-stop(12.90323%, #ffffff), color-stop(12.90323%, #d7f9ec), color-stop(22.58065%, #d7f9ec), color-stop(22.58065%, #ffffff), color-stop(25.80645%, #ffffff), color-stop(25.80645%, #d7f9ec), color-stop(35.48387%, #d7f9ec), color-stop(35.48387%, #ffffff), color-stop(38.70968%, #ffffff), color-stop(38.70968%, #d7f9ec), color-stop(48.3871%, #d7f9ec), color-stop(48.3871%, #ffffff), color-stop(51.6129%, #ffffff), color-stop(51.6129%, #d7f9ec), color-stop(61.29032%, #d7f9ec), color-stop(61.29032%, #ffffff), color-stop(64.51613%, #ffffff), color-stop(64.51613%, #d7f9ec), color-stop(74.19355%, #d7f9ec), color-stop(74.19355%, #ffffff), color-stop(77.41935%, #ffffff), color-stop(77.41935%, #d7f9ec), color-stop(87.09677%, #d7f9ec), color-stop(87.09677%, #ffffff), color-stop(90.32258%, #ffffff), color-stop(90.32258%, #d7f9ec), color-stop(100.0%, #d7f9ec), color-stop(100.0%, #ffffff), color-stop(100%, #ffffff));
+    background-image: -webkit-linear-gradient(left, #ffffff 0%, #d7f9ec 0%, #d7f9ec 9.67742%, #ffffff 9.67742%, #ffffff 12.90323%, #d7f9ec 12.90323%, #d7f9ec 22.58065%, #ffffff 22.58065%, #ffffff 25.80645%, #d7f9ec 25.80645%, #d7f9ec 35.48387%, #ffffff 35.48387%, #ffffff 38.70968%, #d7f9ec 38.70968%, #d7f9ec 48.3871%, #ffffff 48.3871%, #ffffff 51.6129%, #d7f9ec 51.6129%, #d7f9ec 61.29032%, #ffffff 61.29032%, #ffffff 64.51613%, #d7f9ec 64.51613%, #d7f9ec 74.19355%, #ffffff 74.19355%, #ffffff 77.41935%, #d7f9ec 77.41935%, #d7f9ec 87.09677%, #ffffff 87.09677%, #ffffff 90.32258%, #d7f9ec 90.32258%, #d7f9ec 100.0%, #ffffff 100.0%, #ffffff 100%);
+    background-image: -moz-linear-gradient(left, #ffffff 0%, #d7f9ec 0%, #d7f9ec 9.67742%, #ffffff 9.67742%, #ffffff 12.90323%, #d7f9ec 12.90323%, #d7f9ec 22.58065%, #ffffff 22.58065%, #ffffff 25.80645%, #d7f9ec 25.80645%, #d7f9ec 35.48387%, #ffffff 35.48387%, #ffffff 38.70968%, #d7f9ec 38.70968%, #d7f9ec 48.3871%, #ffffff 48.3871%, #ffffff 51.6129%, #d7f9ec 51.6129%, #d7f9ec 61.29032%, #ffffff 61.29032%, #ffffff 64.51613%, #d7f9ec 64.51613%, #d7f9ec 74.19355%, #ffffff 74.19355%, #ffffff 77.41935%, #d7f9ec 77.41935%, #d7f9ec 87.09677%, #ffffff 87.09677%, #ffffff 90.32258%, #d7f9ec 90.32258%, #d7f9ec 100.0%, #ffffff 100.0%, #ffffff 100%);
+    background-image: -o-linear-gradient(left, #ffffff 0%, #d7f9ec 0%, #d7f9ec 9.67742%, #ffffff 9.67742%, #ffffff 12.90323%, #d7f9ec 12.90323%, #d7f9ec 22.58065%, #ffffff 22.58065%, #ffffff 25.80645%, #d7f9ec 25.80645%, #d7f9ec 35.48387%, #ffffff 35.48387%, #ffffff 38.70968%, #d7f9ec 38.70968%, #d7f9ec 48.3871%, #ffffff 48.3871%, #ffffff 51.6129%, #d7f9ec 51.6129%, #d7f9ec 61.29032%, #ffffff 61.29032%, #ffffff 64.51613%, #d7f9ec 64.51613%, #d7f9ec 74.19355%, #ffffff 74.19355%, #ffffff 77.41935%, #d7f9ec 77.41935%, #d7f9ec 87.09677%, #ffffff 87.09677%, #ffffff 90.32258%, #d7f9ec 90.32258%, #d7f9ec 100.0%, #ffffff 100.0%, #ffffff 100%);
+    background-image: linear-gradient(left, #ffffff 0%, #d7f9ec 0%, #d7f9ec 9.67742%, #ffffff 9.67742%, #ffffff 12.90323%, #d7f9ec 12.90323%, #d7f9ec 22.58065%, #ffffff 22.58065%, #ffffff 25.80645%, #d7f9ec 25.80645%, #d7f9ec 35.48387%, #ffffff 35.48387%, #ffffff 38.70968%, #d7f9ec 38.70968%, #d7f9ec 48.3871%, #ffffff 48.3871%, #ffffff 51.6129%, #d7f9ec 51.6129%, #d7f9ec 61.29032%, #ffffff 61.29032%, #ffffff 64.51613%, #d7f9ec 64.51613%, #d7f9ec 74.19355%, #ffffff 74.19355%, #ffffff 77.41935%, #d7f9ec 77.41935%, #d7f9ec 87.09677%, #ffffff 87.09677%, #ffffff 90.32258%, #d7f9ec 90.32258%, #d7f9ec 100.0%, #ffffff 100.0%, #ffffff 100%);
+    background-position: left top;
+    -webkit-background-origin: content;
+    -moz-background-origin: content;
+    -ms-background-origin: content-box;
+    -o-background-origin: content-box;
+    background-origin: content-box;
+    -webkit-background-clip: content-box;
+    -moz-background-clip: content-box;
+    background-clip: content-box;
+  }
+}
+@media (min-width: 768px) and (max-width: 939px) {
+  /* line 188, ../sass/doc.scss */
+  #s3 {
+    max-width: 1376px;
+    max-width: 86rem;
+    background-image: -webkit-gradient(linear, 0% 50%, 100% 50%, color-stop(0%, #ffffff), color-stop(0%, #d7f9ec), color-stop(6.97674%, #d7f9ec), color-stop(6.97674%, #ffffff), color-stop(9.30233%, #ffffff), color-stop(9.30233%, #d7f9ec), color-stop(16.27907%, #d7f9ec), color-stop(16.27907%, #ffffff), color-stop(18.60465%, #ffffff), color-stop(18.60465%, #d7f9ec), color-stop(25.5814%, #d7f9ec), color-stop(25.5814%, #ffffff), color-stop(27.90698%, #ffffff), color-stop(27.90698%, #d7f9ec), color-stop(34.88372%, #d7f9ec), color-stop(34.88372%, #ffffff), color-stop(37.2093%, #ffffff), color-stop(37.2093%, #d7f9ec), color-stop(44.18605%, #d7f9ec), color-stop(44.18605%, #ffffff), color-stop(46.51163%, #ffffff), color-stop(46.51163%, #d7f9ec), color-stop(53.48837%, #d7f9ec), color-stop(53.48837%, #ffffff), color-stop(55.81395%, #ffffff), color-stop(55.81395%, #d7f9ec), color-stop(62.7907%, #d7f9ec), color-stop(62.7907%, #ffffff), color-stop(65.11628%, #ffffff), color-stop(65.11628%, #d7f9ec), color-stop(72.09302%, #d7f9ec), color-stop(72.09302%, #ffffff), color-stop(74.4186%, #ffffff), color-stop(74.4186%, #d7f9ec), color-stop(81.39535%, #d7f9ec), color-stop(81.39535%, #ffffff), color-stop(83.72093%, #ffffff), color-stop(83.72093%, #d7f9ec), color-stop(90.69767%, #d7f9ec), color-stop(90.69767%, #ffffff), color-stop(93.02326%, #ffffff), color-stop(93.02326%, #d7f9ec), color-stop(100.0%, #d7f9ec), color-stop(100.0%, #ffffff), color-stop(100%, #ffffff));
+    background-image: -webkit-linear-gradient(left, #ffffff 0%, #d7f9ec 0%, #d7f9ec 6.97674%, #ffffff 6.97674%, #ffffff 9.30233%, #d7f9ec 9.30233%, #d7f9ec 16.27907%, #ffffff 16.27907%, #ffffff 18.60465%, #d7f9ec 18.60465%, #d7f9ec 25.5814%, #ffffff 25.5814%, #ffffff 27.90698%, #d7f9ec 27.90698%, #d7f9ec 34.88372%, #ffffff 34.88372%, #ffffff 37.2093%, #d7f9ec 37.2093%, #d7f9ec 44.18605%, #ffffff 44.18605%, #ffffff 46.51163%, #d7f9ec 46.51163%, #d7f9ec 53.48837%, #ffffff 53.48837%, #ffffff 55.81395%, #d7f9ec 55.81395%, #d7f9ec 62.7907%, #ffffff 62.7907%, #ffffff 65.11628%, #d7f9ec 65.11628%, #d7f9ec 72.09302%, #ffffff 72.09302%, #ffffff 74.4186%, #d7f9ec 74.4186%, #d7f9ec 81.39535%, #ffffff 81.39535%, #ffffff 83.72093%, #d7f9ec 83.72093%, #d7f9ec 90.69767%, #ffffff 90.69767%, #ffffff 93.02326%, #d7f9ec 93.02326%, #d7f9ec 100.0%, #ffffff 100.0%, #ffffff 100%);
+    background-image: -moz-linear-gradient(left, #ffffff 0%, #d7f9ec 0%, #d7f9ec 6.97674%, #ffffff 6.97674%, #ffffff 9.30233%, #d7f9ec 9.30233%, #d7f9ec 16.27907%, #ffffff 16.27907%, #ffffff 18.60465%, #d7f9ec 18.60465%, #d7f9ec 25.5814%, #ffffff 25.5814%, #ffffff 27.90698%, #d7f9ec 27.90698%, #d7f9ec 34.88372%, #ffffff 34.88372%, #ffffff 37.2093%, #d7f9ec 37.2093%, #d7f9ec 44.18605%, #ffffff 44.18605%, #ffffff 46.51163%, #d7f9ec 46.51163%, #d7f9ec 53.48837%, #ffffff 53.48837%, #ffffff 55.81395%, #d7f9ec 55.81395%, #d7f9ec 62.7907%, #ffffff 62.7907%, #ffffff 65.11628%, #d7f9ec 65.11628%, #d7f9ec 72.09302%, #ffffff 72.09302%, #ffffff 74.4186%, #d7f9ec 74.4186%, #d7f9ec 81.39535%, #ffffff 81.39535%, #ffffff 83.72093%, #d7f9ec 83.72093%, #d7f9ec 90.69767%, #ffffff 90.69767%, #ffffff 93.02326%, #d7f9ec 93.02326%, #d7f9ec 100.0%, #ffffff 100.0%, #ffffff 100%);
+    background-image: -o-linear-gradient(left, #ffffff 0%, #d7f9ec 0%, #d7f9ec 6.97674%, #ffffff 6.97674%, #ffffff 9.30233%, #d7f9ec 9.30233%, #d7f9ec 16.27907%, #ffffff 16.27907%, #ffffff 18.60465%, #d7f9ec 18.60465%, #d7f9ec 25.5814%, #ffffff 25.5814%, #ffffff 27.90698%, #d7f9ec 27.90698%, #d7f9ec 34.88372%, #ffffff 34.88372%, #ffffff 37.2093%, #d7f9ec 37.2093%, #d7f9ec 44.18605%, #ffffff 44.18605%, #ffffff 46.51163%, #d7f9ec 46.51163%, #d7f9ec 53.48837%, #ffffff 53.48837%, #ffffff 55.81395%, #d7f9ec 55.81395%, #d7f9ec 62.7907%, #ffffff 62.7907%, #ffffff 65.11628%, #d7f9ec 65.11628%, #d7f9ec 72.09302%, #ffffff 72.09302%, #ffffff 74.4186%, #d7f9ec 74.4186%, #d7f9ec 81.39535%, #ffffff 81.39535%, #ffffff 83.72093%, #d7f9ec 83.72093%, #d7f9ec 90.69767%, #ffffff 90.69767%, #ffffff 93.02326%, #d7f9ec 93.02326%, #d7f9ec 100.0%, #ffffff 100.0%, #ffffff 100%);
+    background-image: linear-gradient(left, #ffffff 0%, #d7f9ec 0%, #d7f9ec 6.97674%, #ffffff 6.97674%, #ffffff 9.30233%, #d7f9ec 9.30233%, #d7f9ec 16.27907%, #ffffff 16.27907%, #ffffff 18.60465%, #d7f9ec 18.60465%, #d7f9ec 25.5814%, #ffffff 25.5814%, #ffffff 27.90698%, #d7f9ec 27.90698%, #d7f9ec 34.88372%, #ffffff 34.88372%, #ffffff 37.2093%, #d7f9ec 37.2093%, #d7f9ec 44.18605%, #ffffff 44.18605%, #ffffff 46.51163%, #d7f9ec 46.51163%, #d7f9ec 53.48837%, #ffffff 53.48837%, #ffffff 55.81395%, #d7f9ec 55.81395%, #d7f9ec 62.7907%, #ffffff 62.7907%, #ffffff 65.11628%, #d7f9ec 65.11628%, #d7f9ec 72.09302%, #ffffff 72.09302%, #ffffff 74.4186%, #d7f9ec 74.4186%, #d7f9ec 81.39535%, #ffffff 81.39535%, #ffffff 83.72093%, #d7f9ec 83.72093%, #d7f9ec 90.69767%, #ffffff 90.69767%, #ffffff 93.02326%, #d7f9ec 93.02326%, #d7f9ec 100.0%, #ffffff 100.0%, #ffffff 100%);
+    background-position: left top;
+    -webkit-background-origin: content;
+    -moz-background-origin: content;
+    -ms-background-origin: content-box;
+    -o-background-origin: content-box;
+    background-origin: content-box;
+    -webkit-background-clip: content-box;
+    -moz-background-clip: content-box;
+    background-clip: content-box;
+  }
+}
+@media (min-width: 940px) {
+  /* line 188, ../sass/doc.scss */
+  #s3 {
+    max-width: 1504px;
+    max-width: 94rem;
+    background-image: -webkit-gradient(linear, 0% 50%, 100% 50%, color-stop(0%, #ffffff), color-stop(0%, #d7f9ec), color-stop(6.38298%, #d7f9ec), color-stop(6.38298%, #ffffff), color-stop(8.51064%, #ffffff), color-stop(8.51064%, #d7f9ec), color-stop(14.89362%, #d7f9ec), color-stop(14.89362%, #ffffff), color-stop(17.02128%, #ffffff), color-stop(17.02128%, #d7f9ec), color-stop(23.40426%, #d7f9ec), color-stop(23.40426%, #ffffff), color-stop(25.53191%, #ffffff), color-stop(25.53191%, #d7f9ec), color-stop(31.91489%, #d7f9ec), color-stop(31.91489%, #ffffff), color-stop(34.04255%, #ffffff), color-stop(34.04255%, #d7f9ec), color-stop(40.42553%, #d7f9ec), color-stop(40.42553%, #ffffff), color-stop(42.55319%, #ffffff), color-stop(42.55319%, #d7f9ec), color-stop(48.93617%, #d7f9ec), color-stop(48.93617%, #ffffff), color-stop(51.06383%, #ffffff), color-stop(51.06383%, #d7f9ec), color-stop(57.44681%, #d7f9ec), color-stop(57.44681%, #ffffff), color-stop(59.57447%, #ffffff), color-stop(59.57447%, #d7f9ec), color-stop(65.95745%, #d7f9ec), color-stop(65.95745%, #ffffff), color-stop(68.08511%, #ffffff), color-stop(68.08511%, #d7f9ec), color-stop(74.46809%, #d7f9ec), color-stop(74.46809%, #ffffff), color-stop(76.59574%, #ffffff), color-stop(76.59574%, #d7f9ec), color-stop(82.97872%, #d7f9ec), color-stop(82.97872%, #ffffff), color-stop(85.10638%, #ffffff), color-stop(85.10638%, #d7f9ec), color-stop(91.48936%, #d7f9ec), color-stop(91.48936%, #ffffff), color-stop(93.61702%, #ffffff), color-stop(93.61702%, #d7f9ec), color-stop(100%, #d7f9ec), color-stop(100%, #ffffff), color-stop(100%, #ffffff));
+    background-image: -webkit-linear-gradient(left, #ffffff 0%, #d7f9ec 0%, #d7f9ec 6.38298%, #ffffff 6.38298%, #ffffff 8.51064%, #d7f9ec 8.51064%, #d7f9ec 14.89362%, #ffffff 14.89362%, #ffffff 17.02128%, #d7f9ec 17.02128%, #d7f9ec 23.40426%, #ffffff 23.40426%, #ffffff 25.53191%, #d7f9ec 25.53191%, #d7f9ec 31.91489%, #ffffff 31.91489%, #ffffff 34.04255%, #d7f9ec 34.04255%, #d7f9ec 40.42553%, #ffffff 40.42553%, #ffffff 42.55319%, #d7f9ec 42.55319%, #d7f9ec 48.93617%, #ffffff 48.93617%, #ffffff 51.06383%, #d7f9ec 51.06383%, #d7f9ec 57.44681%, #ffffff 57.44681%, #ffffff 59.57447%, #d7f9ec 59.57447%, #d7f9ec 65.95745%, #ffffff 65.95745%, #ffffff 68.08511%, #d7f9ec 68.08511%, #d7f9ec 74.46809%, #ffffff 74.46809%, #ffffff 76.59574%, #d7f9ec 76.59574%, #d7f9ec 82.97872%, #ffffff 82.97872%, #ffffff 85.10638%, #d7f9ec 85.10638%, #d7f9ec 91.48936%, #ffffff 91.48936%, #ffffff 93.61702%, #d7f9ec 93.61702%, #d7f9ec 100%, #ffffff 100%, #ffffff 100%);
+    background-image: -moz-linear-gradient(left, #ffffff 0%, #d7f9ec 0%, #d7f9ec 6.38298%, #ffffff 6.38298%, #ffffff 8.51064%, #d7f9ec 8.51064%, #d7f9ec 14.89362%, #ffffff 14.89362%, #ffffff 17.02128%, #d7f9ec 17.02128%, #d7f9ec 23.40426%, #ffffff 23.40426%, #ffffff 25.53191%, #d7f9ec 25.53191%, #d7f9ec 31.91489%, #ffffff 31.91489%, #ffffff 34.04255%, #d7f9ec 34.04255%, #d7f9ec 40.42553%, #ffffff 40.42553%, #ffffff 42.55319%, #d7f9ec 42.55319%, #d7f9ec 48.93617%, #ffffff 48.93617%, #ffffff 51.06383%, #d7f9ec 51.06383%, #d7f9ec 57.44681%, #ffffff 57.44681%, #ffffff 59.57447%, #d7f9ec 59.57447%, #d7f9ec 65.95745%, #ffffff 65.95745%, #ffffff 68.08511%, #d7f9ec 68.08511%, #d7f9ec 74.46809%, #ffffff 74.46809%, #ffffff 76.59574%, #d7f9ec 76.59574%, #d7f9ec 82.97872%, #ffffff 82.97872%, #ffffff 85.10638%, #d7f9ec 85.10638%, #d7f9ec 91.48936%, #ffffff 91.48936%, #ffffff 93.61702%, #d7f9ec 93.61702%, #d7f9ec 100%, #ffffff 100%, #ffffff 100%);
+    background-image: -o-linear-gradient(left, #ffffff 0%, #d7f9ec 0%, #d7f9ec 6.38298%, #ffffff 6.38298%, #ffffff 8.51064%, #d7f9ec 8.51064%, #d7f9ec 14.89362%, #ffffff 14.89362%, #ffffff 17.02128%, #d7f9ec 17.02128%, #d7f9ec 23.40426%, #ffffff 23.40426%, #ffffff 25.53191%, #d7f9ec 25.53191%, #d7f9ec 31.91489%, #ffffff 31.91489%, #ffffff 34.04255%, #d7f9ec 34.04255%, #d7f9ec 40.42553%, #ffffff 40.42553%, #ffffff 42.55319%, #d7f9ec 42.55319%, #d7f9ec 48.93617%, #ffffff 48.93617%, #ffffff 51.06383%, #d7f9ec 51.06383%, #d7f9ec 57.44681%, #ffffff 57.44681%, #ffffff 59.57447%, #d7f9ec 59.57447%, #d7f9ec 65.95745%, #ffffff 65.95745%, #ffffff 68.08511%, #d7f9ec 68.08511%, #d7f9ec 74.46809%, #ffffff 74.46809%, #ffffff 76.59574%, #d7f9ec 76.59574%, #d7f9ec 82.97872%, #ffffff 82.97872%, #ffffff 85.10638%, #d7f9ec 85.10638%, #d7f9ec 91.48936%, #ffffff 91.48936%, #ffffff 93.61702%, #d7f9ec 93.61702%, #d7f9ec 100%, #ffffff 100%, #ffffff 100%);
+    background-image: linear-gradient(left, #ffffff 0%, #d7f9ec 0%, #d7f9ec 6.38298%, #ffffff 6.38298%, #ffffff 8.51064%, #d7f9ec 8.51064%, #d7f9ec 14.89362%, #ffffff 14.89362%, #ffffff 17.02128%, #d7f9ec 17.02128%, #d7f9ec 23.40426%, #ffffff 23.40426%, #ffffff 25.53191%, #d7f9ec 25.53191%, #d7f9ec 31.91489%, #ffffff 31.91489%, #ffffff 34.04255%, #d7f9ec 34.04255%, #d7f9ec 40.42553%, #ffffff 40.42553%, #ffffff 42.55319%, #d7f9ec 42.55319%, #d7f9ec 48.93617%, #ffffff 48.93617%, #ffffff 51.06383%, #d7f9ec 51.06383%, #d7f9ec 57.44681%, #ffffff 57.44681%, #ffffff 59.57447%, #d7f9ec 59.57447%, #d7f9ec 65.95745%, #ffffff 65.95745%, #ffffff 68.08511%, #d7f9ec 68.08511%, #d7f9ec 74.46809%, #ffffff 74.46809%, #ffffff 76.59574%, #d7f9ec 76.59574%, #d7f9ec 82.97872%, #ffffff 82.97872%, #ffffff 85.10638%, #d7f9ec 85.10638%, #d7f9ec 91.48936%, #ffffff 91.48936%, #ffffff 93.61702%, #d7f9ec 93.61702%, #d7f9ec 100%, #ffffff 100%, #ffffff 100%);
+    background-position: left top;
+    -webkit-background-origin: content;
+    -moz-background-origin: content;
+    -ms-background-origin: content-box;
+    -o-background-origin: content-box;
+    background-origin: content-box;
+    -webkit-background-clip: content-box;
+    -moz-background-clip: content-box;
+    background-clip: content-box;
+  }
+}
+
 /*pallete colors*/
+/* line 210, ../sass/doc.scss */
+#s5, #s7, #s4 {
+  *zoom: 1;
+  max-width: 1504px;
+  max-width: 94rem;
+  _width: 1504px;
+  padding-left: 32px;
+  padding-left: 2rem;
+  padding-right: 32px;
+  padding-right: 2rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* line 38, ../../../../../../Users/miguelangel/.rvm/gems/ruby-2.0.0-p247/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
+#s5:after, #s7:after, #s4:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+@media (max-width: 320px) {
+  /* line 210, ../sass/doc.scss */
+  #s5, #s7, #s4 {
+    max-width: 480px;
+    max-width: 30rem;
+    background-image: -webkit-gradient(linear, 0% 50%, 100% 50%, color-stop(0%, #ffffff), color-stop(0%, #d7f9ec), color-stop(20%, #d7f9ec), color-stop(20%, #ffffff), color-stop(26.66667%, #ffffff), color-stop(26.66667%, #d7f9ec), color-stop(46.66667%, #d7f9ec), color-stop(46.66667%, #ffffff), color-stop(53.33333%, #ffffff), color-stop(53.33333%, #d7f9ec), color-stop(73.33333%, #d7f9ec), color-stop(73.33333%, #ffffff), color-stop(80.0%, #ffffff), color-stop(80%, #d7f9ec), color-stop(100%, #d7f9ec), color-stop(100%, #ffffff), color-stop(100%, #ffffff));
+    background-image: -webkit-linear-gradient(left, #ffffff 0%, #d7f9ec 0%, #d7f9ec 20%, #ffffff 20%, #ffffff 26.66667%, #d7f9ec 26.66667%, #d7f9ec 46.66667%, #ffffff 46.66667%, #ffffff 53.33333%, #d7f9ec 53.33333%, #d7f9ec 73.33333%, #ffffff 73.33333%, #ffffff 80.0%, #d7f9ec 80%, #d7f9ec 100%, #ffffff 100%, #ffffff 100%);
+    background-image: -moz-linear-gradient(left, #ffffff 0%, #d7f9ec 0%, #d7f9ec 20%, #ffffff 20%, #ffffff 26.66667%, #d7f9ec 26.66667%, #d7f9ec 46.66667%, #ffffff 46.66667%, #ffffff 53.33333%, #d7f9ec 53.33333%, #d7f9ec 73.33333%, #ffffff 73.33333%, #ffffff 80.0%, #d7f9ec 80%, #d7f9ec 100%, #ffffff 100%, #ffffff 100%);
+    background-image: -o-linear-gradient(left, #ffffff 0%, #d7f9ec 0%, #d7f9ec 20%, #ffffff 20%, #ffffff 26.66667%, #d7f9ec 26.66667%, #d7f9ec 46.66667%, #ffffff 46.66667%, #ffffff 53.33333%, #d7f9ec 53.33333%, #d7f9ec 73.33333%, #ffffff 73.33333%, #ffffff 80.0%, #d7f9ec 80%, #d7f9ec 100%, #ffffff 100%, #ffffff 100%);
+    background-image: linear-gradient(left, #ffffff 0%, #d7f9ec 0%, #d7f9ec 20%, #ffffff 20%, #ffffff 26.66667%, #d7f9ec 26.66667%, #d7f9ec 46.66667%, #ffffff 46.66667%, #ffffff 53.33333%, #d7f9ec 53.33333%, #d7f9ec 73.33333%, #ffffff 73.33333%, #ffffff 80.0%, #d7f9ec 80%, #d7f9ec 100%, #ffffff 100%, #ffffff 100%);
+    background-position: left top;
+    -webkit-background-origin: content;
+    -moz-background-origin: content;
+    -ms-background-origin: content-box;
+    -o-background-origin: content-box;
+    background-origin: content-box;
+    -webkit-background-clip: content-box;
+    -moz-background-clip: content-box;
+    background-clip: content-box;
+  }
+}
+@media (min-width: 321px) and (max-width: 480px) {
+  /* line 210, ../sass/doc.scss */
+  #s5, #s7, #s4 {
+    max-width: 608px;
+    max-width: 38rem;
+    background-image: -webkit-gradient(linear, 0% 50%, 100% 50%, color-stop(0%, #ffffff), color-stop(0%, #d7f9ec), color-stop(15.78947%, #d7f9ec), color-stop(15.78947%, #ffffff), color-stop(21.05263%, #ffffff), color-stop(21.05263%, #d7f9ec), color-stop(36.84211%, #d7f9ec), color-stop(36.84211%, #ffffff), color-stop(42.10526%, #ffffff), color-stop(42.10526%, #d7f9ec), color-stop(57.89474%, #d7f9ec), color-stop(57.89474%, #ffffff), color-stop(63.15789%, #ffffff), color-stop(63.15789%, #d7f9ec), color-stop(78.94737%, #d7f9ec), color-stop(78.94737%, #ffffff), color-stop(84.21053%, #ffffff), color-stop(84.21053%, #d7f9ec), color-stop(100.0%, #d7f9ec), color-stop(100.0%, #ffffff), color-stop(100%, #ffffff));
+    background-image: -webkit-linear-gradient(left, #ffffff 0%, #d7f9ec 0%, #d7f9ec 15.78947%, #ffffff 15.78947%, #ffffff 21.05263%, #d7f9ec 21.05263%, #d7f9ec 36.84211%, #ffffff 36.84211%, #ffffff 42.10526%, #d7f9ec 42.10526%, #d7f9ec 57.89474%, #ffffff 57.89474%, #ffffff 63.15789%, #d7f9ec 63.15789%, #d7f9ec 78.94737%, #ffffff 78.94737%, #ffffff 84.21053%, #d7f9ec 84.21053%, #d7f9ec 100.0%, #ffffff 100.0%, #ffffff 100%);
+    background-image: -moz-linear-gradient(left, #ffffff 0%, #d7f9ec 0%, #d7f9ec 15.78947%, #ffffff 15.78947%, #ffffff 21.05263%, #d7f9ec 21.05263%, #d7f9ec 36.84211%, #ffffff 36.84211%, #ffffff 42.10526%, #d7f9ec 42.10526%, #d7f9ec 57.89474%, #ffffff 57.89474%, #ffffff 63.15789%, #d7f9ec 63.15789%, #d7f9ec 78.94737%, #ffffff 78.94737%, #ffffff 84.21053%, #d7f9ec 84.21053%, #d7f9ec 100.0%, #ffffff 100.0%, #ffffff 100%);
+    background-image: -o-linear-gradient(left, #ffffff 0%, #d7f9ec 0%, #d7f9ec 15.78947%, #ffffff 15.78947%, #ffffff 21.05263%, #d7f9ec 21.05263%, #d7f9ec 36.84211%, #ffffff 36.84211%, #ffffff 42.10526%, #d7f9ec 42.10526%, #d7f9ec 57.89474%, #ffffff 57.89474%, #ffffff 63.15789%, #d7f9ec 63.15789%, #d7f9ec 78.94737%, #ffffff 78.94737%, #ffffff 84.21053%, #d7f9ec 84.21053%, #d7f9ec 100.0%, #ffffff 100.0%, #ffffff 100%);
+    background-image: linear-gradient(left, #ffffff 0%, #d7f9ec 0%, #d7f9ec 15.78947%, #ffffff 15.78947%, #ffffff 21.05263%, #d7f9ec 21.05263%, #d7f9ec 36.84211%, #ffffff 36.84211%, #ffffff 42.10526%, #d7f9ec 42.10526%, #d7f9ec 57.89474%, #ffffff 57.89474%, #ffffff 63.15789%, #d7f9ec 63.15789%, #d7f9ec 78.94737%, #ffffff 78.94737%, #ffffff 84.21053%, #d7f9ec 84.21053%, #d7f9ec 100.0%, #ffffff 100.0%, #ffffff 100%);
+    background-position: left top;
+    -webkit-background-origin: content;
+    -moz-background-origin: content;
+    -ms-background-origin: content-box;
+    -o-background-origin: content-box;
+    background-origin: content-box;
+    -webkit-background-clip: content-box;
+    -moz-background-clip: content-box;
+    background-clip: content-box;
+  }
+}
+@media (min-width: 481px) and (max-width: 568px) {
+  /* line 210, ../sass/doc.scss */
+  #s5, #s7, #s4 {
+    max-width: 736px;
+    max-width: 46rem;
+    background-image: -webkit-gradient(linear, 0% 50%, 100% 50%, color-stop(0%, #ffffff), color-stop(0%, #d7f9ec), color-stop(13.04348%, #d7f9ec), color-stop(13.04348%, #ffffff), color-stop(17.3913%, #ffffff), color-stop(17.3913%, #d7f9ec), color-stop(30.43478%, #d7f9ec), color-stop(30.43478%, #ffffff), color-stop(34.78261%, #ffffff), color-stop(34.78261%, #d7f9ec), color-stop(47.82609%, #d7f9ec), color-stop(47.82609%, #ffffff), color-stop(52.17391%, #ffffff), color-stop(52.17391%, #d7f9ec), color-stop(65.21739%, #d7f9ec), color-stop(65.21739%, #ffffff), color-stop(69.56522%, #ffffff), color-stop(69.56522%, #d7f9ec), color-stop(82.6087%, #d7f9ec), color-stop(82.6087%, #ffffff), color-stop(86.95652%, #ffffff), color-stop(86.95652%, #d7f9ec), color-stop(100%, #d7f9ec), color-stop(100%, #ffffff), color-stop(100%, #ffffff));
+    background-image: -webkit-linear-gradient(left, #ffffff 0%, #d7f9ec 0%, #d7f9ec 13.04348%, #ffffff 13.04348%, #ffffff 17.3913%, #d7f9ec 17.3913%, #d7f9ec 30.43478%, #ffffff 30.43478%, #ffffff 34.78261%, #d7f9ec 34.78261%, #d7f9ec 47.82609%, #ffffff 47.82609%, #ffffff 52.17391%, #d7f9ec 52.17391%, #d7f9ec 65.21739%, #ffffff 65.21739%, #ffffff 69.56522%, #d7f9ec 69.56522%, #d7f9ec 82.6087%, #ffffff 82.6087%, #ffffff 86.95652%, #d7f9ec 86.95652%, #d7f9ec 100%, #ffffff 100%, #ffffff 100%);
+    background-image: -moz-linear-gradient(left, #ffffff 0%, #d7f9ec 0%, #d7f9ec 13.04348%, #ffffff 13.04348%, #ffffff 17.3913%, #d7f9ec 17.3913%, #d7f9ec 30.43478%, #ffffff 30.43478%, #ffffff 34.78261%, #d7f9ec 34.78261%, #d7f9ec 47.82609%, #ffffff 47.82609%, #ffffff 52.17391%, #d7f9ec 52.17391%, #d7f9ec 65.21739%, #ffffff 65.21739%, #ffffff 69.56522%, #d7f9ec 69.56522%, #d7f9ec 82.6087%, #ffffff 82.6087%, #ffffff 86.95652%, #d7f9ec 86.95652%, #d7f9ec 100%, #ffffff 100%, #ffffff 100%);
+    background-image: -o-linear-gradient(left, #ffffff 0%, #d7f9ec 0%, #d7f9ec 13.04348%, #ffffff 13.04348%, #ffffff 17.3913%, #d7f9ec 17.3913%, #d7f9ec 30.43478%, #ffffff 30.43478%, #ffffff 34.78261%, #d7f9ec 34.78261%, #d7f9ec 47.82609%, #ffffff 47.82609%, #ffffff 52.17391%, #d7f9ec 52.17391%, #d7f9ec 65.21739%, #ffffff 65.21739%, #ffffff 69.56522%, #d7f9ec 69.56522%, #d7f9ec 82.6087%, #ffffff 82.6087%, #ffffff 86.95652%, #d7f9ec 86.95652%, #d7f9ec 100%, #ffffff 100%, #ffffff 100%);
+    background-image: linear-gradient(left, #ffffff 0%, #d7f9ec 0%, #d7f9ec 13.04348%, #ffffff 13.04348%, #ffffff 17.3913%, #d7f9ec 17.3913%, #d7f9ec 30.43478%, #ffffff 30.43478%, #ffffff 34.78261%, #d7f9ec 34.78261%, #d7f9ec 47.82609%, #ffffff 47.82609%, #ffffff 52.17391%, #d7f9ec 52.17391%, #d7f9ec 65.21739%, #ffffff 65.21739%, #ffffff 69.56522%, #d7f9ec 69.56522%, #d7f9ec 82.6087%, #ffffff 82.6087%, #ffffff 86.95652%, #d7f9ec 86.95652%, #d7f9ec 100%, #ffffff 100%, #ffffff 100%);
+    background-position: left top;
+    -webkit-background-origin: content;
+    -moz-background-origin: content;
+    -ms-background-origin: content-box;
+    -o-background-origin: content-box;
+    background-origin: content-box;
+    -webkit-background-clip: content-box;
+    -moz-background-clip: content-box;
+    background-clip: content-box;
+  }
+}
+@media (min-width: 569px) and (max-width: 767px) {
+  /* line 210, ../sass/doc.scss */
+  #s5, #s7, #s4 {
+    max-width: 992px;
+    max-width: 62rem;
+    background-image: -webkit-gradient(linear, 0% 50%, 100% 50%, color-stop(0%, #ffffff), color-stop(0%, #d7f9ec), color-stop(9.67742%, #d7f9ec), color-stop(9.67742%, #ffffff), color-stop(12.90323%, #ffffff), color-stop(12.90323%, #d7f9ec), color-stop(22.58065%, #d7f9ec), color-stop(22.58065%, #ffffff), color-stop(25.80645%, #ffffff), color-stop(25.80645%, #d7f9ec), color-stop(35.48387%, #d7f9ec), color-stop(35.48387%, #ffffff), color-stop(38.70968%, #ffffff), color-stop(38.70968%, #d7f9ec), color-stop(48.3871%, #d7f9ec), color-stop(48.3871%, #ffffff), color-stop(51.6129%, #ffffff), color-stop(51.6129%, #d7f9ec), color-stop(61.29032%, #d7f9ec), color-stop(61.29032%, #ffffff), color-stop(64.51613%, #ffffff), color-stop(64.51613%, #d7f9ec), color-stop(74.19355%, #d7f9ec), color-stop(74.19355%, #ffffff), color-stop(77.41935%, #ffffff), color-stop(77.41935%, #d7f9ec), color-stop(87.09677%, #d7f9ec), color-stop(87.09677%, #ffffff), color-stop(90.32258%, #ffffff), color-stop(90.32258%, #d7f9ec), color-stop(100.0%, #d7f9ec), color-stop(100.0%, #ffffff), color-stop(100%, #ffffff));
+    background-image: -webkit-linear-gradient(left, #ffffff 0%, #d7f9ec 0%, #d7f9ec 9.67742%, #ffffff 9.67742%, #ffffff 12.90323%, #d7f9ec 12.90323%, #d7f9ec 22.58065%, #ffffff 22.58065%, #ffffff 25.80645%, #d7f9ec 25.80645%, #d7f9ec 35.48387%, #ffffff 35.48387%, #ffffff 38.70968%, #d7f9ec 38.70968%, #d7f9ec 48.3871%, #ffffff 48.3871%, #ffffff 51.6129%, #d7f9ec 51.6129%, #d7f9ec 61.29032%, #ffffff 61.29032%, #ffffff 64.51613%, #d7f9ec 64.51613%, #d7f9ec 74.19355%, #ffffff 74.19355%, #ffffff 77.41935%, #d7f9ec 77.41935%, #d7f9ec 87.09677%, #ffffff 87.09677%, #ffffff 90.32258%, #d7f9ec 90.32258%, #d7f9ec 100.0%, #ffffff 100.0%, #ffffff 100%);
+    background-image: -moz-linear-gradient(left, #ffffff 0%, #d7f9ec 0%, #d7f9ec 9.67742%, #ffffff 9.67742%, #ffffff 12.90323%, #d7f9ec 12.90323%, #d7f9ec 22.58065%, #ffffff 22.58065%, #ffffff 25.80645%, #d7f9ec 25.80645%, #d7f9ec 35.48387%, #ffffff 35.48387%, #ffffff 38.70968%, #d7f9ec 38.70968%, #d7f9ec 48.3871%, #ffffff 48.3871%, #ffffff 51.6129%, #d7f9ec 51.6129%, #d7f9ec 61.29032%, #ffffff 61.29032%, #ffffff 64.51613%, #d7f9ec 64.51613%, #d7f9ec 74.19355%, #ffffff 74.19355%, #ffffff 77.41935%, #d7f9ec 77.41935%, #d7f9ec 87.09677%, #ffffff 87.09677%, #ffffff 90.32258%, #d7f9ec 90.32258%, #d7f9ec 100.0%, #ffffff 100.0%, #ffffff 100%);
+    background-image: -o-linear-gradient(left, #ffffff 0%, #d7f9ec 0%, #d7f9ec 9.67742%, #ffffff 9.67742%, #ffffff 12.90323%, #d7f9ec 12.90323%, #d7f9ec 22.58065%, #ffffff 22.58065%, #ffffff 25.80645%, #d7f9ec 25.80645%, #d7f9ec 35.48387%, #ffffff 35.48387%, #ffffff 38.70968%, #d7f9ec 38.70968%, #d7f9ec 48.3871%, #ffffff 48.3871%, #ffffff 51.6129%, #d7f9ec 51.6129%, #d7f9ec 61.29032%, #ffffff 61.29032%, #ffffff 64.51613%, #d7f9ec 64.51613%, #d7f9ec 74.19355%, #ffffff 74.19355%, #ffffff 77.41935%, #d7f9ec 77.41935%, #d7f9ec 87.09677%, #ffffff 87.09677%, #ffffff 90.32258%, #d7f9ec 90.32258%, #d7f9ec 100.0%, #ffffff 100.0%, #ffffff 100%);
+    background-image: linear-gradient(left, #ffffff 0%, #d7f9ec 0%, #d7f9ec 9.67742%, #ffffff 9.67742%, #ffffff 12.90323%, #d7f9ec 12.90323%, #d7f9ec 22.58065%, #ffffff 22.58065%, #ffffff 25.80645%, #d7f9ec 25.80645%, #d7f9ec 35.48387%, #ffffff 35.48387%, #ffffff 38.70968%, #d7f9ec 38.70968%, #d7f9ec 48.3871%, #ffffff 48.3871%, #ffffff 51.6129%, #d7f9ec 51.6129%, #d7f9ec 61.29032%, #ffffff 61.29032%, #ffffff 64.51613%, #d7f9ec 64.51613%, #d7f9ec 74.19355%, #ffffff 74.19355%, #ffffff 77.41935%, #d7f9ec 77.41935%, #d7f9ec 87.09677%, #ffffff 87.09677%, #ffffff 90.32258%, #d7f9ec 90.32258%, #d7f9ec 100.0%, #ffffff 100.0%, #ffffff 100%);
+    background-position: left top;
+    -webkit-background-origin: content;
+    -moz-background-origin: content;
+    -ms-background-origin: content-box;
+    -o-background-origin: content-box;
+    background-origin: content-box;
+    -webkit-background-clip: content-box;
+    -moz-background-clip: content-box;
+    background-clip: content-box;
+  }
+}
+@media (min-width: 768px) and (max-width: 939px) {
+  /* line 210, ../sass/doc.scss */
+  #s5, #s7, #s4 {
+    max-width: 1376px;
+    max-width: 86rem;
+    background-image: -webkit-gradient(linear, 0% 50%, 100% 50%, color-stop(0%, #ffffff), color-stop(0%, #d7f9ec), color-stop(6.97674%, #d7f9ec), color-stop(6.97674%, #ffffff), color-stop(9.30233%, #ffffff), color-stop(9.30233%, #d7f9ec), color-stop(16.27907%, #d7f9ec), color-stop(16.27907%, #ffffff), color-stop(18.60465%, #ffffff), color-stop(18.60465%, #d7f9ec), color-stop(25.5814%, #d7f9ec), color-stop(25.5814%, #ffffff), color-stop(27.90698%, #ffffff), color-stop(27.90698%, #d7f9ec), color-stop(34.88372%, #d7f9ec), color-stop(34.88372%, #ffffff), color-stop(37.2093%, #ffffff), color-stop(37.2093%, #d7f9ec), color-stop(44.18605%, #d7f9ec), color-stop(44.18605%, #ffffff), color-stop(46.51163%, #ffffff), color-stop(46.51163%, #d7f9ec), color-stop(53.48837%, #d7f9ec), color-stop(53.48837%, #ffffff), color-stop(55.81395%, #ffffff), color-stop(55.81395%, #d7f9ec), color-stop(62.7907%, #d7f9ec), color-stop(62.7907%, #ffffff), color-stop(65.11628%, #ffffff), color-stop(65.11628%, #d7f9ec), color-stop(72.09302%, #d7f9ec), color-stop(72.09302%, #ffffff), color-stop(74.4186%, #ffffff), color-stop(74.4186%, #d7f9ec), color-stop(81.39535%, #d7f9ec), color-stop(81.39535%, #ffffff), color-stop(83.72093%, #ffffff), color-stop(83.72093%, #d7f9ec), color-stop(90.69767%, #d7f9ec), color-stop(90.69767%, #ffffff), color-stop(93.02326%, #ffffff), color-stop(93.02326%, #d7f9ec), color-stop(100.0%, #d7f9ec), color-stop(100.0%, #ffffff), color-stop(100%, #ffffff));
+    background-image: -webkit-linear-gradient(left, #ffffff 0%, #d7f9ec 0%, #d7f9ec 6.97674%, #ffffff 6.97674%, #ffffff 9.30233%, #d7f9ec 9.30233%, #d7f9ec 16.27907%, #ffffff 16.27907%, #ffffff 18.60465%, #d7f9ec 18.60465%, #d7f9ec 25.5814%, #ffffff 25.5814%, #ffffff 27.90698%, #d7f9ec 27.90698%, #d7f9ec 34.88372%, #ffffff 34.88372%, #ffffff 37.2093%, #d7f9ec 37.2093%, #d7f9ec 44.18605%, #ffffff 44.18605%, #ffffff 46.51163%, #d7f9ec 46.51163%, #d7f9ec 53.48837%, #ffffff 53.48837%, #ffffff 55.81395%, #d7f9ec 55.81395%, #d7f9ec 62.7907%, #ffffff 62.7907%, #ffffff 65.11628%, #d7f9ec 65.11628%, #d7f9ec 72.09302%, #ffffff 72.09302%, #ffffff 74.4186%, #d7f9ec 74.4186%, #d7f9ec 81.39535%, #ffffff 81.39535%, #ffffff 83.72093%, #d7f9ec 83.72093%, #d7f9ec 90.69767%, #ffffff 90.69767%, #ffffff 93.02326%, #d7f9ec 93.02326%, #d7f9ec 100.0%, #ffffff 100.0%, #ffffff 100%);
+    background-image: -moz-linear-gradient(left, #ffffff 0%, #d7f9ec 0%, #d7f9ec 6.97674%, #ffffff 6.97674%, #ffffff 9.30233%, #d7f9ec 9.30233%, #d7f9ec 16.27907%, #ffffff 16.27907%, #ffffff 18.60465%, #d7f9ec 18.60465%, #d7f9ec 25.5814%, #ffffff 25.5814%, #ffffff 27.90698%, #d7f9ec 27.90698%, #d7f9ec 34.88372%, #ffffff 34.88372%, #ffffff 37.2093%, #d7f9ec 37.2093%, #d7f9ec 44.18605%, #ffffff 44.18605%, #ffffff 46.51163%, #d7f9ec 46.51163%, #d7f9ec 53.48837%, #ffffff 53.48837%, #ffffff 55.81395%, #d7f9ec 55.81395%, #d7f9ec 62.7907%, #ffffff 62.7907%, #ffffff 65.11628%, #d7f9ec 65.11628%, #d7f9ec 72.09302%, #ffffff 72.09302%, #ffffff 74.4186%, #d7f9ec 74.4186%, #d7f9ec 81.39535%, #ffffff 81.39535%, #ffffff 83.72093%, #d7f9ec 83.72093%, #d7f9ec 90.69767%, #ffffff 90.69767%, #ffffff 93.02326%, #d7f9ec 93.02326%, #d7f9ec 100.0%, #ffffff 100.0%, #ffffff 100%);
+    background-image: -o-linear-gradient(left, #ffffff 0%, #d7f9ec 0%, #d7f9ec 6.97674%, #ffffff 6.97674%, #ffffff 9.30233%, #d7f9ec 9.30233%, #d7f9ec 16.27907%, #ffffff 16.27907%, #ffffff 18.60465%, #d7f9ec 18.60465%, #d7f9ec 25.5814%, #ffffff 25.5814%, #ffffff 27.90698%, #d7f9ec 27.90698%, #d7f9ec 34.88372%, #ffffff 34.88372%, #ffffff 37.2093%, #d7f9ec 37.2093%, #d7f9ec 44.18605%, #ffffff 44.18605%, #ffffff 46.51163%, #d7f9ec 46.51163%, #d7f9ec 53.48837%, #ffffff 53.48837%, #ffffff 55.81395%, #d7f9ec 55.81395%, #d7f9ec 62.7907%, #ffffff 62.7907%, #ffffff 65.11628%, #d7f9ec 65.11628%, #d7f9ec 72.09302%, #ffffff 72.09302%, #ffffff 74.4186%, #d7f9ec 74.4186%, #d7f9ec 81.39535%, #ffffff 81.39535%, #ffffff 83.72093%, #d7f9ec 83.72093%, #d7f9ec 90.69767%, #ffffff 90.69767%, #ffffff 93.02326%, #d7f9ec 93.02326%, #d7f9ec 100.0%, #ffffff 100.0%, #ffffff 100%);
+    background-image: linear-gradient(left, #ffffff 0%, #d7f9ec 0%, #d7f9ec 6.97674%, #ffffff 6.97674%, #ffffff 9.30233%, #d7f9ec 9.30233%, #d7f9ec 16.27907%, #ffffff 16.27907%, #ffffff 18.60465%, #d7f9ec 18.60465%, #d7f9ec 25.5814%, #ffffff 25.5814%, #ffffff 27.90698%, #d7f9ec 27.90698%, #d7f9ec 34.88372%, #ffffff 34.88372%, #ffffff 37.2093%, #d7f9ec 37.2093%, #d7f9ec 44.18605%, #ffffff 44.18605%, #ffffff 46.51163%, #d7f9ec 46.51163%, #d7f9ec 53.48837%, #ffffff 53.48837%, #ffffff 55.81395%, #d7f9ec 55.81395%, #d7f9ec 62.7907%, #ffffff 62.7907%, #ffffff 65.11628%, #d7f9ec 65.11628%, #d7f9ec 72.09302%, #ffffff 72.09302%, #ffffff 74.4186%, #d7f9ec 74.4186%, #d7f9ec 81.39535%, #ffffff 81.39535%, #ffffff 83.72093%, #d7f9ec 83.72093%, #d7f9ec 90.69767%, #ffffff 90.69767%, #ffffff 93.02326%, #d7f9ec 93.02326%, #d7f9ec 100.0%, #ffffff 100.0%, #ffffff 100%);
+    background-position: left top;
+    -webkit-background-origin: content;
+    -moz-background-origin: content;
+    -ms-background-origin: content-box;
+    -o-background-origin: content-box;
+    background-origin: content-box;
+    -webkit-background-clip: content-box;
+    -moz-background-clip: content-box;
+    background-clip: content-box;
+  }
+}
+@media (min-width: 940px) {
+  /* line 210, ../sass/doc.scss */
+  #s5, #s7, #s4 {
+    max-width: 1504px;
+    max-width: 94rem;
+    background-image: -webkit-gradient(linear, 0% 50%, 100% 50%, color-stop(0%, #ffffff), color-stop(0%, #d7f9ec), color-stop(6.38298%, #d7f9ec), color-stop(6.38298%, #ffffff), color-stop(8.51064%, #ffffff), color-stop(8.51064%, #d7f9ec), color-stop(14.89362%, #d7f9ec), color-stop(14.89362%, #ffffff), color-stop(17.02128%, #ffffff), color-stop(17.02128%, #d7f9ec), color-stop(23.40426%, #d7f9ec), color-stop(23.40426%, #ffffff), color-stop(25.53191%, #ffffff), color-stop(25.53191%, #d7f9ec), color-stop(31.91489%, #d7f9ec), color-stop(31.91489%, #ffffff), color-stop(34.04255%, #ffffff), color-stop(34.04255%, #d7f9ec), color-stop(40.42553%, #d7f9ec), color-stop(40.42553%, #ffffff), color-stop(42.55319%, #ffffff), color-stop(42.55319%, #d7f9ec), color-stop(48.93617%, #d7f9ec), color-stop(48.93617%, #ffffff), color-stop(51.06383%, #ffffff), color-stop(51.06383%, #d7f9ec), color-stop(57.44681%, #d7f9ec), color-stop(57.44681%, #ffffff), color-stop(59.57447%, #ffffff), color-stop(59.57447%, #d7f9ec), color-stop(65.95745%, #d7f9ec), color-stop(65.95745%, #ffffff), color-stop(68.08511%, #ffffff), color-stop(68.08511%, #d7f9ec), color-stop(74.46809%, #d7f9ec), color-stop(74.46809%, #ffffff), color-stop(76.59574%, #ffffff), color-stop(76.59574%, #d7f9ec), color-stop(82.97872%, #d7f9ec), color-stop(82.97872%, #ffffff), color-stop(85.10638%, #ffffff), color-stop(85.10638%, #d7f9ec), color-stop(91.48936%, #d7f9ec), color-stop(91.48936%, #ffffff), color-stop(93.61702%, #ffffff), color-stop(93.61702%, #d7f9ec), color-stop(100%, #d7f9ec), color-stop(100%, #ffffff), color-stop(100%, #ffffff));
+    background-image: -webkit-linear-gradient(left, #ffffff 0%, #d7f9ec 0%, #d7f9ec 6.38298%, #ffffff 6.38298%, #ffffff 8.51064%, #d7f9ec 8.51064%, #d7f9ec 14.89362%, #ffffff 14.89362%, #ffffff 17.02128%, #d7f9ec 17.02128%, #d7f9ec 23.40426%, #ffffff 23.40426%, #ffffff 25.53191%, #d7f9ec 25.53191%, #d7f9ec 31.91489%, #ffffff 31.91489%, #ffffff 34.04255%, #d7f9ec 34.04255%, #d7f9ec 40.42553%, #ffffff 40.42553%, #ffffff 42.55319%, #d7f9ec 42.55319%, #d7f9ec 48.93617%, #ffffff 48.93617%, #ffffff 51.06383%, #d7f9ec 51.06383%, #d7f9ec 57.44681%, #ffffff 57.44681%, #ffffff 59.57447%, #d7f9ec 59.57447%, #d7f9ec 65.95745%, #ffffff 65.95745%, #ffffff 68.08511%, #d7f9ec 68.08511%, #d7f9ec 74.46809%, #ffffff 74.46809%, #ffffff 76.59574%, #d7f9ec 76.59574%, #d7f9ec 82.97872%, #ffffff 82.97872%, #ffffff 85.10638%, #d7f9ec 85.10638%, #d7f9ec 91.48936%, #ffffff 91.48936%, #ffffff 93.61702%, #d7f9ec 93.61702%, #d7f9ec 100%, #ffffff 100%, #ffffff 100%);
+    background-image: -moz-linear-gradient(left, #ffffff 0%, #d7f9ec 0%, #d7f9ec 6.38298%, #ffffff 6.38298%, #ffffff 8.51064%, #d7f9ec 8.51064%, #d7f9ec 14.89362%, #ffffff 14.89362%, #ffffff 17.02128%, #d7f9ec 17.02128%, #d7f9ec 23.40426%, #ffffff 23.40426%, #ffffff 25.53191%, #d7f9ec 25.53191%, #d7f9ec 31.91489%, #ffffff 31.91489%, #ffffff 34.04255%, #d7f9ec 34.04255%, #d7f9ec 40.42553%, #ffffff 40.42553%, #ffffff 42.55319%, #d7f9ec 42.55319%, #d7f9ec 48.93617%, #ffffff 48.93617%, #ffffff 51.06383%, #d7f9ec 51.06383%, #d7f9ec 57.44681%, #ffffff 57.44681%, #ffffff 59.57447%, #d7f9ec 59.57447%, #d7f9ec 65.95745%, #ffffff 65.95745%, #ffffff 68.08511%, #d7f9ec 68.08511%, #d7f9ec 74.46809%, #ffffff 74.46809%, #ffffff 76.59574%, #d7f9ec 76.59574%, #d7f9ec 82.97872%, #ffffff 82.97872%, #ffffff 85.10638%, #d7f9ec 85.10638%, #d7f9ec 91.48936%, #ffffff 91.48936%, #ffffff 93.61702%, #d7f9ec 93.61702%, #d7f9ec 100%, #ffffff 100%, #ffffff 100%);
+    background-image: -o-linear-gradient(left, #ffffff 0%, #d7f9ec 0%, #d7f9ec 6.38298%, #ffffff 6.38298%, #ffffff 8.51064%, #d7f9ec 8.51064%, #d7f9ec 14.89362%, #ffffff 14.89362%, #ffffff 17.02128%, #d7f9ec 17.02128%, #d7f9ec 23.40426%, #ffffff 23.40426%, #ffffff 25.53191%, #d7f9ec 25.53191%, #d7f9ec 31.91489%, #ffffff 31.91489%, #ffffff 34.04255%, #d7f9ec 34.04255%, #d7f9ec 40.42553%, #ffffff 40.42553%, #ffffff 42.55319%, #d7f9ec 42.55319%, #d7f9ec 48.93617%, #ffffff 48.93617%, #ffffff 51.06383%, #d7f9ec 51.06383%, #d7f9ec 57.44681%, #ffffff 57.44681%, #ffffff 59.57447%, #d7f9ec 59.57447%, #d7f9ec 65.95745%, #ffffff 65.95745%, #ffffff 68.08511%, #d7f9ec 68.08511%, #d7f9ec 74.46809%, #ffffff 74.46809%, #ffffff 76.59574%, #d7f9ec 76.59574%, #d7f9ec 82.97872%, #ffffff 82.97872%, #ffffff 85.10638%, #d7f9ec 85.10638%, #d7f9ec 91.48936%, #ffffff 91.48936%, #ffffff 93.61702%, #d7f9ec 93.61702%, #d7f9ec 100%, #ffffff 100%, #ffffff 100%);
+    background-image: linear-gradient(left, #ffffff 0%, #d7f9ec 0%, #d7f9ec 6.38298%, #ffffff 6.38298%, #ffffff 8.51064%, #d7f9ec 8.51064%, #d7f9ec 14.89362%, #ffffff 14.89362%, #ffffff 17.02128%, #d7f9ec 17.02128%, #d7f9ec 23.40426%, #ffffff 23.40426%, #ffffff 25.53191%, #d7f9ec 25.53191%, #d7f9ec 31.91489%, #ffffff 31.91489%, #ffffff 34.04255%, #d7f9ec 34.04255%, #d7f9ec 40.42553%, #ffffff 40.42553%, #ffffff 42.55319%, #d7f9ec 42.55319%, #d7f9ec 48.93617%, #ffffff 48.93617%, #ffffff 51.06383%, #d7f9ec 51.06383%, #d7f9ec 57.44681%, #ffffff 57.44681%, #ffffff 59.57447%, #d7f9ec 59.57447%, #d7f9ec 65.95745%, #ffffff 65.95745%, #ffffff 68.08511%, #d7f9ec 68.08511%, #d7f9ec 74.46809%, #ffffff 74.46809%, #ffffff 76.59574%, #d7f9ec 76.59574%, #d7f9ec 82.97872%, #ffffff 82.97872%, #ffffff 85.10638%, #d7f9ec 85.10638%, #d7f9ec 91.48936%, #ffffff 91.48936%, #ffffff 93.61702%, #d7f9ec 93.61702%, #d7f9ec 100%, #ffffff 100%, #ffffff 100%);
+    background-position: left top;
+    -webkit-background-origin: content;
+    -moz-background-origin: content;
+    -ms-background-origin: content-box;
+    -o-background-origin: content-box;
+    background-origin: content-box;
+    -webkit-background-clip: content-box;
+    -moz-background-clip: content-box;
+    background-clip: content-box;
+  }
+}
+
 /*bloc*/
-/* line 190, ../sass/doc.scss */
+/* line 213, ../sass/doc.scss */
+#s6 {
+  *zoom: 1;
+  max-width: 1504px;
+  max-width: 94rem;
+  _width: 1504px;
+  padding-left: 32px;
+  padding-left: 2rem;
+  padding-right: 32px;
+  padding-right: 2rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* line 38, ../../../../../../Users/miguelangel/.rvm/gems/ruby-2.0.0-p247/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
+#s6:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+@media (max-width: 320px) {
+  /* line 213, ../sass/doc.scss */
+  #s6 {
+    max-width: 480px;
+    max-width: 30rem;
+    background-image: -webkit-gradient(linear, 0% 50%, 100% 50%, color-stop(0%, #ffffff), color-stop(0%, #d7f9ec), color-stop(20%, #d7f9ec), color-stop(20%, #ffffff), color-stop(26.66667%, #ffffff), color-stop(26.66667%, #d7f9ec), color-stop(46.66667%, #d7f9ec), color-stop(46.66667%, #ffffff), color-stop(53.33333%, #ffffff), color-stop(53.33333%, #d7f9ec), color-stop(73.33333%, #d7f9ec), color-stop(73.33333%, #ffffff), color-stop(80.0%, #ffffff), color-stop(80%, #d7f9ec), color-stop(100%, #d7f9ec), color-stop(100%, #ffffff), color-stop(100%, #ffffff));
+    background-image: -webkit-linear-gradient(left, #ffffff 0%, #d7f9ec 0%, #d7f9ec 20%, #ffffff 20%, #ffffff 26.66667%, #d7f9ec 26.66667%, #d7f9ec 46.66667%, #ffffff 46.66667%, #ffffff 53.33333%, #d7f9ec 53.33333%, #d7f9ec 73.33333%, #ffffff 73.33333%, #ffffff 80.0%, #d7f9ec 80%, #d7f9ec 100%, #ffffff 100%, #ffffff 100%);
+    background-image: -moz-linear-gradient(left, #ffffff 0%, #d7f9ec 0%, #d7f9ec 20%, #ffffff 20%, #ffffff 26.66667%, #d7f9ec 26.66667%, #d7f9ec 46.66667%, #ffffff 46.66667%, #ffffff 53.33333%, #d7f9ec 53.33333%, #d7f9ec 73.33333%, #ffffff 73.33333%, #ffffff 80.0%, #d7f9ec 80%, #d7f9ec 100%, #ffffff 100%, #ffffff 100%);
+    background-image: -o-linear-gradient(left, #ffffff 0%, #d7f9ec 0%, #d7f9ec 20%, #ffffff 20%, #ffffff 26.66667%, #d7f9ec 26.66667%, #d7f9ec 46.66667%, #ffffff 46.66667%, #ffffff 53.33333%, #d7f9ec 53.33333%, #d7f9ec 73.33333%, #ffffff 73.33333%, #ffffff 80.0%, #d7f9ec 80%, #d7f9ec 100%, #ffffff 100%, #ffffff 100%);
+    background-image: linear-gradient(left, #ffffff 0%, #d7f9ec 0%, #d7f9ec 20%, #ffffff 20%, #ffffff 26.66667%, #d7f9ec 26.66667%, #d7f9ec 46.66667%, #ffffff 46.66667%, #ffffff 53.33333%, #d7f9ec 53.33333%, #d7f9ec 73.33333%, #ffffff 73.33333%, #ffffff 80.0%, #d7f9ec 80%, #d7f9ec 100%, #ffffff 100%, #ffffff 100%);
+    background-position: left top;
+    -webkit-background-origin: content;
+    -moz-background-origin: content;
+    -ms-background-origin: content-box;
+    -o-background-origin: content-box;
+    background-origin: content-box;
+    -webkit-background-clip: content-box;
+    -moz-background-clip: content-box;
+    background-clip: content-box;
+  }
+}
+@media (min-width: 321px) and (max-width: 480px) {
+  /* line 213, ../sass/doc.scss */
+  #s6 {
+    max-width: 608px;
+    max-width: 38rem;
+    background-image: -webkit-gradient(linear, 0% 50%, 100% 50%, color-stop(0%, #ffffff), color-stop(0%, #d7f9ec), color-stop(15.78947%, #d7f9ec), color-stop(15.78947%, #ffffff), color-stop(21.05263%, #ffffff), color-stop(21.05263%, #d7f9ec), color-stop(36.84211%, #d7f9ec), color-stop(36.84211%, #ffffff), color-stop(42.10526%, #ffffff), color-stop(42.10526%, #d7f9ec), color-stop(57.89474%, #d7f9ec), color-stop(57.89474%, #ffffff), color-stop(63.15789%, #ffffff), color-stop(63.15789%, #d7f9ec), color-stop(78.94737%, #d7f9ec), color-stop(78.94737%, #ffffff), color-stop(84.21053%, #ffffff), color-stop(84.21053%, #d7f9ec), color-stop(100.0%, #d7f9ec), color-stop(100.0%, #ffffff), color-stop(100%, #ffffff));
+    background-image: -webkit-linear-gradient(left, #ffffff 0%, #d7f9ec 0%, #d7f9ec 15.78947%, #ffffff 15.78947%, #ffffff 21.05263%, #d7f9ec 21.05263%, #d7f9ec 36.84211%, #ffffff 36.84211%, #ffffff 42.10526%, #d7f9ec 42.10526%, #d7f9ec 57.89474%, #ffffff 57.89474%, #ffffff 63.15789%, #d7f9ec 63.15789%, #d7f9ec 78.94737%, #ffffff 78.94737%, #ffffff 84.21053%, #d7f9ec 84.21053%, #d7f9ec 100.0%, #ffffff 100.0%, #ffffff 100%);
+    background-image: -moz-linear-gradient(left, #ffffff 0%, #d7f9ec 0%, #d7f9ec 15.78947%, #ffffff 15.78947%, #ffffff 21.05263%, #d7f9ec 21.05263%, #d7f9ec 36.84211%, #ffffff 36.84211%, #ffffff 42.10526%, #d7f9ec 42.10526%, #d7f9ec 57.89474%, #ffffff 57.89474%, #ffffff 63.15789%, #d7f9ec 63.15789%, #d7f9ec 78.94737%, #ffffff 78.94737%, #ffffff 84.21053%, #d7f9ec 84.21053%, #d7f9ec 100.0%, #ffffff 100.0%, #ffffff 100%);
+    background-image: -o-linear-gradient(left, #ffffff 0%, #d7f9ec 0%, #d7f9ec 15.78947%, #ffffff 15.78947%, #ffffff 21.05263%, #d7f9ec 21.05263%, #d7f9ec 36.84211%, #ffffff 36.84211%, #ffffff 42.10526%, #d7f9ec 42.10526%, #d7f9ec 57.89474%, #ffffff 57.89474%, #ffffff 63.15789%, #d7f9ec 63.15789%, #d7f9ec 78.94737%, #ffffff 78.94737%, #ffffff 84.21053%, #d7f9ec 84.21053%, #d7f9ec 100.0%, #ffffff 100.0%, #ffffff 100%);
+    background-image: linear-gradient(left, #ffffff 0%, #d7f9ec 0%, #d7f9ec 15.78947%, #ffffff 15.78947%, #ffffff 21.05263%, #d7f9ec 21.05263%, #d7f9ec 36.84211%, #ffffff 36.84211%, #ffffff 42.10526%, #d7f9ec 42.10526%, #d7f9ec 57.89474%, #ffffff 57.89474%, #ffffff 63.15789%, #d7f9ec 63.15789%, #d7f9ec 78.94737%, #ffffff 78.94737%, #ffffff 84.21053%, #d7f9ec 84.21053%, #d7f9ec 100.0%, #ffffff 100.0%, #ffffff 100%);
+    background-position: left top;
+    -webkit-background-origin: content;
+    -moz-background-origin: content;
+    -ms-background-origin: content-box;
+    -o-background-origin: content-box;
+    background-origin: content-box;
+    -webkit-background-clip: content-box;
+    -moz-background-clip: content-box;
+    background-clip: content-box;
+  }
+}
+@media (min-width: 481px) and (max-width: 568px) {
+  /* line 213, ../sass/doc.scss */
+  #s6 {
+    max-width: 736px;
+    max-width: 46rem;
+    background-image: -webkit-gradient(linear, 0% 50%, 100% 50%, color-stop(0%, #ffffff), color-stop(0%, #d7f9ec), color-stop(13.04348%, #d7f9ec), color-stop(13.04348%, #ffffff), color-stop(17.3913%, #ffffff), color-stop(17.3913%, #d7f9ec), color-stop(30.43478%, #d7f9ec), color-stop(30.43478%, #ffffff), color-stop(34.78261%, #ffffff), color-stop(34.78261%, #d7f9ec), color-stop(47.82609%, #d7f9ec), color-stop(47.82609%, #ffffff), color-stop(52.17391%, #ffffff), color-stop(52.17391%, #d7f9ec), color-stop(65.21739%, #d7f9ec), color-stop(65.21739%, #ffffff), color-stop(69.56522%, #ffffff), color-stop(69.56522%, #d7f9ec), color-stop(82.6087%, #d7f9ec), color-stop(82.6087%, #ffffff), color-stop(86.95652%, #ffffff), color-stop(86.95652%, #d7f9ec), color-stop(100%, #d7f9ec), color-stop(100%, #ffffff), color-stop(100%, #ffffff));
+    background-image: -webkit-linear-gradient(left, #ffffff 0%, #d7f9ec 0%, #d7f9ec 13.04348%, #ffffff 13.04348%, #ffffff 17.3913%, #d7f9ec 17.3913%, #d7f9ec 30.43478%, #ffffff 30.43478%, #ffffff 34.78261%, #d7f9ec 34.78261%, #d7f9ec 47.82609%, #ffffff 47.82609%, #ffffff 52.17391%, #d7f9ec 52.17391%, #d7f9ec 65.21739%, #ffffff 65.21739%, #ffffff 69.56522%, #d7f9ec 69.56522%, #d7f9ec 82.6087%, #ffffff 82.6087%, #ffffff 86.95652%, #d7f9ec 86.95652%, #d7f9ec 100%, #ffffff 100%, #ffffff 100%);
+    background-image: -moz-linear-gradient(left, #ffffff 0%, #d7f9ec 0%, #d7f9ec 13.04348%, #ffffff 13.04348%, #ffffff 17.3913%, #d7f9ec 17.3913%, #d7f9ec 30.43478%, #ffffff 30.43478%, #ffffff 34.78261%, #d7f9ec 34.78261%, #d7f9ec 47.82609%, #ffffff 47.82609%, #ffffff 52.17391%, #d7f9ec 52.17391%, #d7f9ec 65.21739%, #ffffff 65.21739%, #ffffff 69.56522%, #d7f9ec 69.56522%, #d7f9ec 82.6087%, #ffffff 82.6087%, #ffffff 86.95652%, #d7f9ec 86.95652%, #d7f9ec 100%, #ffffff 100%, #ffffff 100%);
+    background-image: -o-linear-gradient(left, #ffffff 0%, #d7f9ec 0%, #d7f9ec 13.04348%, #ffffff 13.04348%, #ffffff 17.3913%, #d7f9ec 17.3913%, #d7f9ec 30.43478%, #ffffff 30.43478%, #ffffff 34.78261%, #d7f9ec 34.78261%, #d7f9ec 47.82609%, #ffffff 47.82609%, #ffffff 52.17391%, #d7f9ec 52.17391%, #d7f9ec 65.21739%, #ffffff 65.21739%, #ffffff 69.56522%, #d7f9ec 69.56522%, #d7f9ec 82.6087%, #ffffff 82.6087%, #ffffff 86.95652%, #d7f9ec 86.95652%, #d7f9ec 100%, #ffffff 100%, #ffffff 100%);
+    background-image: linear-gradient(left, #ffffff 0%, #d7f9ec 0%, #d7f9ec 13.04348%, #ffffff 13.04348%, #ffffff 17.3913%, #d7f9ec 17.3913%, #d7f9ec 30.43478%, #ffffff 30.43478%, #ffffff 34.78261%, #d7f9ec 34.78261%, #d7f9ec 47.82609%, #ffffff 47.82609%, #ffffff 52.17391%, #d7f9ec 52.17391%, #d7f9ec 65.21739%, #ffffff 65.21739%, #ffffff 69.56522%, #d7f9ec 69.56522%, #d7f9ec 82.6087%, #ffffff 82.6087%, #ffffff 86.95652%, #d7f9ec 86.95652%, #d7f9ec 100%, #ffffff 100%, #ffffff 100%);
+    background-position: left top;
+    -webkit-background-origin: content;
+    -moz-background-origin: content;
+    -ms-background-origin: content-box;
+    -o-background-origin: content-box;
+    background-origin: content-box;
+    -webkit-background-clip: content-box;
+    -moz-background-clip: content-box;
+    background-clip: content-box;
+  }
+}
+@media (min-width: 569px) and (max-width: 767px) {
+  /* line 213, ../sass/doc.scss */
+  #s6 {
+    max-width: 992px;
+    max-width: 62rem;
+    background-image: -webkit-gradient(linear, 0% 50%, 100% 50%, color-stop(0%, #ffffff), color-stop(0%, #d7f9ec), color-stop(9.67742%, #d7f9ec), color-stop(9.67742%, #ffffff), color-stop(12.90323%, #ffffff), color-stop(12.90323%, #d7f9ec), color-stop(22.58065%, #d7f9ec), color-stop(22.58065%, #ffffff), color-stop(25.80645%, #ffffff), color-stop(25.80645%, #d7f9ec), color-stop(35.48387%, #d7f9ec), color-stop(35.48387%, #ffffff), color-stop(38.70968%, #ffffff), color-stop(38.70968%, #d7f9ec), color-stop(48.3871%, #d7f9ec), color-stop(48.3871%, #ffffff), color-stop(51.6129%, #ffffff), color-stop(51.6129%, #d7f9ec), color-stop(61.29032%, #d7f9ec), color-stop(61.29032%, #ffffff), color-stop(64.51613%, #ffffff), color-stop(64.51613%, #d7f9ec), color-stop(74.19355%, #d7f9ec), color-stop(74.19355%, #ffffff), color-stop(77.41935%, #ffffff), color-stop(77.41935%, #d7f9ec), color-stop(87.09677%, #d7f9ec), color-stop(87.09677%, #ffffff), color-stop(90.32258%, #ffffff), color-stop(90.32258%, #d7f9ec), color-stop(100.0%, #d7f9ec), color-stop(100.0%, #ffffff), color-stop(100%, #ffffff));
+    background-image: -webkit-linear-gradient(left, #ffffff 0%, #d7f9ec 0%, #d7f9ec 9.67742%, #ffffff 9.67742%, #ffffff 12.90323%, #d7f9ec 12.90323%, #d7f9ec 22.58065%, #ffffff 22.58065%, #ffffff 25.80645%, #d7f9ec 25.80645%, #d7f9ec 35.48387%, #ffffff 35.48387%, #ffffff 38.70968%, #d7f9ec 38.70968%, #d7f9ec 48.3871%, #ffffff 48.3871%, #ffffff 51.6129%, #d7f9ec 51.6129%, #d7f9ec 61.29032%, #ffffff 61.29032%, #ffffff 64.51613%, #d7f9ec 64.51613%, #d7f9ec 74.19355%, #ffffff 74.19355%, #ffffff 77.41935%, #d7f9ec 77.41935%, #d7f9ec 87.09677%, #ffffff 87.09677%, #ffffff 90.32258%, #d7f9ec 90.32258%, #d7f9ec 100.0%, #ffffff 100.0%, #ffffff 100%);
+    background-image: -moz-linear-gradient(left, #ffffff 0%, #d7f9ec 0%, #d7f9ec 9.67742%, #ffffff 9.67742%, #ffffff 12.90323%, #d7f9ec 12.90323%, #d7f9ec 22.58065%, #ffffff 22.58065%, #ffffff 25.80645%, #d7f9ec 25.80645%, #d7f9ec 35.48387%, #ffffff 35.48387%, #ffffff 38.70968%, #d7f9ec 38.70968%, #d7f9ec 48.3871%, #ffffff 48.3871%, #ffffff 51.6129%, #d7f9ec 51.6129%, #d7f9ec 61.29032%, #ffffff 61.29032%, #ffffff 64.51613%, #d7f9ec 64.51613%, #d7f9ec 74.19355%, #ffffff 74.19355%, #ffffff 77.41935%, #d7f9ec 77.41935%, #d7f9ec 87.09677%, #ffffff 87.09677%, #ffffff 90.32258%, #d7f9ec 90.32258%, #d7f9ec 100.0%, #ffffff 100.0%, #ffffff 100%);
+    background-image: -o-linear-gradient(left, #ffffff 0%, #d7f9ec 0%, #d7f9ec 9.67742%, #ffffff 9.67742%, #ffffff 12.90323%, #d7f9ec 12.90323%, #d7f9ec 22.58065%, #ffffff 22.58065%, #ffffff 25.80645%, #d7f9ec 25.80645%, #d7f9ec 35.48387%, #ffffff 35.48387%, #ffffff 38.70968%, #d7f9ec 38.70968%, #d7f9ec 48.3871%, #ffffff 48.3871%, #ffffff 51.6129%, #d7f9ec 51.6129%, #d7f9ec 61.29032%, #ffffff 61.29032%, #ffffff 64.51613%, #d7f9ec 64.51613%, #d7f9ec 74.19355%, #ffffff 74.19355%, #ffffff 77.41935%, #d7f9ec 77.41935%, #d7f9ec 87.09677%, #ffffff 87.09677%, #ffffff 90.32258%, #d7f9ec 90.32258%, #d7f9ec 100.0%, #ffffff 100.0%, #ffffff 100%);
+    background-image: linear-gradient(left, #ffffff 0%, #d7f9ec 0%, #d7f9ec 9.67742%, #ffffff 9.67742%, #ffffff 12.90323%, #d7f9ec 12.90323%, #d7f9ec 22.58065%, #ffffff 22.58065%, #ffffff 25.80645%, #d7f9ec 25.80645%, #d7f9ec 35.48387%, #ffffff 35.48387%, #ffffff 38.70968%, #d7f9ec 38.70968%, #d7f9ec 48.3871%, #ffffff 48.3871%, #ffffff 51.6129%, #d7f9ec 51.6129%, #d7f9ec 61.29032%, #ffffff 61.29032%, #ffffff 64.51613%, #d7f9ec 64.51613%, #d7f9ec 74.19355%, #ffffff 74.19355%, #ffffff 77.41935%, #d7f9ec 77.41935%, #d7f9ec 87.09677%, #ffffff 87.09677%, #ffffff 90.32258%, #d7f9ec 90.32258%, #d7f9ec 100.0%, #ffffff 100.0%, #ffffff 100%);
+    background-position: left top;
+    -webkit-background-origin: content;
+    -moz-background-origin: content;
+    -ms-background-origin: content-box;
+    -o-background-origin: content-box;
+    background-origin: content-box;
+    -webkit-background-clip: content-box;
+    -moz-background-clip: content-box;
+    background-clip: content-box;
+  }
+}
+@media (min-width: 768px) and (max-width: 939px) {
+  /* line 213, ../sass/doc.scss */
+  #s6 {
+    max-width: 1376px;
+    max-width: 86rem;
+    background-image: -webkit-gradient(linear, 0% 50%, 100% 50%, color-stop(0%, #ffffff), color-stop(0%, #d7f9ec), color-stop(6.97674%, #d7f9ec), color-stop(6.97674%, #ffffff), color-stop(9.30233%, #ffffff), color-stop(9.30233%, #d7f9ec), color-stop(16.27907%, #d7f9ec), color-stop(16.27907%, #ffffff), color-stop(18.60465%, #ffffff), color-stop(18.60465%, #d7f9ec), color-stop(25.5814%, #d7f9ec), color-stop(25.5814%, #ffffff), color-stop(27.90698%, #ffffff), color-stop(27.90698%, #d7f9ec), color-stop(34.88372%, #d7f9ec), color-stop(34.88372%, #ffffff), color-stop(37.2093%, #ffffff), color-stop(37.2093%, #d7f9ec), color-stop(44.18605%, #d7f9ec), color-stop(44.18605%, #ffffff), color-stop(46.51163%, #ffffff), color-stop(46.51163%, #d7f9ec), color-stop(53.48837%, #d7f9ec), color-stop(53.48837%, #ffffff), color-stop(55.81395%, #ffffff), color-stop(55.81395%, #d7f9ec), color-stop(62.7907%, #d7f9ec), color-stop(62.7907%, #ffffff), color-stop(65.11628%, #ffffff), color-stop(65.11628%, #d7f9ec), color-stop(72.09302%, #d7f9ec), color-stop(72.09302%, #ffffff), color-stop(74.4186%, #ffffff), color-stop(74.4186%, #d7f9ec), color-stop(81.39535%, #d7f9ec), color-stop(81.39535%, #ffffff), color-stop(83.72093%, #ffffff), color-stop(83.72093%, #d7f9ec), color-stop(90.69767%, #d7f9ec), color-stop(90.69767%, #ffffff), color-stop(93.02326%, #ffffff), color-stop(93.02326%, #d7f9ec), color-stop(100.0%, #d7f9ec), color-stop(100.0%, #ffffff), color-stop(100%, #ffffff));
+    background-image: -webkit-linear-gradient(left, #ffffff 0%, #d7f9ec 0%, #d7f9ec 6.97674%, #ffffff 6.97674%, #ffffff 9.30233%, #d7f9ec 9.30233%, #d7f9ec 16.27907%, #ffffff 16.27907%, #ffffff 18.60465%, #d7f9ec 18.60465%, #d7f9ec 25.5814%, #ffffff 25.5814%, #ffffff 27.90698%, #d7f9ec 27.90698%, #d7f9ec 34.88372%, #ffffff 34.88372%, #ffffff 37.2093%, #d7f9ec 37.2093%, #d7f9ec 44.18605%, #ffffff 44.18605%, #ffffff 46.51163%, #d7f9ec 46.51163%, #d7f9ec 53.48837%, #ffffff 53.48837%, #ffffff 55.81395%, #d7f9ec 55.81395%, #d7f9ec 62.7907%, #ffffff 62.7907%, #ffffff 65.11628%, #d7f9ec 65.11628%, #d7f9ec 72.09302%, #ffffff 72.09302%, #ffffff 74.4186%, #d7f9ec 74.4186%, #d7f9ec 81.39535%, #ffffff 81.39535%, #ffffff 83.72093%, #d7f9ec 83.72093%, #d7f9ec 90.69767%, #ffffff 90.69767%, #ffffff 93.02326%, #d7f9ec 93.02326%, #d7f9ec 100.0%, #ffffff 100.0%, #ffffff 100%);
+    background-image: -moz-linear-gradient(left, #ffffff 0%, #d7f9ec 0%, #d7f9ec 6.97674%, #ffffff 6.97674%, #ffffff 9.30233%, #d7f9ec 9.30233%, #d7f9ec 16.27907%, #ffffff 16.27907%, #ffffff 18.60465%, #d7f9ec 18.60465%, #d7f9ec 25.5814%, #ffffff 25.5814%, #ffffff 27.90698%, #d7f9ec 27.90698%, #d7f9ec 34.88372%, #ffffff 34.88372%, #ffffff 37.2093%, #d7f9ec 37.2093%, #d7f9ec 44.18605%, #ffffff 44.18605%, #ffffff 46.51163%, #d7f9ec 46.51163%, #d7f9ec 53.48837%, #ffffff 53.48837%, #ffffff 55.81395%, #d7f9ec 55.81395%, #d7f9ec 62.7907%, #ffffff 62.7907%, #ffffff 65.11628%, #d7f9ec 65.11628%, #d7f9ec 72.09302%, #ffffff 72.09302%, #ffffff 74.4186%, #d7f9ec 74.4186%, #d7f9ec 81.39535%, #ffffff 81.39535%, #ffffff 83.72093%, #d7f9ec 83.72093%, #d7f9ec 90.69767%, #ffffff 90.69767%, #ffffff 93.02326%, #d7f9ec 93.02326%, #d7f9ec 100.0%, #ffffff 100.0%, #ffffff 100%);
+    background-image: -o-linear-gradient(left, #ffffff 0%, #d7f9ec 0%, #d7f9ec 6.97674%, #ffffff 6.97674%, #ffffff 9.30233%, #d7f9ec 9.30233%, #d7f9ec 16.27907%, #ffffff 16.27907%, #ffffff 18.60465%, #d7f9ec 18.60465%, #d7f9ec 25.5814%, #ffffff 25.5814%, #ffffff 27.90698%, #d7f9ec 27.90698%, #d7f9ec 34.88372%, #ffffff 34.88372%, #ffffff 37.2093%, #d7f9ec 37.2093%, #d7f9ec 44.18605%, #ffffff 44.18605%, #ffffff 46.51163%, #d7f9ec 46.51163%, #d7f9ec 53.48837%, #ffffff 53.48837%, #ffffff 55.81395%, #d7f9ec 55.81395%, #d7f9ec 62.7907%, #ffffff 62.7907%, #ffffff 65.11628%, #d7f9ec 65.11628%, #d7f9ec 72.09302%, #ffffff 72.09302%, #ffffff 74.4186%, #d7f9ec 74.4186%, #d7f9ec 81.39535%, #ffffff 81.39535%, #ffffff 83.72093%, #d7f9ec 83.72093%, #d7f9ec 90.69767%, #ffffff 90.69767%, #ffffff 93.02326%, #d7f9ec 93.02326%, #d7f9ec 100.0%, #ffffff 100.0%, #ffffff 100%);
+    background-image: linear-gradient(left, #ffffff 0%, #d7f9ec 0%, #d7f9ec 6.97674%, #ffffff 6.97674%, #ffffff 9.30233%, #d7f9ec 9.30233%, #d7f9ec 16.27907%, #ffffff 16.27907%, #ffffff 18.60465%, #d7f9ec 18.60465%, #d7f9ec 25.5814%, #ffffff 25.5814%, #ffffff 27.90698%, #d7f9ec 27.90698%, #d7f9ec 34.88372%, #ffffff 34.88372%, #ffffff 37.2093%, #d7f9ec 37.2093%, #d7f9ec 44.18605%, #ffffff 44.18605%, #ffffff 46.51163%, #d7f9ec 46.51163%, #d7f9ec 53.48837%, #ffffff 53.48837%, #ffffff 55.81395%, #d7f9ec 55.81395%, #d7f9ec 62.7907%, #ffffff 62.7907%, #ffffff 65.11628%, #d7f9ec 65.11628%, #d7f9ec 72.09302%, #ffffff 72.09302%, #ffffff 74.4186%, #d7f9ec 74.4186%, #d7f9ec 81.39535%, #ffffff 81.39535%, #ffffff 83.72093%, #d7f9ec 83.72093%, #d7f9ec 90.69767%, #ffffff 90.69767%, #ffffff 93.02326%, #d7f9ec 93.02326%, #d7f9ec 100.0%, #ffffff 100.0%, #ffffff 100%);
+    background-position: left top;
+    -webkit-background-origin: content;
+    -moz-background-origin: content;
+    -ms-background-origin: content-box;
+    -o-background-origin: content-box;
+    background-origin: content-box;
+    -webkit-background-clip: content-box;
+    -moz-background-clip: content-box;
+    background-clip: content-box;
+  }
+}
+@media (min-width: 940px) {
+  /* line 213, ../sass/doc.scss */
+  #s6 {
+    max-width: 1504px;
+    max-width: 94rem;
+    background-image: -webkit-gradient(linear, 0% 50%, 100% 50%, color-stop(0%, #ffffff), color-stop(0%, #d7f9ec), color-stop(6.38298%, #d7f9ec), color-stop(6.38298%, #ffffff), color-stop(8.51064%, #ffffff), color-stop(8.51064%, #d7f9ec), color-stop(14.89362%, #d7f9ec), color-stop(14.89362%, #ffffff), color-stop(17.02128%, #ffffff), color-stop(17.02128%, #d7f9ec), color-stop(23.40426%, #d7f9ec), color-stop(23.40426%, #ffffff), color-stop(25.53191%, #ffffff), color-stop(25.53191%, #d7f9ec), color-stop(31.91489%, #d7f9ec), color-stop(31.91489%, #ffffff), color-stop(34.04255%, #ffffff), color-stop(34.04255%, #d7f9ec), color-stop(40.42553%, #d7f9ec), color-stop(40.42553%, #ffffff), color-stop(42.55319%, #ffffff), color-stop(42.55319%, #d7f9ec), color-stop(48.93617%, #d7f9ec), color-stop(48.93617%, #ffffff), color-stop(51.06383%, #ffffff), color-stop(51.06383%, #d7f9ec), color-stop(57.44681%, #d7f9ec), color-stop(57.44681%, #ffffff), color-stop(59.57447%, #ffffff), color-stop(59.57447%, #d7f9ec), color-stop(65.95745%, #d7f9ec), color-stop(65.95745%, #ffffff), color-stop(68.08511%, #ffffff), color-stop(68.08511%, #d7f9ec), color-stop(74.46809%, #d7f9ec), color-stop(74.46809%, #ffffff), color-stop(76.59574%, #ffffff), color-stop(76.59574%, #d7f9ec), color-stop(82.97872%, #d7f9ec), color-stop(82.97872%, #ffffff), color-stop(85.10638%, #ffffff), color-stop(85.10638%, #d7f9ec), color-stop(91.48936%, #d7f9ec), color-stop(91.48936%, #ffffff), color-stop(93.61702%, #ffffff), color-stop(93.61702%, #d7f9ec), color-stop(100%, #d7f9ec), color-stop(100%, #ffffff), color-stop(100%, #ffffff));
+    background-image: -webkit-linear-gradient(left, #ffffff 0%, #d7f9ec 0%, #d7f9ec 6.38298%, #ffffff 6.38298%, #ffffff 8.51064%, #d7f9ec 8.51064%, #d7f9ec 14.89362%, #ffffff 14.89362%, #ffffff 17.02128%, #d7f9ec 17.02128%, #d7f9ec 23.40426%, #ffffff 23.40426%, #ffffff 25.53191%, #d7f9ec 25.53191%, #d7f9ec 31.91489%, #ffffff 31.91489%, #ffffff 34.04255%, #d7f9ec 34.04255%, #d7f9ec 40.42553%, #ffffff 40.42553%, #ffffff 42.55319%, #d7f9ec 42.55319%, #d7f9ec 48.93617%, #ffffff 48.93617%, #ffffff 51.06383%, #d7f9ec 51.06383%, #d7f9ec 57.44681%, #ffffff 57.44681%, #ffffff 59.57447%, #d7f9ec 59.57447%, #d7f9ec 65.95745%, #ffffff 65.95745%, #ffffff 68.08511%, #d7f9ec 68.08511%, #d7f9ec 74.46809%, #ffffff 74.46809%, #ffffff 76.59574%, #d7f9ec 76.59574%, #d7f9ec 82.97872%, #ffffff 82.97872%, #ffffff 85.10638%, #d7f9ec 85.10638%, #d7f9ec 91.48936%, #ffffff 91.48936%, #ffffff 93.61702%, #d7f9ec 93.61702%, #d7f9ec 100%, #ffffff 100%, #ffffff 100%);
+    background-image: -moz-linear-gradient(left, #ffffff 0%, #d7f9ec 0%, #d7f9ec 6.38298%, #ffffff 6.38298%, #ffffff 8.51064%, #d7f9ec 8.51064%, #d7f9ec 14.89362%, #ffffff 14.89362%, #ffffff 17.02128%, #d7f9ec 17.02128%, #d7f9ec 23.40426%, #ffffff 23.40426%, #ffffff 25.53191%, #d7f9ec 25.53191%, #d7f9ec 31.91489%, #ffffff 31.91489%, #ffffff 34.04255%, #d7f9ec 34.04255%, #d7f9ec 40.42553%, #ffffff 40.42553%, #ffffff 42.55319%, #d7f9ec 42.55319%, #d7f9ec 48.93617%, #ffffff 48.93617%, #ffffff 51.06383%, #d7f9ec 51.06383%, #d7f9ec 57.44681%, #ffffff 57.44681%, #ffffff 59.57447%, #d7f9ec 59.57447%, #d7f9ec 65.95745%, #ffffff 65.95745%, #ffffff 68.08511%, #d7f9ec 68.08511%, #d7f9ec 74.46809%, #ffffff 74.46809%, #ffffff 76.59574%, #d7f9ec 76.59574%, #d7f9ec 82.97872%, #ffffff 82.97872%, #ffffff 85.10638%, #d7f9ec 85.10638%, #d7f9ec 91.48936%, #ffffff 91.48936%, #ffffff 93.61702%, #d7f9ec 93.61702%, #d7f9ec 100%, #ffffff 100%, #ffffff 100%);
+    background-image: -o-linear-gradient(left, #ffffff 0%, #d7f9ec 0%, #d7f9ec 6.38298%, #ffffff 6.38298%, #ffffff 8.51064%, #d7f9ec 8.51064%, #d7f9ec 14.89362%, #ffffff 14.89362%, #ffffff 17.02128%, #d7f9ec 17.02128%, #d7f9ec 23.40426%, #ffffff 23.40426%, #ffffff 25.53191%, #d7f9ec 25.53191%, #d7f9ec 31.91489%, #ffffff 31.91489%, #ffffff 34.04255%, #d7f9ec 34.04255%, #d7f9ec 40.42553%, #ffffff 40.42553%, #ffffff 42.55319%, #d7f9ec 42.55319%, #d7f9ec 48.93617%, #ffffff 48.93617%, #ffffff 51.06383%, #d7f9ec 51.06383%, #d7f9ec 57.44681%, #ffffff 57.44681%, #ffffff 59.57447%, #d7f9ec 59.57447%, #d7f9ec 65.95745%, #ffffff 65.95745%, #ffffff 68.08511%, #d7f9ec 68.08511%, #d7f9ec 74.46809%, #ffffff 74.46809%, #ffffff 76.59574%, #d7f9ec 76.59574%, #d7f9ec 82.97872%, #ffffff 82.97872%, #ffffff 85.10638%, #d7f9ec 85.10638%, #d7f9ec 91.48936%, #ffffff 91.48936%, #ffffff 93.61702%, #d7f9ec 93.61702%, #d7f9ec 100%, #ffffff 100%, #ffffff 100%);
+    background-image: linear-gradient(left, #ffffff 0%, #d7f9ec 0%, #d7f9ec 6.38298%, #ffffff 6.38298%, #ffffff 8.51064%, #d7f9ec 8.51064%, #d7f9ec 14.89362%, #ffffff 14.89362%, #ffffff 17.02128%, #d7f9ec 17.02128%, #d7f9ec 23.40426%, #ffffff 23.40426%, #ffffff 25.53191%, #d7f9ec 25.53191%, #d7f9ec 31.91489%, #ffffff 31.91489%, #ffffff 34.04255%, #d7f9ec 34.04255%, #d7f9ec 40.42553%, #ffffff 40.42553%, #ffffff 42.55319%, #d7f9ec 42.55319%, #d7f9ec 48.93617%, #ffffff 48.93617%, #ffffff 51.06383%, #d7f9ec 51.06383%, #d7f9ec 57.44681%, #ffffff 57.44681%, #ffffff 59.57447%, #d7f9ec 59.57447%, #d7f9ec 65.95745%, #ffffff 65.95745%, #ffffff 68.08511%, #d7f9ec 68.08511%, #d7f9ec 74.46809%, #ffffff 74.46809%, #ffffff 76.59574%, #d7f9ec 76.59574%, #d7f9ec 82.97872%, #ffffff 82.97872%, #ffffff 85.10638%, #d7f9ec 85.10638%, #d7f9ec 91.48936%, #ffffff 91.48936%, #ffffff 93.61702%, #d7f9ec 93.61702%, #d7f9ec 100%, #ffffff 100%, #ffffff 100%);
+    background-position: left top;
+    -webkit-background-origin: content;
+    -moz-background-origin: content;
+    -ms-background-origin: content-box;
+    -o-background-origin: content-box;
+    background-origin: content-box;
+    -webkit-background-clip: content-box;
+    -moz-background-clip: content-box;
+    background-clip: content-box;
+  }
+}
+/* line 215, ../sass/doc.scss */
 #s6 .bloc1 {
   display: inline-block;
 }
-/* line 193, ../sass/doc.scss */
+/* line 218, ../sass/doc.scss */
 #s6 .bloc1 .contingut {
   background-color: #fff;
 }
-/* line 196, ../sass/doc.scss */
+/* line 221, ../sass/doc.scss */
 #s6 .bloc2 {
   display: inline-block;
 }
-/* line 198, ../sass/doc.scss */
+/* line 223, ../sass/doc.scss */
 #s6 .bloc2 h2 {
   background-color: #f0f7f9;
   border-bottom-color: #fff;
 }
-/* line 199, ../sass/doc.scss */
+/* line 224, ../sass/doc.scss */
 #s6 .bloc2 .contingut {
   background-color: #f0f7f9;
 }
-/* line 200, ../sass/doc.scss */
+/* line 225, ../sass/doc.scss */
 #s6 .bloc2 .contingut div.dipta-resum {
-  border-bottom-color: white !important;
+  border-bottom-color: #fff !IMPORTANT;
 }
-/* line 203, ../sass/doc.scss */
+/* line 228, ../sass/doc.scss */
 #s6 .bloc3 {
   display: inline-block;
 }
-/* line 206, ../sass/doc.scss */
+/* line 231, ../sass/doc.scss */
 #s6 .bloc3 .contingut {
   background-color: #fff;
 }
-/* line 209, ../sass/doc.scss */
+/* line 234, ../sass/doc.scss */
 #s6 .bloc4 {
   display: inline-block;
 }
-/* line 211, ../sass/doc.scss */
+/* line 236, ../sass/doc.scss */
 #s6 .bloc4 h2 {
   background-color: #f0f7f9;
   border-bottom-color: #fff;
 }
-/* line 212, ../sass/doc.scss */
+/* line 237, ../sass/doc.scss */
 #s6 .bloc4 .contingut {
   background-color: #f0f7f9;
 }
-/* line 213, ../sass/doc.scss */
+/* line 238, ../sass/doc.scss */
 #s6 .bloc4 .contingut div.dipta-resum {
-  border-bottom-color: white !important;
+  border-bottom-color: #fff !IMPORTANT;
 }

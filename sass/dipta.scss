@@ -1,6 +1,6 @@
 /**
  * @file
- * Tema principal de Diputació
+ * Tema principal de Diputacio
  * NODES + VIEWS PAGES + VIEWS BLOCS + NAVIGATION
  */
  
@@ -10,8 +10,8 @@
 /*Padding-Margin Layout*/
 $pad:2%;
 
-//[Headings] [Específics]
-/*Title pàgines views*/
+//[Headings] [Especifics]
+/*Title pagines views*/
 h1.title { color:$base02;}
 
 h1#page-title{@extend h1.title; }
@@ -250,9 +250,9 @@ div.llista_numerada{
 	
 #content {
 	
-	
+	 
 
-	/*llistes orcdenades, desordenades (romans) i de definició.*/
+	/*llistes orcdenades, desordenades (romans) i de definicio.*/
 	
 	ul{
 		font-size: 1em;

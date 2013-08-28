@@ -13,14 +13,14 @@ $pad:2%;
 	.field-slideshow {overflow-x:visible; overflow-y:visible;padding-bottom:0px !important;}
 	.dipta-box-quote{margin-bottom:3rem !important; border-bottom:0;}
 	.dipta-tag{}
-	/*Title secció:Agrupació de camps*/
+	/*Title seccio:Agrupacio de camps*/
 	.field-group-format{h2{padding:1rem 0 1rem 0; border-bottom:0.1rem solid $base05; @extend h4; font-weight:700;  color:$base02;} }
 	.group-dades-generals,.group-dades-contacte {margin:0 2% 0 2%;}
 	/*dipta fields*/
 	.dipta-camp{ 
 		div.label-inline{ @extend h5; font-weight:700;}
 		span{padding-left:0.5rem;} 
-		//[Adreça postal]
+		//[Adreca postal]
 			.dipta-postal{
 				 width:39%;
 				.state,.street-block,.locality-block ,.name-block{display:block!important;  line-height: 13px;}
@@ -141,7 +141,7 @@ $pad:2%;
 .grid-diputat{width:23%; padding:1%;float:left;}
 
  
- //[Formació - NODE]
+ //[Formacio - NODE]
  div.container_formacio  {
 	div.label-inline{margin:0.5em 0;float:left;display:block;}
 		span{ 

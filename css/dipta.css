@@ -1,0 +1,989 @@
+@charset "UTF-8";
+@import url(http://fonts.googleapis.com/css?family=Droid+Sans:400,700);
+@import url(http://fonts.googleapis.com/css?family=Roboto+Condensed:400,300,700);
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,700,300,600,800);
+@import url(http://fonts.googleapis.com/css?family=Denk+One);
+@import url(http://fonts.googleapis.com/css?family=Julius+Sans+One);
+/**
+ * @file
+ * Tema principal de Diputacio
+ * NODES + VIEWS PAGES + VIEWS BLOCS + NAVIGATION
+ */
+/**
+ * @file
+ * Creation for compass - Front-end framework de  la Diputació de Tarragona.
+ * @Miguel Ángel Ramos. 
+ *
+ */
+/* Compass*/
+/* Creation base */
+/**
+ * prism.js default theme for JavaScript, CSS and HTML
+ * Based on dabblet (http://dabblet.com)
+ * @author Lea Verou
+ */
+/* line 8, ../sass/creation/base/_syntax.scss */
+code[class*="language-"],
+pre[class*="language-"] {
+  color: black;
+  text-shadow: 0 1px white;
+  font-family: Consolas, Monaco, 'Andale Mono', monospace;
+  direction: ltr;
+  text-align: left;
+  white-space: pre;
+  word-spacing: normal;
+  -moz-tab-size: 4;
+  -o-tab-size: 4;
+  tab-size: 4;
+  -webkit-hyphens: none;
+  -moz-hyphens: none;
+  -ms-hyphens: none;
+  hyphens: none;
+}
+
+/* line 27, ../sass/creation/base/_syntax.scss */
+::-moz-selection {
+  text-shadow: none;
+  background: #b3d4fc;
+}
+
+/* line 32, ../sass/creation/base/_syntax.scss */
+::selection {
+  text-shadow: none;
+  background: #b3d4fc;
+}
+
+@media print {
+  /* line 39, ../sass/creation/base/_syntax.scss */
+  code[class*="language-"],
+  pre[class*="language-"] {
+    text-shadow: none;
+  }
+}
+/* Code blocks */
+/* line 45, ../sass/creation/base/_syntax.scss */
+pre[class*="language-"] {
+  padding: 1em;
+  margin: .5em 0;
+  overflow: auto;
+}
+
+/* line 52, ../sass/creation/base/_syntax.scss */
+:not(pre) > code[class*="language-"],
+pre[class*="language-"] {
+  /* #FEFA83  #f5f2f0 #FFFBEA #FEFA83;*/
+  background: #FEFA83;
+  border: 1px solid #D2CAA7;
+}
+
+/* Inline code */
+/* line 63, ../sass/creation/base/_syntax.scss */
+:not(pre) > code[class*="language-"] {
+  padding: .1em;
+  border-radius: .3em;
+}
+
+/* line 71, ../sass/creation/base/_syntax.scss */
+.token.comment,
+.token.prolog,
+.token.doctype,
+.token.cdata {
+  color: slategray;
+}
+
+/* line 75, ../sass/creation/base/_syntax.scss */
+.token.punctuation {
+  color: #999;
+}
+
+/* line 79, ../sass/creation/base/_syntax.scss */
+.namespace {
+  opacity: .7;
+}
+
+/* line 86, ../sass/creation/base/_syntax.scss */
+.token.property,
+.token.tag,
+.token.boolean,
+.token.number {
+  color: #905;
+}
+
+/* line 92, ../sass/creation/base/_syntax.scss */
+.token.selector,
+.token.attr-name,
+.token.string {
+  color: #690;
+}
+
+/* line 100, ../sass/creation/base/_syntax.scss */
+.token.operator,
+.token.entity,
+.token.url,
+.language-css .token.string,
+.style .token.string {
+  color: #a67f59;
+  background: rgba(255, 255, 255, 0.5);
+}
+
+/* line 107, ../sass/creation/base/_syntax.scss */
+.token.atrule,
+.token.attr-value,
+.token.keyword {
+  color: #07a;
+}
+
+/* line 113, ../sass/creation/base/_syntax.scss */
+.token.regex,
+.token.important {
+  color: #e90;
+}
+
+/* line 117, ../sass/creation/base/_syntax.scss */
+.token.important {
+  font-weight: bold;
+}
+
+/* line 121, ../sass/creation/base/_syntax.scss */
+.token.entity {
+  cursor: help;
+}
+
+/* line 124, ../sass/creation/base/_syntax.scss */
+pre[data-line] {
+  position: relative;
+  padding: 1em 0 1em 3em;
+}
+
+/* line 129, ../sass/creation/base/_syntax.scss */
+.line-highlight {
+  position: absolute;
+  left: 0;
+  right: 0;
+  padding: inherit 0;
+  margin-top: 1em;
+  /* Same as .prisms padding-top */
+  background: rgba(153, 122, 102, 0.08);
+  background: -moz-linear-gradient(left, rgba(153, 122, 102, 0.1) 70%, rgba(153, 122, 102, 0));
+  background: -webkit-linear-gradient(left, rgba(153, 122, 102, 0.1) 70%, rgba(153, 122, 102, 0));
+  background: -o-linear-gradient(left, rgba(153, 122, 102, 0.1) 70%, rgba(153, 122, 102, 0));
+  background: linear-gradient(left, rgba(153, 122, 102, 0.1) 70%, rgba(153, 122, 102, 0));
+  pointer-events: none;
+  line-height: inherit;
+  white-space: pre;
+}
+
+/* line 149, ../sass/creation/base/_syntax.scss */
+.line-highlight:before,
+.line-highlight[data-end]:after {
+  content: attr(data-start);
+  position: absolute;
+  top: .4em;
+  left: .6em;
+  min-width: 1em;
+  padding: 0 .5em;
+  background-color: rgba(153, 122, 102, 0.4);
+  color: #f5f2f0;
+  font: bold 65%/1.5 sans-serif;
+  text-align: center;
+  vertical-align: .3em;
+  border-radius: 999px;
+  text-shadow: none;
+  box-shadow: 0 1px white;
+}
+
+/* line 166, ../sass/creation/base/_syntax.scss */
+.line-highlight[data-end]:after {
+  content: attr(data-end);
+  top: auto;
+  bottom: .4em;
+}
+
+/* line 171, ../sass/creation/base/_syntax.scss */
+pre.line-numbers {
+  position: relative;
+  padding-left: 3.8em;
+  counter-reset: linenumber;
+}
+
+/* line 177, ../sass/creation/base/_syntax.scss */
+pre.line-numbers > code {
+  position: relative;
+}
+
+/* line 181, ../sass/creation/base/_syntax.scss */
+.line-numbers .line-numbers-rows {
+  position: absolute;
+  pointer-events: none;
+  top: 0;
+  font-size: 100%;
+  left: -3.8em;
+  width: 3em;
+  /* works for line-numbers below 1000 lines */
+  letter-spacing: -1px;
+  border-right: 1px solid #999;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* line 198, ../sass/creation/base/_syntax.scss */
+.line-numbers-rows > span {
+  pointer-events: none;
+  display: block;
+  counter-increment: linenumber;
+}
+
+/* line 204, ../sass/creation/base/_syntax.scss */
+.line-numbers-rows > span:before {
+  content: counter(linenumber);
+  color: #999;
+  display: block;
+  padding-right: 0.8em;
+  text-align: right;
+}
+
+/**
+* 	Palette colors
+*
+*	http://www.colourlovers.com/palette/2978475/Deputation
+*   Night Pencil + Magic + yummi-turquoise + J Peterman Shirt + winter morning
+*	bc:#bcbcbc,Gamebookers Blue:#3299BB	 
+*
+*	Functions colors Sass:
+*	http://sass-lang.com/docs/yardoc/Sass/Script/Functions.html	
+*/
+/*
+lighten($color, $amount)
+darken($color, $amount)
+saturate($color, $amount)
+desaturate($color, $amount)
+grayscale($color)
+invert($color)
+*/
+/*gray*/
+/* Night Pencil */
+/*blue1*/
+/* Magic */
+/*blue*/
+/* yummi-turquoise */
+/*blue-1*/
+/* J Peterman Shirt */
+/*eb*/
+/* winter morning */
+/* Tonalitats */
+/**
+*	Typografia  web-fonts
+* 	http://www.google.com/fonts
+*	Imports + Golden ratio + responsive typography
+*/
+/* Imports */
+/* Variables */
+/*Contingut*/
+/*Headings*/
+/* Especial*/
+/* Calculator Golden Ratio Golden Ratio http://www.pearsonified.com/typography/ */
+/*15px*/
+/*25px*/
+/*size*/
+/*line-height*/
+/*size*/
+/*line-height*/
+/*size*/
+/*line-height*/
+/*size*/
+/*line-height*/
+/*size*/
+/*line-height*/
+/*size*/
+/*line-height*/
+/* Creation custom*/
+/**
+*	Typografia  web-fonts
+* 	http://www.google.com/fonts
+*	Imports + Golden ratio + responsive typography
+* 	$font-a;contingut + $font-b;Headings + $font-c; especial
+*/
+/* line 14, ../sass/creation/custom/_typography.scss */
+p {
+  font-weight: 300;
+}
+
+/* line 15, ../sass/creation/custom/_typography.scss */
+a {
+  color: #0083a9;
+  text-decoration: none;
+}
+
+/* line 16, ../sass/creation/custom/_typography.scss */
+a:hover {
+  text-decoration: underline;
+}
+
+/* Headings*/
+/* line 19, ../sass/creation/custom/_typography.scss */
+h1 {
+  /*body*/
+  font-size: 3rem;
+  font-weight: 400;
+  line-height: 3.5rem;
+  letter-spacing: -0.2rem;
+}
+
+/* line 20, ../sass/creation/custom/_typography.scss */
+h2 {
+  font-size: 2.7rem;
+  font-weight: 400;
+  line-height: 3.25rem;
+  letter-spacing: -0.06rem;
+}
+
+/* line 21, ../sass/creation/custom/_typography.scss */
+h3 {
+  font-size: 2.25rem;
+  font-weight: 400;
+  line-height: 2.75rem;
+  letter-spacing: -0.06rem;
+}
+
+/* line 22, ../sass/creation/custom/_typography.scss */
+h4, .dipta-subtitol {
+  font-size: 1.5rem;
+  font-weight: 400;
+  line-height: 1.75rem;
+  letter-spacing: -0.06rem;
+}
+
+/* line 23, ../sass/creation/custom/_typography.scss */
+h5 {
+  font-size: 1.245rem;
+  font-weight: 400;
+  line-height: 1.5rem;
+  letter-spacing: -0.06rem;
+}
+
+/* line 24, ../sass/creation/custom/_typography.scss */
+h6, .field-slideshow-caption {
+  font-size: 1.125rem;
+  font-weight: 400;
+  line-height: 1.375rem;
+  letter-spacing: -0.06rem;
+}
+
+/* Paragraph size h1,h2,h3,h4,h5.h6*/
+/* line 31, ../sass/creation/custom/_typography.scss */
+blockquote, .dipta-txt-navegacio {
+  font-size: 1.5rem;
+  font-weight: 100;
+  line-height: 2.1rem;
+  letter-spacing: 0;
+}
+
+/* line 32, ../sass/creation/custom/_typography.scss */
+.related-content p, .dipta-resum p, .dipta-concatenats, .related-content ul li {
+  font-size: 1.245rem;
+  font-weight: 100;
+  line-height: 1.8rem;
+  letter-spacing: 0;
+}
+
+/* Blockquotes*/
+/* line 46, ../sass/creation/custom/_typography.scss */
+blockquote, .dipta-txt-navegacio {
+  border-bottom: 1px solid #EBEBEB;
+  border-top: 1px solid #EBEBEB;
+}
+
+/* line 47, ../sass/creation/custom/_typography.scss */
+.dipta-txt-navegacio:before {
+  display: block;
+  content: "\201C";
+  font-family: Georgia, serif;
+  font-size: 9rem;
+  position: absolute;
+  color: #7a7a7a;
+  margin-left: -45px;
+  margin-top: 25px;
+}
+
+/* line 52, ../sass/creation/custom/_typography.scss */
+blockquote {
+  font-weight: 100;
+  padding: 2.3%;
+}
+
+/* line 64, ../sass/creation/custom/_typography.scss */
+.dipta-txt-navegacio {
+  font-weight: 100;
+  margin-left: 5%;
+  padding: 2.3% 2.3% 2.3% 5.3%;
+}
+
+/* Box quotes */
+/*
+*	Elements - Creation
+*	
+*/
+/* Element Clear */
+/* line 8, ../sass/creation/custom/_elements.scss */
+.dipta-clear, .dipta-resum:after {
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+
+/* Element box*/
+/* line 13, ../sass/creation/custom/_elements.scss */
+.related-content h1, .related-content h2, .related-content h3, .related-content h4, .related-content .dipta-subtitol, .related-content h5, .related-content h6, .related-content .field-slideshow-caption {
+  border-top: 0.4rem solid #0083a9;
+}
+
+/* line 14, ../sass/creation/custom/_elements.scss */
+.related-content h1, .related-content h2, .related-content h3, .related-content h4, .related-content .dipta-subtitol, .related-content h5, .related-content h6, .related-content .field-slideshow-caption {
+  border-bottom: 0.4rem solid #fff;
+}
+
+/* line 45, ../sass/creation/custom/_elements.scss */
+.related-content {
+  background-color: #ebebeb;
+}
+/* line 47, ../sass/creation/custom/_elements.scss */
+.related-content h1, .related-content h2, .related-content h3, .related-content h4, .related-content .dipta-subtitol, .related-content h5, .related-content h6, .related-content .field-slideshow-caption {
+  padding: 2rem;
+}
+/* line 48, ../sass/creation/custom/_elements.scss */
+.related-content p {
+  padding: 0 2rem 2rem 2rem;
+  border: 0;
+  color: #014b60;
+}
+
+/* Element dipta-resum */
+/* line 63, ../sass/creation/custom/_elements.scss */
+.dipta-resum h1, .dipta-resum h2, .dipta-resum h3, .dipta-resum h4, .dipta-resum .dipta-subtitol, .dipta-resum h5 {
+  margin: 5px 0 5px 0;
+  font-weight: 600;
+}
+/* line 64, ../sass/creation/custom/_elements.scss */
+.dipta-resum p {
+  margin: 5px 0 5px 0;
+  padding: 0;
+}
+/* line 65, ../sass/creation/custom/_elements.scss */
+.dipta-resum p:after {
+  content: " ...";
+  font-weight: 600;
+  color: #0083a9;
+  font-size: 3rem;
+}
+/* line 66, ../sass/creation/custom/_elements.scss */
+.dipta-resum .dipta-resum-float {
+  float: left;
+  margin: 5px 5px 0 0;
+}
+/* line 67, ../sass/creation/custom/_elements.scss */
+.dipta-resum img {
+  margin-bottom: 5px;
+}
+
+/* Element Conacatenats*/
+/* line 87, ../sass/creation/custom/_elements.scss */
+.dipta-concatenats {
+  /* separador "|"*/
+}
+/* line 88, ../sass/creation/custom/_elements.scss */
+.dipta-concatenats .dipta-camp {
+  display: inline-block;
+}
+/* line 88, ../sass/creation/custom/_elements.scss */
+.dipta-concatenats .dipta-camp span + span {
+  padding-left: 0.5rem;
+}
+/* line 93, ../sass/creation/custom/_elements.scss */
+.dipta-concatenats div + div:before {
+  content: "|";
+  font-size: 0.8rem;
+  position: relative;
+  top: -2px;
+  padding: 0.5rem;
+}
+
+/*
+*	Images - Creation
+* 
+*/
+/* Titles Images */
+/* line 14, ../sass/creation/custom/_images.scss */
+.dipta-title-img-node {
+  width: 90%;
+  /*position*/
+  padding: 10px;
+  position: relative;
+  background-color: #fff;
+  margin: -55px 0 0  0;
+}
+
+/* line 17, ../sass/creation/custom/_images.scss */
+.dipta-title-img-navegacio {
+  width: 94.9%;
+  color: #005b76;
+  /*position*/
+  padding: 10px;
+  position: relative;
+  background-color: #f0f7f9;
+  margin: -70px 0 0 12px;
+}
+
+/* line 23, ../sass/creation/custom/_images.scss */
+.field-slideshow-caption {
+  background-color: #ebebeb;
+  padding: 5px;
+}
+
+/*Slider -home */
+/* line 35, ../sass/creation/custom/_images.scss */
+.btn-slider-left {
+  display: inline-block;
+  height: 36px;
+  width: 144px;
+  background-image: url("../images/bg-slideshowarrowleft.png");
+  overflow-x: hidden;
+  overflow-y: hidden;
+  text-align: left;
+  text-indent: -119988px;
+}
+
+/* line 41, ../sass/creation/custom/_images.scss */
+.btn-slider-left:hover {
+  background-image: url("../images/bg-slideshowarrowlefthover.png");
+}
+
+/* line 42, ../sass/creation/custom/_images.scss */
+.btn-slider-rigth {
+  height: 36px;
+  width: 144px;
+  display: inline-block;
+  background-image: url("../images/bg-slideshowarrowright.png");
+  overflow-x: hidden;
+  overflow-y: hidden;
+  text-align: left;
+  text-indent: -119988px;
+}
+
+/* line 48, ../sass/creation/custom/_images.scss */
+.btn-slider-rigth:hover {
+  background-image: url("../images/bg-slideshowarrowrighthover.png");
+}
+
+/* line 50, ../sass/creation/custom/_images.scss */
+.dipta-galeria {
+  background-color: #ccc;
+  width: 677px;
+  height: 112;
+}
+/* line 51, ../sass/creation/custom/_images.scss */
+.dipta-galeria img {
+  margin: 1.7rem 1rem 0 2rem;
+}
+
+/*
+*	Box - Creations
+*	Menus + breadcrums 
+*
+*/
+/*
+*	Forms - Creation
+*	Menus + breadcrums + box navigations
+*
+*/
+/*Creation layouts*/
+/*
+*
+*	Susy - Creation base
+*   http://www.responsinator.com
+*	http://sass-lang.com/docs/yardoc/Sass/Script/Functions.html
+*/
+/* Visual Grid Susy for REM 1rem=>10px*/
+/*
+lighten($verd, 20%);
+darken($verd, 20%);
+saturate($verd, 10%);
+desaturate($verd, 10%);
+grayscale($verd);
+invert($verd);
+*/
+/* line 38, ../sass/creation/layouts/_responsive-creation.scss */
+html {
+  /*Typography responsive for compass breakpoints*/
+  font-size: 62.5%;
+  /*
+   @include at-breakpoint($iphone4) { font-size:62.5%; }
+   @include at-breakpoint($ipad) { font-size:62.5%; }
+   @include at-breakpoint($ipad-landscape) { font-size:62.5%; }
+   */
+}
+
+/* line 26, ../sass/creation/_creation.scss */
+html {
+  color: #464646;
+  font-size: 62.5%;
+  /*Typography responsive for compass breakpoints*/
+  /*responsive-creation.scss*/
+}
+
+/* line 32, ../sass/creation/_creation.scss */
+body {
+  /*$font1: 'Open Sans', sans-serif;*/
+  margin: 0;
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.3rem;
+  line-height: 2.3rem;
+}
+
+/*Syntax custom*/
+/* line 42, ../sass/creation/_creation.scss */
+code {
+  font-size: 1.2rem;
+  font-family: Consolas,Monaco,"Andale Mono",monospace;
+}
+
+/* line 43, ../sass/creation/_creation.scss */
+pre {
+  overflow-x: scroll !important;
+  overflow-y: scroll !important;
+}
+
+/*Padding-Margin Layout*/
+/*Title pagines views*/
+/* line 15, ../sass/dipta.scss */
+h1.title, h1#page-title, .dipta-title {
+  color: #014b60;
+}
+
+/*Title nodes*/
+/* line 22, ../sass/dipta.scss */
+.dipta-title-img-node {
+  color: #014b60;
+}
+
+/* line 23, ../sass/dipta.scss */
+.dipta-txt-navegacio {
+  border: 0;
+}
+
+/* line 25, ../sass/dipta.scss */
+blockquote p {
+  font-weight: 500;
+}
+
+/* line 32, ../sass/dipta.scss */
+.group-concat {
+  margin-left: 2%;
+  margin-right: 2%;
+}
+
+/* line 35, ../sass/dipta.scss */
+#contact-site-form, #webform-client-form-3686, #print-mail-form {
+  padding: 2%;
+}
+
+/* line 36, ../sass/dipta.scss */
+.printmail-label {
+  float: none !important;
+}
+
+/* line 39, ../sass/dipta.scss */
+.related-content {
+  width: 48%;
+  display: block;
+  margin-top: 5%;
+}
+/* line 42, ../sass/dipta.scss */
+.related-content h1, .related-content h2, .related-content h3, .related-content h4, .related-content .dipta-subtitol, .related-content h5, .related-content h6, .related-content .field-slideshow-caption {
+  margin: 0;
+  color: #0083a9;
+}
+/* line 43, ../sass/dipta.scss */
+.related-content ul li {
+  list-style-image: url("../images/ico-link-list.png");
+}
+
+/* line 46, ../sass/dipta.scss */
+.related-content:last-child {
+  margin-left: 2%;
+}
+
+/* line 48, ../sass/dipta.scss */
+#cboxCurrent {
+  width: 180px;
+}
+/* line 50, ../sass/dipta.scss */
+#cboxCurrent a, #cboxCurrent .descarregar {
+  background-image: url("../images/ico-file-download.png");
+  background-repeat: no-repeat;
+  background-size: auto auto;
+  background-position: center center;
+  padding: 5%;
+}
+
+/* line 57, ../sass/dipta.scss */
+.town-list {
+  margin: 0.8em 0;
+  padding: 0;
+}
+/* line 60, ../sass/dipta.scss */
+.town-list ul {
+  -webkit-column-count: 3;
+  -moz-column-count: 3;
+  -ms-column-count: 3;
+  -o-column-count: 3;
+  column-count: 3;
+  list-style-type: none;
+  margin-bottom: 20px;
+  width: 100%;
+  padding-left: 5px;
+}
+/* line 66, ../sass/dipta.scss */
+.town-list ul li {
+  width: 200px;
+}
+/* line 68, ../sass/dipta.scss */
+.town-list ul li::before {
+  content: "\203A";
+  float: left;
+  width: 6%;
+  color: #0083A9;
+}
+
+/* line 79, ../sass/dipta.scss */
+.town-list-municipi {
+  margin: 0.8em 0;
+  padding-left: 25px;
+}
+/* line 82, ../sass/dipta.scss */
+.town-list-municipi ul {
+  -webkit-column-count: 3;
+  -moz-column-count: 3;
+  -ms-column-count: 3;
+  -o-column-count: 3;
+  column-count: 3;
+  list-style-type: none;
+  margin-bottom: 20px;
+  width: 100%;
+  padding-left: 5px;
+}
+/* line 88, ../sass/dipta.scss */
+.town-list-municipi ul li {
+  width: 200px;
+}
+/* line 90, ../sass/dipta.scss */
+.town-list-municipi ul li:before {
+  content: "\203A";
+  float: left;
+  width: 6%;
+  color: #0083A9;
+}
+
+/* line 102, ../sass/dipta.scss */
+.town-list-unitats li {
+  list-style-image: url("../images/ico-link-list.png");
+}
+
+/*
+ * Field wrappers when the Fences module is enabled.
+ */
+/* line 114, ../sass/dipta.scss */
+label,
+.label-inline,
+.field-label {
+  /* The optional label for a field. */
+  font-weight: bold;
+}
+
+/* line 117, ../sass/dipta.scss */
+.label-inline {
+  display: inline;
+}
+
+/****** Pages Elements ************************************************************************************
+ @import "partials/_pages"; */
+/****** NODES ************************************************************************************
+ @import "partials/_node"; */
+/****** VIEWS PAGES ******************************************************************************
+ @import "partials/_views-pages"; */
+/****** VIEWS BLOCS ******************************************************************************
+ @import "partials/_views-blocs"; */
+/****** MENUS + NAVIGATION ***********************************************************************
+ @import "partials/_navigations"; */
+/****** FORMS ***********************************************************************
+@import "partials/_forms"; */
+/****** FORMS ***********************************************************************
+ @import "partials/_comments"; */
+/****** Tabs ***********************************************************************
+@import "partials/_tabs"; */
+/****** Tabs ***********************************************************************
+@import "partials/_jcarousel"; */
+/***** Elements a revisar ***************************************************************************************/
+/* Elimnar ???*/
+/* line 157, ../sass/dipta.scss */
+.foto-des {
+  border: 1px solid #eee;
+  background: #fff;
+  padding: 10px;
+  -webkit-box-shadow: 0px 0px 5px #333333;
+  -moz-box-shadow: 0px 0px 5px #333333;
+  box-shadow: 0px 0px 5px #333333;
+}
+
+/* line 164, ../sass/dipta.scss */
+ul.llista_gen {
+  list-style-type: square;
+  margin-left: -10px;
+  margin-top: 0;
+}
+/* line 168, ../sass/dipta.scss */
+ul.llista_gen li {
+  line-height: 20px;
+  list-style-image: url("../images/ico-link-list.png");
+}
+
+/* line 175, ../sass/dipta.scss */
+div.llista_numerada h3 {
+  font-size: 14px;
+  font-weight: 700;
+  font-style: italic;
+  padding: 0px;
+  margin: 0px;
+  /*text-decoration:underline;*/
+}
+/* line 183, ../sass/dipta.scss */
+div.llista_numerada ol {
+  list-style: none;
+  counter-reset: my-counter;
+  margin: 40px 20px 20px 0px;
+}
+/* line 188, ../sass/dipta.scss */
+div.llista_numerada ol li {
+  /* positioning li relative will allow us to absolutely position children of li relative to li 
+   * (the origin of x and y axis of li's absolutely positioned children will become top left corner of li,
+   * instead of top left corner of the window) 
+   */
+  position: relative;
+  padding-left: 50px;
+  /*margin-bottom: 56px;*/
+}
+/* line 197, ../sass/dipta.scss */
+div.llista_numerada ol li:before {
+  /* content property with :before pseudo selector will prepend a child element in li. 
+   * Value of content will be set as text within the child element.
+   * Let's use this element to create circle on the left side of a list item.
+   */
+  content: '';
+  width: 0px;
+  height: 0px;
+  border: 24px solid #ccc;
+  border-radius: 40px;
+  position: absolute;
+  /* using left and top to adjust absolute position of circle relative to li
+   */
+  left: -12px;
+  top: -6px;
+  /*z-index:-1;*/
+}
+/* line 214, ../sass/dipta.scss */
+div.llista_numerada ol li:after {
+  /* content property with :after pseudo selector will append a child to li
+   * Let's use content of :after psuedo selector to display our counter number within the circle.
+   * Value of content here signifies that we are using my-counter as content of newly appended child,
+   * and this counter is a decimal number. 
+   */
+  content: counter(my-counter,decimal);
+  /* if you don't use counter-increment, value of my-counter will always stay 0.
+   */
+  counter-increment: my-counter;
+  position: absolute;
+  /* using left and top to adjust absolute position of number relative to li
+   */
+  left: 3px;
+  top: 10px;
+  font-weight: bold;
+  font-size: 32px;
+  color: #999;
+}
+
+/* line 235, ../sass/dipta.scss */
+.group_dades, .group-dades {
+  font-size: 13px;
+  padding: 0;
+  display: block;
+  font-weight: 300;
+}
+/* line 238, ../sass/dipta.scss */
+.group_dades div.basic-etitext, .group_dades div.basic-concat, .group-dades div.basic-etitext, .group-dades div.basic-concat {
+  line-height: 18px;
+  padding-bottom: 1px;
+}
+/* line 241, ../sass/dipta.scss */
+.group_dades div.basic-etitext div, .group_dades div.basic-concat div, .group-dades div.basic-etitext div, .group-dades div.basic-concat div {
+  padding-right: 5px;
+}
+/* line 241, ../sass/dipta.scss */
+.group_dades div.basic-etitext div div.label-inline, .group_dades div.basic-concat div div.label-inline, .group-dades div.basic-etitext div div.label-inline, .group-dades div.basic-concat div div.label-inline {
+  padding: 0;
+}
+/* line 243, ../sass/dipta.scss */
+.group_dades .presideix span, .group-dades .presideix span {
+  padding-left: 7px;
+}
+/* line 244, ../sass/dipta.scss */
+.group_dades div.basic-concat, .group-dades div.basic-concat {
+  display: inline-block;
+  margin-right: 5px;
+}
+/* line 246, ../sass/dipta.scss */
+.group_dades p, .group-dades p {
+  font-size: 12px;
+}
+/* line 247, ../sass/dipta.scss */
+.group_dades .tag, .group-dades .tag {
+  padding-left: 0 !Important;
+}
+
+/* line 251, ../sass/dipta.scss */
+#content {
+  /*llistes orcdenades, desordenades (romans) i de definicio.*/
+}
+/* line 257, ../sass/dipta.scss */
+#content ul {
+  font-size: 1em;
+}
+/* line 262, ../sass/dipta.scss */
+#content ol {
+  font-size: 1em;
+}
+/* line 267, ../sass/dipta.scss */
+#content dl {
+  counter-reset: term definition;
+}
+/* line 270, ../sass/dipta.scss */
+#content dt:before {
+  counter-increment: term;
+  content: counter(term) ". ";
+}
+/* line 274, ../sass/dipta.scss */
+#content dd:before {
+  counter-increment: definition;
+  content: counter(term) "." counter(definition) " ";
+}
+/* line 278, ../sass/dipta.scss */
+#content table {
+  font-size: 12px;
+  width: 98%;
+}
+/* line 281, ../sass/dipta.scss */
+#content table th, #content table td {
+  padding: 4px 5px;
+}

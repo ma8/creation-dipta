@@ -10,7 +10,7 @@
 		#block-views-banners-home-block-3 {
 			.dipta-banner{ @include span-columns(5,10);float:left;margin-right:0.2rem;}
 			 .text-banner{display:none;}
-			 h3 { font-size:$h5-s;line-height:$h5-h;}
+			 h3,h2 { font-size:$h5-s;line-height:$h5-h;margin-bottom: 0;margin-bottom: 0.5rem;}
 		}
 	}
 	@mixin dipta-banners-baix-kindle{
@@ -18,7 +18,7 @@
 		#block-views-banners-home-block-3 {
 			.dipta-banner{ @include span-columns(3,10);float:left;margin-right:0.4rem;}
 			 .text-banner{display:none;}
-			 h3 { font-size:$h5-s;line-height:$h5-h;}
+			 h3,h2 { font-size:$h5-s;line-height:$h5-h;margin-bottom: 0.5rem;}
 		}
 	}	
 	@mixin dipta-banners-baix-ipad{
@@ -26,7 +26,7 @@
 		#block-views-banners-home-block-3 {
 			.dipta-banner{ @include span-columns(3,12);float:left;margin-right:1rem; margin-bottom: 1rem; }
 			 .text-banner{}
-			 h3 { font-size:$h5-s;line-height:$h5-h;}
+			 h3,h2 { font-size:$h5-s;line-height:$h5-h;margin-bottom: 0.5rem;}
 		}
 	}
 	
@@ -34,7 +34,7 @@
 		/*Bloc Banners inferiors*/
 		#block-views-banners-home-block-3 {
 			.dipta-banner{ @include span-columns(3,12);float:left;margin-right:1rem; margin-bottom: 1rem; }
-			 .text-banner{} h3 { }
+			 .text-banner{} h3,h2 { font-size:$h4-s;line-height:$h4-h;margin-bottom: 0.5rem;}
 		}
 	}
 /*Responsive*/
