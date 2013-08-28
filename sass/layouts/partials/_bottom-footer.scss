@@ -1,0 +1,37 @@
+/*
+*
+*	Bottom Footer 
+*   http://www.responsinator.com
+*	http://sass-lang.com/docs/yardoc/Sass/Script/Functions.html
+*/
+
+/*Mixins*/
+@mixin dipta-bloc-informacio{
+			margin:0; p{ color:#BBDEE8;margin: 0.7rem 0;
+			text-align:left; font-size:$h6-s; line-height:$h6-h; }
+		}
+
+
+/* Responsive */
+.region-bottom { //@include dipta-grid-color-change;
+	@include container; @include dipta-container-width;
+		
+		
+		
+	/*All*/	
+	#block-block-5{ @include  dipta-bloc-informacio; } 
+	
+		@include at-breakpoint($iphone4) { 	
+		}//	
+		@include at-breakpoint($iphone4-landscape) {
+		}//
+		@include at-breakpoint($iphone5-landscape) { 
+		}//
+		@include at-breakpoint($kindle) {
+		}//
+		@include at-breakpoint($ipad) {  
+		}//
+		@include at-breakpoint($ipad-landscape) { 
+		}//
+}
+.region-bottom :hover{ /*@include dipta-grid-show;*/}

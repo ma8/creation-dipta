@@ -1,0 +1,286 @@
+/**
+ * @file
+ * Tema principal de Diputació
+ * NODES + VIEWS PAGES + VIEWS BLOCS + NAVIGATION
+ */
+ 
+   
+@import "creation/_creation"; 
+
+/*Padding-Margin Layout*/
+$pad:2%;
+
+//[Headings] [Específics]
+/*Title pàgines views*/
+h1.title { color:$base02;}
+
+h1#page-title{@extend h1.title; }
+/*Title nodes*/
+.dipta-title{ @extend h1.title;}
+.dipta-subtitol{ @extend h4; }
+.dipta-title-img-navegacio{@extend %dipta-title-img-d;}
+.dipta-title-img-node{@extend %dipta-title-img-c; color:$base02;}
+.dipta-txt-navegacio{  @extend %dipta-quote-h4c; border:0; }
+
+blockquote { @extend %dipta-quote-h4;p{font-weight:500;}}
+
+//[Caption] 
+.field-slideshow-caption{@extend %dipta-caption;}
+
+//[Concatenats]
+.dipta-concatenats{ @extend %dipta-concatenats;}
+.group-concat {margin-left:2%;margin-right:2%}
+
+//[Formulari de Cantacte]
+#contact-site-form,#webform-client-form-3686,#print-mail-form{padding:2%;}
+.printmail-label{float:none !important;} 
+
+//[Contingut relacionat]
+.related-content {
+	@extend %dipta-box-eb-border;
+	 width: 48%;display:block;margin-top:5%;
+	h1,h2,h3,h4,h5,h6{ margin:0;color:$base03;}
+	ul li{@extend %ph5; list-style-image:url("../images/ico-link-list.png");}
+}
+.related-content:first-child{}
+.related-content:last-child{margin-left:2%;}
+
+#cboxCurrent{
+	width:180px; 
+	a,.descarregar{
+	background-image:url("../images/ico-file-download.png");
+	background-repeat: no-repeat;background-size: auto auto;
+	background-position: center center;padding: 5%;}
+}
+
+
+.town-list {
+  margin: 0.8em 0;
+  padding: 0;
+  ul {
+    @include column-count(3);
+	list-style-type:none;
+	margin-bottom: 20px; 
+	width:100%;
+	padding-left:5px;
+	li{
+		width:200px;
+		&::before {	
+		//content: "\00BB \0020";
+		content: "\203A";
+		float: left;	  
+		width: 6%;
+		color:#0083A9;
+    }
+	}
+  } 
+}
+
+.town-list-municipi {
+ margin: 0.8em 0;
+ padding-left: 25px;
+ ul {
+    @include column-count(3);
+	list-style-type:none;
+	margin-bottom: 20px; 
+	width:100%;
+	padding-left:5px;
+	li {
+  	width: 200px;
+    &:before {
+      //content: "\00BB \0020";
+	  content: "\203A";
+		float: left;	  
+		width: 6%;
+		color:#0083A9;
+    }
+	}
+  } 
+}
+
+.town-list-unitats{
+  li {
+   list-style-image:url("../images/ico-link-list.png");
+  }
+}
+
+
+/*
+ * Field wrappers when the Fences module is enabled.
+ */
+
+label,
+.label-inline,
+.field-label { /* The optional label for a field. */
+  font-weight: bold;
+}
+.label-inline {
+  display: inline;
+}
+
+
+/****** Pages Elements ************************************************************************************
+ @import "partials/_pages"; */
+
+/****** NODES ************************************************************************************
+ @import "partials/_node"; */ 
+
+/****** VIEWS PAGES ******************************************************************************
+ @import "partials/_views-pages"; */
+
+/****** VIEWS BLOCS ******************************************************************************
+ @import "partials/_views-blocs"; */
+
+/****** MENUS + NAVIGATION ***********************************************************************
+ @import "partials/_navigations"; */
+
+
+/****** FORMS ***********************************************************************
+@import "partials/_forms"; */ 
+ 
+
+/****** FORMS ***********************************************************************
+ @import "partials/_comments"; */ 
+ 
+
+ /****** Tabs ***********************************************************************
+ @import "partials/_tabs"; */
+
+ /****** Tabs ***********************************************************************
+ @import "partials/_jcarousel"; */
+
+/***** Elements a revisar ***************************************************************************************/
+
+
+
+/* Elimnar ???*/
+.foto-des{ 
+	border:1px solid #eee;
+	background: #fff;
+	padding: 10px; 
+	@include single-box-shadow; 
+ }
+ 
+ ul.llista_gen{
+	list-style-type:square;
+	margin-left:-10px;
+	margin-top:0;
+		li{
+			line-height: 20px;
+			list-style-image:url("../images/ico-link-list.png");
+		}
+}
+
+div.llista_numerada{
+	h3{
+		font-size:14px;
+		font-weight:700;
+		font-style:italic;
+		padding:0px;
+		margin:0px;
+		/*text-decoration:underline;*/
+		}
+	ol {
+			list-style: none;
+			counter-reset: my-counter;
+			margin: 40px 20px 20px 0px;
+		}
+		ol li{
+			/* positioning li relative will allow us to absolutely position children of li relative to li 
+			 * (the origin of x and y axis of li's absolutely positioned children will become top left corner of li,
+			 * instead of top left corner of the window) 
+			 */
+			position: relative;
+			padding-left: 50px;
+			/*margin-bottom: 56px;*/
+		}
+		ol li:before{
+			/* content property with :before pseudo selector will prepend a child element in li. 
+			 * Value of content will be set as text within the child element.
+			 * Let's use this element to create circle on the left side of a list item.
+			 */
+			content: '';
+			width:0px;
+			height:0px;
+			border:24px solid #ccc;
+			border-radius: 40px;
+			position: absolute;
+			/* using left and top to adjust absolute position of circle relative to li
+			 */
+			left:-12px;
+			top:-6px;
+			/*z-index:-1;*/
+		}
+		ol  li:after {
+			/* content property with :after pseudo selector will append a child to li
+			 * Let's use content of :after psuedo selector to display our counter number within the circle.
+			 * Value of content here signifies that we are using my-counter as content of newly appended child,
+			 * and this counter is a decimal number. 
+			 */
+			content: counter(my-counter, decimal);
+			/* if you don't use counter-increment, value of my-counter will always stay 0.
+			 */
+			counter-increment: my-counter;
+			position: absolute;
+			/* using left and top to adjust absolute position of number relative to li
+			 */
+			left:3px;
+			top:10px;
+			font-weight: bold;
+			font-size: 32px;
+			color: #999;
+		}
+}
+
+.group_dades, .group-dades{ 	
+		font-size: 13px;padding:0;display:block;font-weight: 300;
+	
+		div.basic-etitext,div.basic-concat {
+			line-height: 18px;padding-bottom:1px;
+			
+		div{padding-right:5px;	div.label-inline {padding:0;}}	
+		}
+		.presideix span{padding-left:7px;}
+		div.basic-concat{display: inline-block;margin-right:5px;}
+		h2{}
+		p{font-size:12px;}
+		.tag{padding-left:0 !Important;}
+	}	
+
+	
+#content {
+	
+	
+
+	/*llistes orcdenades, desordenades (romans) i de definició.*/
+	
+	ul{
+		font-size: 1em;
+		li{}
+	}
+	
+	ol {
+		font-size: 1em;
+	}
+	
+	
+	dl {
+		counter-reset: term definition;
+	}
+	dt:before {
+		counter-increment: term;
+		content: counter(term) ". ";
+	}
+	dd:before {
+		counter-increment: definition;
+		content: counter(term) "." counter(definition) " ";
+	}
+	table{
+		font-size:12px;
+		width:98%;
+		th, td {
+			padding: 4px 5px;
+		}
+	}
+	
+}	

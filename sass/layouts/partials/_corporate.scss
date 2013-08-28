@@ -1,0 +1,42 @@
+/*
+*
+*	Corporate
+*   http://www.responsinator.com
+*	http://sass-lang.com/docs/yardoc/Sass/Script/Functions.html
+*/
+
+/* Mixins*/
+
+	@mixin dipta-corporate-iphone{ 
+		.jcarousel-skin-default {
+			.jcarousel-next { 
+				background-color:$base01; background-position:center center;
+				position: absolute; right: -2rem; margin-top:-1rem; }
+			.jcarousel-prev  {
+				background-color:$base01; background-position:center center; 
+				position: absolute; left: -2rem; margin-top:-1rem; }
+		}
+	}
+
+
+/* Responsive*/
+
+.region-corporate{ // @include dipta-grid-color-change;
+	@include container; @include dipta-container-width;
+		
+	 /*All*/
+		@include at-breakpoint($iphone4) { @include dipta-corporate-iphone; 
+		
+		}//	
+		@include at-breakpoint($iphone4-landscape) { @include dipta-corporate-iphone; 
+		}//
+		@include at-breakpoint($iphone5-landscape) {  @include dipta-corporate-iphone; 
+		}//
+		@include at-breakpoint($kindle) {  @include dipta-corporate-iphone; 
+		}//
+		@include at-breakpoint($ipad) { @include dipta-corporate-iphone; 
+		}//		
+		@include at-breakpoint($ipad-landscape) {  
+		}//
+}
+.region-corporate :hover{ /* @include dipta-grid-show;*/}

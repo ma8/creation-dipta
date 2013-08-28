@@ -1,0 +1,76 @@
+/*
+*	Dipta - Responsive 
+*   http://www.responsinator.com
+*	http://sass-lang.com/docs/yardoc/Sass/Script/Functions.html
+*  
+*/
+
+@import "../creation/_creation"; 
+@import "_responsive-custom"; 
+
+/*Fluid images*/
+#logo img{ width: 100% !important; height: auto !important;}
+
+/**
+*	Fila  01: header top	
+*/	@import "partials/_header-top";
+	/***** 01 Header-top */
+
+/**
+*	Fila  02:  Header	
+*/	@import "partials/_header";
+	/***** 02 Header-content */
+
+/**
+*	Fila  03:  Navigation	
+*/  @import "partials/_navigation";
+	/***** 03 Navigation */
+
+/**
+*	Fila  04:  Breadcrumb	
+*/ @import "partials/_breadcrumb";
+	/***** 04 Breadcrumb */
+
+/**
+*	Fila 05:  Contingut 
+*/@import "partials/_content";
+	/***** 05 Contingut*/
+
+/**
+*	Fila 06: Banners Baix
+*/ @import "partials/_banner-baix";
+	/***** 06 Banners Baix */
+
+
+/**
+*	Fila 07:  Corporate
+*/	@import "partials/_corporate";
+	/***** 07  Coorporate */
+
+/**
+*	Fila 08:  Footer
+*/ 	@import " partials/_footer";
+	/***** 08 Footer */
+
+/**
+*	Fila 09: Bottom Footer
+*/ 	@import " partials/_bottom-footer";
+	/***** 09  Bottom Footer */
+
+
+/* Susy breaks 
+
+	@include at-breakpoint($iphone4) { 
+	}//	
+ 	@include at-breakpoint($iphone4-landscape) {
+	}//
+ 	@include at-breakpoint($iphone5-landscape) { 
+	}//
+	@include at-breakpoint($kindle) {
+	}//
+	@include at-breakpoint($ipad) {  
+	}//
+	@include at-breakpoint($ipad-landscape) { 
+	}//
+	
+*/

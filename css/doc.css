@@ -1,4 +1,4 @@
-@charset "UTF-8";
+@charset "CP850";
 @import url(http://fonts.googleapis.com/css?family=Droid+Sans:400,700);
 @import url(http://fonts.googleapis.com/css?family=Roboto+Condensed:400,300,700);
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:400,700,300,600,800);
@@ -12,8 +12,8 @@
 */
 /**
  * @file
- * Creation for compass - Front-end framework de  la DiputaciÃ³ de Tarragona.
- * @Miguel Ãngel Ramos.
+ * Creation for compass - Front-end framework de  la Diputaci¢ de Tarragona.
+ * @Miguel µngel Ramos. 
  *
  */
 /* Compass*/
@@ -28,7 +28,7 @@ code[class*="language-"],
 pre[class*="language-"] {
   color: black;
   text-shadow: 0 1px white;
-  font-family: Consolas, Monaco, 'Andale Mono', monospace;
+  font-family: Consolas, Monaco, "Andale Mono", monospace;
   direction: ltr;
   text-align: left;
   white-space: pre;
@@ -65,7 +65,7 @@ pre[class*="language-"] {
 /* line 45, ../sass/creation/base/_syntax.scss */
 pre[class*="language-"] {
   padding: 1em;
-  margin: .5em 0;
+  margin: 0.5em 0;
   overflow: auto;
 }
 
@@ -74,7 +74,7 @@ pre[class*="language-"] {
 pre[class*="language-"] {
   /* #FEFA83  #f5f2f0 #FFFBEA #FEFA83;*/
   background: #FEFA83;
-  border: 1px solid #D2CAA7;
+  border: 1px solid #d2caa7;
 }
 
 /* Inline code */
@@ -182,7 +182,7 @@ pre[data-line] {
   top: .4em;
   left: .6em;
   min-width: 1em;
-  padding: 0 .5em;
+  padding: 0 0.5em;
   background-color: rgba(153, 122, 102, 0.4);
   color: #f5f2f0;
   font: bold 65%/1.5 sans-serif;
@@ -222,7 +222,7 @@ pre.line-numbers > code {
   width: 3em;
   /* works for line-numbers below 1000 lines */
   letter-spacing: -1px;
-  border-right: 1px solid #999;
+  border-right: 1px solid #999999;
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -255,10 +255,23 @@ pre.line-numbers > code {
 *	Functions colors Sass:
 *	http://sass-lang.com/docs/yardoc/Sass/Script/Functions.html	
 */
+/*
+lighten($color, $amount)
+darken($color, $amount)
+saturate($color, $amount)
+desaturate($color, $amount)
+grayscale($color)
+invert($color)
+*/
+/*gray*/
 /* Night Pencil */
+/*blue1*/
 /* Magic */
+/*blue*/
 /* yummi-turquoise */
+/*blue-1*/
 /* J Peterman Shirt */
+/*eb*/
 /* winter morning */
 /* Tonalitats */
 /**
@@ -423,7 +436,7 @@ h6, #s2 .dipta-caption {
 }
 
 /* line 37, ../sass/creation/custom/_typography.scss */
-#s1 .headings-especifics h1, #s1 .headings-especifics h2, #s1 .headings-especifics h3, #s1 .headings-especifics h4, #s1 .headings-especifics h5 {
+#s1 .headings-especifics h1, #s1 .headings-especifics h2, #s1 .headings-especifics h3, #s1 .headings-especifics h2.title-doc, #s1 .headings-especifics h4, #s1 .headings-especifics h5 {
   font-weight: 300;
 }
 
@@ -439,8 +452,8 @@ h6, #s2 .dipta-caption {
 /* Blockquotes*/
 /* line 48, ../sass/creation/custom/_typography.scss */
 #s1 .quote blockquote:nth-child(2), #s1 .quote blockquote:nth-child(5), #s1 .quote blockquote:nth-child(8), #s1 .quote blockquote:nth-child(23), #s2 .navigation-2 p, #s2 .navigation-2 .slider-home .info-banner .text-banner, #s2 .slider-home .info-banner .navigation-2 .text-banner, #s1 .quote blockquote:nth-child(11), #s1 .quote blockquote:nth-child(14), #s1 .quote blockquote:nth-child(17), #s1 .quote blockquote:nth-child(20), #s2 .navigation-1 p, #s2 .navigation-1 .slider-home .info-banner .text-banner, #s2 .slider-home .info-banner .navigation-1 .text-banner, #s2 .navigation-3 p, #s2 .navigation-3 .slider-home .info-banner .text-banner, #s2 .slider-home .info-banner .navigation-3 .text-banner {
-  border-bottom: 1px solid #EBEBEB;
-  border-top: 1px solid #EBEBEB;
+  border-bottom: 1px solid #ebebeb;
+  border-top: 1px solid #ebebeb;
 }
 
 /* line 49, ../sass/creation/custom/_typography.scss */
@@ -523,7 +536,7 @@ h6, #s2 .dipta-caption {
 
 /* line 14, ../sass/creation/custom/_elements.scss */
 #s3 .box-1 .bloc h1, #s3 .box-1 .bloc h2, #s3 .box-1 .bloc h3, #s3 .box-1 .bloc h2.title-doc, #s3 .box-1 .bloc h4, #s3 .box-1 .bloc h5, #s3 .box-1 .bloc h6, #s3 .box-1 .bloc #s2 .dipta-caption, #s2 #s3 .box-1 .bloc .dipta-caption, #s2 .navigation-3 .bloc h1, #s3 .box-1 .bloc1 h1, #s2 .navigation-3 .bloc h2, #s3 .box-1 .bloc1 h2, #s2 .navigation-3 .bloc h3, #s3 .box-1 .bloc1 h3, #s2 .navigation-3 .bloc h2.title-doc, #s3 .box-1 .bloc1 h2.title-doc, #s2 .navigation-3 .bloc h4, #s3 .box-1 .bloc1 h4, #s2 .navigation-3 .bloc h5, #s3 .box-1 .bloc1 h5, #s2 .navigation-3 .bloc h6, #s3 .box-1 .bloc1 h6, #s2 .navigation-3 .bloc .dipta-caption, #s3 .box-1 .bloc1 #s2 .dipta-caption, #s2 #s3 .box-1 .bloc1 .dipta-caption, #s3 .box-1 .bloc2 h1, #s3 .box-1 .bloc2 h2, #s3 .box-1 .bloc2 h3, #s3 .box-1 .bloc2 h2.title-doc, #s3 .box-1 .bloc2 h4, #s3 .box-1 .bloc2 h5, #s3 .box-1 .bloc2 h6, #s3 .box-1 .bloc2 #s2 .dipta-caption, #s2 #s3 .box-1 .bloc2 .dipta-caption, #s2 .navigation-2 .bloc h1, #s3 .box-2 .bloc h1, #s3 .box-3 .bloc h1, #s2 .navigation-2 .bloc h2, #s3 .box-2 .bloc h2, #s3 .box-3 .bloc h2, #s2 .navigation-2 .bloc h3, #s3 .box-2 .bloc h3, #s3 .box-3 .bloc h3, #s2 .navigation-2 .bloc h2.title-doc, #s3 .box-2 .bloc h2.title-doc, #s3 .box-3 .bloc h2.title-doc, #s2 .navigation-2 .bloc h4, #s3 .box-2 .bloc h4, #s3 .box-3 .bloc h4, #s2 .navigation-2 .bloc h5, #s3 .box-2 .bloc h5, #s3 .box-3 .bloc h5, #s2 .navigation-2 .bloc h6, #s3 .box-2 .bloc h6, #s3 .box-3 .bloc h6, #s2 .navigation-2 .bloc .dipta-caption, #s3 .box-2 .bloc #s2 .dipta-caption, #s2 #s3 .box-2 .bloc .dipta-caption, #s3 .box-3 .bloc #s2 .dipta-caption, #s2 #s3 .box-3 .bloc .dipta-caption, #s6 .bloc1 h2, #s6 .bloc2 h2, #s6 .bloc3 h2, #s6 .bloc4 h2, #s2 .navigation-1 .bloc h1, #s3 .box-2 .bloc1 h1, #s3 .box-3 .bloc1 h1, #s2 .navigation-1 .bloc h2, #s3 .box-2 .bloc1 h2, #s3 .box-3 .bloc1 h2, #s2 .navigation-1 .bloc h3, #s3 .box-2 .bloc1 h3, #s3 .box-3 .bloc1 h3, #s2 .navigation-1 .bloc h2.title-doc, #s3 .box-2 .bloc1 h2.title-doc, #s3 .box-3 .bloc1 h2.title-doc, #s2 .navigation-1 .bloc h4, #s3 .box-2 .bloc1 h4, #s3 .box-3 .bloc1 h4, #s2 .navigation-1 .bloc h5, #s3 .box-2 .bloc1 h5, #s3 .box-3 .bloc1 h5, #s2 .navigation-1 .bloc h6, #s3 .box-2 .bloc1 h6, #s3 .box-3 .bloc1 h6, #s2 .navigation-1 .bloc .dipta-caption, #s3 .box-2 .bloc1 #s2 .dipta-caption, #s2 #s3 .box-2 .bloc1 .dipta-caption, #s3 .box-3 .bloc1 #s2 .dipta-caption, #s2 #s3 .box-3 .bloc1 .dipta-caption, #s3 .box-2 .bloc2 h1, #s3 .box-3 .bloc2 h1, #s3 .box-2 .bloc2 h2, #s3 .box-3 .bloc2 h2, #s3 .box-2 .bloc2 h3, #s3 .box-3 .bloc2 h3, #s3 .box-2 .bloc2 h2.title-doc, #s3 .box-3 .bloc2 h2.title-doc, #s3 .box-2 .bloc2 h4, #s3 .box-3 .bloc2 h4, #s3 .box-2 .bloc2 h5, #s3 .box-3 .bloc2 h5, #s3 .box-2 .bloc2 h6, #s3 .box-3 .bloc2 h6, #s3 .box-2 .bloc2 #s2 .dipta-caption, #s2 #s3 .box-2 .bloc2 .dipta-caption, #s3 .box-3 .bloc2 #s2 .dipta-caption, #s2 #s3 .box-3 .bloc2 .dipta-caption {
-  border-bottom: 0.4rem solid #fff;
+  border-bottom: 0.4rem solid white;
 }
 
 /* line 15, ../sass/creation/custom/_elements.scss */
@@ -533,7 +546,7 @@ h6, #s2 .dipta-caption {
 
 /* line 17, ../sass/creation/custom/_elements.scss */
 #s3 .box-1 .bloc {
-  background-color: #f0f7f9;
+  background-color: #014b60;
 }
 /* line 18, ../sass/creation/custom/_elements.scss */
 #s3 .box-1 .bloc h1, #s3 .box-1 .bloc h2, #s3 .box-1 .bloc h3, #s3 .box-1 .bloc h2.title-doc, #s3 .box-1 .bloc h4, #s3 .box-1 .bloc h5, #s3 .box-1 .bloc h6, #s3 .box-1 .bloc #s2 .dipta-caption, #s2 #s3 .box-1 .bloc .dipta-caption {
@@ -567,7 +580,7 @@ h6, #s2 .dipta-caption {
 /* line 30, ../sass/creation/custom/_elements.scss */
 #s3 .box-1 .bloc2 h1, #s3 .box-1 .bloc2 h2, #s3 .box-1 .bloc2 h3, #s3 .box-1 .bloc2 h2.title-doc, #s3 .box-1 .bloc2 h4, #s3 .box-1 .bloc2 h5, #s3 .box-1 .bloc2 h6, #s3 .box-1 .bloc2 #s2 .dipta-caption, #s2 #s3 .box-1 .bloc2 .dipta-caption {
   padding: 2rem;
-  background-color: #f0f7f9;
+  background-color: #014b60;
 }
 /* line 31, ../sass/creation/custom/_elements.scss */
 #s3 .box-1 .bloc2 p, #s3 .box-1 .bloc2 #s2 .slider-home .info-banner .text-banner, #s2 .slider-home .info-banner #s3 .box-1 .bloc2 .text-banner {
@@ -578,7 +591,7 @@ h6, #s2 .dipta-caption {
 
 /* line 34, ../sass/creation/custom/_elements.scss */
 #s2 .navigation-2 .bloc, #s3 .box-2 .bloc, #s3 .box-3 .bloc {
-  background-color: #f0f7f9;
+  background-color: #014b60;
 }
 /* line 36, ../sass/creation/custom/_elements.scss */
 #s2 .navigation-2 .bloc h1, #s3 .box-2 .bloc h1, #s3 .box-3 .bloc h1, #s2 .navigation-2 .bloc h2, #s3 .box-2 .bloc h2, #s3 .box-3 .bloc h2, #s2 .navigation-2 .bloc h3, #s3 .box-2 .bloc h3, #s3 .box-3 .bloc h3, #s2 .navigation-2 .bloc h2.title-doc, #s3 .box-2 .bloc h2.title-doc, #s3 .box-3 .bloc h2.title-doc, #s2 .navigation-2 .bloc h4, #s3 .box-2 .bloc h4, #s3 .box-3 .bloc h4, #s2 .navigation-2 .bloc h5, #s3 .box-2 .bloc h5, #s3 .box-3 .bloc h5, #s2 .navigation-2 .bloc h6, #s3 .box-2 .bloc h6, #s3 .box-3 .bloc h6, #s2 .navigation-2 .bloc .dipta-caption, #s3 .box-2 .bloc #s2 .dipta-caption, #s2 #s3 .box-2 .bloc .dipta-caption, #s3 .box-3 .bloc #s2 .dipta-caption, #s2 #s3 .box-3 .bloc .dipta-caption {
@@ -592,7 +605,7 @@ h6, #s2 .dipta-caption {
 
 /* line 40, ../sass/creation/custom/_elements.scss */
 #s6 .bloc1, #s6 .bloc2, #s6 .bloc3, #s6 .bloc4 {
-  background-color: #f0f7f9;
+  background-color: #014b60;
 }
 /* line 42, ../sass/creation/custom/_elements.scss */
 #s6 .bloc1 h2, #s6 .bloc2 h2, #s6 .bloc3 h2, #s6 .bloc4 h2 {
@@ -627,7 +640,7 @@ h6, #s2 .dipta-caption {
 /* line 53, ../sass/creation/custom/_elements.scss */
 #s3 .box-2 .bloc2 h1, #s3 .box-3 .bloc2 h1, #s3 .box-2 .bloc2 h2, #s3 .box-3 .bloc2 h2, #s3 .box-2 .bloc2 h3, #s3 .box-3 .bloc2 h3, #s3 .box-2 .bloc2 h2.title-doc, #s3 .box-3 .bloc2 h2.title-doc, #s3 .box-2 .bloc2 h4, #s3 .box-3 .bloc2 h4, #s3 .box-2 .bloc2 h5, #s3 .box-3 .bloc2 h5, #s3 .box-2 .bloc2 h6, #s3 .box-3 .bloc2 h6, #s3 .box-2 .bloc2 #s2 .dipta-caption, #s2 #s3 .box-2 .bloc2 .dipta-caption, #s3 .box-3 .bloc2 #s2 .dipta-caption, #s2 #s3 .box-3 .bloc2 .dipta-caption {
   padding: 2rem;
-  background-color: #f0f7f9;
+  background-color: #014b60;
 }
 /* line 54, ../sass/creation/custom/_elements.scss */
 #s3 .box-2 .bloc2 p, #s3 .box-3 .bloc2 p, #s3 .box-2 .bloc2 #s2 .slider-home .info-banner .text-banner, #s2 .slider-home .info-banner #s3 .box-2 .bloc2 .text-banner, #s3 .box-3 .bloc2 #s2 .slider-home .info-banner .text-banner, #s2 .slider-home .info-banner #s3 .box-3 .bloc2 .text-banner {
@@ -683,7 +696,7 @@ h6, #s2 .dipta-caption {
 }
 /* line 79, ../sass/creation/custom/_elements.scss */
 #s2 #dipta-noticia .contingut div.dipta-resum:last-child, #s2 #dipta-agenda .contingut div.dipta-resum:last-child, #s6 .bloc1 .contingut div.dipta-resum:last-child, #s6 .bloc2 .contingut div.dipta-resum:last-child, #s6 .bloc3 .contingut div.dipta-resum:last-child, #s6 .bloc4 .contingut div.dipta-resum:last-child {
-  border-bottom: 0 !important;
+  border-bottom: 0!important;
 }
 
 /* Element Conacatenats*/
@@ -741,7 +754,7 @@ h6, #s2 .dipta-caption {
   padding: 10px;
   position: relative;
   background-color: #fff;
-  margin: -55px 0 0  0;
+  margin: -55px 0 0 0;
 }
 
 /* line 21, ../sass/creation/custom/_images.scss */
@@ -833,7 +846,267 @@ h6, #s2 .dipta-caption {
 *	Menus + breadcrums + box navigations
 *
 */
-/* line 25, ../sass/creation/_creation.scss */
+/*Creation layouts*/
+/*
+*
+*	Susy - Creation base
+*   http://www.responsinator.com
+*	http://sass-lang.com/docs/yardoc/Sass/Script/Functions.html
+*/
+/* Visual Grid Susy for REM 1rem=>10px*/
+/*
+lighten($verd, 20%);
+darken($verd, 20%);
+saturate($verd, 10%);
+desaturate($verd, 10%);
+grayscale($verd);
+invert($verd);
+*/
+/* line 39, ../sass/creation/layouts/_responsive-creation.scss */
+html {
+  /*Typography responsive for compass breakpoints*/
+  font-size: 62.5%;
+  /*
+   @include at-breakpoint($iphone4) { font-size:62.5%; }
+   @include at-breakpoint($ipad) { font-size:62.5%; }
+   @include at-breakpoint($ipad-landscape) { font-size:62.5%; }
+   */
+}
+
+/* line 81, ../sass/creation/layouts/_responsive-creation.scss */
+#s8 {
+  /*Container*/
+  *zoom: 1;
+  max-width: 1504px;
+  max-width: 94rem;
+  _width: 1504px;
+  padding-left: 32px;
+  padding-left: 2rem;
+  padding-right: 32px;
+  padding-right: 2rem;
+  margin-left: auto;
+  margin-right: auto;
+  /*mobile first*/
+}
+/* line 38, ../../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
+#s8:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+/* line 85, ../sass/creation/layouts/_responsive-creation.scss */
+#s8 .header {
+  background-color: #0083a9;
+  /*omega = eliminar gutter-width*/
+  width: 100%;
+  float: right;
+  margin-right: 0;
+  *margin-left: -2rem;
+  display: inline;
+}
+@media (min-width: 940px) {
+  /* line 85, ../sass/creation/layouts/_responsive-creation.scss */
+  #s8 .header {
+    width: 100%;
+    float: right;
+    margin-right: 0;
+  }
+}
+@media (min-width: 768px) and (max-width: 939px) {
+  /* line 85, ../sass/creation/layouts/_responsive-creation.scss */
+  #s8 .header {
+    width: 100%;
+    float: right;
+    margin-right: 0;
+  }
+}
+@media (min-width: 940px) {
+  /* line 85, ../sass/creation/layouts/_responsive-creation.scss */
+  #s8 .header {
+    width: 100%;
+    float: right;
+    margin-right: 0;
+  }
+}
+/* line 92, ../sass/creation/layouts/_responsive-creation.scss */
+#s8 .sidebar-1 {
+  background-color: #ebebeb;
+  width: 100%;
+  float: left;
+  margin-right: 5.26316%;
+  display: inline;
+}
+@media (min-width: 768px) and (max-width: 939px) {
+  /* line 92, ../sass/creation/layouts/_responsive-creation.scss */
+  #s8 .sidebar-1 {
+    width: 23.40426%;
+    float: left;
+    margin-right: 2.12766%;
+  }
+}
+@media (min-width: 940px) {
+  /* line 92, ../sass/creation/layouts/_responsive-creation.scss */
+  #s8 .sidebar-1 {
+    width: 23.80952%;
+    float: left;
+    margin-right: 1.5873%;
+  }
+}
+/* line 97, ../sass/creation/layouts/_responsive-creation.scss */
+#s8 .sidebar-2 {
+  background-color: #ebebeb;
+  width: 100%;
+  float: left;
+  margin-right: 5.26316%;
+  display: inline;
+}
+@media (min-width: 768px) and (max-width: 939px) {
+  /* line 97, ../sass/creation/layouts/_responsive-creation.scss */
+  #s8 .sidebar-2 {
+    width: 74.46809%;
+    float: right;
+    margin-right: 0;
+  }
+}
+@media (min-width: 940px) {
+  /* line 97, ../sass/creation/layouts/_responsive-creation.scss */
+  #s8 .sidebar-2 {
+    width: 23.80952%;
+    float: right;
+    margin-right: 0;
+  }
+}
+/* line 102, ../sass/creation/layouts/_responsive-creation.scss */
+#s8 .content {
+  background-color: #014b60;
+  /*omega = eliminar gutter-width*/
+  width: 100%;
+  float: left;
+  margin-right: 5.26316%;
+  display: inline;
+}
+@media (min-width: 768px) and (max-width: 939px) {
+  /* line 102, ../sass/creation/layouts/_responsive-creation.scss */
+  #s8 .content {
+    width: 100%;
+    float: left;
+    margin-right: 2.12766%;
+  }
+}
+@media (min-width: 940px) {
+  /* line 102, ../sass/creation/layouts/_responsive-creation.scss */
+  #s8 .content {
+    width: 49.20635%;
+    float: left;
+    margin-right: 1.5873%;
+  }
+}
+/* line 108, ../sass/creation/layouts/_responsive-creation.scss */
+#s8 .footer {
+  background-color: #014b60;
+  /*omega = eliminar gutter-width*/
+  padding-right: 21.05263%;
+  padding-left: 21.05263%;
+  width: 57.89474%;
+  float: left;
+  margin-right: 5.26316%;
+  display: inline;
+  /*responsive footer*/
+}
+@media (min-width: 768px) and (max-width: 939px) {
+  /* line 108, ../sass/creation/layouts/_responsive-creation.scss */
+  #s8 .footer {
+    padding-right: 8.51064%;
+    padding-left: 8.51064%;
+    width: 82.97872%;
+    float: left;
+    margin-right: 2.12766%;
+  }
+}
+@media (min-width: 940px) {
+  /* line 108, ../sass/creation/layouts/_responsive-creation.scss */
+  #s8 .footer {
+    padding-right: 6.34921%;
+    padding-left: 6.34921%;
+    width: 87.30159%;
+    float: left;
+    margin-right: 1.5873%;
+  }
+}
+/* line 115, ../sass/creation/layouts/_responsive-creation.scss */
+#s8 .footer .footer-1 {
+  background-color: #ebebeb;
+  width: 100%;
+  float: left;
+  margin-right: 5.26316%;
+  display: inline;
+}
+@media (min-width: 768px) and (max-width: 939px) {
+  /* line 115, ../sass/creation/layouts/_responsive-creation.scss */
+  #s8 .footer .footer-1 {
+    width: 23.40426%;
+    float: left;
+    margin-right: 2.12766%;
+  }
+}
+@media (min-width: 940px) {
+  /* line 115, ../sass/creation/layouts/_responsive-creation.scss */
+  #s8 .footer .footer-1 {
+    width: 23.80952%;
+    float: left;
+    margin-right: 1.5873%;
+  }
+}
+/* line 120, ../sass/creation/layouts/_responsive-creation.scss */
+#s8 .footer .footer-3 {
+  background-color: #ebebeb;
+  width: 100%;
+  float: left;
+  margin-right: 5.26316%;
+  display: inline;
+}
+@media (min-width: 768px) and (max-width: 939px) {
+  /* line 120, ../sass/creation/layouts/_responsive-creation.scss */
+  #s8 .footer .footer-3 {
+    width: 23.40426%;
+    float: right;
+    margin-right: 0;
+  }
+}
+@media (min-width: 940px) {
+  /* line 120, ../sass/creation/layouts/_responsive-creation.scss */
+  #s8 .footer .footer-3 {
+    width: 23.80952%;
+    float: right;
+    margin-right: 0;
+  }
+}
+/* line 125, ../sass/creation/layouts/_responsive-creation.scss */
+#s8 .footer .footer-2 {
+  background-color: #ebebeb;
+  width: 100%;
+  float: left;
+  margin-right: 5.26316%;
+  display: inline;
+}
+@media (min-width: 768px) and (max-width: 939px) {
+  /* line 125, ../sass/creation/layouts/_responsive-creation.scss */
+  #s8 .footer .footer-2 {
+    width: 48.93617%;
+    float: left;
+    margin-right: 2.12766%;
+  }
+}
+@media (min-width: 940px) {
+  /* line 125, ../sass/creation/layouts/_responsive-creation.scss */
+  #s8 .footer .footer-2 {
+    width: 49.20635%;
+    float: left;
+    margin-right: 1.5873%;
+  }
+}
+
+/* line 26, ../sass/creation/_creation.scss */
 html {
   color: #464646;
   font-size: 62.5%;
@@ -841,7 +1114,7 @@ html {
   /*responsive-creation.scss*/
 }
 
-/* line 31, ../sass/creation/_creation.scss */
+/* line 32, ../sass/creation/_creation.scss */
 body {
   /*$font1: 'Open Sans', sans-serif;*/
   margin: 0;
@@ -902,7 +1175,7 @@ header .btn-down {
   -o-border-radius: 6px;
   border-radius: 6px;
   background-color: transparent;
-  border: 1px solid #F0F7F9;
+  border: 1px solid #f0f7f9;
   color: #FFFFFF;
   font-size: 17px;
   font-weight: 500;
@@ -1146,7 +1419,7 @@ h2.title-doc {
 }
 /* line 152, ../sass/doc.scss */
 #s2 #dipta-noticia .contingut div.dipta-resum:last-child {
-  border-bottom: 0 !important;
+  border-bottom: 0!important;
 }
 /* line 155, ../sass/doc.scss */
 #s2 #dipta-agenda {
@@ -1180,7 +1453,7 @@ h2.title-doc {
 }
 /* line 200, ../sass/doc.scss */
 #s6 .bloc2 .contingut div.dipta-resum {
-  border-bottom-color: #fff !IMPORTANT;
+  border-bottom-color: white !important;
 }
 /* line 203, ../sass/doc.scss */
 #s6 .bloc3 {
@@ -1205,5 +1478,5 @@ h2.title-doc {
 }
 /* line 213, ../sass/doc.scss */
 #s6 .bloc4 .contingut div.dipta-resum {
-  border-bottom-color: #fff !IMPORTANT;
+  border-bottom-color: white !important;
 }

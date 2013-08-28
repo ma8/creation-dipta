@@ -20,12 +20,11 @@ $border-box-sizing : false;
 
 $iphone4: 4 320px; 
 $iphone4-landscape:321px 5 480px; 
-$iphone5-landscape:481px 7 568px;
+$iphone5-landscape:481px 6 568px;
 $kindle:569px 8 767px;
 $ipad:768px 11 939px ;
 $ipad-landscape:940px 12  ;
 
-$verd:#3DE0A1;
 
 /*
 lighten($verd, 20%);
@@ -47,89 +46,3 @@ html{
 }
 
 
-@mixin dipta-container-width{
-	@include at-breakpoint($iphone4) { @include set-container-width; }
-	@include at-breakpoint($iphone4-landscape) { @include set-container-width; }
-	@include at-breakpoint($iphone5-landscape) { @include set-container-width; }
-	@include at-breakpoint($kindle) { @include set-container-width; }
-	@include at-breakpoint($ipad) { @include set-container-width; }
-	@include at-breakpoint($ipad-landscape) { @include set-container-width; }
-}
-
-@mixin dipta-grid-show{
-	@include susy-grid-background;
-	@include at-breakpoint($iphone4) { @include set-container-width; @include susy-grid-background; }
-	@include at-breakpoint($iphone4-landscape) { @include set-container-width; @include susy-grid-background; }
-	@include at-breakpoint($iphone5-landscape) { @include set-container-width; @include susy-grid-background; }
-	@include at-breakpoint($kindle) { @include set-container-width; @include susy-grid-background; }
-	@include at-breakpoint($ipad) { @include set-container-width; @include susy-grid-background; }
-	@include at-breakpoint($ipad-landscape) { @include set-container-width; @include susy-grid-background; }
-	a {color:$base01 !important;}
-}
-
-@mixin dipta-grid-color-change{
-	@include at-breakpoint($iphone4) { background-color:lighten($verd, 10%); }
-	@include at-breakpoint($iphone4-landscape) { background-color:darken($verd, 40%);}
-	@include at-breakpoint($iphone5-landscape) { background-color:saturate($verd, 10%);}
-	@include at-breakpoint($kindle) { background-color:desaturate($verd, 50%); }
-	@include at-breakpoint($ipad) { background-color:$verd; }
-	@include at-breakpoint($ipad-landscape) { background-color:invert($verd);}
-}
-
-
-
-#s8{
-/*Container*/
-@include container;
-/*mobile first*/
-	.header{  background-color:$base03;
-		/*omega = eliminar gutter-width*/
-		@include span-columns(5 omega,5 ); 
-		@include at-breakpoint($ipad-landscape) { @include span-columns(12 omega,12 ); }
-		@include at-breakpoint($ipad) { @include span-columns(12 omega,12 ); }
-		@include at-breakpoint($ipad-landscape) { @include span-columns(16 omega,16 );  }
-		}
-	.sidebar-1{ background-color:$base05;
-		@include span-columns(5,5); 
-	 	@include at-breakpoint($ipad) { @include span-columns(3,12 ); }
-		@include at-breakpoint($ipad-landscape) { @include span-columns(4,16 );  }
-		}
-	.sidebar-2 {background-color:$base05;
-		@include span-columns(5,5);
-		@include at-breakpoint($ipad) { @include span-columns(9 omega,12 ); }
-		@include at-breakpoint($ipad-landscape) { @include span-columns(4 omega ,16 );  }
-		}
-	.content{ background-color:$base02;
-		/*omega = eliminar gutter-width*/
-		@include span-columns(5,5);
-		@include at-breakpoint($ipad) { @include span-columns(12  ,12 ); }
-		@include at-breakpoint($ipad-landscape) { @include span-columns(8 ,16 );  }
-		}
-	.footer{  background-color:$base02;
-		/*omega = eliminar gutter-width*/
-		@include suffix(1,5); 
-		@include prefix(1,5); 
-		@include span-columns(3,5);
-		@include at-breakpoint($ipad) { @include suffix(1,12); @include prefix(1,12);@include span-columns(10,12); }
-		@include at-breakpoint($ipad-landscape) { @include suffix(1,16); @include prefix(1,16);@include span-columns(14,16 );  }
-			 .footer-1{background-color:$base05;
-				@include span-columns(5,5);
-				@include at-breakpoint($ipad) { @include span-columns(3 ,12 ); }
-				@include at-breakpoint($ipad-landscape) { @include span-columns(4 ,16 );  }
-				}
-			 .footer-3{background-color:$base05;
-				@include span-columns(5,5);
-				@include at-breakpoint($ipad) { @include span-columns(3 omega ,12 ); }
-				@include at-breakpoint($ipad-landscape) { @include span-columns(4 omega ,16 );  }
-				}
-			 .footer-2{background-color:$base05;
-				@include span-columns(5,5);
-				@include at-breakpoint($ipad) { @include span-columns(6 ,12 ); }
-				@include at-breakpoint($ipad-landscape) { @include span-columns(8 ,16 );  }
-				}
-		/*responsive footer*/
-		 
-		}
-		
-
-}

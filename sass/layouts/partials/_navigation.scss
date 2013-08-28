@@ -1,0 +1,64 @@
+/*
+*
+*	Navigation
+*   http://www.responsinator.com
+*	http://sass-lang.com/docs/yardoc/Sass/Script/Functions.html
+*/
+
+/*Mixins*/
+
+	@mixin main-menu-iphone{/* Estil del menu*/
+		ul li{ 
+		float:left;display:block;width:48%;line-height:2.5rem;
+		padding:0 !important;
+			a{ display:block;width:99%;text-align:center; margin-bottom:0.5rem;
+			background-color:$base02; padding:0.3rem; color:#fff;}
+			a:hover{ background-color:lighten($base02,10%);}
+		}
+		li:nth-child(1){margin-right:10px;}
+		li:nth-child(2){}
+		li:nth-child(3){margin-right:10px;}
+		li:nth-child(4){}
+		li:nth-child(5){width:99%; a{width:100%;}}
+	}
+	
+	@mixin main-menu-kindle{/* Estil del menu*/
+		ul li{ font-size: $h6-s;
+		float:left;display:block;line-height:2.5rem;margin-right:10px;
+		padding:0 !important;
+			a{ display:block;width:99%;text-align:center; margin-bottom:0.5rem;
+			background-color:$base02; padding:0.3rem; color:#fff;}
+			a:hover{ background-color:lighten($base02,10%);}
+		}
+	}
+	
+/* Responsive*/
+	
+	
+.navigation-wrapper{ //@include dipta-grid-color-change;
+	@include container; @include dipta-container-width;
+	#main-menu { 
+		 @include at-breakpoint($iphone4) { @include span-columns(4); ul li{font-size: $h5-s;} @include main-menu-iphone; }	
+ 		 @include at-breakpoint($iphone4-landscape) { @include span-columns(5); ul li{font-size: $h5-s;} @include main-menu-iphone;}
+ 		 @include at-breakpoint($iphone5-landscape) { @include span-columns(6); ul li{font-size: $h4-s;} @include main-menu-iphone; 
+			li:nth-child(5){width:98%; a{width:99%;}} }
+		 @include at-breakpoint($kindle) { @include span-columns(6); @include main-menu-kindle;  }
+		 @include at-breakpoint($ipad) {
+			@include span-columns(9); ul li{font-size: $h4-s+0.1rem; float: left; } }
+		 @include at-breakpoint($ipad-landscape) {  @include span-columns(9); ul li{font-size: $h3-s - 0.3rem; float: left;font-weight:normal;} } 
+		}
+	.region-navigation { 
+		 #navigation ul li{font-size: $h2-s;}
+		 margin-top:10px;
+		 @include at-breakpoint($iphone4) { @include span-columns(4); margin-bottom:1rem; margin-top:0.3rem;}	
+ 		 @include at-breakpoint($iphone4-landscape) { 
+			@include span-columns(5); margin-bottom:1rem; margin-top:0.3rem;}
+ 		 @include at-breakpoint($iphone5-landscape) {
+			@include span-columns(4); @include prefix(1); margin-top:0.2rem; margin-bottom:2rem;}
+		 @include at-breakpoint($kindle) { 
+			@include span-columns(2 omega);margin-top:0.1rem;margin-bottom:2rem;}
+		 @include at-breakpoint($ipad) { @include span-columns(2 omega);  }
+		 @include at-breakpoint($ipad-landscape) {  @include span-columns(3 omega);  }
+		}	
+}
+.navigation-wrapper:hover{ /*@include dipta-grid-show;*/}

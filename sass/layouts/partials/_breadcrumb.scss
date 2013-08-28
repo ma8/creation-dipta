@@ -1,0 +1,12 @@
+/*
+*
+*	Breadcrumb
+*   http://www.responsinator.com
+*	http://sass-lang.com/docs/yardoc/Sass/Script/Functions.html
+*/
+
+/* Mixins*/
+
+/* Responsive*/
+
+.breadcrumb ol{ @include container; @include dipta-container-width; }

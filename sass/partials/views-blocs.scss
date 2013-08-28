@@ -56,10 +56,10 @@ $pad:2%;
 
 //[BLOC - revistes home]
 #block-views-publicacio-revistadipu-block-2{
-	 width:220px; @extend h5;
+	 font-size:$h5-s; line-height:$h5-h;
 	 background-color:#47A2BD;
-	 h2{margin:0;color:#fff;background-color:#0083A9;padding:7%;border-top:4px solid #47A2BD; @extend %ph4; font-weight:600;}
-	 .publicacio{padding:20px;border-bottom:1px solid #79B8CB;color:#fff;  background-color: #47A2BD;}
+	 h2{margin:0;color:#fff;background-color:#0083A9;padding:2rem 4rem 2rem 2rem;border-top:4px solid #47A2BD; font-size:$h4-s; line-height:$h4-h;; font-weight:600;}
+	 .publicacio{padding:2rem 4rem 2rem 2rem;border-bottom:1px solid #79B8CB;color:#fff;  background-color: #47A2BD;}
 	 .descarrega-pdf a { color:$base02; }
 }
 
@@ -70,7 +70,7 @@ $pad:2%;
 #block-views-banners-home-block-3 {
   position: relative;
   .view-content > ul > li,
-  .views-row {
+  .views-row,.dipta-banner {
     position: relative;
   }
   .info-banner {
@@ -134,9 +134,8 @@ $pad:2%;
 /* Banners laterals */
 #block-views-banners-home-block-1,
 #block-views-banners-home-block-3 {
-  .views-row {
-    margin-bottom: 20px;
-  }
+  .dipta-banner{ margin-bottom: 2rem; }
+  
   .info-banner {
     left: 10px;
     top: 10px;
@@ -146,12 +145,12 @@ $pad:2%;
     background-repeat: no-repeat;
     background-position: left bottom;
     .text-banner {
-	 font-size:$h6-s;
-      color: $base-font-color;
+	 font-size:$h6-s; line-height:$h6-h;
+     color: $base01;
     }
   }
-  h2 { 
-	font-size:$h2-s;
+  h3 { 
+	font-size:$h4-s;line-height:$h4-h;
     margin: 0;
     a {
       text-decoration: none;
@@ -168,7 +167,7 @@ $pad:2%;
 /* Banners inferiors */
 #block-views-banners-home-block-3 {
   margin-bottom: 0;
-  margin-left: 20px;
+  margin-left: 2rem;
   .view-content {
     margin-top: 20px;
     ul {

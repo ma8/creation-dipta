@@ -1,0 +1,174 @@
+/*
+*
+*	Content => region-highlighted + sidebar-first + sidebar-second + #content
+*   http://www.responsinator.com
+*	http://sass-lang.com/docs/yardoc/Sass/Script/Functions.html
+*/
+
+/*Mixins*/
+
+	@mixin dipta-home{
+			/* bloc home noticies*/
+			.view-display-id-page_1{ .view-content {  div.dipta-resum { 
+						h3{font-size:$h4-s; line-height:$h4-h;} 
+						h4{font-size:$h5-s; line-height:$h5-h;} /*float:left; width:44.0%;*/
+						p{ font-size:$h6-s;} }
+						div.dipta-resum:first-child{
+						padding-right:1.8rem;border-bottom:0.4rem solid $base05;border-right:0;}
+					}
+					h2{ font-size:$h3-s; line-height:$h3-h;}	
+				}
+			/*bloc agenda-home*/
+			.view-display-id-block_2{  .view-content {  div.dipta-resum { 
+						h3{font-size:$h4-s; line-height:$h4-h;} 
+						h4{font-size:$h5-s; line-height:$h5-h;} /*float:left; width:44.0%;*/
+						p{ font-size:$h6-s;}
+					}
+				}
+				h2{ font-size:$h3-s; line-height:$h3-h;}
+				.more-link{position: absolute; right: 10px;top: 30px;font-size:$h6-s; line-height:$h6-h;}	
+			}
+			/* bloc revistes home*/
+			#block-views-publicacio-revistadipu-block-2{  h2{ } .publicacio{} .descarrega-pdf a {  } }
+			/*Bloc Banners laterals*/
+		}/*mixin*/
+
+		
+	@mixin dipta-home-ipad-landscape{
+		.view-display-id-page_1{ .view-content {  div.dipta-resum {float:left; width:44.0%; }}}
+		.view-display-id-block_2{  .view-content {  div.dipta-resum { }}}
+	}
+	@mixin dipta-home-ipad{
+		.view-display-id-page_1{ .view-content {  div.dipta-resum {float:left; width:42.0%; }}}
+		.view-display-id-block_2{  .view-content {  div.dipta-resum { }}}
+	}
+	@mixin dipta-banners-iphone{
+		#block-views-banners-home-block-1{
+		 .dipta-banner{ @include span-columns(4,8); float:left;margin-right:0.4rem;}
+		 .text-banner{display:none;}
+		  h3 { font-size:$h5-s;line-height:$h5-h;}
+		}
+		
+	}
+	@mixin dipta-banners-kindle{
+		#block-views-banners-home-block-1{
+		 .dipta-banner{ @include span-columns(2,8); float:left;margin-right:0.4rem;}
+		 .text-banner{display:none;}
+		  h3 { font-size:$h5-s;line-height:$h5-h;}
+		}
+		
+	}	
+	@mixin dipta-banners-ipad{
+		#block-views-banners-home-block-1{ .dipta-banner{ } .text-banner{} h3 { } } 
+	}
+	
+	@mixin dipta-banners-ipad-landscape{
+		#block-views-banners-home-block-1{ .dipta-banner{ } .text-banner{} h3 { } }
+	}	
+	
+	@mixin dipta-menu-navegacio-iphone{
+		#block-menu-block-1{
+			/*title*/ h2{}
+			/*wrapper*/.menu-block-wrapper{
+				ul.menu  li a {}
+				}
+		}
+	}
+	
+	@mixin dipta-menu-navegacio-ipad{
+		#block-menu-block-1{
+			margin:2rem;
+			/*title*/ h2{}
+			/*wrapper*/
+			.menu-block-wrapper{
+				background-color:$base04;
+				ul.menu li a { font-size:$h6-s; line-height:$h6-h; width:100%;}
+				}
+		}
+	}
+		
+/*Responsive All*/
+.main-content { //@include dipta-grid-color-change; 
+@include container; @include dipta-container-width; }
+
+
+/*Responsive highlighted*/	
+.region-highlighted{@include span-columns(12); 
+	#block-views-banners-home-block{ img { height:320px; width:920px!important;} }
+
+	@include at-breakpoint($iphone4) { @include span-columns(4 omega);
+			#block-views-banners-home-block {
+				h2{font-size:$h3-s;}
+				.info-banner {  width: 223px;}
+				.views-slideshow-controls-bottom a{  width:130px;}
+				#views_slideshow_controls_text_next_banners_home-block{margin-right:5px;}
+			}
+	}	
+	 @include at-breakpoint($iphone4-landscape) { @include span-columns(5 omega);
+			#block-views-banners-home-block { 
+				h2{font-size:$h3-s;}
+				.info-banner {  width: 223px;}
+				.views-slideshow-controls-bottom a{  width:130px;}
+			}
+	}	
+	
+	clear:both;
+}
+
+/* Responsive If sidebart-frist*/
+.sidebar-first {
+	/*All*/
+	@include at-breakpoint($iphone4) { 
+	}//	
+	@include at-breakpoint($iphone4-landscape) {
+	}//
+	@include at-breakpoint($iphone5-landscape) { 
+	}//
+	@include at-breakpoint($kindle) { @include dipta-menu-navegacio-ipad;
+	}//
+	@include at-breakpoint($ipad) {  
+		#content { @include span-columns(8 omega); }
+		.region-sidebar-first {@include span-columns(3); 
+		#block-menu-block-1{padding:0 10px;} }
+	}//
+	@include at-breakpoint($ipad-landscape) { 
+		#content { @include span-columns(9 omega); }
+		.region-sidebar-first {@include span-columns(3); 
+		#block-menu-block-1{padding:0 10px;} }
+	}//
+		
+		
+}
+	
+/*If sidebars-frist*/	
+.sidebar-second {
+	/*All*/
+		@include at-breakpoint($iphone4) { @include dipta-home; @include dipta-banners-iphone;
+			#content {@include span-columns(4); } .region-sidebar-second {@include span-columns(4);}
+		}//	
+		@include at-breakpoint($iphone4-landscape) { @include dipta-home;  @include dipta-banners-iphone;
+			#content {@include span-columns(5); } .region-sidebar-second { @include span-columns(5); }
+		}//
+		@include at-breakpoint($iphone5-landscape) { @include dipta-home;  @include dipta-banners-iphone;
+			#block-views-banners-home-block-1,#block-views-banners-home-block-3{.text-banner{display:block;}}
+			#content {@include span-columns(6); } .region-sidebar-second { @include span-columns(6); }
+		}//
+		@include at-breakpoint($kindle) { @include dipta-home-ipad; @include dipta-banners-kindle;
+			#content {@include span-columns(8); }.region-sidebar-second { @include span-columns(8); }
+		}//
+		@include at-breakpoint($ipad) {  @include dipta-home-ipad; @include dipta-banners-ipad;
+			#content {@include span-columns(8); }
+			.region-sidebar-second { @include span-columns(3 omega); }
+		}//
+		@include at-breakpoint($ipad-landscape) {  @include dipta-home-ipad-landscape; @include dipta-banners-ipad-landscape;
+			#content {@include span-columns(9); }
+			.region-sidebar-second { @include span-columns(3 omega); }
+		}//
+	}
+/* if two-sidebars */
+.two-sidebars {
+	.region-sidebar-first { @include span-columns(3); }
+	.region-sidebar-second { @include span-columns(3 omega);}
+	 #content { @include span-columns(6);}
+
+}	
