@@ -14,7 +14,7 @@
 %border-bottom-fff{border-bottom:0.4rem solid #fff;}
 %border-bottom-eb {border-bottom:0.4rem solid $base05;}
 
-%dipta-box-blue{ background-color:$base02;
+%dipta-box-blue{ background-color:$base04;
 	h1,h2,h3,h4,h5,h6{ padding:2rem; @extend %border-bottom-fff; }
 	p{ @extend %ph5; padding: 0 2rem 2rem 2rem; border:0;} 
 }
@@ -27,12 +27,12 @@
 
 %dipta-box-blue-eb{
 	background-color:$base05;
-	h1,h2,h3,h4,h5,h6{ padding:2rem; @extend %border-bottom-fff;background-color:$base02;}
+	h1,h2,h3,h4,h5,h6{ padding:2rem; @extend %border-bottom-fff;background-color:$base04;}
 	p{ @extend %ph5; padding: 0 2rem 2rem 2rem; border:0; background-color:$base05; } 
 }
 
 %dipta-box-blue-border{
-	background-color:$base02;
+	background-color:$base04;
 	h1,h2,h3,h4,h5,h6{ padding:2rem; @extend %border-bottom-fff; @extend %border-top-blue ;}
 	p{ @extend %ph5; padding: 0 2rem 2rem 2rem; border:0;} 
 }
@@ -50,7 +50,7 @@
 
 %dipta-box-blue-eb-border{
 	background-color:$base05;
-	h1,h2,h3,h4,h5,h6{ padding:2rem; @extend %border-bottom-fff; @extend %border-top-blue ;background-color:$base02;}
+	h1,h2,h3,h4,h5,h6{ padding:2rem; @extend %border-bottom-fff; @extend %border-top-blue ;background-color:$base04;}
 	p{ @extend %ph5; padding: 0 2rem 2rem 2rem; border:0; background-color:$base05; } 
 }
 

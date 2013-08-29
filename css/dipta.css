@@ -1,4 +1,4 @@
-@charset "UTF-8";
+@charset "CP850";
 @import url(http://fonts.googleapis.com/css?family=Droid+Sans:400,700);
 @import url(http://fonts.googleapis.com/css?family=Roboto+Condensed:400,300,700);
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:400,700,300,600,800);
@@ -11,8 +11,8 @@
  */
 /**
  * @file
- * Creation for compass - Front-end framework de  la DiputaciÃ³ de Tarragona.
- * @Miguel Ãngel Ramos. 
+ * Creation for compass - Front-end framework de  la Diputaci¢ de Tarragona.
+ * @Miguel µngel Ramos. 
  *
  */
 /* Compass*/
@@ -27,7 +27,7 @@ code[class*="language-"],
 pre[class*="language-"] {
   color: black;
   text-shadow: 0 1px white;
-  font-family: Consolas, Monaco, 'Andale Mono', monospace;
+  font-family: Consolas, Monaco, "Andale Mono", monospace;
   direction: ltr;
   text-align: left;
   white-space: pre;
@@ -64,7 +64,7 @@ pre[class*="language-"] {
 /* line 45, ../sass/creation/base/_syntax.scss */
 pre[class*="language-"] {
   padding: 1em;
-  margin: .5em 0;
+  margin: 0.5em 0;
   overflow: auto;
 }
 
@@ -73,7 +73,7 @@ pre[class*="language-"] {
 pre[class*="language-"] {
   /* #FEFA83  #f5f2f0 #FFFBEA #FEFA83;*/
   background: #FEFA83;
-  border: 1px solid #D2CAA7;
+  border: 1px solid #d2caa7;
 }
 
 /* Inline code */
@@ -181,7 +181,7 @@ pre[data-line] {
   top: .4em;
   left: .6em;
   min-width: 1em;
-  padding: 0 .5em;
+  padding: 0 0.5em;
   background-color: rgba(153, 122, 102, 0.4);
   color: #f5f2f0;
   font: bold 65%/1.5 sans-serif;
@@ -221,7 +221,7 @@ pre.line-numbers > code {
   width: 3em;
   /* works for line-numbers below 1000 lines */
   letter-spacing: -1px;
-  border-right: 1px solid #999;
+  border-right: 1px solid #999999;
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -391,8 +391,8 @@ blockquote, .dipta-txt-navegacio {
 /* Blockquotes*/
 /* line 46, ../sass/creation/custom/_typography.scss */
 blockquote, .dipta-txt-navegacio {
-  border-bottom: 1px solid #EBEBEB;
-  border-top: 1px solid #EBEBEB;
+  border-bottom: 1px solid #ebebeb;
+  border-top: 1px solid #ebebeb;
 }
 
 /* line 47, ../sass/creation/custom/_typography.scss */
@@ -443,7 +443,7 @@ blockquote {
 
 /* line 14, ../sass/creation/custom/_elements.scss */
 .related-content h1, .related-content h2, .related-content h3, .related-content h4, .related-content .dipta-subtitol, .related-content h5, .related-content h6, .related-content .field-slideshow-caption {
-  border-bottom: 0.4rem solid #fff;
+  border-bottom: 0.4rem solid white;
 }
 
 /* line 45, ../sass/creation/custom/_elements.scss */
@@ -523,7 +523,7 @@ blockquote {
   padding: 10px;
   position: relative;
   background-color: #fff;
-  margin: -55px 0 0  0;
+  margin: -55px 0 0 0;
 }
 
 /* line 17, ../sass/creation/custom/_images.scss */
@@ -830,7 +830,7 @@ label,
 /* Elimnar ???*/
 /* line 157, ../sass/dipta.scss */
 .foto-des {
-  border: 1px solid #eee;
+  border: 1px solid #eeeeee;
   background: #fff;
   padding: 10px;
   -webkit-box-shadow: 0px 0px 5px #333333;
@@ -884,7 +884,7 @@ div.llista_numerada ol li:before {
   content: '';
   width: 0px;
   height: 0px;
-  border: 24px solid #ccc;
+  border: 24px solid #cccccc;
   border-radius: 40px;
   position: absolute;
   /* using left and top to adjust absolute position of circle relative to li
@@ -900,7 +900,7 @@ div.llista_numerada ol li:after {
    * Value of content here signifies that we are using my-counter as content of newly appended child,
    * and this counter is a decimal number. 
    */
-  content: counter(my-counter,decimal);
+  content: counter(my-counter, decimal);
   /* if you don't use counter-increment, value of my-counter will always stay 0.
    */
   counter-increment: my-counter;
@@ -949,7 +949,7 @@ div.llista_numerada ol li:after {
 }
 /* line 247, ../sass/dipta.scss */
 .group_dades .tag, .group-dades .tag {
-  padding-left: 0 !Important;
+  padding-left: 0 !important;
 }
 
 /* line 251, ../sass/dipta.scss */

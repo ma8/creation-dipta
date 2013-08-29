@@ -1,4 +1,4 @@
-@charset "UTF-8";
+@charset "CP850";
 @import url(http://fonts.googleapis.com/css?family=Roboto+Condensed:300,700|Roboto:400,300,700,400italic,100);
 @import url(http://fonts.googleapis.com/css?family=Droid+Sans:400,700);
 @import url(http://fonts.googleapis.com/css?family=Roboto+Condensed:400,300,700);
@@ -10,8 +10,8 @@
 */
 /**
  * @file
- * Creation for compass - Front-end framework de  la DiputaciÃ³ de Tarragona.
- * @Miguel Ãngel Ramos. 
+ * Creation for compass - Front-end framework de  la Diputaci¢ de Tarragona.
+ * @Miguel µngel Ramos. 
  *
  */
 /* Compass*/
@@ -26,7 +26,7 @@ code[class*="language-"],
 pre[class*="language-"] {
   color: black;
   text-shadow: 0 1px white;
-  font-family: Consolas, Monaco, 'Andale Mono', monospace;
+  font-family: Consolas, Monaco, "Andale Mono", monospace;
   direction: ltr;
   text-align: left;
   white-space: pre;
@@ -63,7 +63,7 @@ pre[class*="language-"] {
 /* line 45, ../../sass/creation/base/_syntax.scss */
 pre[class*="language-"] {
   padding: 1em;
-  margin: .5em 0;
+  margin: 0.5em 0;
   overflow: auto;
 }
 
@@ -72,7 +72,7 @@ pre[class*="language-"] {
 pre[class*="language-"] {
   /* #FEFA83  #f5f2f0 #FFFBEA #FEFA83;*/
   background: #FEFA83;
-  border: 1px solid #D2CAA7;
+  border: 1px solid #d2caa7;
 }
 
 /* Inline code */
@@ -180,7 +180,7 @@ pre[data-line] {
   top: .4em;
   left: .6em;
   min-width: 1em;
-  padding: 0 .5em;
+  padding: 0 0.5em;
   background-color: rgba(153, 122, 102, 0.4);
   color: #f5f2f0;
   font: bold 65%/1.5 sans-serif;
@@ -220,7 +220,7 @@ pre.line-numbers > code {
   width: 3em;
   /* works for line-numbers below 1000 lines */
   letter-spacing: -1px;
-  border-right: 1px solid #999;
+  border-right: 1px solid #999999;
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -403,7 +403,7 @@ h6 {
 
 /* line 14, ../../sass/creation/custom/_elements.scss */
 .node-type-pagina-intermitja #content .block-menu-block .menu li h1, .node-type-pagina-intermitja #content .block-menu-block .menu li h2, .node-type-pagina-intermitja #content .block-menu-block .menu li h3, .node-type-pagina-intermitja #content .block-menu-block .menu li h4, .node-type-pagina-intermitja #content .block-menu-block .menu li h5, .node-type-pagina-intermitja #content .block-menu-block .menu li h6 {
-  border-bottom: 0.4rem solid #fff;
+  border-bottom: 0.4rem solid white;
 }
 
 /* line 45, ../../sass/creation/custom/_elements.scss */
@@ -618,27 +618,27 @@ pre {
 /* line 31, ../../sass/partials/navigations.scss */
 #block-menu-block-6 ul {
   padding-left: 35px !important;
-  padding-top: 10px !important;
+  padding-top: 10px!important;
 }
 /* line 34, ../../sass/partials/navigations.scss */
 #block-menu-block-6 ul li {
   background-color: transparent !important;
-  border: 0px solid #fff !Important;
+  border: 0px solid white !important;
   list-style: inherit;
-  margin-bottom: 1px !important;
+  margin-bottom: 1px!important;
   padding: 0;
 }
 
 /* line 46, ../../sass/partials/navigations.scss */
 #block-book-navigation {
-  border: 1px solid #EEEEEE;
+  border: 1px solid #eeeeee;
   float: right;
   font-size: 0.9em;
   margin-right: 15px;
   margin-top: -60px;
   padding: 2% 2% 2% 0;
   width: 200px;
-  background-color: white !important;
+  background-color: #FFF!important;
 }
 /* line 55, ../../sass/partials/navigations.scss */
 #block-book-navigation h2 {
@@ -651,7 +651,7 @@ pre {
 }
 /* line 62, ../../sass/partials/navigations.scss */
 #block-book-navigation h2 a {
-  border-bottom: 2px solid #fff;
+  border-bottom: 2px solid white;
   display: block;
   padding: 0px 20px;
   text-decoration: none;
@@ -795,7 +795,7 @@ ul li.leaf {
 }
 /* line 192, ../../sass/partials/navigations.scss */
 .region-header .block-menu .menu li {
-  border-right: 1px solid #fff;
+  border-right: 1px solid white;
   display: inline;
   list-style: none;
   padding: 0 0.5em 0 0.3em;
