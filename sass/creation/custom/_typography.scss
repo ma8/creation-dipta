@@ -1,14 +1,10 @@
 
 /**
-*	Typografia  web-fonts
+*	Typografia  - Creation
 * 	http://www.google.com/fonts
 *	Imports + Golden ratio + responsive typography
 * 	$font-a;contingut + $font-b;Headings + $font-c; especial
 */
-
-
-
-
 
 
 p{ font-weight: 300;}
@@ -37,9 +33,7 @@ h6{font-size: $h6-s;font-weight:400;line-height:$h6-h;letter-spacing: -0.06rem;}
 	padding:2rem 0 2rem 5rem;margin:0;
 	background: url('../../images/escut-dipta.png') no-repeat;
 	background-position:2rem 2.1rem;
-	background-color:#fff;
 	@extend %border-top-blue;
-	@extend %border-bottom-eb;
 }
  
 /* Blockquotes*/ 

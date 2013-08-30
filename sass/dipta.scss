@@ -1,58 +1,10 @@
 /**
  * @file
- * Tema principal de Diputacio
- * NODES + VIEWS PAGES + VIEWS BLOCS + NAVIGATION
+ * Diputacio de Tarragona - dipta.scss
+ *
  */
- 
-   
+  
 @import "creation/_creation"; 
-
-/*Padding-Margin Layout*/
-$pad:2%;
-
-//[Headings] [Especifics]
-/*Title pagines views*/
-h1.title { color:$base02;}
-
-h1#page-title{@extend h1.title; }
-/*Title nodes*/
-.dipta-title{ @extend h1.title;}
-.dipta-subtitol{ @extend h4; }
-.dipta-title-img-navegacio{@extend %dipta-title-img-d;}
-.dipta-title-img-node{@extend %dipta-title-img-c; color:$base02;}
-.dipta-txt-navegacio{  @extend %dipta-quote-h4c; border:0; }
-
-blockquote { @extend %dipta-quote-h4;p{font-weight:500;}}
-
-//[Caption] 
-.field-slideshow-caption{@extend %dipta-caption;}
-
-//[Concatenats]
-.dipta-concatenats{ @extend %dipta-concatenats;}
-.group-concat {margin-left:2%;margin-right:2%}
-
-//[Formulari de Cantacte]
-#contact-site-form,#webform-client-form-3686,#print-mail-form{padding:2%;}
-.printmail-label{float:none !important;} 
-
-//[Contingut relacionat]
-.related-content {
-	@extend %dipta-box-eb-border;
-	 width: 48%;display:block;margin-top:5%;
-	h1,h2,h3,h4,h5,h6{ margin:0;color:$base03;}
-	ul li{@extend %ph5; list-style-image:url("../images/ico-link-list.png");}
-}
-.related-content:first-child{}
-.related-content:last-child{margin-left:2%;}
-
-#cboxCurrent{
-	width:180px; 
-	a,.descarregar{
-	background-image:url("../images/ico-file-download.png");
-	background-repeat: no-repeat;background-size: auto auto;
-	background-position: center center;padding: 5%;}
-}
-
 
 .town-list {
   margin: 0.8em 0;
@@ -105,55 +57,7 @@ blockquote { @extend %dipta-quote-h4;p{font-weight:500;}}
 }
 
 
-/*
- * Field wrappers when the Fences module is enabled.
- */
 
-label,
-.label-inline,
-.field-label { /* The optional label for a field. */
-  font-weight: bold;
-}
-.label-inline {
-  display: inline;
-}
-
-
-/****** Pages Elements ************************************************************************************
- @import "partials/_pages"; */
-
-/****** NODES ************************************************************************************
- @import "partials/_node"; */ 
-
-/****** VIEWS PAGES ******************************************************************************
- @import "partials/_views-pages"; */
-
-/****** VIEWS BLOCS ******************************************************************************
- @import "partials/_views-blocs"; */
-
-/****** MENUS + NAVIGATION ***********************************************************************
- @import "partials/_navigations"; */
-
-
-/****** FORMS ***********************************************************************
-@import "partials/_forms"; */ 
- 
-
-/****** FORMS ***********************************************************************
- @import "partials/_comments"; */ 
- 
-
- /****** Tabs ***********************************************************************
- @import "partials/_tabs"; */
-
- /****** Tabs ***********************************************************************
- @import "partials/_jcarousel"; */
-
-/***** Elements a revisar ***************************************************************************************/
-
-
-
-/* Elimnar ???*/
 .foto-des{ 
 	border:1px solid #eee;
 	background: #fff;

@@ -27,22 +27,8 @@ $ipad-landscape:940px 12  ;
 
 
 /*
-lighten($verd, 20%);
-darken($verd, 20%);
-saturate($verd, 10%);
-desaturate($verd, 10%);
-grayscale($verd);
-invert($verd);
+lighten($verd, 20%);darken($verd, 20%);saturate($verd, 10%);desaturate($verd, 10%);grayscale($verd);invert($verd);
 */
 
-html{
-	/*Typography responsive for compass breakpoints*/
-	font-size:62.5%; 
-	/*
-	 @include at-breakpoint($iphone4) { font-size:62.5%; }
-	 @include at-breakpoint($ipad) { font-size:62.5%; }
-	 @include at-breakpoint($ipad-landscape) { font-size:62.5%; }
-	 */
-}
 
 

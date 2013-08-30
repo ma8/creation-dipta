@@ -11,7 +11,6 @@ $base-line-height:2rem;
 $base-font-color:$base01;
 $pad:2%;
 
-
 .block { /* Block wrapper */
   margin-bottom: 1.5em;
 }
@@ -21,13 +20,15 @@ $pad:2%;
 #block-views-not-cies-block-3,
 #block-views-actes-agenda-block-6,
 #block-views-agenda-presidencia-block-1{
-	 margin: 5% 3% 10% 0;
+	margin:1.4rem;
 	.view-content{  @extend %dipta-box-home; }
-	h2{ @extend %dipta-title-escut; @extend h3; border-bottom-color:#fff !important; background-color:$base05; color:$base03; }
+	h2{ @extend %dipta-title-escut; @extend h3; border-bottom:0.4rem solid #fff;
+		background-color:$base05; color:$base03; }
 	.dipta-resum{background-color:$base05;
 	 border-bottom:0.4rem solid #fff!important;}
 	.view-footer{@extend h5;}
 }
+
 
 
 //[BLOC - municipis de la comarca ] [bloc - Unitats incloses]
@@ -266,13 +267,45 @@ $pad:2%;
   }
 }
 
+//[ BLOC - serveis q ofereix ] 
+#block-menu-block-6{
+	margin:2%;clear:both; background-color:$base05; 
+	h2{ color:$base03;font-size:h3-s;line-height:$h3-h;margin-bottom:0; @extend %dipta-title-escut;
+	border-bottom:0.4rem solid #fff;}
+	ul{padding-left: 35px !important;padding-top:1rem!important; padding-bottom:1rem !important; ;
+		li{ list-style-image:url("../../images/ico-link-list.png");}
+	}
+}
 
 
-/*BLOCS FOOTER*/
-/*
-#footer .block-menu-block{ ul.menu:first-child > li > a { font-weight: bold; } }
-#footer .block-menu-block ul.menu:first-child > li:nth-child(3n+1){ float:right; clear:none!important; }
-#block-block-5{ }
-#block-block-6 { }
+// [Imatge-corporativa]
+.view-imatge-corporativa {margin:1.4rem;border:none !important;}
+.centre{ img{float:left; padding:2%;} .file{background-color:#ebebeb;padding:0 1% 1% 1%;} 
+		.manual{margin-top:20px; clear:both;}}
+//[BLOCS imatges corporatives]
+#block-views-imatge-corporativa-block{ 
+ 
 
-*/
+}
+#block-views-imatge-corporativa-block-1{
+	background-color:$base05; margin:1.4rem;padding-bottom:2rem;
+	h2{ @extend %dipta-title-escut; font-size:$h3-s;color:$base03;border-bottom:0.4rem solid #fff; }
+}
+
+//[ Blocs Carreteres]
+#block-views-carretera-block-6 /* taula incidencies*/{
+	margin:1.4rem;
+	h2{ @extend %dipta-title-escut; background-color:$base05;font-size:$h3-s; line-height:$h3-h; color:$base03;}
+}
+#block-views-carretera-block-7,#block-views-carretera-block-8{
+clear:both;
+margin:1.4rem;
+	h2{ @extend %dipta-title-escut; background-color:$base05;font-size:$h3-s; line-height:$h3-h; color:$base03;}
+}
+
+
+//[BLOC bootom footer]
+#block-block-5{
+		margin:0; p{ color:#BBDEE8;margin: 0.7rem 0;
+		text-align:left; font-size:$h6-s; line-height:$h6-h; }
+}

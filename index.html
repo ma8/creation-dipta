@@ -29,7 +29,7 @@
 			<li><a href="http://sass-lang.com/">Sass</a></</li>
 			<li><a href="http://compass-style.org/">Compass</a></li>
 			<li><a href="exemples/susy-dipta.html">Ex1</a></li>
-			<li><a href="exemples/zen-susy.html">Ex2</a></li>
+		<!--<li><a href="exemples/zen-susy.html">Ex2</a></li>-->
 			<li>Versió 1.0.0</li>
 		</ul>
 	</div>
@@ -47,9 +47,41 @@
 	</ul>
 </nav>
 		
-		
+	
 <section id="s1">
-	<h1 class="title-doc">Typography</h1>
+	<h1 class="title-doc">Typography</h1>	
+	
+		<h2 class="title-doc"> Headings generals + Box:705px</h2>
+	<article class="headings-generals">
+		 <h1>Heading H1 + Vestibulum venenatis sodales sodales. Ut vitae dui iaculis, volutpat tortor eget, condimentum diam.</h1>
+		 <h2>Heading H2 + Vestibulum venenatis sodales sodales. Ut vitae dui iaculis, volutpat tortor eget, condimentum diam.</h2>
+		 <h3>Heading H3 + Vestibulum venenatis sodales sodales. Ut vitae dui iaculis, volutpat tortor eget, condimentum diam.</h3>
+		 <h4>Heading H4 + Vestibulum venenatis sodales sodales. Ut vitae dui iaculis, volutpat tortor eget, condimentum diam.</h4>
+		 <h5>Heading H5 + Vestibulum venenatis sodales sodales. Ut vitae dui iaculis, volutpat tortor eget, condimentum diam.</h5>
+		 <h6>Heading H6 + Vestibulum venenatis sodales sodales. Ut vitae dui iaculis, volutpat tortor eget, condimentum diam.</h6>
+<pre><code class="language-css">/* Variables */
+$font-a: 'Open Sans', sans-serif;/*Contingut*/
+$font-b: 'Roboto Condensed', sans-serif; /*Headings*/
+$font-c:'Droid Sans', sans-serif; /* Especial*/
+
+/* Calculator Golden Ratio Golden Ratio http://www.pearsonified.com/typography/ */
+$base-s:1.5rem;/*15px*/
+$base-h:2.5rem;/*25px*/
+
+$h1-s:2  * $base-s;/*size*/
+$h1-h: 1.4 * $base-h;/*line-height*/
+$h2-s:1.8 * $base-s;/*size*/
+$h2-h: 1.3 * $base-h;/*line-height*/
+$h3-s:1.5 * $base-s;/*size*/
+$h3-h: 1.1 * $base-h;/*line-height*/
+$h4-s:1.0 * $base-s;/*size*/
+$h4-h: 0.7 * $base-h;/*line-height*/
+$h5-s:0.83 * $base-s;/*size*/
+$h5-h: 0.6 * $base-h;/*line-height*/
+$h6-s:0.75 * $base-s;/*size*/
+$h6-h: 0.55 * $base-h;/*line-height*/</code></pre>
+	</article>	
+	
 	
 	<h2 class="title-doc"> Headings específics + Box:705px</h2>
 	<article class="headings-especifics">
@@ -63,29 +95,12 @@
 	<h3>Heading H3 + Vestibulum venenatis sodales sodales. Ut vitae dui iaculis, volutpat tortor eget, condimentum diam.</h3>
 	<pre><code class="language-css">.name-selector { @extend %dipta-title-page; } </code></pre>
 	
-	<h4>Heading H3 + Vestibulum venenatis sodales sodales. Ut vitae dui iaculis, volutpat tortor eget, condimentum diam.</h4>
+	<h4>Heading H4 + Vestibulum venenatis sodales sodales. Ut vitae dui iaculis, volutpat tortor eget, condimentum diam.</h4>
 	<pre><code class="language-css">.name-selector { @extend %dipta-title-page; } </code></pre>
 	
-	<h5>Heading H3 + Vestibulum venenatis sodales sodales. Ut vitae dui iaculis, volutpat tortor eget, condimentum diam.</h5>
+	<h5>Heading H5 + Vestibulum venenatis sodales sodales. Ut vitae dui iaculis, volutpat tortor eget, condimentum diam.</h5>
 	<pre><code class="language-css">.name-selector { @extend %dipta-title-page; } </code></pre>
 	</article>
-	
-	<h2 class="title-doc"> Headings generals + Box:705px</h2>
-	<article class="headings-generals">
-		 <h1>Heading H1 + Vestibulum venenatis sodales sodales. Ut vitae dui iaculis, volutpat tortor eget, condimentum diam.</h1>
-		 <h2>Heading H2 + Vestibulum venenatis sodales sodales. Ut vitae dui iaculis, volutpat tortor eget, condimentum diam.</h2>
-		 <h3>Heading H3 + Vestibulum venenatis sodales sodales. Ut vitae dui iaculis, volutpat tortor eget, condimentum diam.</h3>
-		 <h4>Heading H4 + Vestibulum venenatis sodales sodales. Ut vitae dui iaculis, volutpat tortor eget, condimentum diam.</h4>
-		 <h5>Heading H5 + Vestibulum venenatis sodales sodales. Ut vitae dui iaculis, volutpat tortor eget, condimentum diam.</h5>
-		 <h6>Heading H6 + Vestibulum venenatis sodales sodales. Ut vitae dui iaculis, volutpat tortor eget, condimentum diam.</h6>
-<pre><code class="language-css">/* Calculator Golden Ratio Golden Ratio http://www.pearsonified.com/typography */ 
-$base-s:1.5rem;/*15px*/
-$base-h:2.5rem;/*25px*/
-$h1-s:2  * $base-s;/*size*/
-$h1-h: 1.4 * $base-h;/*line-height*/
-...
-.name-selector{ @extend h1; }</code></pre>
-	</article>	
 	
 	<h2 class="title-doc"> Links </h2>
 	<article class="links">	
@@ -106,6 +121,15 @@ a:hover { text-decoration: underline; }  </code></pre>
 		<p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>
 		<p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>
 		<p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>
+		<pre><code class="language-css">/* Paragraph size h1,h2,h3,h4,h5.h6*/
+%ph1{font-size: $h1-s;font-weight:100; line-height:1.2 * $h1-h; letter-spacing:0;}
+%ph2{font-size: $h2-s; font-weight:100; line-height:1.2 * $h2-h; letter-spacing:0;}
+%ph3{font-size: $h3-s;font-weight:100; line-height:1.2 * $h3-h; letter-spacing:0;}
+%ph4{font-size: $h4-s; font-weight:100; line-height:1.2 * $h4-h; letter-spacing:0;}
+%ph5{font-size: $h5-s; font-weight:100; line-height:1.2 * $h5-h; letter-spacing:0;}
+%ph6{font-size: $h6-s; font-weight:100; line-height:1.2 * $h6-h; letter-spacing:0;}
+		</code></pre>
+		
 		</article>
 	
 	<article>	
@@ -117,10 +141,24 @@ a:hover { text-decoration: underline; }  </code></pre>
 			adipiscing, sollicitudin lectus sed, auctor ligula. Nullam in velit at leo euismod volutpat et quis nisl. Mauris lacus ipsum, 
 			cursus ut porttitor et, elementum tempor quam. Vestibulum laoreet cursus enim ac dapibus. Donec dignissim vitae magna pharetra 
 			commodo. Aliquam erat volutpat. Nam at turpis eget purus sodales fringilla. In sed sodales lacus. </p>
-		<pre><code class="language-css">body{ font-family: 'Open Sans', sans-serif;/*Contingut*/
-font-size:1.5rem;/*15px*/
-line-height:2.5rem;/*25px*/		}
-p{ font-weight: 300; }</code></pre>
+		<pre><code class="language-css">html {  
+	color:$base01;
+	/*All*/
+	font-size:62.5%;
+	/*Typography responsive*/
+	 @include at-breakpoint($iphone4) { font-size:52.5%;}
+	 @include at-breakpoint($iphone4-landscape) { font-size:55.5%; }
+	 @include at-breakpoint($iphone5-landscape) { font-size:58.5%; } 
+  }
+	
+body{
+	/*$font1: 'Open Sans', sans-serif;*/
+	margin:0;
+	font-family:$font-a;
+	font-size:1.3rem;
+	line-height:2.3rem;
+}
+</code></pre>
 		</div>
 	</article>
 	<h2 class="title-doc"> blockquote Box:705px</h2>
@@ -234,11 +272,11 @@ p{ font-weight: 300; }</code></pre>
 		
 			
 		
-		<h2 class="title-doc">Pàgina bàsica (normal)</h2>
-		<article>
+		<h2 class="title-doc" style="Clear:both;">Pàgina bàsica (normal)</h2>
+		<article class="pagina-basica">
 			<img src="holder.js/677x479/#7AF08A:#464646">
-			<div style="width:667px;" class="dipta-caption">Convallis rhoncus vulputate. Praesent ultrices...</div>
-		</article>
+			<div class="dipta-caption">Convallis rhoncus vulputate. Praesent ultrices...</div>
+		</article class="pagina-basica>
 		<h2 class="title-doc">[Images sources] Pàgina bàsica (float)</h2>
 		<article>	
 			<div class="dipta-img-float">
@@ -252,6 +290,7 @@ p{ font-weight: 300; }</code></pre>
 			
 		<h2 class="title-ma">[Images sources] Pàgina bàsica (galeria)</h2>
 		<article>
+		<!--
 		<div class="dipta-galeria">	
 			<img src="holder.js/100x75/#7AF08A:#464646">
 			<img src="holder.js/100x75/#7AF08A:#464646">
@@ -259,6 +298,7 @@ p{ font-weight: 300; }</code></pre>
 			<img src="holder.js/100x75/#7AF08A:#464646">
 			<img src="holder.js/100x75/#7AF08A:#464646">
 		</div>
+		-->
 		</article>
 		<br/>
 		
@@ -440,30 +480,61 @@ p{ font-weight: 300; }</code></pre>
 <section id="s4">
 	<div class="container">
 		<h1 class="title-doc">Navigations</h1>
+		<article> ...
+		</article>
 		
 	</div>
 </section>
 
 <!-- Palette colors-->	
 <section id="s5">
-	<div class="container">
-		<h1 class="title-doc">Palette colors</h1>
+	
+	<h1 class="title-doc">Palette colors</h1>
+	<article>
 		<ul id="palette-colors">
-			<li><h5>Night Pencil</h5><i>#464646</i></li>
-			<li><h5>Summer morning</h5><i>#014B60</i></li>
-			<li><h5>yummi-turquoise</h5><i>#0083A9</i></li>
-			<li><h5>winter morning</h5><i>#EBEBEB</i></li>
-			<li><h5>J Peterman Shirt</h5><i>#F0F7F9</i></li>
-			
+			<li><h5>Night Pencil</h5><i>#464646</i> $base01</li>
+			<li><h5>Summer morning</h5><i>#014B60</i>$base02</li>
+			<li><h5>yummi-turquoise</h5><i>#0083A9</i>$base03</li>
+			<li><h5>J Peterman Shirt</h5><i>#F0F7F9</i>$base04</li>
+			<li><h5>winter morning</h5><i>#EBEBEB</i>$base05</li>
+		
 		</ul>
-	</div>
+<pre><code class="language-css">/**
+* 	Palette colors
+*   Night Pencil + Magic + yummi-turquoise + J Peterman Shirt + winter morning
+*	Functions colors Sass:
+*	http://sass-lang.com/docs/yardoc/Sass/Script/Functions.html	
+*/
+ $base01:#464646;	/* Night Pencil */
+$base02:#014B60;	/* Magic */
+$base03:#0083A9;	/* yummi-turquoise */
+$base04:#F0F7F9;	/* J Peterman Shirt */
+$base05:#EBEBEB;	/* winter morning */
+</code></pre>
+		<ul id="tonalitats">
+			<li><h5>T -10%</h5><i>#027292</i>$base02</li>
+			<li><h5>T -15%</h5><i>#0286AC</i>$base02</li>
+			<li><h5>T -20%</h5><i>#029AC5</i>$base02</li>
+			<li><h5>T -25%</h5><i>#02AEDE</i>$base02</li>
+			<li><h5>T -30%</h5><i>#03C1F7</i>$base02</li>
+		
+		</ul>
+<pre><code class="language-css">/*Tonalitats del color $base02*/
+background-color:lighten($base02, 10%);
+background-color:lighten($base02, 15%);
+background-color:lighten($base02, 20%);
+background-color:lighten($base02, 25%);
+background-color:lighten($base02, 30%);
+</code></pre>
+	</article>
 </section>
 	
 <!-- Exemples-->	 
 <section id="s6">
 
 	<h1 class="title-doc">Tables</h1>
-	
+	<article> ...
+		</article>
 </section>	
  
  <section id="s7">
@@ -475,20 +546,16 @@ p{ font-weight: 300; }</code></pre>
  
   <section id="s8">
  <h1 class="title-doc"> Responsive-Susy</h1>
-	<div class="header"><p>header</p></div>
-	<div class="sidebar-1"><p>sidebar-1</p></div>
-	<div class="sidebar-2"><p>sidebar-2</p></div>
-	<div class="content"><p>Content</p></div>
-	<div class="footer"><p>Footer</p>
-		<div class="footer-1"><p>(1)</p></div>
-		<div class="footer-2"><p>(2)</p></div>
-		<div class="footer-3"><p>(2)</p></div>
-	</div>
+	<article> ...
+		</article>
  </section>
  
  
 	<footer>
-		<h5>miguelangel@tinet.cat | maramos@dipta.cat</h5>
+		<!--	
+		<h3> Miguel Ángel Ramos</h3>
+		<h5>miguelangel[3]tinet.cat | maramos[3]dipta.cat</h5>
+		-->
 	 </footer>
 </body>
 

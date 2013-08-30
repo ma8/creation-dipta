@@ -162,6 +162,7 @@ span.field-label { /* The inline field label used by the Fences module */
 
 .corporate {
   background: #fff;
+  
 }
 
 /* Footer*/
@@ -294,23 +295,23 @@ span.field-label { /* The inline field label used by the Fences module */
  
   .region-content-bottom-first,
   .region-content-bottom-second {
-	width:50%;
-	display:block;
+	//width:50%;
+	//display:block;
 	/*padding:2% 0 2% 0;*/
   }
-  .related-content,
-  .region-content-bottom-second {
+  
+  .related-content{
     float: right;
 	li{
 		min-height:0px!important;
 	}
   }
-  .related-content-files,
-  .region-content-bottom-first {
-    float: left;
+  .related-content-files {
+   float: left;
   }
+  
   .marginleft{
-	margin-left: 13px;
+	//margin-left: 13px;
 	}
 	
 		
@@ -381,15 +382,13 @@ span.field-label { /* The inline field label used by the Fences module */
 }
 
   
-  .related-content,
-  .region-content-bottom-second {
+  .related-content {
     float: right;
 	li{
 		min-height:0px!important;
 	}
   }
-  .related-content-files,
-  .region-content-bottom-first {
+  .related-content-files{
     float: left;
   }
   .marginleft{

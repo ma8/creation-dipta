@@ -241,11 +241,7 @@ pre.line-numbers > code {
 
 /**
 * 	Palette colors
-*
-*	http://www.colourlovers.com/palette/2978475/Deputation
 *   Night Pencil + Magic + yummi-turquoise + J Peterman Shirt + winter morning
-*	bc:#bcbcbc,Gamebookers Blue:#3299BB	 
-*
 *	Functions colors Sass:
 *	http://sass-lang.com/docs/yardoc/Sass/Script/Functions.html	
 */
@@ -257,15 +253,10 @@ desaturate($color, $amount)
 grayscale($color)
 invert($color)
 */
-/*gray*/
 /* Night Pencil */
-/*blue1*/
 /* Magic */
-/*blue*/
 /* yummi-turquoise */
-/*blue-1*/
 /* J Peterman Shirt */
-/*eb*/
 /* winter morning */
 /* Tonalitats */
 /**
@@ -295,29 +286,29 @@ invert($color)
 /*line-height*/
 /* Creation custom*/
 /**
-*	Typografia  web-fonts
+*	Typografia  - Creation
 * 	http://www.google.com/fonts
 *	Imports + Golden ratio + responsive typography
 * 	$font-a;contingut + $font-b;Headings + $font-c; especial
 */
-/* line 14, ../../sass/creation/custom/_typography.scss */
+/* line 10, ../../sass/creation/custom/_typography.scss */
 p {
   font-weight: 300;
 }
 
-/* line 15, ../../sass/creation/custom/_typography.scss */
+/* line 11, ../../sass/creation/custom/_typography.scss */
 a {
   color: #0083a9;
   text-decoration: none;
 }
 
-/* line 16, ../../sass/creation/custom/_typography.scss */
+/* line 12, ../../sass/creation/custom/_typography.scss */
 a:hover {
   text-decoration: underline;
 }
 
 /* Headings*/
-/* line 19, ../../sass/creation/custom/_typography.scss */
+/* line 15, ../../sass/creation/custom/_typography.scss */
 h1 {
   /*body*/
   font-size: 3rem;
@@ -326,7 +317,7 @@ h1 {
   letter-spacing: -0.2rem;
 }
 
-/* line 20, ../../sass/creation/custom/_typography.scss */
+/* line 16, ../../sass/creation/custom/_typography.scss */
 h2 {
   font-size: 2.7rem;
   font-weight: 400;
@@ -334,7 +325,7 @@ h2 {
   letter-spacing: -0.06rem;
 }
 
-/* line 21, ../../sass/creation/custom/_typography.scss */
+/* line 17, ../../sass/creation/custom/_typography.scss */
 h3 {
   font-size: 2.25rem;
   font-weight: 400;
@@ -342,7 +333,7 @@ h3 {
   letter-spacing: -0.06rem;
 }
 
-/* line 22, ../../sass/creation/custom/_typography.scss */
+/* line 18, ../../sass/creation/custom/_typography.scss */
 h4 {
   font-size: 1.5rem;
   font-weight: 400;
@@ -350,7 +341,7 @@ h4 {
   letter-spacing: -0.06rem;
 }
 
-/* line 23, ../../sass/creation/custom/_typography.scss */
+/* line 19, ../../sass/creation/custom/_typography.scss */
 h5 {
   font-size: 1.245rem;
   font-weight: 400;
@@ -358,7 +349,7 @@ h5 {
   letter-spacing: -0.06rem;
 }
 
-/* line 24, ../../sass/creation/custom/_typography.scss */
+/* line 20, ../../sass/creation/custom/_typography.scss */
 h6 {
   font-size: 1.125rem;
   font-weight: 400;
@@ -367,7 +358,7 @@ h6 {
 }
 
 /* Paragraph size h1,h2,h3,h4,h5.h6*/
-/* line 32, ../../sass/creation/custom/_typography.scss */
+/* line 28, ../../sass/creation/custom/_typography.scss */
 .dipta-resum p {
   font-size: 1.245rem;
   font-weight: 100;
@@ -421,13 +412,13 @@ h6 {
 }
 
 /* Element Conacatenats*/
+/* Titles Images */
 /*
 *	Images - Creation
 * 
 */
-/* Titles Images */
 /*Slider -home */
-/* line 35, ../../sass/creation/custom/_images.scss */
+/* line 16, ../../sass/creation/custom/_images.scss */
 .btn-slider-left {
   display: inline-block;
   height: 36px;
@@ -439,12 +430,12 @@ h6 {
   text-indent: -119988px;
 }
 
-/* line 41, ../../sass/creation/custom/_images.scss */
+/* line 22, ../../sass/creation/custom/_images.scss */
 .btn-slider-left:hover {
   background-image: url("../images/bg-slideshowarrowlefthover.png");
 }
 
-/* line 42, ../../sass/creation/custom/_images.scss */
+/* line 23, ../../sass/creation/custom/_images.scss */
 .btn-slider-rigth {
   height: 36px;
   width: 144px;
@@ -456,24 +447,29 @@ h6 {
   text-indent: -119988px;
 }
 
-/* line 48, ../../sass/creation/custom/_images.scss */
+/* line 29, ../../sass/creation/custom/_images.scss */
 .btn-slider-rigth:hover {
   background-image: url("../images/bg-slideshowarrowrighthover.png");
 }
 
-/* line 50, ../../sass/creation/custom/_images.scss */
+/* line 31, ../../sass/creation/custom/_images.scss */
 .dipta-galeria {
   background-color: #ccc;
   width: 677px;
   height: 112;
 }
-/* line 51, ../../sass/creation/custom/_images.scss */
+/* line 32, ../../sass/creation/custom/_images.scss */
 .dipta-galeria img {
   margin: 1.7rem 1rem 0 2rem;
 }
 
 /*
-*	Box - Creations
+*	Navigations- Creation
+*	Menus + breadcrums 
+*
+*/
+/*
+*	Tables - Creation
 *	Menus + breadcrums 
 *
 */
@@ -491,33 +487,35 @@ h6 {
 */
 /* Visual Grid Susy for REM 1rem=>10px*/
 /*
-lighten($verd, 20%);
-darken($verd, 20%);
-saturate($verd, 10%);
-desaturate($verd, 10%);
-grayscale($verd);
-invert($verd);
+lighten($verd, 20%);darken($verd, 20%);saturate($verd, 10%);desaturate($verd, 10%);grayscale($verd);invert($verd);
 */
-/* line 38, ../../sass/creation/layouts/_responsive-creation.scss */
-html {
-  /*Typography responsive for compass breakpoints*/
-  font-size: 62.5%;
-  /*
-   @include at-breakpoint($iphone4) { font-size:62.5%; }
-   @include at-breakpoint($ipad) { font-size:62.5%; }
-   @include at-breakpoint($ipad-landscape) { font-size:62.5%; }
-   */
-}
-
 /* line 26, ../../sass/creation/_creation.scss */
 html {
   color: #464646;
+  /*All*/
   font-size: 62.5%;
-  /*Typography responsive for compass breakpoints*/
-  /*responsive-creation.scss*/
+  /*Typography responsive*/
+}
+@media (max-width: 320px) {
+  /* line 26, ../../sass/creation/_creation.scss */
+  html {
+    font-size: 52.5%;
+  }
+}
+@media (min-width: 321px) and (max-width: 480px) {
+  /* line 26, ../../sass/creation/_creation.scss */
+  html {
+    font-size: 55.5%;
+  }
+}
+@media (min-width: 481px) and (max-width: 568px) {
+  /* line 26, ../../sass/creation/_creation.scss */
+  html {
+    font-size: 58.5%;
+  }
 }
 
-/* line 32, ../../sass/creation/_creation.scss */
+/* line 36, ../../sass/creation/_creation.scss */
 body {
   /*$font1: 'Open Sans', sans-serif;*/
   margin: 0;
@@ -527,13 +525,13 @@ body {
 }
 
 /*Syntax custom*/
-/* line 42, ../../sass/creation/_creation.scss */
+/* line 46, ../../sass/creation/_creation.scss */
 code {
   font-size: 1.2rem;
   font-family: Consolas,Monaco,"Andale Mono",monospace;
 }
 
-/* line 43, ../../sass/creation/_creation.scss */
+/* line 47, ../../sass/creation/_creation.scss */
 pre {
   overflow-x: scroll !important;
   overflow-y: scroll !important;

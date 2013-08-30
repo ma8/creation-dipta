@@ -53,7 +53,7 @@ header{
 	padding:90px 0 10px 0;;text-align:center;color:#fff;
 	p{color:$blue2; line-height: 1.4;font-size:21px;font-weight: normal;}	
 	h1{font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
-		font-weight: 500;font-size: 50px;margin:20px 0 3px 0;}
+		font-weight: 500;font-size: 50px;margin:20px 0 3px 0;line-height:5rem;}
 	.btn-down{
 		display: inline-block;@include border-radius(6px);background-color: transparent;
 		border:1px solid #F0F7F9;color: #FFFFFF;
@@ -85,8 +85,6 @@ header{
 	}
  }
  
-/*Footter doc */ 
- footer{ background-color:#014B60; margin:150px 0 0 0; padding:1px 0 1px 0; color:#fff;text-align:center; h5{margin:0;}}
  
  
  /*Title docs page*/
@@ -97,22 +95,35 @@ header{
  /* Palette colors*/
  #palette-colors{ 
  list-style:none;padding:0;
-		li{color:#ccc;display:inline-block; width:180px;height:350px;text-align:center; 
-			i{color:#ccc;display:block;position:relative;font-weight: bold;margin:0;font-size:20px;}
-			h5{padding-top:30px;margin-bottom:3px;}
+		li{ margin:3rem 0;
+		color:#ccc;display:inline-block; width:180px;height:350px;text-align:center; 
+		i{color:#ccc;display:block;position:relative;font-weight: bold;margin:0;font-size:20px;}
+		h5{padding-top:30px;margin-bottom:3px;}
 		}
-		li:first-child{background-color:#464646;}
-		li:nth-child(2){background-color:#014B60;}
-		li:nth-child(3){background-color:#0083A9;}
-		li:nth-child(4){background-color:#EBEBEB;}
-		li:last-child{background-color:#F0F7F9;}
-		
+		li:first-child{background-color:$base01;}
+		li:nth-child(2){background-color:$base02;}
+		li:nth-child(3){background-color:$base03;}
+		li:nth-child(4){background-color:$base04;}
+		li:last-child{background-color:$base05;}
 		/* #464646 #EBEBEB #0083A9 #F0F7F9 #014B60*/
 	}
- 
+ #tonalitats{
+  list-style:none;padding:0;
+	li{ margin:3rem 0;
+		color:#ccc;display:inline-block; width:180px;height:350px;text-align:center; 
+		i{color:#ccc;display:block;position:relative;font-weight: bold;margin:0;font-size:20px;}
+		h5{padding-top:30px;margin-bottom:3px;}
+		}
+		li:first-child{background-color:lighten($base02, 10%);}
+		li:nth-child(2){background-color:lighten($base02, 15%);}
+		li:nth-child(3){background-color:lighten($base02, 20%);}
+		li:nth-child(4){background-color:lighten($base02, 25%);}
+		li:last-child{background-color:lighten($base02, 30%);}
+ }
 /*typography*/ 
-#s1{ @include container; @include dipta-container-show;
- 
+#s1{ @include container; 
+article:hover{@include dipta-container-show;}
+
  .headings-especifics{ @extend %container705;  h1,h2,h3,h4,h5{ @extend %dipta-title-page;} }
  .headings-generals{ @extend %container705;}
  .links{ @extend %container705; a{font-weight: 600;} }
@@ -140,7 +151,8 @@ header{
 }
 
 /*Images sources*/
-#s2{ @include container; @include dipta-container-show;
+#s2{ @include container;
+	article:hover{@include dipta-container-show;}
  .slider-home{ overflow-x:hidden;
 	.dipta-slider-home{ position:absolute;margin:-290px 0 0 30px;}
 	.info-banner{ @extend %dipta-resum-slider-home;}
@@ -167,10 +179,11 @@ header{
 	 h1{ @extend %dipta-title-img-c;} p{ @extend %dipta-quote-h4c;  border:0; } 
 	.bloc{ @extend %dipta-box-eb; margin:0 2rem 0 2rem; p:before{content:"";padding:0;margin:0;}p{margin:0;}}
  }
-
+.pagina-basica{@include span-columns(9); img{ max-width: 100% !important;} }
+.dipta-caption{}
 #dipta-noticia{ background-color:$eb;padding:2rem;
 	.container{ @extend %container705;}
-	h2{@extend %dipta-title-escut;}
+	h2{@extend %dipta-title-escut;background-color:#fff;border-bottom:0.4rem solid $base05;}
 	.contingut{ @extend %dipta-box-home; 
 		div.dipta-resum{ width:44%;float:left; padding:2rem 2rem 2rem 2rem; }
 		div.dipta-resum:first-child{ border-right:0.4rem solid $eb;border-bottom:0;}
@@ -180,13 +193,13 @@ header{
 	}
 #dipta-agenda{  background-color:$eb;padding:2rem;
 	.container{ @extend %container705;}
-	h2{@extend %dipta-title-escut;}
+	h2{@extend %dipta-title-escut;background-color:#fff;border-bottom:0.4rem solid $base05;}
 	.contingut{ @extend %dipta-box-home; }
 	}
 } 
 /*navigation*/
-#s3{ @include container; @include dipta-container-show;
- 
+#s3{ @include container;
+ article:hover{@include dipta-container-show;}
 .box-1{ @extend %container705; 
 
 	.bloc{ @extend %dipta-box-blue;}
@@ -206,12 +219,15 @@ header{
 }
 
 } 
-/*pallete colors*/
-#s5,#s7,#s4{ @include container; @include dipta-container-show;}
+
+#s5,#s7,#s4,#s8{ @include container; 
+article{}
+article:hover{@include dipta-container-show;}
+}
 
 /*bloc*/
-#s6{ @include container; @include dipta-container-show;
-	
+#s6{ @include container;
+	article:hover{@include dipta-container-show;}
 	.bloc1{ display:inline-block;
 		@extend %dipta-bloc-blue-border;
 		h2{ @extend %dipta-title-escut;}
@@ -239,3 +255,15 @@ header{
 			}
 	}
 }
+
+
+/*Footter doc */ 
+ footer{ 
+ h1,h2,h3,h4,h5{margin:0;}
+	 background-color:$base03; 
+	 margin:15rem 0 0 0; padding:1rem 0; 
+	 color:#fff;text-align:center;
+	 h5{margin:0;}
+	 border-bottom:solid 1rem $base02;
+	 border-top:solid 1rem $base02;
+ }

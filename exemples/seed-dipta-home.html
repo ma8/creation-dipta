@@ -24,101 +24,57 @@
     <meta name="HandheldFriendly" content="true">
     <meta name="viewport" content="width=device-width">
     <meta http-equiv="cleartype" content="on">
-
-  <style>@import url("../../css/dipta.css");
-@import url("http://localhost.dipta:8081/modules/system/system.messages.css?mrz0mi");
-@import url("http://localhost.dipta:8081/modules/system/system.theme.css?mrz0mi");</style>
-<style>@import url("http://localhost.dipta:8081/misc/ui/jquery.ui.core.css?mrz0mi");
-@import url("http://localhost.dipta:8081/misc/ui/jquery.ui.theme.css?mrz0mi");
-@import url("http://localhost.dipta:8081/modules/contextual/contextual.css?mrz0mi");</style>
-<style>@import url("http://localhost.dipta:8081/modules/book/book.css?mrz0mi");
-@import url("http://localhost.dipta:8081/sites/all/modules/contrib/calendar/css/calendar_multiday.css?mrz0mi");
-@import url("http://localhost.dipta:8081/sites/all/modules/contrib/date/date_api/date.css?mrz0mi");
-@import url("http://localhost.dipta:8081/sites/all/modules/contrib/date/date_popup/themes/datepicker.1.7.css?mrz0mi");
-@import url("http://localhost.dipta:8081/modules/field/theme/field.css?mrz0mi");
-@import url("http://localhost.dipta:8081/modules/node/node.css?mrz0mi");
-@import url("http://localhost.dipta:8081/modules/search/search.css?mrz0mi");
-@import url("http://localhost.dipta:8081/modules/user/user.css?mrz0mi");
-@import url("http://localhost.dipta:8081/sites/all/modules/contrib/video_filter/video_filter.css?mrz0mi");
-@import url("http://localhost.dipta:8081/sites/all/modules/contrib/views/css/views.css?mrz0mi");
-@import url("http://localhost.dipta:8081/sites/all/modules/contrib/admin_menu/admin_menu.css?mrz0mi");
-@import url("http://localhost.dipta:8081/sites/all/modules/contrib/admin_menu/admin_menu_toolbar/admin_menu_toolbar.css?mrz0mi");
-@import url("http://localhost.dipta:8081/modules/shortcut/shortcut.css?mrz0mi");</style>
-<style>@import url("http://localhost.dipta:8081/sites/all/modules/contrib/colorbox/styles/default/colorbox_style.css?mrz0mi");
-@import url("http://localhost.dipta:8081/sites/all/modules/contrib/ctools/css/ctools.css?mrz0mi");
-@import url("http://localhost.dipta:8081/sites/all/modules/contrib/views_slideshow/views_slideshow.css?mrz0mi");
-@import url("http://localhost.dipta:8081/sites/all/modules/contrib/jcarousel/skins/default/jcarousel-default.css?mrz0mi");
-@import url("http://localhost.dipta:8081/sites/all/modules/contrib/views_slideshow/views_slideshow_controls_text.css?mrz0mi");
-@import url("http://localhost.dipta:8081/sites/all/modules/contrib/views_slideshow/contrib/views_slideshow_cycle/views_slideshow_cycle.css?mrz0mi");
-@import url("http://localhost.dipta:8081/sites/all/modules/contrib/context/plugins/context_reaction_block.css?mrz0mi");
-@import url("http://localhost.dipta:8081/sites/all/modules/contrib/field_group/field_group.css?mrz0mi");</style>
-<style>@import url("http://localhost.dipta:8081/sites/dipta/themes/dipta/css/partials/normalize.css?mrz0mi");
-@import url("http://localhost.dipta:8081/sites/dipta/themes/dipta/css/layouts/responsive-custom.css?mrz0mi");
-@import url("http://localhost.dipta:8081/sites/dipta/themes/dipta/css/partials/tabs.css?mrz0mi");
-@import url("http://localhost.dipta:8081/sites/dipta/themes/dipta/css/partials/pages.css?mrz0mi");
-@import url("http://localhost.dipta:8081/sites/dipta/themes/dipta/css/partials/navigations.css?mrz0mi");
-@import url("http://localhost.dipta:8081/sites/dipta/themes/dipta/css/partials/views-pages.css?mrz0mi");
-@import url("http://localhost.dipta:8081/sites/dipta/themes/dipta/css/partials/views-blocs.css?mrz0mi");
-@import url("http://localhost.dipta:8081/sites/dipta/themes/dipta/css/partials/nodes.css?mrz0mi");
-@import url("http://localhost.dipta:8081/sites/dipta/themes/dipta/css/partials/comments.css?mrz0mi");
-@import url("http://localhost.dipta:8081/sites/dipta/themes/dipta/css/partials/forms.css?mrz0mi");
-@import url("http://localhost.dipta:8081/sites/dipta/themes/dipta/css/partials/jcarousel.css?mrz0mi");
-@import url("http://localhost.dipta:8081/sites/dipta/themes/dipta/css/partials/print.css?mrz0mi");
-@import url("http://localhost.dipta:8081/sites/dipta/themes/dipta/css/dipta.css?mrz0mi");</style>
+<style>
+@import url("../css/partials/nodes.css");
+@import url("../css/partials/pages.css");
+@import url("../css/partials/navigations.css");
+@import url("../css/partials/views-pages.css");
+@import url("../css/partials/views-blocs.css");
+</style>
+<link rel="stylesheet" type="text/css" media="screen" href="../css/normalize.css"> 
+<link rel="stylesheet" type="text/css" media="screen" href="../css/layouts/dipta-responsive.css">
+<link rel="stylesheet" type="text/css" media="screen" href="../css/dipta.css">
+<script src="../js/holder.js"></script>
+ 
   <script src="http://localhost.dipta:8081/misc/jquery.js?v=1.4.4"></script>
 <script src="http://localhost.dipta:8081/misc/jquery.once.js?v=1.2"></script>
-<script src="http://localhost.dipta:8081/misc/drupal.js?mrz0mi"></script>
-<script src="http://localhost.dipta:8081/misc/ui/jquery.ui.core.min.js?v=1.8.7"></script>
-<script src="http://localhost.dipta:8081/misc/ui/jquery.ui.widget.min.js?v=1.8.7"></script>
-<script src="http://localhost.dipta:8081/sites/all/modules/contrib/views/js/views-contextual.js?mrz0mi"></script>
-<script src="http://localhost.dipta:8081/misc/ui/jquery.ui.mouse.min.js?v=1.8.7"></script>
-<script src="http://localhost.dipta:8081/misc/ui/jquery.ui.draggable.min.js?v=1.8.7"></script>
-<script src="http://localhost.dipta:8081/misc/ui/jquery.ui.droppable.min.js?v=1.8.7"></script>
-<script src="http://localhost.dipta:8081/misc/ui/jquery.ui.sortable.min.js?v=1.8.7"></script>
+<script src="http://localhost.dipta:8081/misc/drupal.js?msc39f"></script>
 <script src="http://localhost.dipta:8081/misc/jquery.cookie.js?v=1.0"></script>
 <script src="http://localhost.dipta:8081/misc/jquery.form.js?v=2.52"></script>
-<script src="http://localhost.dipta:8081/modules/contextual/contextual.js?v=1.0"></script>
 <script src="http://localhost.dipta:8081/misc/ajax.js?v=7.20"></script>
-<script src="http://localhost.dipta:8081/sites/all/modules/contrib/admin_menu/admin_menu.js?mrz0mi"></script>
-<script src="http://localhost.dipta:8081/sites/all/modules/contrib/admin_menu/admin_menu_toolbar/admin_menu_toolbar.js?mrz0mi"></script>
-<script src="http://localhost.dipta:8081/sites/dipta/files/languages/ca_5JXMJBynWQGp2TXnoYKfkX3fgj8_2LuxA7CPyl_uvi8.js?mrz0mi"></script>
-<script src="http://localhost.dipta:8081/sites/all/libraries/colorbox/jquery.colorbox-min.js?mrz0mi"></script>
-<script src="http://localhost.dipta:8081/sites/all/modules/contrib/colorbox/js/colorbox.js?mrz0mi"></script>
-<script src="http://localhost.dipta:8081/sites/all/modules/contrib/colorbox/styles/default/colorbox_style.js?mrz0mi"></script>
-<script src="http://localhost.dipta:8081/sites/all/modules/contrib/views_slideshow/js/views_slideshow.js?mrz0mi"></script>
-<script src="http://localhost.dipta:8081/sites/all/modules/develop/devel/devel_krumo_path.js?mrz0mi"></script>
-<script src="http://localhost.dipta:8081/sites/all/modules/contrib/jcarousel/js/jquery.jcarousel.min.js?mrz0mi"></script>
-<script src="http://localhost.dipta:8081/sites/all/modules/contrib/jcarousel/js/jcarousel.js?mrz0mi"></script>
-<script src="http://localhost.dipta:8081/sites/all/libraries/jquery.cycle/jquery.cycle.all.js?mrz0mi"></script>
-<script src="http://localhost.dipta:8081/sites/all/modules/contrib/views_slideshow/contrib/views_slideshow_cycle/js/views_slideshow_cycle.js?mrz0mi"></script>
-<script src="http://localhost.dipta:8081/sites/all/modules/contrib/context/plugins/context_reaction_block.js?mrz0mi"></script>
-<script src="http://localhost.dipta:8081/sites/all/modules/contrib/field_group/field_group.js?mrz0mi"></script>
-<script src="http://localhost.dipta:8081/misc/collapse.js?mrz0mi"></script>
-<script src="http://localhost.dipta:8081/misc/form.js?mrz0mi"></script>
-<script src="http://localhost.dipta:8081/sites/all/modules/contrib/views/js/base.js?mrz0mi"></script>
+<script src="http://localhost.dipta:8081/sites/dipta/files/languages/ca_5JXMJBynWQGp2TXnoYKfkX3fgj8_2LuxA7CPyl_uvi8.js?msc39f"></script>
+<script src="http://localhost.dipta:8081/sites/all/libraries/colorbox/jquery.colorbox-min.js?msc39f"></script>
+<script src="http://localhost.dipta:8081/sites/all/modules/contrib/colorbox/js/colorbox.js?msc39f"></script>
+<script src="http://localhost.dipta:8081/sites/all/modules/contrib/colorbox/styles/default/colorbox_style.js?msc39f"></script>
+<script src="http://localhost.dipta:8081/sites/all/modules/contrib/views_slideshow/js/views_slideshow.js?msc39f"></script>
+<script src="http://localhost.dipta:8081/sites/all/modules/contrib/jcarousel/js/jquery.jcarousel.min.js?msc39f"></script>
+<script src="http://localhost.dipta:8081/sites/all/modules/contrib/jcarousel/js/jcarousel.js?msc39f"></script>
+<script src="http://localhost.dipta:8081/sites/all/libraries/jquery.cycle/jquery.cycle.all.js?msc39f"></script>
+<script src="http://localhost.dipta:8081/sites/all/modules/contrib/views_slideshow/contrib/views_slideshow_cycle/js/views_slideshow_cycle.js?msc39f"></script>
+<script src="http://localhost.dipta:8081/misc/collapse.js?msc39f"></script>
+<script src="http://localhost.dipta:8081/misc/form.js?msc39f"></script>
+<script src="http://localhost.dipta:8081/sites/all/modules/contrib/field_group/field_group.js?msc39f"></script>
+<script src="http://localhost.dipta:8081/sites/all/modules/contrib/views/js/base.js?msc39f"></script>
 <script src="http://localhost.dipta:8081/misc/progress.js?v=7.20"></script>
-<script src="http://localhost.dipta:8081/sites/all/modules/contrib/views/js/ajax_view.js?mrz0mi"></script>
-<script src="http://localhost.dipta:8081/sites/all/modules/contrib/google_analytics/googleanalytics.js?mrz0mi"></script>
+<script src="http://localhost.dipta:8081/sites/all/modules/contrib/views/js/ajax_view.js?msc39f"></script>
+<script src="http://localhost.dipta:8081/sites/all/modules/contrib/google_analytics/googleanalytics.js?msc39f"></script>
 <script>var _gaq = _gaq || [];_gaq.push(["_setAccount", "UA-35967030-1"]);_gaq.push(["_trackPageview"]);(function() {var ga = document.createElement("script");ga.type = "text/javascript";ga.async = true;ga.src = ("https:" == document.location.protocol ? "https://ssl" : "http://www") + ".google-analytics.com/ga.js";var s = document.getElementsByTagName("script")[0];s.parentNode.insertBefore(ga, s);})();</script>
-<script src="http://localhost.dipta:8081/sites/dipta/themes/dipta/js/equal-height.js?mrz0mi"></script>
-<script>jQuery.extend(Drupal.settings, {"basePath":"\/","pathPrefix":"","ajaxPageState":{"theme":"dipta","theme_token":"oPVwC8TF4bmLE_WJhJ4xHnZ9Fkoky9tuvYiMdHVRknM","js":{"misc\/jquery.js":1,"misc\/jquery.once.js":1,"misc\/drupal.js":1,"misc\/ui\/jquery.ui.core.min.js":1,"misc\/ui\/jquery.ui.widget.min.js":1,"sites\/all\/modules\/contrib\/views\/js\/views-contextual.js":1,"misc\/ui\/jquery.ui.mouse.min.js":1,"misc\/ui\/jquery.ui.draggable.min.js":1,"misc\/ui\/jquery.ui.droppable.min.js":1,"misc\/ui\/jquery.ui.sortable.min.js":1,"misc\/jquery.cookie.js":1,"misc\/jquery.form.js":1,"modules\/contextual\/contextual.js":1,"misc\/ajax.js":1,"sites\/all\/modules\/contrib\/admin_menu\/admin_menu.js":1,"sites\/all\/modules\/contrib\/admin_menu\/admin_menu_toolbar\/admin_menu_toolbar.js":1,"public:\/\/languages\/ca_5JXMJBynWQGp2TXnoYKfkX3fgj8_2LuxA7CPyl_uvi8.js":1,"sites\/all\/libraries\/colorbox\/jquery.colorbox-min.js":1,"sites\/all\/modules\/contrib\/colorbox\/js\/colorbox.js":1,"sites\/all\/modules\/contrib\/colorbox\/styles\/default\/colorbox_style.js":1,"sites\/all\/modules\/contrib\/views_slideshow\/js\/views_slideshow.js":1,"sites\/all\/modules\/develop\/devel\/devel_krumo_path.js":1,"sites\/all\/modules\/contrib\/jcarousel\/js\/jquery.jcarousel.min.js":1,"sites\/all\/modules\/contrib\/jcarousel\/js\/jcarousel.js":1,"sites\/all\/libraries\/jquery.cycle\/jquery.cycle.all.js":1,"sites\/all\/modules\/contrib\/views_slideshow\/contrib\/views_slideshow_cycle\/js\/views_slideshow_cycle.js":1,"sites\/all\/modules\/contrib\/context\/plugins\/context_reaction_block.js":1,"sites\/all\/modules\/contrib\/field_group\/field_group.js":1,"misc\/collapse.js":1,"misc\/form.js":1,"sites\/all\/modules\/contrib\/views\/js\/base.js":1,"misc\/progress.js":1,"sites\/all\/modules\/contrib\/views\/js\/ajax_view.js":1,"sites\/all\/modules\/contrib\/google_analytics\/googleanalytics.js":1,"0":1,"sites\/dipta\/themes\/dipta\/js\/equal-height.js":1},"css":{"modules\/system\/system.base.css":1,"modules\/system\/system.menus.css":1,"modules\/system\/system.messages.css":1,"modules\/system\/system.theme.css":1,"misc\/ui\/jquery.ui.core.css":1,"misc\/ui\/jquery.ui.theme.css":1,"modules\/contextual\/contextual.css":1,"modules\/book\/book.css":1,"sites\/all\/modules\/contrib\/calendar\/css\/calendar_multiday.css":1,"sites\/all\/modules\/contrib\/date\/date_api\/date.css":1,"sites\/all\/modules\/contrib\/date\/date_popup\/themes\/datepicker.1.7.css":1,"modules\/field\/theme\/field.css":1,"modules\/node\/node.css":1,"modules\/search\/search.css":1,"modules\/user\/user.css":1,"sites\/all\/modules\/contrib\/video_filter\/video_filter.css":1,"sites\/all\/modules\/contrib\/views\/css\/views.css":1,"sites\/all\/modules\/contrib\/admin_menu\/admin_menu.css":1,"sites\/all\/modules\/contrib\/admin_menu\/admin_menu_toolbar\/admin_menu_toolbar.css":1,"modules\/shortcut\/shortcut.css":1,"sites\/all\/modules\/contrib\/colorbox\/styles\/default\/colorbox_style.css":1,"sites\/all\/modules\/contrib\/ctools\/css\/ctools.css":1,"sites\/all\/modules\/contrib\/views_slideshow\/views_slideshow.css":1,"sites\/all\/modules\/contrib\/jcarousel\/skins\/default\/jcarousel-default.css":1,"sites\/all\/modules\/contrib\/views_slideshow\/views_slideshow_controls_text.css":1,"sites\/all\/modules\/contrib\/views_slideshow\/contrib\/views_slideshow_cycle\/views_slideshow_cycle.css":1,"sites\/all\/modules\/contrib\/context\/plugins\/context_reaction_block.css":1,"sites\/all\/modules\/contrib\/field_group\/field_group.css":1,"sites\/dipta\/themes\/dipta\/system.menus.css":1,"sites\/dipta\/themes\/dipta\/css\/partials\/normalize.css":1,"sites\/dipta\/themes\/dipta\/css\/layouts\/responsive-custom.css":1,"sites\/dipta\/themes\/dipta\/css\/partials\/tabs.css":1,"sites\/dipta\/themes\/dipta\/css\/partials\/pages.css":1,"sites\/dipta\/themes\/dipta\/css\/partials\/navigations.css":1,"sites\/dipta\/themes\/dipta\/css\/partials\/views-pages.css":1,"sites\/dipta\/themes\/dipta\/css\/partials\/views-blocs.css":1,"sites\/dipta\/themes\/dipta\/css\/partials\/nodes.css":1,"sites\/dipta\/themes\/dipta\/css\/partials\/comments.css":1,"sites\/dipta\/themes\/dipta\/css\/partials\/forms.css":1,"sites\/dipta\/themes\/dipta\/css\/partials\/jcarousel.css":1,"sites\/dipta\/themes\/dipta\/css\/partials\/print.css":1,"sites\/dipta\/themes\/dipta\/css\/dipta.css":1}},"colorbox":{"opacity":"0.85","current":"{current} of {total}","previous":"\u00ab Prev","next":"Seg\u00fcent \u00bb","close":"Tanca","maxWidth":"98%","maxHeight":"98%","fixed":true},"jcarousel":{"ajaxPath":"\/jcarousel\/ajax\/views","carousels":{"jcarousel-dom-1":{"view_options":{"view_args":"","view_path":"inici","view_base_path":"inici","view_display_id":"block_2","view_name":"banners_home","jcarousel_dom_id":1},"skin":"default","scroll":1,"autoPause":1,"start":1,"selector":".jcarousel-dom-1"}}},"field_group":{"div":"basic"},"viewsSlideshow":{"banners_home-block":{"methods":{"goToSlide":["viewsSlideshowPager","viewsSlideshowSlideCounter","viewsSlideshowCycle"],"nextSlide":["viewsSlideshowPager","viewsSlideshowSlideCounter","viewsSlideshowCycle"],"pause":["viewsSlideshowControls","viewsSlideshowCycle"],"play":["viewsSlideshowControls","viewsSlideshowCycle"],"previousSlide":["viewsSlideshowPager","viewsSlideshowSlideCounter","viewsSlideshowCycle"],"transitionBegin":["viewsSlideshowPager","viewsSlideshowSlideCounter"],"transitionEnd":[]},"paused":0}},"viewsSlideshowControls":{"banners_home-block":{"bottom":{"type":"viewsSlideshowControlsText"}}},"viewsSlideshowCycle":{"#views_slideshow_cycle_main_banners_home-block":{"num_divs":10,"id_prefix":"#views_slideshow_cycle_main_","div_prefix":"#views_slideshow_cycle_div_","vss_id":"banners_home-block","effect":"scrollHorz","transition_advanced":0,"timeout":5000,"speed":700,"delay":0,"sync":1,"random":0,"pause":1,"pause_on_click":0,"action_advanced":0,"start_paused":0,"remember_slide":0,"remember_slide_days":1,"pause_when_hidden":0,"pause_when_hidden_type":"full","amount_allowed_visible":"","nowrap":0,"fixed_height":1,"items_per_slide":1,"wait_for_image_load":1,"wait_for_image_load_timeout":3000,"cleartype":0,"cleartypenobg":0,"advanced_options":"{}"}},"views":{"ajax_path":"\/views\/ajax","ajaxViews":{"views_dom_id:0878896a06f38cc7fd09af95a8453fba":{"view_name":"actes_agenda","view_display_id":"block_2","view_args":"","view_path":"inici","view_base_path":"actes-agenda","view_dom_id":"0878896a06f38cc7fd09af95a8453fba","pager_element":0}}},"googleanalytics":{"trackOutbound":1,"trackMailto":1,"trackDownload":1,"trackDownloadExtensions":"7z|aac|arc|arj|asf|asx|avi|bin|csv|doc|exe|flv|gif|gz|gzip|hqx|jar|jpe?g|js|mp(2|3|4|e?g)|mov(ie)?|msi|msp|pdf|phps|png|ppt|qtm?|ra(m|r)?|sea|sit|tar|tgz|torrent|txt|wav|wma|wmv|wpd|xls|xml|z|zip"},"tableHeaderOffset":"Drupal.admin.height","admin_menu":{"destination":"destination=inici","hash":"b7d4012beba13f65abf736e8115e8521","basePath":"\/admin_menu","margin_top":1,"position_fixed":1,"toolbar":{"activeTrail":"\/"}}});</script>
+<script src="http://localhost.dipta:8081/sites/dipta/themes/dipta/js/equal-height.js?msc39f"></script>
+<script>jQuery.extend(Drupal.settings, {"basePath":"\/","pathPrefix":"","ajaxPageState":{"theme":"dipta","theme_token":"bFErmbw6fd7JDN4AdsW4pJAJyDuKmPulpA7qsFUS3BY","js":{"misc\/jquery.js":1,"misc\/jquery.once.js":1,"misc\/drupal.js":1,"misc\/jquery.cookie.js":1,"misc\/jquery.form.js":1,"misc\/ajax.js":1,"public:\/\/languages\/ca_5JXMJBynWQGp2TXnoYKfkX3fgj8_2LuxA7CPyl_uvi8.js":1,"sites\/all\/libraries\/colorbox\/jquery.colorbox-min.js":1,"sites\/all\/modules\/contrib\/colorbox\/js\/colorbox.js":1,"sites\/all\/modules\/contrib\/colorbox\/styles\/default\/colorbox_style.js":1,"sites\/all\/modules\/contrib\/views_slideshow\/js\/views_slideshow.js":1,"sites\/all\/modules\/contrib\/jcarousel\/js\/jquery.jcarousel.min.js":1,"sites\/all\/modules\/contrib\/jcarousel\/js\/jcarousel.js":1,"sites\/all\/libraries\/jquery.cycle\/jquery.cycle.all.js":1,"sites\/all\/modules\/contrib\/views_slideshow\/contrib\/views_slideshow_cycle\/js\/views_slideshow_cycle.js":1,"misc\/collapse.js":1,"misc\/form.js":1,"sites\/all\/modules\/contrib\/field_group\/field_group.js":1,"sites\/all\/modules\/contrib\/views\/js\/base.js":1,"misc\/progress.js":1,"sites\/all\/modules\/contrib\/views\/js\/ajax_view.js":1,"sites\/all\/modules\/contrib\/google_analytics\/googleanalytics.js":1,"0":1,"sites\/dipta\/themes\/dipta\/js\/equal-height.js":1},"css":{"modules\/system\/system.base.css":1,"modules\/system\/system.menus.css":1,"modules\/system\/system.messages.css":1,"modules\/system\/system.theme.css":1,"modules\/book\/book.css":1,"sites\/all\/modules\/contrib\/calendar\/css\/calendar_multiday.css":1,"sites\/all\/modules\/contrib\/date\/date_api\/date.css":1,"sites\/all\/modules\/contrib\/date\/date_popup\/themes\/datepicker.1.7.css":1,"modules\/field\/theme\/field.css":1,"modules\/node\/node.css":1,"modules\/search\/search.css":1,"modules\/user\/user.css":1,"sites\/all\/modules\/contrib\/video_filter\/video_filter.css":1,"sites\/all\/modules\/contrib\/views\/css\/views.css":1,"sites\/all\/modules\/contrib\/colorbox\/styles\/default\/colorbox_style.css":1,"sites\/all\/modules\/contrib\/ctools\/css\/ctools.css":1,"sites\/all\/modules\/contrib\/views_slideshow\/views_slideshow.css":1,"sites\/all\/modules\/contrib\/jcarousel\/skins\/default\/jcarousel-default.css":1,"sites\/all\/modules\/contrib\/views_slideshow\/views_slideshow_controls_text.css":1,"sites\/all\/modules\/contrib\/views_slideshow\/contrib\/views_slideshow_cycle\/views_slideshow_cycle.css":1,"sites\/all\/modules\/contrib\/field_group\/field_group.css":1,"sites\/dipta\/themes\/dipta\/system.menus.css":1,"sites\/dipta\/themes\/dipta\/css\/partials\/normalize.css":1,"sites\/dipta\/themes\/dipta\/css\/partials\/pages.css":1,"sites\/dipta\/themes\/dipta\/css\/partials\/navigations.css":1,"sites\/dipta\/themes\/dipta\/css\/partials\/views-pages.css":1,"sites\/dipta\/themes\/dipta\/css\/partials\/views-blocs.css":1,"sites\/dipta\/themes\/dipta\/css\/partials\/nodes.css":1,"sites\/dipta\/themes\/dipta\/css\/partials\/comments.css":1,"sites\/dipta\/themes\/dipta\/css\/partials\/forms.css":1,"sites\/dipta\/themes\/dipta\/css\/partials\/tabs.css":1,"sites\/dipta\/themes\/dipta\/css\/partials\/jcarousel.css":1,"sites\/dipta\/themes\/dipta\/css\/partials\/print.css":1,"sites\/dipta\/themes\/dipta\/css\/layouts\/dipta-responsive.css":1,"sites\/dipta\/themes\/dipta\/css\/dipta.css":1}},"colorbox":{"opacity":"0.85","current":"{current} of {total}","previous":"\u00ab Prev","next":"Seg\u00fcent \u00bb","close":"Tanca","maxWidth":"98%","maxHeight":"98%","fixed":true},"jcarousel":{"ajaxPath":"\/jcarousel\/ajax\/views","carousels":{"jcarousel-dom-1":{"view_options":{"view_args":"","view_path":"inici","view_base_path":"inici","view_display_id":"block_2","view_name":"banners_home","jcarousel_dom_id":1},"skin":"default","scroll":1,"autoPause":1,"start":1,"selector":".jcarousel-dom-1"}}},"field_group":{"div":"basic"},"viewsSlideshow":{"banners_home-block":{"methods":{"goToSlide":["viewsSlideshowPager","viewsSlideshowSlideCounter","viewsSlideshowCycle"],"nextSlide":["viewsSlideshowPager","viewsSlideshowSlideCounter","viewsSlideshowCycle"],"pause":["viewsSlideshowControls","viewsSlideshowCycle"],"play":["viewsSlideshowControls","viewsSlideshowCycle"],"previousSlide":["viewsSlideshowPager","viewsSlideshowSlideCounter","viewsSlideshowCycle"],"transitionBegin":["viewsSlideshowPager","viewsSlideshowSlideCounter"],"transitionEnd":[]},"paused":0}},"viewsSlideshowControls":{"banners_home-block":{"bottom":{"type":"viewsSlideshowControlsText"}}},"viewsSlideshowCycle":{"#views_slideshow_cycle_main_banners_home-block":{"num_divs":10,"id_prefix":"#views_slideshow_cycle_main_","div_prefix":"#views_slideshow_cycle_div_","vss_id":"banners_home-block","effect":"scrollHorz","transition_advanced":0,"timeout":5000,"speed":700,"delay":0,"sync":1,"random":0,"pause":1,"pause_on_click":0,"action_advanced":0,"start_paused":0,"remember_slide":0,"remember_slide_days":1,"pause_when_hidden":0,"pause_when_hidden_type":"full","amount_allowed_visible":"","nowrap":0,"fixed_height":1,"items_per_slide":1,"wait_for_image_load":1,"wait_for_image_load_timeout":3000,"cleartype":0,"cleartypenobg":0,"advanced_options":"{}"}},"views":{"ajax_path":"\/views\/ajax","ajaxViews":{"views_dom_id:8bc5d3c06593f7a520c6802d62ed8e28":{"view_name":"actes_agenda","view_display_id":"block_2","view_args":"","view_path":"inici","view_base_path":"actes-agenda","view_dom_id":"8bc5d3c06593f7a520c6802d62ed8e28","pager_element":0}}},"googleanalytics":{"trackOutbound":1,"trackMailto":1,"trackDownload":1,"trackDownloadExtensions":"7z|aac|arc|arj|asf|asx|avi|bin|csv|doc|exe|flv|gif|gz|gzip|hqx|jar|jpe?g|js|mp(2|3|4|e?g)|mov(ie)?|msi|msp|pdf|phps|png|ppt|qtm?|ra(m|r)?|sea|sit|tar|tgz|torrent|txt|wav|wma|wmv|wpd|xls|xml|z|zip"}});</script>
       <!--[if lt IE 9]>
     <script src="/sites/all/themes/zen/js/html5-respond.js"></script>
     <![endif]-->
   </head>
-<body class="html front logged-in one-sidebar sidebar-second page-inici i18n-ca page-views" >
+<body class="html front not-logged-in one-sidebar sidebar-second page-inici i18n-ca page-views" >
       <p id="skip-link">
       <a href="#main-menu" class="element-invisible element-focusable">Jump to navigation</a>
     </p>
         <div id="page-header">
       <div class="region region-header">
-    <div id="block-menu-menu-men-top" class="block block-menu contextual-links-region first last odd" role="navigation">
+    <div id="block-menu-menu-men-top" class="block block-menu first last odd" role="navigation">
 
         <h2 class="block-title element-invisible">Menú TOP</h2>
-    <div class="contextual-links-wrapper"><ul class="contextual-links"><li class="menu-list first"><a href="/admin/structure/menu/manage/menu-men-top/list?destination=inici">Llista els enllaços</a></li>
-<li class="menu-edit"><a href="/admin/structure/menu/manage/menu-men-top/edit?destination=inici">Edita el menú</a></li>
-<li class="block-configure last"><a href="/admin/structure/block/manage/menu/menu-men-top/configure?destination=inici">Configura</a></li>
-</ul></div>
+    
   <ul class="menu"><li class="first leaf"><a href="/" title="Plana d&#039;inici" class="active">Home</a></li>
 <li class="leaf"><a href="/contacta1" title="">Contacta</a></li>
 <li class="leaf"><a href="https://www.intradt.cat" title="enllaç a la INTRADT ">Intradt</a></li>
@@ -152,18 +108,16 @@
 </ul>      </nav>
     
       <div class="region region-navigation">
-    <div id="block-search-form" class="block block-search contextual-links-region first last odd" role="search">
+    <div id="block-search-form" class="block block-search first last odd" role="search">
 
-      <div class="contextual-links-wrapper"><ul class="contextual-links"><li class="block-configure first last"><a href="/admin/structure/block/manage/search/form/configure?destination=inici">Configura</a></li>
-</ul></div>
+      
   <form action="/" method="post" id="search-block-form" accept-charset="UTF-8"><div><div class="container-inline">
       <h2 class="element-invisible">Formulari de cerca</h2>
     <div class="form-item form-type-textfield form-item-search-block-form">
   <label class="element-invisible" for="edit-search-block-form--2">Cerca </label>
  <input title="Introduïu els termes que voleu cercar." type="text" id="edit-search-block-form--2" name="search_block_form" value="" size="15" maxlength="128" class="form-text" />
 </div>
-<div class="form-actions form-wrapper" id="edit-actions"><input type="submit" id="edit-submit" name="op" value="Cerca" class="form-submit" /></div><input type="hidden" name="form_build_id" value="form-UZfUTQ5BQNo_iom3-rsUDbP_F_N8UH9-4ZdygrbhGQ8" />
-<input type="hidden" name="form_token" value="GItHIzVQq-0iGBndX4NFhkMgAmYmwIs3JhElrBPifEQ" />
+<div class="form-actions form-wrapper" id="edit-actions"><input type="submit" id="edit-submit" name="op" value="Cerca" class="form-submit" /></div><input type="hidden" name="form_build_id" value="form-c0hIPM4DKkYJGur8v1WjEoDm5x-aL6-tFxOGjA46jgM" />
 <input type="hidden" name="form_id" value="search_block_form" />
 </div>
 </div></form>
@@ -175,12 +129,10 @@
 
     <div class="main-content">
         <div class="region region-highlighted">
-    <div id="block-views-banners-home-block" class="block block-views contextual-links-region first last odd">
+    <div id="block-views-banners-home-block" class="block block-views first last odd">
 
-      <div class="contextual-links-wrapper"><ul class="contextual-links"><li class="views-ui-edit first"><a href="/admin/structure/views/view/banners_home/edit?destination=inici">Edita la vista</a></li>
-<li class="block-configure last"><a href="/admin/structure/block/manage/views/banners_home-block/configure?destination=inici">Configura</a></li>
-</ul></div>
-  <div class="view view-banners-home view-id-banners_home view-display-id-block view-dom-id-0fb0ada30b065cc2f34b134861705cd2">
+      
+  <div class="view view-banners-home view-id-banners_home view-display-id-block view-dom-id-e23b31b62f182b3f5f26c10fb36eb3af">
         
   
   
@@ -336,17 +288,22 @@
   
   
   
-</div><a id='context-block-views-banners_home-block' class='context-block editable edit-inici-home'></a>
+</div>
 </div><!-- /.block -->
-<div class='context-block-region' id='context-block-region-highlighted'><span class='region-name'>Destacat</span><a class='context-ui-add-link'>Add a block here.</a></div>  </div><!-- /.region -->
+  </div><!-- /.region -->
+	  
+	  	  
+	        <aside class="sidebars">
+                      </aside><!-- /.sidebars -->
+    	  
+	  
     <div id="content" class="column" role="main">
       <a id="main-content"></a>	  
       
-                  <div class="contextual-links-wrapper"><ul class="contextual-links views-contextual-links-page"><li class="views-ui-edit first last"><a href="/admin/structure/views/view/banners_home/edit/page_1?destination=inici">Edita la vista</a></li>
-</ul></div>                        
-<div class='context-block-region' id='context-block-region-content'><span class='region-name'>Contingut</span><a class='context-ui-add-link'>Add a block here.</a></div>
+                                          
 
-<div class="view view-banners-home view-id-banners_home view-display-id-page_1 view-dom-id-570c8c7999b8b103615895c8fd2f6cbc">
+
+<div class="view view-banners-home view-id-banners_home view-display-id-page_1 view-dom-id-fe7619e13c079db9615216c6137391e9">
             <div class="view-header">
       <h2>Últimes notícies</h2>    </div>
   
@@ -365,22 +322,15 @@
   
   
   
-      
-<div class="more-link">
-  <a href="/inici">
-    Veure més notícies  </a>
-</div>
   
   
   
 </div><!-- block__no_wrapper -->
-<div id="block-views-actes-agenda-block-2" class="block block-views contextual-links-region last even">
+<div id="block-views-actes-agenda-block-2" class="block block-views last even">
 
         <h2 class="block-title">Agenda</h2>
-    <div class="contextual-links-wrapper"><ul class="contextual-links"><li class="views-ui-edit first"><a href="/admin/structure/views/view/actes_agenda/edit?destination=inici">Edita la vista</a></li>
-<li class="block-configure last"><a href="/admin/structure/block/manage/views/actes_agenda-block_2/configure?destination=inici">Configura</a></li>
-</ul></div>
-  <div class="view view-actes-agenda view-id-actes_agenda view-display-id-block_2 view-dom-id-0878896a06f38cc7fd09af95a8453fba">
+    
+  <div class="view view-actes-agenda view-id-actes_agenda view-display-id-block_2 view-dom-id-8bc5d3c06593f7a520c6802d62ed8e28">
         
   
   
@@ -405,21 +355,20 @@
   
   
   
-</div><a id='context-block-views-actes_agenda-block_2' class='context-block editable edit-inici-home'></a>
+</div>
 </div><!-- /.block -->
 <!-- region__no_wrapper -->
                       </div><!-- /#content -->
 
     
+
           <aside class="sidebars">
                   <section class="region region-sidebar-second column sidebar">
-    <div id="block-views-publicacio-revistadipu-block-2" class="block block-views contextual-links-region first odd">
+    <div id="block-views-publicacio-revistadipu-block-2" class="block block-views first odd">
 
         <h2 class="block-title">Llegeix la revista de la Diputació,el butlletí cultural informatiu o la Memòria.</h2>
-    <div class="contextual-links-wrapper"><ul class="contextual-links"><li class="views-ui-edit first"><a href="/admin/structure/views/view/publicacio_revistadipu/edit?destination=inici">Edita la vista</a></li>
-<li class="block-configure last"><a href="/admin/structure/block/manage/views/publicacio_revistadipu-block_2/configure?destination=inici">Configura</a></li>
-</ul></div>
-  <div class="view view-publicacio-revistadipu view-id-publicacio_revistadipu view-display-id-block_2 view-dom-id-ceb6b4e804d59b1ff04fa60d91dfd242">
+    
+  <div class="view view-publicacio-revistadipu view-id-publicacio_revistadipu view-display-id-block_2 view-dom-id-7744298a8f45cbf6cd5766a5804b83c4">
         
   
   
@@ -440,59 +389,57 @@
   
   
   
-</div><a id='context-block-views-publicacio_revistadipu-block_2' class='context-block editable edit-inici-home'></a>
+</div>
 </div><!-- /.block -->
-<div id="block-views-banners-home-block-1" class="block block-views contextual-links-region last even">
+<div id="block-views-banners-home-block-1" class="block block-views last even">
 
-      <div class="contextual-links-wrapper"><ul class="contextual-links"><li class="views-ui-edit first"><a href="/admin/structure/views/view/banners_home/edit?destination=inici">Edita la vista</a></li>
-<li class="block-configure last"><a href="/admin/structure/block/manage/views/banners_home-block_1/configure?destination=inici">Configura</a></li>
-</ul></div>
-  <div class="view view-banners-home view-id-banners_home view-display-id-block_1 view-dom-id-db4f367970408f4f83ab7be51103f6d7">
+      
+  <div class="view view-banners-home view-id-banners_home view-display-id-block_1 view-dom-id-3ce1c3e6e693e41797e37fc2c562afda">
         
   
   
       <div class="view-content">
-        <div class="views-row views-row-1 views-row-odd views-row-first">
+        <div class="dipta-banner">
     <div class="slide-description">
       </div>
     
   
   <div class="views-field views-field-field-dipta-banner-1">        <div class="field-content"><a href="http://bvrb4.tinet.org/"><img typeof="foaf:Image" src="http://localhost.dipta:8081/sites/dipta/files/styles/home_banners/public/media/Home_dreta_BiblioRBIV2.jpg?itok=boxQyE1T" width="220" height="140" alt="" />
 <div class="info-banner">
-<h2>Biblioteca Virtual</h2>
+<h3>Biblioteca Virtual</h3>
 <div class="text-banner">Ramon Berenguer IV</div>
 </div></a></div>  </div>
   </div>
-  <div class="views-row views-row-2 views-row-even">
+  <div class="dipta-banner">
     <div class="slide-description">
       </div>
     
   
   <div class="views-field views-field-field-dipta-banner-1">        <div class="field-content"><a href="http://localhost.dipta:8081/sala-de-premsa"><img typeof="foaf:Image" src="http://localhost.dipta:8081/sites/dipta/files/styles/home_banners/public/media/Home_dreta_premsa_0.jpg?itok=tklTdfph" width="220" height="140" alt="" />
 <div class="info-banner">
-<h2>Sala de Premsa. </h2>
+<h3>Sala de Premsa. </h3>
 <div class="text-banner"></div>
 </div></a></div>  </div>
   </div>
-  <div class="views-row views-row-3 views-row-odd">
+  <div class="dipta-banner">
     <div class="slide-description">
       </div>
     
   
   <div class="views-field views-field-field-dipta-banner-1">        <div class="field-content"><a href="https://seuelectronica.dipta.cat/tramits/pam_2013.php"><img typeof="foaf:Image" src="http://localhost.dipta:8081/sites/dipta/files/styles/home_banners/public/media/Home_dreta_PAM_0.jpg?itok=ya8sen54" width="220" height="140" alt="" />
 <div class="info-banner">
-<h2>PAM 2012-13</h2>
+<h3>PAM 2012-13</h3>
 <div class="text-banner"></div>
 </div></a></div>  </div>
   </div>
-  <div class="views-row views-row-4 views-row-even views-row-last">
+  <div class="dipta-banner">
     <div class="slide-description">
       </div>
     
   
   <div class="views-field views-field-field-dipta-banner-1">        <div class="field-content"><a href="https://pdc.diputaciodetarragona.cat"><img typeof="foaf:Image" src="http://localhost.dipta:8081/sites/dipta/files/styles/home_banners/public/media/Home_perfilcontractant_0.jpg?itok=PR9btmPm" width="220" height="140" alt="" />
 <div class="info-banner">
-<h2>Perfil de contractant</h2>
+<h3>Perfil de contractant</h3>
 <div class="text-banner"></div>
 </div></a></div>  </div>
   </div>
@@ -503,106 +450,114 @@
   
   
   
-</div><a id='context-block-views-banners_home-block_1' class='context-block editable edit-inici-home'></a>
+</div>
 </div><!-- /.block -->
-<div class='context-block-region' id='context-block-region-sidebar_second'><span class='region-name'>Second sidebar</span><a class='context-ui-add-link'>Add a block here.</a></div>  </section><!-- region__sidebar -->
+  </section><!-- region__sidebar -->
       </aside><!-- /.sidebars -->
-      </div>
+    	
+	
+  </div>
 </div><!-- /#main -->
 
 <aside class="banners">
     <div class="region region-banners">
-    <div id="block-views-banners-home-block-3" class="block block-views contextual-links-region first last odd">
+    <div id="block-views-banners-home-block-3" class="block block-views first last odd">
 
-      <div class="contextual-links-wrapper"><ul class="contextual-links"><li class="views-ui-edit first"><a href="/admin/structure/views/view/banners_home/edit/block_3?destination=inici">Edita la vista</a></li>
-<li class="block-configure last"><a href="/admin/structure/block/manage/views/banners_home-block_3/configure?destination=inici">Configura</a></li>
-</ul></div>
-  <div class="view view-banners-home view-id-banners_home view-display-id-block_3 view-dom-id-aea3d145b78ef46340e5d825ffa752c9">
+      
+  <div class="view view-banners-home view-id-banners_home view-display-id-block_3 view-dom-id-a86d375d602a62fb617334532923d104">
         
   
   
       <div class="view-content">
-          <ul>          <li class=""><div class="slide-description">
+        <div class="dipta-banner">
+    <div class="slide-description">
       </div>
     
   
   <div class="views-field views-field-field-dipta-banner-1">        <div class="field-content"><a href="http://localhost.dipta:8081/pla-estrategic"><img typeof="foaf:Image" src="http://localhost.dipta:8081/sites/dipta/files/styles/home_banners/public/media/Home_plaestrategic_0.jpg?itok=61CXfNWj" width="220" height="140" alt="" />
 <div class="info-banner">
-<h2>Pla estratègic...</h2>
+<h3>Pla estratègic...</h3>
 <div class="text-banner"></div>
 </div></a></div>  </div>
-</li>
-          <li class=""><div class="slide-description">
+  </div>
+  <div class="dipta-banner">
+    <div class="slide-description">
       </div>
     
   
   <div class="views-field views-field-field-dipta-banner-1">        <div class="field-content"><a href="http://localhost.dipta:8081/tap"><img typeof="foaf:Image" src="http://localhost.dipta:8081/sites/dipta/files/styles/home_banners/public/media/Home_TAP_0.jpg?itok=NkPoin1n" width="220" height="140" alt="" />
 <div class="info-banner">
-<h2>Tarraco Arena...</h2>
+<h3>Tarraco Arena...</h3>
 <div class="text-banner">... per gaudir de l’...</div>
 </div></a></div>  </div>
-</li>
-          <li class=""><div class="slide-description">
+  </div>
+  <div class="dipta-banner">
+    <div class="slide-description">
       </div>
     
   
   <div class="views-field views-field-field-dipta-banner-1">        <div class="field-content"><a href="http://localhost.dipta:8081/exposicions"><img typeof="foaf:Image" src="http://localhost.dipta:8081/sites/dipta/files/styles/home_banners/public/media/Home_expos_0.jpg?itok=4UXBaO6d" width="220" height="140" alt="" />
 <div class="info-banner">
-<h2>Exposicions</h2>
+<h3>Exposicions</h3>
 <div class="text-banner">que ofereix la Diputació</div>
 </div></a></div>  </div>
-</li>
-          <li class=""><div class="slide-description">
+  </div>
+  <div class="dipta-banner">
+    <div class="slide-description">
       </div>
     
   
   <div class="views-field views-field-field-dipta-banner-1">        <div class="field-content"><a href="http://localhost.dipta:8081/oferta-publica-ocupacio"><img typeof="foaf:Image" src="http://localhost.dipta:8081/sites/dipta/files/styles/home_banners/public/media/Home_PAO_0.jpg?itok=dCOVRkuU" width="220" height="140" alt="" />
 <div class="info-banner">
-<h2>Polítiques...</h2>
+<h3>Polítiques...</h3>
 <div class="text-banner"></div>
 </div></a></div>  </div>
-</li>
-          <li class=""><div class="slide-description">
+  </div>
+  <div class="dipta-banner">
+    <div class="slide-description">
       </div>
     
   
   <div class="views-field views-field-field-dipta-banner-1">        <div class="field-content"><a href="http://localhost.dipta:8081/el-president"><img typeof="foaf:Image" src="http://localhost.dipta:8081/sites/dipta/files/styles/home_banners/public/media/Home_RH_0.jpg?itok=WdKpuS5J" width="220" height="140" alt="" />
 <div class="info-banner">
-<h2>Recursos Humans</h2>
+<h3>Recursos Humans</h3>
 <div class="text-banner"></div>
 </div></a></div>  </div>
-</li>
-          <li class=""><div class="slide-description">
+  </div>
+  <div class="dipta-banner">
+    <div class="slide-description">
       </div>
     
   
   <div class="views-field views-field-field-dipta-banner-1">        <div class="field-content"><a href="http://localhost.dipta:8081/carreteres/projectes-en-licitacio"><img typeof="foaf:Image" src="http://localhost.dipta:8081/sites/dipta/files/styles/home_banners/public/media/Home_projectespendents_0.jpg?itok=-UM8laXr" width="220" height="140" alt="" />
 <div class="info-banner">
-<h2>Projectes...</h2>
+<h3>Projectes...</h3>
 <div class="text-banner"></div>
 </div></a></div>  </div>
-</li>
-          <li class=""><div class="slide-description">
+  </div>
+  <div class="dipta-banner">
+    <div class="slide-description">
       </div>
     
   
   <div class="views-field views-field-field-dipta-banner-1">        <div class="field-content"><a href="http://localhost.dipta:8081/formacio"><img typeof="foaf:Image" src="http://localhost.dipta:8081/sites/dipta/files/styles/home_banners/public/media/Home_formacio_0.jpg?itok=E1AVbQdp" width="220" height="140" alt="" />
 <div class="info-banner">
-<h2>Formació</h2>
+<h3>Formació</h3>
 <div class="text-banner">cursos i activitats formatives</div>
 </div></a></div>  </div>
-</li>
-          <li class=""><div class="slide-description">
+  </div>
+  <div class="dipta-banner">
+    <div class="slide-description">
       </div>
     
   
   <div class="views-field views-field-field-dipta-banner-1">        <div class="field-content"><a href="http://localhost.dipta:8081/carreteres/incidencies"><img typeof="foaf:Image" src="http://localhost.dipta:8081/sites/dipta/files/styles/home_banners/public/media/Home_carreteres_0.jpg?itok=lIS0YQ1H" width="220" height="140" alt="" />
 <div class="info-banner">
-<h2>Incidències a...</h2>
+<h3>Incidències a...</h3>
 <div class="text-banner"></div>
 </div></a></div>  </div>
-</li>
-      </ul>    </div>
+  </div>
+    </div>
   
   
   
@@ -616,12 +571,10 @@
 
 <aside class="corporate">
     <div class="region region-corporate">
-    <div id="block-views-banners-home-block-2" class="block block-views contextual-links-region first last odd">
+    <div id="block-views-banners-home-block-2" class="block block-views first last odd">
 
-      <div class="contextual-links-wrapper"><ul class="contextual-links"><li class="views-ui-edit first"><a href="/admin/structure/views/view/banners_home/edit/block_2?destination=inici">Edita la vista</a></li>
-<li class="block-configure last"><a href="/admin/structure/block/manage/views/banners_home-block_2/configure?destination=inici">Configura</a></li>
-</ul></div>
-  <div class="view view-banners-home view-id-banners_home view-display-id-block_2 view-dom-id-37b801678251e43576b7dec20f8ce27f">
+      
+  <div class="view view-banners-home view-id-banners_home view-display-id-block_2 view-dom-id-b6c82d89600cf716e884fd24c8516893">
         
   
   
@@ -631,39 +584,45 @@
       </div>
     
   
-  <div class="views-field views-field-field-dipta-banner-1">        <div class="field-content"><a href="http://www.dipta.cat/ebopt"><img typeof="foaf:Image" src="http://localhost.dipta:8081/sites/dipta/files/styles/home_logotips/public/media/CPEE%20Alba_V_color2011.jpg?itok=cNHyhXUM" width="99" height="65" alt="" /></a></div>  </div>
+  <div class="views-field views-field-field-dipta-banner-1">        <div class="field-content"><a href="http://miguelangelramos.com"><img typeof="foaf:Image" src="http://localhost.dipta:8081/sites/dipta/files/styles/home_logotips/public/media/fashion-q-g-1024-600-9_2.jpg?itok=b8LzLhsD" width="99" height="65" alt="" /></a></div>  </div>
 </li>
       <li class="jcarousel-item-2 even"><div class="slide-description">
       </div>
     
   
-  <div class="views-field views-field-field-dipta-banner-1">        <div class="field-content"><a href="http://www.dipta.com"><img typeof="foaf:Image" src="http://localhost.dipta:8081/sites/dipta/files/styles/home_logotips/public/media/o6.png?itok=V7oOYMtZ" width="99" height="65" alt="" /></a></div>  </div>
+  <div class="views-field views-field-field-dipta-banner-1">        <div class="field-content"><a href="http://www.dipta.cat/ebopt"><img typeof="foaf:Image" src="http://localhost.dipta:8081/sites/dipta/files/styles/home_logotips/public/media/CPEE%20Alba_V_color2011.jpg?itok=cNHyhXUM" width="99" height="65" alt="" /></a></div>  </div>
 </li>
       <li class="jcarousel-item-3 odd"><div class="slide-description">
       </div>
     
   
-  <div class="views-field views-field-field-dipta-banner-1">        <div class="field-content"><a href="http://www.dipta.com"><img typeof="foaf:Image" src="http://localhost.dipta:8081/sites/dipta/files/styles/home_logotips/public/media/o5.png?itok=wvW1gEN2" width="99" height="65" alt="" /></a></div>  </div>
+  <div class="views-field views-field-field-dipta-banner-1">        <div class="field-content"><a href="http://www.dipta.com"><img typeof="foaf:Image" src="http://localhost.dipta:8081/sites/dipta/files/styles/home_logotips/public/media/o6.png?itok=V7oOYMtZ" width="99" height="65" alt="" /></a></div>  </div>
 </li>
       <li class="jcarousel-item-4 even"><div class="slide-description">
       </div>
     
   
-  <div class="views-field views-field-field-dipta-banner-1">        <div class="field-content"><a href="http://www.dipta.com"><img typeof="foaf:Image" src="http://localhost.dipta:8081/sites/dipta/files/styles/home_logotips/public/media/o4.png?itok=uK_QxxHC" width="99" height="65" alt="" /></a></div>  </div>
+  <div class="views-field views-field-field-dipta-banner-1">        <div class="field-content"><a href="http://www.dipta.com"><img typeof="foaf:Image" src="http://localhost.dipta:8081/sites/dipta/files/styles/home_logotips/public/media/o5.png?itok=wvW1gEN2" width="99" height="65" alt="" /></a></div>  </div>
 </li>
       <li class="jcarousel-item-5 odd"><div class="slide-description">
       </div>
     
   
-  <div class="views-field views-field-field-dipta-banner-1">        <div class="field-content"><a href="http://www.dipta.com"><img typeof="foaf:Image" src="http://localhost.dipta:8081/sites/dipta/files/styles/home_logotips/public/media/o3.png?itok=egyy7mtd" width="99" height="65" alt="" /></a></div>  </div>
+  <div class="views-field views-field-field-dipta-banner-1">        <div class="field-content"><a href="http://www.dipta.com"><img typeof="foaf:Image" src="http://localhost.dipta:8081/sites/dipta/files/styles/home_logotips/public/media/o4.png?itok=uK_QxxHC" width="99" height="65" alt="" /></a></div>  </div>
 </li>
       <li class="jcarousel-item-6 even"><div class="slide-description">
       </div>
     
   
-  <div class="views-field views-field-field-dipta-banner-1">        <div class="field-content"><a href="http://www.dipta.com"><img typeof="foaf:Image" src="http://localhost.dipta:8081/sites/dipta/files/styles/home_logotips/public/media/o2.png?itok=MOZeV-Pv" width="99" height="65" alt="" /></a></div>  </div>
+  <div class="views-field views-field-field-dipta-banner-1">        <div class="field-content"><a href="http://www.dipta.com"><img typeof="foaf:Image" src="http://localhost.dipta:8081/sites/dipta/files/styles/home_logotips/public/media/o3.png?itok=egyy7mtd" width="99" height="65" alt="" /></a></div>  </div>
 </li>
       <li class="jcarousel-item-7 odd"><div class="slide-description">
+      </div>
+    
+  
+  <div class="views-field views-field-field-dipta-banner-1">        <div class="field-content"><a href="http://www.dipta.com"><img typeof="foaf:Image" src="http://localhost.dipta:8081/sites/dipta/files/styles/home_logotips/public/media/o2.png?itok=MOZeV-Pv" width="99" height="65" alt="" /></a></div>  </div>
+</li>
+      <li class="jcarousel-item-8 even"><div class="slide-description">
       </div>
     
   
@@ -686,20 +645,16 @@
   <footer id="footer">
               <div class="footer-wrapper">
           <div class="region region-footer-first">
-    <div id="block-block-6" class="block block-block contextual-links-region first last odd">
+    <div id="block-block-6" class="block block-block first last odd">
 
-      <div class="contextual-links-wrapper"><ul class="contextual-links"><li class="block-configure first last"><a href="/admin/structure/block/manage/block/6/configure?destination=inici">Configura</a></li>
-</ul></div>
-  <p><img alt="Diputació de Tarragona" src="http://dipta-pre.tinet.org/sites/dipta/files/media/dipu-peu-logo.jpg" style="width: 215px; height: 59px;" /></p><p><span style="line-height: 1.538em;">Passeig de Sant Antoni, 100</span></p><p><span style="line-height: 1.538em;">43003 Tarragona</span></p><p><span style="line-height: 1.538em;">Tel. 977 296 600</span></p><p><span style="line-height: 1.538em;">Fax. 977 296 633</span></p>
+      
+  <p><img alt="Diputació de Tarragona" src="http://dipta-pre.tinet.org/sites/dipta/files/media/dipu-peu-logo.jpg" style="width: 215px; height: 59px;" /></p><p><span style="line-height: 1.538em;">Passeig de Sant Antoni, 100</span><br /><span style="line-height: 1.538em;">43003 Tarragona</span><br /><span style="line-height: 1.538em;">Tel. 977 296 600</span><br /><span style="line-height: 1.538em;">Fax. 977 296 633</span></p>
 </div><!-- /.block -->
   </div><!-- /.region -->
           <div class="region region-footer-second">
-    <div id="block-menu-block-4" class="block block-menu-block contextual-links-region first last odd" role="navigation">
+    <div id="block-menu-block-4" class="block block-menu-block first last odd" role="navigation">
 
-      <div class="contextual-links-wrapper"><ul class="contextual-links"><li class="menu-block-list first"><a href="/admin/structure/menu/manage/main-menu/list?destination=inici">Llista els enllaços</a></li>
-<li class="menu-block-edit"><a href="/admin/structure/menu/manage/main-menu/edit?destination=inici">Edita el menú</a></li>
-<li class="block-configure last"><a href="/admin/structure/block/manage/menu_block/4/configure?destination=inici">Configura</a></li>
-</ul></div>
+      
   <div class="menu-block-wrapper menu-block-4 menu-name-main-menu parent-mlid-0 menu-level-1">
   <ul class="menu"><li class="first expanded menu-mlid-1245"><a href="/la-diputacio" title="La Diputació">La Diputació</a><ul class="menu"><li class="first leaf has-children menu-mlid-1246"><a href="/el-president" title="El President">El President</a></li>
 <li class="leaf has-children menu-mlid-1249"><a href="/quisom" title="Qui som">Qui som</a></li>
@@ -720,8 +675,7 @@
 <li class="leaf has-children menu-mlid-1402"><a href="/coneixement-qualitat" title="Coneixement i Qualitat">Coneixement i Qualitat</a></li>
 <li class="leaf has-children menu-mlid-1359"><a href="/node/396" title="Serveis Interns">Serveis Interns</a></li>
 <li class="leaf menu-mlid-1460"><a href="/node/569" title="BASE disposa d’una Xarxa d’oficines distribuïdes per tota la província de Tarragona per donar una atenció personalitzada i facilitar l’acompliment de les obligacions tributàries dels ciutadans.">BASE Gestió d&#039;Ingressos</a></li>
-<li class="leaf menu-mlid-1459"><a href="/node/568" title="Patronat de Turisme">Patronat de Turisme</a></li>
-<li class="last leaf menu-mlid-3291"><a href="/test-a">A</a></li>
+<li class="last leaf menu-mlid-1459"><a href="/node/568" title="Patronat de Turisme">Patronat de Turisme</a></li>
 </ul></li>
 <li class="expanded menu-mlid-1242"><a href="/serveis" title="Serveis">Serveis</a><ul class="menu"><li class="first leaf has-children menu-mlid-3127"><a href="/serveis/secretaria" title="Serveis  de Secretaria">Serveis  de Secretaria</a></li>
 <li class="leaf has-children menu-mlid-3141"><a href="/serveis/intervencio" title="Serveis d&#039;Intervenció">Serveis d&#039;Intervenció</a></li>
@@ -741,11 +695,10 @@
   </div><!-- /.region -->
               </div>
               <div class="region-bottom-wrapper">  <div class="region region-bottom">
-    <div id="block-block-5" class="block block-block contextual-links-region first last odd">
+    <div id="block-block-5" class="block block-block first last odd">
 
-      <div class="contextual-links-wrapper"><ul class="contextual-links"><li class="block-configure first last"><a href="/admin/structure/block/manage/block/5/configure?destination=inici">Configura</a></li>
-</ul></div>
-  <p style="text-align: center;"><strong>Diputació de Tarragona</strong>  Passeig de Sant Antoni 100 - 432003 - Tarragona - telf. 977 29 66 00 - fax. 977 29 66 33 <strong>  <a href="http://www.dipta.cat">www.dipta.cat</a></strong></p>
+      
+  <p><strong>Diputació de Tarragona</strong>  Passeig de Sant Antoni 100 - 432003 - Tarragona - telf. 977 29 66 00 - fax. 977 29 66 33 <strong>  <a href="http://www.dipta.cat">www.dipta.cat</a></strong></p>
 </div><!-- /.block -->
   </div><!-- /.region -->
 </div>

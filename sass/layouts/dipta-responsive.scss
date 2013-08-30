@@ -11,69 +11,97 @@
 .contextual-links{display:none;}
 .element-invisible{display:none;}
 
+
 /*Fluid images*/
 #logo img{ width: 100% !important; height: auto !important;}
 
 /**
 *	Fila  01: header top	
-*/	@import "partials/_header-top";
+*/	@import "rows/_header-top";
 	/***** 01 Header-top */
 
 /**
 *	Fila  02:  Header	
-*/	@import "partials/_header";
+*/	@import "rows/_header";
 	/***** 02 Header-content */
 
 /**
 *	Fila  03:  Navigation	
-*/  @import "partials/_navigation";
+*/  @import "rows/_navigation";
 	/***** 03 Navigation */
 
 /**
 *	Fila  04:  Breadcrumb	
-*/ @import "partials/_breadcrumb";
+*/ @import "rows/_breadcrumb";
 	/***** 04 Breadcrumb */
 
 /**
 *	Fila 05:  Contingut 
-*/@import "partials/_content";
+*/@import "rows/_content";
 	/***** 05 Contingut*/
 
 /**
 *	Fila 06: Banners Baix
-*/ @import "partials/_banner-baix";
+*/ @import "rows/_banner-baix";
 	/***** 06 Banners Baix */
 
 
 /**
 *	Fila 07:  Corporate
-*/	@import "partials/_corporate";
+*/	@import "rows/_corporate";
 	/***** 07  Coorporate */
 
 /**
 *	Fila 08:  Footer
-*/ 	@import " partials/_footer";
+*/ 	@import "rows/_footer";
 	/***** 08 Footer */
 
 /**
 *	Fila 09: Bottom Footer
-*/ 	@import " partials/_bottom-footer";
+*/ 	@import " rows/_bottom-footer";
 	/***** 09  Bottom Footer */
-
-
-/* Susy breaks 
-
-	@include at-breakpoint($iphone4) { 
-	}//	
- 	@include at-breakpoint($iphone4-landscape) {
-	}//
- 	@include at-breakpoint($iphone5-landscape) { 
-	}//
-	@include at-breakpoint($kindle) {
-	}//
-	@include at-breakpoint($ipad) {  
-	}//
-	@include at-breakpoint($ipad-landscape) { 
-	}//
 	
-*/
+
+	
+/* Estils at-breakpoint */
+/*All Elements**********************************************/	
+	
+/*All**/	
+	
+@include at-breakpoint($iphone4) { /*$iphone4 320px*/
+	
+	
+}/*$iphone4*/
+	
+	
+@include at-breakpoint($iphone4-landscape) { /*$iphone4-landscape 480px*/ 
+
+
+
+}/*$iphone4-landscape*/
+
+
+@include at-breakpoint($iphone5-landscape) { /*$iphone5-landscape 565px*/
+	
+	
+}/*$iphone5-landscape*/
+
+
+@include at-breakpoint($kindle) { /*$kindle*/
+
+
+	
+}/*$kindle*/
+
+@include at-breakpoint($ipad) {  /*$ipad*/
+
+	
+}/*$ipad*/
+
+
+@include at-breakpoint($ipad-landscape) { /*$ipad-landscape*/
+	
+		
+}/*$ipad-landscape*/
+	
+

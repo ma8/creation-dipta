@@ -1,11 +1,10 @@
 /*
-*
 *	Banner Baix
 *   http://www.responsinator.com
 *	http://sass-lang.com/docs/yardoc/Sass/Script/Functions.html
 */
 /*Mixins*/
-	@mixin dipta-banners-baix-iphone{
+	@mixin css-banners-baix-iphone{
 		/*Bloc Banners inferiors*/
 		#block-views-banners-home-block-3 {
 			.dipta-banner{ @include span-columns(5,10);float:left;margin-right:0.2rem;}
@@ -13,7 +12,7 @@
 			 h3,h2 { font-size:$h5-s;line-height:$h5-h;margin-bottom: 0;margin-bottom: 0.5rem;}
 		}
 	}
-	@mixin dipta-banners-baix-kindle{
+	@mixin css-banners-baix-kindle{
 		/*Bloc Banners inferiors*/
 		#block-views-banners-home-block-3 {
 			.dipta-banner{ @include span-columns(3,10);float:left;margin-right:0.4rem;}
@@ -21,7 +20,7 @@
 			 h3,h2 { font-size:$h5-s;line-height:$h5-h;margin-bottom: 0.5rem;}
 		}
 	}	
-	@mixin dipta-banners-baix-ipad{
+	@mixin css-banners-baix-ipad{
 		/*Bloc Banners inferiors*/
 		#block-views-banners-home-block-3 {
 			.dipta-banner{ @include span-columns(3,12);float:left;margin-right:1rem; margin-bottom: 1rem; }
@@ -30,11 +29,12 @@
 		}
 	}
 	
-	@mixin dipta-banners-baix-ipad-landscape{
+	@mixin css-banners-baix-ipad-landscape{
 		/*Bloc Banners inferiors*/
 		#block-views-banners-home-block-3 {
-			.dipta-banner{ @include span-columns(3,12);float:left;margin-right:1rem; margin-bottom: 1rem; }
+			.dipta-banner{ @include span-columns(2,8);float:left;margin-right:1rem; margin-bottom: 1rem; }
 			 .text-banner{} h3,h2 { font-size:$h4-s;line-height:$h4-h;margin-bottom: 0.5rem;}
+			 
 		}
 	}
 /*Responsive*/
@@ -45,16 +45,16 @@
 	padding-top:5px;
 	padding-left:0;
 	
-	@include at-breakpoint($iphone4) { @include dipta-banners-baix-iphone;
+	@include at-breakpoint($iphone4) { @include css-banners-baix-iphone;
 	}//	
- 	@include at-breakpoint($iphone4-landscape) { @include dipta-banners-baix-iphone;
+ 	@include at-breakpoint($iphone4-landscape) { @include css-banners-baix-iphone;
 	}//
- 	@include at-breakpoint($iphone5-landscape) { @include dipta-banners-baix-iphone;
+ 	@include at-breakpoint($iphone5-landscape) { @include css-banners-baix-iphone;
 	}//
-	@include at-breakpoint($kindle) { @include dipta-banners-baix-kindle;
+	@include at-breakpoint($kindle) { @include css-banners-baix-kindle;
 	}//
-	@include at-breakpoint($ipad) {  @include dipta-banners-baix-ipad;
+	@include at-breakpoint($ipad) {  @include css-banners-baix-ipad;
 	}//
-	@include at-breakpoint($ipad-landscape) { @include dipta-banners-baix-ipad-landscape;
+	@include at-breakpoint($ipad-landscape) { @include css-banners-baix-ipad-landscape;
 	}//
 }

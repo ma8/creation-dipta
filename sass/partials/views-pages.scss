@@ -8,7 +8,8 @@
   
 //[Home - Noticies]
 .view-display-id-page_1{
-	.view-header{ padding:0; h2{@extend %dipta-title-escut;color:$base03;  clear: both;}}
+	.view-header{ padding:0; 
+		h2{@extend %dipta-title-escut;color:$base03;  clear: both;background-color:#fff;border-bottom:0.4rem solid $base05;}}
 	.view-content{  @extend %dipta-box-home; div.dipta-resum{ /*float:left; width:44.0%;*/}
 		div.dipta-resum:first-child{ padding-right:1.8rem;border-right:0.4rem solid $base05;border-bottom:0;}
 		div.dipta-resum + div.dipta-resum{ border-bottom:0.4rem solid $base05;border-left:0;}
@@ -18,7 +19,8 @@
 }
 
 //[HOME - "Bloc" Agenda]
-#block-views-actes-agenda-block-2{ margin-top:2rem;padding:0; h2{@extend %dipta-title-escut;color:$base03;}}
+#block-views-actes-agenda-block-2{ margin-top:2rem;padding:0; 
+	h2{@extend %dipta-title-escut;color:$base03;background-color:#fff; border-bottom:0.4rem solid $base05;}}
 .view-display-id-block_2{
 		.view-content{  @extend %dipta-box-home; 
 				div.dipta-resum{  .float{ padding-right:2rem;}  a:after{ @extend .dipta-clear;} }
@@ -28,16 +30,19 @@
 		.more-link{position: absolute; right: 10px;top: 30px; @extend h5;}	
 }
 
-//[ Pagines ] [ agenda,agenda-presidencia,noticies,noticies-presidencia]
-.view-display-id-page,#block-views-actes-agenda-block-3 /*actes permanents*/ {
+//[ Pagines ] [ agenda,agenda-presidencia,noticies,noticies-presidencia, obres realitzades ]
+.view-display-id-page,#block-views-actes-agenda-block-3, /*actes permanents*/
+#block-views-carretera-block-1,#block-views-carretera-block-5 
+{
 	margin:0 2% 0 2%;
 	.view-content{  @extend %dipta-box-home; }
 	.dipta-resum{background-color:$base05;border-bottom:0.4rem solid #fff !important; width:43%;}
 	.dipta-resum:nth-child(even){float:right;clear:right;}
 	.dipta-resum:nth-child(odd){float:left;clear:left;}
 	/*title actes permamnents*/
-	h2{ @extend %dipta-title-escut; @extend h3; border-bottom-color:#fff !important; background-color:$base05; color:$base03; margin-top:50px;}
+	h2{ @extend %dipta-title-escut; @extend h3; border-bottom:0.4rem solid #fff; background-color:$base05; color:$base03; margin-top:50px;}
  }
+
 
 //[Pagina -Area i unitats] 
 .dipta-entorn-web-arees{
@@ -57,7 +62,7 @@
  
 
 //[Pages][ La nostra organitzacio ]
-.view-display-id-block_1/*actes permanents*/ {
+#block-views-area-unitats-block-1 /*actes permanents*/ {
 	margin:0 2% 0 2%;
 	.dipta-resum-arees{ 
 			@extend %dipta-box-eb-border; padding-bottom:20px;
@@ -120,7 +125,6 @@
     }
   }
 }
-
 
 .view-display-id-page_1 {
   .view-header {

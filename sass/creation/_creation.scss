@@ -6,7 +6,7 @@
  */
   
  
- /* Compass*/
+ /* Compass*/ 
 @import "compass/css3"; 
 @import "compass/utilities";
 /* Creation base */
@@ -24,9 +24,13 @@
 @import "layouts/_responsive-creation";	
 
 html {  
-	color:$base01;font-size:62.5%; 
-	/*Typography responsive for compass breakpoints*/
-	/*responsive-creation.scss*/
+	color:$base01;
+	/*All*/
+	font-size:62.5%;
+	/*Typography responsive*/
+	 @include at-breakpoint($iphone4) { font-size:52.5%;}
+	 @include at-breakpoint($iphone4-landscape) { font-size:55.5%; }
+	 @include at-breakpoint($iphone5-landscape) { font-size:58.5%; } 
   }
 	
 body{

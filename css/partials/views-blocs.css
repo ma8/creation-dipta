@@ -245,11 +245,7 @@ pre.line-numbers > code {
 
 /**
 * 	Palette colors
-*
-*	http://www.colourlovers.com/palette/2978475/Deputation
 *   Night Pencil + Magic + yummi-turquoise + J Peterman Shirt + winter morning
-*	bc:#bcbcbc,Gamebookers Blue:#3299BB	 
-*
 *	Functions colors Sass:
 *	http://sass-lang.com/docs/yardoc/Sass/Script/Functions.html	
 */
@@ -261,15 +257,10 @@ desaturate($color, $amount)
 grayscale($color)
 invert($color)
 */
-/*gray*/
 /* Night Pencil */
-/*blue1*/
 /* Magic */
-/*blue*/
 /* yummi-turquoise */
-/*blue-1*/
 /* J Peterman Shirt */
-/*eb*/
 /* winter morning */
 /* Tonalitats */
 /**
@@ -299,29 +290,29 @@ invert($color)
 /*line-height*/
 /* Creation custom*/
 /**
-*	Typografia  web-fonts
+*	Typografia  - Creation
 * 	http://www.google.com/fonts
 *	Imports + Golden ratio + responsive typography
 * 	$font-a;contingut + $font-b;Headings + $font-c; especial
 */
-/* line 14, ../../sass/creation/custom/_typography.scss */
+/* line 10, ../../sass/creation/custom/_typography.scss */
 p {
   font-weight: 300;
 }
 
-/* line 15, ../../sass/creation/custom/_typography.scss */
+/* line 11, ../../sass/creation/custom/_typography.scss */
 a {
   color: #0083a9;
   text-decoration: none;
 }
 
-/* line 16, ../../sass/creation/custom/_typography.scss */
+/* line 12, ../../sass/creation/custom/_typography.scss */
 a:hover {
   text-decoration: underline;
 }
 
 /* Headings*/
-/* line 19, ../../sass/creation/custom/_typography.scss */
+/* line 15, ../../sass/creation/custom/_typography.scss */
 h1 {
   /*body*/
   font-size: 3rem;
@@ -330,7 +321,7 @@ h1 {
   letter-spacing: -0.2rem;
 }
 
-/* line 20, ../../sass/creation/custom/_typography.scss */
+/* line 16, ../../sass/creation/custom/_typography.scss */
 h2 {
   font-size: 2.7rem;
   font-weight: 400;
@@ -338,7 +329,7 @@ h2 {
   letter-spacing: -0.06rem;
 }
 
-/* line 21, ../../sass/creation/custom/_typography.scss */
+/* line 17, ../../sass/creation/custom/_typography.scss */
 h3, #block-views-noticies-presidencia-block-2 h2,
 #block-views-not-cies-block-3 h2,
 #block-views-actes-agenda-block-6 h2,
@@ -349,7 +340,7 @@ h3, #block-views-noticies-presidencia-block-2 h2,
   letter-spacing: -0.06rem;
 }
 
-/* line 22, ../../sass/creation/custom/_typography.scss */
+/* line 18, ../../sass/creation/custom/_typography.scss */
 h4, #block-views-municipis-block-1 h2 {
   font-size: 1.5rem;
   font-weight: 400;
@@ -357,7 +348,7 @@ h4, #block-views-municipis-block-1 h2 {
   letter-spacing: -0.06rem;
 }
 
-/* line 23, ../../sass/creation/custom/_typography.scss */
+/* line 19, ../../sass/creation/custom/_typography.scss */
 h5, #block-views-noticies-presidencia-block-2 .view-footer,
 #block-views-not-cies-block-3 .view-footer,
 #block-views-actes-agenda-block-6 .view-footer,
@@ -368,7 +359,7 @@ h5, #block-views-noticies-presidencia-block-2 .view-footer,
   letter-spacing: -0.06rem;
 }
 
-/* line 24, ../../sass/creation/custom/_typography.scss */
+/* line 20, ../../sass/creation/custom/_typography.scss */
 h6 {
   font-size: 1.125rem;
   font-weight: 400;
@@ -377,7 +368,7 @@ h6 {
 }
 
 /* Paragraph size h1,h2,h3,h4,h5.h6*/
-/* line 32, ../../sass/creation/custom/_typography.scss */
+/* line 28, ../../sass/creation/custom/_typography.scss */
 #block-views-municipis-comarca-block p, #block-views-area-unitats-block p, .dipta-resum p {
   font-size: 1.245rem;
   font-weight: 100;
@@ -385,16 +376,15 @@ h6 {
   letter-spacing: 0;
 }
 
-/* line 36, ../../sass/creation/custom/_typography.scss */
+/* line 32, ../../sass/creation/custom/_typography.scss */
 #block-views-noticies-presidencia-block-2 h2,
 #block-views-not-cies-block-3 h2,
 #block-views-actes-agenda-block-6 h2,
-#block-views-agenda-presidencia-block-1 h2, #block-views-not-cies-block-6 h2, #block-views-actes-agenda-block-7 h2 {
+#block-views-agenda-presidencia-block-1 h2, #block-views-not-cies-block-6 h2, #block-views-actes-agenda-block-7 h2, #block-menu-block-6 h2, #block-views-imatge-corporativa-block-1 h2, #block-views-carretera-block-6 h2, #block-views-carretera-block-7 h2, #block-views-carretera-block-8 h2 {
   padding: 2rem 0 2rem 5rem;
   margin: 0;
   background: url("../../images/escut-dipta.png") no-repeat;
   background-position: 2rem 2.1rem;
-  background-color: #fff;
 }
 
 /* Blockquotes*/
@@ -421,7 +411,7 @@ h6 {
 #block-views-noticies-presidencia-block-2 h2,
 #block-views-not-cies-block-3 h2,
 #block-views-actes-agenda-block-6 h2,
-#block-views-agenda-presidencia-block-1 h2, #block-views-not-cies-block-6 h2, #block-views-actes-agenda-block-7 h2, #block-views-municipis-comarca-block h1, #block-views-area-unitats-block h1, #block-views-municipis-comarca-block h2, #block-views-area-unitats-block h2, #block-views-municipis-comarca-block h3, #block-views-area-unitats-block h3, #block-views-municipis-comarca-block #block-views-noticies-presidencia-block-2 h2, #block-views-noticies-presidencia-block-2 #block-views-municipis-comarca-block h2, #block-views-area-unitats-block #block-views-noticies-presidencia-block-2 h2, #block-views-noticies-presidencia-block-2 #block-views-area-unitats-block h2,
+#block-views-agenda-presidencia-block-1 h2, #block-views-not-cies-block-6 h2, #block-views-actes-agenda-block-7 h2, #block-menu-block-6 h2, #block-views-imatge-corporativa-block-1 h2, #block-views-carretera-block-6 h2, #block-views-carretera-block-7 h2, #block-views-carretera-block-8 h2, #block-views-municipis-comarca-block h1, #block-views-area-unitats-block h1, #block-views-municipis-comarca-block h2, #block-views-area-unitats-block h2, #block-views-municipis-comarca-block h3, #block-views-area-unitats-block h3, #block-views-municipis-comarca-block #block-views-noticies-presidencia-block-2 h2, #block-views-noticies-presidencia-block-2 #block-views-municipis-comarca-block h2, #block-views-area-unitats-block #block-views-noticies-presidencia-block-2 h2, #block-views-noticies-presidencia-block-2 #block-views-area-unitats-block h2,
 #block-views-municipis-comarca-block #block-views-not-cies-block-3 h2,
 #block-views-not-cies-block-3 #block-views-municipis-comarca-block h2,
 #block-views-area-unitats-block #block-views-not-cies-block-3 h2,
@@ -476,14 +466,6 @@ h6 {
 #block-views-area-unitats-block #block-views-agenda-presidencia-block-1 .view-footer,
 #block-views-agenda-presidencia-block-1 #block-views-area-unitats-block .view-footer, #block-views-municipis-comarca-block #block-views-not-cies-block-6 .view-footer, #block-views-not-cies-block-6 #block-views-municipis-comarca-block .view-footer, #block-views-area-unitats-block #block-views-not-cies-block-6 .view-footer, #block-views-not-cies-block-6 #block-views-area-unitats-block .view-footer, #block-views-municipis-comarca-block #block-views-actes-agenda-block-7 .view-footer, #block-views-actes-agenda-block-7 #block-views-municipis-comarca-block .view-footer, #block-views-area-unitats-block #block-views-actes-agenda-block-7 .view-footer, #block-views-actes-agenda-block-7 #block-views-area-unitats-block .view-footer, #block-views-municipis-comarca-block h6, #block-views-area-unitats-block h6 {
   border-bottom: 0.4rem solid white;
-}
-
-/* line 15, ../../sass/creation/custom/_elements.scss */
-#block-views-noticies-presidencia-block-2 h2,
-#block-views-not-cies-block-3 h2,
-#block-views-actes-agenda-block-6 h2,
-#block-views-agenda-presidencia-block-1 h2, #block-views-not-cies-block-6 h2, #block-views-actes-agenda-block-7 h2 {
-  border-bottom: 0.4rem solid #ebebeb;
 }
 
 /* line 45, ../../sass/creation/custom/_elements.scss */
@@ -603,13 +585,13 @@ h6 {
 }
 
 /* Element Conacatenats*/
+/* Titles Images */
 /*
 *	Images - Creation
 * 
 */
-/* Titles Images */
 /*Slider -home */
-/* line 35, ../../sass/creation/custom/_images.scss */
+/* line 16, ../../sass/creation/custom/_images.scss */
 .btn-slider-left {
   display: inline-block;
   height: 36px;
@@ -621,12 +603,12 @@ h6 {
   text-indent: -119988px;
 }
 
-/* line 41, ../../sass/creation/custom/_images.scss */
+/* line 22, ../../sass/creation/custom/_images.scss */
 .btn-slider-left:hover {
   background-image: url("../images/bg-slideshowarrowlefthover.png");
 }
 
-/* line 42, ../../sass/creation/custom/_images.scss */
+/* line 23, ../../sass/creation/custom/_images.scss */
 .btn-slider-rigth {
   height: 36px;
   width: 144px;
@@ -638,24 +620,29 @@ h6 {
   text-indent: -119988px;
 }
 
-/* line 48, ../../sass/creation/custom/_images.scss */
+/* line 29, ../../sass/creation/custom/_images.scss */
 .btn-slider-rigth:hover {
   background-image: url("../images/bg-slideshowarrowrighthover.png");
 }
 
-/* line 50, ../../sass/creation/custom/_images.scss */
+/* line 31, ../../sass/creation/custom/_images.scss */
 .dipta-galeria {
   background-color: #ccc;
   width: 677px;
   height: 112;
 }
-/* line 51, ../../sass/creation/custom/_images.scss */
+/* line 32, ../../sass/creation/custom/_images.scss */
 .dipta-galeria img {
   margin: 1.7rem 1rem 0 2rem;
 }
 
 /*
-*	Box - Creations
+*	Navigations- Creation
+*	Menus + breadcrums 
+*
+*/
+/*
+*	Tables - Creation
 *	Menus + breadcrums 
 *
 */
@@ -673,33 +660,35 @@ h6 {
 */
 /* Visual Grid Susy for REM 1rem=>10px*/
 /*
-lighten($verd, 20%);
-darken($verd, 20%);
-saturate($verd, 10%);
-desaturate($verd, 10%);
-grayscale($verd);
-invert($verd);
+lighten($verd, 20%);darken($verd, 20%);saturate($verd, 10%);desaturate($verd, 10%);grayscale($verd);invert($verd);
 */
-/* line 38, ../../sass/creation/layouts/_responsive-creation.scss */
-html {
-  /*Typography responsive for compass breakpoints*/
-  font-size: 62.5%;
-  /*
-   @include at-breakpoint($iphone4) { font-size:62.5%; }
-   @include at-breakpoint($ipad) { font-size:62.5%; }
-   @include at-breakpoint($ipad-landscape) { font-size:62.5%; }
-   */
-}
-
 /* line 26, ../../sass/creation/_creation.scss */
 html {
   color: #464646;
+  /*All*/
   font-size: 62.5%;
-  /*Typography responsive for compass breakpoints*/
-  /*responsive-creation.scss*/
+  /*Typography responsive*/
+}
+@media (max-width: 320px) {
+  /* line 26, ../../sass/creation/_creation.scss */
+  html {
+    font-size: 52.5%;
+  }
+}
+@media (min-width: 321px) and (max-width: 480px) {
+  /* line 26, ../../sass/creation/_creation.scss */
+  html {
+    font-size: 55.5%;
+  }
+}
+@media (min-width: 481px) and (max-width: 568px) {
+  /* line 26, ../../sass/creation/_creation.scss */
+  html {
+    font-size: 58.5%;
+  }
 }
 
-/* line 32, ../../sass/creation/_creation.scss */
+/* line 36, ../../sass/creation/_creation.scss */
 body {
   /*$font1: 'Open Sans', sans-serif;*/
   margin: 0;
@@ -709,37 +698,37 @@ body {
 }
 
 /*Syntax custom*/
-/* line 42, ../../sass/creation/_creation.scss */
+/* line 46, ../../sass/creation/_creation.scss */
 code {
   font-size: 1.2rem;
   font-family: Consolas,Monaco,"Andale Mono",monospace;
 }
 
-/* line 43, ../../sass/creation/_creation.scss */
+/* line 47, ../../sass/creation/_creation.scss */
 pre {
   overflow-x: scroll !important;
   overflow-y: scroll !important;
 }
 
-/* line 15, ../../sass/partials/views-blocs.scss */
+/* line 14, ../../sass/partials/views-blocs.scss */
 .block {
   /* Block wrapper */
   margin-bottom: 1.5em;
 }
 
-/* line 23, ../../sass/partials/views-blocs.scss */
+/* line 22, ../../sass/partials/views-blocs.scss */
 #block-views-noticies-presidencia-block-2,
 #block-views-not-cies-block-3,
 #block-views-actes-agenda-block-6,
 #block-views-agenda-presidencia-block-1 {
-  margin: 5% 3% 10% 0;
+  margin: 1.4rem;
 }
-/* line 26, ../../sass/partials/views-blocs.scss */
+/* line 25, ../../sass/partials/views-blocs.scss */
 #block-views-noticies-presidencia-block-2 h2,
 #block-views-not-cies-block-3 h2,
 #block-views-actes-agenda-block-6 h2,
 #block-views-agenda-presidencia-block-1 h2 {
-  border-bottom-color: white !important;
+  border-bottom: 0.4rem solid white;
   background-color: #ebebeb;
   color: #0083a9;
 }
@@ -752,23 +741,23 @@ pre {
   border-bottom: 0.4rem solid white !important;
 }
 
-/* line 34, ../../sass/partials/views-blocs.scss */
+/* line 35, ../../sass/partials/views-blocs.scss */
 #block-views-municipis-comarca-block, #block-views-area-unitats-block {
   margin-top: 50px !important;
   margin: 2%;
   padding-bottom: 2%;
 }
-/* line 38, ../../sass/partials/views-blocs.scss */
+/* line 39, ../../sass/partials/views-blocs.scss */
 #block-views-municipis-comarca-block h2, #block-views-area-unitats-block h2 {
   margin: 0;
   color: #0083a9;
 }
 
-/* line 42, ../../sass/partials/views-blocs.scss */
+/* line 43, ../../sass/partials/views-blocs.scss */
 #block-views-municipis-block-1 {
   margin: 0 2%;
 }
-/* line 43, ../../sass/partials/views-blocs.scss */
+/* line 44, ../../sass/partials/views-blocs.scss */
 #block-views-municipis-block-1 h2 {
   padding: 1rem 0 1rem 0;
   border-bottom: 0.1rem solid #ebebeb;
@@ -776,35 +765,35 @@ pre {
   color: #014b60;
 }
 
-/* line 47, ../../sass/partials/views-blocs.scss */
+/* line 48, ../../sass/partials/views-blocs.scss */
 #block-views-not-cies-block-6, #block-views-actes-agenda-block-7 {
   margin: 2%;
   margin-top: 50px;
 }
-/* line 50, ../../sass/partials/views-blocs.scss */
+/* line 51, ../../sass/partials/views-blocs.scss */
 #block-views-not-cies-block-6 h2, #block-views-actes-agenda-block-7 h2 {
   border-bottom-color: white !important;
   background-color: #ebebeb;
   color: #0083a9;
 }
-/* line 52, ../../sass/partials/views-blocs.scss */
+/* line 53, ../../sass/partials/views-blocs.scss */
 #block-views-not-cies-block-6 .dipta-resum, #block-views-actes-agenda-block-7 .dipta-resum {
   background-color: #ebebeb;
   border-bottom: 0.4rem solid white !important;
 }
 
-/* line 55, ../../sass/partials/views-blocs.scss */
+/* line 56, ../../sass/partials/views-blocs.scss */
 #block-views-actes-agenda-block-7 {
   margin-right: 4%;
 }
 
-/* line 58, ../../sass/partials/views-blocs.scss */
+/* line 59, ../../sass/partials/views-blocs.scss */
 #block-views-publicacio-revistadipu-block-2 {
   font-size: 1.245rem;
   line-height: 1.5rem;
   background-color: #47A2BD;
 }
-/* line 61, ../../sass/partials/views-blocs.scss */
+/* line 62, ../../sass/partials/views-blocs.scss */
 #block-views-publicacio-revistadipu-block-2 h2 {
   margin: 0;
   color: #fff;
@@ -815,25 +804,25 @@ pre {
   line-height: 1.75rem;
   font-weight: 600;
 }
-/* line 62, ../../sass/partials/views-blocs.scss */
+/* line 63, ../../sass/partials/views-blocs.scss */
 #block-views-publicacio-revistadipu-block-2 .publicacio {
   padding: 2rem 4rem 2rem 2rem;
   border-bottom: 1px solid #79b8cb;
   color: #fff;
   background-color: #47A2BD;
 }
-/* line 63, ../../sass/partials/views-blocs.scss */
+/* line 64, ../../sass/partials/views-blocs.scss */
 #block-views-publicacio-revistadipu-block-2 .descarrega-pdf a {
   color: #014b60;
 }
 
-/* line 70, ../../sass/partials/views-blocs.scss */
+/* line 71, ../../sass/partials/views-blocs.scss */
 #block-views-banners-home-block,
 #block-views-banners-home-block-1,
 #block-views-banners-home-block-3 {
   position: relative;
 }
-/* line 73, ../../sass/partials/views-blocs.scss */
+/* line 74, ../../sass/partials/views-blocs.scss */
 #block-views-banners-home-block .view-content > ul > li,
 #block-views-banners-home-block .views-row, #block-views-banners-home-block .dipta-banner,
 #block-views-banners-home-block-1 .view-content > ul > li,
@@ -844,7 +833,7 @@ pre {
 #block-views-banners-home-block-3 .dipta-banner {
   position: relative;
 }
-/* line 76, ../../sass/partials/views-blocs.scss */
+/* line 77, ../../sass/partials/views-blocs.scss */
 #block-views-banners-home-block .info-banner,
 #block-views-banners-home-block-1 .info-banner,
 #block-views-banners-home-block-3 .info-banner {
@@ -854,7 +843,7 @@ pre {
 }
 
 /* Slideshow portada */
-/* line 85, ../../sass/partials/views-blocs.scss */
+/* line 86, ../../sass/partials/views-blocs.scss */
 #block-views-banners-home-block .info-banner {
   top: 25px;
   left: 20px;
@@ -864,30 +853,30 @@ pre {
   width: 251px;
   height: 168px;
 }
-/* line 93, ../../sass/partials/views-blocs.scss */
+/* line 94, ../../sass/partials/views-blocs.scss */
 #block-views-banners-home-block h2 {
   color: #0083a9;
   margin: 0;
   margin-bottom: 0.7rem;
 }
-/* line 97, ../../sass/partials/views-blocs.scss */
+/* line 98, ../../sass/partials/views-blocs.scss */
 #block-views-banners-home-block .text-banner {
   line-height: 1.8rem;
   color: #464646;
   font-weight: 100;
 }
-/* line 100, ../../sass/partials/views-blocs.scss */
+/* line 101, ../../sass/partials/views-blocs.scss */
 #block-views-banners-home-block .views-field-field-dipta-banner-link {
   margin-top: 1em;
 }
-/* line 103, ../../sass/partials/views-blocs.scss */
+/* line 104, ../../sass/partials/views-blocs.scss */
 #block-views-banners-home-block .views-slideshow-controls-bottom {
   left: 20px;
   position: absolute;
   top: 236px;
   z-index: 1000;
 }
-/* line 108, ../../sass/partials/views-blocs.scss */
+/* line 109, ../../sass/partials/views-blocs.scss */
 #block-views-banners-home-block .views-slideshow-controls-bottom a {
   background-color: #f0f7f9;
   background-color: rgba(240, 245, 249, 0.9);
@@ -895,40 +884,40 @@ pre {
   height: 36px;
   width: 144px;
 }
-/* line 115, ../../sass/partials/views-blocs.scss */
+/* line 116, ../../sass/partials/views-blocs.scss */
 #block-views-banners-home-block .views-slideshow-controls-bottom .views-slideshow-controls-text-previous a {
   background-image: url("../../images/bg-slideshowarrowleft.png");
   text-indent: -119988px;
   overflow: hidden;
   text-align: left;
 }
-/* line 118, ../../sass/partials/views-blocs.scss */
+/* line 119, ../../sass/partials/views-blocs.scss */
 #block-views-banners-home-block .views-slideshow-controls-bottom .views-slideshow-controls-text-previous a:hover {
   background-image: url("../../images/bg-slideshowarrowlefthover.png");
 }
-/* line 122, ../../sass/partials/views-blocs.scss */
+/* line 123, ../../sass/partials/views-blocs.scss */
 #block-views-banners-home-block .views-slideshow-controls-bottom .views-slideshow-controls-text-next a {
   background-image: url("../../images/bg-slideshowarrowright.png");
   text-indent: -119988px;
   overflow: hidden;
   text-align: left;
 }
-/* line 125, ../../sass/partials/views-blocs.scss */
+/* line 126, ../../sass/partials/views-blocs.scss */
 #block-views-banners-home-block .views-slideshow-controls-bottom .views-slideshow-controls-text-next a:hover {
   background-image: url("../../images/bg-slideshowarrowrighthover.png");
 }
-/* line 129, ../../sass/partials/views-blocs.scss */
+/* line 130, ../../sass/partials/views-blocs.scss */
 #block-views-banners-home-block .views-slideshow-controls-bottom .views-slideshow-controls-text-pause {
   display: none;
 }
 
 /* Banners laterals */
-/* line 137, ../../sass/partials/views-blocs.scss */
+/* line 138, ../../sass/partials/views-blocs.scss */
 #block-views-banners-home-block-1 .dipta-banner,
 #block-views-banners-home-block-3 .dipta-banner {
   margin-bottom: 2rem;
 }
-/* line 139, ../../sass/partials/views-blocs.scss */
+/* line 140, ../../sass/partials/views-blocs.scss */
 #block-views-banners-home-block-1 .info-banner,
 #block-views-banners-home-block-3 .info-banner {
   left: 10px;
@@ -939,14 +928,14 @@ pre {
   background-repeat: no-repeat;
   background-position: left bottom;
 }
-/* line 147, ../../sass/partials/views-blocs.scss */
+/* line 148, ../../sass/partials/views-blocs.scss */
 #block-views-banners-home-block-1 .info-banner .text-banner,
 #block-views-banners-home-block-3 .info-banner .text-banner {
   font-size: 1.125rem;
   line-height: 1.375rem;
   color: #464646;
 }
-/* line 152, ../../sass/partials/views-blocs.scss */
+/* line 153, ../../sass/partials/views-blocs.scss */
 #block-views-banners-home-block-1 h3, #block-views-banners-home-block-1 #block-views-noticies-presidencia-block-2 h2, #block-views-noticies-presidencia-block-2 #block-views-banners-home-block-1 h2,
 #block-views-banners-home-block-1 #block-views-not-cies-block-3 h2,
 #block-views-not-cies-block-3 #block-views-banners-home-block-1 h2,
@@ -975,7 +964,7 @@ pre {
   line-height: 1.75rem;
   margin: 0;
 }
-/* line 155, ../../sass/partials/views-blocs.scss */
+/* line 156, ../../sass/partials/views-blocs.scss */
 #block-views-banners-home-block-1 h3 a, #block-views-banners-home-block-1 #block-views-noticies-presidencia-block-2 h2 a, #block-views-noticies-presidencia-block-2 #block-views-banners-home-block-1 h2 a,
 #block-views-banners-home-block-1 #block-views-not-cies-block-3 h2 a,
 #block-views-not-cies-block-3 #block-views-banners-home-block-1 h2 a,
@@ -1002,79 +991,79 @@ pre {
 #block-views-actes-agenda-block-7 #block-views-banners-home-block-3 h2 a {
   text-decoration: none;
 }
-/* line 159, ../../sass/partials/views-blocs.scss */
+/* line 160, ../../sass/partials/views-blocs.scss */
 #block-views-banners-home-block-1 .views-field-field-dipta-banner-link,
 #block-views-banners-home-block-3 .views-field-field-dipta-banner-link {
   font-size: 1.245rem;
   margin-top: 0.6em;
 }
-/* line 163, ../../sass/partials/views-blocs.scss */
+/* line 164, ../../sass/partials/views-blocs.scss */
 #block-views-banners-home-block-1 img,
 #block-views-banners-home-block-3 img {
   display: block;
 }
 
 /* Banners inferiors */
-/* line 168, ../../sass/partials/views-blocs.scss */
+/* line 169, ../../sass/partials/views-blocs.scss */
 #block-views-banners-home-block-3 {
   margin-bottom: 0;
   margin-left: 2rem;
 }
-/* line 171, ../../sass/partials/views-blocs.scss */
+/* line 172, ../../sass/partials/views-blocs.scss */
 #block-views-banners-home-block-3 .view-content {
   margin-top: 20px;
 }
-/* line 173, ../../sass/partials/views-blocs.scss */
+/* line 174, ../../sass/partials/views-blocs.scss */
 #block-views-banners-home-block-3 .view-content ul {
   margin: 0;
   overflow: hidden;
   padding: 0;
 }
-/* line 178, ../../sass/partials/views-blocs.scss */
+/* line 179, ../../sass/partials/views-blocs.scss */
 #block-views-banners-home-block-3 .view-content li {
   list-style: none;
   margin: 0 20px 20px 0;
 }
 
 @media all and (min-width: 480px) and (max-width: 959px) {
-  /* line 189, ../../sass/partials/views-blocs.scss */
+  /* line 190, ../../sass/partials/views-blocs.scss */
   #block-views-banners-home-block-3 .view-content li {
     float: left;
   }
-  /* line 191, ../../sass/partials/views-blocs.scss */
+  /* line 192, ../../sass/partials/views-blocs.scss */
   #block-views-banners-home-block-3 .view-content li:nth-child(3n) {
     margin-right: 0;
   }
-  /* line 194, ../../sass/partials/views-blocs.scss */
+  /* line 195, ../../sass/partials/views-blocs.scss */
   #block-views-banners-home-block-3 .view-content li:nth-child(3n+1) {
     clear: left;
   }
 }
 @media all and (min-width: 960px) {
-  /* line 204, ../../sass/partials/views-blocs.scss */
+  /* line 205, ../../sass/partials/views-blocs.scss */
   #block-views-banners-home-block-3 {
     margin-left: 0;
   }
-  /* line 207, ../../sass/partials/views-blocs.scss */
+  /* line 208, ../../sass/partials/views-blocs.scss */
   #block-views-banners-home-block-3 .view-content li {
     float: left;
   }
-  /* line 209, ../../sass/partials/views-blocs.scss */
+  /* line 210, ../../sass/partials/views-blocs.scss */
   #block-views-banners-home-block-3 .view-content li:nth-child(4n) {
     margin-right: 0;
   }
-  /* line 212, ../../sass/partials/views-blocs.scss */
+  /* line 213, ../../sass/partials/views-blocs.scss */
   #block-views-banners-home-block-3 .view-content li:nth-child(4n+1) {
     clear: left;
   }
 }
-/* line 221, ../../sass/partials/views-blocs.scss */
+/* line 222, ../../sass/partials/views-blocs.scss */
 #block-menu-block-5 {
   background: none repeat scroll 0 0 white;
   border-top: 4px solid #0083a9;
   margin-top: 10px;
 }
-/* line 225, ../../sass/partials/views-blocs.scss */
+/* line 226, ../../sass/partials/views-blocs.scss */
 #block-menu-block-5 h2 {
   background: url("../../images/escut-dipta.png") no-repeat scroll left center transparent;
   color: #0083A9;
@@ -1085,7 +1074,7 @@ pre {
   border-bottom: 2px solid #ebebeb;
   padding: 12px 20px 12px 50px;
 }
-/* line 236, ../../sass/partials/views-blocs.scss */
+/* line 237, ../../sass/partials/views-blocs.scss */
 #block-menu-block-5 li {
   width: 30%;
   display: inline-block;
@@ -1096,25 +1085,25 @@ pre {
   font-weight: bold;
   float: none;
 }
-/* line 245, ../../sass/partials/views-blocs.scss */
+/* line 246, ../../sass/partials/views-blocs.scss */
 #block-menu-block-5 li:before {
   content: "\00BB \0020";
   color: #0083A9;
 }
-/* line 249, ../../sass/partials/views-blocs.scss */
+/* line 250, ../../sass/partials/views-blocs.scss */
 #block-menu-block-5 li .menu {
   float: none;
   width: 600px;
   background-color: pink;
 }
-/* line 253, ../../sass/partials/views-blocs.scss */
+/* line 254, ../../sass/partials/views-blocs.scss */
 #block-menu-block-5 li .menu li {
   width: 30%;
   font-weight: normal;
   display: inline-block;
   list-style: none;
 }
-/* line 258, ../../sass/partials/views-blocs.scss */
+/* line 259, ../../sass/partials/views-blocs.scss */
 #block-menu-block-5 li .menu li:before {
   content: "\00BB \0020";
   float: left;
@@ -1122,11 +1111,100 @@ pre {
   color: #0083A9;
 }
 
-/*BLOCS FOOTER*/
-/*
-#footer .block-menu-block{ ul.menu:first-child > li > a { font-weight: bold; } }
-#footer .block-menu-block ul.menu:first-child > li:nth-child(3n+1){ float:right; clear:none!important; }
-#block-block-5{ }
-#block-block-6 { }
+/* line 271, ../../sass/partials/views-blocs.scss */
+#block-menu-block-6 {
+  margin: 2%;
+  clear: both;
+  background-color: #ebebeb;
+}
+/* line 273, ../../sass/partials/views-blocs.scss */
+#block-menu-block-6 h2 {
+  color: #0083a9;
+  font-size: h3-s;
+  line-height: 2.75rem;
+  margin-bottom: 0;
+  border-bottom: 0.4rem solid white;
+}
+/* line 275, ../../sass/partials/views-blocs.scss */
+#block-menu-block-6 ul {
+  padding-left: 35px !important;
+  padding-top: 1rem!important;
+  padding-bottom: 1rem !important;
+}
+/* line 276, ../../sass/partials/views-blocs.scss */
+#block-menu-block-6 ul li {
+  list-style-image: url("../../images/ico-link-list.png");
+}
 
-*/
+/* line 282, ../../sass/partials/views-blocs.scss */
+.view-imatge-corporativa {
+  margin: 1.4rem;
+  border: none !important;
+}
+
+/* line 283, ../../sass/partials/views-blocs.scss */
+.centre img {
+  float: left;
+  padding: 2%;
+}
+/* line 283, ../../sass/partials/views-blocs.scss */
+.centre .file {
+  background-color: #ebebeb;
+  padding: 0 1% 1% 1%;
+}
+/* line 284, ../../sass/partials/views-blocs.scss */
+.centre .manual {
+  margin-top: 20px;
+  clear: both;
+}
+
+/* line 290, ../../sass/partials/views-blocs.scss */
+#block-views-imatge-corporativa-block-1 {
+  background-color: #ebebeb;
+  margin: 1.4rem;
+  padding-bottom: 2rem;
+}
+/* line 292, ../../sass/partials/views-blocs.scss */
+#block-views-imatge-corporativa-block-1 h2 {
+  font-size: 2.25rem;
+  color: #0083a9;
+  border-bottom: 0.4rem solid white;
+}
+
+/* line 296, ../../sass/partials/views-blocs.scss */
+#block-views-carretera-block-6 {
+  margin: 1.4rem;
+}
+/* line 298, ../../sass/partials/views-blocs.scss */
+#block-views-carretera-block-6 h2 {
+  background-color: #ebebeb;
+  font-size: 2.25rem;
+  line-height: 2.75rem;
+  color: #0083a9;
+}
+
+/* line 300, ../../sass/partials/views-blocs.scss */
+#block-views-carretera-block-7, #block-views-carretera-block-8 {
+  clear: both;
+  margin: 1.4rem;
+}
+/* line 303, ../../sass/partials/views-blocs.scss */
+#block-views-carretera-block-7 h2, #block-views-carretera-block-8 h2 {
+  background-color: #ebebeb;
+  font-size: 2.25rem;
+  line-height: 2.75rem;
+  color: #0083a9;
+}
+
+/* line 308, ../../sass/partials/views-blocs.scss */
+#block-block-5 {
+  margin: 0;
+}
+/* line 309, ../../sass/partials/views-blocs.scss */
+#block-block-5 p {
+  color: #BBDEE8;
+  margin: 0.7rem 0;
+  text-align: left;
+  font-size: 1.125rem;
+  line-height: 1.375rem;
+}

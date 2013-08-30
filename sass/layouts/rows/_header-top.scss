@@ -1,5 +1,4 @@
 /*
-*
 *	Header Top
 *   http://www.responsinator.com
 *	http://sass-lang.com/docs/yardoc/Sass/Script/Functions.html
@@ -8,14 +7,14 @@
 .region-header{
 	@include container;	@include dipta-container-width; 
 	/*Elements*/
-	#block-menu-menu-men-top {
-		 font-size:$h5-s;  
-		 @include at-breakpoint($iphone4) { font-size:$h6-s;}	
- 		 @include at-breakpoint($iphone4-landscape) { font-size:$h6-s; }
+	
+	/*All*/
+		 @include at-breakpoint($iphone4) {}	
+ 		 @include at-breakpoint($iphone4-landscape) { }
  		 @include at-breakpoint($iphone5-landscape) { }
 		 @include at-breakpoint($kindle) {  }
 		 @include at-breakpoint($ipad) {  }
 		 @include at-breakpoint($ipad-landscape) {   }
-	}
+	
 }
-.region-header:hover{ /*@include dipta-grid-show;*/}
+.region-header:hover{ @include dipta-grid-show;}

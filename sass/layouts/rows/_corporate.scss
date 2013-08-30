@@ -1,5 +1,4 @@
 /*
-*
 *	Corporate
 *   http://www.responsinator.com
 *	http://sass-lang.com/docs/yardoc/Sass/Script/Functions.html
@@ -7,7 +6,7 @@
 
 /* Mixins*/
 
-	@mixin dipta-corporate-iphone{ 
+	@mixin css-corporate-iphone{ 
 		.jcarousel-skin-default {
 			.jcarousel-next { 
 				background-color:$base01; background-position:center center;
@@ -25,16 +24,15 @@
 	@include container; @include dipta-container-width;
 		
 	 /*All*/
-		@include at-breakpoint($iphone4) { @include dipta-corporate-iphone; 
-		
+		@include at-breakpoint($iphone4) { @include css-corporate-iphone; 
 		}//	
-		@include at-breakpoint($iphone4-landscape) { @include dipta-corporate-iphone; 
+		@include at-breakpoint($iphone4-landscape) { @include css-corporate-iphone; 
 		}//
-		@include at-breakpoint($iphone5-landscape) {  @include dipta-corporate-iphone; 
+		@include at-breakpoint($iphone5-landscape) {  @include css-corporate-iphone; 
 		}//
-		@include at-breakpoint($kindle) {  @include dipta-corporate-iphone; 
+		@include at-breakpoint($kindle) {  @include css-corporate-iphone; 
 		}//
-		@include at-breakpoint($ipad) { @include dipta-corporate-iphone; 
+		@include at-breakpoint($ipad) { @include css-corporate-iphone; 
 		}//		
 		@include at-breakpoint($ipad-landscape) {  
 		}//

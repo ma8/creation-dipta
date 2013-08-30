@@ -2,12 +2,59 @@
 @import "../creation/_creation"; 
 $pad:2%;
 
+
+// [Field wrappers]
+label,.label-inline,.field-label { font-weight: bold;}
+.label-inline { display: inline;}
+
+//[Headings] [Especifics]
+/*Title pagines views*/
+h1.title { color:$base02;}
+
+h1#page-title{@extend h1.title;}
+/*Title nodes*/
+.dipta-title{ @extend h1.title;}
+.dipta-subtitol{ @extend h4; }
+.dipta-title-img-navegacio{@extend %dipta-title-img-d;}
+.dipta-title-img-node{@extend %dipta-title-img-c; color:$base02;}
+.dipta-txt-navegacio{  @extend %dipta-quote-h4c; border:0; }
+
+blockquote { @extend %dipta-quote-h4;p{font-weight:500;}}
+
+//[Caption] 
+.field-slideshow-caption{@extend %dipta-caption;}
+
+//[Concatenats]
+.dipta-concatenats{ @extend %dipta-concatenats;}
+.group-concat {margin-left:2%;margin-right:2%}
+
+//[Formulari de Cantacte]
+#contact-site-form,#webform-client-form-3686,#print-mail-form{padding:2%;}
+.printmail-label{float:none !important;} 
+
+//[Contingut relacionat]
+.related-content {
+	@extend %dipta-box-eb-border;
+	 width: 48%;display:block;margin-top:5%;
+	h1,h2,h3,h4,h5,h6{ margin:0;color:$base03;}
+	ul li{@extend %ph5; list-style-image:url("../images/ico-link-list.png");}
+}
+.related-content:first-child{}
+.related-content:last-child{margin-left:2%;}
+
+#cboxCurrent{
+	width:180px; 
+	a,.descarregar{
+	background-image:url("../images/ico-file-download.png");
+	background-repeat: no-repeat;background-size: auto auto;
+	background-position: center center;padding: 5%;}
+}
 //[Camps generals] [NODE]
 #content{
 	.title{ padding:0 2%; margin-top:15px; }
 	.dipta-subtitol,.dipta-title{padding:0 2%;}
 	 blockquote{ margin:2%;}
-	.capcalera{ height:279px; img{padding:0;} }
+	.capcalera{ img{padding:0;} }
 	.dipta-cos{ @extend %dipta-body;margin:2%;} 
 	/*Imatge amb caption ->field-slideshow */
 	.field-slideshow {overflow-x:visible; overflow-y:visible;padding-bottom:0px !important;}
@@ -15,7 +62,8 @@ $pad:2%;
 	.dipta-tag{}
 	/*Title seccio:Agrupacio de camps*/
 	.field-group-format{h2{padding:1rem 0 1rem 0; border-bottom:0.1rem solid $base05; @extend h4; font-weight:700;  color:$base02;} }
-	.group-dades-generals,.group-dades-contacte {margin:0 2% 0 2%;}
+	.group-dades-generals,.group-dades-contacte {margin:0 1.4rem 0 1.4rem;}
+	.group-dades-serveis,.dipta-info-serveis{margin:0 1.4rem 0 1.4rem;}
 	/*dipta fields*/
 	.dipta-camp{ 
 		div.label-inline{ @extend h5; font-weight:700;}
@@ -93,27 +141,19 @@ $pad:2%;
 }
 
 //[Arees-i Unitats]
-.node-dipta-area  {
-
-	
+.node-dipta-area  {	
 }
 
 //[Serveis] @extend %border-top-blue; @extend %border-bottom-fff; @extend %border-bottom-eb; */
-.seccions-destacades {
-	margin:4% 2% 0 2%;background-color:#F0F7F9;
-	h2{ padding:2rem; @extend %border-bottom-fff;  @extend %border-top-blue;color:$base03;} 
-	
-	.destacat-content{
-		width:33% !important;
-		padding:2% 2% 0 3% !important;
-			.foto-des {box-shadow: 0 0 0px #333333;padding:0; border:none !important;}
-			.descripcio,{margin-top:-12px; padding:0 !important;text-overflow:ellipsis;}
-			.destacat-resum{margin-top:3px; padding:0 !important;text-overflow:ellipsis;}
-			h3{ margin:3px 0 3px 0!important; font-size:18px !important; font-weight: 300 !important;}
-		}	
+.seccions-destacades { 
+	margin:4% 1rem 0 1rem;background-color:$base04;
+	h2{@extend %dipta-title-escut;color:$base03;border-bottom:0.4rem solid #fff;} 
+	.destacat-content{ padding:2rem; @extend .dipta-resum; h3{font-size:$h4-s; line-height:$h4-h;}}	
+	.dipta-columns{ @include column-count(3); display:block; @include column-rule(4px, solid, #fff);}
 }
 
 // [Carreteres-Obres]
+.group-documents-obra,.group-dades-obra{margin:1.4rem;}
 .grid-obra{width:45%;border-bottom:1px solid #EBEBEB;padding:2%;h3,h2{margin:1px;}}
 .grid-obra-licitacio{border-bottom:1px solid #EBEBEB;padding:2% 1% 2% 1%;h3,h2{margin:1px;}}
 .clear-float{clear:both;}
@@ -122,16 +162,12 @@ $pad:2%;
 	.municipi{ margin-left:5px;padding-left: 5px !important;border-left:1px solid #ccc !important;}
 }
 
-// [Imatge-corporativa]
-.view-imatge-corporativa {margin:0!important;padding:2%;border:none !important;}
-.centre{ img{float:left; padding:2%;} .file{background-color:#ebebeb;padding:0 1% 1% 1%;} 
-		.manual{margin-top:20px; clear:both;}}
+
 		
 //[Diputat]
 .group-interes-diputat{padding:2% !important;}
-.title-camp{font-weight: 700 !important;border-bottom: 1px solid #EBEBEB;
-	font-family: 'Roboto Condensed'!important;
-	padding: 5px 0 5px 0;margin-right:2%!important;}
+.title-camp{padding:1rem 0 1rem 0; border-bottom:0.1rem solid $base05;
+			@extend h4; font-weight:700;  color:$base02;}
 .image-diputat{float:left; width:30%;}
 .view-diputats-d-un-partit {
 	.views-field-title{width: 23%px;white-space: nowrap;overflow: hidden;text-overflow: ellipsis;}

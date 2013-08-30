@@ -3,25 +3,6 @@
 * 
 */
 
-
-/* Titles Images */
-%dipta-title-img-a{width:90%;  border-bottom:1px solid $base05;
-/*position*/padding:10px;position:relative;  background-color:#fff; margin:-55px 0 0 12px; }
-	
-%dipta-title-img-b{  color:$base03;
-/*position*/padding:10px; position:relative; background-color:#fff; margin:-70px 0 0 12px; }
-	
-%dipta-title-img-c{width:90%; 
-/*position*/padding:10px; position:relative; background-color:#fff; margin:-55px 0 0  0; }
-
-%dipta-title-img-d{ width:94.9%;color:$base03d1;
-/*position*/padding:10px; position:relative; background-color:$base04; margin:-70px 0 0 12px; }
-
-%dipta-img-normal { outline:1px solid $base05;margin:2rem 0 2rem 0;}	 
-%dipta-img-float { float:left;margin:0 2rem 2rem 0; outline:1px solid $base05;}
-%dipta-body:after{ @extend .dipta-clear;}
-%dipta-caption{ background-color:$base05; padding:5px; @extend h6;}	 
-
 	
  /*Slider -home */
 %dipta-resum-slider-home{
