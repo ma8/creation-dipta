@@ -500,24 +500,9 @@ html {
   /*All*/
   font-size: 62.5%;
   /*Typography responsive*/
-}
-@media (max-width: 320px) {
-  /* line 26, ../sass/creation/_creation.scss */
-  html {
-    font-size: 52.5%;
-  }
-}
-@media (min-width: 321px) and (max-width: 480px) {
-  /* line 26, ../sass/creation/_creation.scss */
-  html {
-    font-size: 55.5%;
-  }
-}
-@media (min-width: 481px) and (max-width: 568px) {
-  /* line 26, ../sass/creation/_creation.scss */
-  html {
-    font-size: 58.5%;
-  }
+  /*@include at-breakpoint($iphone4) { font-size:52.5%;}
+   @include at-breakpoint($iphone4-landscape) { font-size:55.5%; }
+   @include at-breakpoint($iphone5-landscape) { font-size:58.5%; } */
 }
 
 /* line 36, ../sass/creation/_creation.scss */
@@ -528,15 +513,58 @@ body {
   font-size: 1.3rem;
   line-height: 2.3rem;
 }
+@media (max-width: 320px) {
+  /* line 36, ../sass/creation/_creation.scss */
+  body {
+    font-size: 1rem;
+    line-height: 2rem;
+  }
+}
+@media (min-width: 321px) and (max-width: 480px) {
+  /* line 36, ../sass/creation/_creation.scss */
+  body {
+    font-size: 1.1rem;
+    line-height: 2.1rem;
+  }
+}
+@media (min-width: 481px) and (max-width: 568px) {
+  /* line 36, ../sass/creation/_creation.scss */
+  body {
+    font-size: 1.2rem;
+    line-height: 2.2rem;
+  }
+}
+
+@media (max-width: 320px) {
+  /* line 47, ../sass/creation/_creation.scss */
+  h1, h2 {
+    font-size: 2.25rem;
+    line-height: 2.75rem;
+  }
+}
+@media (min-width: 321px) and (max-width: 480px) {
+  /* line 47, ../sass/creation/_creation.scss */
+  h1, h2 {
+    font-size: 2.25rem;
+    line-height: 2.75rem;
+  }
+}
+@media (min-width: 481px) and (max-width: 568px) {
+  /* line 47, ../sass/creation/_creation.scss */
+  h1, h2 {
+    font-size: 2.25rem;
+    line-height: 2.75rem;
+  }
+}
 
 /*Syntax custom*/
-/* line 46, ../sass/creation/_creation.scss */
+/* line 61, ../sass/creation/_creation.scss */
 code {
   font-size: 1.2rem;
   font-family: Consolas,Monaco,"Andale Mono",monospace;
 }
 
-/* line 47, ../sass/creation/_creation.scss */
+/* line 62, ../sass/creation/_creation.scss */
 pre {
   overflow-x: scroll !important;
   overflow-y: scroll !important;

@@ -4,15 +4,24 @@
  * @Miguel Ángel Ramos. 
  *
  */
-  
  
- /* Compass*/ 
+ /* Compass*/
 @import "compass/css3"; 
 @import "compass/utilities";
 /* Creation base */
 @import "base/_syntax";
 @import "base/_colors"; 
 @import "base/_font";
+@import "layouts/_responsive-creation";	
+
+/*Variables Generals*/
+$dipta-golden:1.618rem; 
+//$dipta-padding:$gutter-width;
+$dipta-padding:$dipta-golden;
+$dipta-p:$base-h;/* 2.3rem*/
+$dipta-ratio:0.618rem;
+
+
 /* Creation custom*/
 @import "custom/_typography";
 @import "custom/_elements";
@@ -21,26 +30,63 @@
 @import "custom/_tables";
 @import "custom/_forms";
 /*Creation layouts*/
-@import "layouts/_responsive-creation";	
 
-html {  
+
+html { 
 	color:$base01;
 	/*All*/
 	font-size:62.5%;
 	/*Typography responsive*/
+	/* 
 	 @include at-breakpoint($iphone4) { font-size:52.5%;}
 	 @include at-breakpoint($iphone4-landscape) { font-size:55.5%; }
-	 @include at-breakpoint($iphone5-landscape) { font-size:58.5%; } 
+	 @include at-breakpoint($iphone5-landscape) { font-size:58.5%; }
+	 */
   }
 	
+	
 body{
-	/*$font1: 'Open Sans', sans-serif;*/
-	margin:0;
+	margin:0; word-wrap: break-word;	
 	font-family:$font-a;
-	font-size:1.3rem;
-	line-height:2.3rem;
+	font-size:$base-s;line-height:$base-h;
+	 @include at-breakpoint($iphone4) { font-size:1rem; line-height:2rem; }
+	 @include at-breakpoint($iphone4-landscape) { font-size:1.1rem; line-height:2.1rem; }
+	 @include at-breakpoint($iphone5-landscape) { font-size:1.2rem; line-height:2.2rem; }
 }
 
+
+
+/*Responsive Custom typography*/
+
+h1{	 @include at-breakpoint($iphone4) { font-size:$h3-s; line-height:$h3-h; }
+	 @include at-breakpoint($iphone4-landscape) { font-size:$h3-s; line-height:$h3-h; }
+	 @include at-breakpoint($iphone5-landscape) { font-size:$h3-s; line-height:$h3-h; } 
+}
+h2{	 @include at-breakpoint($iphone4) { font-size:$h3-s; line-height:$h3-h; }
+	 @include at-breakpoint($iphone4-landscape) { font-size:$h3-s; line-height:$h3-h; }
+	 @include at-breakpoint($iphone5-landscape) { font-size:$h3-s; line-height:$h3-h; } 
+}
+
+h3{  @include at-breakpoint($iphone4) { font-size:$h4-s; line-height:$h4-h; }
+	 @include at-breakpoint($iphone4-landscape) { font-size:$h4-s; line-height:$h4-h; }
+	 @include at-breakpoint($iphone5-landscape) { font-size:$h4-s; line-height:$h4-h; }
+} 
+	 
+h4{  @include at-breakpoint($iphone4) { font-size:$h5-s; line-height:$h5-h; }
+	 @include at-breakpoint($iphone4-landscape) { font-size:$h5-s; line-height:$h5-h; }
+	 @include at-breakpoint($iphone5-landscape) { font-size:$h5-s; line-height:$h5-h; }
+}
+
+h5{  @include at-breakpoint($iphone4) { font-size:$h6-s; line-height:$h6-h; }
+	 @include at-breakpoint($iphone4-landscape) { font-size:$h6-s; line-height:$h6-h; }
+	 @include at-breakpoint($iphone5-landscape) { font-size:$h6-s; line-height:$h6-h; }
+} 
+	 
+h6{
+	 @include at-breakpoint($iphone4) {  font-size:$h6-s*0.9; line-height:$h6-h*0.9; }
+	 @include at-breakpoint($iphone4-landscape) {  font-size:$h6-s*0.9; line-height:$h6-h*0.9;}
+	 @include at-breakpoint($iphone5-landscape) {  font-size:$h6-s*0.9; line-height:$h6-h*0.9; }
+}
 
 /*Syntax custom*/
 code{ font-size:1.2rem;  font-family: Consolas,Monaco,"Andale Mono",monospace;}

@@ -7,17 +7,18 @@
 */
 
 
-p{ font-weight: 300;}
+p{ font-weight: 300;margin:$base-h 0;}
 a{color: $base03;text-decoration:none;}
 a:hover{text-decoration: underline;}  
 
 /* Headings*/	
-h1{/*body*/font-size: $h1-s;font-weight:400;line-height:$h1-h;letter-spacing: -0.2rem;}
-h2{font-size: $h2-s; font-weight: 400;line-height:$h2-h;letter-spacing: -0.06rem;}
-h3{font-size: $h3-s;font-weight:400;line-height:$h3-h;letter-spacing: -0.06rem;}
-h4{font-size: $h4-s;font-weight:400;line-height:$h4-h;letter-spacing: -0.06rem;}
-h5{font-size: $h5-s;font-weight:400;line-height:$h5-h;letter-spacing: -0.06rem;}
-h6{font-size: $h6-s;font-weight:400;line-height:$h6-h;letter-spacing: -0.06rem;}	
+
+h1{/*body*/font-size: $h1-s;font-weight:400;line-height:$h1-h;letter-spacing: $h1-ls;margin: $h1-h 0;}
+h2{font-size: $h2-s; font-weight: 400;line-height:$h2-h;letter-spacing: $h2-ls;margin: $h2-h 0;}
+h3{font-size: $h3-s;font-weight:400;line-height:$h3-h;letter-spacing: $h3-ls;margin: $h3-h 0;}
+h4{font-size: $h4-s;font-weight:400;line-height:$h4-h;letter-spacing: $h4-ls;margin: $h3-h 0;}
+h5{font-size: $h5-s;font-weight:400;line-height:$h5-h;letter-spacing: $h5-ls;margin: $h5-h 0;}
+h6{font-size: $h6-s;font-weight:400;line-height:$h6-h;letter-spacing: $h6-ls;margin: $h6-h 0;}	
 
 
 /* Paragraph size h1,h2,h3,h4,h5.h6*/
@@ -25,7 +26,7 @@ h6{font-size: $h6-s;font-weight:400;line-height:$h6-h;letter-spacing: -0.06rem;}
 %ph2{font-size: $h2-s; font-weight:100; line-height:1.2 * $h2-h; letter-spacing:0;}
 %ph3{font-size: $h3-s;font-weight:100; line-height:1.2 * $h3-h; letter-spacing:0;}
 %ph4{font-size: $h4-s; font-weight:100; line-height:1.2 * $h4-h; letter-spacing:0;}
-%ph5{font-size: $h5-s; font-weight:100; line-height:1.2 * $h5-h; letter-spacing:0;}
+%ph5{font-size: $h5-s; font-weight:100; line-height:1.8rem; letter-spacing:0;}
 %ph6{font-size: $h6-s; font-weight:100; line-height:1.2 * $h6-h; letter-spacing:0;}
 
 %dipta-title-page{font-weight:300;}

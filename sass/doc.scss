@@ -3,7 +3,7 @@
 * Import _creation.scss
 * Palette colors + typography (golden ratio) + Breakpoints
 *
-*/
+*/ 
 
 @import "compass/css3";
 @import "compass/utilities";
@@ -20,40 +20,18 @@ $verd:#3DE0A1;
 $grid-background-column-color:lighten($verd, 35%); 
 $grid-background-gutter-color:#fff;
 
-/*Containers*/ 
-%container940{ /*max-width: 940px; margin-left: auto; margin-right: auto;*/}
-%container705{ /*max-width: 705px; margin-left: auto; margin-right: auto;*/}
-%container235{ /*max-width: 235px; margin-left: auto; margin-right: auto;*/}
+.creation-grid{ text-align:right; @include dipta-grid-show; text-transform:uppercase;color:#fff; 
+a{padding-right:1rem; font-weight: 600;}  }
 
-@mixin dipta-container-show{
-	@include at-breakpoint($iphone4) { @include set-container-width;  @include susy-grid-background; }
-	@include at-breakpoint($iphone4-landscape) { @include set-container-width; @include susy-grid-background;  }
-	@include at-breakpoint($iphone5-landscape) { @include set-container-width; @include susy-grid-background;  }
-	@include at-breakpoint($kindle) { @include set-container-width;  @include susy-grid-background; }
-	@include at-breakpoint($ipad) { @include set-container-width;  @include susy-grid-background; }
-	@include at-breakpoint($ipad-landscape) { @include set-container-width; @include susy-grid-background;  }
-}
-@mixin dipta-container-width{
-	@include at-breakpoint($iphone4) { @include set-container-width; }
-	@include at-breakpoint($iphone4-landscape) { @include set-container-width; }
-	@include at-breakpoint($iphone5-landscape) { @include set-container-width; }
-	@include at-breakpoint($kindle) { @include set-container-width; }
-	@include at-breakpoint($ipad) { @include set-container-width; }
-	@include at-breakpoint($ipad-landscape) { @include set-container-width; }
-}
-
-body{
-	
-}
 
 /* Header Doc*/
 header{ 
 	background-color:$blue;
 	.container{ @include container; @include dipta-container-width; }
-	padding:90px 0 10px 0;;text-align:center;color:#fff;
+	padding:90px 0 40px 0;;text-align:center;color:#fff;
 	p{color:$blue2; line-height: 1.4;font-size:21px;font-weight: normal;}	
 	h1{font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
-		font-weight: 500;font-size: 50px;margin:20px 0 3px 0;line-height:5rem;}
+		font-weight: 500;font-size: 50px;margin:$dipta-golden 0;line-height:5rem;}
 	.btn-down{
 		display: inline-block;@include border-radius(6px);background-color: transparent;
 		border:1px solid #F0F7F9;color: #FFFFFF;
@@ -65,9 +43,9 @@ header{
 	.btn-down:hover{background-color:#fff;color:$blue;text-decoration:none;}
 	ul{
 	font-size:14px;
-	margin-top:20px;
+	margin:$dipta-golden;
+	padding:0;
 	list-style:none;
-	padding:25px;
 		li{	display: inline;
 			a{color:$blue2;font-weight: normal;}
 			a:hover{  text-shadow: 0 0 10px rgba(255,255,255,.55);text-decoration:none;}
@@ -90,7 +68,7 @@ header{
  /*Title docs page*/
  h1.title-doc{padding-top:80px;
  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;font-weight: 500;font-size: 5rem;}
- h2.title-doc{@extend h3; background-color:$blue1; padding:1%;color:$blue2;font-weight: 500;}
+ h2.title-doc{ clear:both; @extend h3; background-color:$blue1; padding:1%;color:$blue2;font-weight: 500; }
 
  /* Palette colors*/
  #palette-colors{ 
@@ -122,12 +100,12 @@ header{
  }
 /*typography*/ 
 #s1{ @include container; 
-article:hover{@include dipta-container-show;}
+article:hover{}
 
- .headings-especifics{ @extend %container705;  h1,h2,h3,h4,h5{ @extend %dipta-title-page;} }
- .headings-generals{ @extend %container705;}
- .links{ @extend %container705; a{font-weight: 600;} }
- .paragraph{ @extend %container705;
+ .headings-especifics{  h1,h2,h3,h4,h5{ @extend %dipta-title-page;} }
+ .headings-generals{}
+ .links{  a{font-weight: 600;} }
+ .paragraph{ 
 	p:nth-child(1){ @extend %ph1;}
 	p:nth-child(2){ @extend %ph2;}
 	p:nth-child(3){ @extend %ph3;}
@@ -135,7 +113,7 @@ article:hover{@include dipta-container-show;}
 	p:nth-child(5){ @extend %ph5;}
 	p:nth-child(6){ @extend %ph6;}
  }
- .quote{ @extend %container705;
+ .quote{ 
 	blockquote:nth-child(2){ @extend %dipta-quote-h2;}
 	blockquote:nth-child(5){ @extend %dipta-quote-h3;}
 	blockquote:nth-child(8){ @extend %dipta-quote-h4;}
@@ -147,15 +125,15 @@ article:hover{@include dipta-container-show;}
 	blockquote:nth-child(23){ @extend %dipta-quote-h4;}
  }
  
- .body{  @extend %container705;}
+ .body{  }
 }
 
 /*Images sources*/
 #s2{ @include container;
-	article:hover{@include dipta-container-show;}
+	article:hover{}
  .slider-home{ overflow-x:hidden;
 	.dipta-slider-home{ position:absolute;margin:-290px 0 0 30px;}
-	.info-banner{ @extend %dipta-resum-slider-home;}
+	.info-banner{ /*@extend %dipta-resum-slider-home;*/}
 	img{height: auto;}
  }
  
@@ -182,36 +160,35 @@ article:hover{@include dipta-container-show;}
 .pagina-basica{@include span-columns(9); img{ max-width: 100% !important;} }
 .dipta-caption{}
 #dipta-noticia{ background-color:$eb;padding:2rem;
-	.container{ @extend %container705;}
 	h2{@extend %dipta-title-escut;background-color:#fff;border-bottom:0.4rem solid $base05;}
 	.contingut{ @extend %dipta-box-home; 
-		div.dipta-resum{ width:44%;float:left; padding:2rem 2rem 2rem 2rem; }
+		div.dipta-resum{ width:44%;float:left; padding:2rem 2rem 2rem 2rem; img{width:100%!important;} }
 		div.dipta-resum:first-child{ border-right:0.4rem solid $eb;border-bottom:0;}
 		div.dipta-resum + div.dipta-resum{ padding-right:2rem; border-bottom:0.4rem solid $eb;}
 		div.dipta-resum:last-child{ border-bottom:0!important; }
 	}
 	}
 #dipta-agenda{  background-color:$eb;padding:2rem;
-	.container{ @extend %container705;}
+	.container{ }
 	h2{@extend %dipta-title-escut;background-color:#fff;border-bottom:0.4rem solid $base05;}
 	.contingut{ @extend %dipta-box-home; }
 	}
 } 
 /*navigation*/
 #s3{ @include container;
- article:hover{@include dipta-container-show;}
-.box-1{ @extend %container705; 
+ article:hover{}
+.box-1{ 
 
 	.bloc{ @extend %dipta-box-blue;}
 	.bloc1{ @extend %dipta-box-eb;}
 	.bloc2{ @extend %dipta-box-blue-eb;}
 }
-.box-2{ @extend %container705;
+.box-2{ 
 	.bloc{ @extend %dipta-box-blue-border;}
 	.bloc1{ @extend %dipta-box-eb-border;}
 	.bloc2{ @extend %dipta-box-blue-eb-border;}
 }
-.box-3{ @extend %container705; 
+.box-3{ 
 	.bloc{ @extend %dipta-box-blue-border;}
 	.bloc1{ @extend %dipta-box-eb-border;}
 	.bloc2{ @extend %dipta-box-blue-eb-border;}
@@ -222,12 +199,13 @@ article:hover{@include dipta-container-show;}
 
 #s5,#s7,#s4,#s8{ @include container; 
 article{}
-article:hover{@include dipta-container-show;}
+article:hover{}
 }
 
 /*bloc*/
 #s6{ @include container;
-	article:hover{@include dipta-container-show;}
+	article:hover{}
+	
 	.bloc1{ display:inline-block;
 		@extend %dipta-bloc-blue-border;
 		h2{ @extend %dipta-title-escut;}
@@ -260,10 +238,9 @@ article:hover{@include dipta-container-show;}
 /*Footter doc */ 
  footer{ 
  h1,h2,h3,h4,h5{margin:0;}
-	 background-color:$base03; 
+	 background-color:$base04; 
 	 margin:15rem 0 0 0; padding:1rem 0; 
 	 color:#fff;text-align:center;
 	 h5{margin:0;}
-	 border-bottom:solid 1rem $base02;
-	 border-top:solid 1rem $base02;
+	 border-bottom:solid 1rem $base03;
  }

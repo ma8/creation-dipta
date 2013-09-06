@@ -1,6 +1,10 @@
 /**
 * 	Palette colors
+*
+*	http://www.colourlovers.com/palette/2978475/Deputation
 *   Night Pencil + Magic + yummi-turquoise + J Peterman Shirt + winter morning
+*	bc:#bcbcbc,Gamebookers Blue:#3299BB	 
+*
 *	Functions colors Sass:
 *	http://sass-lang.com/docs/yardoc/Sass/Script/Functions.html	
 */
@@ -14,11 +18,11 @@ grayscale($color)
 invert($color)
 */
 
-$base01:#464646;	/* Night Pencil */
-$base02:#014B60;	/* Magic */
-$base03:#0083A9;	/* yummi-turquoise */
-$base04:#F0F7F9;	/* J Peterman Shirt */
-$base05:#EBEBEB;	/* winter morning */
+$base01:#464646;	 /*gray*/ /* Night Pencil */
+$base02:#014B60;	/*blue1*/ /* Magic */
+$base03:#0083A9;	/*blue*/ /* yummi-turquoise */
+$base04:#F0F7F9;	/*blue-1*/ /* J Peterman Shirt */
+$base05:#EBEBEB;	/*eb*/ /* winter morning */
 
 /* Tonalitats */
 $base03d1:darken($base03, 10%);

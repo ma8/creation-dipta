@@ -1,5 +1,0 @@
-/*
-*	Creation for Compass
-*	Front-end framework creation for compass
-*
-*/
