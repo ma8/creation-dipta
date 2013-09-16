@@ -14,13 +14,11 @@
 @import "base/_font";
 @import "layouts/_responsive-creation";	
 
-/*Variables Generals*/
-$dipta-golden:1.618rem; 
-//$dipta-padding:$gutter-width;
-$dipta-padding:$dipta-golden;
-$dipta-p:$base-h;/* 2.3rem*/
-$dipta-ratio:0.618rem;
+/*Variables layout*/
 
+/*$dipta-golden:1.618rem;*/
+$dipta-golden:$base-h; /*1.8rem*/
+$dipta-ratio:0.618rem;
 
 /* Creation custom*/
 @import "custom/_typography";
@@ -29,32 +27,26 @@ $dipta-ratio:0.618rem;
 @import "custom/_navigations";
 @import "custom/_tables";
 @import "custom/_forms";
-/*Creation layouts*/
 
 
-html { 
+html {  
 	color:$base01;
-	/*All*/
-	font-size:62.5%;
+	/*All*/font-size:62.5%;
 	/*Typography responsive*/
-	/* 
-	 @include at-breakpoint($iphone4) { font-size:52.5%;}
-	 @include at-breakpoint($iphone4-landscape) { font-size:55.5%; }
-	 @include at-breakpoint($iphone5-landscape) { font-size:58.5%; }
-	 */
   }
 	
-	
 body{
+	/*$font1: 'Open Sans', sans-serif;*/
 	margin:0; word-wrap: break-word;	
-	font-family:$font-a;
-	font-size:$base-s;line-height:$base-h;
-	 @include at-breakpoint($iphone4) { font-size:1rem; line-height:2rem; }
-	 @include at-breakpoint($iphone4-landscape) { font-size:1.1rem; line-height:2.1rem; }
-	 @include at-breakpoint($iphone5-landscape) { font-size:1.2rem; line-height:2.2rem; }
+	font-family:$font-a;font-size:$base-s;line-height:$base-h;
+	 @include at-breakpoint($iphone4) { font-size:1.2rem; }
+	 @include at-breakpoint($iphone4-landscape) { font-size:1.2rem; }
+	 @include at-breakpoint($iphone5-landscape) {  font-size:1.2rem; }
 }
 
+/*margin typography*/
 
+h1,h2,h3,h4,h5,h6{ margin:$dipta-golden 0;}
 
 /*Responsive Custom typography*/
 

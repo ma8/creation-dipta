@@ -7,10 +7,10 @@
 
 @import "susy";  
 
-/* Visual Grid Susy for REM 1rem=>10px*/
+/* Visual Grid Susy for REM 1rem=>10px  6.185rem;  1.8rem; */
 $total-columns: 12;             // a 12-column grid
-$column-width: 6.35rem;            // each column is 4em wide
-$gutter-width: 1.618rem;            // 1em gutters between columns
+$column-width: 6rem;            // each column is 4em wide
+$gutter-width: 2rem;           // 1em gutters between columns
 $grid-padding: $gutter-width;  // grid-padding equal to gutters
 
 $grid-background-column-color:saturate(yellow, 20%);

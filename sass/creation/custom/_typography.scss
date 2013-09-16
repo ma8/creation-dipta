@@ -12,7 +12,6 @@ a{color: $base03;text-decoration:none;}
 a:hover{text-decoration: underline;}  
 
 /* Headings*/	
-
 h1{/*body*/font-size: $h1-s;font-weight:400;line-height:$h1-h;letter-spacing: $h1-ls;margin: $h1-h 0;}
 h2{font-size: $h2-s; font-weight: 400;line-height:$h2-h;letter-spacing: $h2-ls;margin: $h2-h 0;}
 h3{font-size: $h3-s;font-weight:400;line-height:$h3-h;letter-spacing: $h3-ls;margin: $h3-h 0;}
@@ -22,12 +21,12 @@ h6{font-size: $h6-s;font-weight:400;line-height:$h6-h;letter-spacing: $h6-ls;mar
 
 
 /* Paragraph size h1,h2,h3,h4,h5.h6*/
-%ph1{font-size: $h1-s;font-weight:100; line-height:1.2 * $h1-h; letter-spacing:0;}
-%ph2{font-size: $h2-s; font-weight:100; line-height:1.2 * $h2-h; letter-spacing:0;}
-%ph3{font-size: $h3-s;font-weight:100; line-height:1.2 * $h3-h; letter-spacing:0;}
-%ph4{font-size: $h4-s; font-weight:100; line-height:1.2 * $h4-h; letter-spacing:0;}
-%ph5{font-size: $h5-s; font-weight:100; line-height:1.8rem; letter-spacing:0;}
-%ph6{font-size: $h6-s; font-weight:100; line-height:1.2 * $h6-h; letter-spacing:0;}
+%ph1{font-size: $h1-s;font-weight:100; line-height:1.1 * $h1-h; letter-spacing:0;}
+%ph2{font-size: $h2-s; font-weight:100; line-height:1.1 * $h2-h; letter-spacing:0;}
+%ph3{font-size: $h3-s;font-weight:100; line-height:1.1 * $h3-h; letter-spacing:0;}
+%ph4{font-size: $h4-s; font-weight:100; line-height:1.1 * $h4-h; letter-spacing:0;}
+%ph5{font-size: $h5-s; font-weight:100; line-height:1.1 * $h5-h; letter-spacing:0;}
+%ph6{font-size: $h6-s; font-weight:100; line-height:1.1 * $h6-h; letter-spacing:0;}
 
 %dipta-title-page{font-weight:300;}
 %dipta-title-escut{
@@ -42,10 +41,10 @@ h6{font-size: $h6-s;font-weight:400;line-height:$h6-h;letter-spacing: $h6-ls;mar
 %caracter-quote{display: block;content: "\201C";font-family: Georgia, serif;
 	font-size: 9rem;position: absolute;color: #7a7a7a;margin-left:-45px;margin-top:25px;}
 	
-%dipta-quote-h2{ @extend %ph2; font-weight:100; @extend %border-quote; padding: 2.3%; }	
-%dipta-quote-h3{ @extend %ph3; font-weight:100; @extend %border-quote; padding: 2.3%; }
-%dipta-quote-h4{ @extend %ph4; font-weight:100; @extend %border-quote; padding: 2.3%; }
-%dipta-quote-h5{ @extend %ph5; font-weight:100; @extend %border-quote; padding: 2.3%; }
+%dipta-quote-h2{ @extend %ph2; font-weight:100; @extend %border-quote; padding: $dipta-golden;  }	
+%dipta-quote-h3{ @extend %ph3; font-weight:100; @extend %border-quote; padding: $dipta-golden;  }
+%dipta-quote-h4{ @extend %ph4; font-weight:100; @extend %border-quote; padding: $dipta-golden; }
+%dipta-quote-h5{ @extend %ph5; font-weight:100; @extend %border-quote; padding: $dipta-golden;  }
 
 %dipta-quote-h2c:before { @extend %caracter-quote; }
 %dipta-quote-h2c{ @extend %ph2; font-weight:100; @extend %border-quote; 
@@ -57,7 +56,7 @@ h6{font-size: $h6-s;font-weight:400;line-height:$h6-h;letter-spacing: $h6-ls;mar
 	
 %dipta-quote-h4c:before{ @extend %caracter-quote; }
 %dipta-quote-h4c{ @extend %ph4; font-weight:100; @extend %border-quote;
-	margin-left:5%;padding: 2.3% 2.3% 2.3% 5.3%; }
+	margin-left:5%;padding: $dipta-golden  $dipta-golden  $dipta-golden  5.3%; }
 
 %dipta-quote-h5c:before{ @extend %caracter-quote; }
 %dipta-quote-h5c{ @extend %ph5; font-weight:100; @extend %border-quote;

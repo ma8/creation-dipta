@@ -3,7 +3,7 @@
 *	
 */
 
-
+ 
 /* Element Clear */ 	
 .dipta-clear{content: "."; display: block;height: 0;clear: both;visibility: hidden;}
 
@@ -15,43 +15,43 @@
 %border-bottom-eb {border-bottom:0.4rem solid $base05;}
 
 %dipta-box-blue{ background-color:$base04;
-	h1,h2,h3,h4,h5,h6{ padding:$dipta-padding; @extend %border-bottom-fff; }
-	p{ @extend %ph5; padding: 0 $dipta-padding $dipta-padding $dipta-padding; border:0;} 
+	h1,h2,h3,h4,h5,h6{ padding:$dipta-golden; @extend %border-bottom-fff; }
+	p{ @extend %ph5; padding: 0 $dipta-golden $dipta-golden $dipta-golden; border:0;} 
 }
 
 %dipta-box-eb{
 	background-color:$base05;
-	h1,h2,h3,h4,h5,h6{ padding:$dipta-padding; @extend %border-bottom-fff; }
-	p{ @extend %ph5; padding: 0 $dipta-padding $dipta-padding $dipta-padding; border:0; color:$base02;} 
+	>h1,>h2,>h3,>h4,>h5,>h6{ padding:$dipta-golden; @extend %border-bottom-fff; }
+	p{ @extend %ph5; padding: 0 $dipta-golden $dipta-golden $dipta-golden; border:0; color:$base02;} 
 }
 
 %dipta-box-blue-eb{
 	background-color:$base05;
-	h1,h2,h3,h4,h5,h6{ padding:$dipta-padding; @extend %border-bottom-fff;background-color:$base04;}
-	p{ @extend %ph5; padding: 0 $dipta-padding $dipta-padding $dipta-padding; border:0; background-color:$base05; } 
+	>h1,>h2,>h3,>h4,>h5,>h6{ padding:$dipta-golden; @extend %border-bottom-fff;background-color:$base04;}
+	p{ @extend %ph5; padding: 0 $dipta-golden $dipta-golden $dipta-golden; border:0; background-color:$base05; } 
 }
 
 %dipta-box-blue-border{
 	background-color:$base04;
-	h1,h2,h3,h4,h5,h6{ padding:$dipta-padding; @extend %border-bottom-fff; @extend %border-top-blue ;}
-	p{ @extend %ph5; padding: 0 $dipta-padding $dipta-padding $dipta-padding; border:0;} 
+	>h1,>h2,>h3,>h4,>h5,>h6{ padding:$dipta-golden; @extend %border-bottom-fff; @extend %border-top-blue ; color:$base03;}
+	p{ @extend %ph5; padding: 0 $dipta-golden $dipta-golden $dipta-golden; border:0;} 
 }
 
 %dipta-bloc-blue-border{
 	background-color:$base02;
-	h2{ padding:2rem; @extend %border-bottom-fff; @extend %border-top-blue ; color:$base03;}
-	p{ @extend %ph5; padding: 0 $dipta-padding $dipta-padding $dipta-padding; border:0;} 
+	>h2{ padding:2rem; @extend %border-bottom-fff; @extend %border-top-blue ; color:$base03;}
+	p{ @extend %ph5; padding: 0 $dipta-golden $dipta-golden $dipta-golden; border:0;} 
 }
 %dipta-box-eb-border{
 	background-color:$base05;
-	h1,h2,h3,h4,h5,h6{ padding:$dipta-padding; @extend %border-bottom-fff; @extend %border-top-blue ;}
-	p{ @extend %ph5; padding: 0 $dipta-padding $dipta-padding $dipta-padding; border:0; color:$base02;} 
+	>h1,>h2,>h3,>h4,>h5,>h6{ padding:$dipta-golden; @extend %border-bottom-fff; @extend %border-top-blue ; color:$base03;}
+	p{ @extend %ph5; padding: 0 $dipta-golden $dipta-golden $dipta-golden; border:0; color:$base02;} 
 }
 
 %dipta-box-blue-eb-border{
 	background-color:$base05;
-	h1,h2,h3,h4,h5,h6{ padding:$dipta-padding; @extend %border-bottom-fff; @extend %border-top-blue ;background-color:$base04;}
-	p{ @extend %ph5; padding: 0 $dipta-padding $dipta-padding $dipta-padding; border:0; background-color:$base05; } 
+	>h1,>h2,>h3,>h4,>h5,>h6{ padding:$dipta-golden; @extend %border-bottom-fff; @extend %border-top-blue ;background-color:$base04;}
+	p{ @extend %ph5; padding: 0 $dipta-golden $dipta-golden $dipta-golden; border:0; background-color:$base05; } 
 }
 
 
@@ -71,9 +71,9 @@
 %dipta-box-home{
 	background-color:#fff;
 	h3,h4,h5{ }
-	div.dipta-resum{ padding:$dipta-padding; }
+	div.dipta-resum{ padding:$dipta-golden; }
 	div.dipta-resum:first-child{ border-bottom:0.4rem solid $base05; }
-	div.dipta-resum + div.dipta-resum{ padding-right:$dipta-padding; 
+	div.dipta-resum + div.dipta-resum{ padding-right:$dipta-golden; 
 		border-bottom:0.4rem solid $base05;}
 	div.dipta-resum:last-child{ border-bottom:0!important; }
 			
@@ -95,18 +95,18 @@
 
 /* Titles Images */
 %dipta-title-img-a{width:90%;  border-bottom:1px solid $base05;
-/*position*/padding:10px;position:relative;  background-color:#fff; margin:-55px 0 0 12px; }
+/*position*/padding:10px;position:relative;  background-color:#fff; margin:-55px 0 0 12px; padding-left:$dipta-golden;}
 	
 %dipta-title-img-b{  color:$base03;
-/*position*/padding:10px; position:relative; background-color:#fff; margin:-70px 0 0 12px; }
+/*position*/padding:10px; position:relative; background-color:#fff; margin:-70px 0 0 12px; padding-left:$dipta-golden;}
 	
 %dipta-title-img-c{width:90%; 
-/*position*/padding:10px; position:relative; background-color:#fff; margin:-55px 0 0  0; }
+/*position*/padding:10px; position:relative; background-color:#fff; margin:-55px 0 0  0; padding-left:$dipta-golden;}
 
 %dipta-title-img-d{ color:$base02;
-/*position*/padding:10px; position:relative; background-color:$base04; margin:-70px 0 0 12px; }
+/*position*/padding:10px; position:relative; background-color:$base04; margin:-70px 0 0 12px; padding-left:$dipta-golden;}
 
 %dipta-img-normal { outline:1px solid $base05;margin:2rem 0 2rem 0;}	 
-%dipta-img-float { float:left;margin:0 $dipta-padding $dipta-padding 0; outline:1px solid $base05;}
+%dipta-img-float { float:left;margin:0 $dipta-golden $dipta-golden 0; outline:1px solid $base05;}
 %dipta-body:after{ @extend .dipta-clear;}
-%dipta-caption{ background-color:$base05; padding:5px; @extend h6; margin:0;}	 
+%dipta-caption{ background-color:$base05; padding:5px; font-size:$h6-s; line-height:$h6-h; margin:0;}	 
